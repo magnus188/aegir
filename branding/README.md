@@ -11,6 +11,8 @@ single filled shape with no gradients, hairlines, or small isolated details.
   [`ziphius-lockup-white.svg`](ziphius-lockup-white.svg): mark and outlined
   wordmark for documentation and packaging. The wordmark was set in Roboto
   Medium and converted to paths, so no font installation is needed to use it.
+- [`ziphius-preview.png`](ziphius-preview.png): white-background preview of
+  the lockup; use the SVG files as the production masters.
 
 For fabrication, import the mark SVG at the final physical size. Engrave or
 print the filled silhouette as a single colour. Check the chosen material and

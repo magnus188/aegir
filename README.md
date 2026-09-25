@@ -5,9 +5,9 @@
   <img src="branding/ziphius-lockup.svg" alt="Ziphius logo" width="440">
 </picture>
 
-Ziphius is an open-source trimix gas analyzer project with editable hardware
-design files and ESP32-P4 software. The
-project is **not qualified as a breathing-gas safety instrument**. The current
+Ziphius is a prototype trimix gas analyzer project with editable hardware
+design files and ESP32-P4 software. The project is **not qualified as a
+breathing-gas safety instrument**. The current
 [whole-system review](hardware/system-review/README.md) lists the unresolved
 electrical, mechanical, sensor, and physical-test work. **Prototype order:
 HOLD.**
@@ -39,3 +39,7 @@ the working tree.
 See [CONTRIBUTING.md](CONTRIBUTING.md) for where new files belong and which
 checks to run. Generated binaries, logs, local KiCad state and printer G-code
 are ignored.
+
+## License
+
+A repository-wide open-source license has not yet been selected.

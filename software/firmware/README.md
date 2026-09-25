@@ -359,4 +359,4 @@ When adding new features:
 
 ## License
 
-Same as the original Ziphius project layout.
+A repository-wide open-source license has not yet been selected.
