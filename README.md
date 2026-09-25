@@ -1,10 +1,5 @@
 # Ziphius
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="branding/ziphius-lockup-white.svg">
-  <img src="branding/ziphius-lockup.svg" alt="Ziphius logo" width="440">
-</picture>
-
 ESP32-P4/LVGL firmware for Ziphius, a prototype trimix gas analyzer, on the native-portrait Guition JC4880P443C_I_W (JC-ESP32P4-M3). It includes Wi-Fi, revision-specific HTTPS OTA, persistent settings/calibration, hardware sensor and power drivers, and a separate deterministic simulator. Physical firmware reports unavailable hardware instead of substituting simulated gas or battery readings.
 
 **Prototype order status: HOLD.** Follow the [whole-system review](hardware/system-review/README.md) for current evidence and unresolved interfaces. No physical charging, thermal, sealing or reference-gas qualification has been completed. The accuracy targets of ±0.2 percentage points O2 and ±0.5 points He remain unproven. Charging is deliberately inhibited and J104 stays open until the cell, protection and temperature-sensing requirements are qualified.
