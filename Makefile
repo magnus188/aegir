@@ -1,4 +1,4 @@
-# Trimix Analyzer developer commands
+# Ziphius developer commands
 
 SHELL := /bin/bash
 .DEFAULT_GOAL := help
@@ -73,7 +73,7 @@ endef
 	sim-build sim emulator run sim-test clean clean-sim clean-all
 
 help: ## Show available commands
-	@printf 'Trimix Analyzer — ESP32-P4 native portrait firmware\n\n'
+	@printf 'Ziphius — ESP32-P4 native portrait firmware\n\n'
 	@printf 'Usage: make <target> [PORT=/dev/...] [P4_REV=auto|pre3|v3] [ZOOM=0.75]\n\n'
 	@awk 'BEGIN { FS = ":.*##" } /^[a-zA-Z0-9_-]+:.*##/ { printf "  %-18s %s\n", $$1, $$2 }' $(MAKEFILE_LIST)
 	@printf '\nExamples:\n'
