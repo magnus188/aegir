@@ -28,7 +28,7 @@ def image(family="pre3", version="1.2.3"):
 
 class ReleaseValidation(unittest.TestCase):
     def setUp(self):
-        self.manifest = {"repository": "magnus188/trimix-analysator", "tag": "v1.2.3", "applications": [
+        self.manifest = {"repository": "magnus188/ziphius", "tag": "v1.2.3", "applications": [
             release.application_info(image(f), f, "1.2.3", 1024) for f in ("pre3", "v3")]}
         self.metadata = {"tag_name": "v1.2.3", "draft": True, "prerelease": False, "assets": []}
         for app in self.manifest["applications"]:
