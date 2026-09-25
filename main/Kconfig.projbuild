@@ -1,4 +1,4 @@
-menu "Trimix Analyzer"
+menu "Ziphius"
 
 config TRIMIX_ENABLE_WIFI
     bool "Enable ESP-Hosted Wi-Fi service"
