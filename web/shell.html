@@ -49,21 +49,6 @@
       min-width: 0;
     }
 
-    .mark {
-      width: 38px;
-      height: 38px;
-      display: grid;
-      place-items: center;
-      flex: 0 0 auto;
-      color: #5eead4;
-    }
-
-    .mark svg {
-      width: 100%;
-      height: 100%;
-      fill: currentColor;
-    }
-
     h1 {
       margin: 0;
       font-size: clamp(16px, 3.4vw, 20px);
@@ -178,7 +163,6 @@
       .page { gap: 10px; padding-top: 12px; padding-bottom: 12px; }
       .subtitle, footer { display: none; }
       .device { width: min(480px, calc(100vw - 36px), calc((100dvh - 78px) * 0.6)); }
-      .mark { width: 32px; height: 32px; }
     }
 
     @media (prefers-reduced-motion: reduce) {
@@ -191,7 +175,6 @@
   <div class="page">
     <header>
       <div class="brand">
-        <div class="mark" aria-hidden="true"><svg viewBox="0 0 128 128"><path d="M18 14l15 9h66c9 0 13 5 13 12 0 4-2 7-6 10L44 90h60v14H23c-10 0-12-9-4-16l63-51H44L31 42 18 55l3-21z"/></svg></div>
         <div>
           <h1>Ziphius</h1>
           <p class="subtitle">Trimix analyzer interface preview</p>
