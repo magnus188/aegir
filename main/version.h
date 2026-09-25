@@ -21,7 +21,7 @@
 
 // GitHub repository information
 #define GITHUB_OWNER "magnus188"
-#define GITHUB_REPO "trimix-analysator"
+#define GITHUB_REPO "ziphius"
 #define GITHUB_API_URL "https://api.github.com/repos/" GITHUB_OWNER "/" GITHUB_REPO "/releases/latest"
 #define GITHUB_RELEASES_URL "https://github.com/" GITHUB_OWNER "/" GITHUB_REPO "/releases"
 
