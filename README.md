@@ -1,6 +1,6 @@
-# Ziphius
+# Ægir
 
-ESP32-P4/LVGL firmware for Ziphius, a prototype trimix gas analyzer, on the native-portrait Guition JC4880P443C_I_W (JC-ESP32P4-M3). It includes Wi-Fi, revision-specific HTTPS OTA, persistent settings/calibration, hardware sensor and power drivers, and a separate deterministic simulator. Physical firmware reports unavailable hardware instead of substituting simulated gas or battery readings.
+ESP32-P4/LVGL firmware for Ægir, a prototype trimix gas analyzer, on the native-portrait Guition JC4880P443C_I_W (JC-ESP32P4-M3). It includes Wi-Fi, revision-specific HTTPS OTA, persistent settings/calibration, hardware sensor and power drivers, and a separate deterministic simulator. Physical firmware reports unavailable hardware instead of substituting simulated gas or battery readings.
 
 **Prototype order status: HOLD.** Follow the [whole-system review](hardware/system-review/README.md) for current evidence and unresolved interfaces. No physical charging, thermal, sealing or reference-gas qualification has been completed. The accuracy targets of ±0.2 percentage points O2 and ±0.5 points He remain unproven. Charging is deliberately inhibited and J104 stays open until the cell, protection and temperature-sensing requirements are qualified.
 
@@ -76,7 +76,7 @@ Open `http://localhost:8080`. The generated site must be served over HTTP rather
 
 ### Automatic GitHub Pages deployment
 
-`.github/workflows/pages.yml` builds and deploys the demo after every push to `main`, and can also be run manually. Before the first deployment, select **GitHub Actions** under **Repository settings → Pages → Build and deployment → Source**. The project site will then be available at `https://magnus188.github.io/ziphius/`.
+`.github/workflows/pages.yml` builds and deploys the demo after every push to `main`, and can also be run manually. Before the first deployment, select **GitHub Actions** under **Repository settings → Pages → Build and deployment → Source**. The project site will then be available at `https://magnus188.github.io/aegir/`.
 
 ### ESP-IDF Project Structure
 ```
