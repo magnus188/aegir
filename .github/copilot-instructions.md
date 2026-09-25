@@ -1,6 +1,6 @@
-# Trimix Analyzer - Repository Instructions
+# Ziphius - Repository Instructions
 
-Trimix Analyzer is an ESP32-P4 firmware project built with ESP-IDF and LVGL. It targets the native 480x800 Guition JC4880P443C_I_W with GT911 touch and an onboard ESP32-C6 Wi-Fi coprocessor.
+Ziphius is an ESP32-P4 trimix analyzer firmware project built with ESP-IDF and LVGL. It targets the native 480x800 Guition JC4880P443C_I_W with GT911 touch and an onboard ESP32-C6 Wi-Fi coprocessor.
 
 ## Working Effectively
 
