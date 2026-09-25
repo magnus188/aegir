@@ -113,7 +113,7 @@ void check_update_task(void* param) {
     
     // Set GitHub API headers
     esp_http_client_set_header(client, "Accept", "application/vnd.github.v3+json");
-    esp_http_client_set_header(client, "User-Agent", "Trimix-Analyzer");
+    esp_http_client_set_header(client, "User-Agent", "Aegir");
     
     // Perform request
     esp_err_t err = esp_http_client_perform(client);
