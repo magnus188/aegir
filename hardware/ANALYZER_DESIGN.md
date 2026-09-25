@@ -1,4 +1,4 @@
-# Trimix analyser — whole-system review
+# Ægir — whole-system review
 
 **Order status: HOLD.** Open `pcb/analyzer/Trimix_Analyzer.kicad_pro` for the
 current main design and `pcb/usb-input/Trimix_USB_Input.kicad_pro` for the
