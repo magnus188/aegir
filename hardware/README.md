@@ -1,4 +1,4 @@
-# Trimix hardware
+# Ægir hardware
 
 The repository root is the ESP32 software project. Hardware work is grouped by
 discipline here so the editable files, previews and print packages are easy to
