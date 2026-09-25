@@ -1,7 +1,0 @@
-{
-  "rejected_trial": "../prune2",
-  "before": "(segment (start 20.1515 84.4671) (end 23.4764 84.4671) (width 0.15) (layer \"F.Cu\") (net \"USB_PERMISSION_CLR_N\") (uuid \"912e1bbe-40c3-4a05-8d8b-1383ba013012\"))",
-  "after": "(segment (start 21.4 84.4671) (end 23.4764 84.4671) (width 0.15) (layer \"F.Cu\") (net \"USB_PERMISSION_CLR_N\") (uuid \"912e1bbe-40c3-4a05-8d8b-1383ba013012\"))",
-  "reason": "Dangling-left tail had a live R115.2 branch at X21.4,Y84.4671. Retain from that exact junction to original right end; only left open extension is removed.",
-  "native_partition_verification_pending": true
-}

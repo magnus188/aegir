@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\\"name\\\": \\\"Trimix_Enclosure_A3_PCBFit v0\\\", \\\"data_file_id\\\": \\\"/Users/magnustrandokken/Library/Application Support/Autodesk/Autodesk Fusion 360/X6L29HY9JGN9A3AA/W.login/F/_Trimix_Enclosure_A3_PCBFit.a996de62-b471-40f6-a32d-7c91ca415257.f3d\\\", \\\"version\\\": 1, \\\"folder\\\": \\\"Trimix analyzer\\\", \\\"timeline\\\": 1078, \\\"occurrences\\\": 69, \\\"source_sha256\\\": \\\"4b96520e53cada5e54fdb7040b42f5d6c936345fef0a05a021a3819fd364bebb\\\"}\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

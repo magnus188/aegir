@@ -1,8 +1,0 @@
-{
-  "status": "isolated_obstacle_source_not_release",
-  "source_sha256": "3a4602e834c0548dcf404e043945873e9a373d8839c6478f86059c6d80bbd1a0",
-  "resistor_delta_sha256": "1a1c3adaa42d9b84661fc425afeb34b2380425f3487c3d4c2575b6ed716da6f1",
-  "output_sha256": "817a3f8c8ad51f40706cee62c9028a691af2ad19b233cdbb186b2b0de57e8ae9",
-  "expected_known_unresolved_C116_CHG_collision": true,
-  "actual_R118_R119_delta_guarded": true
-}

@@ -1,3 +1,7 @@
 .runtime_lib/
 isolated-bambu-data/
 **/__pycache__/
+# Regenerated slicer outputs; keep the editable .3mf project files.
+**/result.json
+**/slice-result.json
+**/plate_*.gcode

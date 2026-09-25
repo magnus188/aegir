@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"error\": \"Traceback (most recent call last):\\n  File \\\"<string>\\\", line 40, in <module>\\n  File \\\"<string>\\\", line 38, in run\\n  File \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/system-review/mechanical/scripts/review_checkpoint.py\\\", line 326, in verify_m2\\n    _require(before == export['state'], 'Current source differs from exported checkpoint')\\n    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\n  File \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/system-review/mechanical/scripts/review_checkpoint.py\\\", line 34, in _require\\n    raise RuntimeError(message)\\nRuntimeError: Current source differs from exported checkpoint\\n\",\n    \"success\": false\n}",
-      "type": "text"
-    }
-  ]
-}

@@ -1,8 +1,0 @@
-{
-  "original_input_sha256": "817a3f8c8ad51f40706cee62c9028a691af2ad19b233cdbb186b2b0de57e8ae9",
-  "refilled_baseline_sha256": "0bb3a6fed82bd5744ecc6112659de33dea331acfdfd5a333a21ad48f1e79a6f5",
-  "same_candidate_project_sha256": "764a99bd2045ba162dab08818d38304e6dc06a3ee1f6eb48818d12a3a1fa8e8b",
-  "same_candidate_rules_sha256": "d98f09ae243f23089c8acb7c65119db01ae3bad6c7568f1ffeb7d472af0d5085",
-  "reason": "Overlay source saved-fill predates resistor changes; refill unchanged baseline copper under same settings before comparison",
-  "release": false
-}

@@ -1,9 +1,0 @@
-{
-  "board": "/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/system-review/electrical/routing-candidate/bypass-route-proposal/frozen-out-input-stage.kicad_pcb",
-  "sha256": "996e9676ff714fa5d2dd904934af3e44114bcfe34cb4e7035ef05024aedc1189",
-  "scope": "F/B/In1 exact copper and selected pads; diagnostic stage, not final routing",
-  "visual_review": {
-    "status": "passed digitally",
-    "scope": "Inspected all three panels: F protected bridge, B input-capacitor path and GND via, and continuous In1 reference at this stage. DVDT intentionally still open. No thermal or global plane proof."
-  }
-}

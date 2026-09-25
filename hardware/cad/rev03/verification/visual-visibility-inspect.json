@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\\"analyses_properties\\\": [\\\"accessibilityAnalyses\\\", \\\"cast\\\", \\\"classType\\\", \\\"count\\\", \\\"curvatureCombAnalyses\\\", \\\"curvatureMapAnalyses\\\", \\\"draftAnalyses\\\", \\\"environmentMapAnalyses\\\", \\\"isLightBulbOn\\\", \\\"isValid\\\", \\\"isoCurveAnalyses\\\", \\\"item\\\", \\\"itemByName\\\", \\\"minimumRadiusAnalyses\\\", \\\"objectType\\\", \\\"sectionAnalyses\\\", \\\"this\\\", \\\"thisown\\\", \\\"zebraAnalyses\\\"], \\\"sections\\\": [{\\\"isLightBulbOn\\\": \\\"False\\\", \\\"isVisible\\\": \\\"False\\\", \\\"name\\\": \\\"A-A measured battery and display stack\\\"}], \\\"cover\\\": [[\\\"02 Single rear cover:1\\\", true, [[\\\"Single screw-fastened rear cover\\\", false, false]]]]}\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

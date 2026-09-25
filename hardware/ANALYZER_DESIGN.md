@@ -1,15 +1,15 @@
-# Trimix analyser — whole-system review
+# Ziphius — whole-system review
 
 **Order status: HOLD.** Open `pcb/analyzer/Trimix_Analyzer.kicad_pro` for the
 current main design and `pcb/usb-input/Trimix_USB_Input.kicad_pro` for the
 thin USB daughterboard. The [system-review package](system-review/README.md)
 contains current electrical, software and mechanical evidence. Earlier designs
-are preserved, including this document's
-[previous version](system-review/baseline-docs/ANALYZER_DESIGN.md).
+are available through Git history, including the previous version of this
+document.
 
 The approved A3 exterior remains 85 × 180 × 43 mm. The separate Fusion design
-is `Trimix_Enclosure_A3_SystemReview`; earlier PCBFit geometry is a preserved
-baseline. A clear placement or CAD check is not a routed fabrication release.
+is `Trimix_Enclosure_A3_SystemReview`; earlier PCBFit geometry is available
+through Git history. A clear placement or CAD check is not a fabrication release.
 
 ## Installed modules and supply domains
 
@@ -71,7 +71,7 @@ of a specified startup-current maximum remain qualification inputs.
 ## Software and harness contract
 
 The authoritative logical mapping is
-[`main/hardware_contract.h`](../main/hardware_contract.h), checked against
+[`main/hardware_contract.h`](../software/firmware/main/hardware_contract.h), checked against
 the [schematic contract](system-review/electrical/interface-contract.md).
 JP1 physical pitch, orientation and mating height are still unconfirmed.
 
@@ -107,10 +107,10 @@ No device was flashed or updated during the review.
 
 ## Acceptance
 
-Use the [verification receipt](system-review/verification/README.md), fresh
+Use the [verification records](system-review/verification/README.md), fresh
 native ERC/DRC/netlist checks and final CAD imports together. Unsupported
-models, unresolved mates, component tolerances and unfinished routing remain
-visible release gates. Physical charging, thermal, fit, seal and reference-gas
+models, unresolved mates, component tolerances and supplier process acceptance
+remain visible release gates. Physical charging, thermal, fit, seal and reference-gas
 tests remain pending. The ±0.2-point O₂ and ±0.5-point He figures are unproven
 targets. Showcase, production print preparation and purchasing remain paused.
 

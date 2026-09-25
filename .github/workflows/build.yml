@@ -15,6 +15,9 @@ jobs:
   build:
     name: Build ESP32-P4 Firmware
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: software/firmware
 
     steps:
       - name: Checkout code
@@ -33,7 +36,7 @@ jobs:
         with:
           esp_idf_version: v5.5.4
           target: esp32p4
-          path: .
+          path: software/firmware
           command: >-
             idf.py -B build/esp32p4-pre3
             -D IDF_TARGET=esp32p4
@@ -48,8 +51,8 @@ jobs:
 
       - name: Check pre-v3 firmware size
         env:
-          BUILD_DIR: ${{ github.workspace }}/build/esp32p4-pre3
-          PARTITIONS_FILE: ${{ github.workspace }}/partitions.esp32p4.pre3.csv
+          BUILD_DIR: ${{ github.workspace }}/software/firmware/build/esp32p4-pre3
+          PARTITIONS_FILE: ${{ github.workspace }}/software/firmware/partitions.esp32p4.pre3.csv
         run: ./scripts/check_firmware_size.sh
 
       - name: Build v3+ ESP32-P4 firmware
@@ -57,7 +60,7 @@ jobs:
         with:
           esp_idf_version: v5.5.4
           target: esp32p4
-          path: .
+          path: software/firmware
           command: >-
             idf.py -B build/esp32p4-v3
             -D IDF_TARGET=esp32p4
@@ -67,7 +70,7 @@ jobs:
 
       - name: Check v3+ firmware size
         env:
-          BUILD_DIR: ${{ github.workspace }}/build/esp32p4-v3
+          BUILD_DIR: ${{ github.workspace }}/software/firmware/build/esp32p4-v3
         run: ./scripts/check_firmware_size.sh
 
       - name: Create pre-v3 factory image
@@ -75,7 +78,7 @@ jobs:
         with:
           esp_idf_version: v5.5.4
           target: esp32p4
-          path: .
+          path: software/firmware
           command: >-
             esptool.py --chip esp32p4 merge_bin
             --flash_mode dio --flash_freq 80m --flash_size 16MB
@@ -90,7 +93,7 @@ jobs:
         with:
           esp_idf_version: v5.5.4
           target: esp32p4
-          path: .
+          path: software/firmware
           command: >-
             esptool.py --chip esp32p4 merge_bin
             --flash_mode dio --flash_freq 80m --flash_size 32MB
@@ -103,19 +106,19 @@ jobs:
       - name: Upload firmware artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: trimix-analyzer-esp32p4-${{ github.sha }}
+          name: ziphius-esp32p4-${{ github.sha }}
           if-no-files-found: error
           path: |
-            build/esp32p4-pre3/Trimix_analyzer.bin
-            build/esp32p4-pre3/Trimix_analyzer.elf
-            build/esp32p4-pre3/Trimix_analyzer.map
-            build/esp32p4-pre3/flasher_args.json
-            build/esp32p4-v3/Trimix_analyzer.bin
-            build/esp32p4-v3/Trimix_analyzer.elf
-            build/esp32p4-v3/Trimix_analyzer.map
-            build/esp32p4-v3/flasher_args.json
-            Trimix_analyzer_esp32p4_pre3_factory_${{ github.sha }}.bin
-            Trimix_analyzer_esp32p4_v3_factory_${{ github.sha }}.bin
+            software/firmware/build/esp32p4-pre3/Trimix_analyzer.bin
+            software/firmware/build/esp32p4-pre3/Trimix_analyzer.elf
+            software/firmware/build/esp32p4-pre3/Trimix_analyzer.map
+            software/firmware/build/esp32p4-pre3/flasher_args.json
+            software/firmware/build/esp32p4-v3/Trimix_analyzer.bin
+            software/firmware/build/esp32p4-v3/Trimix_analyzer.elf
+            software/firmware/build/esp32p4-v3/Trimix_analyzer.map
+            software/firmware/build/esp32p4-v3/flasher_args.json
+            software/firmware/Trimix_analyzer_esp32p4_pre3_factory_${{ github.sha }}.bin
+            software/firmware/Trimix_analyzer_esp32p4_v3_factory_${{ github.sha }}.bin
 
       - name: Report build
         run: |

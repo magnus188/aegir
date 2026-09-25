@@ -3,7 +3,7 @@
 **Engineering draft; order and charging remain on hold.** The selected port is
 GCT USB4720-03-A on a separate 0.60 mm daughterboard. Its six-wire harness
 connects to the main PCB. Earlier two-wire/passive-Rd instructions are
-[superseded and archived](system-review/baseline-docs/USB_CHARGING.md).
+superseded and available through Git history.
 
 ## Connections
 

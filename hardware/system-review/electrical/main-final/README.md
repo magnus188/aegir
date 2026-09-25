@@ -1,6 +1,6 @@
 # Main PCB — routed prototype review package, HOLD
 
-The canonical KiCad project is [Trimix_Analyzer.kicad_pro](../../../pcb/analyzer/Trimix_Analyzer.kicad_pro). The board SHA256 is `0962ad86f9834ce71b6439d0f95db603753801153490e78f387a88521e582788`. It passes native DRC, connectivity and schematic parity with zero findings. The previous 9f274 source and delivery are preserved in `../routing-candidate/sensitive-layout-refinement/before-local-promotion/`; earlier checkpoints remain unchanged.
+The canonical KiCad project is [Trimix_Analyzer.kicad_pro](../../../pcb/analyzer/Trimix_Analyzer.kicad_pro). The board SHA256 is `0962ad86f9834ce71b6439d0f95db603753801153490e78f387a88521e582788`. It passes native DRC, connectivity and schematic parity with zero findings. Earlier board checkpoints remain available through Git history.
 
 ## Files to review
 

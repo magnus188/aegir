@@ -1,9 +1,0 @@
-{
-  "status": "OBSERVED_NATIVE_SAVED_CE_SET_SNAPSHOT",
-  "source_sha256": "3d72a8d43823f29553d900e0c0820aed391bd7e5e336b70a5869bc3f220a1962",
-  "source_path": "/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/system-review/electrical/routing-candidate/c105-sys-route-proposal/synchronized-r101/Trimix_Analyzer.kicad_pcb",
-  "snapshot_path": "/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/system-review/electrical/routing-candidate/c105-sys-route-proposal/synchronized-r101/power-scout/ce-set-3d72.kicad_pcb",
-  "matching_stage_sha256": "5d834d6f729e8633a2e5d3a5ccb0413e4dad094a3553483da543afbcdeb33c70",
-  "native_drc_sha256": "5c35e26ae32c75ed372277eb9e5dfe5f3ff34b79e7abf509dd264dc012aa22d1",
-  "source_bytes_unchanged_during_capture": true
-}

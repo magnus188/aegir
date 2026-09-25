@@ -6,7 +6,7 @@ documentation. This page and the files beside it describe the preserved A3 v3
 baseline. Use the PrintReview package's own verification record for its revised
 geometry and exports.
 
-**Status: editable engineering concept completed and reviewed; physical manufacture remains unqualified.** A3 has a **180 H x 85 W x 43 D mm body**, with measured display and occupied battery-holder envelopes retained. The complete modeled assembly is **180 H x 97 W x 43 D mm**, including the opposed gas-fitting references. Native Fusion and STEP are saved, and the STEP geometry-import verification passed. Revision 03/A2 remains a separate preserved design.
+**Status: editable engineering concept completed and reviewed; physical manufacture remains unqualified.** A3 has a **180 H x 85 W x 43 D mm body**, with measured display and occupied battery-holder envelopes retained. The complete modeled assembly is **180 H x 97 W x 43 D mm**, including the opposed gas-fitting references. Native Fusion and STEP are saved, and the STEP geometry-import verification passed. Revision 03/A2 remains available through Git history.
 
 This trades depth for a taller, wider body. Against A2's 125 H x 75 W x 56 D mm body, A3 is **23.2% thinner** but has **25.3% more body bounding-box volume** (657.9 versus 525.0 cm³). These are exterior rectangular-envelope comparisons, not material or internal free-space volumes. The measured factory display casing occupies **52.9% of the 180 x 85 mm front rectangle**; that percentage is not the illuminated screen area.
 

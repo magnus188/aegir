@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\\"stage\\\": \\\"chamber hardware\\\", \\\"occurrences\\\": 80, \\\"timeline\\\": 842, \\\"native\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/enclosure/rev03/Trimix_Enclosure_A2.f3d\\\"}\\n{\\\"stage\\\": \\\"drawing-derived CO and illustrative humidity detail\\\", \\\"occurrences\\\": 80, \\\"timeline\\\": 904, \\\"native\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/enclosure/rev03/Trimix_Enclosure_A2.f3d\\\"}\\n{\\\"stage\\\": \\\"parametric hardware mounting datums\\\", \\\"occurrences\\\": 80, \\\"timeline\\\": 936, \\\"native\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/enclosure/rev03/Trimix_Enclosure_A2.f3d\\\"}\\n{\\\"bound_occurrences\\\": 16}\\n{\\\"audit\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/enclosure/rev03/verification/model-audit.json\\\", \\\"status\\\": \\\"needs_review\\\", \\\"body_instances\\\": 118, \\\"occurrences\\\": 80, \\\"health_pass\\\": false, \\\"interference_count\\\": 39, \\\"hardware_totals\\\": {\\\"screw\\\": 22, \\\"insert\\\": 22}}\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

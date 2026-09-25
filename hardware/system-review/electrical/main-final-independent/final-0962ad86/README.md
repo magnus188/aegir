@@ -2,7 +2,7 @@
 
 **The exported geometry, physical copper connectivity and assembly ledgers pass. This is not a fabrication or assembly release.** The supplier must still accept the specified filled and capped holes; electrical, transient, thermal and physical-fit checks remain separate.
 
-This review is bound to board SHA256 **0962ad86f9834ce71b6439d0f95db603753801153490e78f387a88521e582788** and XML netlist **b04e4701898d62cb49b5adbc709e634b919f88fb2f1c1c36e5818ad94b2f4b08**. Inputs come from `routing-candidate/sensitive-layout-refinement/frozen-local-bundle/`. No native board, schematic, CAM or manufacturing input was changed. The earlier `final-9f274fdf/` review is preserved.
+This review is bound to board SHA256 **0962ad86f9834ce71b6439d0f95db603753801153490e78f387a88521e582788** and XML netlist **b04e4701898d62cb49b5adbc709e634b919f88fb2f1c1c36e5818ad94b2f4b08**. Inputs come from `routing-candidate/sensitive-layout-refinement/frozen-local-bundle/`. No native board, schematic, CAM or manufacturing input was changed. The earlier `final-9f274fdf/` review is available through Git history.
 
 ## Results
 

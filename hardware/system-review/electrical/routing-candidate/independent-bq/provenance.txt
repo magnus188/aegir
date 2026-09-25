@@ -1,1 +1,0 @@
-Local route helper is copied from route_multilayer_residuals.py; only raster bounds are restricted to X10..21,Y81..90 and irrelevant full-board failure-image cropping removed. Native .pro/.dru are byte-identical copies to prevent any write through symlinks. Schematics/libraries are read-only symlinks. No source helper/native edits.

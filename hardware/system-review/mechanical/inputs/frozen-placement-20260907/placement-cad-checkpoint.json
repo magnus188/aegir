@@ -1,7 +1,0 @@
-{
-  "hardware/kicad/analyzer/Trimix_Analyzer.kicad_pcb": "a3b5947a4b3d53cc4f905c464f7975963e18bc7d611ce47a21f470bf111a5346",
-  "hardware/system-review/electrical/Trimix_Main_PCB_Reviewed_Placement.step": "a28de6b77954cc1ed15c7fb7e681788cbee7cf02f366d233ea36654501bf5bfc",
-  "hardware/system-review/electrical/component-height-contract.csv": "cbc3d1e09006980b8630642139d062a3c6a74c14f8d52133f8077be8a7dc5223",
-  "hardware/system-review/electrical/component-height-contract.json": "f6f59586653d67325b421cda03d9ed9b8c2f27e5a98413d7ce5a9c8d850d32c5",
-  "stage": "Fixed geometry with compact12-part B.Cu OVP cluster and draft copper; native DRC0 violations,254 unconnected"
-}

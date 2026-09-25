@@ -1,8 +1,0 @@
-{
-  "before_sha256": "cdc602aec2181bd4a6e054faf6b2e9b1e31838327c74940e3e6cc716c6d2043d",
-  "after_sha256": "a903d1d4c50c76d4754f7b4e5ee32dc18568b7fdbf3bf5b027a9a7ec8055bd18",
-  "reason": "Native Matrix3D.asArray returns tuple, JSON persisted arrays are lists; normalize those two sequence fields to lists before comparison. Exact scalar values, geometry, poses, tolerances, source receipts and archive unchanged.",
-  "native_diagnosis": "state-diagnosis.json",
-  "diagnosis_normalized_state_matches": true,
-  "geometry_changes": false
-}

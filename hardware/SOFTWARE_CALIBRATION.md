@@ -2,7 +2,7 @@
 
 This revision keeps AO₂, R17JJ-CCR and MD62. It replaces the two ADC chips and the helium trimmer, and adds real acquisition, individual calibration records and a touchscreen workflow. **The accuracy targets remain unproven: ±0.2 percentage points O₂ and ±0.5 points He over the conditions actually tested.** No physical gas measurements were performed during this implementation.
 
-The board remains under active electrical, routing and fit review. Use the [current system-review package](system-review/README.md) for order status and source-bound checks. Showcase, production printing and purchasing remain paused. The [previous version of this document](system-review/baseline-docs/SOFTWARE_CALIBRATION.md) is preserved.
+The board remains under active electrical, routing and fit review. Use the [current system-review package](system-review/README.md) for order status and source-bound checks. Showcase, production printing and purchasing remain paused. The previous version of this document is available through Git history.
 
 ## What changed on the board
 
@@ -60,7 +60,7 @@ All boxes below are **pending physical work**. Do not mark a box complete from C
 - [ ] Check oxygen-cell open/short/reversed and low-output behavior; compare both channels against known gas. Check MD62 heater/cable faults, stale ADC/CO data and fault recovery. Confirm safe shutdown and charging behavior separately.
 - [ ] Validate actual elbows, mating plugs, solder, cable bends and battery disconnection in the enclosure before final placement/routing lock.
 
-The firmware now emits raw `CSV1` characterization rows with individual sample timestamps, sensor identity, configuration, calibration revision, environment and faults. Convert a captured serial log using `python3 scripts/extract_characterization.py serial.log measurements.csv`; the extractor opens no device and performs no flashing. The physical BME280 driver is implemented; absent or faulted environment remains unavailable. Use the [manual bench-log template](pcb/integration/verification/software-calibration/characterization-log.csv) for reference-gas and instrument information alongside raw captures. No measured dataset exists yet. Calendar-age reminders and automatic aging-based recalibration prompts are not implemented.
+The firmware now emits raw `CSV1` characterization rows with individual sample timestamps, sensor identity, configuration, calibration revision, environment and faults. Convert a captured serial log using `python3 software/firmware/scripts/extract_characterization.py serial.log measurements.csv`; the extractor opens no device and performs no flashing. The physical BME280 driver is implemented; absent or faulted environment remains unavailable. Use the [manual bench-log template](characterization-log-template.csv) for reference-gas and instrument information alongside raw captures. No measured dataset exists yet. Calendar-age reminders and automatic aging-based recalibration prompts are not implemented.
 
 ## CO remains CO
 
@@ -70,7 +70,7 @@ The ZE07-CO UART decoder receives documented 9600-baud frames, checks framing/ch
 
 The current [verification package](system-review/verification/README.md) binds
 both firmware builds, host/sanitizer tests, logical pin checks and UI captures
-to source hashes. Earlier `pcb/integration/verification/software-calibration/` evidence
+to source hashes. Earlier software-calibration integration evidence in Git history
 remains a historical checkpoint; its footprint counts and DRC totals do not
 describe the current board.
 

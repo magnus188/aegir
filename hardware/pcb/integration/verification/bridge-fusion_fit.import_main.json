@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\\"report\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/pcb-a3/verification/main-step-raw.json\\\", \\\"keys\\\": [\\\"path\\\", \\\"occurrence\\\", \\\"bounds_mm\\\", \\\"bodies\\\"], \\\"list_counts\\\": {\\\"bounds_mm\\\": 2, \\\"bodies\\\": 685}}\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

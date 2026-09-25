@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\\"stage\\\": \\\"cartridge direct-cavity rebuild\\\", \\\"occurrences\\\": 80, \\\"timeline\\\": 995, \\\"native\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/enclosure/rev03/Trimix_Enclosure_A2.f3d\\\"}\\n{\\\"audit\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/enclosure/rev03/verification/model-audit.json\\\", \\\"status\\\": \\\"needs_review\\\", \\\"body_instances\\\": 118, \\\"occurrences\\\": 80, \\\"health_pass\\\": false, \\\"interference_count\\\": 0, \\\"hardware_totals\\\": {\\\"screw\\\": 22, \\\"insert\\\": 22}}\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

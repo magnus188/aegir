@@ -6,9 +6,12 @@ The eleven revised Fusion parts have separate editable, sliced `.3mf` projects
 in [`bambu-studio/pla/`](bambu-studio/pla/) and
 [`bambu-studio/petg/`](bambu-studio/petg/). Each project contains one part on
 one plate. Eight exact-feature coupons are in the same material folders with
-names beginning `C01` through `C08`. Software integration specimens and
-unsupported diagnostic baselines live separately in `diagnostics/`; they are
-not part of the 38 delivered part/coupon projects.
+names beginning `C01` through `C08`. Earlier diagnostic baselines are available
+through Git history; they are not part of the 38 delivered part/coupon projects.
+
+Standalone `plate_*.gcode` and slicer result JSON files are generated outputs
+and are not kept in Git. Open and reslice the `.3mf` projects for the actual
+printer, filament and plate before printing.
 
 Start with the coupons and the material you will actually use. Open a `.3mf` in Bambu Studio, confirm the real spool and plate, inspect the model and supports, then decide whether to print. The prepared profiles use Generic PLA or Generic PETG and a Textured PEI Plate; they are not a record of the user's installed spool or plate.
 

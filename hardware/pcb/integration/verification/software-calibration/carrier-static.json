@@ -1,7 +1,0 @@
-{
-  "sources": 1,
-  "candidate_pairs": 16,
-  "hits": [],
-  "errors": [],
-  "scope": "Exact solid tests between imported PCB/pads/components and existing enclosure instances; contact only is excluded. Some purchased-part bodies are approximate reference models."
-}

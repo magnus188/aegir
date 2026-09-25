@@ -1,9 +1,0 @@
-# Independent REGN placement review
-
-Retain this as an unresolved layout concern; neither the inherited route nor the ungrounded relocation has been electrically qualified. TI explicitly asks for a nearby REGN ceramic capacitor to analog ground and short decoupling connections. REGN supplies the internal gate drivers as well as bias circuits. The datasheet gives no trace-length threshold that proves failure. [TI BQ25895, pin22 and sections8.2.3.1/11.1](https://www.ti.com/lit/ds/symlink/bq25895.pdf).
-
-The inherited path totals8.884mm:2.710mm on F.Cu and6.174mm on In2.Cu, with two barrel transitions. The root's [native witness](../inherited-native-witness.json) estimates57.47mΩ using complete trace-item lengths and nominal25µm plating/1.6mm thickness, or approximately1.15mV at20mA. This is not exact end-to-end resistance. The earlier67.2mΩ calculation is retained in the JSON as a deliberately conservative uniform15.2µm-thick/.15mm-wide trace approximation, excluding vias; it is not the actual mixed-layer path. Neither DC calculation bounds gate-current pulse impedance, ringing, regulator stability, or capacitor effectiveness.
-
-The proposed unchanged1206 capacitor atB(12.8,78.6),90° has a short REGN-side opportunity but no completed ground return. A deceptively clear site at(14.0,76.5) lies in the inductor's explicit via keepout. The270° flip's lower ground-landing probes are blocked by real switching/PMID lands and PACK copper. No simple grounded relocation was established.
-
-A proven voltage-sensing-only USB branch may be eligible for a local reroute, but its full endpoint audit was not completed before synchronized control routing resumed. Do not narrow any source-current trunk on the basis of this note. Exact source hashes, probe results and limits are inreview.json andcandidate90-top.json/candidate270.json. All authoritative files were read-only; no native board was saved by this review.

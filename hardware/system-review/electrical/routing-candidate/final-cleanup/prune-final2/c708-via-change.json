@@ -1,8 +1,0 @@
-{
-  "source_board_sha256": "34588e9776c5b2daf5d7e29db474c0cfe668668e6fc7f251925162d6f1a643ce",
-  "before_via": "(via (at 5.35 65.5) (size 0.6) (drill 0.3) (layers \"F.Cu\" \"B.Cu\") (net \"GND\") (uuid \"c786c17a-17a5-467f-8450-1c81b64e1958\"))",
-  "after_via": "(via (at 4.95 63.875) (size 0.6) (drill 0.3) (layers \"F.Cu\" \"B.Cu\") (net \"GND\") (uuid \"c786c17a-17a5-467f-8450-1c81b64e1958\"))",
-  "added_segment": "(segment (start 4.95 65.0) (end 4.95 63.875) (width 0.35) (layer \"F.Cu\") (net \"GND\") (uuid \"9c287f6c-ea33-52f5-9f9a-19bd647c303a\"))",
-  "all_other_copper_and_footprints_preserved": true,
-  "status": "Isolated proposal awaiting native/ground checks"
-}

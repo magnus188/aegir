@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\\"removed_from_current_assembly\\\": [\\\"Carrier / future PCB allocation \\\\u2014 layout pending:1\\\", \\\"USB A3 \\\\u2014 supported 0.60 mm daughterboard provisional:1\\\"], \\\"history_preserved\\\": true}\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

@@ -1,8 +1,0 @@
-# Production ESP32-P4 revisions v3.0 and newer are not binary compatible with
-# pre-v3 silicon. Build a separate image that accepts v3.0 and v3.1 boards.
-# CONFIG_ESP32P4_SELECTS_REV_LESS_V3 is not set
-CONFIG_ESP32P4_REV_MIN_300=y
-CONFIG_TRIMIX_ENABLE_WIFI=y
-CONFIG_ESPTOOLPY_FLASHSIZE_32MB=y
-CONFIG_ESPTOOLPY_FLASHSIZE="32MB"
-CONFIG_PARTITION_TABLE_CUSTOM_FILENAME="partitions.csv"

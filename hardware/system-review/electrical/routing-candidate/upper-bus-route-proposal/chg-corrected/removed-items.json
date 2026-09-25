@@ -1,6 +1,0 @@
-[
-  {
-    "uuid": "03fb83e2-af05-49db-9428-77bb39e6c5ac",
-    "exact_sexpr": "(segment (start 13.946 82.3733) (end 21.1164 75.2029) (width 0.15) (layer \"In2.Cu\") (net \"I2C_SDA\") (uuid \"03fb83e2-af05-49db-9428-77bb39e6c5ac\"))"
-  }
-]

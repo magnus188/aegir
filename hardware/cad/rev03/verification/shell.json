@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\\"stage\\\": \\\"shell\\\", \\\"occurrences\\\": 2, \\\"timeline\\\": 28, \\\"native\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/enclosure/rev03/Trimix_Enclosure_A2.f3d\\\"}\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

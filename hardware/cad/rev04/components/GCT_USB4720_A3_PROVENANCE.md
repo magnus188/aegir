@@ -3,7 +3,7 @@
 The purchased connector reference is **GCT USB4720-03-A**. Geometry in
 `usb_a3.py` is reconstructed from the [GCT USB4720 Rev B drawing](https://gct.co/files/drawings/usb4720.pdf),
 not an authenticated supplier STEP model. The retained source PDF is
-`../../rev03/components/GCT_USB4720_RevB_drawing.pdf`; its SHA-256 is
+`../../../pcb/usb-input/reference/GCT_USB4720_RevB_drawing.pdf`; its SHA-256 is
 `b3347df8cf39cc4f72e60f88708d3ddedec681d77bfcbbc9a3a5fd53975a5be6`.
 
 The A3 assembly opens toward −Y. The small **14 × 8 mm metal bezel** is flush

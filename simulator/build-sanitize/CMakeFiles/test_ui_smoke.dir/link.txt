@@ -1,1 +1,0 @@
-/usr/bin/c++ -fsanitize=address,undefined -fno-omit-frame-pointer -Wl,-search_paths_first -Wl,-headerpad_max_install_names -fsanitize=address,undefined CMakeFiles/test_ui_smoke.dir/tests/test_ui_smoke.cpp.o -o test_ui_smoke   -L/opt/homebrew/lib  -Wl,-rpath,/opt/homebrew/lib libtrimix_host_app.a lvgl/lib/liblvgl.a -lSDL2

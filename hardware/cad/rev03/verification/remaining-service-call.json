@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\\"report\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/enclosure/rev03/verification/service-paths-pack_rotated-display-usb_clamp-usb.json\\\", \\\"status\\\": \\\"blocked_or_needs_review\\\", \\\"tests\\\": [{\\\"name\\\": \\\"pack_rotated\\\", \\\"status\\\": \\\"clear_at_sampled_poses\\\", \\\"collisions\\\": 0}, {\\\"name\\\": \\\"display\\\", \\\"status\\\": \\\"clear_at_sampled_poses\\\", \\\"collisions\\\": 0}, {\\\"name\\\": \\\"usb_clamp\\\", \\\"status\\\": \\\"clear_at_sampled_poses\\\", \\\"collisions\\\": 0}, {\\\"name\\\": \\\"usb\\\", \\\"status\\\": \\\"blocked_at_sampled_poses\\\", \\\"collisions\\\": 13}]}\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

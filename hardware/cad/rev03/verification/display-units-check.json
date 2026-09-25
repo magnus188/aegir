@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\\"display_units_enum\\\": 0, \\\"default_length_units\\\": \\\"mm\\\", \\\"millimetre_enum\\\": 0, \\\"document\\\": \\\"Trimix_Enclosure_A2 v3\\\", \\\"cloud_version\\\": 3}\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

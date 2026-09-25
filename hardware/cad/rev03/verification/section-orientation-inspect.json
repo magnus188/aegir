@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\\"folder\\\": true, \\\"visible\\\": true, \\\"transform\\\": [1.0, 0.0, 0.0, 3.75, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0], \\\"attributes\\\": [\\\"attributes\\\", \\\"cast\\\", \\\"classType\\\", \\\"cutPlane\\\", \\\"deleteMe\\\", \\\"entityToken\\\", \\\"flip\\\", \\\"initialPosition\\\", \\\"isHatchShown\\\", \\\"isLightBulbOn\\\", \\\"isValid\\\", \\\"isVisible\\\", \\\"name\\\", \\\"objectType\\\", \\\"sectionColor\\\", \\\"this\\\", \\\"thisown\\\", \\\"transform\\\"]}\\n/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/enclosure/rev03/views/section-left-test.png\\n/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/enclosure/rev03/views/section-right-flipped-test.png\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

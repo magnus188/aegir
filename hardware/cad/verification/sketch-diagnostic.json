@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"sketch Diagnostic constraints 1 dims 1\\npoint (0.0, 0.0, 0.0) fixed True constrained True\\npoint (-4.75, 0.0, 0.0) fixed False constrained True\\npoint (4.75, 0.0, 0.0) fixed False constrained False\\npoint (4.75, 18.0, 0.0) fixed False constrained False\\npoint (-4.75, 18.0, 0.0) fixed False constrained False\\nline (-4.75, 0.0, 0.0) (4.75, 0.0, 0.0) False\\nline (4.75, 0.0, 0.0) (4.75, 18.0, 0.0) False\\nline (4.75, 18.0, 0.0) (-4.75, 18.0, 0.0) False\\nline (-4.75, 18.0, 0.0) (-4.75, 0.0, 0.0) False\\nconstraints ['adsk::fusion::HorizontalPointsConstraint']\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

@@ -1,9 +1,12 @@
-# ESP32 specific build files
-build/
-web/build/
-sdkconfig
-sdkconfig.old
-managed_components/
+# ESP32 and host build outputs
+/software/firmware/build/
+/software/firmware/simulator/build*/
+/software/firmware/tests/build/
+/software/firmware/web/build/
+/software/firmware/sdkconfig
+/software/firmware/sdkconfig.old
+/software/firmware/managed_components/
+**/sdkconfig
 
 # ESP-IDF
 *.bin
@@ -23,3 +26,6 @@ managed_components/
 # Temporary files
 *.tmp
 *.log
+.DS_Store
+__pycache__/
+*.pyc

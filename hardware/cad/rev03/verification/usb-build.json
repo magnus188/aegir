@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"error\": \"Traceback (most recent call last):\\n  File \\\"<string>\\\", line 42, in <module>\\n  File \\\"<string>\\\", line 40, in run\\n  File \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/enclosure/rev03/scripts/usb_details.py\\\", line 149, in build_usb\\n    _rounded(panel, \\\"GCT 8.44 x 2.66 throat R1.05\\\", \\\"CaseWidth-1.91 mm\\\", \\\"1.92 mm\\\",\\n    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\n             8.44, 2.66, 1.05, \\\"cut\\\", panel_body)\\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\n  File \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/enclosure/rev03/scripts/usb_details.py\\\", line 87, in _rounded\\n    sketch = _rounded_profile(component, name + \\\" profile\\\", x, width, height, radius)\\n  File \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/enclosure/rev03/scripts/usb_details.py\\\", line 82, in _rounded_profile\\n    raise RuntimeError(\\\"Drawing-reference profile did not form one constrained region: \\\" + name)\\nRuntimeError: Drawing-reference profile did not form one constrained region: GCT 8.44 x 2.66 throat R1.05 profile\\n\",\n    \"success\": false\n}",
-      "type": "text"
-    }
-  ]
-}

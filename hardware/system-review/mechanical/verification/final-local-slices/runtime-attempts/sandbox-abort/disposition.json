@@ -1,5 +1,0 @@
-{
-  "status": "Bambu child aborted (-6) during initial sandboxed archive export; no accepted project",
-  "action": "Retry same source and fixed profiles with local desktop execution permission. No geometry or firmware changes.",
-  "reason_not_assigned_to_mesh": "Mesh topology/native-volume gate passed; log T-command diagnostics also appear in prior successful H2D runs. Exact abort cause not yet established."
-}

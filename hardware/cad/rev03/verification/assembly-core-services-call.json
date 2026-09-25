@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\\"part_definitions\\\": 43, \\\"selection_sets\\\": 9, \\\"parts_csv\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/enclosure/rev03/PARTS.csv\\\"}\\n{\\\"report\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/enclosure/rev03/verification/service-paths-cover-disconnect-carrier-chamber.json\\\", \\\"status\\\": \\\"sampled_paths_clear_with_prerequisites\\\", \\\"tests\\\": [{\\\"name\\\": \\\"cover\\\", \\\"status\\\": \\\"clear_at_sampled_poses\\\", \\\"collisions\\\": 0}, {\\\"name\\\": \\\"disconnect\\\", \\\"status\\\": \\\"clear_at_sampled_poses\\\", \\\"collisions\\\": 0}, {\\\"name\\\": \\\"carrier\\\", \\\"status\\\": \\\"clear_at_sampled_poses\\\", \\\"collisions\\\": 0}, {\\\"name\\\": \\\"chamber\\\", \\\"status\\\": \\\"clear_at_sampled_poses\\\", \\\"collisions\\\": 0}]}\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

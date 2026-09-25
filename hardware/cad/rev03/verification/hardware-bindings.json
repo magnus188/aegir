@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\\"stage\\\": \\\"parametric hardware mounting datums\\\", \\\"occurrences\\\": 35, \\\"timeline\\\": 395, \\\"native\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/enclosure/rev03/Trimix_Enclosure_A2.f3d\\\"}\\n{\\\"bound_occurrences\\\": 8}\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

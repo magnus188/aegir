@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\\"stage\\\": \\\"purchased display detail positioning\\\", \\\"occurrences\\\": 80, \\\"timeline\\\": 983, \\\"native\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/enclosure/rev03/Trimix_Enclosure_A2.f3d\\\"}\\n{\\\"parameter_test\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/enclosure/rev03/verification/parameter-regeneration.json\\\", \\\"pass\\\": true, \\\"tests\\\": [{\\\"parameter\\\": \\\"CaseWidth\\\", \\\"test_expression\\\": \\\"77 mm\\\", \\\"health_pass\\\": true, \\\"interference_count\\\": 0, \\\"purchased_dimensions_changed\\\": []}, {\\\"parameter\\\": \\\"CaseHeight\\\", \\\"test_expression\\\": \\\"127 mm\\\", \\\"health_pass\\\": true, \\\"interference_count\\\": 0, \\\"purchased_dimensions_changed\\\": []}, {\\\"parameter\\\": \\\"CaseDepth\\\", \\\"test_expression\\\": \\\"58 mm\\\", \\\"health_pass\\\": true, \\\"interference_count\\\": 0, \\\"purchased_dimensions_changed\\\": []}]}\\n{\\\"report\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/enclosure/rev03/verification/service-paths-usb-cover.json\\\", \\\"status\\\": \\\"sampled_paths_clear_with_prerequisites\\\", \\\"tests\\\": [{\\\"name\\\": \\\"usb\\\", \\\"status\\\": \\\"clear_at_sampled_poses\\\", \\\"collisions\\\": 0}, {\\\"name\\\": \\\"cover\\\", \\\"status\\\": \\\"clear_at_sampled_poses\\\", \\\"collisions\\\": 0}]}\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

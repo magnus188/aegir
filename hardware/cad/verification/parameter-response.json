@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\\"parameter_regeneration\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/enclosure/verification/parameter-regeneration.json\\\", \\\"status\\\": \\\"pass\\\"}\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

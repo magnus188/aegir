@@ -1,6 +1,0 @@
-{
-  "source_sha256": "e62c867a411b3405b8ad550557ffd93f6c5e90cd4419dc4b36545040d038bc6a",
-  "filled_native_sha256": "7d0f2177383f54a5215c5e32b957a53b4c84ef03d3b21b940e5b9e328355a5ea",
-  "purpose": "Refill the accepted HOST jog on the coordinated placement before baseline DRC; source copper/poses/nets are not edited.",
-  "original_unfilled_report": "before-stale-fill-drc.json"
-}

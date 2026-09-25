@@ -1,7 +1,0 @@
-{
-  "removed_raw": [
-    "(segment\n\t\t(start 1.1 83)\n\t\t(end 3.3 83)\n\t\t(width 0.15)\n\t\t(layer \"In2.Cu\")\n\t\t(net \"/01  CHARGING + BATTERY/BQ_REGN\")\n\t\t(uuid \"2cc61f3a-6fc8-4a20-889d-485b5c39444c\")\n\t)",
-    "(segment\n\t\t(start 3.3 83)\n\t\t(end 3.55 83.25)\n\t\t(width 0.15)\n\t\t(layer \"In2.Cu\")\n\t\t(net \"/01  CHARGING + BATTERY/BQ_REGN\")\n\t\t(uuid \"9709b99f-8bba-4fdb-a3e2-084d871dff7a\")\n\t)"
-  ],
-  "reason": "Two immediately preceding sections of the same open In2 spur end at the retained1.1,83 junction. The separate B and lower In2 REGN paths at that junction remain. Native pad partitions must match before adoption."
-}

@@ -1,3 +1,0 @@
-(sym_lib_table (version 7)
- (lib (name "Trimix_Power") (type "KiCad") (uri "${KIPRJMOD}/Trimix_Power.kicad_sym") (options "") (descr "Preserved P1 power symbols"))
- (lib (name "Trimix_Analyzer") (type "KiCad") (uri "${KIPRJMOD}/Trimix_Analyzer.kicad_sym") (options "") (descr "A2 datasheet pin-mapped review symbols")))

@@ -62,7 +62,7 @@ an order. The nominal board thickness requirement is independently satisfied
 by 0.60 ±0.10 mm; that alone does not resolve the other conflicts.
 
 The source [GCT Rev B drawing](https://gct.co/files/drawings/usb4720.pdf) is saved
-unchanged at `hardware/cad/rev03/components/GCT_USB4720_RevB_drawing.pdf`.
+unchanged at `hardware/pcb/usb-input/reference/GCT_USB4720_RevB_drawing.pdf`.
 A rearward SMT-land shift was considered but rejected because solder-tail
 coverage and tolerance could not be proved from the available drawing. Moving
 the rear cutout to one end of its tolerance consumes the available tolerance

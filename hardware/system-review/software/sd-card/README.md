@@ -88,7 +88,7 @@ teardown, and handles partially failed mounts without retaining freed card point
 The pinned ESP-Hosted patch is generated into each build directory after exact
 source/hash checks; managed component originals are unchanged. Dependency drift
 fails configuration rather than silently using an incompatible patch. See
-[the patch and board-source review](../../../../patches/esp_hosted/README.md).
+[the patch and board-source review](../../../../software/firmware/patches/esp_hosted/README.md).
 
 The authoritative Guition schematic is retained at
 `hardware/system-review/integration-photo/guition-manufacturer/JC4880P443_V1.0.pdf`,

@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\\"generated_at_utc\\\": \\\"2026-09-07T18:40:10.710532+00:00\\\", \\\"documents\\\": [{\\\"name\\\": \\\"FlowGrid R3 - Rectangular arm concept v2\\\", \\\"id\\\": \\\"urn:adsk.wipprod:dm.lineage:97i5nqfTQm-Vc-Q7RvdOGg\\\", \\\"version\\\": 2, \\\"modified\\\": false, \\\"saved\\\": true, \\\"active\\\": false, \\\"timeline\\\": 140}, {\\\"name\\\": \\\"FlowGrid R3.1 - Printed interfaces v1\\\", \\\"id\\\": \\\"urn:adsk.wipprod:dm.lineage:mMHkw6g8QlKc4sITm-ULiQ\\\", \\\"version\\\": 1, \\\"modified\\\": true, \\\"saved\\\": true, \\\"active\\\": false, \\\"timeline\\\": 429}, {\\\"name\\\": \\\"Trimix_Enclosure_A3_SystemReview v7\\\", \\\"id\\\": \\\"urn:adsk.wipprod:dm.lineage:geOTCCd5RLSccJsKjpLS-w\\\", \\\"version\\\": 7, \\\"modified\\\": false, \\\"saved\\\": true, \\\"active\\\": true, \\\"timeline\\\": 1197}, {\\\"name\\\": \\\"FlowGrid R4 - Simplified printed mount v4\\\", \\\"id\\\": \\\"urn:adsk.wipprod:dm.lineage:7lqiUoNjS1uB9CL95jb_jQ\\\", \\\"version\\\": 4, \\\"modified\\\": false, \\\"saved\\\": true, \\\"active\\\": false, \\\"timeline\\\": 803}], \\\"inspection_only\\\": true, \\\"document_activation_or_mutation\\\": false}\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

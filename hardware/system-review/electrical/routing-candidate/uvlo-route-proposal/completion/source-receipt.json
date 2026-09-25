@@ -1,7 +1,0 @@
-{
-  "placement_sha256": "8c90db3fd476224f71b741b466f262f9c1d9128ef50bd01e1224556a9509cba0",
-  "host_gateway_patch_sha256": "810a97cc5d30a172e71507233687ea488c48f62a2205a78ba3bad520a124c18d",
-  "before_sha256": "e62c867a411b3405b8ad550557ffd93f6c5e90cd4419dc4b36545040d038bc6a",
-  "depends_on_coordinated_placement_and_host_gateway": true,
-  "not_authoritative": true
-}

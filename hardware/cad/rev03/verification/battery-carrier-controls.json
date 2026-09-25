@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\\"battery_model_basis\\\": \\\"occupied holder owner-measured; cells and connector visual references\\\", \\\"holder_bounds_mm\\\": {\\\"min\\\": [3, 4.2, 16.7], \\\"max\\\": [45, 84.6, 37.05]}, \\\"cell_centres_xz_mm\\\": [[13.8, 26.95], [34.2, 26.95]], \\\"cell_y_extent_mm\\\": [9.2, 78.2], \\\"pocket_floor_mm\\\": 17.8, \\\"cell_to_pocket_floor_clearance_mm\\\": 0.05, \\\"component_occurrences_added\\\": 5, \\\"static_and_service_checks\\\": \\\"pending root model audit\\\"}\\n{\\\"stage\\\": \\\"battery\\\", \\\"occurrences\\\": 19, \\\"timeline\\\": 208, \\\"native\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/enclosure/rev03/Trimix_Enclosure_A2.f3d\\\"}\\n{\\\"stage\\\": \\\"carrier\\\", \\\"occurrences\\\": 27, \\\"timeline\\\": 304, \\\"native\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/enclosure/rev03/Trimix_Enclosure_A2.f3d\\\"}\\n{\\\"stage\\\": \\\"display retainer concepts\\\", \\\"occurrences\\\": 33, \\\"timeline\\\": 353, \\\"native\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/enclosure/rev03/Trimix_Enclosure_A2.f3d\\\"}\\n{\\\"stage\\\": \\\"right power button\\\", \\\"occurrences\\\": 35, \\\"timeline\\\": 367, \\\"native\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/enclosure/rev03/Trimix_Enclosure_A2.f3d\\\"}\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

@@ -1,6 +1,0 @@
-{
-  "base_sha256": "25ccd798740da0ac1c45eccec28d6cfc83d5a4f81b867c085142661a17155ada",
-  "upper_patch_sha256": "049e105afcb895228425db3bc3846c725ebc339f4c3e20931563ead810289c3d",
-  "combined_sha256": "32f786af6f4b5317d0b8f0c65fd5ef33d9fe65f1a2a9df3a2803c4abd29b2e79",
-  "adoption": "scout_only_requires_owner_merge_and_native_checks"
-}

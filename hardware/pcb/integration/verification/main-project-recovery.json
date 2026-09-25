@@ -1,7 +1,0 @@
-{
-  "cause": "KiCad 10 pcbnew.SaveBoard also saves associated project; first save rewrote existing project configuration. Source guard caught mutation; builder now saves under separate verification filename and copies PCB only.",
-  "restored_from": "hardware/pcb-a3/verification/analyzer-before-testpoints-20260906T181728Z.zip",
-  "member": "hardware/kicad/analyzer/Trimix_Analyzer.kicad_pro",
-  "restored_sha256": "93a0985939056a1526158acb95376076a6e62877f86d4e622940e0a1040cbb1e",
-  "bytes": 9669
-}

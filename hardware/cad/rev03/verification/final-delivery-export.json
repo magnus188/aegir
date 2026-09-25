@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\\"stage\\\": \\\"reviewed compact assembly\\\", \\\"occurrences\\\": 80, \\\"timeline\\\": 983, \\\"native\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/enclosure/rev03/Trimix_Enclosure_A2.f3d\\\"}\\n{\\\"step\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/enclosure/rev03/Trimix_Enclosure_A2.step\\\", \\\"cloud_document\\\": \\\"Trimix_Enclosure_A2 v2\\\", \\\"folder\\\": \\\"Trimix analyzer\\\"}\\n{\\\"active_document\\\": \\\"Trimix_Enclosure_A2 v2\\\", \\\"pending_snapshot\\\": false, \\\"cloud_folder\\\": \\\"Trimix analyzer\\\", \\\"file_name\\\": \\\"Trimix_Enclosure_A2\\\", \\\"data_file_id\\\": \\\"urn:adsk.wipprod:dm.lineage:bk2eLJCBQg-MV9c8Xiilag\\\"}\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

@@ -1,1 +1,0 @@
-Rejected despite native electrical DRC: the forced ordinary via at(13.6,91.0) overlaps U115 same-net compound SMT pin1 lands. The independent via-to-SMT manufacturing check caught it. No authoritative board received this route. A new route must place all ordinary vias outside SMT pads.

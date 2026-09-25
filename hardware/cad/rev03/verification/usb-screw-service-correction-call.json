@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\\"stage\\\": \\\"parametric hardware mounting datums\\\", \\\"occurrences\\\": 80, \\\"timeline\\\": 995, \\\"native\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/enclosure/rev03/Trimix_Enclosure_A2.f3d\\\"}\\n{\\\"bound_occurrences\\\": 1}\\n{\\\"stage\\\": \\\"USB clamp M2x5 blind-floor clearance\\\", \\\"occurrences\\\": 80, \\\"timeline\\\": 995, \\\"native\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/enclosure/rev03/Trimix_Enclosure_A2.f3d\\\"}\\n{\\\"report\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/enclosure/rev03/verification/service-paths-usb.json\\\", \\\"status\\\": \\\"blocked_or_needs_review\\\", \\\"tests\\\": [{\\\"name\\\": \\\"usb\\\", \\\"status\\\": \\\"blocked_at_sampled_poses\\\", \\\"collisions\\\": 4}]}\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

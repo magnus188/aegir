@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"grid definition adsk::core::ListControlDefinition\\n/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/enclosure/views/assembled.png\\n/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/enclosure/views/front.png\\n/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/enclosure/views/rear.png\\n/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/enclosure/views/left.png\\n/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/enclosure/views/right.png\\n/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/enclosure/views/rear-open.png\\n/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/enclosure/views/rear-open-isometric.png\\n/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/enclosure/views/section.png\\n/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/enclosure/views/assembled.png\\n{\\\"views\\\": \\\"front, rear, left, right, rear-open, section, assembled\\\", \\\"section\\\": \\\"A-A centre section / X=0 / review only\\\", \\\"all_occurrences_visible\\\": true}\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

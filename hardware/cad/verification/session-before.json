@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\n  \\\"version\\\": \\\"2705.1.11\\\",\\n  \\\"active_document\\\": \\\"Casing v1\\\",\\n  \\\"active_project\\\": \\\"Trimix analyzer\\\",\\n  \\\"active_folder\\\": {\\n    \\\"name\\\": \\\"Trimix analyzer\\\",\\n    \\\"id\\\": \\\"urn:adsk.wipprod:fs.folder:co.JKY47Dq7TLqRq7kWq4yYEA\\\"\\n  },\\n  \\\"documents\\\": [\\n    {\\n      \\\"name\\\": \\\"Casing v1\\\",\\n      \\\"modified\\\": false,\\n      \\\"saved\\\": true\\n    }\\n  ],\\n  \\\"root_bodies\\\": 0,\\n  \\\"root_occurrences\\\": 0\\n}\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

@@ -23,6 +23,9 @@ jobs:
   build-and-release:
     name: Build ESP32-P4 Firmware and Create Release
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: software/firmware
 
     steps:
       - name: Checkout code
@@ -101,7 +104,7 @@ jobs:
         with:
           esp_idf_version: v5.5.4
           target: esp32p4
-          path: .
+          path: software/firmware
           command: >-
             idf.py -B build/esp32p4-pre3
             -D IDF_TARGET=esp32p4
@@ -116,8 +119,8 @@ jobs:
 
       - name: Check pre-v3 firmware size
         env:
-          BUILD_DIR: ${{ github.workspace }}/build/esp32p4-pre3
-          PARTITIONS_FILE: ${{ github.workspace }}/partitions.esp32p4.pre3.csv
+          BUILD_DIR: ${{ github.workspace }}/software/firmware/build/esp32p4-pre3
+          PARTITIONS_FILE: ${{ github.workspace }}/software/firmware/partitions.esp32p4.pre3.csv
         run: ./scripts/check_firmware_size.sh
 
       - name: Build v3+ ESP32-P4 firmware
@@ -125,7 +128,7 @@ jobs:
         with:
           esp_idf_version: v5.5.4
           target: esp32p4
-          path: .
+          path: software/firmware
           command: >-
             idf.py -B build/esp32p4-v3
             -D IDF_TARGET=esp32p4
@@ -135,7 +138,7 @@ jobs:
 
       - name: Check v3+ firmware size
         env:
-          BUILD_DIR: ${{ github.workspace }}/build/esp32p4-v3
+          BUILD_DIR: ${{ github.workspace }}/software/firmware/build/esp32p4-v3
         run: ./scripts/check_firmware_size.sh
 
       - name: Name OTA application images
@@ -156,7 +159,7 @@ jobs:
         with:
           esp_idf_version: v5.5.4
           target: esp32p4
-          path: .
+          path: software/firmware
           command: >-
             esptool.py --chip esp32p4 merge_bin
             --flash_mode dio --flash_freq 80m --flash_size 16MB
@@ -171,7 +174,7 @@ jobs:
         with:
           esp_idf_version: v5.5.4
           target: esp32p4
-          path: .
+          path: software/firmware
           command: >-
             esptool.py --chip esp32p4 merge_bin
             --flash_mode dio --flash_freq 80m --flash_size 32MB
@@ -184,17 +187,17 @@ jobs:
       - name: Upload release build artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: trimix-analyzer-esp32p4-v${{ steps.version.outputs.new_version }}
+          name: ziphius-esp32p4-v${{ steps.version.outputs.new_version }}
           if-no-files-found: error
           path: |
-            Trimix_analyzer_esp32p4_*_v${{ steps.version.outputs.new_version }}.bin
-            build/esp32p4-pre3/Trimix_analyzer.elf
-            build/esp32p4-pre3/Trimix_analyzer.map
-            build/esp32p4-pre3/flasher_args.json
-            build/esp32p4-v3/Trimix_analyzer.elf
-            build/esp32p4-v3/Trimix_analyzer.map
-            build/esp32p4-v3/flasher_args.json
-            release-ota-manifest.json
+            software/firmware/Trimix_analyzer_esp32p4_*_v${{ steps.version.outputs.new_version }}.bin
+            software/firmware/build/esp32p4-pre3/Trimix_analyzer.elf
+            software/firmware/build/esp32p4-pre3/Trimix_analyzer.map
+            software/firmware/build/esp32p4-pre3/flasher_args.json
+            software/firmware/build/esp32p4-v3/Trimix_analyzer.elf
+            software/firmware/build/esp32p4-v3/Trimix_analyzer.map
+            software/firmware/build/esp32p4-v3/flasher_args.json
+            software/firmware/release-ota-manifest.json
 
       - name: Generate changelog
         id: changelog
@@ -208,7 +211,7 @@ jobs:
           fi
           {
             echo "changelog<<EOF"
-            echo "## Trimix Analyzer v${{ steps.version.outputs.new_version }}"
+            echo "## Ziphius v${{ steps.version.outputs.new_version }}"
             echo ""
             echo "$CHANGES"
             echo ""
@@ -224,11 +227,11 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           tag_name: v${{ steps.version.outputs.new_version }}
-          name: Trimix Analyzer v${{ steps.version.outputs.new_version }}
+          name: Ziphius v${{ steps.version.outputs.new_version }}
           body: ${{ steps.changelog.outputs.changelog }}
           files: |
-            Trimix_analyzer_esp32p4_*_v${{ steps.version.outputs.new_version }}.bin
-            release-ota-manifest.json
+            software/firmware/Trimix_analyzer_esp32p4_*_v${{ steps.version.outputs.new_version }}.bin
+            software/firmware/release-ota-manifest.json
           fail_on_unmatched_files: true
           draft: true
           prerelease: false

@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\\"occurrence\\\": \\\"PCB A3 - main four-layer placement:1\\\", \\\"bounds_mm\\\": [[50.38, 20.980000000000008, 16.10000002861023], [80.42, 120.02000000000001, 33.21000002861023]], \\\"translation_mm\\\": [50.4, 120, 20.545], \\\"nominal_stack_mm\\\": [20.5, 22.1], \\\"dielectric_source_bounds_mm\\\": [[0.0, -99.0, 0.0], [30.0, 0.0, 1.5100000000000002]], \\\"datum_mapping\\\": \\\"FusionX=50.4+KiCadLocalX; FusionY=120-KiCadLocalY; F.Cu faces rear +Z\\\", \\\"model_limitations\\\": \\\"J301, J402 and several passive packages retain provisional generic body models; this import does not qualify their actual parts.\\\"}\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

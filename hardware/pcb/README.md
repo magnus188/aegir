@@ -1,15 +1,17 @@
-# Trimix PCB projects
+# PCB designs
 
-Open the current designs from this directory:
+Open the active KiCad projects from their source folders:
 
-- [Main analyzer project](analyzer/Trimix_Analyzer.kicad_pro)
-- [USB input daughterboard](usb-input/Trimix_USB_Input.kicad_pro)
-- [Preserved P1 power project](power/Trimix_Power.kicad_pro)
+| Board | Project | Purpose |
+| --- | --- | --- |
+| Main analyzer | [Trimix_Analyzer.kicad_pro](analyzer/Trimix_Analyzer.kicad_pro) | Current routed analyzer board, schematic sheets, and libraries |
+| USB input | [Trimix_USB_Input.kicad_pro](usb-input/Trimix_USB_Input.kicad_pro) | Separate USB input daughterboard |
 
-`integration/` contains the A3 placement, enclosure-fit exports, component
-reference maps and their verification records. Project-specific preview source
-files are under `analyzer/previews/` and `power/previews/`; rendered schematic
-images and PDFs are under `verification/`.
+The [main-board manufacturing review](../system-review/electrical/main-final/README.md)
+contains CAM files, assembly lists, stencil instructions, and a required
+fill-and-cap hole map. **Prototype order remains on hold** pending the
+[whole-system acceptance review](../system-review/README.md).
 
-The old EasyEDA migration is not an active design. It is retained only for
-traceability in [archive/deprecated-kicad-import/](archive/deprecated-kicad-import/).
+Earlier power-board and migration projects are available in Git history.
+KiCad `.kicad_prl` files, locks, autosaves and backup folders are local editor
+state and are ignored by Git.

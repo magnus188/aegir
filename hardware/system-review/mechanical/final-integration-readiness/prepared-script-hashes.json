@@ -1,5 +1,0 @@
-{
-  "hardware/system-review/mechanical/scripts/refresh_boards.py": "7cf0f2967b67077602f2da54bd3bc281c1cbc3cc5522a3472420c452c360eed2",
-  "hardware/system-review/mechanical/scripts/placement_height_coverage.py": "526d3a26791b882be9704e043315d4096dbf69dcc0c049d747d947ce4b9dc90b",
-  "hardware/system-review/mechanical/scripts/step_precision_diagnostic.py": "6898e38461e6b355c260f2b668c4c25ac4085c8a0a8a703038bc7fbe72503cfe"
-}

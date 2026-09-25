@@ -1,5 +1,0 @@
-{
-  "owner_source_sha256": "0115f87b4b3f8f5b216b6f8a7e3b5ae6d2cc39cef97dbcb2f3233507b4721fe6",
-  "aux_delta_sha256": "1a1c3adaa42d9b84661fc425afeb34b2380425f3487c3d4c2575b6ed716da6f1",
-  "scope": "ISOLATED shared HOST bridge. Root approved exact owner CC source plus guarded aux delta; futureCHG and exactVIPPO UVLO reservations required."
-}

@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"error\": \"Traceback (most recent call last):\\n  File \\\"<string>\\\", line 41, in <module>\\n  File \\\"<string>\\\", line 39, in run\\n  File \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/enclosure/scripts/build_enclosure.py\\\", line 152, in create_design\\n    d.rootComponent.name=NAME\\n    ^^^^^^^^^^^^^^^^^^^^\\n  File \\\"/Users/magnustrandokken/Library/Application Support/Autodesk/webdeploy/production/127ae56f1790f40cf393bcc73875a1a281e20234/Autodesk Fusion.app/Contents/Api/Python/packages/adsk/fusion.py\\\", line 14827, in _set_name\\n    return _fusion.BaseComponent__set_name(self, value)\\n           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^\\nRuntimeError: 3 : root component name cannot be changed\\n\",\n    \"success\": false\n}",
-      "type": "text"
-    }
-  ]
-}

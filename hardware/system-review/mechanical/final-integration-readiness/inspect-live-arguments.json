@@ -1,7 +1,0 @@
-{
-  "featureType": "script",
-  "object": {
-    "script": "import adsk.core as core\nimport adsk.fusion as fusion\nimport json\nfrom pathlib import Path\nfrom datetime import datetime,timezone\ndef run(_context:str):\n    app=core.Application.get()\n    rows=[]\n    for doc in app.documents:\n        d=fusion.Design.cast(doc.products.itemByProductType('DesignProductType'))\n        rows.append({'name':doc.name,'id':doc.dataFile.id if doc.dataFile else None,'version':doc.dataFile.versionNumber if doc.dataFile else None,'modified':doc.isModified,'saved':doc.isSaved,'active':doc==app.activeDocument,'timeline':d.timeline.count if d else None})\n    result={'generated_at_utc':datetime.now(timezone.utc).isoformat(),'documents':rows,'inspection_only':True,'document_activation_or_mutation':False}\n    path=Path('/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/system-review/mechanical/final-integration-readiness/live-documents.json')\n    path.write_text(json.dumps(result,indent=2)+'\\n')\n    print(json.dumps(result))\n",
-    "readOnly": true
-  }
-}

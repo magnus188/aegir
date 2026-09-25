@@ -1,0 +1,20 @@
+menu "Ziphius"
+
+config TRIMIX_ENABLE_WIFI
+    bool "Enable ESP-Hosted Wi-Fi service"
+    default y
+    help
+        Start the ESP32-C6 Wi-Fi coprocessor during application boot. Disable
+        this for Guition boards whose factory C6 firmware is too old for the
+        selected ESP-Hosted host component.
+
+config TRIMIX_UPDATE_C6_ON_BOOT
+    bool "Update the Guition ESP32-C6 firmware from the slave_fw partition"
+    depends on !TRIMIX_ENABLE_WIFI
+    default n
+    help
+        One-shot recovery option for factory boards. The application validates
+        the ESP32-C6 image in the slave_fw partition, updates the coprocessor
+        through ESP-Hosted, and restarts. Leave disabled for normal firmware.
+
+endmenu

@@ -1,8 +1,0 @@
-{
-	"InstallScripts" : 
-	[
-		"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/simulator/build-sanitize/cmake_install.cmake",
-		"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/simulator/build-sanitize/lvgl/cmake_install.cmake"
-	],
-	"Parallel" : false
-}

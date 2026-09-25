@@ -1,5 +1,0 @@
-# Disposable scratch copies created by the marking/map generators.
-staged/
-map-staged/
-__pycache__/
-*-placement-attempt.json

@@ -1,8 +1,0 @@
-{
-  "result": "PASS",
-  "physical_components": 41,
-  "all_component_values_footprints_datasheets_symbols_and_DNP_states_unchanged": true,
-  "all_net_pin_memberships_unchanged": true,
-  "presentation_revision": "P1.1",
-  "changes": "Numbered rectangles, section titles, explanations, overview flow diagram, component field positions and section translations."
-}

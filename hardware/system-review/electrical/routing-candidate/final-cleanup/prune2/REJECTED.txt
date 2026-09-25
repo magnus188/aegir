@@ -1,1 +1,0 @@
-Rejected: removing a DRC dangling segment changed native pad partitions. Do not adopt this source. Selective restoration/trim follows in a new candidate.

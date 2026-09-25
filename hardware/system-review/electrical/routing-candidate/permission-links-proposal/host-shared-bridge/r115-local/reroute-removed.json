@@ -1,7 +1,0 @@
-[
-  "(segment (start 11.26 91.95) (end 12.85 91.075) (width 0.15) (layer \"F.Cu\") (net \"USB_PERMISSION_Q\") (uuid \"351bedca-015f-4089-8b93-262ceddde4b9\"))",
-  "(segment (start 15.05 91.125) (end 16.1827 91.7017) (width 0.15) (layer \"F.Cu\") (net \"USB_PERMISSION_Q\") (uuid \"6e182080-1fe1-43c8-90f8-16439eb84a20\"))",
-  "(segment (start 14.8 91.05) (end 15.05 91.125) (width 0.15) (layer \"F.Cu\") (net \"USB_PERMISSION_Q\") (uuid \"9216c8fe-f85f-4f83-98c1-426d37522d0b\"))",
-  "(segment (start 12.85 91.075) (end 14.8 91.05) (width 0.15) (layer \"F.Cu\") (net \"USB_PERMISSION_Q\") (uuid \"a16ab2ec-7372-4f99-99c0-545f819ad7f1\"))",
-  "(segment (start 17.65 88.7) (end 12.2 89.75) (width 0.15) (layer \"In2.Cu\") (net \"CHG_INT_N\") (uuid \"fb5db186-403f-41ac-92dc-804f65d8d567\"))"
-]
