@@ -208,7 +208,7 @@ jobs:
           fi
           {
             echo "changelog<<EOF"
-            echo "## Trimix Analyzer v${{ steps.version.outputs.new_version }}"
+            echo "## Ziphius v${{ steps.version.outputs.new_version }}"
             echo ""
             echo "$CHANGES"
             echo ""
@@ -224,7 +224,7 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           tag_name: v${{ steps.version.outputs.new_version }}
-          name: Trimix Analyzer v${{ steps.version.outputs.new_version }}
+          name: Ziphius v${{ steps.version.outputs.new_version }}
           body: ${{ steps.changelog.outputs.changelog }}
           files: |
             Trimix_analyzer_esp32p4_*_v${{ steps.version.outputs.new_version }}.bin
