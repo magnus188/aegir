@@ -312,7 +312,8 @@ void vTaskDelay(TickType_t ticks){
 int64_t esp_timer_get_time(){return int64_t(clock_ms.load())*1000;}
 void esp_restart(){throw End{};}
 int main(int argc,char **argv) {
-    if(argc!=2)return 2;scenario=argv[1];pins[32]=1;worker_thread=std::this_thread::get_id();
+    if(argc!=2) return 2;
+    scenario=argv[1];pins[32]=1;worker_thread=std::this_thread::get_id();
     if(scenario.rfind("legacy-",0)==0) {bus.r[0x47][8]=0;bus.bc_result=scenario=="legacy-cdp"?0x20:0x80;}
     if(scenario=="hiz-requalify" || scenario=="hiz-ignored")bus.r[0x47][8]=0;
     if(scenario=="hiz-requalify" || scenario=="hiz-adc-ignored")bus.r[0x6a][2]|=0xc0;

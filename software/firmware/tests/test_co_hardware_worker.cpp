@@ -88,8 +88,11 @@ esp_err_t uart_param_config(uart_port_t,const uart_config_t *){return missing_ua
 esp_err_t uart_set_pin(uart_port_t,int,int,int,int){return ESP_OK;}
 esp_err_t uart_driver_install(uart_port_t,int,int,int,void *,int){return ESP_OK;}
 int uart_read_bytes(uart_port_t,void *out,size_t size,unsigned){
-    if(!interface_on||size<9)return 0;uint8_t f[]={0xff,4,3,1,0,25,0x13,0x88,0};
-    for(unsigned i=1;i<8;++i)f[8]-=f[i];std::memcpy(out,f,9);return 9;
+    if(!interface_on||size<9) return 0;
+    uint8_t f[]={0xff,4,3,1,0,25,0x13,0x88,0};
+    for(unsigned i=1;i<8;++i) f[8]-=f[i];
+    std::memcpy(out,f,9);
+    return 9;
 }
 esp_err_t uart_driver_delete(uart_port_t){return ESP_OK;}
 BaseType_t xTaskCreate(void(*fn)(void *),const char *,uint32_t,void *,unsigned,TaskHandle_t *){worker=fn;return pdPASS;}

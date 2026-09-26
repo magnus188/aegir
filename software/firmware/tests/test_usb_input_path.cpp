@@ -12,13 +12,15 @@ struct Bus:system_i2c::Bus {
     bool write(uint8_t a,const uint8_t *b,size_t n) override {
         now+=latency;if(absent||a!=0x6a||n!=2)return false;++writes;
         if(!(b[0]==0 && ((ignore_set&&(b[1]&0x80))||(ignore_clear&&!(b[1]&0x80)))) && !(b[0]==2&&ignore_adc))r[b[0]]=b[1];
-        if(after_write)after_write(b[0],b[1]);return true;
+        if(after_write) after_write(b[0],b[1]);
+        return true;
     }
     bool read(uint8_t,uint8_t *,size_t) override{return false;}
     bool read_register(uint8_t a,uint8_t reg,uint8_t *out,size_t n) override {
         now+=latency;if(absent||read_lost)return false;
         if(a==0x6a&&n==1){*out=r[reg];if(reg==0xb&&(r[0]&0x80))*out&=~4;
-            if(reg==2&&adc_busy_until&&now<adc_busy_until)*out|=0x80;return true;}
+            if(reg==2&&adc_busy_until&&now<adc_busy_until) *out|=0x80;
+            return true;}
         if(a==0x36&&n==2){uint16_t v=reg==8?0x12:reg==2?51200:reg==4?12800:0;out[0]=v>>8;out[1]=v&255;return true;}
         return false;
     }

@@ -26,7 +26,9 @@ struct Bus:system_i2c::Bus {
         if(disconnected || a!=0x6a || n!=2)return false;
         now+=transaction_ms;
         ++writes;written.push_back({d[0],d[1]});if(writes==fail_write)return false;
-        if(writes!=ignore_write)r[d[0]]=d[1];if(after_write)after_write();return true;
+        if(writes!=ignore_write) r[d[0]]=d[1];
+        if(after_write) after_write();
+        return true;
     }
     bool read(uint8_t,uint8_t*,size_t) override {return false;}
     bool read_register(uint8_t a,uint8_t reg,uint8_t *out,size_t n) override {

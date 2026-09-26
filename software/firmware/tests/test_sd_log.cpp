@@ -58,7 +58,8 @@ void failure_tests() {
         if(fault==0) {CHECK(l.status().state==State::Unavailable);CHECK(!l.submit(Kind::Raw,"x"));}
         else {
             CHECK(l.submit(Kind::Raw,"x"));CHECK(l.submit(Kind::Raw,"y"));
-            if(fault==1)io.open_ok=false;if(fault==2)io.write_ok=false;
+            if(fault==1) io.open_ok=false;
+            if(fault==2) io.write_ok=false;
             l.pump(1);
             if(fault==3) {io.sync_ok=false;l.pump(1001);}
             if(fault==4) {io.close_ok=false;l.pause();l.pump(2);l.pump(3);}
