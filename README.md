@@ -9,6 +9,16 @@ breathing-gas safety instrument**. The current
 electrical, mechanical, sensor, and physical-test work. **Prototype order:
 HOLD.**
 
+## The name
+
+In Norse myth, [Ægir](https://snl.no/%C3%86ge) is a sea giant who welcomes the
+gods to a hall lit by gold. His nine daughters with Rán are the waves—a fitting
+namesake for a diving instrument.
+
+Say **Ægir** roughly **AG-eer**: the **æ** sounds like the *a* in *cat*, and the
+**g** is hard. The runes **ᛅᛁᚾ** are our Viking Age-style nod to
+[*ein/einn*](https://ordbokene.no/nob/nn/14065), meaning “one”: **Ægir 1**.
+
 ## Project map
 
 | Area | Contents |
