@@ -30,7 +30,8 @@ def c_array(name: str, data: bytes) -> str:
     for offset in range(0, len(data), 16):
         chunk = data[offset : offset + 16]
         lines.append("    " + ", ".join(f"0x{byte:02x}" for byte in chunk) + ",")
-    return f"static const uint8_t {name}[] = {{\n" + "\n".join(lines) + "\n};\n"
+    return (f"static const uint8_t {name}[] __attribute__((aligned(16))) = {{\n"
+            + "\n".join(lines) + "\n};\n")
 
 
 def descriptor(name: str, width: int, height: int) -> str:

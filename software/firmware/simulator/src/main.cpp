@@ -50,7 +50,7 @@ int main(int argc, char** argv) {
     lv_init();
 
     lv_display_t* display = lv_sdl_window_create(kScreenWidth, kScreenHeight);
-    lv_sdl_window_set_title(display, "Trimix Analysator Simulator");
+    lv_sdl_window_set_title(display, "Ægir Simulator");
     lv_sdl_window_set_zoom(display, zoom);
     lv_sdl_mouse_create();
     lv_sdl_keyboard_create();
