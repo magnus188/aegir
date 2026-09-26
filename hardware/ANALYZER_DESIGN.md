@@ -114,7 +114,6 @@ remain visible release gates. Physical charging, thermal, fit, seal and referenc
 tests remain pending. The ±0.2-point O₂ and ±0.5-point He figures are unproven
 targets. Showcase, production print preparation and purchasing remain paused.
 
-The project remains inspired by
-[captainigloo/Trimix-analyzer](https://github.com/captainigloo/Trimix-analyzer).
-Existing attribution and licensing remain unchanged; manufacturer evidence
-and third-party software retain their own terms.
+Project-created software and hardware designs use the licenses in the
+[repository license map](../LICENSE.md). Manufacturer evidence and third-party
+software retain their own terms.

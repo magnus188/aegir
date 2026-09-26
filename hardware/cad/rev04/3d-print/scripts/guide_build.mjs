@@ -177,8 +177,8 @@ for (const [index, item] of slides.entries()) {
     } else if (item.layout === "text") {
       const textBody = paragraphs(slide, item.body, 64, 188, 1128, 407, 27);
       if (index === 21) {
-        const targets = [["github.com/magnus188/trimix-analysator", source.sources.repo],
-          ["captainigloo/Trimix-analyzer", source.sources.upstream]];
+        const targets = [["github.com/magnus188/aegir", source.sources.repo],
+          ["License details", source.sources.license]];
         for (const [label, uri] of targets) textBody.text.get(label).link = { uri, isExternal: true };
       }
     } else {

@@ -12,6 +12,11 @@ contains CAM files, assembly lists, stencil instructions, and a required
 fill-and-cap hole map. **Prototype order remains on hold** pending the
 [whole-system acceptance review](../system-review/README.md).
 
+Project-created schematics, PCB layouts, libraries, and design exports are
+licensed under [CERN-OHL-S-2.0](../../LICENSES/CERN-OHL-S-2.0.txt). The
+[license map](../../LICENSE.md) lists exceptions for third-party reference
+documents and models.
+
 Earlier power-board and migration projects are available in Git history.
 KiCad `.kicad_prl` files, locks, autosaves and backup folders are local editor
 state and are ignored by Git.

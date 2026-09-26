@@ -16,3 +16,8 @@ The latest Guition connector and cable-space study is under the
 [mechanical system review](../system-review/mechanical/connector-review/README.md).
 It identifies interference that the earlier A3 drawings do not resolve.
 Earlier enclosure revisions remain in Git history.
+
+Project-created enclosure sources, STEP exports, print meshes, and 3MF
+projects are licensed under [CERN-OHL-S-2.0](../../LICENSES/CERN-OHL-S-2.0.txt).
+CAD scripts are GPLv3. See the [license map](../../LICENSE.md) for third-party
+exceptions and the separate Ægir brand policy.

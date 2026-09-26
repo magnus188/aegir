@@ -71,12 +71,11 @@ The two PCBs, real wiring, gas seals, thermal behaviour, charging commissioning
 and gas-analysis validation are later work. Nominal CAD hardware does not prove
 clamping or printed-part strength.
 
-## Attribution
+## License and sources
 
-This package preserves the project's existing attribution to
-[captainigloo/Trimix-analyzer](https://github.com/captainigloo/Trimix-analyzer).
-The repository currently says "Same as original Trimix Analyzer project";
-the upstream README names CC BY-NC-SA 4.0. No repository-wide license change is
-made here. Manufacturer drawings and trademarks retain their owners' rights;
-the component models are measured/drawing-derived references, not authenticated
-supplier CAD.
+The project-created enclosure, print files, and CAD exports in this package are
+licensed under [CERN-OHL-S-2.0](../../../../LICENSES/CERN-OHL-S-2.0.txt).
+Project-written generator scripts are GPLv3. Manufacturer drawings and
+trademarks retain their owners' rights; the component models are
+measured/drawing-derived references, not authenticated supplier CAD. See the
+repository [license map](../../../../LICENSE.md).

@@ -49,4 +49,9 @@ are ignored.
 
 ## License
 
-A repository-wide open-source license has not yet been selected.
+Ægir software is [GPLv3](LICENSES/GPL-3.0-only.txt); project-created PCB and
+enclosure/3D-print designs are [CERN-OHL-S-2.0](LICENSES/CERN-OHL-S-2.0.txt).
+Both allow commercial use and require source sharing when covered work or
+products are distributed. The Ægir name and logo have a separate
+[brand policy](branding/LICENSE.md). See the [license map](LICENSE.md) for
+third-party exceptions.

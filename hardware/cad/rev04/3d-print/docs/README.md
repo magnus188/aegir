@@ -85,12 +85,10 @@ Do not rerun them as part of a content revision in this same operation.
 
 ## Reuse and attribution
 
-The repository README currently refers to the original project's license rather
-than providing a complete tracked license text. The upstream Trimix Analyzer
-README names CC BY-NC-SA 4.0. Clarify derivation and the release's license scope
-before redistributing derived assets. This guide does not relicense them.
-It preserves the repository's current wording, "Same as original Trimix
-Analyzer project," and the upstream attribution.
+Project-created CAD and 3D-print files are licensed under
+[CERN-OHL-S-2.0](../../../../../LICENSES/CERN-OHL-S-2.0.txt); project-written
+guide scripts are GPLv3. See the repository
+[license map](../../../../../LICENSE.md) before redistributing the package.
 
 The editable packaging models use manufacturer drawings as references.
 Manufacturer documents and trademarks retain their owners' rights. Source

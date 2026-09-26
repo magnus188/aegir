@@ -68,6 +68,6 @@ The ±0.2 percentage-point oxygen and ±0.5-point helium values are **unproven t
 
 ## Attribution and scope
 
-The project remains inspired by [captainigloo/Trimix-analyzer](https://github.com/captainigloo/Trimix-analyzer). Existing repository attribution and licensing are retained; this review makes no repository-wide licensing change. Bosch's BME280 driver is vendored with its BSD-3-Clause notice and pinned source manifest. Host parser tests use the same cJSON source as the local ESP-IDF dependency, retaining its licence; device firmware links ESP-IDF's JSON component.
+Project-created software and hardware designs use the licenses in the [repository license map](../../LICENSE.md). Bosch's BME280 driver is vendored with its BSD-3-Clause notice and pinned source manifest. Host parser tests use the same cJSON source as the local ESP-IDF dependency, retaining its licence; device firmware links ESP-IDF's JSON component.
 
 Manufacturer documents, downloaded reference models and third-party CAD are evidence with their own terms, not newly relicensed project designs. Source links and hashes accompany the respective electrical, mechanical and software checks.

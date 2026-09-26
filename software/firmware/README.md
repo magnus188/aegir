@@ -370,4 +370,7 @@ When adding new features:
 
 ## License
 
-A repository-wide open-source license has not yet been selected.
+Project-written firmware and tools are licensed under
+[GPL-3.0-only](../../LICENSES/GPL-3.0-only.txt). Bundled third-party code,
+fonts, and brand artwork have separate terms; see the repository
+[license map](../../LICENSE.md).

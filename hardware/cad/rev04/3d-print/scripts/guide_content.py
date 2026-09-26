@@ -11,8 +11,8 @@ ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "docs" / "source"
 
 SOURCES = {
-    "repo": "https://github.com/magnus188/trimix-analysator",
-    "upstream": "https://github.com/captainigloo/Trimix-analyzer",
+    "repo": "https://github.com/magnus188/aegir",
+    "license": "https://github.com/magnus188/aegir/blob/main/LICENSE.md",
     "gct": "https://gct.co/files/drawings/usb4720.pdf",
     "ao2": "https://prod-edam.honeywell.com/content/dam/honeywell-edam/sps/siot/en-us/products/sensors/gas-sensors/automotive-and-emissions/documents/hon-ia-hss-automotive-ao2-o2-gas-sensor-dts-en.pdf",
     "md62": "https://www.winsen-sensor.com/d/files/PDF/Thermal%20Conductor%20Gas%20Sensor/MD62%20Manual%20V1.3.pdf",
@@ -191,12 +191,12 @@ SLIDES = [
           "Validate gas flow, seals, calibration and response before treating readings as measurements."],
          note="This package supports an enclosure fit prototype. Complete-device assembly and gas-analysis qualification remain open work.", refs=["electrical", "usb", "repo"], layout="text"),
     page("Sources, reuse and contributions", "A clear source trail helps the next builder",
-         ["Project: github.com/magnus188/trimix-analysator",
-          "Inspiration: captainigloo/Trimix-analyzer. Its README names CC BY-NC-SA 4.0. This repository currently says 'Same as original Trimix Analyzer project.'",
+         ["Project: github.com/magnus188/aegir",
+          "Project-created CAD and print files: CERN-OHL-S-2.0. Project-written scripts: GPL-3.0-only. See License details.",
           "Manufacturer references: Honeywell AO2, Winsen MD62 and ZE07-CO, Bosch BME280, and GCT USB4720. The models are drawing-derived references.",
           "Contribute measured dimensions, print settings and test results with the part ID and release identifier. Include a clear photo and an editable change when possible."],
          note="{{license_note}} Manufacturer documents and trademarks retain their owners' rights. This guide does not grant rights to supplier documents or authenticate supplier CAD.",
-         refs=["repo", "upstream", "ao2", "md62", "co", "bme", "gct"], layout="text"),
+         refs=["repo", "license", "ao2", "md62", "co", "bme", "gct"], layout="text"),
 ]
 
 
@@ -218,7 +218,7 @@ def write_source():
                 "m2x7_screws": "2", "m3_inserts": "4", "m2_inserts": "10",
                 "print_material": "PLA fit project / PETG target project", "print_nozzle": "Pending profile",
                 "print_layer": "Pending profile",
-                "license_note": "This guide preserves the existing attribution and introduces no new license."
+                "license_note": "Project-created CAD and print files: CERN-OHL-S-2.0; project-written scripts: GPL-3.0-only. See the repository license map."
             },
             "evidence": {},
             "assets": {s["image"]: {"path": None, "provenance": "actual Fusion export required", "reviewed": False}

@@ -84,5 +84,7 @@ Use `docs/FIT_CHECKLIST.md` to record measured results. In particular:
   sensor firmware separately. The mechanical package does not qualify the
   analyzer for gas-composition decisions.
 
-No new repository-wide license is introduced. Existing attribution and source
-statements are preserved in the guide and its editable sources.
+The project-created CAD and 3D-print design files are licensed under
+[CERN-OHL-S-2.0](../../../../LICENSES/CERN-OHL-S-2.0.txt). Project-written
+scripts are GPLv3; third-party source terms remain separate in the
+[license map](../../../../LICENSE.md).

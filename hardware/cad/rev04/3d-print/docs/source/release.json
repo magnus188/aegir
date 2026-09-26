@@ -17,7 +17,7 @@
     "print_material": "PLA fit / PETG target",
     "print_nozzle": "0.4 mm",
     "print_layer": "0.20 mm model layers",
-    "license_note": "This guide preserves the existing attribution and introduces no new license."
+    "license_note": "Project-created CAD and print files: CERN-OHL-S-2.0; project-written scripts: GPL-3.0-only. See the repository license map."
   },
   "evidence": {
     "native_parts": "verification/native-part-map.json",

@@ -81,7 +81,7 @@ def reconcile():
     release = json.loads(release_path.read_text())
     release["final_native_bom_reconciled"] = True
     release["facts"]["print_material"] = "PLA fit project / PETG target project"
-    release["facts"]["license_note"] = "This guide preserves the existing attribution and introduces no new license."
+    release["facts"]["license_note"] = "Project-created CAD and print files: CERN-OHL-S-2.0; project-written scripts: GPL-3.0-only. See the repository license map."
     release["evidence"]["native_parts"] = str(native_path.relative_to(RELEASE))
     release["evidence"]["purchased_assemblies"] = str(assemblies_path.relative_to(RELEASE))
     release["evidence"]["bom_reconciliation"] = "docs/source/native-bom-reconciliation.json"
