@@ -1,19 +1,30 @@
-# Ziphius identity
+# Ægir 1 identity
 
-The mark combines a descending **Z** with a whale-tail silhouette. It is a
-single filled shape with no gradients, hairlines, or small isolated details.
+![Selected Ægir logo](aegir-lockup-dark.png)
 
-- [`ziphius-mark.svg`](ziphius-mark.svg): dark, one-colour mark for light
-  backgrounds and device engraving.
-- [`ziphius-mark-white.svg`](ziphius-mark-white.svg): reversed mark for dark
-  backgrounds and the device update screen.
-- [`ziphius-lockup.svg`](ziphius-lockup.svg) and
-  [`ziphius-lockup-white.svg`](ziphius-lockup-white.svg): mark and outlined
-  wordmark for documentation and packaging. The wordmark was set in Roboto
-  Medium and converted to paths, so no font installation is needed to use it.
-- [`ziphius-preview.png`](ziphius-preview.png): white-background preview of
-  the lockup; use the SVG files as the production masters.
+The selected mark is the frontal Ægir face whose beard forms a Viking ship's
+hull. Earlier logo studies were removed from the working tree; Git history
+preserves earlier directions.
 
-For fabrication, import the mark SVG at the final physical size. Engrave or
-print the filled silhouette as a single colour. Check the chosen material and
-process on a sample before marking the device enclosure.
+| File | Purpose |
+| --- | --- |
+| [`aegir-mark.svg`](aegir-mark.svg) | Selected one-colour vector mark for scaling and engraving |
+| [`aegir-mark.png`](aegir-mark.png) | Original full-resolution raster reference for the selected mark |
+| [`aegir-v1-wordmark.svg`](aegir-v1-wordmark.svg) | Outlined **ÆGIR** in Iceland with **ᛅᛁᚾ** as the version-one marker |
+| [`aegir-lockup-dark.png`](aegir-lockup-dark.png) | Horizontal, white-on-dark preview for documentation |
+| [`aegir-splash.png`](aegir-splash.png) | 480 × 800 preview of the device splash screen |
+
+The logo uses [Iceland](https://github.com/google/fonts/tree/main/ofl/iceland)
+with slightly wider letter spacing; the app interface uses Forsvaret. The
+wordmark SVG contains vector outlines and renders without the font installed.
+Iceland is distributed under the
+[SIL Open Font License 1.1](https://github.com/google/fonts/blob/main/ofl/iceland/OFL.txt).
+
+The device splash shows the mark, wordmark, and runes in white on the app's
+dark background. Its compact LVGL image data and previews can be regenerated
+from the selected sources with
+[`generate_splash_assets.py`](../software/firmware/scripts/generate_splash_assets.py).
+
+The vector mark is traced from the selected raster artwork. Check its smallest
+cutouts at the intended physical size and test the chosen engraving process on
+an enclosure sample before production.

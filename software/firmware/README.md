@@ -1,6 +1,6 @@
-# Ziphius ESP32 Firmware
+# Ægir ESP32 Firmware
 
-ESP32-P4/LVGL firmware for Ziphius, the prototype trimix gas analyzer, on the native-portrait Guition JC4880P443C_I_W (JC-ESP32P4-M3). It includes Wi-Fi, revision-specific HTTPS OTA, persistent settings/calibration, hardware sensor and power drivers, and a separate deterministic simulator. Physical firmware reports unavailable hardware instead of substituting simulated gas or battery readings.
+ESP32-P4/LVGL firmware for Ægir, the prototype trimix gas analyzer, on the native-portrait Guition JC4880P443C_I_W (JC-ESP32P4-M3). It includes Wi-Fi, revision-specific HTTPS OTA, persistent settings/calibration, hardware sensor and power drivers, and a separate deterministic simulator. Physical firmware reports unavailable hardware instead of substituting simulated gas or battery readings.
 
 **Prototype order status: HOLD.** Follow the [whole-system review](../../hardware/system-review/README.md) for current evidence and unresolved interfaces. No physical charging, thermal, sealing or reference-gas qualification has been completed. The accuracy targets of ±0.2 percentage points O2 and ±0.5 points He remain unproven. Charging is deliberately inhibited and J104 stays open until the cell, protection and temperature-sensing requirements are qualified.
 
@@ -51,8 +51,19 @@ The first ESP32-P4 installation must be flashed over USB. An ESP32-S3 cannot
 install this firmware through OTA because the chips and images are incompatible.
 
 The ESP-IDF application identity and release binary filenames still use
-`Trimix_analyzer`. They are part of the existing OTA image checks; Ziphius is
-the public project name and the release repository is `magnus188/ziphius`.
+`Trimix_analyzer`. They are part of the existing OTA image checks; Ægir is
+the public project name and the release repository is `magnus188/aegir`.
+
+### Startup splash
+
+The device shows the selected [Ægir 1 splash](../../branding/aegir-splash.png)
+in white on the app's dark background for about 1.8 seconds, then opens the
+home screen. The LVGL timer does not block service startup or OTA boot checks.
+The logo sources live in [`branding/`](../../branding/README.md); the compact
+alpha masks are compiled into the native firmware, simulator, and browser demo.
+If the logo source changes, regenerate the masks and previews with
+`python3 scripts/generate_splash_assets.py` from this directory. That optional
+asset-generation step requires ImageMagick (`magick`) and `rsvg-convert`.
 
 Run `make devices` to find likely serial ports. Firmware commands always source the pinned ESP-IDF v5.5.4 installation under `~/esp/v5.5.4/esp-idf`; an unrelated `idf.py` in `PATH` is never used. Override the installation location with `ESP_IDF_DIR=/path/to/esp-idf`.
 
@@ -81,7 +92,7 @@ Open `http://localhost:8080`. The generated site must be served over HTTP rather
 
 ### Automatic GitHub Pages deployment
 
-`.github/workflows/pages.yml` builds and deploys the demo after every push to `main`, and can also be run manually. Before the first deployment, select **GitHub Actions** under **Repository settings → Pages → Build and deployment → Source**. The project site will then be available at `https://magnus188.github.io/ziphius/`.
+`.github/workflows/pages.yml` builds and deploys the demo after every push to `main`, and can also be run manually. Before the first deployment, select **GitHub Actions** under **Repository settings → Pages → Build and deployment → Source**. The project site will then be available at `https://magnus188.github.io/aegir/`.
 
 ### ESP-IDF Project Structure
 ```

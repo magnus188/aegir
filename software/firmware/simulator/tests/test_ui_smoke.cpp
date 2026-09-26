@@ -338,6 +338,17 @@ int main() {
     pump_lvgl();
 
     bool ok = true;
+    const bool splash_visible = screen_manager_current() == SCREEN_SPLASH &&
+                                find_class(lv_screen_active(), &lv_image_class) != nullptr;
+    std::printf("%s startup shows the selected Ægir logo\n", splash_visible ? "PASS" : "FAIL");
+    ok = splash_visible && ok;
+    snapshot("splash");
+    lv_tick_inc(2000);
+    pump_lvgl();
+    const bool splash_finished = screen_manager_current() == SCREEN_HOME;
+    std::printf("%s splash opens the home screen automatically\n", splash_finished ? "PASS" : "FAIL");
+    ok = splash_finished && ok;
+
     ok = show_and_check(SCREEN_HOME) && ok;
     ok = show_and_check(SCREEN_ANALYSE) && ok;
     ok = show_and_check(SCREEN_DIVE_PLANNER) && ok;

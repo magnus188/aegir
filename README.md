@@ -1,11 +1,8 @@
-# Ziphius
+# Ægir
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="branding/ziphius-lockup-white.svg">
-  <img src="branding/ziphius-lockup.svg" alt="Ziphius logo" width="440">
-</picture>
+![Ægir 1 logo](branding/aegir-lockup-dark.png)
 
-Ziphius is a prototype trimix gas analyzer project with editable hardware
+Ægir is a prototype trimix gas analyzer project with editable hardware
 design files and ESP32-P4 software. The project is **not qualified as a
 breathing-gas safety instrument**. The current
 [whole-system review](hardware/system-review/README.md) lists the unresolved
@@ -20,7 +17,7 @@ HOLD.**
 | [CAD](hardware/cad/README.md) | Editable Fusion enclosure, STEP export, drawings, and 3D-print package |
 | [PCB](hardware/pcb/README.md) | KiCad analyzer and USB-input projects, libraries, and current manufacturing review |
 | [Hardware review](hardware/system-review/README.md) | Interface contracts, qualification status, and current engineering evidence |
-| [Branding](branding/README.md) | One-colour vector logo and wordmark suitable for device marking |
+| [Branding](branding/README.md) | Selected Ægir 1 logo, wordmark, and device splash |
 
 The active firmware workspace is [`software/firmware/`](software/firmware/).
 From the repository root, `make help` lists the common commands, `make test`

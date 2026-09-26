@@ -1,5 +1,5 @@
 #!/bin/bash
-# Host-side validation for Ziphius firmware.
+# Host-side validation for Ægir firmware.
 
 set -euo pipefail
 
@@ -93,7 +93,7 @@ run_binary_test() {
 }
 
 echo "=========================================="
-echo "  Ziphius Test Suite"
+echo "  Ægir Test Suite"
 echo "=========================================="
 
 echo ""

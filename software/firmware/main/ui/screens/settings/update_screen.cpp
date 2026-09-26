@@ -1,7 +1,6 @@
 #include "update_screen.h"
 #include "../../styles/styles.h"
 #include "../../components/navbar.h"
-#include "../../images/ziphius_logo.h"
 #include "../../../services/ota_service.h"
 #include "../../../services/wifi_service.h"
 #include "../screen_manager.h"
@@ -46,7 +45,6 @@ struct UpdateScreenState {
     lv_timer_t* state_timer = nullptr;
     // Fullscreen update overlay
     lv_obj_t* update_overlay = nullptr;
-    lv_obj_t* overlay_logo = nullptr;
     lv_obj_t* overlay_progress = nullptr;
     lv_obj_t* overlay_status = nullptr;
     lv_obj_t* overlay_percent = nullptr;
@@ -117,7 +115,7 @@ void screen_visibility_cb(lv_event_t* event) {
     }
 }
 
-// Create fullscreen update overlay with logo and progress
+// Create fullscreen update overlay with status and progress
 void show_update_overlay() {
     if (g_state.update_overlay) return;  // Already showing
     
@@ -131,22 +129,17 @@ void show_update_overlay() {
     lv_obj_set_style_radius(g_state.update_overlay, 0, 0);
     lv_obj_clear_flag(g_state.update_overlay, LV_OBJ_FLAG_SCROLLABLE);
     
-    // Logo image
-    g_state.overlay_logo = lv_image_create(g_state.update_overlay);
-    lv_image_set_src(g_state.overlay_logo, &ziphius_logo);
-    lv_obj_align(g_state.overlay_logo, LV_ALIGN_CENTER, 0, -140);
-    
     // Status label
     g_state.overlay_status = lv_label_create(g_state.update_overlay);
     lv_label_set_text(g_state.overlay_status, "Installing update...");
     lv_obj_set_style_text_font(g_state.overlay_status, &lv_font_montserrat_20, 0);
     lv_obj_set_style_text_color(g_state.overlay_status, lv_color_hex(STYLE_COLOR_TEXT_LIGHT), 0);
-    lv_obj_align(g_state.overlay_status, LV_ALIGN_CENTER, 0, 60);
+    lv_obj_align(g_state.overlay_status, LV_ALIGN_CENTER, 0, -60);
     
     // Progress bar
     g_state.overlay_progress = lv_bar_create(g_state.update_overlay);
     lv_obj_set_size(g_state.overlay_progress, SCREEN_WIDTH - 100, 12);
-    lv_obj_align(g_state.overlay_progress, LV_ALIGN_CENTER, 0, 100);
+    lv_obj_align(g_state.overlay_progress, LV_ALIGN_CENTER, 0, 0);
     lv_bar_set_range(g_state.overlay_progress, 0, 100);
     lv_bar_set_value(g_state.overlay_progress, 0, LV_ANIM_OFF);
     lv_obj_set_style_bg_color(g_state.overlay_progress, lv_color_hex(0x333333), 0);
@@ -160,7 +153,7 @@ void show_update_overlay() {
     lv_label_set_text(g_state.overlay_percent, "0%");
     lv_obj_set_style_text_font(g_state.overlay_percent, &lv_font_montserrat_28, 0);
     lv_obj_set_style_text_color(g_state.overlay_percent, lv_color_hex(STYLE_COLOR_TEXT_LIGHT), 0);
-    lv_obj_align(g_state.overlay_percent, LV_ALIGN_CENTER, 0, 150);
+    lv_obj_align(g_state.overlay_percent, LV_ALIGN_CENTER, 0, 55);
     
     // "Do not turn off" warning
     lv_obj_t* warning = lv_label_create(g_state.update_overlay);
@@ -176,7 +169,6 @@ void hide_update_overlay() {
     if (g_state.update_overlay) {
         lv_obj_delete(g_state.update_overlay);
         g_state.update_overlay = nullptr;
-        g_state.overlay_logo = nullptr;
         g_state.overlay_progress = nullptr;
         g_state.overlay_status = nullptr;
         g_state.overlay_percent = nullptr;

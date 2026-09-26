@@ -1,4 +1,4 @@
-# Ziphius hardware
+# Ægir hardware
 
 The ESP32 software project is in [`../software/firmware/`](../software/firmware/).
 Hardware work is grouped by discipline here so the editable files, previews

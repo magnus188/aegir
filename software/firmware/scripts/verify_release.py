@@ -92,7 +92,7 @@ def verify_metadata(raw, manifest):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--version", required=True)
-    parser.add_argument("--repository", default="magnus188/ziphius")
+    parser.add_argument("--repository", default="magnus188/aegir")
     parser.add_argument("--build-root", type=Path, default=Path("build"))
     parser.add_argument("--asset-dir", type=Path)
     parser.add_argument("--release-json", type=Path)

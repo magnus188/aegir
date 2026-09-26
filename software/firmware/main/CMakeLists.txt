@@ -44,6 +44,8 @@ idf_component_register(
         "services/settings_service.cpp"      # Settings management
         "services/backlight_service.cpp"     # Backlight PWM control
         "ui/screens/screen_manager.cpp"      # screen manager
+        "ui/screens/splash/splash_screen.cpp" # Ægir startup screen
+        "ui/images/aegir_splash_images.c"    # alpha masks for the logo
         "ui/screens/home/home_screen.cpp"    # home screen (main menu)
         "ui/screens/analyse/analyse_screen.cpp"  # gas analysis screen
         "ui/screens/history/history_screen.cpp"  # captured analysis history screen

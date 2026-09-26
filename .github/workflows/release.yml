@@ -187,7 +187,7 @@ jobs:
       - name: Upload release build artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: ziphius-esp32p4-v${{ steps.version.outputs.new_version }}
+          name: aegir-esp32p4-v${{ steps.version.outputs.new_version }}
           if-no-files-found: error
           path: |
             software/firmware/Trimix_analyzer_esp32p4_*_v${{ steps.version.outputs.new_version }}.bin
@@ -211,7 +211,7 @@ jobs:
           fi
           {
             echo "changelog<<EOF"
-            echo "## Ziphius v${{ steps.version.outputs.new_version }}"
+            echo "## Ægir v${{ steps.version.outputs.new_version }}"
             echo ""
             echo "$CHANGES"
             echo ""
@@ -227,7 +227,7 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           tag_name: v${{ steps.version.outputs.new_version }}
-          name: Ziphius v${{ steps.version.outputs.new_version }}
+          name: Ægir v${{ steps.version.outputs.new_version }}
           body: ${{ steps.changelog.outputs.changelog }}
           files: |
             software/firmware/Trimix_analyzer_esp32p4_*_v${{ steps.version.outputs.new_version }}.bin

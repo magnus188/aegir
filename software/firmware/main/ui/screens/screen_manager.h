@@ -17,6 +17,7 @@ typedef enum {
     SCREEN_CALIBRATE,
     SCREEN_SAFETY,
     SCREEN_DEVICE,
+    SCREEN_SPLASH,
     SCREEN_COUNT
 } screen_id_t;
 

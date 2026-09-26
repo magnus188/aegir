@@ -1,6 +1,6 @@
 #pragma once
 
-// Ziphius version information. Keep the existing version macros and ESP-IDF
+// Ægir version information. Keep the existing version macros and ESP-IDF
 // application identity for compatibility with the published OTA image format.
 #define TRIMIX_ANALYZER_VERSION_MAJOR 0
 #define TRIMIX_ANALYZER_VERSION_MINOR 2
@@ -22,7 +22,7 @@
 
 // GitHub repository information
 #define GITHUB_OWNER "magnus188"
-#define GITHUB_REPO "ziphius"
+#define GITHUB_REPO "aegir"
 #define GITHUB_API_URL "https://api.github.com/repos/" GITHUB_OWNER "/" GITHUB_REPO "/releases/latest"
 #define GITHUB_RELEASES_URL "https://github.com/" GITHUB_OWNER "/" GITHUB_REPO "/releases"
 

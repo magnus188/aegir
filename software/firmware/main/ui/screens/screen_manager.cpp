@@ -10,12 +10,14 @@
 #include "settings/device_screen.h"
 #include "settings/calibrate_screen.h"
 #include "settings/safety_screen.h"
+#include "splash/splash_screen.h"
 #include "../styles/styles.h"
 #include <array>
 #include <esp_log.h>
 
 namespace {
 static const char *TAG = "SCREEN_MANAGER";
+constexpr uint32_t kSplashDurationMs = 1800;
 
 class ScreenManager {
 public:
@@ -31,6 +33,7 @@ public:
         styles_init();
         
         // Create screens
+        screens_[SCREEN_SPLASH] = splash_screen_create();
         screens_[SCREEN_HOME] = home_screen_create();
         screens_[SCREEN_ANALYSE] = analyse_screen_create();
         screens_[SCREEN_DIVE_PLANNER] = dive_planner_screen_create();
@@ -43,15 +46,25 @@ public:
         screens_[SCREEN_SAFETY] = safety_screen_create();
         screens_[SCREEN_DEVICE] = device_screen_create();
         
-        show(SCREEN_HOME);
+        show(SCREEN_SPLASH);
+        splash_timer_ = lv_timer_create(splash_timeout, kSplashDurationMs, this);
+        if (!splash_timer_) {
+            ESP_LOGW(TAG, "Splash timer unavailable; opening home screen");
+            show(SCREEN_HOME);
+        }
     }
 
     void show(screen_id_t id) {
-        if (id >= SCREEN_COUNT) {
+        if (id >= SCREEN_COUNT || !screens_[id]) {
             ESP_LOGE(TAG, "Invalid screen %d", id);
             return;
         }
 
+        if (id != SCREEN_SPLASH && splash_timer_) {
+            lv_timer_delete(splash_timer_);
+            splash_timer_ = nullptr;
+        }
+        const bool leaving_splash = current_screen_ == SCREEN_SPLASH && id != SCREEN_SPLASH;
         lv_obj_t* scr = screens_[id];
         if (scr == lv_screen_active()) {
             current_screen_ = id;
@@ -69,6 +82,10 @@ public:
         lv_obj_clear_flag(scr, LV_OBJ_FLAG_SCROLL_CHAIN);
         
         lv_scr_load(scr);
+        if (leaving_splash) {
+            lv_obj_delete(screens_[SCREEN_SPLASH]);
+            screens_[SCREEN_SPLASH] = nullptr;
+        }
     }
 
     screen_id_t current() const {
@@ -76,8 +93,16 @@ public:
     }
 
 private:
+    static void splash_timeout(lv_timer_t* timer) {
+        auto* manager = static_cast<ScreenManager*>(lv_timer_get_user_data(timer));
+        manager->splash_timer_ = nullptr;
+        lv_timer_delete(timer);
+        if (manager->current_screen_ == SCREEN_SPLASH) manager->show(SCREEN_HOME);
+    }
+
     std::array<lv_obj_t*, SCREEN_COUNT> screens_{};
     screen_id_t current_screen_ = SCREEN_HOME;
+    lv_timer_t* splash_timer_ = nullptr;
 };
 
 static ScreenManager& mgr() {
