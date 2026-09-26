@@ -437,7 +437,7 @@ if command -v cmake >/dev/null 2>&1 && command -v pkg-config >/dev/null 2>&1 && 
         pass "Built simulator and CMake tests"
     else
         fail "Failed to build simulator and CMake tests"
-        sed -n '1,160p' "$HOST_BUILD_LOG"
+        tail -n 160 "$HOST_BUILD_LOG"
     fi
 
     if ctest --test-dir "$HOST_BUILD_DIR" --output-on-failure; then

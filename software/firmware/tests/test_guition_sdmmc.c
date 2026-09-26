@@ -1,5 +1,6 @@
 /* Compile the actual coordinator against an IDF-shaped host with real pthread
  * mutexes. Faults reproduce IDF 5.5.4's ignored deinit callback semantics. */
+#define _XOPEN_SOURCE 700
 #include "board/guition_sdmmc.h"
 #include <stdatomic.h>
 #include <stdio.h>
