@@ -1,8 +1,9 @@
 # Contributing
 
-Start with the [project map](README.md) and the relevant area guide:
-[firmware](software/firmware/README.md), [CAD](hardware/cad/README.md), or
-[PCB](hardware/pcb/README.md).
+Start with the [project overview](README.md). For details, use the
+[firmware guide](software/firmware/README.md), the
+[enclosure CAD](hardware/cad/rev04/3d-print/Trimix_Enclosure_A3_PrintReview.f3d),
+or the [main PCB project](hardware/pcb/analyzer/Trimix_Analyzer.kicad_pro).
 
 Before contributing, read the [license map](LICENSE.md). Submit original work
 under the license for its area: GPL-3.0-only for code and CERN-OHL-S-2.0 for

@@ -1,4 +1,5 @@
 # ESP32 and host build outputs
+/build/
 /software/firmware/build/
 /software/firmware/simulator/build*/
 /software/firmware/tests/build/

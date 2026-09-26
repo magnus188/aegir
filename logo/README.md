@@ -16,7 +16,7 @@ preserves earlier directions.
 
 The logo uses [Iceland](https://github.com/google/fonts/tree/main/ofl/iceland)
 with slightly wider letter spacing; the app interface uses the open-source
-[Oxanium](../software/firmware/assets/fonts/README.md) typeface. The
+[Oxanium](https://github.com/sevmeyer/oxanium) typeface. The
 wordmark SVG contains vector outlines and renders without the font installed.
 Iceland is distributed under the
 [SIL Open Font License 1.1](OFL-Iceland.txt).

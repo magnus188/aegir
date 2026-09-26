@@ -11,7 +11,7 @@ relicense third-party material included for reference or under its own license.
 | --- | --- |
 | Project-written software, build and CAD scripts, tests, and general repository documentation | [GNU GPL v3.0 only](LICENSES/GPL-3.0-only.txt) (`GPL-3.0-only`) |
 | Project-created PCB and mechanical design sources, drawings, fabrication and 3D-print exports, and hardware design documentation in `hardware/` | [CERN Open Hardware Licence v2, Strongly Reciprocal](LICENSES/CERN-OHL-S-2.0.txt) (`CERN-OHL-S-2.0`) |
-| Ægir name, face/ship logo, wordmark, splash artwork and copies of the mark in firmware or documentation | [Brand and trademark policy](branding/LICENSE.md) |
+| Ægir name, face/ship logo, wordmark, splash artwork and copies of the mark in firmware or documentation | [Brand and trademark policy](logo/LICENSE.md) |
 
 The software license includes project-written scripts wherever they live,
 including `hardware/**/scripts/`. The hardware license covers the editable
@@ -36,7 +36,7 @@ Keep the upstream notices and licenses when redistributing third-party files:
   LVGL glyph data in `software/firmware/main/ui/fonts/custom_font_*.c`:
   [SIL Open Font License 1.1](software/firmware/assets/fonts/OFL.txt).
 - Iceland outlines used in the Ægir wordmark: the font's
-  [SIL Open Font License 1.1](branding/OFL-Iceland.txt) remains applicable
+  [SIL Open Font License 1.1](logo/OFL-Iceland.txt) remains applicable
   alongside the project's brand policy.
 - The two KiCad STEP models in
   `hardware/pcb/usb-input/Trimix_USB.3dshapes/`: GPL-3.0-or-later with their

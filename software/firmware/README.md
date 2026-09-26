@@ -9,8 +9,7 @@ ESP32-P4/LVGL firmware for Ægir, the prototype trimix gas analyzer, on the nati
 The firmware workspace is this directory: application code lives in `main/`,
 with host tests in `tests/`, simulator support in `simulator/` and development
 tools in `scripts/`. The repository root has a small forwarding Makefile.
-Mechanical and electronics files are grouped under the
-[hardware overview](../../hardware/README.md): Fusion CAD is in `../../hardware/cad/`,
+Mechanical and electronics files are grouped under `../../hardware/`: Fusion CAD is in `../../hardware/cad/`,
 KiCad PCB projects are in `../../hardware/pcb/`, and Bambu Studio projects are in
 `../../hardware/cad/rev04/3d-print/printing/bambu-studio/`.
 
@@ -56,10 +55,10 @@ the public project name and the release repository is `magnus188/aegir`.
 
 ### Startup splash
 
-The device shows the selected [Ægir 1 splash](../../branding/aegir-splash.png)
+The device shows the selected [Ægir 1 splash](../../logo/aegir-splash.png)
 in white on the app's dark background for about 1.8 seconds, then opens the
 home screen. The LVGL timer does not block service startup or OTA boot checks.
-The logo sources live in [`branding/`](../../branding/README.md); the compact
+The logo sources live in [`logo/`](../../logo/README.md); the compact
 alpha masks are compiled into the native firmware, simulator, and browser demo.
 If the logo source changes, regenerate the masks and previews with
 `python3 scripts/generate_splash_assets.py` from this directory. That optional
