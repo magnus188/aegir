@@ -30,10 +30,12 @@ class ReleaseValidation(unittest.TestCase):
     def setUp(self):
         self.manifest = {"repository": "magnus188/aegir", "tag": "v1.2.3", "applications": [
             release.application_info(image(f), f, "1.2.3", 1024) for f in ("pre3", "v3")]}
-        self.metadata = {"tag_name": "v1.2.3", "draft": True, "prerelease": False, "assets": []}
+        self.metadata = {"tag_name": "v1.2.3", "draft": True, "prerelease": False,
+                         "html_url": "https://github.com/magnus188/aegir/releases/tag/untagged-a1b2c3d4",
+                         "assets": []}
         for app in self.manifest["applications"]:
             self.metadata["assets"].append({**app, "state": "uploaded", "browser_download_url":
-                f'https://github.com/{self.manifest["repository"]}/releases/download/v1.2.3/{app["name"]}'})
+                f'https://github.com/{self.manifest["repository"]}/releases/download/untagged-a1b2c3d4/{app["name"]}'})
 
     def test_valid_family_images(self):
         self.assertEqual([a["minimum_chip_revision"] for a in self.manifest["applications"]], [1, 300])
@@ -79,6 +81,21 @@ class ReleaseValidation(unittest.TestCase):
 
     def test_complete_draft_metadata_matches(self):
         release.verify_metadata(json.dumps(self.metadata).encode(), self.manifest)
+
+    def test_published_metadata_uses_tag_urls(self):
+        fixture = copy.deepcopy(self.metadata)
+        fixture["draft"] = False
+        fixture["html_url"] = "https://github.com/magnus188/aegir/releases/tag/v1.2.3"
+        for asset in fixture["assets"]:
+            asset["browser_download_url"] = asset["browser_download_url"].replace("untagged-a1b2c3d4", "v1.2.3")
+        release.verify_metadata(json.dumps(fixture).encode(), self.manifest)
+
+    def test_draft_url_must_identify_this_release(self):
+        for url in ("https://github.com/other/aegir/releases/tag/untagged-a1b2c3d4",
+                    "https://github.com/magnus188/aegir/releases/tag/untagged-nothex"):
+            fixture = {**self.metadata, "html_url": url}
+            with self.subTest(url=url), self.assertRaises(ValueError):
+                release.verify_metadata(json.dumps(fixture).encode(), self.manifest)
 
     def test_missing_or_duplicate_asset_rejected(self):
         for assets in ([], self.metadata["assets"] * 2):

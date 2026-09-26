@@ -75,6 +75,25 @@ def verify_metadata(raw, manifest):
     release = json.loads(raw)
     if release.get("tag_name") != manifest["tag"] or release.get("prerelease") is not False:
         raise ValueError("Release tag/prerelease differs from installable release")
+    release_base = f'https://github.com/{manifest["repository"]}/releases'
+    html_url = release.get("html_url")
+    if not isinstance(html_url, str):
+        raise ValueError("Missing GitHub release URL")
+    if release.get("draft") is True:
+        # GitHub gives an unpublished draft a temporary untagged URL. The
+        # download URLs switch to the release tag when the draft is published.
+        match = re.fullmatch(
+            re.escape(release_base + "/tag/") +
+            rf"({re.escape(manifest['tag'])}|untagged-[0-9a-f]+)",
+            html_url,
+        )
+        if not match:
+            raise ValueError("Draft release URL differs from the expected repository")
+        download_ref = match.group(1)
+    elif release.get("draft") is False and html_url == f'{release_base}/tag/{manifest["tag"]}':
+        download_ref = manifest["tag"]
+    else:
+        raise ValueError("Published release URL differs from the expected tag")
     assets = release.get("assets")
     if not isinstance(assets, list):
         raise ValueError("Missing GitHub assets")
@@ -83,7 +102,7 @@ def verify_metadata(raw, manifest):
         if len(matched) != 1:
             raise ValueError("Missing or duplicate exact OTA application asset")
         asset = matched[0]
-        url = f'https://github.com/{manifest["repository"]}/releases/download/{manifest["tag"]}/{expected["name"]}'
+        url = f'{release_base}/download/{download_ref}/{expected["name"]}'
         if (asset.get("state") != "uploaded" or asset.get("size") != expected["size"] or
                 asset.get("digest") != expected["digest"] or asset.get("browser_download_url") != url):
             raise ValueError("GitHub asset identity, size, URL or server digest differs from tested bytes")
