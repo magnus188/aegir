@@ -46,6 +46,7 @@ idf_component_register(
         "ui/screens/screen_manager.cpp"      # screen manager
         "ui/screens/splash/splash_screen.cpp" # Ægir startup screen
         "ui/images/aegir_splash_images.c"    # alpha masks for the logo
+        "ui/images/menu_icons.c"             # Tabler menu icon alpha masks
         "ui/screens/home/home_screen.cpp"    # home screen (main menu)
         "ui/screens/analyse/analyse_screen.cpp"  # gas analysis screen
         "ui/screens/history/history_screen.cpp"  # captured analysis history screen

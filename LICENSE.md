@@ -35,6 +35,9 @@ Keep the upstream notices and licenses when redistributing third-party files:
 - Oxanium UI font files in `software/firmware/assets/fonts/` and generated
   LVGL glyph data in `software/firmware/main/ui/fonts/custom_font_*.c`:
   [SIL Open Font License 1.1](software/firmware/assets/fonts/OFL.txt).
+- Tabler menu icon SVGs in `software/firmware/assets/icons/tabler/` and their
+  generated LVGL alpha masks in `software/firmware/main/ui/images/menu_icons.c`:
+  [MIT](software/firmware/assets/icons/tabler/LICENSE).
 - Iceland outlines used in the Ægir wordmark: the font's
   [SIL Open Font License 1.1](logo/OFL-Iceland.txt) remains applicable
   alongside the project's brand policy.

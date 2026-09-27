@@ -21,11 +21,12 @@ The runes ᛅᛁᚾ are a Viking Age-style representation of einn, Old Norse for
 
 ## Screenshots
 
-These screens show the simulator with demo data.
+These screens show the simulator with demo data. Swipe horizontally between
+live analysis and profile planning.
 
-| Analysis | Calibration | Device settings |
+| Main menu | Live analysis | Profile and planning |
 | :---: | :---: | :---: |
-| <img src="hardware/system-review/verification/ui-current/analysis-live.png" alt="Mix analysis screen" width="240"> | <img src="hardware/system-review/verification/ui-current/calibration-overview.png" alt="Calibration screen" width="240"> | <img src="hardware/system-review/verification/ui-current/device-status.png" alt="Device settings screen" width="240"> |
+| <img src="software/firmware/docs/screenshots/main-menu.png" alt="Main menu with Tabler icons" width="240"> | <img src="software/firmware/docs/screenshots/analysis-live.png" alt="Live gas analysis and sample graph" width="240"> | <img src="software/firmware/docs/screenshots/analysis-planning.png" alt="Gas profile and dive planning controls" width="240"> |
 
 ## Run it
 

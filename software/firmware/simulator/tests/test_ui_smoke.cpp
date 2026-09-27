@@ -7,6 +7,7 @@
 #include "ui/screens/screen_manager.h"
 #include "services/gas_calibration_service.h"
 #include "services/analysis_history.h"
+#include "services/cylinder_profiles.h"
 #include "sensors/sensor_interface.h"
 #include "services/storage_service.h"
 #include "services/sd_log_service.h"
@@ -20,6 +21,13 @@ namespace {
 
 uint8_t g_draw_buffer[480 * 40 * 2];
 uint16_t g_pixels[480 * 800]{};
+lv_point_t g_touch_point{};
+bool g_touch_down = false;
+
+void pointer_read_cb(lv_indev_t*, lv_indev_data_t* data) {
+    data->point = g_touch_point;
+    data->state = g_touch_down ? LV_INDEV_STATE_PRESSED : LV_INDEV_STATE_RELEASED;
+}
 
 void flush_cb(lv_display_t* display, const lv_area_t* area, uint8_t* pixels) {
     const auto *source = reinterpret_cast<const uint16_t *>(pixels);
@@ -34,6 +42,26 @@ void pump_lvgl(int frames = 3) {
         lv_tick_inc(16);
         lv_timer_handler();
     }
+}
+
+void tap(int x, int y) {
+    g_touch_point = {x, y};
+    g_touch_down = true;
+    pump_lvgl(4);
+    g_touch_down = false;
+    pump_lvgl(5);
+}
+
+void swipe(int start_x, int end_x, int y) {
+    g_touch_point = {start_x, y};
+    g_touch_down = true;
+    pump_lvgl(3);
+    for (int step = 1; step <= 12; ++step) {
+        g_touch_point = {start_x + (end_x - start_x) * step / 12, y};
+        pump_lvgl(2);
+    }
+    g_touch_down = false;
+    pump_lvgl(24);
 }
 
 bool show_and_check(screen_id_t screen) {
@@ -112,6 +140,8 @@ void click(const char *text) {
     pump_lvgl();
 }
 
+void snapshot(const char *name, const char *visible);
+
 bool logging_navigation_checks() {
     bool ok = true;
     auto expect = [&](bool value, const char *name) {
@@ -125,12 +155,14 @@ bool logging_navigation_checks() {
            "SD navigation checks use the real no-card simulator backend");
     screen_manager_show(SCREEN_ANALYSE); pump_lvgl();
     expect(activity(SCREEN_ANALYSE, sd_log::Mode::Analysis), "Analyse starts its SD activity");
-    expect(action("O2 setup") != nullptr, "Analyse exposes the direct sensor-setup action");
-    click("O2 setup");
+    expect(!find_label(lv_screen_active(), "O2 setup") && find_label(lv_screen_active(), "HUMIDITY"),
+           "Analysis replaces the setup tile with humidity");
+    screen_manager_show(SCREEN_SETTINGS); pump_lvgl();
+    click("Calibrate Sensors");
     // LVGL sends the destination's LOADED before the old screen's UNLOADED.
-    // Exercise the real click and both event handlers, not a modeled ordering.
+    // Exercise the Settings calibration click and both event handlers.
     expect(activity(SCREEN_CALIBRATE, sd_log::Mode::Calibration),
-           "Analyse unload cannot stop the newly loaded Calibration activity");
+           "Settings calibration action starts Calibration activity");
     pump_lvgl(50);
     expect(activity(SCREEN_CALIBRATE, sd_log::Mode::Calibration),
            "Calibration activity persists through timer updates without media");
@@ -147,6 +179,73 @@ bool logging_navigation_checks() {
     expect(action(LV_SYMBOL_LEFT) != nullptr, "Analyse back action exists");
     click(LV_SYMBOL_LEFT);
     expect(activity(SCREEN_HOME, sd_log::Mode::Idle), "Analyse back stops SD activity");
+    return ok;
+}
+
+bool menu_and_paging_checks() {
+    bool ok = true;
+    auto expect = [&](bool value, const char *name) {
+        std::printf("%s %s\n", value ? "PASS" : "FAIL", name); ok &= value;
+    };
+    screen_manager_show(SCREEN_HOME); pump_lvgl();
+    snapshot("home-redesign", nullptr);
+    expect(!find_label(lv_screen_active(), "Trimix Analysator"), "Home omits the old title");
+    const struct { const char *label; screen_id_t destination; } menu[] = {
+        {"Analyse", SCREEN_ANALYSE}, {"Dive", SCREEN_DIVE_PLANNER},
+        {"History", SCREEN_HISTORY}, {"Cylinders", SCREEN_CYLINDERS},
+        {"Settings", SCREEN_SETTINGS},
+    };
+    for (const auto &item : menu) {
+        if (item.destination == SCREEN_ANALYSE) tap(75, 143);
+        else click(item.label);
+        expect(screen_manager_current() == item.destination, item.label);
+        screen_manager_show(SCREEN_HOME); pump_lvgl();
+    }
+    screen_manager_show(SCREEN_ANALYSE); pump_lvgl();
+    auto *trend = find_label(lv_screen_active(), "SAMPLE TREND");
+    auto *pages = trend ? lv_obj_get_parent(lv_obj_get_parent(trend)) : nullptr;
+    expect(pages && lv_obj_get_scroll_dir(pages) == LV_DIR_HOR,
+           "Analysis pages support horizontal navigation");
+    expect(find_label(lv_screen_active(), "HUMIDITY") && !find_label(lv_screen_active(), "O2 setup") &&
+           !find_label(lv_screen_active(), "Advisory"), "Live page shows humidity without removed cards");
+    if (pages) {
+        swipe(420, 55, 440);
+        expect(lv_obj_get_scroll_x(pages) == 480, "Swipe reaches profile and planning page");
+        snapshot("analysis-planning", nullptr);
+        expect(find_label(lv_screen_active(), "DEMO GAS PROFILE") &&
+               find_label(lv_screen_active(), "PLANNED DEPTH") && action("Save Avg"),
+               "Planning controls and save actions remain available");
+        tap(85, 201);
+        expect(sensor_get_mock_profile() == SENSOR_MOCK_PROFILE_AIR,
+               "Profile selector still changes simulator readings");
+        tap(390, 201);
+        tap(180, 385);
+        expect(lv_buttonmatrix_get_selected_button(find_matrix(lv_screen_active(), "Back")) == 1,
+               "Gas-use mode remains selectable");
+        tap(178, 472);
+        expect(!find_label(lv_screen_active(), "Auto"), "Helium override control responds to touch");
+        tap(416, 472);
+        expect(find_label(lv_screen_active(), "35 m"), "Planned depth control responds to touch");
+        tap(282, 472);
+        tap(68, 385);
+        tap(390, 201);
+        select_matrix("Air", 5);
+        expect(sensor_get_mock_profile() == SENSOR_MOCK_PROFILE_SENSOR_FAULT &&
+               find_label(lv_screen_active(), "Fault") &&
+               lv_obj_has_state(action("Save Avg"), LV_STATE_DISABLED) &&
+               lv_obj_has_state(action("Save Cyl"), LV_STATE_DISABLED),
+               "Faulted readings disable both save actions");
+        swipe(55, 420, 440);
+        snapshot("analysis-fault", nullptr);
+        swipe(420, 55, 440);
+        select_matrix("Air", 4);
+        expect(sensor_get_mock_profile() == SENSOR_MOCK_PROFILE_UNSTABLE &&
+               lv_obj_has_state(action("Save Avg"), LV_STATE_DISABLED),
+               "Unstable readings cannot be saved");
+        select_matrix("Air", 2);
+        swipe(55, 420, 440);
+        expect(lv_obj_get_scroll_x(pages) == 0, "Swipe returns to live graph page");
+    }
     return ok;
 }
 
@@ -281,8 +380,20 @@ bool calibration_checks() {
     screen_manager_show(SCREEN_ANALYSE);
     for (int i = 0; i < 5; ++i) { lv_tick_inc(1000); lv_timer_handler(); }
     snapshot("analysis-live");
+    if (auto *trend = find_label(lv_screen_active(), "SAMPLE TREND")) {
+        auto *pages = lv_obj_get_parent(lv_obj_get_parent(trend));
+        lv_obj_scroll_to_x(pages, 480, LV_ANIM_OFF);
+        pump_lvgl();
+        snapshot("analysis-planning-stable");
+    }
     click("Save Avg");
     expect(analysis_history_count() > 0, "Calibrated simulated measurements retain normal history capture");
+    click("Save Cyl");
+    cylinder_profile_t saved_cylinder{};
+    expect(cylinder_profiles_get_selected(&saved_cylinder) && saved_cylinder.configured &&
+           !saved_cylinder.needs_recheck && saved_cylinder.oxygen_percent > 17.0f &&
+           saved_cylinder.helium_percent > 44.0f,
+           "Calibrated simulated measurements still update the selected cylinder");
     screen_manager_show(SCREEN_HISTORY); pump_lvgl();
     expect(find_label(lv_screen_active(), "CO 0.3 ppm") && find_label(lv_screen_active(), "CO2"),
            "History distinguishes measured CO from legacy simulated CO2");
@@ -326,6 +437,10 @@ int main() {
     lv_display_t* display = lv_display_create(480, 800);
     lv_display_set_flush_cb(display, flush_cb);
     lv_display_set_buffers(display, g_draw_buffer, nullptr, sizeof(g_draw_buffer), LV_DISPLAY_RENDER_MODE_PARTIAL);
+    lv_indev_t* pointer = lv_indev_create();
+    lv_indev_set_type(pointer, LV_INDEV_TYPE_POINTER);
+    lv_indev_set_read_cb(pointer, pointer_read_cb);
+    lv_indev_set_display(pointer, display);
 
     settings_init();
     wifi_service_init();
@@ -351,6 +466,7 @@ int main() {
 
     ok = show_and_check(SCREEN_HOME) && ok;
     ok = show_and_check(SCREEN_ANALYSE) && ok;
+    ok = menu_and_paging_checks() && ok;
     ok = show_and_check(SCREEN_DIVE_PLANNER) && ok;
     ok = show_and_check(SCREEN_HISTORY) && ok;
     ok = show_and_check(SCREEN_CYLINDERS) && ok;

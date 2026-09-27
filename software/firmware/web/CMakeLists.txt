@@ -79,6 +79,7 @@ set(TRIMIX_UI_SOURCES
     "${TRIMIX_ROOT}/main/ui/screens/screen_manager.cpp"
     "${TRIMIX_ROOT}/main/ui/screens/splash/splash_screen.cpp"
     "${TRIMIX_ROOT}/main/ui/images/aegir_splash_images.c"
+    "${TRIMIX_ROOT}/main/ui/images/menu_icons.c"
     "${TRIMIX_ROOT}/main/ui/screens/home/home_screen.cpp"
     "${TRIMIX_ROOT}/main/ui/screens/analyse/analyse_screen.cpp"
     "${TRIMIX_ROOT}/main/ui/screens/history/history_screen.cpp"

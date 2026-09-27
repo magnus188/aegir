@@ -6,7 +6,7 @@ extern "C" {
 #endif
 
 /**
- * Create the home screen with 2x2 menu grid
+ * Create the titleless home screen with Analyse hero and four destination tiles
  * @return The screen object
  */
 lv_obj_t* home_screen_create(void);
