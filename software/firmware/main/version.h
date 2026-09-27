@@ -3,9 +3,9 @@
 // Ægir version information. Keep the existing version macros and ESP-IDF
 // application identity for compatibility with the published OTA image format.
 #define TRIMIX_ANALYZER_VERSION_MAJOR 0
-#define TRIMIX_ANALYZER_VERSION_MINOR 2
+#define TRIMIX_ANALYZER_VERSION_MINOR 3
 #define TRIMIX_ANALYZER_VERSION_PATCH 0
-#define TRIMIX_ANALYZER_VERSION "0.2.0"
+#define TRIMIX_ANALYZER_VERSION "0.3.0"
 
 // Build information (these can be set during build process)
 #ifndef BUILD_DATE
