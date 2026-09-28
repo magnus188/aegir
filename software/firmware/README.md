@@ -221,7 +221,7 @@ The [electrical/firmware/harness contract](../../hardware/system-review/electric
 
 6. **Settings Screen**
    - Device settings navigation
-   - Cylinder profiles, WiFi, software update, safety settings, calibration, and device information entrypoints
+   - WiFi, software update, safety settings, calibration, and device information entrypoints
 
 7. **WiFi Screen**
    - Network scanning, connection, password modal, and disconnect controls
@@ -233,10 +233,11 @@ The [electrical/firmware/harness contract](../../hardware/system-review/electric
    - Guided known-gas oxygen and helium calibration with stability/fault checks and separate AO2/JJ/He records; failed saves retain the previous calibration
 
 10. **Safety Settings Screen**
-   - User-configured PPO2, density, and CO2 advisory limits used by Analyse
+   - User-configured PPO2 and density limits, plus CO and chamber-relative-humidity advisory/alarm levels used by Analyse
+   - Initial visual-alert levels: CO 3/5 ppm and chamber RH 80/90% (amber/red). Chamber RH describes conditions at the sensors, not cylinder water content; neither the alert colors nor the experimental CO module certify breathing-gas quality. The obsolete CO2 preference is retained only to read older saved settings.
 
 11. **Device Screen**
-   - Device information and configuration controls
+   - Read-only storage, battery, and SD status plus brightness, sleep, and sound controls
 
 ## Building and Flashing
 
@@ -306,7 +307,7 @@ Whole-device active, idle, charging and hardware-off consumption remains unmeasu
 ### Current Limitations
 1. Physical fit, source protection, cell charging, thermal behaviour and gas accuracy remain unqualified; PCB order readiness is on hold.
 2. Simulator streams support repeatable UI/logic tests; they are not physical measurement evidence.
-3. Settings, calibration and recent history remain in NVS. [Optional onboard SD logging](../../hardware/system-review/software/sd-card/README.md) automatically records analysis/calibration sessions, raw samples and events. Device Settings provides status, safe eject and retry. Digital tests pass; actual card operation, power loss and simultaneous Wi-Fi use remain untested. Absent or faulty media leaves local analysis available.
+3. Settings, calibration and recent history remain in NVS. [Optional onboard SD logging](../../hardware/system-review/software/sd-card/README.md) automatically records analysis/calibration sessions, raw samples and events. Device Settings shows SD status without eject or retry controls because the card is inaccessible to the user. Digital tests pass; actual card operation, power loss and simultaneous Wi-Fi use remain untested. Absent or faulty media leaves local analysis available.
 
 ## Development Notes
 

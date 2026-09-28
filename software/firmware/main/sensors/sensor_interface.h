@@ -25,7 +25,7 @@ typedef enum {
     SENSOR_MOCK_PROFILE_AIR = 0,
     SENSOR_MOCK_PROFILE_EAN32,
     SENSOR_MOCK_PROFILE_TRIMIX_18_45,
-    SENSOR_MOCK_PROFILE_HIGH_CO2,
+    SENSOR_MOCK_PROFILE_HIGH_CO,
     SENSOR_MOCK_PROFILE_UNSTABLE,
     SENSOR_MOCK_PROFILE_SENSOR_FAULT,
     SENSOR_MOCK_PROFILE_COUNT
@@ -57,6 +57,8 @@ typedef struct {
     bool oxygen_calibration_required;
     uint32_t oxygen_calibration_revision;
     uint32_t helium_calibration_revision;
+    // Uncalibrated simulator input for display only; never used for analysis or saving.
+    float simulated_oxygen_input_percent;
 } sensor_readings_t;
 
 esp_err_t sensor_read_all(sensor_readings_t *out);

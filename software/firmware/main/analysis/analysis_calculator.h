@@ -28,7 +28,10 @@ typedef struct {
     int32_t ppo2_secondary_x100;
     int32_t density_advisory_x10;
     int32_t density_alarm_x10;
-    int32_t co2_advisory_ppm;
+    int32_t co_advisory_ppm;
+    int32_t co_alarm_ppm;
+    int32_t humidity_advisory_pct;
+    int32_t humidity_alarm_pct;
 } analysis_limits_t;
 
 typedef struct {
@@ -59,6 +62,9 @@ typedef struct {
     char advisory[96];
     float co_ppm;
     bool co_valid;
+    bool humidity_valid;
+    analysis_severity_t co_severity;
+    analysis_severity_t humidity_severity;
 } analysis_result_t;
 
 analysis_limits_t analysis_default_limits(void);

@@ -22,6 +22,9 @@ lv_obj_t* navbar_create(lv_obj_t* parent, const char* title);
  */
 lv_obj_t* navbar_create_with_back(lv_obj_t* parent, const char* title, lv_event_cb_t back_cb);
 
+/** Create the 50px dark header used by the instrument screens. */
+lv_obj_t* navbar_create_instrument(lv_obj_t* parent, const char* title, lv_event_cb_t back_cb);
+
 /**
  * Update navbar title
  * @param navbar The navbar object returned by navbar_create

@@ -49,8 +49,8 @@ lv_obj_t *panel(lv_obj_t *parent) {
     lv_obj_t *obj = lv_obj_create(parent);
     lv_obj_set_width(obj, lv_pct(100));
     lv_obj_set_height(obj, LV_SIZE_CONTENT);
-    lv_obj_set_style_bg_color(obj, lv_color_hex(STYLE_COLOR_SURFACE), 0);
-    lv_obj_set_style_border_color(obj, lv_color_hex(STYLE_COLOR_BORDER), 0);
+    lv_obj_set_style_bg_color(obj, lv_color_hex(STYLE_COLOR_TILE), 0);
+    lv_obj_set_style_border_color(obj, lv_color_hex(STYLE_COLOR_TILE_BORDER), 0);
     lv_obj_set_style_border_width(obj, 1, 0);
     lv_obj_set_style_radius(obj, 8, 0);
     lv_obj_set_style_pad_all(obj, 12, 0);
@@ -95,6 +95,13 @@ lv_obj_t *input(lv_obj_t *parent, const char *title, const char *value, bool num
     if (numeric) lv_textarea_set_accepted_chars(obj, "0123456789.");
     lv_textarea_set_text(obj, value);
     lv_obj_set_style_text_font(obj, &lv_font_montserrat_18, 0);
+    lv_obj_set_style_bg_color(obj, lv_color_hex(STYLE_COLOR_BG_CARD), 0);
+    lv_obj_set_style_text_color(obj, lv_color_hex(STYLE_COLOR_TEXT_LIGHT), 0);
+    lv_obj_set_style_text_color(obj, lv_color_hex(STYLE_COLOR_TEXT_DIM), LV_PART_TEXTAREA_PLACEHOLDER);
+    lv_obj_set_style_border_color(obj, lv_color_hex(STYLE_COLOR_TILE_BORDER), 0);
+    lv_obj_set_style_border_color(obj, lv_color_hex(STYLE_COLOR_CYAN), LV_STATE_FOCUSED);
+    lv_obj_set_style_border_width(obj, 1, 0);
+    lv_obj_set_style_radius(obj, 6, 0);
     lv_obj_add_event_cb(obj, input_focus_cb, LV_EVENT_FOCUSED, nullptr);
     return obj;
 }
@@ -129,7 +136,10 @@ lv_obj_t *matrix(lv_obj_t *parent, const char *const *map, lv_event_cb_t cb) {
     lv_obj_set_style_bg_color(obj, lv_color_hex(STYLE_COLOR_BG_CARD), LV_PART_ITEMS);
     lv_obj_set_style_text_color(obj, lv_color_hex(STYLE_COLOR_TEXT_LIGHT), LV_PART_ITEMS);
     lv_obj_set_style_radius(obj, 6, LV_PART_ITEMS);
-    lv_obj_set_style_bg_color(obj, lv_color_hex(STYLE_COLOR_PRIMARY), static_cast<lv_style_selector_t>(LV_PART_ITEMS) | static_cast<lv_style_selector_t>(LV_STATE_CHECKED));
+    const lv_style_selector_t checked = static_cast<lv_style_selector_t>(LV_PART_ITEMS) |
+                                        static_cast<lv_style_selector_t>(LV_STATE_CHECKED);
+    lv_obj_set_style_bg_color(obj, lv_color_hex(STYLE_COLOR_CYAN), checked);
+    lv_obj_set_style_text_color(obj, lv_color_hex(STYLE_COLOR_BG_DARK), checked);
     lv_obj_add_event_cb(obj, cb, LV_EVENT_VALUE_CHANGED, nullptr);
     return obj;
 }
@@ -185,7 +195,7 @@ void refresh() {
         const auto profile = sensor_get_mock_profile();
         lv_dropdown_set_selected(g.sim_profile, profile == SENSOR_MOCK_PROFILE_EAN32 ? 1 :
             profile == SENSOR_MOCK_PROFILE_TRIMIX_18_45 ? 2 : profile == SENSOR_MOCK_PROFILE_UNSTABLE ? 3 :
-            profile == SENSOR_MOCK_PROFILE_SENSOR_FAULT ? 4 : profile == SENSOR_MOCK_PROFILE_HIGH_CO2 ? 5 : 0);
+            profile == SENSOR_MOCK_PROFILE_SENSOR_FAULT ? 4 : profile == SENSOR_MOCK_PROFILE_HIGH_CO ? 5 : 0);
     }
     gas_raw_sample_t sample{};
     char buf[256];
@@ -373,7 +383,7 @@ void simulation_cb(lv_event_t *e) {
     if (!gas_calibration_is_simulated()) return;
     const sensor_mock_profile_t profiles[] = {SENSOR_MOCK_PROFILE_AIR, SENSOR_MOCK_PROFILE_EAN32,
         SENSOR_MOCK_PROFILE_TRIMIX_18_45, SENSOR_MOCK_PROFILE_UNSTABLE, SENSOR_MOCK_PROFILE_SENSOR_FAULT,
-        SENSOR_MOCK_PROFILE_HIGH_CO2};
+        SENSOR_MOCK_PROFILE_HIGH_CO};
     const unsigned selected = lv_dropdown_get_selected(static_cast<lv_obj_t *>(lv_event_get_target(e)));
     if (selected < sizeof(profiles) / sizeof(profiles[0])) sensor_set_mock_profile(profiles[selected]);
     refresh();
@@ -442,7 +452,19 @@ lv_obj_t *calibrate_screen_create(void) {
     g.record_label = label(g.content, "--", &lv_font_montserrat_14, STYLE_COLOR_TEXT_DIM);
     g.sim_profile = lv_dropdown_create(g.content);
     lv_obj_set_width(g.sim_profile, lv_pct(100));
-    lv_dropdown_set_options(g.sim_profile, "Demo gas: Air\nDemo gas: EAN32\nDemo gas: 18/45\nDemo gas: Unstable\nDemo gas: Fault\nDemo gas: High CO2");
+    lv_dropdown_set_options(g.sim_profile, "Demo gas: Air\nDemo gas: EAN32\nDemo gas: 18/45\nDemo gas: Unstable\nDemo gas: Fault\nDemo gas: High CO");
+    lv_obj_set_style_bg_color(g.sim_profile, lv_color_hex(STYLE_COLOR_BG_CARD), 0);
+    lv_obj_set_style_text_color(g.sim_profile, lv_color_hex(STYLE_COLOR_TEXT_LIGHT), 0);
+    lv_obj_set_style_border_color(g.sim_profile, lv_color_hex(STYLE_COLOR_TILE_BORDER), 0);
+    lv_obj_set_style_border_width(g.sim_profile, 1, 0);
+    lv_obj_set_style_radius(g.sim_profile, 6, 0);
+    lv_obj_t* profile_list = lv_dropdown_get_list(g.sim_profile);
+    lv_obj_set_style_bg_color(profile_list, lv_color_hex(STYLE_COLOR_BG_CARD), LV_PART_MAIN);
+    lv_obj_set_style_text_color(profile_list, lv_color_hex(STYLE_COLOR_TEXT_LIGHT), LV_PART_MAIN);
+    lv_obj_set_style_border_color(profile_list, lv_color_hex(STYLE_COLOR_TILE_BORDER), LV_PART_MAIN);
+    lv_obj_set_style_border_width(profile_list, 1, LV_PART_MAIN);
+    lv_obj_set_style_bg_color(profile_list, lv_color_hex(STYLE_COLOR_CYAN), LV_PART_SELECTED);
+    lv_obj_set_style_text_color(profile_list, lv_color_hex(STYLE_COLOR_BG_DARK), LV_PART_SELECTED);
     const sensor_mock_profile_t profile = sensor_get_mock_profile();
     lv_dropdown_set_selected(g.sim_profile, profile == SENSOR_MOCK_PROFILE_EAN32 ? 1 : profile == SENSOR_MOCK_PROFILE_TRIMIX_18_45 ? 2 : 0);
     lv_obj_add_event_cb(g.sim_profile, simulation_cb, LV_EVENT_VALUE_CHANGED, nullptr);
@@ -483,6 +505,12 @@ lv_obj_t *calibrate_screen_create(void) {
     lv_obj_add_flag(g.keyboard, LV_OBJ_FLAG_FLOATING);
     lv_obj_set_size(g.keyboard, WIDTH, KEYBOARD_HEIGHT);
     lv_obj_align(g.keyboard, LV_ALIGN_BOTTOM_MID, 0, 0);
+    lv_obj_set_style_bg_color(g.keyboard, lv_color_hex(STYLE_COLOR_BG_DARK), LV_PART_MAIN);
+    lv_obj_set_style_bg_color(g.keyboard, lv_color_hex(STYLE_COLOR_BG_CARD), LV_PART_ITEMS);
+    lv_obj_set_style_text_color(g.keyboard, lv_color_hex(STYLE_COLOR_TEXT_LIGHT), LV_PART_ITEMS);
+    lv_obj_set_style_border_color(g.keyboard, lv_color_hex(STYLE_COLOR_TILE_BORDER), LV_PART_ITEMS);
+    lv_obj_set_style_bg_color(g.keyboard, lv_color_hex(STYLE_COLOR_CYAN),
+        static_cast<lv_style_selector_t>(LV_PART_ITEMS) | static_cast<lv_style_selector_t>(LV_STATE_PRESSED));
     lv_obj_add_event_cb(g.keyboard, keyboard_cb, LV_EVENT_READY, nullptr);
     lv_obj_add_event_cb(g.keyboard, keyboard_cb, LV_EVENT_CANCEL, nullptr);
     close_keyboard();

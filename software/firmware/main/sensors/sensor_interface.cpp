@@ -1,6 +1,7 @@
 #include "sensor_interface.h"
 #include <esp_err.h>
 #include <esp_log.h>
+#include <algorithm>
 #include <cmath>
 #include "sensor_hardware.h"
 #include "services/gas_calibration_internal.h"
@@ -15,18 +16,18 @@ struct MockProfileSpec {
     const char* name;
     float oxygen_percent;
     float helium_percent;
-    float co2_ppm;
+    float co_ppm;
     float temperature_c;
     float pressure_bar;
     float humidity_pct;
 };
 
 constexpr MockProfileSpec kProfiles[SENSOR_MOCK_PROFILE_COUNT] = {
-    {"Air", 20.9f, 0.0f, 420.0f, 22.1f, 1.00f, 44.0f},
-    {"EAN32", 32.0f, 0.0f, 430.0f, 22.4f, 1.01f, 42.0f},
-    {"Trimix 18/45", 18.0f, 45.0f, 425.0f, 21.8f, 1.00f, 41.0f},
-    {"High CO2", 20.8f, 0.0f, 900.0f, 23.0f, 1.02f, 48.0f},
-    {"Unstable", 21.0f, 0.0f, 460.0f, 22.6f, 1.00f, 45.0f},
+    {"Air", 20.9f, 0.0f, 0.3f, 22.1f, 1.00f, 44.0f},
+    {"EAN32", 32.0f, 0.0f, 0.3f, 22.4f, 1.01f, 42.0f},
+    {"Trimix 18/45", 18.0f, 45.0f, 0.3f, 21.8f, 1.00f, 41.0f},
+    {"High CO", 20.8f, 0.0f, 15.0f, 23.0f, 1.02f, 48.0f},
+    {"Unstable", 21.0f, 0.0f, 0.3f, 22.6f, 1.00f, 45.0f},
     {"Sensor Fault", 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f},
 };
 
@@ -34,7 +35,6 @@ sensor_mock_profile_t g_profile = SENSOR_MOCK_PROFILE_AIR;
 #if !defined(ESP_PLATFORM) || defined(TRIMIX_SIMULATOR)
 uint32_t g_sequence = 0;
 uint32_t g_profile_start_sequence = 0;
-uint32_t g_last_co2_calibration_sequence = 0;
 
 float deterministic_noise(uint32_t sequence, uint32_t salt, float amplitude) {
     uint32_t v = (sequence * 37U + salt * 17U) % 101U;
@@ -96,8 +96,10 @@ esp_err_t sensor_read_all(sensor_readings_t *out) {
     out->source = SENSOR_SOURCE_SIMULATED;
     out->calibration_unvalidated = true;
     out->environment_valid = status != SENSOR_STATUS_FAULT;
-    out->co_ppm = status == SENSOR_STATUS_FAULT ? NAN : 0.3f;
+    out->co_ppm = status == SENSOR_STATUS_FAULT ? NAN :
+                  std::max(0.0f, spec.co_ppm + deterministic_noise(sequence, 9, 0.1f));
     out->co_valid = status != SENSOR_STATUS_FAULT;
+    out->co2_ppm = NAN; // Neither the device nor this simulator has a CO2 sensor.
     oxygen_selection_status_t selection{};
     oxygen_selection_get_status(&selection);
     out->oxygen_selection = selection.choice;
@@ -108,7 +110,7 @@ esp_err_t sensor_read_all(sensor_readings_t *out) {
     if (status == SENSOR_STATUS_FAULT) {
         out->oxygen_percent = -1.0f;
         out->helium_percent = -1.0f;
-        out->co2_ppm = -1.0f;
+        out->simulated_oxygen_input_percent = NAN;
         out->temperature_c = 0.0f;
         out->pressure_bar = 0.0f;
         out->humidity_pct = 0.0f;
@@ -120,23 +122,21 @@ esp_err_t sensor_read_all(sensor_readings_t *out) {
         return ESP_OK;
     }
 
+    const float oxygen_input = settle_to_target(spec.oxygen_percent, local_sequence, -1.6f);
     float helium = settle_to_target(spec.helium_percent, local_sequence, 1.2f);
-    float co2 = settle_to_target(spec.co2_ppm, local_sequence, 70.0f);
     float temp = settle_to_target(spec.temperature_c, local_sequence, -0.7f);
     float pressure = settle_to_target(spec.pressure_bar, local_sequence, -0.02f);
     float humidity = settle_to_target(spec.humidity_pct, local_sequence, 4.0f);
 
     if (profile == SENSOR_MOCK_PROFILE_UNSTABLE) {
         helium += std::cos(static_cast<float>(local_sequence) * 0.5f) * 1.2f;
-        co2 += std::cos(static_cast<float>(local_sequence) * 0.7f) * 160.0f;
     } else {
         helium += deterministic_noise(sequence, 6, 0.08f);
-        co2 += deterministic_noise(sequence, 2, 5.0f);
     }
 
     out->oxygen_percent = NAN;
+    out->simulated_oxygen_input_percent = oxygen_input;
     out->helium_percent = helium < 0.0f ? 0.0f : helium;
-    out->co2_ppm = co2;
     out->temperature_c = temp + deterministic_noise(sequence, 3, 0.08f);
     out->pressure_bar = pressure + deterministic_noise(sequence, 4, 0.003f);
     out->humidity_pct = humidity + deterministic_noise(sequence, 5, 0.3f);
@@ -154,7 +154,7 @@ esp_err_t sensor_read_all(sensor_readings_t *out) {
         // Artificial transfer functions for exercising the wizard only. Never used by the hardware backend.
         if (channel == GAS_CAL_HELIUM)
             raw.voltage_v = 0.030 - settle_to_target(spec.helium_percent, local_sequence, 1.2f) * 0.0008 + deterministic_noise(sequence, 8, 2e-6f);
-        else raw.voltage_v = settle_to_target(spec.oxygen_percent, local_sequence, -1.6f) * (channel == GAS_CAL_AO2 ? 0.0005 : 0.00055) +
+        else raw.voltage_v = oxygen_input * (channel == GAS_CAL_AO2 ? 0.0005 : 0.00055) +
                 10e-6 + deterministic_noise(sequence, 7, 0.5e-6f);
         if (profile == SENSOR_MOCK_PROFILE_UNSTABLE) raw.voltage_v += std::sin(local_sequence * 0.9) * 0.001;
         raw.adc_code = static_cast<int32_t>(raw.voltage_v * raw.gain * 8388608.0 / 2.048);
@@ -180,34 +180,12 @@ esp_err_t sensor_calibrate_oxygen_air(void) {
 }
 
 esp_err_t sensor_calibrate_co2_zero(void) {
-#if defined(ESP_PLATFORM) && !defined(TRIMIX_SIMULATOR)
-    return ESP_ERR_INVALID_STATE; // ZE07-CO is not a CO2 sensor.
-#else
-    if (g_profile == SENSOR_MOCK_PROFILE_SENSOR_FAULT) {
-        ESP_LOGW(TAG, "CO2 zero calibration rejected while sensor fault profile is active");
-        return ESP_ERR_INVALID_STATE;
-    }
-    g_last_co2_calibration_sequence = g_sequence;
-    ESP_LOGI(TAG, "Recording CO2 zero calibration in simulation");
-    return ESP_OK;
-#endif
+    return ESP_ERR_INVALID_STATE; // The installed ZE07-CO measures CO, not CO2.
 }
 
 esp_err_t sensor_calibrate_co2_reference(uint16_t reference_ppm) {
-    if (reference_ppm < 300 || reference_ppm > 2000) {
-        return ESP_ERR_INVALID_ARG;
-    }
-#if defined(ESP_PLATFORM) && !defined(TRIMIX_SIMULATOR)
+    (void)reference_ppm;
     return ESP_ERR_INVALID_STATE;
-#else
-    if (g_profile == SENSOR_MOCK_PROFILE_SENSOR_FAULT) {
-        ESP_LOGW(TAG, "CO2 reference calibration rejected while sensor fault profile is active");
-        return ESP_ERR_INVALID_STATE;
-    }
-    g_last_co2_calibration_sequence = g_sequence;
-    ESP_LOGI(TAG, "Recording CO2 reference calibration at %u ppm in simulation", reference_ppm);
-    return ESP_OK;
-#endif
 }
 
 void sensor_set_mock_profile(sensor_mock_profile_t profile) {

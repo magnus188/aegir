@@ -31,8 +31,38 @@ LimitRow g_rows[] = {
     {"PPO2 secondary limit", "bar", SETTING_PPO2_SECONDARY_X100, 5, true, false, nullptr},
     {"Density advisory", "g/L", SETTING_DENSITY_ADVISORY_X10, 1, false, true, nullptr},
     {"Density alarm", "g/L", SETTING_DENSITY_ALARM_X10, 1, false, true, nullptr},
-    {"CO2 advisory", "ppm", SETTING_CO2_ADVISORY_PPM, 25, false, false, nullptr},
+    {"CO advisory", "ppm", SETTING_CO_ADVISORY_PPM, 1, false, false, nullptr},
+    {"CO alarm", "ppm", SETTING_CO_ALARM_PPM, 1, false, false, nullptr},
+    {"Chamber RH advisory", "%", SETTING_HUMIDITY_ADVISORY_PCT, 5, false, false, nullptr},
+    {"Chamber RH alarm", "%", SETTING_HUMIDITY_ALARM_PCT, 5, false, false, nullptr},
 };
+
+bool ordered_sensor_limit(setting_key_t key, int32_t value) {
+    switch (key) {
+        case SETTING_CO_ADVISORY_PPM: return value < settings_get(SETTING_CO_ALARM_PPM);
+        case SETTING_CO_ALARM_PPM: return value > settings_get(SETTING_CO_ADVISORY_PPM);
+        case SETTING_HUMIDITY_ADVISORY_PCT: return value < settings_get(SETTING_HUMIDITY_ALARM_PCT);
+        case SETTING_HUMIDITY_ALARM_PCT: return value > settings_get(SETTING_HUMIDITY_ADVISORY_PCT);
+        default: return true;
+    }
+}
+
+uint32_t limit_color(setting_key_t key) {
+    switch (key) {
+        case SETTING_PPO2_WORKING_X100:
+        case SETTING_DENSITY_ADVISORY_X10:
+        case SETTING_CO_ADVISORY_PPM:
+        case SETTING_HUMIDITY_ADVISORY_PCT:
+            return STYLE_COLOR_WARNING;
+        case SETTING_PPO2_SECONDARY_X100:
+        case SETTING_DENSITY_ALARM_X10:
+        case SETTING_CO_ALARM_PPM:
+        case SETTING_HUMIDITY_ALARM_PCT:
+            return STYLE_COLOR_ERROR;
+        default:
+            return STYLE_COLOR_DATA;
+    }
+}
 
 void update_row(LimitRow& row) {
     char buf[32];
@@ -63,7 +93,7 @@ void adjust_cb(lv_event_t* e) {
     bool plus = lv_obj_has_state(static_cast<lv_obj_t*>(lv_event_get_target(e)), LV_STATE_USER_1);
     int32_t value = settings_get(row->key);
     value += plus ? row->step : -row->step;
-    settings_set(row->key, value);
+    if (ordered_sensor_limit(row->key, value)) settings_set(row->key, value);
     update_row(*row);
 }
 
@@ -76,7 +106,7 @@ lv_obj_t* make_adjust_button(lv_obj_t* parent, const char* text, bool plus, Limi
     lv_obj_t* btn = lv_btn_create(parent);
     lv_obj_set_size(btn, 40, 40);
     lv_obj_set_style_bg_color(btn, lv_color_hex(STYLE_COLOR_BG_CARD), 0);
-    lv_obj_set_style_bg_color(btn, lv_color_hex(STYLE_COLOR_PRIMARY), LV_STATE_PRESSED);
+    lv_obj_set_style_bg_color(btn, lv_color_hex(STYLE_COLOR_TILE_BORDER), LV_STATE_PRESSED);
     lv_obj_set_style_radius(btn, 6, 0);
     lv_obj_set_style_shadow_width(btn, 0, 0);
     if (plus) {
@@ -94,10 +124,10 @@ void create_limit_row(lv_obj_t* parent, LimitRow& row, int y) {
     lv_obj_t* panel = lv_obj_create(parent);
     lv_obj_set_size(panel, SCREEN_WIDTH - PAD * 2, ROW_H);
     lv_obj_set_pos(panel, PAD, y);
-    lv_obj_set_style_bg_color(panel, lv_color_hex(STYLE_COLOR_SURFACE), 0);
+    lv_obj_set_style_bg_color(panel, lv_color_hex(STYLE_COLOR_TILE), 0);
     lv_obj_set_style_radius(panel, 8, 0);
     lv_obj_set_style_border_width(panel, 1, 0);
-    lv_obj_set_style_border_color(panel, lv_color_hex(STYLE_COLOR_BORDER), 0);
+    lv_obj_set_style_border_color(panel, lv_color_hex(STYLE_COLOR_TILE_BORDER), 0);
     lv_obj_set_style_pad_all(panel, 12, 0);
     lv_obj_clear_flag(panel, LV_OBJ_FLAG_SCROLLABLE);
 
@@ -110,7 +140,7 @@ void create_limit_row(lv_obj_t* parent, LimitRow& row, int y) {
     row.value = lv_label_create(panel);
     lv_label_set_text(row.value, "--");
     lv_obj_set_style_text_font(row.value, &lv_font_montserrat_14, 0);
-    lv_obj_set_style_text_color(row.value, lv_color_hex(STYLE_COLOR_DATA), 0);
+    lv_obj_set_style_text_color(row.value, lv_color_hex(limit_color(row.key)), 0);
     lv_obj_align(row.value, LV_ALIGN_LEFT_MID, 0, 16);
 
     lv_obj_t* minus = make_adjust_button(panel, "-", false, &row);
@@ -132,28 +162,63 @@ lv_obj_t* safety_screen_create(void) {
 
     navbar_create_with_back(screen, "Safety Settings", back_cb);
 
-    lv_obj_t* intro = lv_label_create(screen);
-    lv_label_set_text(intro, "User-configured advisory limits used by Analyse.");
+    lv_obj_t* content = lv_obj_create(screen);
+    lv_obj_set_pos(content, 0, NAVBAR_HEIGHT);
+    lv_obj_set_size(content, SCREEN_WIDTH, SCREEN_HEIGHT - NAVBAR_HEIGHT - 88);
+    lv_obj_set_style_bg_opa(content, LV_OPA_TRANSP, 0);
+    lv_obj_set_style_border_width(content, 0, 0);
+    lv_obj_set_style_pad_all(content, 0, 0);
+    lv_obj_set_scroll_dir(content, LV_DIR_VER);
+    lv_obj_set_scrollbar_mode(content, LV_SCROLLBAR_MODE_AUTO);
+
+    lv_obj_t* intro = lv_label_create(content);
+    lv_label_set_text(intro, "Configure the yellow advisory and red alarm levels shown on Analyse.");
     lv_obj_set_style_text_font(intro, &lv_font_montserrat_14, 0);
     lv_obj_set_style_text_color(intro, lv_color_hex(STYLE_COLOR_TEXT_DIM), 0);
     lv_obj_set_width(intro, SCREEN_WIDTH - PAD * 2);
-    lv_obj_set_pos(intro, PAD, NAVBAR_HEIGHT + 16);
+    lv_obj_set_pos(intro, PAD, 12);
 
-    int y = NAVBAR_HEIGHT + 56;
-    for (auto& row : g_rows) {
-        create_limit_row(screen, row, y);
+    lv_obj_t* gas_heading = lv_label_create(content);
+    lv_label_set_text(gas_heading, "DIVE PLANNING");
+    lv_obj_set_style_text_font(gas_heading, &lv_font_montserrat_14, 0);
+    lv_obj_set_style_text_color(gas_heading, lv_color_hex(STYLE_COLOR_TEXT_DIM), 0);
+    lv_obj_set_pos(gas_heading, PAD, 60);
+
+    int y = 84;
+    for (int i = 0; i < 4; ++i) {
+        create_limit_row(content, g_rows[i], y);
         y += ROW_H + 10;
     }
+
+    lv_obj_t* sensor_heading = lv_label_create(content);
+    lv_label_set_text(sensor_heading, "SENSOR ALERTS");
+    lv_obj_set_style_text_font(sensor_heading, &lv_font_montserrat_14, 0);
+    lv_obj_set_style_text_color(sensor_heading, lv_color_hex(STYLE_COLOR_TEXT_DIM), 0);
+    lv_obj_set_pos(sensor_heading, PAD, y + 4);
+    y += 30;
+    for (int i = 4; i < 8; ++i) {
+        create_limit_row(content, g_rows[i], y);
+        y += ROW_H + 10;
+    }
+
+    lv_obj_t* note = lv_label_create(content);
+    lv_label_set_text(note, "Chamber RH describes conditions at the sensors, not cylinder water content. CO alerts do not certify breathing gas.");
+    lv_obj_set_style_text_font(note, &lv_font_montserrat_12, 0);
+    lv_obj_set_style_text_color(note, lv_color_hex(STYLE_COLOR_TEXT_DIM), 0);
+    lv_obj_set_width(note, SCREEN_WIDTH - PAD * 2);
+    lv_obj_set_pos(note, PAD, y + 4);
 
     lv_obj_t* reset_btn = lv_btn_create(screen);
     lv_obj_set_size(reset_btn, SCREEN_WIDTH - PAD * 2, 48);
     lv_obj_set_pos(reset_btn, PAD, SCREEN_HEIGHT - 70);
-    lv_obj_set_style_bg_color(reset_btn, lv_color_hex(STYLE_COLOR_BG_CARD), 0);
+    lv_obj_set_style_bg_color(reset_btn, lv_color_hex(STYLE_COLOR_TILE), 0);
+    lv_obj_set_style_border_color(reset_btn, lv_color_hex(STYLE_COLOR_TILE_BORDER), 0);
+    lv_obj_set_style_border_width(reset_btn, 1, 0);
     lv_obj_set_style_radius(reset_btn, 8, 0);
     lv_obj_set_style_shadow_width(reset_btn, 0, 0);
     lv_obj_add_event_cb(reset_btn, reset_cb, LV_EVENT_CLICKED, nullptr);
     lv_obj_t* reset_label = lv_label_create(reset_btn);
-    lv_label_set_text(reset_label, "Reset Advisory Limits");
+    lv_label_set_text(reset_label, "Reset Safety Limits");
     lv_obj_set_style_text_font(reset_label, &lv_font_montserrat_16, 0);
     lv_obj_set_style_text_color(reset_label, lv_color_hex(STYLE_COLOR_WARNING), 0);
     lv_obj_center(reset_label);

@@ -50,6 +50,10 @@ int main() {
     sensor_readings_t unconfigured = read_many(30);
     expect_true(unconfigured.oxygen_configuration_required && std::isnan(unconfigured.oxygen_percent),
                 "Unconfigured simulation also withholds primary oxygen");
+    expect_near(unconfigured.simulated_oxygen_input_percent, 20.9f, 0.1f,
+                "Unconfigured simulator exposes oxygen demo input separately");
+    expect_near(unconfigured.helium_percent, 0.0f, 0.2f,
+                "Unconfigured simulator exposes helium demo input");
     expect_true(oxygen_selection_confirm(OXYGEN_AO2, false) == OXYGEN_SELECT_OK, "Installed AO2 is explicitly confirmed");
     read_many(30);
     gas_cal_reference_t known{}; known.oxygen_percent = 20.9f;
@@ -65,7 +69,8 @@ int main() {
     expect_true(air.status == SENSOR_STATUS_STABLE, "Air profile stabilizes");
     expect_near(air.oxygen_percent, 20.9f, 0.2f, "Air O2 target");
     expect_near(air.helium_percent, 0.0f, 0.2f, "Air He target");
-    expect_near(air.co2_ppm, 420.0f, 10.0f, "Air CO2 target");
+    expect_true(air.co_valid && std::isnan(air.co2_ppm), "Simulation exposes CO without inventing CO2");
+    expect_near(air.co_ppm, 0.3f, 0.11f, "Air CO target");
 
     sensor_set_mock_profile(SENSOR_MOCK_PROFILE_TRIMIX_18_45);
     sensor_readings_t trimix = read_many(10);
@@ -73,9 +78,10 @@ int main() {
     expect_near(trimix.oxygen_percent, 18.0f, 0.2f, "Trimix O2 target");
     expect_near(trimix.helium_percent, 45.0f, 0.3f, "Trimix He target");
 
-    sensor_set_mock_profile(SENSOR_MOCK_PROFILE_HIGH_CO2);
-    sensor_readings_t high_co2 = read_many(10);
-    expect_true(high_co2.co2_ppm > 800.0f, "High CO2 profile exceeds advisory value");
+    sensor_set_mock_profile(SENSOR_MOCK_PROFILE_HIGH_CO);
+    sensor_readings_t high_co = read_many(10);
+    expect_true(high_co.co_valid && high_co.co_ppm > 14.0f && std::isnan(high_co.co2_ppm),
+                "High CO profile raises the measured CO channel only");
 
     sensor_set_mock_profile(SENSOR_MOCK_PROFILE_UNSTABLE);
     sensor_readings_t unstable = read_many(10);
@@ -85,13 +91,16 @@ int main() {
     sensor_readings_t fault = {};
     sensor_read_all(&fault);
     expect_true(fault.status == SENSOR_STATUS_FAULT, "Fault profile reports fault");
+    expect_true(std::isnan(fault.simulated_oxygen_input_percent),
+                "Fault profile removes the oxygen demo input");
     expect_true(sensor_calibrate_oxygen_air() == ESP_ERR_INVALID_STATE, "Fault blocks O2 calibration");
 
     sensor_set_mock_profile(SENSOR_MOCK_PROFILE_AIR);
     expect_true(sensor_calibrate_oxygen_air() == ESP_ERR_INVALID_STATE, "Legacy one-click O2 calibration cannot bypass reference capture");
-    expect_true(sensor_calibrate_co2_zero() == ESP_OK, "CO2 zero calibration succeeds in simulation");
-    expect_true(sensor_calibrate_co2_reference(400) == ESP_OK, "CO2 reference calibration succeeds in simulation");
-    expect_true(sensor_calibrate_co2_reference(100) == ESP_ERR_INVALID_ARG, "CO2 reference validates range");
+    expect_true(sensor_calibrate_co2_zero() == ESP_ERR_INVALID_STATE,
+                "Legacy CO2 zero calibration is unavailable without a CO2 sensor");
+    expect_true(sensor_calibrate_co2_reference(400) == ESP_ERR_INVALID_STATE,
+                "Legacy CO2 reference calibration is unavailable without a CO2 sensor");
     expect_true(std::strcmp(sensor_mock_profile_name(SENSOR_MOCK_PROFILE_EAN32), "EAN32") == 0,
                 "Profile names are stable");
     gas_cal_record_t prior{}; gas_calibration_get_record(GAS_CAL_AO2, &prior);
@@ -110,6 +119,8 @@ int main() {
     gas_cal_record_t retained{}; gas_calibration_get_record(GAS_CAL_AO2, &retained);
     expect_true(replacement.oxygen_calibration_required && std::isnan(replacement.oxygen_percent) && retained.crc32 == prior.crc32,
                 "Replacement withholds old output while preserving the prior record");
+    expect_near(replacement.simulated_oxygen_input_percent, 20.9f, 0.1f,
+                "Replacement keeps the demo input visible without making analysis valid");
     expect_true(gas_calibration_capture(GAS_CAL_JJCCR, 0, &known) == GAS_CAL_SELECTION_REQUIRED,
                 "Unselected input cannot be calibrated accidentally");
     oxygen_selection_set_probe_active(true);

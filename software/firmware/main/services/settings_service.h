@@ -7,7 +7,7 @@ extern "C" {
 #endif
 
 // Settings version - increment when adding/changing settings
-#define SETTINGS_VERSION 2
+#define SETTINGS_VERSION 4
 
 // =============================================================================
 // Setting Categories
@@ -24,7 +24,7 @@ typedef enum {
 // =============================================================================
 typedef enum {
     // Device settings
-    SETTING_BRIGHTNESS,           // 0-100%
+    SETTING_BRIGHTNESS,           // 10-100%
     SETTING_SCREEN_TIMEOUT,       // 0=never, 1=1min, 2=3min, 3=5min
     SETTING_SOUND_ENABLED,        // 0=off, 1=on
     SETTING_UNITS_DEPTH,          // 0=meters, 1=feet
@@ -34,7 +34,11 @@ typedef enum {
     SETTING_PPO2_SECONDARY_X100,  // e.g. 160 = 1.60 bar
     SETTING_DENSITY_ADVISORY_X10, // e.g. 52 = 5.2 g/L
     SETTING_DENSITY_ALARM_X10,    // e.g. 63 = 6.3 g/L
-    SETTING_CO2_ADVISORY_PPM,     // e.g. 500 ppm
+    SETTING_CO2_ADVISORY_PPM,     // Retained for loading older settings; no CO2 sensor is installed.
+    SETTING_CO_ADVISORY_PPM,
+    SETTING_CO_ALARM_PPM,
+    SETTING_HUMIDITY_ADVISORY_PCT,
+    SETTING_HUMIDITY_ALARM_PCT,
     
     SETTING_COUNT
 } setting_key_t;

@@ -9,6 +9,14 @@ constexpr lv_coord_t NAVBAR_PAD = 12;
 constexpr lv_coord_t BACK_BTN_SIZE = 50;  // Large touch target
 constexpr lv_coord_t STATUS_WIDTH = 100;  // Space for status icons
 
+void style_header(lv_obj_t* navbar) {
+    lv_obj_set_style_bg_color(navbar, lv_color_hex(STYLE_COLOR_BG_DARK), 0);
+    lv_obj_set_style_bg_opa(navbar, LV_OPA_COVER, 0);
+    lv_obj_set_style_border_color(navbar, lv_color_hex(STYLE_COLOR_BORDER), 0);
+    lv_obj_set_style_border_width(navbar, 1, 0);
+    lv_obj_set_style_border_side(navbar, LV_BORDER_SIDE_BOTTOM, 0);
+}
+
 void default_back_cb(lv_event_t* e) {
     if (lv_event_get_code(e) == LV_EVENT_CLICKED) {
         screen_manager_show(SCREEN_HOME);
@@ -22,8 +30,7 @@ lv_obj_t* navbar_create(lv_obj_t* parent, const char* title) {
     lv_obj_remove_style_all(navbar);
     lv_obj_set_size(navbar, LV_PCT(100), NAVBAR_HEIGHT);
     lv_obj_align(navbar, LV_ALIGN_TOP_MID, 0, 0);
-    lv_obj_set_style_bg_color(navbar, lv_color_hex(STYLE_COLOR_PRIMARY), 0);
-    lv_obj_set_style_bg_opa(navbar, LV_OPA_COVER, 0);
+    style_header(navbar);
     lv_obj_set_style_pad_left(navbar, NAVBAR_PAD, 0);
     lv_obj_set_style_pad_right(navbar, NAVBAR_PAD, 0);
     lv_obj_clear_flag(navbar, LV_OBJ_FLAG_SCROLLABLE);
@@ -51,8 +58,7 @@ lv_obj_t* navbar_create_with_back(lv_obj_t* parent, const char* title, lv_event_
     lv_obj_remove_style_all(navbar);
     lv_obj_set_size(navbar, LV_PCT(100), NAVBAR_HEIGHT);
     lv_obj_align(navbar, LV_ALIGN_TOP_MID, 0, 0);
-    lv_obj_set_style_bg_color(navbar, lv_color_hex(STYLE_COLOR_PRIMARY), 0);
-    lv_obj_set_style_bg_opa(navbar, LV_OPA_COVER, 0);
+    style_header(navbar);
     lv_obj_set_style_pad_left(navbar, NAVBAR_PAD, 0);
     lv_obj_set_style_pad_right(navbar, NAVBAR_PAD, 0);
     lv_obj_clear_flag(navbar, LV_OBJ_FLAG_SCROLLABLE);
@@ -66,7 +72,7 @@ lv_obj_t* navbar_create_with_back(lv_obj_t* parent, const char* title, lv_event_
     lv_obj_clear_flag(back_btn, LV_OBJ_FLAG_SCROLLABLE);
     
     // Back button styling - subtle rounded background on press
-    lv_obj_set_style_bg_color(back_btn, lv_color_hex(STYLE_COLOR_PRIMARY_DARK), LV_STATE_PRESSED);
+    lv_obj_set_style_bg_color(back_btn, lv_color_hex(STYLE_COLOR_BG_CARD), LV_STATE_PRESSED);
     lv_obj_set_style_bg_opa(back_btn, LV_OPA_COVER, LV_STATE_PRESSED);
     lv_obj_set_style_radius(back_btn, BACK_BTN_SIZE / 2, 0);
     
@@ -83,7 +89,7 @@ lv_obj_t* navbar_create_with_back(lv_obj_t* parent, const char* title, lv_event_
     // Title label - centered (accounting for back button)
     lv_obj_t* label = lv_label_create(navbar);
     lv_label_set_text(label, title);
-    lv_obj_set_style_text_font(label, styles_get_font_bold(), 0);
+    lv_obj_set_style_text_font(label, &lv_font_montserrat_24, 0);
     lv_obj_set_style_text_color(label, lv_color_hex(STYLE_COLOR_TEXT_LIGHT), 0);
     lv_obj_align(label, LV_ALIGN_CENTER, 0, 0);
     
@@ -94,6 +100,51 @@ lv_obj_t* navbar_create_with_back(lv_obj_t* parent, const char* title, lv_event_
     // Store label in user data for later updates
     lv_obj_set_user_data(navbar, label);
 
+    return navbar;
+}
+
+lv_obj_t* navbar_create_instrument(lv_obj_t* parent, const char* title, lv_event_cb_t back_cb) {
+    lv_obj_t* navbar = lv_obj_create(parent);
+    lv_obj_remove_style_all(navbar);
+    lv_obj_set_size(navbar, LV_PCT(100), 50);
+    lv_obj_align(navbar, LV_ALIGN_TOP_MID, 0, 0);
+    style_header(navbar);
+    lv_obj_clear_flag(navbar, LV_OBJ_FLAG_SCROLLABLE);
+
+    lv_obj_t* back_btn = lv_obj_create(navbar);
+    lv_obj_remove_style_all(back_btn);
+    lv_obj_set_pos(back_btn, 8, 3);
+    lv_obj_set_size(back_btn, 93, 44);
+    lv_obj_set_style_bg_color(back_btn, lv_color_hex(STYLE_COLOR_BG_CARD), LV_STATE_PRESSED);
+    lv_obj_set_style_bg_opa(back_btn, LV_OPA_COVER, LV_STATE_PRESSED);
+    lv_obj_set_style_radius(back_btn, 7, 0);
+    lv_obj_add_flag(back_btn, LV_OBJ_FLAG_CLICKABLE);
+    lv_obj_clear_flag(back_btn, LV_OBJ_FLAG_SCROLLABLE);
+    lv_obj_add_event_cb(back_btn, back_cb ? back_cb : default_back_cb, LV_EVENT_CLICKED, nullptr);
+
+    lv_obj_t* arrow = lv_label_create(back_btn);
+    lv_label_set_text(arrow, LV_SYMBOL_LEFT);
+    lv_obj_set_style_text_font(arrow, &lv_font_montserrat_24, 0);
+    lv_obj_set_style_text_color(arrow, lv_color_hex(STYLE_COLOR_TEXT_LIGHT), 0);
+    lv_obj_set_pos(arrow, 8, 8);
+
+    lv_obj_t* back_text = lv_label_create(back_btn);
+    lv_label_set_text(back_text, "Back");
+    lv_obj_set_style_text_font(back_text, &lv_font_montserrat_16, 0);
+    lv_obj_set_style_text_color(back_text, lv_color_hex(STYLE_COLOR_TEXT_LIGHT), 0);
+    lv_obj_set_pos(back_text, 34, 11);
+
+    lv_obj_t* label = lv_label_create(navbar);
+    lv_label_set_text(label, title);
+    lv_obj_set_style_text_font(label, &lv_font_montserrat_24, 0);
+    lv_obj_set_style_text_color(label, lv_color_hex(STYLE_COLOR_TEXT_LIGHT), 0);
+    lv_obj_set_pos(label, 148, 10);
+    lv_obj_set_width(label, 185);
+    lv_obj_set_style_text_align(label, LV_TEXT_ALIGN_CENTER, 0);
+
+    lv_obj_t* status = status_icons_create(navbar);
+    lv_obj_align(status, LV_ALIGN_TOP_RIGHT, -10, 13);
+    lv_obj_set_user_data(navbar, label);
     return navbar;
 }
 

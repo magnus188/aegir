@@ -9,6 +9,7 @@
 #include "services/gas_calibration_service.h"
 #include "../screen_manager.h"
 #include "../../components/status_icons.h"
+#include "../../images/menu_icons.h"
 #include "../../styles/styles.h"
 #include <esp_log.h>
 #include <cstdio>
@@ -34,14 +35,17 @@ struct AnalyseState {
     lv_obj_t* screen = nullptr;
     lv_obj_t* pages = nullptr;
     lv_obj_t* page_dots[2] = {};
-    lv_obj_t* page_hint = nullptr;
     lv_obj_t* status_label = nullptr;
     lv_obj_t* source_label = nullptr;
     lv_obj_t* sd_label = nullptr;
     lv_obj_t* o2_value = nullptr;
     lv_obj_t* he_value = nullptr;
+    lv_obj_t* o2_input_label = nullptr;
+    lv_obj_t* he_input_label = nullptr;
     lv_obj_t* co_value = nullptr;
     lv_obj_t* humidity_value = nullptr;
+    lv_obj_t* co_alert = nullptr;
+    lv_obj_t* humidity_alert = nullptr;
     lv_obj_t* env_value = nullptr;
     lv_obj_t* live_mix_value = nullptr;
     lv_obj_t* live_fractions_value = nullptr;
@@ -58,9 +62,8 @@ struct AnalyseState {
     lv_obj_t* capture_btn = nullptr;
     lv_obj_t* cylinder_btn = nullptr;
     lv_obj_t* cylinder_label = nullptr;
-    lv_obj_t* profile_label = nullptr;
+    lv_obj_t* profile_dropdown = nullptr;
     lv_obj_t* mode_matrix = nullptr;
-    lv_obj_t* profile_matrix = nullptr;
     lv_obj_t* chart = nullptr;
     lv_chart_series_t* o2_series = nullptr;
     lv_chart_series_t* he_series = nullptr;
@@ -79,27 +82,31 @@ struct AnalyseState {
 AnalyseState g_state;
 void set_page(int index, bool animate);
 
-#ifdef TRIMIX_SIMULATOR
-static const char* profile_map[] = {
-    "Air", "EAN32", "Trimix 18/45", "\n",
-    "CO2", "Unstable", "Fault", ""
-};
-#endif
-
 static const char* mode_map[] = {
     "Back", "Deco", "CCR", "Bailout", ""
 };
 
 #ifdef TRIMIX_SIMULATOR
-sensor_mock_profile_t profile_from_button(uint32_t id) {
+sensor_mock_profile_t profile_from_dropdown(uint32_t id) {
     switch (id) {
         case 0: return SENSOR_MOCK_PROFILE_AIR;
         case 1: return SENSOR_MOCK_PROFILE_EAN32;
         case 2: return SENSOR_MOCK_PROFILE_TRIMIX_18_45;
-        case 3: return SENSOR_MOCK_PROFILE_HIGH_CO2;
+        case 3: return SENSOR_MOCK_PROFILE_HIGH_CO;
         case 4: return SENSOR_MOCK_PROFILE_UNSTABLE;
         case 5: return SENSOR_MOCK_PROFILE_SENSOR_FAULT;
-        default: return SENSOR_MOCK_PROFILE_AIR;
+        default: return SENSOR_MOCK_PROFILE_TRIMIX_18_45;
+    }
+}
+
+uint32_t dropdown_from_profile(sensor_mock_profile_t profile) {
+    switch (profile) {
+        case SENSOR_MOCK_PROFILE_EAN32: return 1;
+        case SENSOR_MOCK_PROFILE_TRIMIX_18_45: return 2;
+        case SENSOR_MOCK_PROFILE_HIGH_CO: return 3;
+        case SENSOR_MOCK_PROFILE_UNSTABLE: return 4;
+        case SENSOR_MOCK_PROFILE_SENSOR_FAULT: return 5;
+        default: return 0;
     }
 }
 #endif
@@ -128,13 +135,29 @@ uint32_t severity_color(analysis_severity_t severity) {
     }
 }
 
+uint32_t reading_color(bool valid, analysis_severity_t severity) {
+    if (!valid) return STYLE_COLOR_TEXT_DIM;
+    if (severity == ANALYSIS_SEVERITY_ALARM) return STYLE_COLOR_ERROR;
+    if (severity == ANALYSIS_SEVERITY_ADVISORY) return STYLE_COLOR_WARNING;
+    return STYLE_COLOR_DATA;
+}
+
+const char* reading_alert(analysis_severity_t severity) {
+    if (severity == ANALYSIS_SEVERITY_ALARM) return "ALARM";
+    if (severity == ANALYSIS_SEVERITY_ADVISORY) return "ADVISORY";
+    return "";
+}
+
 analysis_limits_t limits_from_settings() {
     return {
         .ppo2_working_x100 = settings_get(SETTING_PPO2_WORKING_X100),
         .ppo2_secondary_x100 = settings_get(SETTING_PPO2_SECONDARY_X100),
         .density_advisory_x10 = settings_get(SETTING_DENSITY_ADVISORY_X10),
         .density_alarm_x10 = settings_get(SETTING_DENSITY_ALARM_X10),
-        .co2_advisory_ppm = settings_get(SETTING_CO2_ADVISORY_PPM),
+        .co_advisory_ppm = settings_get(SETTING_CO_ADVISORY_PPM),
+        .co_alarm_ppm = settings_get(SETTING_CO_ALARM_PPM),
+        .humidity_advisory_pct = settings_get(SETTING_HUMIDITY_ADVISORY_PCT),
+        .humidity_alarm_pct = settings_get(SETTING_HUMIDITY_ALARM_PCT),
     };
 }
 
@@ -250,28 +273,51 @@ void update_value_labels() {
     const sensor_readings_t& r = g_state.last_readings;
     const analysis_result_t& a = g_state.last_result;
 
-    if (std::isfinite(r.oxygen_percent) && r.oxygen_percent >= 0 && r.oxygen_percent <= 100) {
-        std::snprintf(buf, sizeof(buf), "%.1f%%", r.oxygen_percent);
+    const bool demo_oxygen = r.source == SENSOR_SOURCE_SIMULATED && !r.oxygen_calibrated &&
+                             r.status != SENSOR_STATUS_FAULT &&
+                             std::isfinite(r.simulated_oxygen_input_percent) &&
+                             r.simulated_oxygen_input_percent >= 0 && r.simulated_oxygen_input_percent <= 100;
+    const bool simulator_helium_available = r.source == SENSOR_SOURCE_SIMULATED &&
+                                            r.status != SENSOR_STATUS_FAULT &&
+                                            std::isfinite(r.helium_percent) &&
+                                            r.helium_percent >= 0 && r.helium_percent <= 100;
+    const bool demo_helium = simulator_helium_available && !r.helium_calibrated;
+    const float displayed_oxygen = demo_oxygen ? r.simulated_oxygen_input_percent : r.oxygen_percent;
+    if (std::isfinite(displayed_oxygen) && displayed_oxygen >= 0 && displayed_oxygen <= 100) {
+        std::snprintf(buf, sizeof(buf), "%.1f%%", displayed_oxygen);
         lv_label_set_text(g_state.o2_value, buf);
     } else lv_label_set_text(g_state.o2_value, std::isfinite(r.oxygen_percent) && r.oxygen_calibrated ? "Range" : "--");
-    if (a.valid) {
+    if (demo_oxygen) lv_obj_remove_flag(g_state.o2_input_label, LV_OBJ_FLAG_HIDDEN);
+    else lv_obj_add_flag(g_state.o2_input_label, LV_OBJ_FLAG_HIDDEN);
+    if (a.valid || simulator_helium_available) {
         std::snprintf(buf, sizeof(buf), "%.1f%%", r.helium_percent);
         lv_label_set_text(g_state.he_value, buf);
     } else lv_label_set_text(g_state.he_value, r.source == SENSOR_SOURCE_HARDWARE &&
                             r.calibration_unvalidated && std::isfinite(r.helium_percent) ? "Bench" : "--");
-    if (r.co_valid && std::isfinite(r.co_ppm)) {
+    if (demo_helium) lv_obj_remove_flag(g_state.he_input_label, LV_OBJ_FLAG_HIDDEN);
+    else lv_obj_add_flag(g_state.he_input_label, LV_OBJ_FLAG_HIDDEN);
+    if (a.co_valid) {
         std::snprintf(buf, sizeof(buf), "%.1f ppm", r.co_ppm);
         lv_label_set_text(g_state.co_value, buf);
     } else lv_label_set_text(g_state.co_value, "--");
-    if (r.environment_valid && std::isfinite(r.humidity_pct)) {
+    lv_obj_set_style_text_color(g_state.co_value,
+        lv_color_hex(reading_color(a.co_valid, a.co_severity)), 0);
+    lv_label_set_text(g_state.co_alert, reading_alert(a.co_severity));
+    lv_obj_set_style_text_color(g_state.co_alert,
+        lv_color_hex(reading_color(a.co_valid, a.co_severity)), 0);
+    if (a.humidity_valid) {
         std::snprintf(buf, sizeof(buf), "%.0f%% RH", r.humidity_pct);
         lv_label_set_text(g_state.humidity_value, buf);
     } else lv_label_set_text(g_state.humidity_value, "--");
-    if (r.environment_valid && std::isfinite(r.temperature_c) && std::isfinite(r.pressure_bar)) {
-        std::snprintf(buf, sizeof(buf), "Temperature %.1f C   Pressure %.2f bar",
-                      r.temperature_c, r.pressure_bar);
+    lv_obj_set_style_text_color(g_state.humidity_value,
+        lv_color_hex(reading_color(a.humidity_valid, a.humidity_severity)), 0);
+    lv_label_set_text(g_state.humidity_alert, reading_alert(a.humidity_severity));
+    lv_obj_set_style_text_color(g_state.humidity_alert,
+        lv_color_hex(reading_color(a.humidity_valid, a.humidity_severity)), 0);
+    if (r.environment_valid && std::isfinite(r.temperature_c)) {
+        std::snprintf(buf, sizeof(buf), "Temperature %.1f C", r.temperature_c);
         lv_label_set_text(g_state.env_value, buf);
-    } else lv_label_set_text(g_state.env_value, "Environmental measurement unavailable");
+    } else lv_label_set_text(g_state.env_value, "Temperature unavailable");
 
     const char *display_status = sensor_status_label(r.status);
     if (r.status != SENSOR_STATUS_FAULT) {
@@ -287,7 +333,8 @@ void update_value_labels() {
 
     const uint8_t stable_count = stable_capture_sample_count();
     std::snprintf(buf, sizeof(buf), "%s",
-                  r.source == SENSOR_SOURCE_SIMULATED ? "SIMULATED - practice data" :
+                  r.source == SENSOR_SOURCE_SIMULATED ?
+                      (g_state.profile_dropdown ? "SIMULATED" : "SIMULATED - practice data") :
                   (r.calibration_unvalidated ? "HARDWARE - bench only" : "HARDWARE - live reading"));
     lv_label_set_text(g_state.source_label, buf);
     lv_obj_set_style_text_color(g_state.source_label,
@@ -310,7 +357,18 @@ void update_value_labels() {
     lv_obj_set_style_text_color(g_state.density_value, lv_color_hex(severity_color(a.severity)), 0);
     std::snprintf(buf, sizeof(buf), "PPO2 %.2f bar at %.0fm", a.ppo2_at_depth, g_state.planned_depth);
     lv_label_set_text(g_state.ppo2_value, buf);
-    lv_label_set_text(g_state.advisory_label, a.advisory);
+    const char* advisory_text = a.advisory;
+    uint32_t advisory_color = severity_color(a.severity);
+    if (!a.valid && a.co_severity >= ANALYSIS_SEVERITY_ADVISORY) {
+        advisory_text = a.co_severity == ANALYSIS_SEVERITY_ALARM ?
+            "CO above configured alarm" : "CO above configured advisory";
+        advisory_color = reading_color(a.co_valid, a.co_severity);
+    } else if (!a.valid && a.humidity_severity >= ANALYSIS_SEVERITY_ADVISORY) {
+        advisory_text = a.humidity_severity == ANALYSIS_SEVERITY_ALARM ?
+            "Chamber RH above configured alarm" : "Chamber RH above configured advisory";
+        advisory_color = reading_color(a.humidity_valid, a.humidity_severity);
+    }
+    lv_label_set_text(g_state.advisory_label, advisory_text);
     if (!a.valid) {
         lv_label_set_text(g_state.fractions_value, "Gas composition unavailable");
         lv_label_set_text(g_state.live_fractions_value, "Gas composition unavailable");
@@ -319,7 +377,7 @@ void update_value_labels() {
         lv_label_set_text(g_state.density_value, "-- g/L");
         lv_label_set_text(g_state.ppo2_value, "PPO2 --");
     }
-    lv_obj_set_style_text_color(g_state.advisory_label, lv_color_hex(severity_color(a.severity)), 0);
+    lv_obj_set_style_text_color(g_state.advisory_label, lv_color_hex(advisory_color), 0);
 
     if (g_state.manual_helium >= 0.0f) {
         std::snprintf(buf, sizeof(buf), "%.0f%%", g_state.manual_helium);
@@ -330,9 +388,13 @@ void update_value_labels() {
     std::snprintf(buf, sizeof(buf), "%.0f m", g_state.planned_depth);
     lv_label_set_text(g_state.depth_value, buf);
 
-    if (g_state.profile_label) {
-        lv_label_set_text(g_state.profile_label, sensor_mock_profile_name(sensor_get_mock_profile()));
+#ifdef TRIMIX_SIMULATOR
+    if (g_state.profile_dropdown) {
+        const uint32_t selected = dropdown_from_profile(sensor_get_mock_profile());
+        if (lv_dropdown_get_selected(g_state.profile_dropdown) != selected)
+            lv_dropdown_set_selected(g_state.profile_dropdown, selected);
     }
+#endif
     if (g_state.cylinder_label) {
         cylinder_profile_t profile = {};
         if (cylinder_profiles_get_selected(&profile)) {
@@ -358,7 +420,11 @@ void update_value_labels() {
     }
 
     if (g_state.capture_status) {
-        if (!a.valid) {
+        if (r.oxygen_configuration_required) {
+            lv_label_set_text(g_state.capture_status, "");
+        } else if (r.oxygen_calibration_required) {
+            lv_label_set_text(g_state.capture_status, "Calibrate oxygen to enable saving");
+        } else if (!a.valid) {
             lv_label_set_text(g_state.capture_status, "Save unavailable while sample is faulted");
         } else if (r.status != SENSOR_STATUS_STABLE) {
             lv_label_set_text(g_state.capture_status, "Waiting for stable sample");
@@ -400,8 +466,15 @@ void sample_once() {
     remember_capture_sample(readings, g_state.last_result);
 
     if (g_state.chart && g_state.o2_series && g_state.he_series) {
-        int o2 = g_state.last_result.valid ? static_cast<int>(g_state.last_result.oxygen_percent + 0.5f) : LV_CHART_POINT_NONE;
-        int he = g_state.last_result.valid ? static_cast<int>(g_state.last_result.helium_percent + 0.5f) : LV_CHART_POINT_NONE;
+        const float oxygen_input = readings.source == SENSOR_SOURCE_SIMULATED &&
+                                   !readings.oxygen_calibrated ? readings.simulated_oxygen_input_percent : readings.oxygen_percent;
+        const bool input_available = readings.source == SENSOR_SOURCE_SIMULATED ?
+                                     readings.status != SENSOR_STATUS_FAULT : g_state.last_result.valid;
+        int o2 = input_available && std::isfinite(oxygen_input) && oxygen_input >= 0 && oxygen_input <= 100 ?
+                 static_cast<int>(oxygen_input + 0.5f) : LV_CHART_POINT_NONE;
+        int he = input_available && std::isfinite(readings.helium_percent) &&
+                 readings.helium_percent >= 0 && readings.helium_percent <= 100 ?
+                 static_cast<int>(readings.helium_percent + 0.5f) : LV_CHART_POINT_NONE;
         lv_chart_set_next_value(g_state.chart, g_state.o2_series, o2);
         lv_chart_set_next_value(g_state.chart, g_state.he_series, he);
     }
@@ -429,9 +502,8 @@ void screen_visibility_cb(lv_event_t* event) {
 
 #ifdef TRIMIX_SIMULATOR
 void profile_event_cb(lv_event_t* e) {
-    lv_obj_t* matrix = static_cast<lv_obj_t*>(lv_event_get_target(e));
-    uint32_t id = lv_buttonmatrix_get_selected_button(matrix);
-    sensor_mock_profile_t profile = profile_from_button(id);
+    lv_obj_t* dropdown = static_cast<lv_obj_t*>(lv_event_get_target(e));
+    sensor_mock_profile_t profile = profile_from_dropdown(lv_dropdown_get_selected(dropdown));
     sensor_set_mock_profile(profile);
     g_state.manual_helium = -1.0f;
     reset_capture_samples();
@@ -606,10 +678,6 @@ void set_page(int index, bool animate) {
                 lv_color_hex(i == index ? STYLE_COLOR_DATA : STYLE_COLOR_BORDER), 0);
         }
     }
-    if (g_state.page_hint) {
-        lv_label_set_text(g_state.page_hint,
-            index == 0 ? "Swipe for profile & planning  >" : "<  Swipe for live graphs");
-    }
 }
 
 void page_scroll_cb(lv_event_t*) {
@@ -652,8 +720,44 @@ void create_header(lv_obj_t* screen) {
     lv_obj_set_style_radius(banner, 6, 0);
     lv_obj_set_style_pad_all(banner, 0, 0);
     lv_obj_clear_flag(banner, LV_OBJ_FLAG_SCROLLABLE);
+#ifdef TRIMIX_SIMULATOR
+    constexpr int source_label_width = 112;
+#else
+    constexpr int source_label_width = 310;
+#endif
     g_state.source_label = add_label(banner, "Starting", 10, 5,
-                                     &lv_font_montserrat_16, STYLE_COLOR_WARNING, 310);
+                                     &lv_font_montserrat_16, STYLE_COLOR_WARNING, source_label_width);
+#ifdef TRIMIX_SIMULATOR
+    g_state.profile_dropdown = lv_dropdown_create(banner);
+    lv_obj_set_pos(g_state.profile_dropdown, 126, 2);
+    lv_obj_set_size(g_state.profile_dropdown, 196, 25);
+    lv_dropdown_set_options(g_state.profile_dropdown, "Air\nEAN32\nTrimix 18/45\nHigh CO\nUnstable\nFault");
+    lv_dropdown_set_selected(g_state.profile_dropdown, dropdown_from_profile(sensor_get_mock_profile()));
+    lv_obj_set_style_bg_color(g_state.profile_dropdown, lv_color_hex(0x124036), 0);
+    lv_obj_set_style_bg_opa(g_state.profile_dropdown, LV_OPA_COVER, 0);
+    lv_obj_set_style_border_color(g_state.profile_dropdown, lv_color_hex(0x1E604B), 0);
+    lv_obj_set_style_border_width(g_state.profile_dropdown, 1, 0);
+    lv_obj_set_style_radius(g_state.profile_dropdown, 4, 0);
+    lv_obj_set_style_shadow_width(g_state.profile_dropdown, 0, 0);
+    lv_obj_set_style_text_font(g_state.profile_dropdown, &lv_font_montserrat_14, 0);
+    lv_obj_set_style_text_color(g_state.profile_dropdown, lv_color_hex(STYLE_COLOR_TEXT_LIGHT), 0);
+    lv_obj_set_style_pad_left(g_state.profile_dropdown, 8, 0);
+    lv_obj_set_style_pad_top(g_state.profile_dropdown, 3, 0);
+    lv_obj_t* profile_list = lv_dropdown_get_list(g_state.profile_dropdown);
+    lv_obj_set_style_bg_color(profile_list, lv_color_hex(STYLE_COLOR_BG_CARD), LV_PART_MAIN);
+    lv_obj_set_style_bg_opa(profile_list, LV_OPA_COVER, LV_PART_MAIN);
+    lv_obj_set_style_border_color(profile_list, lv_color_hex(STYLE_COLOR_BORDER), LV_PART_MAIN);
+    lv_obj_set_style_border_width(profile_list, 1, LV_PART_MAIN);
+    lv_obj_set_style_radius(profile_list, 6, LV_PART_MAIN);
+    lv_obj_set_style_shadow_width(profile_list, 0, LV_PART_MAIN);
+    lv_obj_set_style_text_font(profile_list, &lv_font_montserrat_16, LV_PART_MAIN);
+    lv_obj_set_style_text_color(profile_list, lv_color_hex(STYLE_COLOR_TEXT_LIGHT), LV_PART_MAIN);
+    lv_obj_set_style_text_line_space(profile_list, 8, LV_PART_MAIN);
+    lv_obj_set_style_bg_color(profile_list, lv_color_hex(STYLE_COLOR_PRIMARY), LV_PART_SELECTED);
+    lv_obj_set_style_bg_opa(profile_list, LV_OPA_COVER, LV_PART_SELECTED);
+    lv_obj_set_style_text_color(profile_list, lv_color_hex(STYLE_COLOR_TEXT_LIGHT), LV_PART_SELECTED);
+    lv_obj_add_event_cb(g_state.profile_dropdown, profile_event_cb, LV_EVENT_VALUE_CHANGED, nullptr);
+#endif
     g_state.status_label = add_label(banner, "Starting", 332, 5,
                                      &lv_font_montserrat_16, STYLE_COLOR_WARNING, 108);
     lv_obj_set_style_text_align(g_state.status_label, LV_TEXT_ALIGN_RIGHT, 0);
@@ -669,13 +773,19 @@ void create_live_page(lv_obj_t* page) {
     add_label(page, "HELIUM", 261, 6, &lv_font_montserrat_16, STYLE_COLOR_TEXT_DIM);
     g_state.o2_value = add_label(page, "--", 20, 32, &lv_font_montserrat_48, STYLE_COLOR_DATA, 215);
     g_state.he_value = add_label(page, "--", 260, 32, &lv_font_montserrat_48, STYLE_COLOR_DATA, 215);
+    g_state.o2_input_label = add_label(page, "DEMO INPUT", 22, 87, &lv_font_montserrat_12, STYLE_COLOR_WARNING);
+    g_state.he_input_label = add_label(page, "DEMO INPUT", 261, 87, &lv_font_montserrat_12, STYLE_COLOR_WARNING);
+    lv_obj_add_flag(g_state.o2_input_label, LV_OBJ_FLAG_HIDDEN);
+    lv_obj_add_flag(g_state.he_input_label, LV_OBJ_FLAG_HIDDEN);
     add_rule(page, 240, 7, 1, 94);
     add_rule(page, 18, 109, 444);
 
-    add_label(page, "HUMIDITY", 22, 121, &lv_font_montserrat_14, STYLE_COLOR_TEXT_DIM);
+    add_label(page, "CHAMBER HUMIDITY", 22, 121, &lv_font_montserrat_14, STYLE_COLOR_TEXT_DIM);
     add_label(page, "CO", 261, 121, &lv_font_montserrat_14, STYLE_COLOR_TEXT_DIM);
     g_state.humidity_value = add_label(page, "--", 22, 145, &lv_font_montserrat_30, STYLE_COLOR_DATA, 216);
     g_state.co_value = add_label(page, "--", 261, 145, &lv_font_montserrat_30, STYLE_COLOR_DATA, 214);
+    g_state.humidity_alert = add_label(page, "", 22, 181, &lv_font_montserrat_12, STYLE_COLOR_WARNING, 216);
+    g_state.co_alert = add_label(page, "", 261, 181, &lv_font_montserrat_12, STYLE_COLOR_WARNING, 214);
     add_rule(page, 240, 120, 1, 77);
     add_rule(page, 18, 204, 444);
 
@@ -721,20 +831,7 @@ void create_live_page(lv_obj_t* page) {
 }
 
 void create_plan_page(lv_obj_t* page) {
-#ifdef TRIMIX_SIMULATOR
-    add_label(page, "DEMO GAS PROFILE", 22, 0, &lv_font_montserrat_14, STYLE_COLOR_TEXT_DIM);
-    g_state.profile_label = add_label(page, "Trimix 18/45", 22, 20,
-                                       &lv_font_montserrat_24, STYLE_COLOR_TEXT_LIGHT, 230);
-    add_label(page, "Simulator only - does not control sensors", 22, 50,
-              &lv_font_montserrat_12, STYLE_COLOR_TEXT_DIM);
-    g_state.profile_matrix = lv_buttonmatrix_create(page);
-    lv_buttonmatrix_set_map(g_state.profile_matrix, profile_map);
-    style_matrix(g_state.profile_matrix, 18, 74, 444, 82, 6, 2);
-    lv_obj_add_event_cb(g_state.profile_matrix, profile_event_cb, LV_EVENT_VALUE_CHANGED, nullptr);
-    constexpr int plan_offset = 159;
-#else
     constexpr int plan_offset = 5;
-#endif
     add_rule(page, 18, plan_offset, 444);
     add_label(page, "SELECTED CYLINDER", 22, plan_offset + 8,
               &lv_font_montserrat_14, STYLE_COLOR_TEXT_DIM);
@@ -797,34 +894,41 @@ void create_footer(lv_obj_t* screen) {
         lv_obj_clear_flag(dot, LV_OBJ_FLAG_CLICKABLE);
         g_state.page_dots[i] = dot;
     }
-    g_state.page_hint = add_label(screen, "", 0, 695,
-                                   &lv_font_montserrat_14, STYLE_COLOR_TEXT_DIM, SCREEN_WIDTH);
-    lv_obj_set_style_text_align(g_state.page_hint, LV_TEXT_ALIGN_CENTER, 0);
     set_page(0, false);
 
     g_state.capture_btn = lv_btn_create(screen);
-    lv_obj_set_pos(g_state.capture_btn, 16, 728);
+    lv_obj_set_pos(g_state.capture_btn, 16, 712);
     lv_obj_set_size(g_state.capture_btn, 216, 52);
     lv_obj_set_style_bg_color(g_state.capture_btn, lv_color_hex(STYLE_COLOR_BG_CARD), 0);
     lv_obj_set_style_border_width(g_state.capture_btn, 1, 0);
     lv_obj_set_style_border_color(g_state.capture_btn, lv_color_hex(STYLE_COLOR_BORDER), 0);
     lv_obj_set_style_radius(g_state.capture_btn, 8, 0);
     lv_obj_set_style_shadow_width(g_state.capture_btn, 0, 0);
+    lv_obj_set_style_pad_all(g_state.capture_btn, 0, 0);
     lv_obj_add_event_cb(g_state.capture_btn, capture_cb, LV_EVENT_CLICKED, nullptr);
-    add_label(g_state.capture_btn, "Save Avg", 56, 13,
-              &lv_font_montserrat_20, STYLE_COLOR_TEXT_LIGHT);
+    lv_obj_t* capture_label = add_label(g_state.capture_btn, LV_SYMBOL_SAVE "  Save Avg", 0, 0,
+                                        &lv_font_montserrat_20, STYLE_COLOR_TEXT_LIGHT);
+    lv_obj_center(capture_label);
 
     g_state.cylinder_btn = lv_btn_create(screen);
-    lv_obj_set_pos(g_state.cylinder_btn, 248, 728);
+    lv_obj_set_pos(g_state.cylinder_btn, 248, 712);
     lv_obj_set_size(g_state.cylinder_btn, 216, 52);
     lv_obj_set_style_bg_color(g_state.cylinder_btn, lv_color_hex(STYLE_COLOR_PRIMARY), 0);
     lv_obj_set_style_radius(g_state.cylinder_btn, 8, 0);
     lv_obj_set_style_shadow_width(g_state.cylinder_btn, 0, 0);
+    lv_obj_set_style_pad_all(g_state.cylinder_btn, 0, 0);
     lv_obj_add_event_cb(g_state.cylinder_btn, save_cylinder_cb, LV_EVENT_CLICKED, nullptr);
-    add_label(g_state.cylinder_btn, "Save Cyl", 58, 13,
-              &lv_font_montserrat_20, STYLE_COLOR_TEXT_LIGHT);
+    lv_obj_t* cylinder_label = add_label(g_state.cylinder_btn, "Save Cyl", 0, 0,
+                                         &lv_font_montserrat_20, STYLE_COLOR_TEXT_LIGHT);
+    lv_obj_align(cylinder_label, LV_ALIGN_CENTER, 16, 0);
+    lv_obj_t* cylinder_icon = lv_image_create(g_state.cylinder_btn);
+    lv_image_set_src(cylinder_icon, &button_icon_cylinder);
+    lv_obj_set_style_image_recolor(cylinder_icon, lv_color_hex(STYLE_COLOR_TEXT_LIGHT), 0);
+    lv_obj_set_style_image_recolor_opa(cylinder_icon, LV_OPA_COVER, 0);
+    lv_obj_clear_flag(cylinder_icon, LV_OBJ_FLAG_CLICKABLE);
+    lv_obj_align_to(cylinder_icon, cylinder_label, LV_ALIGN_OUT_LEFT_MID, -8, 0);
 
-    g_state.capture_status = add_label(screen, "Waiting for measurements", 18, 783,
+    g_state.capture_status = add_label(screen, "Waiting for measurements", 18, 768,
                                         &lv_font_montserrat_12, STYLE_COLOR_TEXT_DIM, 445);
 }
 

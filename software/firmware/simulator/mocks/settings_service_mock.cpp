@@ -16,6 +16,10 @@ const setting_def_t kSettingDefs[SETTING_COUNT] = {
     {SETTING_DENSITY_ADVISORY_X10, SETTINGS_CAT_SAFETY, "Density Advisory", "dens_adv", 52, 30, 90},
     {SETTING_DENSITY_ALARM_X10, SETTINGS_CAT_SAFETY, "Density Alarm", "dens_alarm", 63, 30, 90},
     {SETTING_CO2_ADVISORY_PPM, SETTINGS_CAT_SAFETY, "CO2 Advisory", "co2_adv", 500, 300, 2000},
+    {SETTING_CO_ADVISORY_PPM, SETTINGS_CAT_SAFETY, "CO Advisory", "co_adv", 3, 1, 100},
+    {SETTING_CO_ALARM_PPM, SETTINGS_CAT_SAFETY, "CO Alarm", "co_alarm", 5, 2, 100},
+    {SETTING_HUMIDITY_ADVISORY_PCT, SETTINGS_CAT_SAFETY, "Chamber RH Advisory", "rh_adv", 80, 40, 95},
+    {SETTING_HUMIDITY_ALARM_PCT, SETTINGS_CAT_SAFETY, "Chamber RH Alarm", "rh_alarm", 90, 45, 100},
 };
 
 const char* kCategoryNames[SETTINGS_CAT_COUNT] = {

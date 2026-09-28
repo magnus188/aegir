@@ -142,8 +142,8 @@ void show_update_overlay() {
     lv_obj_align(g_state.overlay_progress, LV_ALIGN_CENTER, 0, 0);
     lv_bar_set_range(g_state.overlay_progress, 0, 100);
     lv_bar_set_value(g_state.overlay_progress, 0, LV_ANIM_OFF);
-    lv_obj_set_style_bg_color(g_state.overlay_progress, lv_color_hex(0x333333), 0);
-    lv_obj_set_style_bg_color(g_state.overlay_progress, lv_color_hex(0x298ACA), LV_PART_INDICATOR);
+    lv_obj_set_style_bg_color(g_state.overlay_progress, lv_color_hex(STYLE_COLOR_BG_CARD), 0);
+    lv_obj_set_style_bg_color(g_state.overlay_progress, lv_color_hex(STYLE_COLOR_CYAN), LV_PART_INDICATOR);
     lv_obj_set_style_radius(g_state.overlay_progress, 6, 0);
     lv_obj_set_style_radius(g_state.overlay_progress, 6, LV_PART_INDICATOR);
     lv_obj_set_style_anim_duration(g_state.overlay_progress, 300, 0);
@@ -431,9 +431,10 @@ lv_obj_t* update_screen_create(void) {
     lv_obj_t* version_card = lv_obj_create(content);
     lv_obj_set_size(version_card, SCREEN_WIDTH - 48, 100);
     lv_obj_align(version_card, LV_ALIGN_TOP_MID, 0, 0);
-    lv_obj_set_style_bg_color(version_card, lv_color_hex(STYLE_COLOR_SURFACE), 0);
+    lv_obj_set_style_bg_color(version_card, lv_color_hex(STYLE_COLOR_TILE), 0);
     lv_obj_set_style_radius(version_card, 16, 0);
-    lv_obj_set_style_border_width(version_card, 0, 0);
+    lv_obj_set_style_border_color(version_card, lv_color_hex(STYLE_COLOR_TILE_BORDER), 0);
+    lv_obj_set_style_border_width(version_card, 1, 0);
     lv_obj_clear_flag(version_card, LV_OBJ_FLAG_SCROLLABLE);
     
     lv_obj_t* version_title = lv_label_create(version_card);
@@ -463,17 +464,17 @@ lv_obj_t* update_screen_create(void) {
     g_state.update_panel = lv_obj_create(content);
     lv_obj_set_size(g_state.update_panel, SCREEN_WIDTH - 48, 200);
     lv_obj_align(g_state.update_panel, LV_ALIGN_TOP_MID, 0, 160);
-    lv_obj_set_style_bg_color(g_state.update_panel, lv_color_hex(STYLE_COLOR_SURFACE), 0);
+    lv_obj_set_style_bg_color(g_state.update_panel, lv_color_hex(STYLE_COLOR_TILE), 0);
     lv_obj_set_style_radius(g_state.update_panel, 16, 0);
     lv_obj_set_style_border_width(g_state.update_panel, 2, 0);
-    lv_obj_set_style_border_color(g_state.update_panel, lv_color_hex(STYLE_COLOR_PRIMARY), 0);
+    lv_obj_set_style_border_color(g_state.update_panel, lv_color_hex(STYLE_COLOR_CYAN), 0);
     lv_obj_add_flag(g_state.update_panel, LV_OBJ_FLAG_HIDDEN);
     lv_obj_clear_flag(g_state.update_panel, LV_OBJ_FLAG_SCROLLABLE);
     
     lv_obj_t* new_title = lv_label_create(g_state.update_panel);
     lv_label_set_text(new_title, "New Version Available");
     lv_obj_set_style_text_font(new_title, &lv_font_montserrat_14, 0);
-    lv_obj_set_style_text_color(new_title, lv_color_hex(STYLE_COLOR_PRIMARY), 0);
+    lv_obj_set_style_text_color(new_title, lv_color_hex(STYLE_COLOR_CYAN), 0);
     lv_obj_align(new_title, LV_ALIGN_TOP_LEFT, 16, 12);
     
     g_state.new_version_label = lv_label_create(g_state.update_panel);
@@ -502,8 +503,8 @@ lv_obj_t* update_screen_create(void) {
     lv_obj_align(g_state.progress_bar, LV_ALIGN_TOP_MID, 0, 380);
     lv_bar_set_range(g_state.progress_bar, 0, 100);
     lv_bar_set_value(g_state.progress_bar, 0, LV_ANIM_OFF);
-    lv_obj_set_style_bg_color(g_state.progress_bar, lv_color_hex(0x333333), 0);
-    lv_obj_set_style_bg_color(g_state.progress_bar, lv_color_hex(STYLE_COLOR_PRIMARY), LV_PART_INDICATOR);
+    lv_obj_set_style_bg_color(g_state.progress_bar, lv_color_hex(STYLE_COLOR_BG_CARD), 0);
+    lv_obj_set_style_bg_color(g_state.progress_bar, lv_color_hex(STYLE_COLOR_CYAN), LV_PART_INDICATOR);
     lv_obj_set_style_radius(g_state.progress_bar, 10, 0);
     lv_obj_set_style_radius(g_state.progress_bar, 10, LV_PART_INDICATOR);
     lv_obj_add_flag(g_state.progress_bar, LV_OBJ_FLAG_HIDDEN);

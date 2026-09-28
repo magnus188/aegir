@@ -15,6 +15,9 @@ extern "C" {
 #define STYLE_COLOR_SURFACE     0x111820  // Surface/card (alias)
 #define STYLE_COLOR_BORDER      0x263442  // Instrument border
 #define STYLE_COLOR_DATA        0x56CCF2  // Live data cyan
+#define STYLE_COLOR_TILE        0x10232C  // Menu and instrument tile
+#define STYLE_COLOR_TILE_BORDER 0x365B6E // Menu and instrument outline
+#define STYLE_COLOR_CYAN        0x42D9E9  // Menu accent cyan
 #define STYLE_COLOR_TEXT_LIGHT  0xFFFFFF  // White text
 #define STYLE_COLOR_TEXT_DIM    0x9BA7B4  // Dimmed text
 #define STYLE_COLOR_SUCCESS     0x2ECC71  // Green

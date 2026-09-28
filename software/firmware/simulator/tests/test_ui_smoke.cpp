@@ -1,6 +1,7 @@
 #include <lvgl.h>
 
 #include "services/battery_service.h"
+#include "services/backlight_service.h"
 #include "services/ota_service.h"
 #include "services/settings_service.h"
 #include "services/wifi_service.h"
@@ -11,6 +12,8 @@
 #include "sensors/sensor_interface.h"
 #include "services/storage_service.h"
 #include "services/sd_log_service.h"
+#include "ui/images/menu_icons.h"
+#include "ui/styles/styles.h"
 extern "C" void battery_mock_set_available(bool available);
 
 #include <cstdio>
@@ -90,6 +93,24 @@ lv_obj_t *find_label(lv_obj_t *parent, const char *text) {
     return nullptr;
 }
 
+bool header_matches_palette(const char* title) {
+    auto* label = find_label(lv_screen_active(), title);
+    auto* header = label ? lv_obj_get_parent(label) : nullptr;
+    const bool matches = header && lv_color_eq(
+        lv_obj_get_style_bg_color(header, LV_PART_MAIN), lv_color_hex(STYLE_COLOR_BG_DARK));
+    std::printf("%s %s header uses the instrument palette\n", matches ? "PASS" : "FAIL", title);
+    return matches;
+}
+
+int count_visible_labels(lv_obj_t *parent, const char *text) {
+    int count = lv_obj_check_type(parent, &lv_label_class) &&
+                !lv_obj_has_flag(parent, LV_OBJ_FLAG_HIDDEN) &&
+                std::strcmp(lv_label_get_text(parent), text) == 0 ? 1 : 0;
+    for (unsigned i = 0; i < lv_obj_get_child_count(parent); ++i)
+        count += count_visible_labels(lv_obj_get_child(parent, i), text);
+    return count;
+}
+
 lv_obj_t *find_class(lv_obj_t *parent, const lv_obj_class_t *type) {
     if (lv_obj_check_type(parent, type)) return parent;
     for (unsigned i = 0; i < lv_obj_get_child_count(parent); ++i)
@@ -117,6 +138,14 @@ void select_matrix(const char *first, unsigned id) {
     lv_buttonmatrix_set_selected_button(obj, id);
     lv_buttonmatrix_set_button_ctrl(obj, id, LV_BUTTONMATRIX_CTRL_CHECKED);
     lv_obj_send_event(obj, LV_EVENT_VALUE_CHANGED, nullptr);
+}
+
+void select_analyse_profile(unsigned id) {
+    auto *dropdown = find_class(lv_screen_active(), &lv_dropdown_class);
+    if (!dropdown) return;
+    lv_dropdown_set_selected(dropdown, id);
+    lv_obj_send_event(dropdown, LV_EVENT_VALUE_CHANGED, nullptr);
+    pump_lvgl();
 }
 
 lv_obj_t *reference_field(const char *field) {
@@ -208,28 +237,142 @@ bool menu_and_paging_checks() {
            "Analysis pages support horizontal navigation");
     expect(find_label(lv_screen_active(), "HUMIDITY") && !find_label(lv_screen_active(), "O2 setup") &&
            !find_label(lv_screen_active(), "Advisory"), "Live page shows humidity without removed cards");
+    auto *oxygen_heading = find_label(lv_screen_active(), "OXYGEN");
+    auto *live_page = oxygen_heading ? lv_obj_get_parent(oxygen_heading) : nullptr;
+    auto *oxygen_value = live_page ? lv_obj_get_child(live_page, 2) : nullptr;
+    auto *helium_value = live_page ? lv_obj_get_child(live_page, 3) : nullptr;
+    expect(oxygen_value && helium_value &&
+           std::strchr(lv_label_get_text(oxygen_value), '%') &&
+           std::strchr(lv_label_get_text(helium_value), '%') &&
+           count_visible_labels(lv_screen_active(), "DEMO INPUT") == 2,
+           "Both simulated sensor inputs are visible before calibration");
+    expect(!find_label(lv_screen_active(), "Set up oxygen to enable saving") &&
+           lv_obj_has_state(action("Save Avg"), LV_STATE_DISABLED),
+           "Duplicate setup footer is absent while analysis saving stays gated");
+    auto *chart = live_page ? find_class(live_page, &lv_chart_class) : nullptr;
+    auto *oxygen_series = chart ? lv_chart_get_series_next(chart, nullptr) : nullptr;
+    auto *helium_series = oxygen_series ? lv_chart_get_series_next(chart, oxygen_series) : nullptr;
+    bool oxygen_plotted = false, helium_plotted = false;
+    if (chart && oxygen_series && helium_series) {
+        const auto *oxygen_points = lv_chart_get_series_y_array(chart, oxygen_series);
+        const auto *helium_points = lv_chart_get_series_y_array(chart, helium_series);
+        for (uint32_t i = 0; i < lv_chart_get_point_count(chart); ++i) {
+            oxygen_plotted |= oxygen_points[i] != LV_CHART_POINT_NONE;
+            helium_plotted |= helium_points[i] != LV_CHART_POINT_NONE;
+        }
+    }
+    expect(oxygen_plotted && helium_plotted, "Both demo inputs reach the trend chart");
+    expect(!find_label(lv_screen_active(), "Swipe for profile") &&
+           !find_label(lv_screen_active(), "Swipe for live"),
+           "Analysis navigation has no swipe instruction text");
+    snapshot("analysis-demo-input", nullptr);
+    auto *demo_profiles = find_class(lv_screen_active(), &lv_dropdown_class);
+    lv_area_t demo_area{};
+    if (demo_profiles) lv_obj_get_coords(demo_profiles, &demo_area);
+    expect(demo_profiles && demo_area.y1 < 106 &&
+           std::strstr(lv_dropdown_get_options(demo_profiles), "EAN32") &&
+           std::strstr(lv_dropdown_get_options(demo_profiles), "Trimix 18/45") &&
+           std::strstr(lv_dropdown_get_options(demo_profiles), "High CO") &&
+           std::strstr(lv_dropdown_get_options(demo_profiles), "Unstable"),
+           "Requested demo profiles are in the top status banner");
+    if (demo_profiles) {
+        tap(225, 65);
+        expect(lv_dropdown_is_open(demo_profiles), "Top banner profile selector opens with touch");
+        snapshot("analysis-profile-menu", nullptr);
+        tap(200, 136);
+        expect(!lv_dropdown_is_open(demo_profiles) &&
+               sensor_get_mock_profile() == SENSOR_MOCK_PROFILE_EAN32,
+               "Top banner selects EAN32 demo gas with touch");
+        select_analyse_profile(3);
+        auto *co_display = find_label(lv_screen_active(), "ppm");
+        expect(sensor_get_mock_profile() == SENSOR_MOCK_PROFILE_HIGH_CO && co_display &&
+               std::atof(lv_label_get_text(co_display)) > 14.0f &&
+               lv_color_eq(lv_obj_get_style_text_color(co_display, LV_PART_MAIN),
+                           lv_color_hex(STYLE_COLOR_ERROR)) &&
+               find_label(lv_screen_active(), "ALARM") &&
+               find_label(lv_screen_active(), "CO above configured alarm"),
+               "High CO is red in the reading and top alert");
+        snapshot("analysis-high-co", nullptr);
+        settings_set(SETTING_CO_ALARM_PPM, 25);
+        settings_set(SETTING_CO_ADVISORY_PPM, 10);
+        select_analyse_profile(3);
+        co_display = find_label(lv_screen_active(), "ppm");
+        expect(co_display && lv_color_eq(lv_obj_get_style_text_color(co_display, LV_PART_MAIN),
+               lv_color_hex(STYLE_COLOR_WARNING)),
+               "Changing Safety Settings moves the same CO reading to amber");
+        settings_reset(SETTING_CO_ADVISORY_PPM);
+        settings_reset(SETTING_CO_ALARM_PPM);
+
+        settings_set(SETTING_HUMIDITY_ADVISORY_PCT, 40);
+        settings_set(SETTING_HUMIDITY_ALARM_PCT, 55);
+        select_analyse_profile(0);
+        auto *humidity_display = find_label(lv_screen_active(), "% RH");
+        expect(humidity_display && lv_color_eq(lv_obj_get_style_text_color(humidity_display, LV_PART_MAIN),
+               lv_color_hex(STYLE_COLOR_WARNING)),
+               "Chamber humidity turns amber at its configured advisory");
+        settings_set(SETTING_HUMIDITY_ALARM_PCT, 45);
+        select_analyse_profile(0);
+        humidity_display = find_label(lv_screen_active(), "% RH");
+        expect(humidity_display && lv_color_eq(lv_obj_get_style_text_color(humidity_display, LV_PART_MAIN),
+               lv_color_hex(STYLE_COLOR_ERROR)),
+               "Chamber humidity turns red at its configured alarm");
+        snapshot("analysis-high-humidity", nullptr);
+        settings_reset(SETTING_HUMIDITY_ADVISORY_PCT);
+        settings_reset(SETTING_HUMIDITY_ALARM_PCT);
+        select_analyse_profile(4);
+        expect(sensor_get_mock_profile() == SENSOR_MOCK_PROFILE_UNSTABLE,
+               "Top banner selects unstable demo gas");
+        select_analyse_profile(2);
+        expect(sensor_get_mock_profile() == SENSOR_MOCK_PROFILE_TRIMIX_18_45,
+               "Top banner restores Trimix 18/45 demo gas");
+    }
+    auto *average_button = action("Save Avg");
+    auto *average_label = average_button ? find_label(average_button, "Save Avg") : nullptr;
+    lv_area_t average_area{}, average_label_area{};
+    if (average_button && average_label) {
+        lv_obj_get_coords(average_button, &average_area);
+        lv_obj_get_coords(average_label, &average_label_area);
+    }
+    expect(average_button && average_label && std::strstr(lv_label_get_text(average_label), LV_SYMBOL_SAVE) &&
+           std::abs((average_area.x1 + average_area.x2) - (average_label_area.x1 + average_label_area.x2)) <= 2 &&
+           std::abs((average_area.y1 + average_area.y2) - (average_label_area.y1 + average_label_area.y2)) <= 2,
+           "Save Avg disk icon and caption are centered");
+    auto *cylinder_button = action("Save Cyl");
+    auto *cylinder_icon = cylinder_button ? find_class(cylinder_button, &lv_image_class) : nullptr;
+    auto *cylinder_label = cylinder_button ? find_label(cylinder_button, "Save Cyl") : nullptr;
+    lv_area_t cylinder_area{}, cylinder_icon_area{}, cylinder_label_area{};
+    if (cylinder_button && cylinder_icon && cylinder_label) {
+        lv_obj_get_coords(cylinder_button, &cylinder_area);
+        lv_obj_get_coords(cylinder_icon, &cylinder_icon_area);
+        lv_obj_get_coords(cylinder_label, &cylinder_label_area);
+    }
+    expect(cylinder_button && cylinder_icon && cylinder_label &&
+           lv_image_get_src(cylinder_icon) == &button_icon_cylinder &&
+           std::abs((cylinder_area.x1 + cylinder_area.x2) - (cylinder_icon_area.x1 + cylinder_label_area.x2)) <= 2 &&
+           std::abs((cylinder_area.y1 + cylinder_area.y2) - (cylinder_icon_area.y1 + cylinder_icon_area.y2)) <= 2,
+           "Save Cyl uses the centered cylinder artwork");
     if (pages) {
         swipe(420, 55, 440);
-        expect(lv_obj_get_scroll_x(pages) == 480, "Swipe reaches profile and planning page");
+        expect(lv_obj_get_scroll_x(pages) == 480, "Swipe reaches analysis details page");
         snapshot("analysis-planning", nullptr);
-        expect(find_label(lv_screen_active(), "DEMO GAS PROFILE") &&
+        expect(!find_label(lv_screen_active(), "DEMO GAS PROFILE") &&
+               !find_matrix(lv_screen_active(), "Air") &&
+               find_label(lv_screen_active(), "SELECTED CYLINDER") &&
                find_label(lv_screen_active(), "PLANNED DEPTH") && action("Save Avg"),
-               "Planning controls and save actions remain available");
-        tap(85, 201);
-        expect(sensor_get_mock_profile() == SENSOR_MOCK_PROFILE_AIR,
-               "Profile selector still changes simulator readings");
-        tap(390, 201);
-        tap(180, 385);
+               "Analysis details retain device controls without a demo section");
+        expect(find_label(lv_screen_active(), "Temperature") &&
+               !find_label(lv_screen_active(), "Pressure"),
+               "Analysis details show temperature without an ambient pressure reading");
+        tap(180, 230);
         expect(lv_buttonmatrix_get_selected_button(find_matrix(lv_screen_active(), "Back")) == 1,
                "Gas-use mode remains selectable");
-        tap(178, 472);
+        tap(178, 315);
         expect(!find_label(lv_screen_active(), "Auto"), "Helium override control responds to touch");
-        tap(416, 472);
+        tap(416, 315);
         expect(find_label(lv_screen_active(), "35 m"), "Planned depth control responds to touch");
-        tap(282, 472);
-        tap(68, 385);
-        tap(390, 201);
-        select_matrix("Air", 5);
+        tap(282, 315);
+        tap(68, 230);
+        select_analyse_profile(5);
         expect(sensor_get_mock_profile() == SENSOR_MOCK_PROFILE_SENSOR_FAULT &&
                find_label(lv_screen_active(), "Fault") &&
                lv_obj_has_state(action("Save Avg"), LV_STATE_DISABLED) &&
@@ -238,11 +381,11 @@ bool menu_and_paging_checks() {
         swipe(55, 420, 440);
         snapshot("analysis-fault", nullptr);
         swipe(420, 55, 440);
-        select_matrix("Air", 4);
+        select_analyse_profile(4);
         expect(sensor_get_mock_profile() == SENSOR_MOCK_PROFILE_UNSTABLE &&
                lv_obj_has_state(action("Save Avg"), LV_STATE_DISABLED),
                "Unstable readings cannot be saved");
-        select_matrix("Air", 2);
+        select_analyse_profile(2);
         swipe(55, 420, 440);
         expect(lv_obj_get_scroll_x(pages) == 0, "Swipe returns to live graph page");
     }
@@ -395,8 +538,9 @@ bool calibration_checks() {
            saved_cylinder.helium_percent > 44.0f,
            "Calibrated simulated measurements still update the selected cylinder");
     screen_manager_show(SCREEN_HISTORY); pump_lvgl();
-    expect(find_label(lv_screen_active(), "CO 0.3 ppm") && find_label(lv_screen_active(), "CO2"),
-           "History distinguishes measured CO from legacy simulated CO2");
+    expect(find_label(lv_screen_active(), "CO 0.3 ppm") &&
+           find_label(lv_screen_active(), "CO2 not measured"),
+           "Current history records CO and marks CO2 unmeasured");
     expect(find_label(lv_screen_active(), "Simulation"), "History identifies simulated records");
     expect(find_label(lv_screen_active(), "O2 sensor: JJ-CCR"), "History preserves the selected oxygen identity and calibration revision");
     snapshot("history-gas-provenance");
@@ -427,6 +571,70 @@ bool calibration_checks() {
            "Unavailable fuel gauge does not display a fabricated charge percentage");
     snapshot("device-unavailable");
     storage_pause_writes(false); battery_mock_set_available(true);
+    return ok;
+}
+
+bool secondary_screen_checks() {
+    bool ok = true;
+    auto expect = [&](bool value, const char *name) {
+        std::printf("%s %s\n", value ? "PASS" : "FAIL", name); ok &= value;
+    };
+
+    screen_manager_show(SCREEN_SETTINGS); pump_lvgl();
+    expect(!find_label(lv_screen_active(), "Cylinder Profiles") &&
+           !find_label(lv_screen_active(), "MEASUREMENT") &&
+           !find_label(lv_screen_active(), "DEVICE & SYSTEM"),
+           "Settings omits the cylinder shortcut and section headings");
+    bool has_numbered_items = false;
+    for (unsigned i = 1; i <= 7; ++i) {
+        char number[3];
+        std::snprintf(number, sizeof(number), "%02u", i);
+        has_numbered_items |= count_visible_labels(lv_screen_active(), number) != 0;
+    }
+    expect(!has_numbered_items, "Settings items have no numbers");
+    click("Factory Reset");
+    expect(screen_manager_current() == SCREEN_SETTINGS,
+           "Unavailable factory reset remains inactive");
+    screen_manager_show(SCREEN_HOME); pump_lvgl();
+    tap(115, 420);
+    expect(screen_manager_current() == SCREEN_CYLINDERS,
+           "Home menu Cylinders tile opens with touch");
+    expect(find_label(lv_screen_active(), "Share payload: trimix-label-v1"),
+           "Cylinder preview includes the complete export label");
+
+    const uint8_t first = cylinder_profiles_selected_index();
+    tap(95, 238);
+    expect(cylinder_profiles_selected_index() == (first + 1) % cylinder_profiles_count(),
+           "Next selects the following cylinder");
+    cylinder_profile_t profile{};
+    cylinder_profiles_get_selected(&profile);
+    const bool recheck_before = profile.needs_recheck;
+    tap(225, 238);
+    cylinder_profiles_get_selected(&profile);
+    expect(profile.needs_recheck != recheck_before, "Recheck toggles the selected profile");
+    tap(375, 238);
+    expect(cylinder_profiles_selected_index() == 0, "Defaults restores the first profile");
+    tap(130, 650);
+    expect(cylinder_profiles_selected_index() == 1, "Profile row selects a cylinder with touch");
+    if (auto *spare = find_label(lv_screen_active(), "Spare")) {
+        lv_obj_scroll_to_view_recursive(spare, LV_ANIM_OFF);
+        pump_lvgl();
+        lv_area_t row{};
+        lv_obj_get_coords(lv_obj_get_parent(spare), &row);
+        tap(150, (row.y1 + row.y2) / 2);
+    }
+    expect(cylinder_profiles_selected_index() == 5,
+           "Scrolled cylinder profiles remain selectable");
+    tap(375, 238);
+
+    screen_manager_show(SCREEN_HISTORY); pump_lvgl();
+    expect(analysis_history_count() > 0, "Saved history is available before clearing");
+    tap(409, 87);
+    expect(analysis_history_count() == 0 && find_label(lv_screen_active(), "NO CAPTURES YET"),
+           "History Clear removes records and shows the empty state");
+    snapshot("history-empty");
+    tap(49, 25);
+    expect(screen_manager_current() == SCREEN_HOME, "Instrument back action returns home");
     return ok;
 }
 
@@ -468,22 +676,129 @@ int main() {
     ok = show_and_check(SCREEN_ANALYSE) && ok;
     ok = menu_and_paging_checks() && ok;
     ok = show_and_check(SCREEN_DIVE_PLANNER) && ok;
+    snapshot("dive-planner", nullptr);
+    ok = header_matches_palette("Dive Planner") && ok;
     ok = show_and_check(SCREEN_HISTORY) && ok;
     ok = show_and_check(SCREEN_CYLINDERS) && ok;
+    snapshot("cylinders");
     ok = show_and_check(SCREEN_SETTINGS) && ok;
+    snapshot("settings");
     ok = show_and_check(SCREEN_WIFI) && ok;
+    snapshot("wifi", nullptr);
+    ok = header_matches_palette("WiFi") && ok;
     ok = show_and_check(SCREEN_UPDATE) && ok;
+    snapshot("software-update", nullptr);
+    ok = header_matches_palette("Software Update") && ok;
     ok = show_and_check(SCREEN_CALIBRATE) && ok;
+    snapshot("calibration", nullptr);
+    ok = header_matches_palette("Calibration (demo)") && ok;
     ok = show_and_check(SCREEN_SAFETY) && ok;
+    snapshot("safety-settings", nullptr);
+    ok = header_matches_palette("Safety Settings") && ok;
+    const bool sensor_limits_visible = find_label(lv_screen_active(), "CO advisory") &&
+        find_label(lv_screen_active(), "CO alarm") &&
+        find_label(lv_screen_active(), "Chamber RH advisory") &&
+        find_label(lv_screen_active(), "Chamber RH alarm") &&
+        !find_label(lv_screen_active(), "CO2 advisory");
+    std::printf("%s Safety Settings expose CO and chamber RH thresholds instead of CO2\n",
+                sensor_limits_visible ? "PASS" : "FAIL");
+    ok = sensor_limits_visible && ok;
+    if (sensor_limits_visible) {
+        auto* name = find_label(lv_screen_active(), "CO advisory");
+        auto* row = lv_obj_get_parent(name);
+        auto* plus = lv_obj_get_child(row, 3);
+        lv_obj_send_event(plus, LV_EVENT_CLICKED, nullptr);
+        const bool adjusted = settings_get(SETTING_CO_ADVISORY_PPM) == 4;
+        lv_obj_send_event(plus, LV_EVENT_CLICKED, nullptr);
+        const bool ordered = settings_get(SETTING_CO_ADVISORY_PPM) == 4;
+        auto* rh_name = find_label(lv_screen_active(), "Chamber RH alarm");
+        auto* content = lv_obj_get_parent(lv_obj_get_parent(rh_name));
+        lv_obj_scroll_to_y(content, 400, LV_ANIM_OFF);
+        pump_lvgl();
+        lv_area_t rh_area{};
+        lv_obj_get_coords(rh_name, &rh_area);
+        const bool scrolled = rh_area.y1 >= 70 && rh_area.y2 < 730;
+        snapshot("safety-settings-sensor-alerts", nullptr);
+        click("Reset Safety Limits");
+        const bool reset = settings_get(SETTING_CO_ADVISORY_PPM) ==
+                           settings_get_default(SETTING_CO_ADVISORY_PPM);
+        const bool safety_controls = adjusted && ordered && scrolled && reset;
+        std::printf("%s Safety limits adjust, stay ordered, scroll, and reset\n",
+                    safety_controls ? "PASS" : "FAIL");
+        ok = safety_controls && ok;
+    }
     ok = show_and_check(SCREEN_DEVICE) && ok;
+    snapshot("device-settings", nullptr);
+    ok = header_matches_palette("Device Settings") && ok;
     snapshot("sd-device-status", "SD");
-    ok = find_label(lv_screen_active(),"Safely eject SD card") && ok;
-    ok = find_label(lv_screen_active(),"Retry SD card (preserve files)") && ok;
+    const bool sd_actions_absent = !find_label(lv_screen_active(), "Safely eject SD card") &&
+                                   !find_label(lv_screen_active(), "Retry SD card (preserve files)") &&
+                                   find_label(lv_screen_active(), "SD") != nullptr;
+    std::printf("%s SD status remains without inaccessible card actions\n", sd_actions_absent ? "PASS" : "FAIL");
+    ok = sd_actions_absent && ok;
+    auto* brightness_slider = find_class(lv_screen_active(), &lv_slider_class);
+    auto* sleep_choices = find_matrix(lv_screen_active(), "Never");
+    const bool selectors_present = brightness_slider && sleep_choices &&
+        lv_slider_get_min_value(brightness_slider) == 10 &&
+        lv_slider_get_max_value(brightness_slider) == 100 &&
+        !find_matrix(lv_screen_active(), "100%");
+    std::printf("%s Device settings show a 10-100 brightness slider and sleep choices\n",
+                selectors_present ? "PASS" : "FAIL");
+    ok = selectors_present && ok;
+    if (selectors_present) {
+        lv_area_t slider_area{};
+        lv_obj_get_coords(brightness_slider, &slider_area);
+        const int slider_y = (slider_area.y1 + slider_area.y2) / 2;
+        tap(slider_area.x1 + 8, slider_y);
+        const bool brightness_low = settings_get(SETTING_BRIGHTNESS) <= 15 &&
+                                    backlight_get() == settings_get(SETTING_BRIGHTNESS);
+        tap(slider_area.x2 - 8, slider_y);
+        const bool brightness_high = settings_get(SETTING_BRIGHTNESS) >= 95 &&
+                                     backlight_get() == settings_get(SETTING_BRIGHTNESS);
+        tap((slider_area.x1 + slider_area.x2) / 2, slider_y);
+        const bool brightness_middle = settings_get(SETTING_BRIGHTNESS) >= 45 &&
+                                       settings_get(SETTING_BRIGHTNESS) <= 65 &&
+                                       backlight_get() == settings_get(SETTING_BRIGHTNESS);
+        swipe((slider_area.x1 + slider_area.x2) / 2, slider_area.x1 + 8, slider_y);
+        const bool drag_low = settings_get(SETTING_BRIGHTNESS) <= 15 &&
+                              backlight_get() == settings_get(SETTING_BRIGHTNESS);
+        swipe(slider_area.x1 + 8, slider_area.x2 - 8, slider_y);
+        const bool drag_high = settings_get(SETTING_BRIGHTNESS) >= 95 &&
+                               backlight_get() == settings_get(SETTING_BRIGHTNESS);
+        tap(290, 497);
+        const bool sleep_three = settings_get(SETTING_SCREEN_TIMEOUT) == 2;
+        tap(190, 497);
+        const bool sleep_one = settings_get(SETTING_SCREEN_TIMEOUT) == 1;
+        const bool selector_touch = brightness_low && brightness_high && brightness_middle &&
+                                    drag_low && drag_high &&
+                                    sleep_three && sleep_one;
+        std::printf("%s Brightness slider and sleep choices respond to touch and persist their values\n",
+                    selector_touch ? "PASS" : "FAIL");
+        ok = selector_touch && ok;
+        settings_set(SETTING_BRIGHTNESS, 95);
+        backlight_set(95);
+        screen_manager_show(SCREEN_SETTINGS); pump_lvgl();
+        screen_manager_show(SCREEN_DEVICE); pump_lvgl();
+        brightness_slider = find_class(lv_screen_active(), &lv_slider_class);
+        const bool custom_brightness = find_label(lv_screen_active(), "Current 95%") &&
+            brightness_slider && lv_slider_get_value(brightness_slider) == 95;
+        std::printf("%s Existing custom brightness values reappear on the slider\n",
+                    custom_brightness ? "PASS" : "FAIL");
+        ok = custom_brightness && ok;
+        click("Reset to Defaults");
+        const bool reset_brightness = settings_get(SETTING_BRIGHTNESS) == 80 &&
+            backlight_get() == 80 && brightness_slider &&
+            lv_slider_get_value(brightness_slider) == 80;
+        std::printf("%s Reset restores slider and physical brightness to 80%%\n",
+                    reset_brightness ? "PASS" : "FAIL");
+        ok = reset_brightness && ok;
+    }
     ok = show_and_check(SCREEN_ANALYSE) && ok;
     snapshot("sd-analysis-status");
     ok = find_label(lv_screen_active(),"SD") && ok;
     ok = logging_navigation_checks() && ok;
     ok = calibration_checks() && ok;
+    ok = secondary_screen_checks() && ok;
 
     return ok ? 0 : 1;
 }

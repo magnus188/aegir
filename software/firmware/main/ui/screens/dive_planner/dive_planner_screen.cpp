@@ -652,7 +652,7 @@ void show_numpad(LockTarget target, const char* title, float current_val, float 
     lv_obj_set_style_border_width(btnm, 0, LV_PART_MAIN);
     lv_obj_set_style_pad_all(btnm, 8, LV_PART_MAIN);
 
-    lv_obj_set_style_bg_color(btnm, lv_color_hex(0x404040), LV_PART_ITEMS);
+    lv_obj_set_style_bg_color(btnm, lv_color_hex(STYLE_COLOR_BG_CARD), LV_PART_ITEMS);
     lv_obj_set_style_bg_opa(btnm, LV_OPA_COVER, LV_PART_ITEMS);
     lv_obj_set_style_text_color(btnm, lv_color_hex(STYLE_COLOR_TEXT_LIGHT), LV_PART_ITEMS);
     lv_obj_set_style_text_font(btnm, &lv_font_montserrat_32, LV_PART_ITEMS);
@@ -811,7 +811,7 @@ lv_obj_t* create_slider_row(lv_obj_t* parent, const char* label_text,
     lv_slider_set_value(slider, initial_val, LV_ANIM_OFF);
     
     // Slider styling
-    lv_obj_set_style_bg_color(slider, lv_color_hex(0x404040), LV_PART_MAIN);
+    lv_obj_set_style_bg_color(slider, lv_color_hex(STYLE_COLOR_BG_CARD), LV_PART_MAIN);
     lv_obj_set_style_bg_opa(slider, LV_OPA_COVER, LV_PART_MAIN);
     lv_obj_set_style_radius(slider, SLIDER_HEIGHT / 2, LV_PART_MAIN);
     
@@ -853,7 +853,7 @@ lv_obj_t* create_trimix_toggle(lv_obj_t* parent) {
     lv_obj_align(sw, LV_ALIGN_RIGHT_MID, 0, 0);
     
     // Switch styling
-    lv_obj_set_style_bg_color(sw, lv_color_hex(0x404040), LV_PART_MAIN);
+    lv_obj_set_style_bg_color(sw, lv_color_hex(STYLE_COLOR_BG_CARD), LV_PART_MAIN);
     lv_obj_set_style_bg_color(sw, lv_color_hex(STYLE_COLOR_DIVE_PLAN), LV_PART_INDICATOR);
     lv_obj_add_state(sw, LV_STATE_DEFAULT);  // Set default state style
     lv_obj_set_style_bg_color(sw, lv_color_hex(STYLE_COLOR_TEXT_LIGHT), LV_PART_KNOB);
@@ -868,10 +868,11 @@ lv_obj_t* create_trimix_toggle(lv_obj_t* parent) {
 lv_obj_t* create_result_card(lv_obj_t* parent) {
     lv_obj_t* card = lv_obj_create(parent);
     lv_obj_set_size(card, SCREEN_WIDTH - 2 * CONTENT_PAD, RESULT_CARD_HEIGHT);
-    lv_obj_set_style_bg_color(card, lv_color_hex(STYLE_COLOR_PRIMARY), 0);
+    lv_obj_set_style_bg_color(card, lv_color_hex(STYLE_COLOR_TILE), 0);
     lv_obj_set_style_bg_opa(card, LV_OPA_COVER, 0);
     lv_obj_set_style_radius(card, CARD_RADIUS, 0);
-    lv_obj_set_style_border_width(card, 0, 0);
+    lv_obj_set_style_border_color(card, lv_color_hex(STYLE_COLOR_TILE_BORDER), 0);
+    lv_obj_set_style_border_width(card, 1, 0);
     lv_obj_set_style_pad_all(card, 16, 0);
     lv_obj_clear_flag(card, LV_OBJ_FLAG_SCROLLABLE);
     lv_obj_set_flex_flow(card, LV_FLEX_FLOW_ROW);
@@ -880,12 +881,12 @@ lv_obj_t* create_result_card(lv_obj_t* parent) {
     // O2 result
     g_state.result_o2 = lv_label_create(card);
     lv_obj_set_style_text_font(g_state.result_o2, &lv_font_montserrat_20, 0);
-    lv_obj_set_style_text_color(g_state.result_o2, lv_color_hex(STYLE_COLOR_TEXT_LIGHT), 0);
+    lv_obj_set_style_text_color(g_state.result_o2, lv_color_hex(STYLE_COLOR_CYAN), 0);
     
     // MOD result
     g_state.result_mod = lv_label_create(card);
     lv_obj_set_style_text_font(g_state.result_mod, &lv_font_montserrat_20, 0);
-    lv_obj_set_style_text_color(g_state.result_mod, lv_color_hex(STYLE_COLOR_TEXT_LIGHT), 0);
+    lv_obj_set_style_text_color(g_state.result_mod, lv_color_hex(STYLE_COLOR_CYAN), 0);
     
     // Mix recommendation (full width below)
     g_state.result_mix = lv_label_create(card);

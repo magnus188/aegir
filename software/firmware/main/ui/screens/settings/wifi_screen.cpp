@@ -316,14 +316,16 @@ lv_obj_t* create_network_item(lv_obj_t* parent, const wifi_network_info_t* netwo
     lv_obj_t* item = lv_obj_create(parent);
     lv_obj_remove_style_all(item);
     lv_obj_set_size(item, SCREEN_WIDTH - 32, ITEM_HEIGHT);
-    lv_obj_set_style_bg_color(item, lv_color_hex(STYLE_COLOR_SURFACE), 0);
+    lv_obj_set_style_bg_color(item, lv_color_hex(STYLE_COLOR_TILE), 0);
     lv_obj_set_style_bg_opa(item, LV_OPA_COVER, 0);
     lv_obj_set_style_radius(item, 12, 0);
+    lv_obj_set_style_border_color(item, lv_color_hex(STYLE_COLOR_TILE_BORDER), 0);
+    lv_obj_set_style_border_width(item, 1, 0);
     lv_obj_set_style_pad_all(item, ITEM_PADDING, 0);
     lv_obj_clear_flag(item, LV_OBJ_FLAG_SCROLLABLE);
     
     // Click effect
-    lv_obj_set_style_bg_color(item, lv_color_hex(0x3A3A3A), LV_STATE_PRESSED);
+    lv_obj_set_style_bg_color(item, lv_color_hex(STYLE_COLOR_BG_CARD), LV_STATE_PRESSED);
     lv_obj_add_flag(item, LV_OBJ_FLAG_CLICKABLE);
     
     // Store SSID in user data
@@ -459,8 +461,8 @@ void show_password_modal(const char* ssid) {
     lv_textarea_set_password_mode(g_state.password_ta, true);
     lv_textarea_set_one_line(g_state.password_ta, true);
     lv_textarea_set_max_length(g_state.password_ta, 64);
-    lv_obj_set_style_bg_color(g_state.password_ta, lv_color_hex(0x2A2A2A), 0);
-    lv_obj_set_style_border_color(g_state.password_ta, lv_color_hex(STYLE_COLOR_PRIMARY), LV_STATE_FOCUSED);
+    lv_obj_set_style_bg_color(g_state.password_ta, lv_color_hex(STYLE_COLOR_BG_CARD), 0);
+    lv_obj_set_style_border_color(g_state.password_ta, lv_color_hex(STYLE_COLOR_CYAN), LV_STATE_FOCUSED);
     lv_obj_set_style_border_width(g_state.password_ta, 2, LV_STATE_FOCUSED);
     lv_obj_set_style_text_color(g_state.password_ta, lv_color_hex(STYLE_COLOR_TEXT_LIGHT), 0);
     
@@ -475,7 +477,7 @@ void show_password_modal(const char* ssid) {
     // Cancel button
     lv_obj_t* cancel_btn = lv_btn_create(btn_row);
     lv_obj_set_size(cancel_btn, 140, 44);
-    lv_obj_set_style_bg_color(cancel_btn, lv_color_hex(0x3A3A3A), 0);
+    lv_obj_set_style_bg_color(cancel_btn, lv_color_hex(STYLE_COLOR_BG_CARD), 0);
     lv_obj_set_style_radius(cancel_btn, 22, 0);
     lv_obj_add_event_cb(cancel_btn, on_password_cancel, LV_EVENT_CLICKED, nullptr);
     
@@ -510,22 +512,25 @@ void show_password_modal(const char* ssid) {
     lv_keyboard_set_popovers(kb, true);
     lv_obj_set_size(kb, SCREEN_WIDTH, 540);
     lv_obj_align(kb, LV_ALIGN_BOTTOM_MID, 0, 0);
-    lv_obj_set_style_bg_color(kb, lv_color_hex(0x171A1F), LV_PART_MAIN);
+    lv_obj_set_style_bg_color(kb, lv_color_hex(STYLE_COLOR_BG_DARK), LV_PART_MAIN);
     lv_obj_set_style_bg_opa(kb, LV_OPA_COVER, LV_PART_MAIN);
     lv_obj_set_style_pad_all(kb, 6, LV_PART_MAIN);
     lv_obj_set_style_pad_row(kb, 8, LV_PART_MAIN);
     lv_obj_set_style_pad_column(kb, 4, LV_PART_MAIN);
-    lv_obj_set_style_bg_color(kb, lv_color_hex(0x343942), LV_PART_ITEMS);
+    lv_obj_set_style_bg_color(kb, lv_color_hex(STYLE_COLOR_BG_CARD), LV_PART_ITEMS);
     lv_obj_set_style_bg_opa(kb, LV_OPA_COVER, LV_PART_ITEMS);
     lv_obj_set_style_radius(kb, 10, LV_PART_ITEMS);
     lv_obj_set_style_border_width(kb, 1, LV_PART_ITEMS);
-    lv_obj_set_style_border_color(kb, lv_color_hex(0x555B66), LV_PART_ITEMS);
+    lv_obj_set_style_border_color(kb, lv_color_hex(STYLE_COLOR_TILE_BORDER), LV_PART_ITEMS);
     lv_obj_set_style_text_color(kb, lv_color_hex(STYLE_COLOR_TEXT_LIGHT), LV_PART_ITEMS);
     lv_obj_set_style_text_font(kb, &lv_font_montserrat_20, LV_PART_ITEMS);
-    lv_obj_set_style_bg_color(kb, lv_color_hex(STYLE_COLOR_PRIMARY),
+    lv_obj_set_style_bg_color(kb, lv_color_hex(STYLE_COLOR_CYAN),
                               static_cast<lv_style_selector_t>(
                                   static_cast<uint32_t>(LV_PART_ITEMS) |
                                   static_cast<uint32_t>(LV_STATE_PRESSED)));
+    lv_obj_set_style_text_color(kb, lv_color_hex(STYLE_COLOR_BG_DARK),
+                                static_cast<lv_style_selector_t>(LV_PART_ITEMS) |
+                                static_cast<lv_style_selector_t>(LV_STATE_PRESSED));
     lv_obj_add_event_cb(kb, on_keyboard_event, LV_EVENT_ALL, nullptr);
 
     lv_obj_add_state(g_state.password_ta, LV_STATE_FOCUSED);
@@ -654,7 +659,7 @@ lv_obj_t* wifi_screen_create(void) {
     g_state.status_label = lv_label_create(content);
     lv_label_set_text(g_state.status_label, "");
     lv_obj_set_style_text_font(g_state.status_label, &lv_font_montserrat_14, 0);
-    lv_obj_set_style_text_color(g_state.status_label, lv_color_hex(STYLE_COLOR_PRIMARY), 0);
+    lv_obj_set_style_text_color(g_state.status_label, lv_color_hex(STYLE_COLOR_CYAN), 0);
     lv_obj_align(g_state.status_label, LV_ALIGN_TOP_LEFT, 0, 0);
     
     // Scan button - large, easy to tap
@@ -690,7 +695,7 @@ lv_obj_t* wifi_screen_create(void) {
     g_state.connected_panel = lv_obj_create(content);
     lv_obj_set_size(g_state.connected_panel, SCREEN_WIDTH - 32, 90);
     lv_obj_align(g_state.connected_panel, LV_ALIGN_TOP_MID, 0, 40);
-    lv_obj_set_style_bg_color(g_state.connected_panel, lv_color_hex(STYLE_COLOR_SURFACE), 0);
+    lv_obj_set_style_bg_color(g_state.connected_panel, lv_color_hex(STYLE_COLOR_TILE), 0);
     lv_obj_set_style_radius(g_state.connected_panel, 12, 0);
     lv_obj_set_style_border_width(g_state.connected_panel, 1, 0);
     lv_obj_set_style_border_color(g_state.connected_panel, lv_color_hex(STYLE_COLOR_SUCCESS), 0);

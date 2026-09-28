@@ -26,6 +26,10 @@ static const setting_def_t SETTING_DEFS[SETTING_COUNT] = {
     { SETTING_DENSITY_ADVISORY_X10, SETTINGS_CAT_SAFETY, "Density Advisory","dens_adv",     52,      30,    90 },
     { SETTING_DENSITY_ALARM_X10,    SETTINGS_CAT_SAFETY, "Density Alarm",   "dens_alarm",   63,      30,    90 },
     { SETTING_CO2_ADVISORY_PPM,     SETTINGS_CAT_SAFETY, "CO2 Advisory",    "co2_adv",      500,     300,   2000 },
+    { SETTING_CO_ADVISORY_PPM,      SETTINGS_CAT_SAFETY, "CO Advisory",     "co_adv",         3,       1,    100 },
+    { SETTING_CO_ALARM_PPM,         SETTINGS_CAT_SAFETY, "CO Alarm",        "co_alarm",       5,       2,    100 },
+    { SETTING_HUMIDITY_ADVISORY_PCT, SETTINGS_CAT_SAFETY, "Chamber RH Advisory", "rh_adv",   80,      40,     95 },
+    { SETTING_HUMIDITY_ALARM_PCT,    SETTINGS_CAT_SAFETY, "Chamber RH Alarm",    "rh_alarm", 90,      45,    100 },
 };
 
 static const char* CATEGORY_NAMES[SETTINGS_CAT_COUNT] = {
@@ -47,13 +51,24 @@ static bool s_initialized = false;
 static void load_from_nvs(void) {
     if (!storage_ready()) return;
     int32_t saved[SETTING_COUNT]{};
-    const auto result = storage_read_blob("settings_v3", 3, saved, sizeof(saved));
+    const auto result = storage_read_blob("settings_v4", 4, saved, sizeof(saved));
     if (result == STORAGE_OK) {
         for (int i = 0; i < SETTING_COUNT; ++i)
             s_values[i] = std::max(SETTING_DEFS[i].min_value, std::min(SETTING_DEFS[i].max_value, saved[i]));
         return;
     }
     if (result == STORAGE_ERROR) return;
+    // The v3 journal has only the original keys. Keep their values and use
+    // defaults for the newly added CO and chamber RH limits.
+    constexpr int legacy_count = SETTING_CO2_ADVISORY_PPM + 1;
+    int32_t legacy[legacy_count]{};
+    const auto legacy_result = storage_read_blob("settings_v3", 3, legacy, sizeof(legacy));
+    if (legacy_result == STORAGE_OK) {
+        for (int i = 0; i < legacy_count; ++i)
+            s_values[i] = std::max(SETTING_DEFS[i].min_value, std::min(SETTING_DEFS[i].max_value, legacy[i]));
+        return;
+    }
+    if (legacy_result == STORAGE_ERROR) return;
     // Read legacy settings without changing their schema or keys; rollback can still use them.
     nvs_handle_t handle;
     
@@ -67,7 +82,7 @@ static void load_from_nvs(void) {
     nvs_get_i32(handle, NVS_KEY_VERSION, &saved_version);
     
     if (saved_version < SETTINGS_VERSION) {
-        ESP_LOGI(TAG, "Settings version %ld -> %d, may need migration", saved_version, SETTINGS_VERSION);
+        ESP_LOGI(TAG, "Settings version %ld -> %d, may need migration", static_cast<long>(saved_version), SETTINGS_VERSION);
     }
     
     // Load each setting
@@ -85,7 +100,7 @@ static void load_from_nvs(void) {
 }
 
 static bool save_to_nvs(void) {
-    return storage_write_blob("settings_v3", 3, s_values, sizeof(s_values));
+    return storage_write_blob("settings_v4", 4, s_values, sizeof(s_values));
 }
 
 // =============================================================================
@@ -135,7 +150,8 @@ bool settings_set(setting_key_t key, int32_t value) {
         return false;
     }
     
-    ESP_LOGI(TAG, "%s: %ld -> %ld", def->name, s_values[key], value);
+    ESP_LOGI(TAG, "%s: %ld -> %ld", def->name,
+             static_cast<long>(s_values[key]), static_cast<long>(value));
     const int32_t previous = s_values[key];
     s_values[key] = value;
     if (!save_to_nvs()) { s_values[key] = previous; return false; }

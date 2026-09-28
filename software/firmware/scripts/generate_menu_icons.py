@@ -13,13 +13,13 @@ import tempfile
 ROOT = Path(__file__).resolve().parents[3]
 SOURCE = ROOT / "software/firmware/assets/icons/tabler"
 OUTPUT = ROOT / "software/firmware/main/ui/images/menu_icons.c"
-SIZE = 64
 ICONS = (
-    ("flask", "menu_icon_analyse"),
-    ("chart-line", "menu_icon_dive_planner"),
-    ("history", "menu_icon_history"),
-    ("scuba-diving-tank", "menu_icon_cylinders"),
-    ("adjustments-horizontal", "menu_icon_settings"),
+    ("flask", "menu_icon_analyse", 64),
+    ("chart-line", "menu_icon_dive_planner", 64),
+    ("history", "menu_icon_history", 64),
+    ("scuba-diving-tank", "menu_icon_cylinders", 64),
+    ("adjustments-horizontal", "menu_icon_settings", 64),
+    ("scuba-diving-tank", "button_icon_cylinder", 24),
 )
 
 
@@ -36,14 +36,14 @@ def c_array(name: str, data: bytes) -> str:
             + "\n".join(lines) + "\n};\n")
 
 
-def descriptor(name: str) -> str:
+def descriptor(name: str, size: int) -> str:
     return f"""const lv_image_dsc_t {name} = {{
     .header = {{
         .magic = LV_IMAGE_HEADER_MAGIC,
         .cf = LV_COLOR_FORMAT_A8,
-        .w = {SIZE},
-        .h = {SIZE},
-        .stride = {SIZE},
+        .w = {size},
+        .h = {size},
+        .stride = {size},
     }},
     .data_size = sizeof({name}_map),
     .data = {name}_map,
@@ -59,20 +59,20 @@ def main() -> None:
 """
     with tempfile.TemporaryDirectory(prefix="trimix-menu-icons-") as directory:
         temp = Path(directory)
-        for filename, name in ICONS:
-            png = temp / f"{filename}.png"
-            mask = temp / f"{filename}.a8"
-            run("rsvg-convert", "-w", str(SIZE), "-h", str(SIZE),
+        for filename, name, size in ICONS:
+            png = temp / f"{name}.png"
+            mask = temp / f"{name}.a8"
+            run("rsvg-convert", "-w", str(size), "-h", str(size),
                 str(SOURCE / f"{filename}.svg"), "-o", str(png))
             run("magick", str(png), "-alpha", "extract", "-depth", "8",
                 f"gray:{mask}")
             data = mask.read_bytes()
-            if len(data) != SIZE * SIZE:
+            if len(data) != size * size:
                 raise ValueError(f"Unexpected mask size for {filename}: {len(data)}")
-            output += c_array(name, data) + "\n" + descriptor(name) + "\n"
+            output += c_array(name, data) + "\n" + descriptor(name, size) + "\n"
 
     OUTPUT.write_text(output.rstrip() + "\n")
-    print(f"Wrote {OUTPUT} ({len(ICONS) * SIZE * SIZE} mask bytes)")
+    print(f"Wrote {OUTPUT} ({sum(size * size for _, _, size in ICONS)} mask bytes)")
 
 
 if __name__ == "__main__":

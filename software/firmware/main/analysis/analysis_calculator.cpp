@@ -48,6 +48,12 @@ bool valid_gas_mode(analysis_gas_mode_t mode) {
     return mode >= ANALYSIS_GAS_MODE_OC_BACK_GAS && mode < ANALYSIS_GAS_MODE_COUNT;
 }
 
+analysis_severity_t measurement_severity(float value, int32_t advisory, int32_t alarm) {
+    if (value >= static_cast<float>(alarm)) return ANALYSIS_SEVERITY_ALARM;
+    if (value >= static_cast<float>(advisory)) return ANALYSIS_SEVERITY_ADVISORY;
+    return ANALYSIS_SEVERITY_NORMAL;
+}
+
 void raise_advisory(analysis_result_t& result, analysis_severity_t severity, const char* text) {
     if (severity > result.severity) {
         result.severity = severity;
@@ -65,7 +71,10 @@ analysis_limits_t analysis_default_limits(void) {
         .ppo2_secondary_x100 = 160,
         .density_advisory_x10 = 52,
         .density_alarm_x10 = 63,
-        .co2_advisory_ppm = 500,
+        .co_advisory_ppm = 3,
+        .co_alarm_ppm = 5,
+        .humidity_advisory_pct = 80,
+        .humidity_alarm_pct = 90,
     };
 }
 
@@ -104,6 +113,12 @@ analysis_result_t analysis_calculate(const analysis_input_t* input) {
     result.co2_ppm = readings.co2_ppm;
     result.co_valid = readings.co_valid && std::isfinite(readings.co_ppm) && readings.co_ppm >= 0.0f;
     result.co_ppm = result.co_valid ? readings.co_ppm : NAN;
+    result.humidity_valid = readings.environment_valid && std::isfinite(readings.humidity_pct) &&
+                            readings.humidity_pct >= 0.0f && readings.humidity_pct <= 100.0f;
+    result.co_severity = result.co_valid ? measurement_severity(result.co_ppm,
+        input->limits.co_advisory_ppm, input->limits.co_alarm_ppm) : ANALYSIS_SEVERITY_NORMAL;
+    result.humidity_severity = result.humidity_valid ? measurement_severity(readings.humidity_pct,
+        input->limits.humidity_advisory_pct, input->limits.humidity_alarm_pct) : ANALYSIS_SEVERITY_NORMAL;
 
     if (!result.valid) {
         result.nitrogen_percent = NAN;
@@ -168,12 +183,6 @@ analysis_result_t analysis_calculate(const analysis_input_t* input) {
         set_label(result.advisory, sizeof(result.advisory), "PPO2 above configured working limit");
     }
 
-    if (result.co2_ppm > static_cast<float>(input->limits.co2_advisory_ppm) &&
-        result.severity < ANALYSIS_SEVERITY_ADVISORY) {
-        result.severity = ANALYSIS_SEVERITY_ADVISORY;
-        set_label(result.advisory, sizeof(result.advisory), "CO2 above configured advisory");
-    }
-
     const float ppo2_working_limit = input->limits.ppo2_working_x100 / 100.0f;
     switch (result.gas_mode) {
         case ANALYSIS_GAS_MODE_OC_BACK_GAS:
@@ -215,6 +224,15 @@ analysis_result_t analysis_calculate(const analysis_input_t* input) {
         default:
             break;
     }
+
+    if (result.co_severity == ANALYSIS_SEVERITY_ALARM)
+        raise_advisory(result, ANALYSIS_SEVERITY_ALARM, "CO above configured alarm");
+    else if (result.co_severity == ANALYSIS_SEVERITY_ADVISORY)
+        raise_advisory(result, ANALYSIS_SEVERITY_ADVISORY, "CO above configured advisory");
+    if (result.humidity_severity == ANALYSIS_SEVERITY_ALARM)
+        raise_advisory(result, ANALYSIS_SEVERITY_ALARM, "Chamber RH above configured alarm");
+    else if (result.humidity_severity == ANALYSIS_SEVERITY_ADVISORY)
+        raise_advisory(result, ANALYSIS_SEVERITY_ADVISORY, "Chamber RH above configured advisory");
 
     return result;
 }

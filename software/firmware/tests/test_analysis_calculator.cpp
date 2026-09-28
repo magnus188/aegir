@@ -76,10 +76,44 @@ int main() {
     result = analysis_calculate(&input);
     expect_true(result.severity == ANALYSIS_SEVERITY_ALARM, "PPO2 alarm threshold triggers");
 
-    input.readings = sample(20.9f, 0.0f, 700.0f);
+    input.readings = sample(20.9f, 0.0f, NAN);
+    input.readings.co_valid = true;
+    input.readings.co_ppm = 3.0f;
     input.planned_depth_m = 10.0f;
     result = analysis_calculate(&input);
-    expect_true(result.severity == ANALYSIS_SEVERITY_ADVISORY, "CO2 advisory threshold triggers");
+    expect_true(result.co_severity == ANALYSIS_SEVERITY_ADVISORY &&
+                result.severity == ANALYSIS_SEVERITY_ADVISORY &&
+                std::strstr(result.advisory, "CO above configured advisory"),
+                "CO at the configured advisory limit turns yellow");
+    input.readings.co_ppm = 5.0f;
+    result = analysis_calculate(&input);
+    expect_true(result.co_severity == ANALYSIS_SEVERITY_ALARM &&
+                result.severity == ANALYSIS_SEVERITY_ALARM &&
+                std::strstr(result.advisory, "CO above configured alarm"),
+                "CO at the configured alarm limit turns red");
+    input.limits.co_advisory_ppm = 7;
+    input.limits.co_alarm_ppm = 12;
+    result = analysis_calculate(&input);
+    expect_true(result.co_severity == ANALYSIS_SEVERITY_NORMAL,
+                "Changing the CO limits changes classification");
+    input.limits = limits;
+
+    input.readings.co_valid = false;
+    input.readings.environment_valid = true;
+    input.readings.humidity_pct = 80.0f;
+    result = analysis_calculate(&input);
+    expect_true(result.humidity_severity == ANALYSIS_SEVERITY_ADVISORY &&
+                result.severity == ANALYSIS_SEVERITY_ADVISORY,
+                "Chamber RH at the advisory limit turns yellow");
+    input.readings.humidity_pct = 90.0f;
+    result = analysis_calculate(&input);
+    expect_true(result.humidity_severity == ANALYSIS_SEVERITY_ALARM &&
+                result.severity == ANALYSIS_SEVERITY_ALARM,
+                "Chamber RH at the alarm limit turns red");
+    input.readings.environment_valid = false;
+    result = analysis_calculate(&input);
+    expect_true(!result.humidity_valid && result.humidity_severity == ANALYSIS_SEVERITY_NORMAL,
+                "Unavailable RH cannot create an alert");
 
     input.readings = sample(32.0f, 0.0f, 430.0f);
     input.planned_depth_m = 30.0f;
@@ -130,7 +164,10 @@ int main() {
     input.manual_he_percent = NAN;
     expect_true(!analysis_calculate(&input).valid, "Nonfinite manual helium does not silently fall back");
     input.manual_he_percent = -1; input.readings.oxygen_configuration_required = true;
-    expect_true(!analysis_calculate(&input).valid, "Unconfigured oxygen blocks derived gas claims");
+    input.readings.co_valid = true; input.readings.co_ppm = 15.0f;
+    result = analysis_calculate(&input);
+    expect_true(!result.valid && result.co_severity == ANALYSIS_SEVERITY_ALARM,
+                "CO alarm stays visible when oxygen is unconfigured");
     input.readings.oxygen_configuration_required = false; input.readings.oxygen_calibration_required = true;
     expect_true(!analysis_calculate(&input).valid, "Required replacement calibration blocks derived gas claims");
 

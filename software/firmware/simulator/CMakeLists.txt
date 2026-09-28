@@ -129,6 +129,19 @@ target_include_directories(test_analysis_calculator PRIVATE
 )
 add_test(NAME analysis_calculator COMMAND test_analysis_calculator)
 
+add_executable(test_settings_migration
+    "${TRIMIX_ROOT}/tests/test_settings_migration.cpp"
+    "${TRIMIX_ROOT}/main/services/settings_service.cpp"
+    "${TRIMIX_ROOT}/main/services/storage_service.cpp"
+    "${TRIMIX_ROOT}/main/services/blob_journal.cpp"
+)
+target_include_directories(test_settings_migration PRIVATE
+    "${TRIMIX_ROOT}/tests/settings_stubs"
+    "${CMAKE_CURRENT_LIST_DIR}/stubs"
+    ${TRIMIX_COMMON_INCLUDE_DIRS}
+)
+add_test(NAME settings_migration COMMAND test_settings_migration)
+
 add_executable(test_sensor_interface
     "${TRIMIX_ROOT}/tests/test_sensor_interface.cpp"
     "${TRIMIX_ROOT}/main/sensors/sensor_interface.cpp"

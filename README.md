@@ -22,11 +22,23 @@ The runes ᛅᛁᚾ are a Viking Age-style representation of einn, Old Norse for
 ## Screenshots
 
 These screens show the simulator with demo data. Swipe horizontally between
-live analysis and profile planning.
+live analysis and analysis details; simulator profiles are in the top status banner.
 
-| Main menu | Live analysis | Profile and planning |
+| Main menu | Live analysis | Analysis details |
 | :---: | :---: | :---: |
-| <img src="software/firmware/docs/screenshots/main-menu.png" alt="Main menu with Tabler icons" width="240"> | <img src="software/firmware/docs/screenshots/analysis-live.png" alt="Live gas analysis and sample graph" width="240"> | <img src="software/firmware/docs/screenshots/analysis-planning.png" alt="Gas profile and dive planning controls" width="240"> |
+| <img src="software/firmware/docs/screenshots/main-menu.png" alt="Main menu with Tabler icons" width="240"> | <img src="software/firmware/docs/screenshots/analysis-live.png" alt="Live gas analysis and sample graph" width="240"> | <img src="software/firmware/docs/screenshots/analysis-planning.png" alt="Selected cylinder and gas analysis details" width="240"> |
+
+| History | Cylinders | Settings |
+| :---: | :---: | :---: |
+| <img src="software/firmware/docs/screenshots/history.png" alt="Captured analysis history" width="240"> | <img src="software/firmware/docs/screenshots/cylinders.png" alt="Cylinder profiles and export label" width="240"> | <img src="software/firmware/docs/screenshots/settings.png" alt="Settings menu" width="240"> |
+
+| Dive Planner | Device Settings |
+| :---: | :---: |
+| <img src="software/firmware/docs/screenshots/dive-planner.png" alt="Dive Planner with dark instrument header" width="240"> | <img src="software/firmware/docs/screenshots/device-settings.png" alt="Device status with brightness slider and sleep controls" width="240"> |
+
+| Simulated high CO alert | Safety Settings |
+| :---: | :---: |
+| <img src="software/firmware/docs/screenshots/analysis-high-co.png" alt="Analyse shows a red CO alarm in the simulator" width="240"> | <img src="software/firmware/docs/screenshots/safety-settings.png" alt="Configurable advisory and alarm limits" width="240"> |
 
 ## Run it
 
