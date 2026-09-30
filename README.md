@@ -22,6 +22,13 @@ The runes ᛅᛁᚾ are a Viking Age-style representation of einn, Old Norse for
 **[Try the interactive browser demo](https://magnus188.github.io/aegir/).** It runs
 the simulator with demo readings; it does not connect to gas sensors.
 
+## Device design
+
+<img src="media/aegir-device-concept-render.png" alt="Concept render of the Ægir handheld trimix analyzer with a black 3D-printed case, white logo, plastic gas fittings and portrait touchscreen" width="420">
+
+*Concept render of the proposed enclosure and interface. Details may change
+during prototyping; the screen readings are illustrative.*
+
 ## Screenshots
 
 These screens show the simulator with demo data. Swipe horizontally between
