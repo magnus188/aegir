@@ -27,8 +27,7 @@ The runes ᛅᛁᚾ are a Viking Age-style representation of einn, Old Norse for
 
 <img src="media/aegir-device-concept-render.png" alt="Concept render of the Ægir handheld trimix analyzer with a black 3D-printed case, white logo, plastic gas fittings and portrait touchscreen" width="420">
 
-*Concept render of the proposed enclosure and interface. Details may change
-during prototyping; the screen readings are illustrative.*
+*Concept render of the proposed enclosure and interface.*
 
 ## PCB design
 
