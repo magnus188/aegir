@@ -26,7 +26,7 @@ int main() {
     lv_init();
 
     lv_display_t* display = lv_sdl_window_create(kScreenWidth, kScreenHeight);
-    lv_sdl_window_set_title(display, "Trimix Analysator Web Demo");
+    lv_sdl_window_set_title(display, "Ægir — Interactive Demo");
     lv_sdl_mouse_create();
     lv_sdl_keyboard_create();
 
