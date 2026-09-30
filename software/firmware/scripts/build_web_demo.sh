@@ -16,6 +16,9 @@ emcmake cmake \
     -B "$BUILD_DIR" \
     -DCMAKE_BUILD_TYPE=Release
 
+# Build the SDL2 port once before parallel compilation touches Emscripten's cache.
+embuilder build sdl2
+
 cmake --build "$BUILD_DIR" --target index --parallel
 
 test -s "$BUILD_DIR/index.html"
