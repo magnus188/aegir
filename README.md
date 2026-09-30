@@ -3,6 +3,8 @@
 Ægir is a work-in-progress trimix gas analyzer for technical diving. It is not
 qualified as a breathing-gas safety instrument; use it at your own risk.
 
+Made in Norway 🇳🇴.
+
 ## The name
 
 In Norse mythology, Ægir (/ˈæːɣir/) is the giant who rules the sea. He is
@@ -14,13 +16,12 @@ The runes ᛅᛁᚾ are a Viking Age-style representation of einn, Old Norse for
 
 ## Features
 
-- Oxygen (O₂) and helium (He) sensor inputs, plus experimental CO monitoring
+- Oxygen (O₂) and helium (He) sensor inputs, plus CO monitoring
 - 4.3-inch touch screen for gas analysis, calibration and settings
 - Mix calculations, dive planning and analysis history
 - Desktop simulator with demo readings
 
-**[Try the interactive browser demo](https://magnus188.github.io/aegir/).** It runs
-the simulator with demo readings; it does not connect to gas sensors.
+**[Try the interactive browser demo](https://magnus188.github.io/aegir/).**
 
 ## Device design
 
@@ -28,6 +29,15 @@ the simulator with demo readings; it does not connect to gas sensors.
 
 *Concept render of the proposed enclosure and interface. Details may change
 during prototyping; the screen readings are illustrative.*
+
+## PCB design
+
+| Main analyzer PCB | USB input PCB |
+| :---: | :---: |
+| <a href="hardware/pcb/review-images/README.md"><img src="hardware/pcb/review-images/01-main-3d-top.png" alt="KiCad 3D view of the main analyzer PCB" width="190"></a> | <a href="hardware/pcb/review-images/README.md"><img src="hardware/pcb/review-images/08-usb-front-routing.png" alt="Front copper routing of the USB input PCB" width="220"></a> |
+
+[View the PCB schematics and routing images](hardware/pcb/review-images/README.md).
+These are design-review snapshots; the PCBs are still on fabrication hold.
 
 ## Screenshots
 
@@ -78,7 +88,7 @@ Replace the example `PORT` with the port reported by `make devices`. See the
 ## Files
 
 - [Firmware and simulator](software/firmware/)
-- [Main PCB](hardware/pcb/analyzer/Trimix_Analyzer.kicad_pro) and [USB input PCB](hardware/pcb/usb-input/Trimix_USB_Input.kicad_pro)
+- [PCB review images](hardware/pcb/review-images/README.md), [main PCB](hardware/pcb/analyzer/Trimix_Analyzer.kicad_pro) and [USB input PCB](hardware/pcb/usb-input/Trimix_USB_Input.kicad_pro)
 - [Enclosure CAD](hardware/cad/rev04/3d-print/Trimix_Enclosure_A3_PrintReview.f3d) and [3D-print files](hardware/cad/rev04/3d-print/printing/)
 - [Logo](logo/README.md)
 
