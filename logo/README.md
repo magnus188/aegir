@@ -12,6 +12,7 @@ preserves earlier directions.
 | [`aegir-mark.png`](aegir-mark.png) | Original full-resolution raster reference for the selected mark |
 | [`aegir-v1-wordmark.svg`](aegir-v1-wordmark.svg) | Outlined **ÆGIR** in Iceland with **ᛅᛁᚾ** as the version-one marker |
 | [`aegir-lockup-dark.png`](aegir-lockup-dark.png) | Horizontal, white-on-dark preview for documentation |
+| [`aegir-social-preview.png`](aegir-social-preview.png) | 1280 × 640 image for the GitHub repository and web demo link previews |
 | [`aegir-splash.png`](aegir-splash.png) | 480 × 800 preview of the device splash screen |
 
 The logo uses [Iceland](https://github.com/google/fonts/tree/main/ofl/iceland)

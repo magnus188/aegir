@@ -144,3 +144,8 @@ set_target_properties(index PROPERTIES SUFFIX ".html" OUTPUT_NAME "index")
 set_property(TARGET index APPEND PROPERTY LINK_DEPENDS "${CMAKE_CURRENT_LIST_DIR}/shell.html")
 
 file(WRITE "${CMAKE_BINARY_DIR}/.nojekyll" "")
+configure_file("${CMAKE_CURRENT_LIST_DIR}/favicon.svg" "${CMAKE_BINARY_DIR}/favicon.svg" COPYONLY)
+configure_file("${CMAKE_CURRENT_LIST_DIR}/favicon.png" "${CMAKE_BINARY_DIR}/favicon.png" COPYONLY)
+configure_file("${CMAKE_CURRENT_LIST_DIR}/Iceland-Regular.ttf" "${CMAKE_BINARY_DIR}/Iceland-Regular.ttf" COPYONLY)
+configure_file("${CMAKE_CURRENT_LIST_DIR}/../../../logo/OFL-Iceland.txt" "${CMAKE_BINARY_DIR}/OFL-Iceland.txt" COPYONLY)
+configure_file("${CMAKE_CURRENT_LIST_DIR}/../../../logo/aegir-social-preview.png" "${CMAKE_BINARY_DIR}/aegir-social-preview.png" COPYONLY)
