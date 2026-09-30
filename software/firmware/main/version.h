@@ -4,8 +4,8 @@
 // application identity for compatibility with the published OTA image format.
 #define TRIMIX_ANALYZER_VERSION_MAJOR 0
 #define TRIMIX_ANALYZER_VERSION_MINOR 4
-#define TRIMIX_ANALYZER_VERSION_PATCH 4
-#define TRIMIX_ANALYZER_VERSION "0.4.4"
+#define TRIMIX_ANALYZER_VERSION_PATCH 5
+#define TRIMIX_ANALYZER_VERSION "0.4.5"
 
 // Build information (these can be set during build process)
 #ifndef BUILD_DATE
