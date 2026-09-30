@@ -19,6 +19,9 @@ The runes ᛅᛁᚾ are a Viking Age-style representation of einn, Old Norse for
 - Mix calculations, dive planning and analysis history
 - Desktop simulator with demo readings
 
+**[Try the interactive browser demo](https://magnus188.github.io/aegir/).** It runs
+the simulator with demo readings; it does not connect to gas sensors.
+
 ## Screenshots
 
 These screens show the simulator with demo data. Swipe horizontally between

@@ -12,7 +12,7 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 set(TRIMIX_ROOT "${CMAKE_CURRENT_LIST_DIR}/..")
-set(TRIMIX_LVGL_VERSION "9.3.0" CACHE STRING "LVGL version used by the web demo")
+set(TRIMIX_LVGL_VERSION "9.4.0" CACHE STRING "LVGL version used by the web demo")
 set(TRIMIX_LOCAL_LVGL "${TRIMIX_ROOT}/managed_components/lvgl__lvgl")
 
 # ESP-IDF generates managed_components locally, but that directory is intentionally
@@ -25,7 +25,7 @@ else()
     FetchContent_Declare(
         trimix_lvgl
         URL "https://github.com/lvgl/lvgl/archive/refs/tags/v${TRIMIX_LVGL_VERSION}.tar.gz"
-        URL_HASH "SHA256=7037bb7237187426a49411d6864799abcd664aa875a5b3d142969fab46b65910"
+        URL_HASH "SHA256=932c864de98431b38c5758a87f1de12bbee7b76943b8312bcf13d2f29ac14627"
         DOWNLOAD_EXTRACT_TIMESTAMP TRUE
     )
     FetchContent_GetProperties(trimix_lvgl)
