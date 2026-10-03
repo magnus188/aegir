@@ -255,12 +255,15 @@
       }
     };
 
-    window.addEventListener('error', function () {
-      if (!loadingElement.hidden) {
+    // Script resource errors do not bubble. Capture them so a failed index.js
+    // download displays a recovery message instead of an endless spinner.
+    window.addEventListener('error', function (event) {
+      if (!loadingElement.hidden &&
+          (event.target === window || event.target instanceof HTMLScriptElement)) {
         loadingElement.classList.add('error');
         statusElement.textContent = 'The demo could not start. Please reload the page.';
       }
-    });
+    }, true);
   </script>
   {{{ SCRIPT }}}
 </body>

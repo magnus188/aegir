@@ -25,7 +25,7 @@ bool oxygen_selection_selected_channel(gas_cal_channel_t *out);
 bool oxygen_selection_calibration_usable(gas_cal_channel_t channel, uint32_t calibration_revision);
 bool oxygen_selection_channel_enabled(gas_cal_channel_t channel);
 // Replacement requires a new calibration even when the selected type is unchanged.
-oxygen_selection_result_t oxygen_selection_confirm(oxygen_selection_t choice, bool replacement);
+oxygen_selection_result_t oxygen_selection_confirm(uint32_t choice, bool replacement);
 const char *oxygen_selection_label(oxygen_selection_t choice);
 // The wizard enables both input measurements temporarily; never used to select
 // a channel automatically. Disabling restores ordinary selected-input sampling.

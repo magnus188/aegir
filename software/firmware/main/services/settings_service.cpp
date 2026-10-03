@@ -1,5 +1,6 @@
 #include "settings_service.h"
 #include "storage_service.h"
+#include "settings_validation.h"
 #include <cstring>
 #include <nvs_flash.h>
 #include <nvs.h>
@@ -121,6 +122,7 @@ void settings_init(void) {
     
     // Then overlay saved values
     load_from_nvs();
+    settings_validation::normalize(s_values, SETTING_DEFS);
     
     s_initialized = true;
     ESP_LOGI(TAG, "Settings initialized (%d settings)", SETTING_COUNT);
@@ -154,6 +156,7 @@ bool settings_set(setting_key_t key, int32_t value) {
              static_cast<long>(s_values[key]), static_cast<long>(value));
     const int32_t previous = s_values[key];
     s_values[key] = value;
+    if (!settings_validation::ordered(s_values)) { s_values[key] = previous; return false; }
     if (!save_to_nvs()) { s_values[key] = previous; return false; }
     
     return true;

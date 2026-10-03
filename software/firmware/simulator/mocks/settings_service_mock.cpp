@@ -1,4 +1,5 @@
 #include "services/settings_service.h"
+#include "services/settings_validation.h"
 
 #include <algorithm>
 
@@ -59,7 +60,9 @@ bool settings_set(setting_key_t key, int32_t value) {
     value = std::max(def.min_value, std::min(def.max_value, value));
     if (g_values[key] == value) return false;
 
+    const int32_t previous = g_values[key];
     g_values[key] = value;
+    if (!settings_validation::ordered(g_values)) { g_values[key] = previous; return false; }
     return true;
 }
 

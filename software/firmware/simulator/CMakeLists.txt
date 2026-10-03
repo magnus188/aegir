@@ -24,6 +24,8 @@ set_source_files_properties(
 )
 
 add_subdirectory("${TRIMIX_ROOT}/managed_components/lvgl__lvgl" "${CMAKE_BINARY_DIR}/lvgl")
+include("${TRIMIX_ROOT}/cmake/lvgl_chart_missing_points.cmake")
+trimix_patch_lvgl_chart(lvgl "${TRIMIX_ROOT}/managed_components/lvgl__lvgl")
 get_target_property(LVGL_SOURCES lvgl SOURCES)
 list(FILTER LVGL_SOURCES EXCLUDE REGEX ".*lv_blend_(helium|neon)\\.S$")
 set_target_properties(lvgl PROPERTIES SOURCES "${LVGL_SOURCES}")
@@ -129,6 +131,12 @@ target_include_directories(test_analysis_calculator PRIVATE
 )
 add_test(NAME analysis_calculator COMMAND test_analysis_calculator)
 
+add_executable(test_planner_math "${TRIMIX_ROOT}/tests/test_planner_math.cpp"
+    "${TRIMIX_ROOT}/main/ui/screens/dive_planner/gas_calculator.cpp"
+    "${TRIMIX_ROOT}/main/analysis/analysis_calculator.cpp")
+target_include_directories(test_planner_math PRIVATE "${CMAKE_CURRENT_LIST_DIR}/stubs" "${TRIMIX_ROOT}/main")
+add_test(NAME planner_math COMMAND test_planner_math)
+
 add_executable(test_settings_migration
     "${TRIMIX_ROOT}/tests/test_settings_migration.cpp"
     "${TRIMIX_ROOT}/main/services/settings_service.cpp"
@@ -141,6 +149,8 @@ target_include_directories(test_settings_migration PRIVATE
     ${TRIMIX_COMMON_INCLUDE_DIRS}
 )
 add_test(NAME settings_migration COMMAND test_settings_migration)
+add_test(NAME settings_migration_invalid_v3 COMMAND test_settings_migration invalid-v3)
+add_test(NAME settings_migration_invalid_v4 COMMAND test_settings_migration invalid-v4)
 
 add_executable(test_sensor_interface
     "${TRIMIX_ROOT}/tests/test_sensor_interface.cpp"
@@ -213,6 +223,12 @@ add_test(NAME cylinder_profiles COMMAND test_cylinder_profiles)
 add_executable(test_ui_smoke "${CMAKE_CURRENT_LIST_DIR}/tests/test_ui_smoke.cpp")
 target_link_libraries(test_ui_smoke PRIVATE trimix_host_app)
 add_test(NAME ui_smoke COMMAND test_ui_smoke)
+
+add_executable(test_ui_workflows "${CMAKE_CURRENT_LIST_DIR}/tests/test_ui_workflows.cpp")
+target_link_libraries(test_ui_workflows PRIVATE trimix_host_app)
+foreach(workflow planner planner_locks wifi wifi_timeouts ota safety navigation)
+    add_test(NAME ui_${workflow} COMMAND test_ui_workflows ${workflow})
+endforeach()
 
 add_executable(test_oxygen_selection "${TRIMIX_ROOT}/tests/test_oxygen_selection.cpp" "${TRIMIX_ROOT}/main/services/oxygen_selection_core.cpp")
 add_executable(test_ota_storage "${TRIMIX_ROOT}/tests/test_ota_storage.cpp"

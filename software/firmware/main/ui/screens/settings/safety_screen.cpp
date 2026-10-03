@@ -37,16 +37,6 @@ LimitRow g_rows[] = {
     {"Chamber RH alarm", "%", SETTING_HUMIDITY_ALARM_PCT, 5, false, false, nullptr},
 };
 
-bool ordered_sensor_limit(setting_key_t key, int32_t value) {
-    switch (key) {
-        case SETTING_CO_ADVISORY_PPM: return value < settings_get(SETTING_CO_ALARM_PPM);
-        case SETTING_CO_ALARM_PPM: return value > settings_get(SETTING_CO_ADVISORY_PPM);
-        case SETTING_HUMIDITY_ADVISORY_PCT: return value < settings_get(SETTING_HUMIDITY_ALARM_PCT);
-        case SETTING_HUMIDITY_ALARM_PCT: return value > settings_get(SETTING_HUMIDITY_ADVISORY_PCT);
-        default: return true;
-    }
-}
-
 uint32_t limit_color(setting_key_t key) {
     switch (key) {
         case SETTING_PPO2_WORKING_X100:
@@ -93,7 +83,7 @@ void adjust_cb(lv_event_t* e) {
     bool plus = lv_obj_has_state(static_cast<lv_obj_t*>(lv_event_get_target(e)), LV_STATE_USER_1);
     int32_t value = settings_get(row->key);
     value += plus ? row->step : -row->step;
-    if (ordered_sensor_limit(row->key, value)) settings_set(row->key, value);
+    settings_set(row->key, value);
     update_row(*row);
 }
 

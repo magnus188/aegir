@@ -3,10 +3,13 @@
 #include "../../styles/styles.h"
 #include "../../components/navbar.h"
 #include "../screen_manager.h"
+#include "services/settings_service.h"
 #include <esp_log.h>
 #include <cstdio>
 #include <cstring>
 #include <cstdlib>
+#include <cmath>
+#include <algorithm>
 
 static const char* TAG = "DIVE_PLANNER";
 
@@ -30,7 +33,7 @@ constexpr int PPO2_MAX = 200;  // 2.00 bar * 100
 constexpr int O2_MIN = 0;
 constexpr int O2_MAX = 100;
 constexpr int EAD_MIN = 0;
-constexpr int EAD_MAX = 60;
+constexpr int EAD_MAX = 200;  // Includes nitrogen-rich mixes at the 150 m depth limit.
 constexpr int HELIUM_MIN = 0;
 constexpr int HELIUM_MAX = 100;
 
@@ -91,6 +94,7 @@ struct DivePlannerState {
     lv_obj_t* result_mod = nullptr;
     lv_obj_t* result_mix = nullptr;
     lv_obj_t* result_density = nullptr;
+    lv_obj_t* input_notice = nullptr;
     lv_obj_t* blend_source = nullptr;
     lv_obj_t* blend_pressure = nullptr;
     lv_obj_t* blend_additions = nullptr;
@@ -136,14 +140,11 @@ constexpr uint8_t SOURCE_MIX_COUNT = sizeof(SOURCE_MIXES) / sizeof(SOURCE_MIXES[
 // Forward declarations
 void update_all_displays();
 void update_blend_result();
-void recalculate_from_depth();
-void recalculate_from_ppo2();
-void recalculate_from_ead();
-void recalculate_from_helium();
+void apply_value(LockTarget target, float value);
 void update_lock_button_styles();
 void show_numpad(LockTarget target, const char* title, float current_val, float min_val, float max_val, int decimals);
 void close_numpad();
-void apply_numpad_value();
+bool apply_numpad_value();
 
 // Check if target is in top group (Depth, PPO2, O2)
 bool is_top_group(LockTarget target) {
@@ -195,6 +196,15 @@ void update_lock_button_styles() {
     if (g_state.helium_lock) {
         set_lock_button_style(g_state.helium_lock, g_state.bottom_lock == LockTarget::HELIUM);
     }
+    const struct { lv_obj_t* slider; LockTarget target; } controls[] = {
+        {g_state.depth_slider, LockTarget::DEPTH}, {g_state.ppo2_slider, LockTarget::PPO2},
+        {g_state.o2_slider, LockTarget::O2}, {g_state.ead_slider, LockTarget::EAD},
+        {g_state.helium_slider, LockTarget::HELIUM},
+    };
+    for (const auto& control : controls) if (control.slider) {
+        if (is_locked(control.target)) lv_obj_add_state(control.slider, LV_STATE_DISABLED);
+        else lv_obj_clear_state(control.slider, LV_STATE_DISABLED);
+    }
 }
 
 // Update result card
@@ -224,14 +234,14 @@ void update_results() {
     
     // Show mix recommendation
     if (g_state.trimix_enabled && g_state.helium > 0) {
-        float n2 = 100.0f - g_state.o2 - g_state.helium;
-        if (n2 < 0) n2 = 0;
-        snprintf(buf, sizeof(buf), "Mix: %.0f/%.0f (O2/He)", g_state.o2, g_state.helium);
+        snprintf(buf, sizeof(buf), "Trimix %.0f/%.0f", g_state.o2, g_state.helium);
     } else {
         if (g_state.o2 > 21.5f) {
             snprintf(buf, sizeof(buf), "EAN%.0f (Nitrox)", g_state.o2);
-        } else {
+        } else if (g_state.o2 >= 20.5f) {
             snprintf(buf, sizeof(buf), "Air (21%% O2)");
+        } else {
+            snprintf(buf, sizeof(buf), "O2 %.0f%% (no helium)", g_state.o2);
         }
     }
     lv_label_set_text(g_state.result_mix, buf);
@@ -239,10 +249,10 @@ void update_results() {
     // Update density with color warning
     snprintf(buf, sizeof(buf), "%.1f g/L", density);
     lv_label_set_text(g_state.result_density, buf);
-    // Color code: green < 5.2, yellow 5.2-6.0, red > 6.0
-    if (density > 6.0f) {
+    // Use the same configured density limits as Analyse.
+    if (density > settings_get(SETTING_DENSITY_ALARM_X10) / 10.0f) {
         lv_obj_set_style_text_color(g_state.result_density, lv_color_hex(STYLE_COLOR_ERROR), 0);
-    } else if (density > 5.2f) {
+    } else if (density > settings_get(SETTING_DENSITY_ADVISORY_X10) / 10.0f) {
         lv_obj_set_style_text_color(g_state.result_density, lv_color_hex(STYLE_COLOR_WARNING), 0);
     } else {
         lv_obj_set_style_text_color(g_state.result_density, lv_color_hex(STYLE_COLOR_SUCCESS), 0);
@@ -313,125 +323,75 @@ void update_all_displays() {
     update_blend_result();
 }
 
-// Recalculation functions based on which slider changed
-void recalculate_from_depth() {
+// Commit an edit only when the resulting composition and all locked values
+// remain consistent. Slider and keypad input share this path.
+void apply_value(LockTarget target, float value) {
     if (g_state.updating) return;
+    if (is_locked(target) || !std::isfinite(value)) { update_all_displays(); return; }
     g_state.updating = true;
-    
-    // Handle top group lock - if PPO2 is locked, adjust O2 to maintain PPO2
-    if (g_state.top_lock == LockTarget::PPO2) {
-        g_state.o2 = calc_o2_for_depth_ppo2(g_state.depth, g_state.ppo2);
-        g_state.o2 = clamp_float(g_state.o2, O2_MIN, O2_MAX);
+    const float old_depth = g_state.depth, old_ppo2 = g_state.ppo2, old_o2 = g_state.o2;
+    const float old_ead = g_state.ead, old_he = g_state.helium;
+    switch (target) {
+        case LockTarget::DEPTH: g_state.depth = value; break;
+        case LockTarget::PPO2: g_state.ppo2 = value; break;
+        case LockTarget::O2: g_state.o2 = std::min(value, 100.0f - g_state.helium); break;
+        case LockTarget::EAD: g_state.ead = value; break;
+        case LockTarget::HELIUM: g_state.helium = std::min(value, 100.0f - g_state.o2); break;
+        default: break;
     }
-    
-    if (g_state.trimix_enabled) {
-        switch (g_state.bottom_lock) {
-            case LockTarget::EAD:
-                // Depth changed, EAD locked -> adjust helium
-                g_state.helium = calc_helium_for_ead(g_state.depth, g_state.ead);
-                break;
-            case LockTarget::HELIUM:
-                // Depth changed, He locked -> adjust EAD
-                g_state.ead = calc_ead(g_state.depth, g_state.helium);
-                break;
-            default:
-                // No trimix lock, just update EAD
-                g_state.ead = calc_ead(g_state.depth, g_state.helium);
-                break;
+    const bool solve_depth = g_state.trimix_enabled &&
+        ((target == LockTarget::EAD && is_locked(LockTarget::HELIUM)) ||
+         (target == LockTarget::HELIUM && is_locked(LockTarget::EAD)));
+    if (solve_depth) {
+        if (is_locked(LockTarget::PPO2)) {
+            // Simultaneous nitrogen and oxygen partial-pressure constraints.
+            const float pressure = (0.79f * (g_state.ead / 10.0f + 1.0f) + g_state.ppo2) /
+                                   (1.0f - g_state.helium / 100.0f);
+            g_state.depth = (pressure - 1.0f) * 10.0f;
+            g_state.o2 = 100.0f * g_state.ppo2 / pressure;
+        } else {
+            g_state.depth = calc_depth_for_ead(g_state.ead, g_state.helium, g_state.o2);
         }
+    } else {
+        if (is_locked(LockTarget::PPO2)) {
+            if (target == LockTarget::O2) g_state.depth = calc_mod(g_state.o2, g_state.ppo2);
+            else g_state.o2 = calc_o2_for_depth_ppo2(g_state.depth, g_state.ppo2);
+        } else if (target == LockTarget::PPO2) {
+            if (is_locked(LockTarget::DEPTH)) g_state.o2 = calc_o2_for_depth_ppo2(g_state.depth, g_state.ppo2);
+            else if (is_locked(LockTarget::O2)) g_state.depth = calc_mod(g_state.o2, g_state.ppo2);
+        }
+        if (g_state.trimix_enabled && (target == LockTarget::EAD || is_locked(LockTarget::EAD)))
+            g_state.helium = calc_helium_for_ead(g_state.depth, g_state.ead, g_state.o2);
     }
-    
-    update_all_displays();
-    g_state.updating = false;
-}
-
-void recalculate_from_ppo2() {
-    if (g_state.updating) return;
-    g_state.updating = true;
-    
-    // PPO2 change affects recommended O2%, shown in results
-    update_all_displays();
-    g_state.updating = false;
-}
-
-void recalculate_from_ead() {
-    if (g_state.updating) return;
-    g_state.updating = true;
-    
-    // Check bottom lock for trimix calculations
-    switch (g_state.bottom_lock) {
-        case LockTarget::HELIUM:
-            // EAD changed, helium locked -> adjust depth
-            g_state.depth = calc_depth_for_ead(g_state.ead, g_state.helium);
-            g_state.depth = clamp_float(g_state.depth, DEPTH_MIN, DEPTH_MAX);
-            break;
-        default:
-            // No helium lock, adjust helium by default
-            g_state.helium = calc_helium_for_ead(g_state.depth, g_state.ead);
-            break;
+    const float actual_ead = calc_ead(g_state.depth, g_state.helium, g_state.o2);
+    const auto same = [](float a, float b) { return std::isfinite(a) && std::fabs(a - b) < 0.01f; };
+    const bool ead_target = target == LockTarget::EAD || is_locked(LockTarget::EAD);
+    const bool valid = std::isfinite(g_state.depth) && g_state.depth >= DEPTH_MIN && g_state.depth <= DEPTH_MAX &&
+        std::isfinite(actual_ead) && actual_ead <= EAD_MAX &&
+        g_state.o2 >= 0 && g_state.helium >= 0 && g_state.o2 + g_state.helium <= 100 &&
+        (!is_locked(LockTarget::DEPTH) || same(g_state.depth, old_depth)) &&
+        (!is_locked(LockTarget::O2) || same(g_state.o2, old_o2)) &&
+        (!is_locked(LockTarget::HELIUM) || same(g_state.helium, old_he)) &&
+        (!is_locked(LockTarget::PPO2) || same(calc_ppo2(g_state.depth, g_state.o2), old_ppo2)) &&
+        (!ead_target || same(actual_ead, g_state.ead));
+    if (valid) {
+        g_state.ead = actual_ead;
+        lv_obj_add_flag(g_state.input_notice, LV_OBJ_FLAG_HIDDEN);
+    } else {
+        g_state.depth = old_depth; g_state.ppo2 = old_ppo2; g_state.o2 = old_o2;
+        g_state.ead = old_ead; g_state.helium = old_he;
+        lv_label_set_text(g_state.input_notice, "Cannot reach these values. Adjust the mix or unlock a value.");
+        lv_obj_clear_flag(g_state.input_notice, LV_OBJ_FLAG_HIDDEN);
     }
-    
     update_all_displays();
     g_state.updating = false;
 }
 
-void recalculate_from_helium() {
-    if (g_state.updating) return;
-    g_state.updating = true;
-    
-    // Check bottom lock for trimix calculations
-    switch (g_state.bottom_lock) {
-        case LockTarget::EAD:
-            // Helium changed, EAD locked -> adjust depth
-            g_state.depth = calc_depth_for_ead(g_state.ead, g_state.helium);
-            g_state.depth = clamp_float(g_state.depth, DEPTH_MIN, DEPTH_MAX);
-            break;
-        default:
-            // No EAD lock, adjust EAD by default
-            g_state.ead = calc_ead(g_state.depth, g_state.helium);
-            break;
-    }
-    
-    update_all_displays();
-    g_state.updating = false;
-}
-
-// Event handlers
-void depth_slider_event_cb(lv_event_t* e) {
-    if (is_locked(LockTarget::DEPTH)) return;  // Can't change locked slider
-    
-    g_state.depth = (float)lv_slider_get_value(g_state.depth_slider);
-    recalculate_from_depth();
-}
-
-void ppo2_slider_event_cb(lv_event_t* e) {
-    if (is_locked(LockTarget::PPO2)) return;
-    
-    g_state.ppo2 = lv_slider_get_value(g_state.ppo2_slider) / 100.0f;
-    recalculate_from_ppo2();
-}
-
-void ead_slider_event_cb(lv_event_t* e) {
-    if (is_locked(LockTarget::EAD)) return;
-    
-    g_state.ead = (float)lv_slider_get_value(g_state.ead_slider);
-    recalculate_from_ead();
-}
-
-void helium_slider_event_cb(lv_event_t* e) {
-    if (is_locked(LockTarget::HELIUM)) return;
-    
-    g_state.helium = (float)lv_slider_get_value(g_state.helium_slider);
-    recalculate_from_helium();
-}
-
-void o2_slider_event_cb(lv_event_t* e) {
-    if (is_locked(LockTarget::O2)) return;
-    
-    g_state.o2 = (float)lv_slider_get_value(g_state.o2_slider);
-    // O2 affects density calculation, just update displays
-    update_all_displays();
-}
+void depth_slider_event_cb(lv_event_t*) { apply_value(LockTarget::DEPTH, lv_slider_get_value(g_state.depth_slider)); }
+void ppo2_slider_event_cb(lv_event_t*) { apply_value(LockTarget::PPO2, lv_slider_get_value(g_state.ppo2_slider) / 100.0f); }
+void ead_slider_event_cb(lv_event_t*) { apply_value(LockTarget::EAD, lv_slider_get_value(g_state.ead_slider)); }
+void helium_slider_event_cb(lv_event_t*) { apply_value(LockTarget::HELIUM, lv_slider_get_value(g_state.helium_slider)); }
+void o2_slider_event_cb(lv_event_t*) { apply_value(LockTarget::O2, lv_slider_get_value(g_state.o2_slider)); }
 
 void lock_button_event_cb(lv_event_t* e) {
     LockTarget target = (LockTarget)(intptr_t)lv_event_get_user_data(e);
@@ -490,8 +450,7 @@ void numpad_button_event_cb(lv_event_t* e) {
         }
     } else if (strcmp(txt, "OK") == 0) {
         // Apply value and close
-        apply_numpad_value();
-        close_numpad();
+        if (apply_numpad_value()) close_numpad();
         return;
     } else if (strcmp(txt, ",") == 0 || strcmp(txt, ".") == 0) {
         // Decimal point - only allow one, and only if decimals are allowed
@@ -529,40 +488,19 @@ void numpad_cancel_event_cb(lv_event_t* e) {
     close_numpad();
 }
 
-void apply_numpad_value() {
+bool apply_numpad_value() {
     NumpadState& np = g_state.numpad;
-    
-    if (np.input_len == 0) return;
-    
-    // Parse the value
-    float value = strtof(np.input_buffer, nullptr);
-    value = clamp_float(value, np.min_val, np.max_val);
-    
-    // Apply to the appropriate state variable
-    switch (np.editing_target) {
-        case LockTarget::DEPTH:
-            g_state.depth = value;
-            recalculate_from_depth();
-            break;
-        case LockTarget::PPO2:
-            g_state.ppo2 = value;
-            recalculate_from_ppo2();
-            break;
-        case LockTarget::O2:
-            g_state.o2 = value;
-            update_all_displays();
-            break;
-        case LockTarget::EAD:
-            g_state.ead = value;
-            recalculate_from_ead();
-            break;
-        case LockTarget::HELIUM:
-            g_state.helium = value;
-            recalculate_from_helium();
-            break;
-        default:
-            break;
+    if (np.input_len == 0) return true;  // Unedited field keeps its current value.
+    char* end = nullptr;
+    float value = strtof(np.input_buffer, &end);
+    if (end == np.input_buffer || *end != '\0' || !std::isfinite(value)) {
+        lv_label_set_text(np.title_label, "Enter a valid number");
+        return false;
     }
+    const float scale = np.decimals ? 100.0f : 1.0f;
+    value = std::round(clamp_float(value, np.min_val, np.max_val) * scale) / scale;
+    apply_value(np.editing_target, value);
+    return true;
 }
 
 void close_numpad() {
@@ -681,6 +619,7 @@ void show_numpad(LockTarget target, const char* title, float current_val, float 
 void value_label_click_cb(lv_event_t* e) {
     LockTarget target = (LockTarget)(intptr_t)lv_event_get_user_data(e);
     
+    if (is_locked(target)) return;
     switch (target) {
         case LockTarget::DEPTH:
             show_numpad(target, "Depth (m)", g_state.depth, DEPTH_MIN, DEPTH_MAX, 0);
@@ -715,10 +654,12 @@ void trimix_toggle_event_cb(lv_event_t* e) {
             g_state.bottom_lock = LockTarget::NONE;
             update_lock_button_styles();
             g_state.helium = 0;
-            g_state.ead = g_state.depth;  // EAD equals depth with no helium
+            g_state.ead = calc_ead(g_state.depth, 0, g_state.o2);
         }
     }
     
+    g_state.ead = calc_ead(g_state.depth, g_state.helium, g_state.o2);
+    lv_obj_add_flag(g_state.input_notice, LV_OBJ_FLAG_HIDDEN);
     update_all_displays();
     ESP_LOGI(TAG, "Trimix mode: %s", g_state.trimix_enabled ? "enabled" : "disabled");
 }
@@ -875,26 +816,32 @@ lv_obj_t* create_result_card(lv_obj_t* parent) {
     lv_obj_set_style_border_width(card, 1, 0);
     lv_obj_set_style_pad_all(card, 16, 0);
     lv_obj_clear_flag(card, LV_OBJ_FLAG_SCROLLABLE);
-    lv_obj_set_flex_flow(card, LV_FLEX_FLOW_ROW);
-    lv_obj_set_flex_align(card, LV_FLEX_ALIGN_SPACE_EVENLY, LV_FLEX_ALIGN_CENTER, LV_FLEX_ALIGN_CENTER);
+    lv_obj_set_flex_flow(card, LV_FLEX_FLOW_ROW_WRAP);
+    lv_obj_set_style_pad_row(card, 8, 0);
+    lv_obj_set_style_pad_column(card, 0, 0);
+    lv_obj_set_flex_align(card, LV_FLEX_ALIGN_SPACE_BETWEEN, LV_FLEX_ALIGN_CENTER, LV_FLEX_ALIGN_CENTER);
     
     // O2 result
     g_state.result_o2 = lv_label_create(card);
+    lv_obj_set_width(g_state.result_o2, lv_pct(49));
     lv_obj_set_style_text_font(g_state.result_o2, &lv_font_montserrat_20, 0);
     lv_obj_set_style_text_color(g_state.result_o2, lv_color_hex(STYLE_COLOR_CYAN), 0);
     
     // MOD result
     g_state.result_mod = lv_label_create(card);
+    lv_obj_set_width(g_state.result_mod, lv_pct(49));
     lv_obj_set_style_text_font(g_state.result_mod, &lv_font_montserrat_20, 0);
     lv_obj_set_style_text_color(g_state.result_mod, lv_color_hex(STYLE_COLOR_CYAN), 0);
     
-    // Mix recommendation (full width below)
+    // Mix label on the second row
     g_state.result_mix = lv_label_create(card);
+    lv_obj_set_width(g_state.result_mix, lv_pct(49));
     lv_obj_set_style_text_font(g_state.result_mix, &lv_font_montserrat_16, 0);
     lv_obj_set_style_text_color(g_state.result_mix, lv_color_hex(STYLE_COLOR_TEXT_LIGHT), 0);
     
     // Gas density
     g_state.result_density = lv_label_create(card);
+    lv_obj_set_width(g_state.result_density, lv_pct(49));
     lv_obj_set_style_text_font(g_state.result_density, &lv_font_montserrat_16, 0);
     lv_obj_set_style_text_color(g_state.result_density, lv_color_hex(STYLE_COLOR_SUCCESS), 0);
     
@@ -984,6 +931,7 @@ lv_obj_t* dive_planner_screen_create(void) {
     lv_obj_set_style_bg_opa(screen, LV_OPA_COVER, 0);
     lv_obj_clear_flag(screen, LV_OBJ_FLAG_SCROLLABLE);
     g_state.screen = screen;
+    lv_obj_add_event_cb(screen, [](lv_event_t*) { update_all_displays(); }, LV_EVENT_SCREEN_LOADED, nullptr);
     
     // Navbar with back button
     navbar_create_with_back(screen, "Dive Planner", nullptr);
@@ -1004,6 +952,12 @@ lv_obj_t* dive_planner_screen_create(void) {
     // Result card at top
     create_result_card(content);
     
+    g_state.input_notice = lv_label_create(content);
+    lv_obj_set_width(g_state.input_notice, SCREEN_WIDTH - 2 * CONTENT_PAD);
+    lv_obj_set_style_text_font(g_state.input_notice, &lv_font_montserrat_14, 0);
+    lv_obj_set_style_text_color(g_state.input_notice, lv_color_hex(STYLE_COLOR_WARNING), 0);
+    lv_obj_add_flag(g_state.input_notice, LV_OBJ_FLAG_HIDDEN);
+
     // Depth slider
     create_slider_row(content, "Depth", DEPTH_MIN, DEPTH_MAX, (int)g_state.depth,
                       &g_state.depth_slider, &g_state.depth_value, &g_state.depth_lock,

@@ -50,6 +50,8 @@ set_source_files_properties(
 )
 
 add_subdirectory("${TRIMIX_LVGL_SOURCE}" "${CMAKE_BINARY_DIR}/lvgl")
+include("${TRIMIX_ROOT}/cmake/lvgl_chart_missing_points.cmake")
+trimix_patch_lvgl_chart(lvgl "${TRIMIX_LVGL_SOURCE}")
 get_target_property(LVGL_SOURCES lvgl SOURCES)
 list(FILTER LVGL_SOURCES EXCLUDE REGEX ".*lv_blend_(helium|neon)\\.S$")
 set_target_properties(lvgl PROPERTIES SOURCES "${LVGL_SOURCES}")

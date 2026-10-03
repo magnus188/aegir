@@ -57,7 +57,7 @@ bool oxygen_selection_channel_enabled(gas_cal_channel_t channel) {
     gas_cal_channel_t selected;
     return oxygen_selection_selected_channel(&selected) && channel == selected;
 }
-oxygen_selection_result_t oxygen_selection_confirm(oxygen_selection_t choice, bool replacement) {
+oxygen_selection_result_t oxygen_selection_confirm(uint32_t choice, bool replacement) {
     std::lock_guard<std::recursive_mutex> guard(configuration_lock);
     gas_cal_channel_t channel;
     if (!oxygen_selection::channel_for(choice, channel)) return OXYGEN_SELECT_BAD_CHOICE;

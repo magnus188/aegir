@@ -33,7 +33,8 @@ int main() {
     check(core.status(0).calibration_required && !core.status(0).storage_error, "Missing setup is distinct from damaged storage");
     check(core.confirm(OXYGEN_UNCONFIGURED, false, 0) == OXYGEN_SELECT_BAD_CHOICE && memory.writes == 0,
           "Unconfigured cannot be confirmed as a usable sensor");
-    check(core.confirm(static_cast<oxygen_selection_t>(99), false, 0) == OXYGEN_SELECT_BAD_CHOICE, "Unknown choices rejected");
+    check(core.confirm(99, false, 0) == OXYGEN_SELECT_BAD_CHOICE, "Unknown choices rejected");
+    check(core.confirm(UINT32_MAX, false, 0) == OXYGEN_SELECT_BAD_CHOICE, "Full-width malformed choices rejected");
     check(core.confirm(OXYGEN_AO2, false, 4) == OXYGEN_SELECT_OK && core.selected(c) && c == GAS_CAL_AO2,
           "Explicit AO2 maps to original calibration ID zero");
     check(!core.usable(GAS_CAL_AO2, 4) && core.usable(GAS_CAL_AO2, 5), "First setup requires a newer calibration than an existing record");

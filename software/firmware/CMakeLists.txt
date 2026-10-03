@@ -22,4 +22,8 @@ idf_build_set_property(
 
 project(Trimix_analyzer)
 
+include("${CMAKE_CURRENT_LIST_DIR}/cmake/lvgl_chart_missing_points.cmake")
+idf_component_get_property(_trimix_lvgl_lib lvgl__lvgl COMPONENT_LIB)
+idf_component_get_property(_trimix_lvgl_dir lvgl__lvgl COMPONENT_DIR)
+trimix_patch_lvgl_chart(${_trimix_lvgl_lib} "${_trimix_lvgl_dir}")
 include("${CMAKE_CURRENT_LIST_DIR}/cmake/guition_hosted_sdmmc.cmake")

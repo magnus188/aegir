@@ -8,7 +8,7 @@ namespace {
 int g_failed = 0;
 
 void expect_near(const char* name, float actual, float expected, float tolerance) {
-    if (std::fabs(actual - expected) > tolerance) {
+    if (!std::isfinite(actual) || std::fabs(actual - expected) > tolerance) {
         std::fprintf(stderr, "%s: got %.4f, expected %.4f\n", name, actual, expected);
         ++g_failed;
     }
@@ -20,11 +20,11 @@ int main() {
     expect_near("MOD 32% @ 1.4", calc_mod(32.0f, 1.4f), 33.75f, 0.01f);
     expect_near("PPO2 32% @ 30m", calc_ppo2(30.0f, 32.0f), 1.28f, 0.01f);
     expect_near("O2 for 30m @ 1.4", calc_o2_for_depth_ppo2(30.0f, 1.4f), 35.0f, 0.01f);
-    expect_near("O2 clamps to air", calc_o2_for_depth_ppo2(60.0f, 1.4f), 21.0f, 0.01f);
+    expect_near("O2 supports hypoxic mixes", calc_o2_for_depth_ppo2(60.0f, 1.4f), 20.0f, 0.01f);
 
-    const float ead = calc_ead(60.0f, 35.0f);
-    expect_near("Depth/EAD inverse", calc_depth_for_ead(ead, 35.0f), 60.0f, 0.01f);
-    expect_near("Helium/EAD inverse", calc_helium_for_ead(60.0f, ead), 35.0f, 0.01f);
+    const float ead = calc_ead(60.0f, 35.0f, 21.0f);
+    expect_near("Depth/EAD inverse", calc_depth_for_ead(ead, 35.0f, 21.0f), 60.0f, 0.01f);
+    expect_near("Helium/EAD inverse", calc_helium_for_ead(60.0f, ead, 21.0f), 35.0f, 0.01f);
 
     expect_near("Clamp lower", clamp_float(-5.0f, 0.0f, 10.0f), 0.0f, 0.01f);
     expect_near("Clamp upper", clamp_float(15.0f, 0.0f, 10.0f), 10.0f, 0.01f);

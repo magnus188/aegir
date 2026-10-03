@@ -8,6 +8,7 @@
 #include "services/battery_service.h"
 #include "services/ota_service.h"
 #include "services/settings_service.h"
+#include "services/sd_log_service.h"
 #include "services/wifi_service.h"
 #include "ui/screens/screen_manager.h"
 
@@ -36,6 +37,7 @@ int main() {
     analysis_history_init();
     ota_service_init();
 
+    sd_log_start();
     screens_init();
     battery_start_monitoring();
     wifi_service_auto_connect();

@@ -247,7 +247,9 @@ void update_ui_state() {
     
     switch (state) {
         case OTA_STATE_IDLE:
+            hide_update_overlay();
             lv_label_set_text(g_state.status_label, "Tap 'Check for Updates' to begin");
+            lv_obj_set_style_text_color(g_state.status_label, lv_color_hex(STYLE_COLOR_TEXT_DIM), 0);
             lv_obj_clear_flag(g_state.check_btn, LV_OBJ_FLAG_HIDDEN);
             lv_obj_clear_state(g_state.check_btn, LV_STATE_DISABLED);
             break;
@@ -324,9 +326,16 @@ void update_ui_state() {
                     lv_color_hex(STYLE_COLOR_SUCCESS), 0);
                 lv_obj_add_flag(g_state.check_btn, LV_OBJ_FLAG_HIDDEN);
                 
+                // The simulator cannot restart the MCU, and its ESP timer stub
+                // deliberately does not fire. Keep its completed flow usable.
+#ifdef TRIMIX_SIMULATOR
+                hide_update_overlay();
+                lv_obj_clear_flag(g_state.reboot_btn, LV_OBJ_FLAG_HIDDEN);
+#else
                 // Auto-restart after 2 seconds
                 ESP_LOGI(TAG, "OTA successful, auto-restarting in 2 seconds...");
                 schedule_restart();
+#endif
             }
             break;
             
@@ -359,6 +368,10 @@ void on_check_click(lv_event_t* e) {
 
 void on_update_click(lv_event_t* e) {
     ESP_LOGI(TAG, "Starting update...");
+    g_state.success_handled = false;
+    g_state.last_displayed_progress = -1;
+    g_ota_progress.store(0);
+    g_last_status[0] = '\0';
     show_update_overlay();  // Show fullscreen update UI
     lv_bar_set_value(g_state.progress_bar, 0, LV_ANIM_OFF);
     if (g_state.overlay_progress) {

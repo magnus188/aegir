@@ -47,17 +47,17 @@ int main() {
 
     std::printf("\nO2 percent for depth/PPO2:\n");
     assert_near(calc_o2_for_depth_ppo2(30.0f, 1.4f), 35.0f, 0.5f, "1.4 PPO2 @ 30m = 35% O2");
-    assert_near(calc_o2_for_depth_ppo2(60.0f, 1.4f), 21.0f, 0.01f, "O2 recommendation clamps to 21% minimum");
+    assert_near(calc_o2_for_depth_ppo2(60.0f, 1.4f), 20.0f, 0.01f, "O2 calculation preserves hypoxic fractions");
     assert_near(calc_o2_for_depth_ppo2(0.0f, 1.6f), 100.0f, 0.01f, "O2 recommendation clamps to 100% maximum");
 
     std::printf("\nEAD calculations:\n");
-    assert_near(calc_ead(40.0f, 0.0f), 53.29f, 0.5f, "0% He @ 40m follows current EAD formula");
-    assert_near(calc_ead(60.0f, 35.0f), 47.59f, 0.5f, "35% He @ 60m lowers EAD");
-    assert_near(calc_ead(40.0f, 100.0f), 0.0f, 0.01f, "100% He clamps EAD to 0m");
+    assert_near(calc_ead(40.0f, 0.0f, 21.0f), 40.0f, 0.5f, "Air at 40m has EAD 40m");
+    assert_near(calc_ead(60.0f, 35.0f, 21.0f), 28.99f, 0.5f, "35% He @ 60m lowers EAD");
+    assert_near(calc_ead(40.0f, 100.0f, 0.0f), 0.0f, 0.01f, "100% He clamps EAD to 0m");
 
     std::printf("\nReverse EAD calculations:\n");
-    assert_near(calc_depth_for_ead(30.0f, 35.0f), 38.62f, 0.5f, "Depth for EAD 30m with 35% He");
-    assert_near(calc_helium_for_ead(60.0f, 30.0f), 54.86f, 0.5f, "Helium for EAD 30m @ 60m");
+    assert_near(calc_depth_for_ead(30.0f, 35.0f, 21.0f), 61.82f, 0.5f, "Depth for EAD 30m with 35% He");
+    assert_near(calc_helium_for_ead(60.0f, 30.0f, 21.0f), 33.86f, 0.5f, "Helium for EAD 30m @ 60m");
     assert_near(clamp_float(150.0f, 0.0f, 100.0f), 100.0f, 0.01f, "clamp upper bound");
     assert_near(clamp_float(-5.0f, 0.0f, 100.0f), 0.0f, 0.01f, "clamp lower bound");
 

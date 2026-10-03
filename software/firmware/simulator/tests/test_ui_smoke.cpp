@@ -317,8 +317,7 @@ bool menu_and_paging_checks() {
                lv_color_hex(STYLE_COLOR_ERROR)),
                "Chamber humidity turns red at its configured alarm");
         snapshot("analysis-high-humidity", nullptr);
-        settings_reset(SETTING_HUMIDITY_ADVISORY_PCT);
-        settings_reset(SETTING_HUMIDITY_ALARM_PCT);
+        settings_reset_category(SETTINGS_CAT_SAFETY);
         select_analyse_profile(4);
         expect(sensor_get_mock_profile() == SENSOR_MOCK_PROFILE_UNSTABLE,
                "Top banner selects unstable demo gas");

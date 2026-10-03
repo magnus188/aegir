@@ -5,7 +5,7 @@
 #include <algorithm>
 
 namespace oxygen_selection {
-bool channel_for(oxygen_selection_t choice, gas_cal_channel_t &channel) {
+bool channel_for(uint32_t choice, gas_cal_channel_t &channel) {
     if (choice == OXYGEN_AO2) { channel = GAS_CAL_AO2; return true; }
     if (choice == OXYGEN_JJCCR) { channel = GAS_CAL_JJCCR; return true; }
     return false;
@@ -13,7 +13,7 @@ bool channel_for(oxygen_selection_t choice, gas_cal_channel_t &channel) {
 bool record_valid(const Record &r, bool simulated, uint32_t supported_profile_revision) {
     gas_cal_channel_t unused;
     return r.format_version == kSchema && r.generation &&
-        channel_for(static_cast<oxygen_selection_t>(r.choice), unused) &&
+        channel_for(r.choice, unused) &&
         r.acquisition_revision == r.profile_revision &&
         r.profile_revision && r.profile_revision <= supported_profile_revision &&
         r.minimum_calibration_revision && r.simulated == static_cast<uint32_t>(simulated) && !r.reserved;
@@ -31,7 +31,7 @@ void Core::initialize() {
 }
 bool Core::selected(gas_cal_channel_t &channel) const {
     return !storage_error_ && record_valid(record_, simulated_, profile_revision_) &&
-        channel_for(static_cast<oxygen_selection_t>(record_.choice), channel);
+        channel_for(record_.choice, channel);
 }
 bool Core::usable(gas_cal_channel_t channel, uint32_t revision) const {
     gas_cal_channel_t selected_channel;
@@ -51,7 +51,7 @@ oxygen_selection_status_t Core::status(uint32_t calibration_revision) const {
     out.minimum_calibration_revision = record_.minimum_calibration_revision;
     return out;
 }
-oxygen_selection_result_t Core::confirm(oxygen_selection_t choice, bool replacement, uint32_t previous_revision) {
+oxygen_selection_result_t Core::confirm(uint32_t choice, bool replacement, uint32_t previous_revision) {
     initialize();
     gas_cal_channel_t channel;
     if (!channel_for(choice, channel)) return OXYGEN_SELECT_BAD_CHOICE;

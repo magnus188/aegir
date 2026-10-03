@@ -13,21 +13,21 @@ extern "C" {
  * Key formulas:
  * - PPO2 = FO2 * (depth/10 + 1)  where FO2 is fraction (0.21 for air)
  * - MOD = (PPO2 / FO2 - 1) * 10
- * - The current helium planning helper uses (1 - FHe) because O2 is not an input.
- *   This is closer to an END-style narcotic fraction than a strict N2-only EAD.
+ * - EAD uses nitrogen fraction (1 - FO2 - FHe), relative to 79% nitrogen in air.
+ *   It is distinct from END, which may include oxygen as a narcotic gas.
  */
 
 /**
  * Calculate required O2 percentage for given depth and PPO2
  * @param depth_m Depth in meters
  * @param ppo2 Partial pressure of O2 in bar (e.g., 1.4)
- * @return O2 percentage (21-100)
+ * @return O2 percentage (0-100), or NaN for invalid input
  */
 float calc_o2_for_depth_ppo2(float depth_m, float ppo2);
 
 /**
  * Calculate Maximum Operating Depth for given O2% and PPO2
- * @param o2_percent O2 percentage (21-100)
+ * @param o2_percent O2 percentage (0-100; zero returns a zero MOD)
  * @param ppo2 Target PPO2 in bar
  * @return MOD in meters
  */
@@ -42,28 +42,31 @@ float calc_mod(float o2_percent, float ppo2);
 float calc_ppo2(float depth_m, float o2_percent);
 
 /**
- * Calculate the current helium-adjusted narcotic depth helper.
+ * Calculate nitrogen-based equivalent air depth, matching analysis_calculate.
  * @param depth_m Actual depth in meters
- * @param he_percent Helium percentage (0-70)
- * @return Equivalent depth in meters under the current app model
+ * @param he_percent Helium percentage
+ * @param o2_percent Oxygen percentage
+ * @return Nonnegative equivalent depth, or NaN for invalid composition
  */
-float calc_ead(float depth_m, float he_percent);
+float calc_ead(float depth_m, float he_percent, float o2_percent);
 
 /**
  * Calculate required depth for target EAD with given helium
  * @param ead_m Target EAD in meters
  * @param he_percent Helium percentage
+ * @param o2_percent Oxygen percentage
  * @return Required actual depth in meters
  */
-float calc_depth_for_ead(float ead_m, float he_percent);
+float calc_depth_for_ead(float ead_m, float he_percent, float o2_percent);
 
 /**
  * Calculate required helium for target EAD at given depth
  * @param depth_m Actual depth in meters
  * @param ead_m Target EAD in meters
+ * @param o2_percent Oxygen percentage
  * @return Required helium percentage
  */
-float calc_helium_for_ead(float depth_m, float ead_m);
+float calc_helium_for_ead(float depth_m, float ead_m, float o2_percent);
 
 typedef struct {
     bool valid;

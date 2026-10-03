@@ -18,6 +18,8 @@ constexpr wifi_network_info_t kNetworks[] = {
 bool g_initialized = false;
 bool g_scanning = false;
 bool g_connected = false;
+bool g_scan_pending = false;
+bool g_connect_pending = false;
 char g_connected_ssid[33] = {};
 char g_saved_ssid[33] = {};
 char g_saved_password[65] = {};
@@ -37,6 +39,10 @@ int8_t current_rssi() {
 
 }  // namespace
 
+extern "C" void wifi_mock_set_ready(bool ready) { g_initialized = ready; }
+extern "C" void wifi_mock_set_scan_pending(bool pending) { g_scan_pending = pending; g_scanning = pending; }
+extern "C" void wifi_mock_set_connect_pending(bool pending) { g_connect_pending = pending; }
+
 void wifi_service_init(void) {
     g_initialized = true;
     status_set_wifi(g_connected, signal_level_for_rssi(current_rssi()));
@@ -44,7 +50,7 @@ void wifi_service_init(void) {
 
 void wifi_service_start_scan(void) {
     if (!g_initialized) return;
-    g_scanning = false;
+    g_scanning = g_scan_pending;
 }
 
 bool wifi_service_is_scanning(void) {
@@ -72,6 +78,7 @@ uint16_t wifi_service_get_scan_results(wifi_network_info_t* networks, uint16_t m
 
 bool wifi_service_connect(const char* ssid, const char* password) {
     if (!g_initialized || !ssid || ssid[0] == '\0') return false;
+    if (g_connect_pending) return true;
 
     std::strncpy(g_connected_ssid, ssid, sizeof(g_connected_ssid) - 1);
     g_connected_ssid[sizeof(g_connected_ssid) - 1] = '\0';
