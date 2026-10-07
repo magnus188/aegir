@@ -1,0 +1,22 @@
+name: Design review or test result
+description: Share a specific hardware or measurement finding and its evidence.
+body:
+  - type: textarea
+    id: scope
+    attributes:
+      label: What did you review or test?
+      description: Link the relevant commit, design revision, files and existing review issue. A comment on an existing issue is also welcome.
+    validations:
+      required: true
+  - type: textarea
+    id: finding
+    attributes:
+      label: Finding and evidence
+      description: Include observations, datasheets, calculations or reproducible measurements. Separate confirmed results from assumptions and simulated results.
+    validations:
+      required: true
+  - type: textarea
+    id: followup
+    attributes:
+      label: Suggested next step
+      description: What should change or be checked next? Include unresolved questions and test limitations.

@@ -22,6 +22,7 @@ concurrency:
 jobs:
   build-and-release:
     name: Build ESP32-P4 Firmware and Create Release
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -29,9 +30,10 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           fetch-depth: 0
+          persist-credentials: false
 
       - name: Install host test dependencies
         run: |
@@ -70,9 +72,9 @@ jobs:
           LATEST_VERSION="$(git tag -l 'v[0-9]*.[0-9]*.[0-9]*' | sed -nE 's/^v((0|[1-9][0-9]*)\.(0|[1-9][0-9]*)\.(0|[1-9][0-9]*))$/\1/p' | sort -V | tail -n 1)"
           LATEST_VERSION="${LATEST_VERSION:-0.0.0}"
 
-          # A deliberately raised header version (the P4 migration starts at
-          # 0.2.0) is released as-is. Otherwise bump from the newest tag, so a
-          # failed version commit can never retry an existing release tag.
+          # A deliberately raised header version is released as-is. Otherwise
+          # bump from the newest tag; the source header is a development baseline
+          # and is not committed back to protected main after a release.
           HIGHEST="$(printf '%s\n%s\n' "$HEADER_VERSION" "$LATEST_VERSION" | sort -V | tail -n 1)"
           if [ "$HIGHEST" = "$HEADER_VERSION" ] && [ "$HEADER_VERSION" != "$LATEST_VERSION" ]; then
             NEW_VERSION="$HEADER_VERSION"
@@ -100,7 +102,7 @@ jobs:
         run: ./scripts/run_tests.sh
 
       - name: Build pre-v3 ESP32-P4 firmware
-        uses: espressif/esp-idf-ci-action@v1
+        uses: espressif/esp-idf-ci-action@9d38657f3d789ca759b2b37aaf5ceffbc42c4f0d # v1
         with:
           esp_idf_version: v5.5.4
           target: esp32p4
@@ -124,7 +126,7 @@ jobs:
         run: ./scripts/check_firmware_size.sh
 
       - name: Build v3+ ESP32-P4 firmware
-        uses: espressif/esp-idf-ci-action@v1
+        uses: espressif/esp-idf-ci-action@9d38657f3d789ca759b2b37aaf5ceffbc42c4f0d # v1
         with:
           esp_idf_version: v5.5.4
           target: esp32p4
@@ -155,7 +157,7 @@ jobs:
           --asset-dir . --output release-ota-manifest.json
 
       - name: Create pre-v3 first-install image
-        uses: espressif/esp-idf-ci-action@v1
+        uses: espressif/esp-idf-ci-action@9d38657f3d789ca759b2b37aaf5ceffbc42c4f0d # v1
         with:
           esp_idf_version: v5.5.4
           target: esp32p4
@@ -170,7 +172,7 @@ jobs:
             0x10000 build/esp32p4-pre3/ota_data_initial.bin
 
       - name: Create v3+ first-install image
-        uses: espressif/esp-idf-ci-action@v1
+        uses: espressif/esp-idf-ci-action@9d38657f3d789ca759b2b37aaf5ceffbc42c4f0d # v1
         with:
           esp_idf_version: v5.5.4
           target: esp32p4
@@ -185,7 +187,7 @@ jobs:
             0x10000 build/esp32p4-v3/ota_data_initial.bin
 
       - name: Upload release build artifacts
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         with:
           name: aegir-esp32p4-v${{ steps.version.outputs.new_version }}
           if-no-files-found: error
@@ -224,9 +226,10 @@ jobs:
 
       - name: Stage GitHub release for digest verification
         id: staged-release
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@efb35369e0ad2afab669f228072c1b0d510eae64 # v3.0.3
         with:
           tag_name: v${{ steps.version.outputs.new_version }}
+          target_commitish: ${{ github.sha }}
           name: Ægir v${{ steps.version.outputs.new_version }}
           body: ${{ steps.changelog.outputs.changelog }}
           files: |
@@ -246,6 +249,7 @@ jobs:
           # A missing/mismatched server digest leaves a draft, invisible to /latest.
           VERIFIED=false
           for ATTEMPT in $(seq 1 10); do
+            echo "Checking uploaded digests (attempt ${ATTEMPT}/10)."
             if gh api "repos/${GITHUB_REPOSITORY}/releases/${RELEASE_ID}" > uploaded-release.json &&
                python3 scripts/verify_release.py --version "$RELEASE_VERSION" --asset-dir . --release-json uploaded-release.json; then
               VERIFIED=true
@@ -255,15 +259,6 @@ jobs:
           done
           [ "$VERIFIED" = true ] || { echo "Release remains a draft: OTA validation failed." >&2; exit 1; }
           gh release edit "v${RELEASE_VERSION}" --draft=false
-
-      - name: Commit version update
-        shell: bash
-        run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-          git add main/version.h
-          git diff --staged --quiet || git commit -m "chore: release v${{ steps.version.outputs.new_version }} [skip ci]"
-          git push
 
       - name: Summary
         run: |

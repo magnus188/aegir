@@ -1,7 +1,7 @@
 aiofiles==25.1.0
 blinker==1.9.0
 cairocffi==1.7.1
-CairoSVG==2.8.2
+CairoSVG==2.9.0
 cffi==2.1.1
 click==8.5.0
 cssselect2==0.10.1
