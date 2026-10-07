@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Report a security vulnerability privately
+    url: https://github.com/magnus188/aegir/security/advisories/new
+    about: Use this for exploitable vulnerabilities or exposed credentials.
+  - name: Contributing guide
+    url: https://github.com/magnus188/aegir/blob/main/CONTRIBUTING.md
+    about: How to propose changes, open a pull request and record test evidence.
