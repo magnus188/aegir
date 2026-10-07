@@ -91,6 +91,17 @@ Replace the example `PORT` with the port reported by `make devices`. See the
 - [Enclosure CAD](hardware/cad/rev04/3d-print/Trimix_Enclosure_A3_PrintReview.f3d) and [3D-print files](hardware/cad/rev04/3d-print/printing/)
 - [Logo](logo/README.md)
 
+## Contributing and future ideas
+
+Design reviews, measurements, documentation and software fixes are welcome.
+Start with the [contribution guide](CONTRIBUTING.md) and
+[open issues](https://github.com/magnus188/aegir/issues). The
+[v2 investigation backlog](https://github.com/magnus188/aegir/milestone/1)
+collects community suggestions without promising a release date.
+
+Maintainers can use the [repository guide](.github/MAINTAINING.md). For
+exploitable vulnerabilities, use the [private reporting route](SECURITY.md).
+
 ## License
 
 Software: [GPLv3](LICENSES/GPL-3.0-only.txt). PCB and CAD files:
