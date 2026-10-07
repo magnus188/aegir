@@ -1,0 +1,26 @@
+name: Idea to investigate
+description: Suggest an option or improvement, including ideas for v2.
+labels: [idea]
+body:
+  - type: textarea
+    id: need
+    attributes:
+      label: What would this help with?
+      description: Describe the use case or problem.
+    validations:
+      required: true
+  - type: textarea
+    id: option
+    attributes:
+      label: Proposed option
+      description: A short description and any useful links or alternatives.
+    validations:
+      required: true
+  - type: textarea
+    id: investigation
+    attributes:
+      label: What needs investigating?
+      description: For example, compatibility, cost, power, interfaces and validation. It is fine to be unsure.
+  - type: markdown
+    attributes:
+      value: An idea is a starting point for discussion. A maintainer may add it to the v2 investigation milestone; this does not promise implementation or a release date.
