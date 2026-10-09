@@ -1,6 +1,6 @@
 # Ægir licensing
 
-Copyright © 2025–2026 Magnus Trandokken and contributors in original Ægir
+Copyright © 2025–2026 magnus188 and contributors in original Ægir
 material. Contributors retain copyright in their own contributions.
 
 This repository has separate licenses for software, hardware designs, and

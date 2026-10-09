@@ -1,6 +1,6 @@
 # Ægir brand and trademark policy
 
-Copyright © 2026 Magnus Trandokken. The Ægir face/ship logo, wordmark,
+Copyright © 2026 magnus188. The Ægir face/ship logo, wordmark,
 lockups, splash artwork, and their generated image data are reserved brand
 assets. The software and hardware licenses do not grant permission to brand
 modified or third-party products as official Ægir products. No trademark
