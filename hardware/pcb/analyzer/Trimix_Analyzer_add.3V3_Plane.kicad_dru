@@ -1,0 +1,73 @@
+(version 1)
+# Review process: JLCPCB 4-layer, 1oz outer copper, ENIG, filled/capped thermal vias.
+# Published capability: 0.15mm different-net SMT pad spacing; 0.20mm preferred via drill.
+# https://jlcpcb.com/capabilities/pcb-capabilities/
+# Default routing/other footprints remain at 0.20mm clearance and 0.30mm holes.
+(rule "Review general mechanical hole minimum"
+  (constraint hole_size (min 0.30mm)))
+(rule "TI DRL manufacturer adjacent pads"
+  (condition "A.Type == 'Pad' && B.Type == 'Pad' && A.memberOfFootprint('U701') && B.memberOfFootprint('U701')")
+  (constraint clearance (min 0.15mm)))
+(rule "TI DCU manufacturer adjacent pads"
+  (condition "A.Type == 'Pad' && B.Type == 'Pad' && A.memberOfFootprint('U703') && B.memberOfFootprint('U703')")
+  (constraint clearance (min 0.15mm)))
+(rule "ADI TS8 manufacturer adjacent pads"
+  (condition "A.Type == 'Pad' && B.Type == 'Pad' && A.memberOfFootprint('U801') && B.memberOfFootprint('U801')")
+  (constraint clearance (min 0.15mm)))
+(rule "Approved filled capped BQ thermal drills"
+  (condition "A.Type == 'Pad' && A.memberOfFootprint('U101') && A.Pad_Number == '25'")
+  (constraint hole_size (min 0.20mm)))
+(rule "Approved filled capped TPS63020 thermal drills"
+  (condition "A.Type == 'Pad' && A.memberOfFootprint('U201') && A.Pad_Number == '15'")
+  (constraint hole_size (min 0.20mm)))
+
+(rule "Diodes UQFN engineered adjacent lands"
+  (condition "A.Type == 'Pad' && B.Type == 'Pad' && A.memberOfFootprint('U111') && B.memberOfFootprint('U111')")
+  (constraint clearance (min 0.15mm)))
+
+(rule "TI AUP DCU manufacturer adjacent pads"
+  (condition "A.Type == 'Pad' && B.Type == 'Pad' && A.memberOfFootprint('U112') && B.memberOfFootprint('U112')")
+  (constraint clearance (min 0.15mm)))
+
+# Local short necks at U111 only. A companion routing audit additionally
+# limits every sub0.15mm track to the U111 escape rectangle, with no clearance
+# relaxation. These nets otherwise use0.15mm ordinary traces.
+(rule "U111 short fine pitch signal escapes"
+  (condition "A.Type == 'Track' && (A.NetName == 'I2C_SCL' || A.NetName == 'I2C_SDA' || A.NetName == 'USB_BC_INT_N' || A.NetName == 'USB_D_M' || A.NetName == 'USB_D_P' || A.NetName == 'GND' || A.NetName == 'HOST_3V3')")
+  (constraint track_width (min 0.125mm)))
+# Two explicit top-side BQ bootstrap/regulator escapes, conventional through
+# vias, not blind or buried. 0.125mm annulus exceeds four-layer0.10mm minimum.
+(rule "BQ REGN and BTST local through via escapes"
+  (condition "A.Type == 'Via' && (A.NetName == '/01  CHARGING + BATTERY/BQ_REGN' || A.NetName == '/01  CHARGING + BATTERY/BQ_BTST')")
+  (constraint hole_size (min 0.20mm))
+  (constraint via_diameter (min 0.45mm)))
+
+# Ordinary signal through vias: 0.50/0.25mm, 0.125mm nominal annulus.
+# Power distribution retains larger reviewed via choices.
+(rule "Review ordinary through via drill"
+ (condition "A.Type == 'Via'")
+ (constraint hole_size (min 0.25mm)))
+# Explicit dense-package escapes only. A companion coordinate/diameter audit
+# rejects use outside reviewed U101/U110/U115 neck locations.
+(rule "Reviewed dense package local through vias"
+ (condition "A.Type == 'Via' && (A.NetName == '/01  CHARGING + BATTERY/BQ_REGN' || A.NetName == '/01  CHARGING + BATTERY/BQ_BTST' || A.NetName == '/01  CHARGING + BATTERY/CHG_STAT_N' || A.NetName == 'I2C_SCL' || A.NetName == 'I2C_SDA' || A.NetName == 'CHG_INT_N' || A.NetName == '/01  CHARGING + BATTERY/CHG_CE_N' || A.NetName == '/01  CHARGING + BATTERY/PACK_TS' || A.NetName == 'PACK_P' || A.NetName == 'VSYS' || A.NetName == 'USB_CC1' || A.NetName == 'USB_CC2' || A.NetName == 'HOST_3V3' || A.NetName == 'USB_CC_INT_N' || A.NetName == 'GND' || A.NetName == 'USB_OVP_SET' || A.NetName == 'USB_OVP_UVLO' || A.NetName == 'USB_OVP_DVDT' || A.NetName == 'USB_D_P')")
+ (constraint hole_size (min 0.20mm))
+ (constraint via_diameter (min 0.45mm)))
+
+# PROPOSAL ONLY: append after generic via rules in an isolated test project.
+# Requires exact selected-hole epoxy fill, copper cap, planarity approval, ENIG.
+# Do not apply to an ordinary open/ink-plugged via. Native DRC is still required.
+(rule "U115 AUXOFF exact filled capped via geometry"
+ (condition "A.Type == 'Via' && A.NetName == 'USB_CC_INT_N' && A.Position_X == 13.6mm && A.Position_Y == 89.775mm")
+ (constraint hole_size (min 0.20mm) (max 0.20mm))
+ (constraint via_diameter (min 0.40mm) (max 0.40mm))
+ (constraint annular_width (min 0.10mm)))
+# Actual nominal gap is 0.125mm. 0.12mm retains 0.02mm over published 0.10mm
+# pad/track process minimum. Only this masked extension versus pins 2/4 changes.
+(rule "U115 AUXOFF masked via extension to adjacent manufacturer lands"
+ (layer "B.Cu")
+ (condition "A.Type == 'Via' && A.NetName == 'USB_CC_INT_N' && A.Position_X == 13.6mm && A.Position_Y == 89.775mm && B.Type == 'Pad' && B.memberOfFootprint('U115') && (B.Pad_Number == '2' || B.Pad_Number == '4')")
+ (constraint clearance (min 0.12mm)))
+(rule "U115 AUXOFF exact via foreign hole clearance retained"
+ (condition "A.Type == 'Via' && A.NetName == 'USB_CC_INT_N' && A.Position_X == 13.6mm && A.Position_Y == 89.775mm")
+ (constraint hole_clearance (min 0.20mm)))

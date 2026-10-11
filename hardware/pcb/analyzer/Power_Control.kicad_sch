@@ -262,8 +262,7 @@
 			(symbol "C_0_1"
 				(polyline
 					(pts
-						(xy -2.032 0.762)
-						(xy 2.032 0.762)
+						(xy -2.032 0.762) (xy 2.032 0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -275,8 +274,7 @@
 				)
 				(polyline
 					(pts
-						(xy -2.032 -0.762)
-						(xy 2.032 -0.762)
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -902,8 +900,7 @@
 	)
 	(wire
 		(pts
-			(xy 321.31 219.71)
-			(xy 326.39 219.71)
+			(xy 321.31 219.71) (xy 326.39 219.71)
 		)
 		(stroke
 			(width 0)
@@ -913,8 +910,7 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 127)
-			(xy 187.96 151.13)
+			(xy 187.96 127) (xy 187.96 151.13)
 		)
 		(stroke
 			(width 0)
@@ -924,8 +920,7 @@
 	)
 	(polyline
 		(pts
-			(xy 284.48 60.96)
-			(xy 401.32 60.96)
+			(xy 284.48 60.96) (xy 401.32 60.96)
 		)
 		(stroke
 			(width 0.1524)
@@ -935,8 +930,7 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 101.6)
-			(xy 111.76 101.6)
+			(xy 90.17 101.6) (xy 111.76 101.6)
 		)
 		(stroke
 			(width 0)
@@ -946,8 +940,7 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 113.03)
-			(xy 162.56 118.11)
+			(xy 162.56 113.03) (xy 162.56 118.11)
 		)
 		(stroke
 			(width 0)
@@ -957,8 +950,7 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 128.27)
-			(xy 111.76 133.35)
+			(xy 111.76 128.27) (xy 111.76 133.35)
 		)
 		(stroke
 			(width 0)
@@ -968,8 +960,7 @@
 	)
 	(wire
 		(pts
-			(xy 378.46 92.71)
-			(xy 378.46 97.79)
+			(xy 378.46 92.71) (xy 378.46 97.79)
 		)
 		(stroke
 			(width 0)
@@ -979,8 +970,7 @@
 	)
 	(wire
 		(pts
-			(xy 220.98 101.6)
-			(xy 226.06 101.6)
+			(xy 220.98 101.6) (xy 226.06 101.6)
 		)
 		(stroke
 			(width 0)
@@ -990,8 +980,7 @@
 	)
 	(polyline
 		(pts
-			(xy 284.48 198.12)
-			(xy 401.32 198.12)
+			(xy 284.48 198.12) (xy 401.32 198.12)
 		)
 		(stroke
 			(width 0.1524)
@@ -1001,8 +990,7 @@
 	)
 	(wire
 		(pts
-			(xy 378.46 85.09)
-			(xy 378.46 80.01)
+			(xy 378.46 85.09) (xy 378.46 80.01)
 		)
 		(stroke
 			(width 0)
@@ -1012,8 +1000,7 @@
 	)
 	(wire
 		(pts
-			(xy 325.12 92.71)
-			(xy 325.12 97.79)
+			(xy 325.12 92.71) (xy 325.12 97.79)
 		)
 		(stroke
 			(width 0)
@@ -1023,8 +1010,7 @@
 	)
 	(wire
 		(pts
-			(xy 208.28 127)
-			(xy 208.28 132.08)
+			(xy 208.28 127) (xy 208.28 132.08)
 		)
 		(stroke
 			(width 0)
@@ -1034,8 +1020,7 @@
 	)
 	(wire
 		(pts
-			(xy 238.76 158.75)
-			(xy 238.76 163.83)
+			(xy 238.76 158.75) (xy 238.76 163.83)
 		)
 		(stroke
 			(width 0)
@@ -1045,8 +1030,7 @@
 	)
 	(wire
 		(pts
-			(xy 220.98 109.22)
-			(xy 226.06 109.22)
+			(xy 220.98 109.22) (xy 226.06 109.22)
 		)
 		(stroke
 			(width 0)
@@ -1056,8 +1040,7 @@
 	)
 	(polyline
 		(pts
-			(xy 142.24 60.96)
-			(xy 276.86 60.96)
+			(xy 142.24 60.96) (xy 276.86 60.96)
 		)
 		(stroke
 			(width 0.1524)
@@ -1067,8 +1050,7 @@
 	)
 	(wire
 		(pts
-			(xy 195.58 109.22)
-			(xy 190.5 109.22)
+			(xy 195.58 109.22) (xy 190.5 109.22)
 		)
 		(stroke
 			(width 0)
@@ -1078,8 +1060,7 @@
 	)
 	(wire
 		(pts
-			(xy 220.98 114.3)
-			(xy 226.06 114.3)
+			(xy 220.98 114.3) (xy 226.06 114.3)
 		)
 		(stroke
 			(width 0)
@@ -1089,8 +1070,7 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 101.6)
-			(xy 111.76 120.65)
+			(xy 111.76 101.6) (xy 111.76 120.65)
 		)
 		(stroke
 			(width 0)
@@ -1100,8 +1080,7 @@
 	)
 	(polyline
 		(pts
-			(xy 20.32 60.96)
-			(xy 134.62 60.96)
+			(xy 20.32 60.96) (xy 134.62 60.96)
 		)
 		(stroke
 			(width 0.1524)
@@ -1111,8 +1090,7 @@
 	)
 	(wire
 		(pts
-			(xy 368.3 222.25)
-			(xy 363.22 222.25)
+			(xy 368.3 222.25) (xy 363.22 222.25)
 		)
 		(stroke
 			(width 0)
@@ -1122,8 +1100,7 @@
 	)
 	(wire
 		(pts
-			(xy 368.3 224.79)
-			(xy 363.22 224.79)
+			(xy 368.3 224.79) (xy 363.22 224.79)
 		)
 		(stroke
 			(width 0)
@@ -1133,8 +1110,7 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 105.41)
-			(xy 162.56 100.33)
+			(xy 162.56 105.41) (xy 162.56 100.33)
 		)
 		(stroke
 			(width 0)
@@ -1144,8 +1120,7 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 158.75)
-			(xy 187.96 163.83)
+			(xy 187.96 158.75) (xy 187.96 163.83)
 		)
 		(stroke
 			(width 0)
@@ -1155,8 +1130,7 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 99.06)
-			(xy 60.96 99.06)
+			(xy 55.88 99.06) (xy 60.96 99.06)
 		)
 		(stroke
 			(width 0)
@@ -1166,8 +1140,7 @@
 	)
 	(wire
 		(pts
-			(xy 313.69 219.71)
-			(xy 308.61 219.71)
+			(xy 313.69 219.71) (xy 308.61 219.71)
 		)
 		(stroke
 			(width 0)
@@ -1177,8 +1150,7 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 127)
-			(xy 238.76 127)
+			(xy 213.36 127) (xy 238.76 127)
 		)
 		(stroke
 			(width 0)
@@ -1188,8 +1160,7 @@
 	)
 	(wire
 		(pts
-			(xy 238.76 127)
-			(xy 238.76 151.13)
+			(xy 238.76 127) (xy 238.76 151.13)
 		)
 		(stroke
 			(width 0)
@@ -1199,8 +1170,7 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 127)
-			(xy 187.96 127)
+			(xy 203.2 127) (xy 187.96 127)
 		)
 		(stroke
 			(width 0)
@@ -1210,8 +1180,7 @@
 	)
 	(wire
 		(pts
-			(xy 195.58 101.6)
-			(xy 190.5 101.6)
+			(xy 195.58 101.6) (xy 190.5 101.6)
 		)
 		(stroke
 			(width 0)
@@ -1221,8 +1190,7 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 101.6)
-			(xy 82.55 101.6)
+			(xy 55.88 101.6) (xy 82.55 101.6)
 		)
 		(stroke
 			(width 0)
@@ -1232,8 +1200,7 @@
 	)
 	(wire
 		(pts
-			(xy 325.12 85.09)
-			(xy 325.12 80.01)
+			(xy 325.12 85.09) (xy 325.12 80.01)
 		)
 		(stroke
 			(width 0)
@@ -1243,8 +1210,7 @@
 	)
 	(polyline
 		(pts
-			(xy 20.32 198.12)
-			(xy 276.86 198.12)
+			(xy 20.32 198.12) (xy 276.86 198.12)
 		)
 		(stroke
 			(width 0.1524)
@@ -1783,6 +1749,39 @@
 				(justify left)
 			)
 		)
+		(property "MPN" "C1608X7R1H104K080AA"
+			(at 162.56 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 162.56 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Maximum_body_height_mm" "0.9"
+			(at 162.56 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "884fb08c-5c68-4abe-bc98-8358b2ba18e0")
 		)
@@ -1795,33 +1794,6 @@
 					(reference "C801")
 					(unit 1)
 				)
-			)
-		)
-		(property "MPN" "C1608X7R1H104K080AA"
-			(at 162.56 109.22 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "TDK"
-			(at 162.56 109.22 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
-			)
-		)
-		(property "Maximum_body_height_mm" "0.9"
-			(at 162.56 109.22 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
 			)
 		)
 	)
@@ -1903,6 +1875,50 @@
 				)
 			)
 		)
+		(property "Package_Status" "PROVISIONAL: verify exact purchased part before fabrication"
+			(at 50.8 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "M20-9990246"
+			(at 50.8 101.6 180)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Manufacturer" "Harwin"
+			(at 50.8 101.6 180)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Harness_review" "New standard2.54mm PCB header; custom sensor/button/NTC harness; actual remote cable polarity/mate remains measured"
+			(at 50.8 101.6 180)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "46e19709-c0af-4d7a-b022-9134158987b2")
 		)
@@ -1915,42 +1931,6 @@
 					(reference "J801")
 					(unit 1)
 				)
-			)
-		)
-		(property "Package_Status" "PROVISIONAL: verify exact purchased part before fabrication"
-			(at 50.8 101.6 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "M20-9990246"
-			(at 50.8 101.6 180)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Harwin"
-			(at 50.8 101.6 180)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
-			)
-		)
-		(property "Harness_review" "New standard2.54mm PCB header; custom sensor/button/NTC harness; actual remote cable polarity/mate remains measured"
-			(at 50.8 101.6 180)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
 			)
 		)
 	)
@@ -2023,6 +2003,28 @@
 				(justify left)
 			)
 		)
+		(property "MPN" "RC0603FR-07100KL"
+			(at 378.46 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 378.46 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "7fc6d37b-582f-4f6c-a883-9b6294b3ac55")
 		)
@@ -2035,24 +2037,6 @@
 					(reference "R803")
 					(unit 1)
 				)
-			)
-		)
-		(property "MPN" "RC0603FR-07100KL"
-			(at 378.46 88.9 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "YAGEO"
-			(at 378.46 88.9 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
 			)
 		)
 	)
@@ -2125,6 +2109,39 @@
 				(justify left)
 			)
 		)
+		(property "MPN" "C1608X7R1H104K080AA"
+			(at 111.76 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 111.76 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Maximum_body_height_mm" "0.9"
+			(at 111.76 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "31bf50e8-f2e8-4d06-a6c6-091c40572bd1")
 		)
@@ -2137,33 +2154,6 @@
 					(reference "C802")
 					(unit 1)
 				)
-			)
-		)
-		(property "MPN" "C1608X7R1H104K080AA"
-			(at 111.76 124.46 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "TDK"
-			(at 111.76 124.46 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
-			)
-		)
-		(property "Maximum_body_height_mm" "0.9"
-			(at 111.76 124.46 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
 			)
 		)
 	)
@@ -2247,6 +2237,50 @@
 				)
 			)
 		)
+		(property "Package_Status" "PROVISIONAL: verify exact purchased part before fabrication"
+			(at 373.38 222.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "M20-9990246"
+			(at 373.38 222.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Manufacturer" "Harwin"
+			(at 373.38 222.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Harness_review" "New standard2.54mm PCB header; custom sensor/button/NTC harness; actual remote cable polarity/mate remains measured"
+			(at 373.38 222.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "4a5e1a5a-8514-4012-a69a-ad31670dba13")
 		)
@@ -2259,42 +2293,6 @@
 					(reference "J802")
 					(unit 1)
 				)
-			)
-		)
-		(property "Package_Status" "PROVISIONAL: verify exact purchased part before fabrication"
-			(at 373.38 222.25 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "M20-9990246"
-			(at 373.38 222.25 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Harwin"
-			(at 373.38 222.25 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
-			)
-		)
-		(property "Harness_review" "New standard2.54mm PCB header; custom sensor/button/NTC harness; actual remote cable polarity/mate remains measured"
-			(at 373.38 222.25 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
 			)
 		)
 	)
@@ -2367,6 +2365,39 @@
 				(justify left)
 			)
 		)
+		(property "MPN" "C0603C105K4RACTU"
+			(at 238.76 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Manufacturer" "KEMET / YAGEO"
+			(at 238.76 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Maximum_body_height_mm" "0.9"
+			(at 238.76 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "dfcf84ef-924f-48ff-b146-0777dc182ace")
 		)
@@ -2379,33 +2410,6 @@
 					(reference "C804")
 					(unit 1)
 				)
-			)
-		)
-		(property "MPN" "C0603C105K4RACTU"
-			(at 238.76 154.94 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "KEMET / YAGEO"
-			(at 238.76 154.94 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
-			)
-		)
-		(property "Maximum_body_height_mm" "0.9"
-			(at 238.76 154.94 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
 			)
 		)
 	)
@@ -2478,6 +2482,39 @@
 				(justify left)
 			)
 		)
+		(property "MPN" "C0805C333K5RACTU"
+			(at 187.96 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Manufacturer" "KEMET / YAGEO"
+			(at 187.96 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Maximum_body_height_mm" "0.88"
+			(at 187.96 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "26e0c223-7b88-44df-ae0d-f9ea1db67ad8")
 		)
@@ -2490,33 +2527,6 @@
 					(reference "C803")
 					(unit 1)
 				)
-			)
-		)
-		(property "MPN" "C0805C333K5RACTU"
-			(at 187.96 154.94 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "KEMET / YAGEO"
-			(at 187.96 154.94 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
-			)
-		)
-		(property "Maximum_body_height_mm" "0.88"
-			(at 187.96 154.94 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
 			)
 		)
 	)
@@ -2589,6 +2599,28 @@
 				(justify left)
 			)
 		)
+		(property "MPN" "RC0603FR-0710KL"
+			(at 325.12 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 325.12 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "ef0dc358-a65f-483e-9be8-fca69b67a045")
 		)
@@ -2601,24 +2633,6 @@
 					(reference "R802")
 					(unit 1)
 				)
-			)
-		)
-		(property "MPN" "RC0603FR-0710KL"
-			(at 325.12 88.9 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "YAGEO"
-			(at 325.12 88.9 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
 			)
 		)
 	)
@@ -2691,6 +2705,28 @@
 				(justify left)
 			)
 		)
+		(property "MPN" "RC0603FR-071KL"
+			(at 317.5 219.71 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 317.5 219.71 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "cb6249e4-5659-4ded-bfbb-2fe5a36b242f")
 		)
@@ -2703,24 +2739,6 @@
 					(reference "R804")
 					(unit 1)
 				)
-			)
-		)
-		(property "MPN" "RC0603FR-071KL"
-			(at 317.5 219.71 90)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "YAGEO"
-			(at 317.5 219.71 90)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
 			)
 		)
 	)
@@ -2793,6 +2811,28 @@
 				(justify left)
 			)
 		)
+		(property "MPN" "RC0603FR-075K1L"
+			(at 86.36 101.6 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 86.36 101.6 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "f5ddb468-2c66-48f5-af4f-77e38afc72c8")
 		)
@@ -2805,24 +2845,6 @@
 					(reference "R801")
 					(unit 1)
 				)
-			)
-		)
-		(property "MPN" "RC0603FR-075K1L"
-			(at 86.36 101.6 90)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "YAGEO"
-			(at 86.36 101.6 90)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
 			)
 		)
 	)
@@ -2895,6 +2917,28 @@
 				(justify left)
 			)
 		)
+		(property "MPN" "LTC2954CTS8-1#TRMPBF"
+			(at 208.28 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Manufacturer" "Analog Devices"
+			(at 208.28 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "2112e5b1-c85d-4017-a85f-8c05842a5e7d")
 		)
@@ -2925,24 +2969,6 @@
 					(reference "U801")
 					(unit 1)
 				)
-			)
-		)
-		(property "MPN" "LTC2954CTS8-1#TRMPBF"
-			(at 208.28 111.76 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Analog Devices"
-			(at 208.28 111.76 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
 			)
 		)
 	)
