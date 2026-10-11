@@ -1419,8 +1419,7 @@
 			(symbol "C_0_1"
 				(polyline
 					(pts
-						(xy -2.032 0.762)
-						(xy 2.032 0.762)
+						(xy -2.032 0.762) (xy 2.032 0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -1432,8 +1431,7 @@
 				)
 				(polyline
 					(pts
-						(xy -2.032 -0.762)
-						(xy 2.032 -0.762)
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -1617,6 +1615,193 @@
 						(effects
 							(font
 								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Trimix_Analyzer:LM66100_DCK"
+			(pin_names
+				(offset 0.762)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at 0 16.51 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.016 1.016)
+					)
+				)
+			)
+			(property "Value" "LM66100_DCK"
+				(at 0 13.97 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.016 1.016)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.016 1.016)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.ti.com/lit/ds/symlink/lm66100.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.016 1.016)
+					)
+				)
+			)
+			(property "Description" "1.5A ideal diode; CE tied to VOUT enables reverse-current blocking"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.016 1.016)
+					)
+				)
+			)
+			(symbol "LM66100_DCK_0_1"
+				(rectangle
+					(start -7.62 -7.62)
+					(end 7.62 7.62)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "LM66100_DCK_1_1"
+				(pin power_in line
+					(at -10.16 5.08 0)
+					(length 2.54)
+					(name "VIN"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -10.16 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 0 0)
+					(length 2.54)
+					(name "CE"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 10.16 0 180)
+					(length 2.54)
+					(name "NC"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin open_collector line
+					(at -10.16 -5.08 0)
+					(length 2.54)
+					(name "ST"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 10.16 5.08 180)
+					(length 2.54)
+					(name "VOUT"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.016 1.016)
 							)
 						)
 					)
@@ -1944,12 +2129,7 @@
 			(symbol "GND_0_1"
 				(polyline
 					(pts
-						(xy 0 0)
-						(xy 0 -1.27)
-						(xy 1.27 -1.27)
-						(xy 0 -2.54)
-						(xy -1.27 -1.27)
-						(xy 0 -1.27)
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
 					)
 					(stroke
 						(width 0)
@@ -2084,12 +2264,7 @@
 			(symbol "PWR_FLAG_0_1"
 				(polyline
 					(pts
-						(xy 0 0)
-						(xy 0 1.27)
-						(xy -1.016 1.905)
-						(xy 0 2.54)
-						(xy 1.016 1.905)
-						(xy 0 1.27)
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
 					)
 					(stroke
 						(width 0)
@@ -2101,179 +2276,6 @@
 				)
 			)
 			(embedded_fonts no)
-		)
-		(symbol "Trimix_Analyzer:LM66100_DCK"
-			(pin_names
-				(offset 0.762)
-			)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "U"
-				(at 0 16.51 0)
-				(effects
-					(font
-						(size 1.016 1.016)
-					)
-				)
-			)
-			(property "Value" "LM66100_DCK"
-				(at 0 13.97 0)
-				(effects
-					(font
-						(size 1.016 1.016)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.016 1.016)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.ti.com/lit/ds/symlink/lm66100.pdf"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.016 1.016)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "1.5A ideal diode; CE tied to VOUT enables reverse-current blocking"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.016 1.016)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "LM66100_DCK_0_1"
-				(rectangle
-					(start -7.62 -7.62)
-					(end 7.62 7.62)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "LM66100_DCK_1_1"
-				(pin power_in line
-					(at -10.16 5.08 0)
-					(length 2.54)
-					(name "VIN"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 -10.16 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -10.16 0 0)
-					(length 2.54)
-					(name "CE"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin no_connect line
-					(at 10.16 0 180)
-					(length 2.54)
-					(name "NC"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin open_collector line
-					(at -10.16 -5.08 0)
-					(length 2.54)
-					(name "ST"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin power_out line
-					(at 10.16 5.08 180)
-					(length 2.54)
-					(name "VOUT"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-			)
 		)
 	)
 	(rectangle
@@ -2287,6 +2289,18 @@
 			(type none)
 		)
 		(uuid "01c8f551-7da0-4b1a-8d8d-539548c012e3")
+	)
+	(rectangle
+		(start 20.32 217.17)
+		(end 200.66 278.13)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "5abf0216-8f63-42f2-b647-fd6d75f43dae")
 	)
 	(rectangle
 		(start 20.32 45.72)
@@ -2357,6 +2371,17 @@
 			(justify left top)
 		)
 		(uuid "1b561623-39ca-4d3d-9800-f05aad61742d")
+	)
+	(text "CE = HOST_5V for reverse-current blocking. ST may be grounded.\n1.5 A path rating; verify display startup current and voltage drop.\nGuition internal charger/USB behaviour remains a separate qualification."
+		(exclude_from_sim no)
+		(at 25.4 264.16 0)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify left top)
+		)
+		(uuid "2f6da6df-f2fb-4fda-b611-2b55eb00a4f9")
 	)
 	(text "TRIMIX  /  ANALYZER ELECTRONICS  /  SHEET 4"
 		(exclude_from_sim no)
@@ -2485,6 +2510,18 @@
 		)
 		(uuid "d7f72fe5-ffba-4e1f-8a98-f2f48ededd18")
 	)
+	(text "05  HOST 5 V REVERSE-CURRENT ISOLATION"
+		(exclude_from_sim no)
+		(at 25.4 222.25 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(bold yes)
+			)
+			(justify left top)
+		)
+		(uuid "e437e54e-bf2a-4452-b0c2-41641cd72baf")
+	)
 	(text "PACK_P = protected red P+ / GND = protected black P-.\nTwo 3400 mAh parallel cells: 6800 mAh nominal, one voltage stack."
 		(exclude_from_sim no)
 		(at 25.4 187.96 0)
@@ -2542,6 +2579,10 @@
 		(uuid "9bd21cf8-6535-4cfe-bb5a-3e2a431d907c")
 	)
 	(no_connect
+		(at 93.98 242.57)
+		(uuid "c253dfcb-ecdf-4146-98b3-0dd286c26e3f")
+	)
+	(no_connect
 		(at 312.42 111.76)
 		(uuid "c650c1ba-ee86-408f-9864-cb781fc530ba")
 	)
@@ -2559,8 +2600,17 @@
 	)
 	(wire
 		(pts
-			(xy 299.72 114.3)
-			(xy 294.64 114.3)
+			(xy 172.72 246.38) (xy 172.72 251.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "03338d52-e7f2-4f4c-b002-b2d3fcf649dd")
+	)
+	(wire
+		(pts
+			(xy 299.72 114.3) (xy 294.64 114.3)
 		)
 		(stroke
 			(width 0)
@@ -2570,8 +2620,7 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 69.85)
-			(xy 162.56 60.96)
+			(xy 162.56 69.85) (xy 162.56 60.96)
 		)
 		(stroke
 			(width 0)
@@ -2581,8 +2630,7 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 153.67)
-			(xy 35.56 160.02)
+			(xy 35.56 153.67) (xy 35.56 160.02)
 		)
 		(stroke
 			(width 0)
@@ -2592,8 +2640,7 @@
 	)
 	(wire
 		(pts
-			(xy 312.42 99.06)
-			(xy 317.5 99.06)
+			(xy 312.42 99.06) (xy 317.5 99.06)
 		)
 		(stroke
 			(width 0)
@@ -2603,8 +2650,7 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 83.82)
-			(xy 162.56 83.82)
+			(xy 99.06 83.82) (xy 162.56 83.82)
 		)
 		(stroke
 			(width 0)
@@ -2614,8 +2660,7 @@
 	)
 	(wire
 		(pts
-			(xy 312.42 101.6)
-			(xy 317.5 101.6)
+			(xy 312.42 101.6) (xy 317.5 101.6)
 		)
 		(stroke
 			(width 0)
@@ -2625,8 +2670,17 @@
 	)
 	(wire
 		(pts
-			(xy 312.42 91.44)
-			(xy 317.5 91.44)
+			(xy 137.16 246.38) (xy 137.16 251.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "23592084-6ad1-41c0-bbca-73353d067a8c")
+	)
+	(wire
+		(pts
+			(xy 312.42 91.44) (xy 317.5 91.44)
 		)
 		(stroke
 			(width 0)
@@ -2636,8 +2690,7 @@
 	)
 	(wire
 		(pts
-			(xy 299.72 93.98)
-			(xy 294.64 93.98)
+			(xy 299.72 93.98) (xy 294.64 93.98)
 		)
 		(stroke
 			(width 0)
@@ -2647,8 +2700,7 @@
 	)
 	(wire
 		(pts
-			(xy 312.42 88.9)
-			(xy 317.5 88.9)
+			(xy 312.42 88.9) (xy 317.5 88.9)
 		)
 		(stroke
 			(width 0)
@@ -2658,8 +2710,7 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 153.67)
-			(xy 116.84 160.02)
+			(xy 116.84 153.67) (xy 116.84 160.02)
 		)
 		(stroke
 			(width 0)
@@ -2669,8 +2720,7 @@
 	)
 	(wire
 		(pts
-			(xy 193.04 88.9)
-			(xy 193.04 77.47)
+			(xy 193.04 88.9) (xy 193.04 77.47)
 		)
 		(stroke
 			(width 0)
@@ -2680,8 +2730,7 @@
 	)
 	(wire
 		(pts
-			(xy 312.42 104.14)
-			(xy 317.5 104.14)
+			(xy 312.42 104.14) (xy 317.5 104.14)
 		)
 		(stroke
 			(width 0)
@@ -2691,8 +2740,7 @@
 	)
 	(polyline
 		(pts
-			(xy 212.09 54.61)
-			(xy 401.32 54.61)
+			(xy 212.09 54.61) (xy 401.32 54.61)
 		)
 		(stroke
 			(width 0.1524)
@@ -2702,8 +2750,7 @@
 	)
 	(wire
 		(pts
-			(xy 96.52 153.67)
-			(xy 96.52 160.02)
+			(xy 96.52 153.67) (xy 96.52 160.02)
 		)
 		(stroke
 			(width 0)
@@ -2713,8 +2760,7 @@
 	)
 	(polyline
 		(pts
-			(xy 20.32 41.91)
-			(xy 401.32 41.91)
+			(xy 20.32 41.91) (xy 401.32 41.91)
 		)
 		(stroke
 			(width 0.381)
@@ -2724,8 +2770,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 111.76)
-			(xy 91.44 101.6)
+			(xy 91.44 111.76) (xy 91.44 101.6)
 		)
 		(stroke
 			(width 0)
@@ -2735,8 +2780,7 @@
 	)
 	(wire
 		(pts
-			(xy 299.72 91.44)
-			(xy 294.64 91.44)
+			(xy 299.72 91.44) (xy 294.64 91.44)
 		)
 		(stroke
 			(width 0)
@@ -2746,8 +2790,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 86.36)
-			(xy 63.5 86.36)
+			(xy 73.66 86.36) (xy 63.5 86.36)
 		)
 		(stroke
 			(width 0)
@@ -2757,8 +2800,7 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 101.6)
-			(xy 86.36 111.76)
+			(xy 86.36 101.6) (xy 86.36 111.76)
 		)
 		(stroke
 			(width 0)
@@ -2768,8 +2810,7 @@
 	)
 	(wire
 		(pts
-			(xy 299.72 104.14)
-			(xy 294.64 104.14)
+			(xy 299.72 104.14) (xy 294.64 104.14)
 		)
 		(stroke
 			(width 0)
@@ -2779,8 +2820,17 @@
 	)
 	(wire
 		(pts
-			(xy 193.04 60.96)
-			(xy 193.04 69.85)
+			(xy 73.66 242.57) (xy 68.58 242.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "77ca6787-1bf6-45c8-ad49-11496d79bed5")
+	)
+	(wire
+		(pts
+			(xy 193.04 60.96) (xy 193.04 69.85)
 		)
 		(stroke
 			(width 0)
@@ -2790,8 +2840,7 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 93.98)
-			(xy 132.08 77.47)
+			(xy 132.08 93.98) (xy 132.08 77.47)
 		)
 		(stroke
 			(width 0)
@@ -2801,8 +2850,7 @@
 	)
 	(wire
 		(pts
-			(xy 312.42 109.22)
-			(xy 317.5 109.22)
+			(xy 312.42 109.22) (xy 317.5 109.22)
 		)
 		(stroke
 			(width 0)
@@ -2812,8 +2860,7 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 101.6)
-			(xy 81.28 111.76)
+			(xy 81.28 101.6) (xy 81.28 111.76)
 		)
 		(stroke
 			(width 0)
@@ -2823,8 +2870,7 @@
 	)
 	(wire
 		(pts
-			(xy 299.72 88.9)
-			(xy 294.64 88.9)
+			(xy 299.72 88.9) (xy 294.64 88.9)
 		)
 		(stroke
 			(width 0)
@@ -2834,8 +2880,7 @@
 	)
 	(wire
 		(pts
-			(xy 312.42 93.98)
-			(xy 317.5 93.98)
+			(xy 312.42 93.98) (xy 317.5 93.98)
 		)
 		(stroke
 			(width 0)
@@ -2843,10 +2888,29 @@
 		)
 		(uuid "7d69273c-0800-45b8-927b-0bf885595587")
 	)
+	(wire
+		(pts
+			(xy 172.72 238.76) (xy 172.72 233.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7eb414af-0a73-40a6-90ca-5aebf57df23e")
+	)
+	(wire
+		(pts
+			(xy 73.66 247.65) (xy 68.58 247.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8163eade-68a9-49d0-b73b-3118e41824ce")
+	)
 	(polyline
 		(pts
-			(xy 20.32 54.61)
-			(xy 121.92 54.61)
+			(xy 20.32 54.61) (xy 121.92 54.61)
 		)
 		(stroke
 			(width 0.1524)
@@ -2856,8 +2920,7 @@
 	)
 	(wire
 		(pts
-			(xy 299.72 99.06)
-			(xy 294.64 99.06)
+			(xy 299.72 99.06) (xy 294.64 99.06)
 		)
 		(stroke
 			(width 0)
@@ -2867,8 +2930,17 @@
 	)
 	(wire
 		(pts
-			(xy 312.42 96.52)
-			(xy 317.5 96.52)
+			(xy 73.66 237.49) (xy 68.58 237.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "98070d7e-ed92-4151-a8fd-074ed7110a66")
+	)
+	(wire
+		(pts
+			(xy 312.42 96.52) (xy 317.5 96.52)
 		)
 		(stroke
 			(width 0)
@@ -2878,8 +2950,7 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 88.9)
-			(xy 193.04 88.9)
+			(xy 99.06 88.9) (xy 193.04 88.9)
 		)
 		(stroke
 			(width 0)
@@ -2889,8 +2960,7 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 69.85)
-			(xy 132.08 60.96)
+			(xy 132.08 69.85) (xy 132.08 60.96)
 		)
 		(stroke
 			(width 0)
@@ -2900,8 +2970,7 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 60.96)
-			(xy 193.04 60.96)
+			(xy 132.08 60.96) (xy 193.04 60.96)
 		)
 		(stroke
 			(width 0)
@@ -2911,8 +2980,7 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 153.67)
-			(xy 76.2 160.02)
+			(xy 76.2 153.67) (xy 76.2 160.02)
 		)
 		(stroke
 			(width 0)
@@ -2922,8 +2990,7 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 86.36)
-			(xy 63.5 81.28)
+			(xy 63.5 86.36) (xy 63.5 81.28)
 		)
 		(stroke
 			(width 0)
@@ -2933,8 +3000,7 @@
 	)
 	(polyline
 		(pts
-			(xy 128.27 54.61)
-			(xy 205.74 54.61)
+			(xy 128.27 54.61) (xy 205.74 54.61)
 		)
 		(stroke
 			(width 0.1524)
@@ -2944,8 +3010,7 @@
 	)
 	(wire
 		(pts
-			(xy 299.72 109.22)
-			(xy 294.64 109.22)
+			(xy 299.72 109.22) (xy 294.64 109.22)
 		)
 		(stroke
 			(width 0)
@@ -2955,8 +3020,17 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 111.76)
-			(xy 91.44 111.76)
+			(xy 83.82 252.73) (xy 83.82 257.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b4186f6e-5ff9-477e-8935-695311f8ce3a")
+	)
+	(wire
+		(pts
+			(xy 81.28 111.76) (xy 91.44 111.76)
 		)
 		(stroke
 			(width 0)
@@ -2964,10 +3038,29 @@
 		)
 		(uuid "b61640c0-40dc-403c-ac20-b311aaaa744d")
 	)
+	(wire
+		(pts
+			(xy 93.98 237.49) (xy 99.06 237.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b6a8d109-65e2-4994-82dc-033c8f4a9090")
+	)
+	(wire
+		(pts
+			(xy 137.16 238.76) (xy 137.16 233.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b8ed71f3-727f-4cb3-b216-27df6fcd3f31")
+	)
 	(polyline
 		(pts
-			(xy 20.32 149.86)
-			(xy 168.91 149.86)
+			(xy 20.32 149.86) (xy 168.91 149.86)
 		)
 		(stroke
 			(width 0.1524)
@@ -2977,8 +3070,7 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 93.98)
-			(xy 132.08 93.98)
+			(xy 99.06 93.98) (xy 132.08 93.98)
 		)
 		(stroke
 			(width 0)
@@ -2988,8 +3080,7 @@
 	)
 	(wire
 		(pts
-			(xy 299.72 101.6)
-			(xy 294.64 101.6)
+			(xy 299.72 101.6) (xy 294.64 101.6)
 		)
 		(stroke
 			(width 0)
@@ -2999,8 +3090,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 95.25)
-			(xy 50.8 101.6)
+			(xy 50.8 95.25) (xy 50.8 101.6)
 		)
 		(stroke
 			(width 0)
@@ -3010,8 +3100,7 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 153.67)
-			(xy 55.88 160.02)
+			(xy 55.88 153.67) (xy 55.88 160.02)
 		)
 		(stroke
 			(width 0)
@@ -3021,8 +3110,7 @@
 	)
 	(wire
 		(pts
-			(xy 312.42 106.68)
-			(xy 317.5 106.68)
+			(xy 312.42 106.68) (xy 317.5 106.68)
 		)
 		(stroke
 			(width 0)
@@ -3032,8 +3120,7 @@
 	)
 	(wire
 		(pts
-			(xy 299.72 111.76)
-			(xy 294.64 111.76)
+			(xy 299.72 111.76) (xy 294.64 111.76)
 		)
 		(stroke
 			(width 0)
@@ -3043,8 +3130,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 81.28)
-			(xy 50.8 87.63)
+			(xy 50.8 81.28) (xy 50.8 87.63)
 		)
 		(stroke
 			(width 0)
@@ -3054,8 +3140,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 81.28)
-			(xy 50.8 81.28)
+			(xy 73.66 81.28) (xy 50.8 81.28)
 		)
 		(stroke
 			(width 0)
@@ -3065,8 +3150,7 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 83.82)
-			(xy 162.56 77.47)
+			(xy 162.56 83.82) (xy 162.56 77.47)
 		)
 		(stroke
 			(width 0)
@@ -3076,8 +3160,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 93.98)
-			(xy 67.31 93.98)
+			(xy 73.66 93.98) (xy 67.31 93.98)
 		)
 		(stroke
 			(width 0)
@@ -3173,6 +3256,50 @@
 			)
 		)
 	)
+	(global_label "GND"
+		(shape bidirectional)
+		(at 83.82 257.81 270)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify right)
+		)
+		(uuid "15b9eaab-13e9-4bd2-bfbf-f7a7737d5e47")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 83.82 257.81 270)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+	)
+	(global_label "VOUT_5V"
+		(shape bidirectional)
+		(at 68.58 237.49 180)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify right)
+		)
+		(uuid "1cedb65d-416e-4c77-8683-32f7502086dc")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 68.58 237.49 180)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+	)
 	(global_label "POWER_INT_N"
 		(shape bidirectional)
 		(at 294.64 111.76 180)
@@ -3251,6 +3378,28 @@
 		(uuid "40a11ea0-2fe0-4d25-b87d-5459d93e7502")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 55.88 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+	)
+	(global_label "HOST_5V"
+		(shape bidirectional)
+		(at 172.72 233.68 90)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify left)
+		)
+		(uuid "4bc589f6-22ce-40d8-816b-d28fd9474faf")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 172.72 233.68 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3459,6 +3608,50 @@
 			)
 		)
 	)
+	(global_label "GND"
+		(shape bidirectional)
+		(at 172.72 251.46 270)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify right)
+		)
+		(uuid "9a06163f-73ec-422b-86b9-f0ab7ff67b00")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 172.72 251.46 270)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape bidirectional)
+		(at 68.58 247.65 180)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify right)
+		)
+		(uuid "9bfbeba6-178b-4330-b1bd-db7cbabed7f9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 68.58 247.65 180)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+	)
 	(global_label "I2C_SCL"
 		(shape bidirectional)
 		(at 317.5 104.14 0)
@@ -3471,6 +3664,28 @@
 		(uuid "a3cf786b-558e-43d3-84ca-756c081b0500")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 317.5 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+	)
+	(global_label "HOST_5V"
+		(shape bidirectional)
+		(at 99.06 237.49 0)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify left)
+		)
+		(uuid "a40d0398-661c-4270-93f9-a61e82ffec26")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 99.06 237.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3537,6 +3752,28 @@
 		(uuid "b49e5c5e-2c21-416a-9e54-5efc76af6589")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 294.64 114.3 180)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape bidirectional)
+		(at 137.16 251.46 270)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify right)
+		)
+		(uuid "bafc1c60-e496-411d-8f97-572a31bd495d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 137.16 251.46 270)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3625,6 +3862,50 @@
 		(uuid "d6016aa6-1b66-4796-98f6-23897d22c2b0")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 317.5 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+	)
+	(global_label "HOST_5V"
+		(shape bidirectional)
+		(at 68.58 242.57 180)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify right)
+		)
+		(uuid "db797868-44a3-44e5-82a0-ced87b93a6e6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 68.58 242.57 180)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+	)
+	(global_label "VOUT_5V"
+		(shape bidirectional)
+		(at 137.16 233.68 90)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify left)
+		)
+		(uuid "df86a046-b077-4596-974b-ac956e98b531")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 137.16 233.68 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3923,6 +4204,28 @@
 				)
 			)
 		)
+		(property "MPN" "RC0603FR-074K7L"
+			(at 193.04 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 193.04 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "de9c86cf-ef28-48be-8502-462d3c8f8159")
 		)
@@ -3935,24 +4238,6 @@
 					(reference "R303")
 					(unit 1)
 				)
-			)
-		)
-		(property "MPN" "RC0603FR-074K7L"
-			(at 193.04 73.66 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "YAGEO"
-			(at 193.04 73.66 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
 			)
 		)
 	)
@@ -4022,6 +4307,28 @@
 				)
 			)
 		)
+		(property "MPN" "RC0603FR-074K7L"
+			(at 162.56 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 162.56 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "ca2c8023-5bf8-4cce-acc1-02de4f1fe9db")
 		)
@@ -4034,24 +4341,6 @@
 					(reference "R302")
 					(unit 1)
 				)
-			)
-		)
-		(property "MPN" "RC0603FR-074K7L"
-			(at 162.56 73.66 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "YAGEO"
-			(at 162.56 73.66 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
 			)
 		)
 	)
@@ -4130,6 +4419,134 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 172.72 242.57 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "54768018-1d05-4ba9-b52a-d023a26c8ad8")
+		(property "Reference" "C303"
+			(at 180.34 237.49 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4.7u / 16V X5R / 10%"
+			(at 180.34 240.03 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 172.72 242.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608X5R1C475K080AC"
+			(at 172.72 242.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 172.72 242.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 172.72 242.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "MPN" "C1608X5R1C475K080AC"
+			(at 172.72 242.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Maximum_body_height_mm" "0.9"
+			(at 172.72 242.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Effective_capacitance_review" "5.5V engineering estimate .9708u > TPS7A20 .47u effective minimum; at3V more margin; not a guaranteed production corner"
+			(at 172.72 242.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2487ed82-1ed1-4072-addc-6e24b8b5e7fc")
+		)
+		(pin "2"
+			(uuid "c07bd06b-be00-468c-9bcb-529d3352508a")
+		)
+		(instances
+			(project "Trimix_Analyzer"
+				(path "/be5f93e7-90aa-5980-82d3-22f711149c2a/25c2a9f5-b13a-5aa2-b2a5-6332e3904bbb"
+					(reference "C303")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 132.08 73.66 0)
 		(unit 1)
@@ -4195,6 +4612,72 @@
 				)
 			)
 		)
+		(property "MPN" "RC0603FR-0710KL"
+			(at 132.08 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 132.08 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Maximum_body_length_mm" "1.7"
+			(at 132.08 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Maximum_body_width_mm" "0.9"
+			(at 132.08 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Maximum_body_height_mm" "0.55"
+			(at 132.08 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Source_review" "electrical/compact-passive-review/r301-mating-clearance-review.json; exact manufacturer specsheet generated2026-09-06; actual routing placement checked separately from stale CAD v2"
+			(at 132.08 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "c760a753-08d3-4705-88b7-c48a6db43af8")
 		)
@@ -4209,58 +4692,144 @@
 				)
 			)
 		)
-		(property "MPN" "RC0603FR-0710KL"
-			(at 132.08 73.66 0)
+	)
+	(symbol
+		(lib_id "Trimix_Analyzer:LM66100_DCK")
+		(at 83.82 242.57 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "5b884914-2a77-4cce-9416-53594c6d3d76")
+		(property "Reference" "U302"
+			(at 71.12 224.79 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.016 1.016)
 				)
-				(hide yes)
+				(justify left)
 			)
 		)
-		(property "Manufacturer" "YAGEO"
-			(at 132.08 73.66 0)
+		(property "Value" "LM66100DCKR"
+			(at 71.12 227.33 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.016 1.016)
 				)
-				(hide yes)
+				(justify left)
 			)
 		)
-		(property "Maximum_body_length_mm" "1.7"
-			(at 132.08 73.66 0)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6"
+			(at 83.82 242.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.016 1.016)
 				)
-				(hide yes)
+				(justify left)
 			)
 		)
-		(property "Maximum_body_width_mm" "0.9"
-			(at 132.08 73.66 0)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/lm66100.pdf"
+			(at 83.82 242.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.016 1.016)
 				)
-				(hide yes)
+				(justify left)
 			)
 		)
-		(property "Maximum_body_height_mm" "0.55"
-			(at 132.08 73.66 0)
+		(property "Description" "1.5A ideal diode; CE tied to VOUT enables reverse-current blocking"
+			(at 83.82 242.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.016 1.016)
 				)
-				(hide yes)
+				(justify left)
 			)
 		)
-		(property "Source_review" "electrical/compact-passive-review/r301-mating-clearance-review.json; exact manufacturer specsheet generated2026-09-06; actual routing placement checked separately from stale CAD v2"
-			(at 132.08 73.66 0)
+		(property "Manufacturer" "Texas Instruments"
+			(at 83.82 242.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.016 1.016)
 				)
-				(hide yes)
+			)
+		)
+		(property "MPN" "LM66100DCKR"
+			(at 83.82 242.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Primary_datasheet" "https://www.ti.com/lit/ds/symlink/lm66100.pdf"
+			(at 83.82 242.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Purpose" "Blocks Guition USB-powered 5V rail from feeding our buck-boost output"
+			(at 83.82 242.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "30b788b4-7a6a-4585-bafd-041f3ed498cd")
+		)
+		(pin "2"
+			(uuid "f773c8d4-fd5b-4824-8e7b-5b49d2e0262c")
+		)
+		(pin "3"
+			(uuid "727ada29-c0a1-4ae3-93eb-64b84fe2833e")
+		)
+		(pin "4"
+			(uuid "99bc0071-18a8-4155-8ac1-201f6476067b")
+		)
+		(pin "5"
+			(uuid "991d920b-13e3-4e55-b85b-3e724f870c86")
+		)
+		(pin "6"
+			(uuid "66c884e8-d81b-42b2-afb6-bc562e2f4343")
+		)
+		(instances
+			(project "Trimix_Analyzer"
+				(path "/be5f93e7-90aa-5980-82d3-22f711149c2a/25c2a9f5-b13a-5aa2-b2a5-6332e3904bbb"
+					(reference "U302")
+					(unit 1)
+				)
 			)
 		)
 	)
@@ -4413,6 +4982,134 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 137.16 242.57 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "81723f91-f887-44ea-ab54-37a2298fbd8f")
+		(property "Reference" "C302"
+			(at 144.78 237.49 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4.7u / 16V X5R / 10%"
+			(at 144.78 240.03 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 137.16 242.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608X5R1C475K080AC"
+			(at 137.16 242.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 137.16 242.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 137.16 242.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "MPN" "C1608X5R1C475K080AC"
+			(at 137.16 242.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Maximum_body_height_mm" "0.9"
+			(at 137.16 242.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Effective_capacitance_review" "5.5V engineering estimate .9708u > TPS7A20 .47u effective minimum; at3V more margin; not a guaranteed production corner"
+			(at 137.16 242.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "30c8357f-5e65-4b83-b8ac-28f721f0ac96")
+		)
+		(pin "2"
+			(uuid "9c500099-24df-492d-b019-3948590b039a")
+		)
+		(instances
+			(project "Trimix_Analyzer"
+				(path "/be5f93e7-90aa-5980-82d3-22f711149c2a/25c2a9f5-b13a-5aa2-b2a5-6332e3904bbb"
+					(reference "C302")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 116.84 153.67 0)
 		(unit 1)
@@ -4556,6 +5253,39 @@
 				)
 			)
 		)
+		(property "MPN" "C0805C104K5RACTU"
+			(at 50.8 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Manufacturer" "KEMET / YAGEO"
+			(at 50.8 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Maximum_body_height_mm" "0.88"
+			(at 50.8 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "87777298-5916-404c-9726-d8fd8b4cf48e")
 		)
@@ -4568,33 +5298,6 @@
 					(reference "C301")
 					(unit 1)
 				)
-			)
-		)
-		(property "MPN" "C0805C104K5RACTU"
-			(at 50.8 91.44 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "KEMET / YAGEO"
-			(at 50.8 91.44 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
-			)
-		)
-		(property "Maximum_body_height_mm" "0.88"
-			(at 50.8 91.44 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
 			)
 		)
 	)
@@ -4700,6 +5403,50 @@
 				)
 			)
 		)
+		(property "Package_Status" "Drawing-derived keyed option; exact configured availability requires supplier confirmation. Pin7 post omitted; do not manually remove a header pin without a manufacturer-approved procedure."
+			(at 304.8 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "HTSW-113-07-L-D-007"
+			(at 304.8 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Manufacturer" "Samtec"
+			(at 304.8 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Harness_review" "Drawing-derived keyed header and IDSD-13-S-04.00-G-P07 gold mate. Exact configured orderability, physical harness and remote connector require qualification."
+			(at 304.8 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "144dace9-7e0e-44e5-afe3-441bc66b02d6")
 		)
@@ -4784,42 +5531,6 @@
 					(reference "J301")
 					(unit 1)
 				)
-			)
-		)
-		(property "Package_Status" "Drawing-derived keyed option; exact configured availability requires supplier confirmation. Pin7 post omitted; do not manually remove a header pin without a manufacturer-approved procedure."
-			(at 304.8 104.14 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "HTSW-113-07-L-D-007"
-			(at 304.8 104.14 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Samtec"
-			(at 304.8 104.14 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
-			)
-		)
-		(property "Harness_review" "Drawing-derived keyed header and IDSD-13-S-04.00-G-P07 gold mate. Exact configured orderability, physical harness and remote connector require qualification."
-			(at 304.8 104.14 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
 			)
 		)
 	)
@@ -4965,6 +5676,28 @@
 				)
 			)
 		)
+		(property "MPN" "MAX17048G+T10"
+			(at 86.36 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Manufacturer" "Analog Devices"
+			(at 86.36 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "d92d0103-77bd-433d-9ded-013f9c101d40")
 		)
@@ -4998,24 +5731,6 @@
 					(reference "U301")
 					(unit 1)
 				)
-			)
-		)
-		(property "MPN" "MAX17048G+T10"
-			(at 86.36 88.9 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Analog Devices"
-			(at 86.36 88.9 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
 			)
 		)
 	)
@@ -5101,654 +5816,5 @@
 		(path "/"
 			(page "1")
 		)
-	)
-	(symbol
-		(lib_id "Trimix_Analyzer:LM66100_DCK")
-		(at 83.82 242.57 0)
-		(unit 1)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "5b884914-2a77-4cce-9416-53594c6d3d76")
-		(property "Reference" "U302"
-			(at 71.12 224.79 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "LM66100DCKR"
-			(at 71.12 227.32999999999998 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6"
-			(at 83.82 242.57 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/lm66100.pdf"
-			(at 83.82 242.57 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "1.5A ideal diode; CE tied to VOUT enables reverse-current blocking"
-			(at 83.82 242.57 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Texas Instruments"
-			(at 83.82 242.57 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "LM66100DCKR"
-			(at 83.82 242.57 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
-			)
-		)
-		(property "Primary_datasheet" "https://www.ti.com/lit/ds/symlink/lm66100.pdf"
-			(at 83.82 242.57 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
-			)
-		)
-		(property "Purpose" "Blocks Guition USB-powered 5V rail from feeding our buck-boost output"
-			(at 83.82 242.57 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "30b788b4-7a6a-4585-bafd-041f3ed498cd")
-		)
-		(pin "2"
-			(uuid "f773c8d4-fd5b-4824-8e7b-5b49d2e0262c")
-		)
-		(pin "3"
-			(uuid "727ada29-c0a1-4ae3-93eb-64b84fe2833e")
-		)
-		(pin "4"
-			(uuid "99bc0071-18a8-4155-8ac1-201f6476067b")
-		)
-		(pin "5"
-			(uuid "991d920b-13e3-4e55-b85b-3e724f870c86")
-		)
-		(pin "6"
-			(uuid "66c884e8-d81b-42b2-afb6-bc562e2f4343")
-		)
-		(instances
-			(project "Trimix_Analyzer"
-				(path "/be5f93e7-90aa-5980-82d3-22f711149c2a/25c2a9f5-b13a-5aa2-b2a5-6332e3904bbb"
-					(reference "U302")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(wire
-		(pts
-			(xy 73.66 237.49)
-			(xy 68.58 237.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "98070d7e-ed92-4151-a8fd-074ed7110a66")
-	)
-	(global_label "VOUT_5V"
-		(shape bidirectional)
-		(at 68.58 237.49 180)
-		(effects
-			(font
-				(size 1.016 1.016)
-			)
-			(justify right)
-		)
-		(uuid "1cedb65d-416e-4c77-8683-32f7502086dc")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 68.58 237.49 180)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(wire
-		(pts
-			(xy 83.82 252.73)
-			(xy 83.82 257.81)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b4186f6e-5ff9-477e-8935-695311f8ce3a")
-	)
-	(global_label "GND"
-		(shape bidirectional)
-		(at 83.82 257.81 270)
-		(effects
-			(font
-				(size 1.016 1.016)
-			)
-			(justify right)
-		)
-		(uuid "15b9eaab-13e9-4bd2-bfbf-f7a7737d5e47")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 83.82 257.81 270)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(wire
-		(pts
-			(xy 73.66 242.57)
-			(xy 68.58 242.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "77ca6787-1bf6-45c8-ad49-11496d79bed5")
-	)
-	(global_label "HOST_5V"
-		(shape bidirectional)
-		(at 68.58 242.57 180)
-		(effects
-			(font
-				(size 1.016 1.016)
-			)
-			(justify right)
-		)
-		(uuid "db797868-44a3-44e5-82a0-ced87b93a6e6")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 68.58 242.57 180)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(no_connect
-		(at 93.98 242.57)
-		(uuid "c253dfcb-ecdf-4146-98b3-0dd286c26e3f")
-	)
-	(wire
-		(pts
-			(xy 73.66 247.65)
-			(xy 68.58 247.65)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8163eade-68a9-49d0-b73b-3118e41824ce")
-	)
-	(global_label "GND"
-		(shape bidirectional)
-		(at 68.58 247.65 180)
-		(effects
-			(font
-				(size 1.016 1.016)
-			)
-			(justify right)
-		)
-		(uuid "9bfbeba6-178b-4330-b1bd-db7cbabed7f9")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 68.58 247.65 180)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(wire
-		(pts
-			(xy 93.98 237.49)
-			(xy 99.06 237.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b6a8d109-65e2-4994-82dc-033c8f4a9090")
-	)
-	(global_label "HOST_5V"
-		(shape bidirectional)
-		(at 99.06 237.49 0)
-		(effects
-			(font
-				(size 1.016 1.016)
-			)
-			(justify left)
-		)
-		(uuid "a40d0398-661c-4270-93f9-a61e82ffec26")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 99.06 237.49 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 137.16 242.57 0)
-		(unit 1)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "81723f91-f887-44ea-ab54-37a2298fbd8f")
-		(property "Reference" "C302"
-			(at 144.78 237.48999999999998 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "4.7u / 16V X5R / 10%"
-			(at 144.78 240.02999999999997 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 137.16 242.57 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608X5R1C475K080AC"
-			(at 137.16 242.57 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 137.16 242.57 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "TDK"
-			(at 137.16 242.57 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "C1608X5R1C475K080AC"
-			(at 137.16 242.57 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "30c8357f-5e65-4b83-b8ac-28f721f0ac96")
-		)
-		(pin "2"
-			(uuid "9c500099-24df-492d-b019-3948590b039a")
-		)
-		(instances
-			(project "Trimix_Analyzer"
-				(path "/be5f93e7-90aa-5980-82d3-22f711149c2a/25c2a9f5-b13a-5aa2-b2a5-6332e3904bbb"
-					(reference "C302")
-					(unit 1)
-				)
-			)
-		)
-		(property "Maximum_body_height_mm" "0.9"
-			(at 137.16 242.57 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
-			)
-		)
-		(property "Effective_capacitance_review" "5.5V engineering estimate .9708u > TPS7A20 .47u effective minimum; at3V more margin; not a guaranteed production corner"
-			(at 137.16 242.57 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(wire
-		(pts
-			(xy 137.16 238.76)
-			(xy 137.16 233.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b8ed71f3-727f-4cb3-b216-27df6fcd3f31")
-	)
-	(global_label "VOUT_5V"
-		(shape bidirectional)
-		(at 137.16 233.68 90)
-		(effects
-			(font
-				(size 1.016 1.016)
-			)
-			(justify left)
-		)
-		(uuid "df86a046-b077-4596-974b-ac956e98b531")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 137.16 233.68 90)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(wire
-		(pts
-			(xy 137.16 246.38)
-			(xy 137.16 251.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "23592084-6ad1-41c0-bbca-73353d067a8c")
-	)
-	(global_label "GND"
-		(shape bidirectional)
-		(at 137.16 251.46 270)
-		(effects
-			(font
-				(size 1.016 1.016)
-			)
-			(justify right)
-		)
-		(uuid "bafc1c60-e496-411d-8f97-572a31bd495d")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 137.16 251.46 270)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 172.72 242.57 0)
-		(unit 1)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "54768018-1d05-4ba9-b52a-d023a26c8ad8")
-		(property "Reference" "C303"
-			(at 180.34 237.48999999999998 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "4.7u / 16V X5R / 10%"
-			(at 180.34 240.02999999999997 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 172.72 242.57 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608X5R1C475K080AC"
-			(at 172.72 242.57 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 172.72 242.57 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "TDK"
-			(at 172.72 242.57 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "C1608X5R1C475K080AC"
-			(at 172.72 242.57 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2487ed82-1ed1-4072-addc-6e24b8b5e7fc")
-		)
-		(pin "2"
-			(uuid "c07bd06b-be00-468c-9bcb-529d3352508a")
-		)
-		(instances
-			(project "Trimix_Analyzer"
-				(path "/be5f93e7-90aa-5980-82d3-22f711149c2a/25c2a9f5-b13a-5aa2-b2a5-6332e3904bbb"
-					(reference "C303")
-					(unit 1)
-				)
-			)
-		)
-		(property "Maximum_body_height_mm" "0.9"
-			(at 172.72 242.57 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
-			)
-		)
-		(property "Effective_capacitance_review" "5.5V engineering estimate .9708u > TPS7A20 .47u effective minimum; at3V more margin; not a guaranteed production corner"
-			(at 172.72 242.57 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(wire
-		(pts
-			(xy 172.72 238.76)
-			(xy 172.72 233.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7eb414af-0a73-40a6-90ca-5aebf57df23e")
-	)
-	(global_label "HOST_5V"
-		(shape bidirectional)
-		(at 172.72 233.68 90)
-		(effects
-			(font
-				(size 1.016 1.016)
-			)
-			(justify left)
-		)
-		(uuid "4bc589f6-22ce-40d8-816b-d28fd9474faf")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 172.72 233.68 90)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(wire
-		(pts
-			(xy 172.72 246.38)
-			(xy 172.72 251.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "03338d52-e7f2-4f4c-b002-b2d3fcf649dd")
-	)
-	(global_label "GND"
-		(shape bidirectional)
-		(at 172.72 251.46 270)
-		(effects
-			(font
-				(size 1.016 1.016)
-			)
-			(justify right)
-		)
-		(uuid "9a06163f-73ec-422b-86b9-f0ab7ff67b00")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 172.72 251.46 270)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(rectangle
-		(start 20.32 217.17)
-		(end 200.66 278.13)
-		(stroke
-			(width 0.254)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid "5abf0216-8f63-42f2-b647-fd6d75f43dae")
-	)
-	(text "05  HOST 5 V REVERSE-CURRENT ISOLATION"
-		(at 25.4 222.25 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(bold yes)
-			)
-			(justify left top)
-		)
-		(uuid "e437e54e-bf2a-4452-b0c2-41641cd72baf")
-	)
-	(text "CE = HOST_5V for reverse-current blocking. ST may be grounded.\n1.5 A path rating; verify display startup current and voltage drop.\nGuition internal charger/USB behaviour remains a separate qualification."
-		(at 25.4 264.16 0)
-		(effects
-			(font
-				(size 1.016 1.016)
-			)
-			(justify left top)
-		)
-		(uuid "2f6da6df-f2fb-4fda-b611-2b55eb00a4f9")
 	)
 )

@@ -60,13 +60,13 @@
           "hatch_smoothing_level": 0,
           "hatch_smoothing_value": 0.1,
           "hatch_thickness": 1.0,
-          "min_clearance": 0.5,
+          "min_clearance": 0.25,
           "min_island_area": 10.0,
           "min_thickness": 0.25,
-          "pad_connection": 1,
+          "pad_connection": 2,
           "remove_islands": 0,
-          "thermal_relief_gap": 0.5,
-          "thermal_relief_spoke_width": 0.5
+          "thermal_relief_gap": 0.25,
+          "thermal_relief_spoke_width": 0.25
         }
       },
       "diff_pair_dimensions": [],
@@ -240,7 +240,7 @@
       "internal_id": "",
       "mfg": "",
       "mpn": "",
-      "sch_revision": "A2"
+      "sch_revision": "A2.2"
     },
     "layer_pairs": [],
     "layer_presets": [],
@@ -700,6 +700,26 @@
     [
       "6939fd33-a0c3-5999-b1e1-c5fb5f8e5ee6",
       "08  PUSH-BUTTON ON / OFF"
+    ],
+    [
+      "b6555207-204e-5985-99e0-f8c4ad0dcd77",
+      "09  USB-A + USB-C INPUT"
+    ],
+    [
+      "d707bf3e-cbf8-550d-8825-968669a6ad72",
+      "10  TEST PADS + BRING-UP"
+    ],
+    [
+      "b6cd3070-c564-5fba-a581-4d6752011fac",
+      "11  USB SOURCE QUALIFICATION"
+    ],
+    [
+      "15ce4331-6311-543c-b5e0-6b6f41e23314",
+      "12  USB INPUT LIMITER"
+    ],
+    [
+      "2f390249-e1fd-5e8a-9589-1998952f687b",
+      "13  USB OVERVOLTAGE PROTECTION"
     ]
   ],
   "text_variables": {},

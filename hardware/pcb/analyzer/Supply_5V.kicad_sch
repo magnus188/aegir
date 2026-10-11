@@ -262,8 +262,7 @@
 			(symbol "C_0_1"
 				(polyline
 					(pts
-						(xy -2.032 0.762)
-						(xy 2.032 0.762)
+						(xy -2.032 0.762) (xy 2.032 0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -275,8 +274,7 @@
 				)
 				(polyline
 					(pts
-						(xy -2.032 -0.762)
-						(xy 2.032 -0.762)
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -1073,12 +1071,7 @@
 			(symbol "GND_0_1"
 				(polyline
 					(pts
-						(xy 0 0)
-						(xy 0 -1.27)
-						(xy 1.27 -1.27)
-						(xy 0 -2.54)
-						(xy -1.27 -1.27)
-						(xy 0 -1.27)
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
 					)
 					(stroke
 						(width 0)
@@ -1365,8 +1358,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 78.74)
-			(xy 259.08 78.74)
+			(xy 152.4 78.74) (xy 259.08 78.74)
 		)
 		(stroke
 			(width 0)
@@ -1376,8 +1368,7 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 91.44)
-			(xy 180.34 106.68)
+			(xy 180.34 91.44) (xy 180.34 106.68)
 		)
 		(stroke
 			(width 0)
@@ -1387,8 +1378,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 81.28)
-			(xy 160.02 81.28)
+			(xy 152.4 81.28) (xy 160.02 81.28)
 		)
 		(stroke
 			(width 0)
@@ -1398,8 +1388,7 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 71.12)
-			(xy 132.08 60.96)
+			(xy 132.08 71.12) (xy 132.08 60.96)
 		)
 		(stroke
 			(width 0)
@@ -1409,8 +1398,7 @@
 	)
 	(polyline
 		(pts
-			(xy 207.01 54.61)
-			(xy 281.94 54.61)
+			(xy 207.01 54.61) (xy 281.94 54.61)
 		)
 		(stroke
 			(width 0.1524)
@@ -1420,8 +1408,7 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 119.38)
-			(xy 142.24 119.38)
+			(xy 137.16 119.38) (xy 142.24 119.38)
 		)
 		(stroke
 			(width 0)
@@ -1431,8 +1418,7 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 83.82)
-			(xy 180.34 78.74)
+			(xy 180.34 83.82) (xy 180.34 78.74)
 		)
 		(stroke
 			(width 0)
@@ -1442,8 +1428,7 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 97.79)
-			(xy 213.36 104.14)
+			(xy 213.36 97.79) (xy 213.36 104.14)
 		)
 		(stroke
 			(width 0)
@@ -1453,8 +1438,7 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 115.57)
-			(xy 101.6 121.92)
+			(xy 101.6 115.57) (xy 101.6 121.92)
 		)
 		(stroke
 			(width 0)
@@ -1464,8 +1448,7 @@
 	)
 	(wire
 		(pts
-			(xy 236.22 97.79)
-			(xy 236.22 104.14)
+			(xy 236.22 97.79) (xy 236.22 104.14)
 		)
 		(stroke
 			(width 0)
@@ -1475,8 +1458,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 99.06)
-			(xy 120.65 99.06)
+			(xy 127 99.06) (xy 120.65 99.06)
 		)
 		(stroke
 			(width 0)
@@ -1486,8 +1468,7 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 81.28)
-			(xy 160.02 78.74)
+			(xy 160.02 81.28) (xy 160.02 78.74)
 		)
 		(stroke
 			(width 0)
@@ -1497,8 +1478,7 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 60.96)
-			(xy 147.32 71.12)
+			(xy 147.32 60.96) (xy 147.32 71.12)
 		)
 		(stroke
 			(width 0)
@@ -1508,8 +1488,7 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 114.3)
-			(xy 180.34 120.65)
+			(xy 180.34 114.3) (xy 180.34 120.65)
 		)
 		(stroke
 			(width 0)
@@ -1519,8 +1498,7 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 90.17)
-			(xy 213.36 78.74)
+			(xy 213.36 90.17) (xy 213.36 78.74)
 		)
 		(stroke
 			(width 0)
@@ -1530,8 +1508,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 71.12)
-			(xy 144.78 60.96)
+			(xy 144.78 71.12) (xy 144.78 60.96)
 		)
 		(stroke
 			(width 0)
@@ -1541,8 +1518,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 81.28)
-			(xy 119.38 81.28)
+			(xy 127 81.28) (xy 119.38 81.28)
 		)
 		(stroke
 			(width 0)
@@ -1552,8 +1528,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 81.28)
-			(xy 119.38 78.74)
+			(xy 119.38 81.28) (xy 119.38 78.74)
 		)
 		(stroke
 			(width 0)
@@ -1563,8 +1538,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 91.44)
-			(xy 180.34 91.44)
+			(xy 152.4 91.44) (xy 180.34 91.44)
 		)
 		(stroke
 			(width 0)
@@ -1574,8 +1548,7 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 60.96)
-			(xy 135.89 60.96)
+			(xy 132.08 60.96) (xy 135.89 60.96)
 		)
 		(stroke
 			(width 0)
@@ -1585,8 +1558,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 163.83)
-			(xy 73.66 172.72)
+			(xy 73.66 163.83) (xy 73.66 172.72)
 		)
 		(stroke
 			(width 0)
@@ -1596,8 +1568,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 93.98)
-			(xy 120.65 93.98)
+			(xy 127 93.98) (xy 120.65 93.98)
 		)
 		(stroke
 			(width 0)
@@ -1607,8 +1578,7 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 109.22)
-			(xy 137.16 119.38)
+			(xy 137.16 109.22) (xy 137.16 119.38)
 		)
 		(stroke
 			(width 0)
@@ -1618,8 +1588,7 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 71.12)
-			(xy 134.62 60.96)
+			(xy 134.62 71.12) (xy 134.62 60.96)
 		)
 		(stroke
 			(width 0)
@@ -1629,8 +1598,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 86.36)
-			(xy 101.6 86.36)
+			(xy 127 86.36) (xy 101.6 86.36)
 		)
 		(stroke
 			(width 0)
@@ -1640,8 +1608,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 97.79)
-			(xy 73.66 104.14)
+			(xy 73.66 97.79) (xy 73.66 104.14)
 		)
 		(stroke
 			(width 0)
@@ -1651,8 +1618,7 @@
 	)
 	(polyline
 		(pts
-			(xy 123.19 54.61)
-			(xy 200.66 54.61)
+			(xy 123.19 54.61) (xy 200.66 54.61)
 		)
 		(stroke
 			(width 0.1524)
@@ -1662,8 +1628,7 @@
 	)
 	(wire
 		(pts
-			(xy 142.24 119.38)
-			(xy 142.24 109.22)
+			(xy 142.24 119.38) (xy 142.24 109.22)
 		)
 		(stroke
 			(width 0)
@@ -1673,8 +1638,7 @@
 	)
 	(polyline
 		(pts
-			(xy 20.32 54.61)
-			(xy 116.84 54.61)
+			(xy 20.32 54.61) (xy 116.84 54.61)
 		)
 		(stroke
 			(width 0.1524)
@@ -1684,8 +1648,7 @@
 	)
 	(polyline
 		(pts
-			(xy 20.32 41.91)
-			(xy 281.94 41.91)
+			(xy 20.32 41.91) (xy 281.94 41.91)
 		)
 		(stroke
 			(width 0.381)
@@ -1695,8 +1658,7 @@
 	)
 	(wire
 		(pts
-			(xy 236.22 90.17)
-			(xy 236.22 78.74)
+			(xy 236.22 90.17) (xy 236.22 78.74)
 		)
 		(stroke
 			(width 0)
@@ -1706,8 +1668,7 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 78.74)
-			(xy 48.26 90.17)
+			(xy 48.26 78.74) (xy 48.26 90.17)
 		)
 		(stroke
 			(width 0)
@@ -1717,8 +1678,7 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 97.79)
-			(xy 48.26 104.14)
+			(xy 48.26 97.79) (xy 48.26 104.14)
 		)
 		(stroke
 			(width 0)
@@ -1728,8 +1688,7 @@
 	)
 	(wire
 		(pts
-			(xy 259.08 97.79)
-			(xy 259.08 104.14)
+			(xy 259.08 97.79) (xy 259.08 104.14)
 		)
 		(stroke
 			(width 0)
@@ -1739,8 +1698,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 78.74)
-			(xy 48.26 78.74)
+			(xy 127 78.74) (xy 48.26 78.74)
 		)
 		(stroke
 			(width 0)
@@ -1750,8 +1708,7 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 86.36)
-			(xy 101.6 107.95)
+			(xy 101.6 86.36) (xy 101.6 107.95)
 		)
 		(stroke
 			(width 0)
@@ -1761,8 +1718,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 156.21)
-			(xy 73.66 149.86)
+			(xy 73.66 156.21) (xy 73.66 149.86)
 		)
 		(stroke
 			(width 0)
@@ -1772,8 +1728,7 @@
 	)
 	(wire
 		(pts
-			(xy 259.08 78.74)
-			(xy 259.08 90.17)
+			(xy 259.08 78.74) (xy 259.08 90.17)
 		)
 		(stroke
 			(width 0)
@@ -1783,8 +1738,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 90.17)
-			(xy 73.66 78.74)
+			(xy 73.66 90.17) (xy 73.66 78.74)
 		)
 		(stroke
 			(width 0)
@@ -1794,8 +1748,7 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 60.96)
-			(xy 147.32 60.96)
+			(xy 143.51 60.96) (xy 147.32 60.96)
 		)
 		(stroke
 			(width 0)
@@ -1805,8 +1758,7 @@
 	)
 	(polyline
 		(pts
-			(xy 147.32 146.05)
-			(xy 281.94 146.05)
+			(xy 147.32 146.05) (xy 281.94 146.05)
 		)
 		(stroke
 			(width 0.1524)
@@ -1816,8 +1768,7 @@
 	)
 	(polyline
 		(pts
-			(xy 20.32 146.05)
-			(xy 139.7 146.05)
+			(xy 20.32 146.05) (xy 139.7 146.05)
 		)
 		(stroke
 			(width 0.1524)
@@ -2043,6 +1994,39 @@
 				)
 			)
 		)
+		(property "MPN" "C1608X7R1H104K080AA"
+			(at 101.6 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 101.6 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Maximum_body_height_mm" "0.9"
+			(at 101.6 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "130d280d-63e1-4962-840d-696c211b9954")
 		)
@@ -2055,33 +2039,6 @@
 					(reference "C203")
 					(unit 1)
 				)
-			)
-		)
-		(property "MPN" "C1608X7R1H104K080AA"
-			(at 101.6 111.76 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "TDK"
-			(at 101.6 111.76 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
-			)
-		)
-		(property "Maximum_body_height_mm" "0.9"
-			(at 101.6 111.76 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
 			)
 		)
 	)
@@ -2447,6 +2404,50 @@
 				)
 			)
 		)
+		(property "MPN" "C3216X5R1E226M160AB"
+			(at 48.26 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 48.26 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Maximum_body_height_mm" "1.8"
+			(at 48.26 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Effective_capacitance_review" "5.5V typical bias~50%; engineering~6.73u each after tolerance/temp/aging; validate ripple/startup"
+			(at 48.26 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "9eed7be8-a083-4625-a261-d590e907c51d")
 		)
@@ -2459,42 +2460,6 @@
 					(reference "C201")
 					(unit 1)
 				)
-			)
-		)
-		(property "MPN" "C3216X5R1E226M160AB"
-			(at 48.26 93.98 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "TDK"
-			(at 48.26 93.98 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
-			)
-		)
-		(property "Maximum_body_height_mm" "1.8"
-			(at 48.26 93.98 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
-			)
-		)
-		(property "Effective_capacitance_review" "5.5V typical bias~50%; engineering~6.73u each after tolerance/temp/aging; validate ripple/startup"
-			(at 48.26 93.98 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
 			)
 		)
 	)
@@ -2564,6 +2529,50 @@
 				)
 			)
 		)
+		(property "MPN" "C3225X7R1C226M250AC"
+			(at 213.36 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 213.36 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Maximum_body_height_mm" "2.8"
+			(at 213.36 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Effective_capacitance_review" "5.5V typical bias~90%; engineering 12.1176u each after .8tol*.85temp*.9aging; combined corners not guaranteed"
+			(at 213.36 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "93ed8d5a-f672-4465-a2a5-5282d51a2155")
 		)
@@ -2576,42 +2585,6 @@
 					(reference "C204")
 					(unit 1)
 				)
-			)
-		)
-		(property "MPN" "C3225X7R1C226M250AC"
-			(at 213.36 93.98 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "TDK"
-			(at 213.36 93.98 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
-			)
-		)
-		(property "Maximum_body_height_mm" "2.8"
-			(at 213.36 93.98 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
-			)
-		)
-		(property "Effective_capacitance_review" "5.5V typical bias~90%; engineering 12.1176u each after .8tol*.85temp*.9aging; combined corners not guaranteed"
-			(at 213.36 93.98 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
 			)
 		)
 	)
@@ -2681,6 +2654,28 @@
 				)
 			)
 		)
+		(property "MPN" "RC0603FR-07100KL"
+			(at 73.66 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 73.66 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "db24546e-89df-4484-85b3-b7fa2776a233")
 		)
@@ -2693,24 +2688,6 @@
 					(reference "R203")
 					(unit 1)
 				)
-			)
-		)
-		(property "MPN" "RC0603FR-07100KL"
-			(at 73.66 160.02 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "YAGEO"
-			(at 73.66 160.02 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
 			)
 		)
 	)
@@ -2778,6 +2755,39 @@
 				)
 			)
 		)
+		(property "MPN" "XGL4030-152MEC"
+			(at 139.7 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Manufacturer" "Coilcraft"
+			(at 139.7 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Winding_assembly" "Coilcraft drawing short/start-lead stripe faces our pad2 TPS_L2 (U201 pins6/7). Both inductor nodes switch in buck-boost; output-side L2 chosen for dominant boost operation. Validate EMI physically."
+			(at 139.7 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "3da0f829-e447-44a5-98f3-5cb45961f572")
 		)
@@ -2790,33 +2800,6 @@
 					(reference "L201")
 					(unit 1)
 				)
-			)
-		)
-		(property "MPN" "XGL4030-152MEC"
-			(at 139.7 60.96 90)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Coilcraft"
-			(at 139.7 60.96 90)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
-			)
-		)
-		(property "Winding_assembly" "Coilcraft drawing short/start-lead stripe faces our pad2 TPS_L2 (U201 pins6/7). Both inductor nodes switch in buck-boost; output-side L2 chosen for dominant boost operation. Validate EMI physically."
-			(at 139.7 60.96 90)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
 			)
 		)
 	)
@@ -2886,6 +2869,28 @@
 				)
 			)
 		)
+		(property "MPN" "TPS63020DSJR"
+			(at 139.7 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Manufacturer" "Texas Instruments"
+			(at 139.7 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "70932c11-e050-47c0-874b-cdca945c6701")
 		)
@@ -2937,24 +2942,6 @@
 					(reference "U201")
 					(unit 1)
 				)
-			)
-		)
-		(property "MPN" "TPS63020DSJR"
-			(at 139.7 91.44 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Texas Instruments"
-			(at 139.7 91.44 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
 			)
 		)
 	)
@@ -3024,6 +3011,50 @@
 				)
 			)
 		)
+		(property "MPN" "C3225X7R1C226M250AC"
+			(at 236.22 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 236.22 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Maximum_body_height_mm" "2.8"
+			(at 236.22 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Effective_capacitance_review" "5.5V typical bias~90%; engineering 12.1176u each after .8tol*.85temp*.9aging; combined corners not guaranteed"
+			(at 236.22 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "b84d5abe-1fd0-46a9-a06c-01530fcabbea")
 		)
@@ -3036,42 +3067,6 @@
 					(reference "C205")
 					(unit 1)
 				)
-			)
-		)
-		(property "MPN" "C3225X7R1C226M250AC"
-			(at 236.22 93.98 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "TDK"
-			(at 236.22 93.98 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
-			)
-		)
-		(property "Maximum_body_height_mm" "2.8"
-			(at 236.22 93.98 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
-			)
-		)
-		(property "Effective_capacitance_review" "5.5V typical bias~90%; engineering 12.1176u each after .8tol*.85temp*.9aging; combined corners not guaranteed"
-			(at 236.22 93.98 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
 			)
 		)
 	)
@@ -3141,6 +3136,28 @@
 				)
 			)
 		)
+		(property "MPN" "RC0603FR-07180KL"
+			(at 180.34 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 180.34 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "476b52f9-e4ae-4a21-8bdc-b378f1810eef")
 		)
@@ -3153,24 +3170,6 @@
 					(reference "R202")
 					(unit 1)
 				)
-			)
-		)
-		(property "MPN" "RC0603FR-07180KL"
-			(at 180.34 110.49 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "YAGEO"
-			(at 180.34 110.49 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
 			)
 		)
 	)
@@ -3314,6 +3313,28 @@
 				)
 			)
 		)
+		(property "MPN" "RC0603FR-071M62L"
+			(at 180.34 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 180.34 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "c32a0bc3-5841-4995-a0bc-7cc91d7fd28a")
 		)
@@ -3326,24 +3347,6 @@
 					(reference "R201")
 					(unit 1)
 				)
-			)
-		)
-		(property "MPN" "RC0603FR-071M62L"
-			(at 180.34 87.63 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "YAGEO"
-			(at 180.34 87.63 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
 			)
 		)
 	)
@@ -3413,6 +3416,50 @@
 				)
 			)
 		)
+		(property "MPN" "C3216X5R1E226M160AB"
+			(at 73.66 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 73.66 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Maximum_body_height_mm" "1.8"
+			(at 73.66 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Effective_capacitance_review" "5.5V typical bias~50%; engineering~6.73u each after tolerance/temp/aging; validate ripple/startup"
+			(at 73.66 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "28afae86-b5b6-47df-a684-4a13cab8382d")
 		)
@@ -3425,42 +3472,6 @@
 					(reference "C202")
 					(unit 1)
 				)
-			)
-		)
-		(property "MPN" "C3216X5R1E226M160AB"
-			(at 73.66 93.98 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "TDK"
-			(at 73.66 93.98 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
-			)
-		)
-		(property "Maximum_body_height_mm" "1.8"
-			(at 73.66 93.98 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
-			)
-		)
-		(property "Effective_capacitance_review" "5.5V typical bias~50%; engineering~6.73u each after tolerance/temp/aging; validate ripple/startup"
-			(at 73.66 93.98 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
 			)
 		)
 	)
@@ -3678,6 +3689,50 @@
 				)
 			)
 		)
+		(property "MPN" "C3225X7R1C226M250AC"
+			(at 259.08 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 259.08 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Maximum_body_height_mm" "2.8"
+			(at 259.08 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Effective_capacitance_review" "5.5V typical bias~90%; engineering 12.1176u each after .8tol*.85temp*.9aging; combined corners not guaranteed"
+			(at 259.08 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "787fc06b-1d18-4ac1-a2b7-b732c28f5268")
 		)
@@ -3690,42 +3745,6 @@
 					(reference "C206")
 					(unit 1)
 				)
-			)
-		)
-		(property "MPN" "C3225X7R1C226M250AC"
-			(at 259.08 93.98 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "TDK"
-			(at 259.08 93.98 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
-			)
-		)
-		(property "Maximum_body_height_mm" "2.8"
-			(at 259.08 93.98 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
-			)
-		)
-		(property "Effective_capacitance_review" "5.5V typical bias~90%; engineering 12.1176u each after .8tol*.85temp*.9aging; combined corners not guaranteed"
-			(at 259.08 93.98 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
 			)
 		)
 	)
