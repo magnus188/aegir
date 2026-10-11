@@ -104,8 +104,7 @@
 			(symbol "C_0_1"
 				(polyline
 					(pts
-						(xy -2.032 0.762)
-						(xy 2.032 0.762)
+						(xy -2.032 0.762) (xy 2.032 0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -117,8 +116,7 @@
 				)
 				(polyline
 					(pts
-						(xy -2.032 -0.762)
-						(xy 2.032 -0.762)
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -402,8 +400,7 @@
 			(symbol "BSS138_0_1"
 				(polyline
 					(pts
-						(xy 0.254 1.905)
-						(xy 0.254 -1.905)
+						(xy 0.254 1.905) (xy 0.254 -1.905)
 					)
 					(stroke
 						(width 0.254)
@@ -415,8 +412,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0.254 0)
-						(xy -2.54 0)
+						(xy 0.254 0) (xy -2.54 0)
 					)
 					(stroke
 						(width 0)
@@ -428,8 +424,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0.762 2.286)
-						(xy 0.762 1.27)
+						(xy 0.762 2.286) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0.254)
@@ -441,8 +436,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0.762 0.508)
-						(xy 0.762 -0.508)
+						(xy 0.762 0.508) (xy 0.762 -0.508)
 					)
 					(stroke
 						(width 0.254)
@@ -454,8 +448,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0.762 -1.27)
-						(xy 0.762 -2.286)
+						(xy 0.762 -1.27) (xy 0.762 -2.286)
 					)
 					(stroke
 						(width 0.254)
@@ -467,10 +460,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0.762 -1.778)
-						(xy 3.302 -1.778)
-						(xy 3.302 1.778)
-						(xy 0.762 1.778)
+						(xy 0.762 -1.778) (xy 3.302 -1.778) (xy 3.302 1.778) (xy 0.762 1.778)
 					)
 					(stroke
 						(width 0)
@@ -482,10 +472,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.016 0)
-						(xy 2.032 0.381)
-						(xy 2.032 -0.381)
-						(xy 1.016 0)
+						(xy 1.016 0) (xy 2.032 0.381) (xy 2.032 -0.381) (xy 1.016 0)
 					)
 					(stroke
 						(width 0)
@@ -508,8 +495,7 @@
 				)
 				(polyline
 					(pts
-						(xy 2.54 2.54)
-						(xy 2.54 1.778)
+						(xy 2.54 2.54) (xy 2.54 1.778)
 					)
 					(stroke
 						(width 0)
@@ -543,9 +529,7 @@
 				)
 				(polyline
 					(pts
-						(xy 2.54 -2.54)
-						(xy 2.54 0)
-						(xy 0.762 0)
+						(xy 2.54 -2.54) (xy 2.54 0) (xy 0.762 0)
 					)
 					(stroke
 						(width 0)
@@ -557,8 +541,7 @@
 				)
 				(polyline
 					(pts
-						(xy 2.921 0.381)
-						(xy 3.683 0.381)
+						(xy 2.921 0.381) (xy 3.683 0.381)
 					)
 					(stroke
 						(width 0)
@@ -570,10 +553,7 @@
 				)
 				(polyline
 					(pts
-						(xy 3.302 0.381)
-						(xy 2.921 -0.254)
-						(xy 3.683 -0.254)
-						(xy 3.302 0.381)
+						(xy 3.302 0.381) (xy 2.921 -0.254) (xy 3.683 -0.254) (xy 3.302 0.381)
 					)
 					(stroke
 						(width 0)
@@ -1134,8 +1114,7 @@
 	)
 	(wire
 		(pts
-			(xy 322.58 193.04)
-			(xy 317.5 193.04)
+			(xy 322.58 193.04) (xy 317.5 193.04)
 		)
 		(stroke
 			(width 0)
@@ -1145,8 +1124,7 @@
 	)
 	(wire
 		(pts
-			(xy 252.73 76.2)
-			(xy 252.73 71.12)
+			(xy 252.73 76.2) (xy 252.73 71.12)
 		)
 		(stroke
 			(width 0)
@@ -1156,8 +1134,7 @@
 	)
 	(wire
 		(pts
-			(xy 186.69 120.65)
-			(xy 181.61 120.65)
+			(xy 186.69 120.65) (xy 181.61 120.65)
 		)
 		(stroke
 			(width 0)
@@ -1167,8 +1144,7 @@
 	)
 	(wire
 		(pts
-			(xy 186.69 82.55)
-			(xy 181.61 82.55)
+			(xy 186.69 82.55) (xy 181.61 82.55)
 		)
 		(stroke
 			(width 0)
@@ -1178,8 +1154,7 @@
 	)
 	(wire
 		(pts
-			(xy 196.85 120.65)
-			(xy 201.93 120.65)
+			(xy 196.85 120.65) (xy 201.93 120.65)
 		)
 		(stroke
 			(width 0)
@@ -1189,8 +1164,7 @@
 	)
 	(wire
 		(pts
-			(xy 191.77 113.03)
-			(xy 191.77 107.95)
+			(xy 191.77 113.03) (xy 191.77 107.95)
 		)
 		(stroke
 			(width 0)
@@ -1200,8 +1174,7 @@
 	)
 	(wire
 		(pts
-			(xy 337.82 90.17)
-			(xy 332.74 90.17)
+			(xy 337.82 90.17) (xy 332.74 90.17)
 		)
 		(stroke
 			(width 0)
@@ -1211,8 +1184,7 @@
 	)
 	(wire
 		(pts
-			(xy 191.77 74.93)
-			(xy 191.77 69.85)
+			(xy 191.77 74.93) (xy 191.77 69.85)
 		)
 		(stroke
 			(width 0)
@@ -1222,8 +1194,7 @@
 	)
 	(wire
 		(pts
-			(xy 252.73 114.3)
-			(xy 252.73 109.22)
+			(xy 252.73 114.3) (xy 252.73 109.22)
 		)
 		(stroke
 			(width 0)
@@ -1233,8 +1204,7 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 105.41)
-			(xy 72.39 105.41)
+			(xy 67.31 105.41) (xy 72.39 105.41)
 		)
 		(stroke
 			(width 0)
@@ -1244,8 +1214,7 @@
 	)
 	(wire
 		(pts
-			(xy 337.82 80.01)
-			(xy 332.74 80.01)
+			(xy 337.82 80.01) (xy 332.74 80.01)
 		)
 		(stroke
 			(width 0)
@@ -1255,8 +1224,7 @@
 	)
 	(wire
 		(pts
-			(xy 337.82 95.25)
-			(xy 332.74 95.25)
+			(xy 337.82 95.25) (xy 332.74 95.25)
 		)
 		(stroke
 			(width 0)
@@ -1266,8 +1234,7 @@
 	)
 	(wire
 		(pts
-			(xy 322.58 187.96)
-			(xy 317.5 187.96)
+			(xy 322.58 187.96) (xy 317.5 187.96)
 		)
 		(stroke
 			(width 0)
@@ -1277,8 +1244,7 @@
 	)
 	(wire
 		(pts
-			(xy 322.58 203.2)
-			(xy 317.5 203.2)
+			(xy 322.58 203.2) (xy 317.5 203.2)
 		)
 		(stroke
 			(width 0)
@@ -1288,8 +1254,7 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 78.74)
-			(xy 72.39 78.74)
+			(xy 67.31 78.74) (xy 72.39 78.74)
 		)
 		(stroke
 			(width 0)
@@ -1299,8 +1264,7 @@
 	)
 	(wire
 		(pts
-			(xy 196.85 82.55)
-			(xy 201.93 82.55)
+			(xy 196.85 82.55) (xy 201.93 82.55)
 		)
 		(stroke
 			(width 0)
@@ -1310,8 +1274,7 @@
 	)
 	(wire
 		(pts
-			(xy 322.58 198.12)
-			(xy 317.5 198.12)
+			(xy 322.58 198.12) (xy 317.5 198.12)
 		)
 		(stroke
 			(width 0)
@@ -1321,8 +1284,7 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 90.17)
-			(xy 106.68 85.09)
+			(xy 106.68 90.17) (xy 106.68 85.09)
 		)
 		(stroke
 			(width 0)
@@ -1332,8 +1294,7 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 97.79)
-			(xy 106.68 102.87)
+			(xy 106.68 97.79) (xy 106.68 102.87)
 		)
 		(stroke
 			(width 0)
@@ -1343,8 +1304,7 @@
 	)
 	(wire
 		(pts
-			(xy 252.73 83.82)
-			(xy 252.73 88.9)
+			(xy 252.73 83.82) (xy 252.73 88.9)
 		)
 		(stroke
 			(width 0)
@@ -1354,8 +1314,7 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 78.74)
-			(xy 54.61 78.74)
+			(xy 59.69 78.74) (xy 54.61 78.74)
 		)
 		(stroke
 			(width 0)
@@ -1365,8 +1324,7 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 105.41)
-			(xy 54.61 105.41)
+			(xy 59.69 105.41) (xy 54.61 105.41)
 		)
 		(stroke
 			(width 0)
@@ -1376,8 +1334,7 @@
 	)
 	(wire
 		(pts
-			(xy 252.73 121.92)
-			(xy 252.73 127)
+			(xy 252.73 121.92) (xy 252.73 127)
 		)
 		(stroke
 			(width 0)
@@ -1387,8 +1344,7 @@
 	)
 	(wire
 		(pts
-			(xy 337.82 85.09)
-			(xy 332.74 85.09)
+			(xy 337.82 85.09) (xy 332.74 85.09)
 		)
 		(stroke
 			(width 0)
@@ -1993,6 +1949,28 @@
 				(justify left)
 			)
 		)
+		(property "MPN" "RC0603JR-070RL"
+			(at 63.5 105.41 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 63.5 105.41 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "121211f8-7d8f-4846-8b04-5f1f1e47e5a5")
 		)
@@ -2005,24 +1983,6 @@
 					(reference "R602")
 					(unit 1)
 				)
-			)
-		)
-		(property "MPN" "RC0603JR-070RL"
-			(at 63.5 105.41 90)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "YAGEO"
-			(at 63.5 105.41 90)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
 			)
 		)
 	)
@@ -2095,6 +2055,28 @@
 				(justify left)
 			)
 		)
+		(property "MPN" "BSS138-7-F"
+			(at 191.77 118.11 270)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Manufacturer" "Diodes Incorporated"
+			(at 191.77 118.11 270)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "0924edc1-531a-44ac-a8ea-25165dde2605")
 		)
@@ -2110,24 +2092,6 @@
 					(reference "Q602")
 					(unit 1)
 				)
-			)
-		)
-		(property "MPN" "BSS138-7-F"
-			(at 191.77 118.11 270)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Diodes Incorporated"
-			(at 191.77 118.11 270)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
 			)
 		)
 	)
@@ -2200,6 +2164,39 @@
 				(justify left)
 			)
 		)
+		(property "MPN" "C2012X7R1E105K125AB"
+			(at 106.68 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 106.68 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Maximum_body_height_mm" "1.45"
+			(at 106.68 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "3d26a489-4e0f-4993-a44b-34d1326eeae0")
 		)
@@ -2212,33 +2209,6 @@
 					(reference "C601")
 					(unit 1)
 				)
-			)
-		)
-		(property "MPN" "C2012X7R1E105K125AB"
-			(at 106.68 93.98 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "TDK"
-			(at 106.68 93.98 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
-			)
-		)
-		(property "Maximum_body_height_mm" "1.45"
-			(at 106.68 93.98 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
 			)
 		)
 	)
@@ -2311,6 +2281,28 @@
 				(justify left)
 			)
 		)
+		(property "MPN" "RC0603FR-074K7L"
+			(at 252.73 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 252.73 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "876071cf-e1fc-49a7-ae64-a6ec0165e29c")
 		)
@@ -2323,24 +2315,6 @@
 					(reference "R603")
 					(unit 1)
 				)
-			)
-		)
-		(property "MPN" "RC0603FR-074K7L"
-			(at 252.73 80.01 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "YAGEO"
-			(at 252.73 80.01 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
 			)
 		)
 	)
@@ -2413,6 +2387,28 @@
 				(justify left)
 			)
 		)
+		(property "MPN" "BSS138-7-F"
+			(at 191.77 80.01 270)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Manufacturer" "Diodes Incorporated"
+			(at 191.77 80.01 270)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "68d3336c-4ad4-407b-a734-ebd81901e2cf")
 		)
@@ -2428,24 +2424,6 @@
 					(reference "Q601")
 					(unit 1)
 				)
-			)
-		)
-		(property "MPN" "BSS138-7-F"
-			(at 191.77 80.01 270)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Diodes Incorporated"
-			(at 191.77 80.01 270)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
 			)
 		)
 	)
@@ -2518,6 +2496,39 @@
 				(justify left)
 			)
 		)
+		(property "MPN" "B4B-XH-A(LF)(SN)"
+			(at 350.52 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Manufacturer" "JST"
+			(at 350.52 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Harness_review" "New XHP-4 mating housing with SXH-001T-P0.6 contacts; 28-22AWG; remote module pinout must be checked"
+			(at 350.52 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "eefc0d7a-f050-4d3c-b1da-666b42e028ba")
 		)
@@ -2536,33 +2547,6 @@
 					(reference "J601")
 					(unit 1)
 				)
-			)
-		)
-		(property "MPN" "B4B-XH-A(LF)(SN)"
-			(at 350.52 87.63 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "JST"
-			(at 350.52 87.63 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
-			)
-		)
-		(property "Harness_review" "New XHP-4 mating housing with SXH-001T-P0.6 contacts; 28-22AWG; remote module pinout must be checked"
-			(at 350.52 87.63 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
 			)
 		)
 	)
@@ -2635,6 +2619,28 @@
 				(justify left)
 			)
 		)
+		(property "MPN" "RC0603FR-074K7L"
+			(at 252.73 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 252.73 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "6895c7a8-4c69-464c-abd1-cd19c467ca2d")
 		)
@@ -2647,24 +2653,6 @@
 					(reference "R604")
 					(unit 1)
 				)
-			)
-		)
-		(property "MPN" "RC0603FR-074K7L"
-			(at 252.73 118.11 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "YAGEO"
-			(at 252.73 118.11 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
 			)
 		)
 	)
@@ -2871,6 +2859,28 @@
 				(justify left)
 			)
 		)
+		(property "MPN" "RC0603JR-070RL"
+			(at 63.5 78.74 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 63.5 78.74 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "8ea9c0b3-1ebf-4c6e-8578-8710df228dcd")
 		)
@@ -2883,24 +2893,6 @@
 					(reference "R601")
 					(unit 1)
 				)
-			)
-		)
-		(property "MPN" "RC0603JR-070RL"
-			(at 63.5 78.74 90)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "YAGEO"
-			(at 63.5 78.74 90)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(hide yes)
 			)
 		)
 	)
