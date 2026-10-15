@@ -1,0 +1,412 @@
+{
+    "error_string": "Success.",
+    "export_time": 1306,
+    "layer_height": 0.10000000149011612,
+    "plate_index": 0,
+    "prepare_time": 926,
+    "return_code": 0,
+    "sliced_plates": [
+        {
+            "feature_type_times": {
+                "Bottom surface": 336.6014404296875,
+                "Bridge": 335.7703552246094,
+                "Brim": 258.0045166015625,
+                "Custom": 300.757080078125,
+                "Flush": 26.0,
+                "Gap infill": 14.553877830505371,
+                "Inner wall": 2797.444091796875,
+                "Internal solid infill": 2564.710693359375,
+                "Outer wall": 1998.0294189453125,
+                "Overhang wall": 35.86772155761719,
+                "Sparse infill": 1180.02197265625,
+                "Support": 19.64175033569336,
+                "Support interface": 39.16806411743164,
+                "Support transition": 3.623322010040283,
+                "Top surface": 226.15640258789063,
+                "Travel": 1228.4989013671875,
+                "Undefined": 1219.617919921875
+            },
+            "filament_change_times": 0,
+            "filaments": [
+                {
+                    "filament_id": "GFA00",
+                    "id": 1,
+                    "main_used_g": 40.627525329589844,
+                    "total_used_g": 40.627525329589844
+                }
+            ],
+            "generate_support_material_time": 85,
+            "id": 1,
+            "infill_time": 306,
+            "layer_filament_change": 0,
+            "main_predication": 11013.1416015625,
+            "make_perimeters_time": 358,
+            "obj_cached_cnt": 0,
+            "objects": [
+                {
+                    "bbox": {
+                        "depth": 99.99999237060547,
+                        "height": 2.0,
+                        "width": 30.400005340576172,
+                        "x": 231.63377380371094,
+                        "y": 139.28721618652344,
+                        "z": 0.0
+                    },
+                    "id": 5,
+                    "name": "TMX-A3-P03 | Electronics carrier",
+                    "triangle_count": 8676
+                },
+                {
+                    "bbox": {
+                        "depth": 98.99999237060547,
+                        "height": 6.599999904632568,
+                        "width": 30.0,
+                        "x": 189.6337890625,
+                        "y": 140.28721618652344,
+                        "z": 0.0
+                    },
+                    "id": 9,
+                    "name": "D02 | Main PCB populated envelope - mechanical allocation",
+                    "triangle_count": 7284
+                },
+                {
+                    "bbox": {
+                        "depth": 69.5,
+                        "height": 10.699999809265137,
+                        "width": 47.00000762939453,
+                        "x": 130.63377380371094,
+                        "y": 169.7872314453125,
+                        "z": 0.0
+                    },
+                    "id": 13,
+                    "name": "TMX-A3-P08 | Sampling chamber lid",
+                    "triangle_count": 17356
+                },
+                {
+                    "bbox": {
+                        "depth": 50.2045783996582,
+                        "height": 8.0,
+                        "width": 50.20458221435547,
+                        "x": 148.54078674316406,
+                        "y": 107.5826416015625,
+                        "z": 0.0
+                    },
+                    "id": 17,
+                    "name": "C09 | M2 insert pilot ladder - indexed 1 to 4",
+                    "triangle_count": 24652
+                },
+                {
+                    "bbox": {
+                        "depth": 50.2045783996582,
+                        "height": 8.0,
+                        "width": 50.204586029052734,
+                        "x": 188.84605407714844,
+                        "y": 80.7127914428711,
+                        "z": 0.0
+                    },
+                    "id": 21,
+                    "name": "C10 | M3 insert pilot ladder - indexed 1 to 4",
+                    "triangle_count": 23212
+                },
+                {
+                    "bbox": {
+                        "depth": 32.03193283081055,
+                        "height": 12.199999809265137,
+                        "width": 32.03194046020508,
+                        "x": 102.13180541992188,
+                        "y": 207.2552947998047,
+                        "z": 0.0
+                    },
+                    "id": 25,
+                    "name": "TMX-A3-P06 | USB support frame",
+                    "triangle_count": 24564
+                },
+                {
+                    "bbox": {
+                        "depth": 25.79999542236328,
+                        "height": 8.300000190734863,
+                        "width": 18.30000114440918,
+                        "x": 118.24079895019531,
+                        "y": 131.98724365234375,
+                        "z": 0.0
+                    },
+                    "id": 29,
+                    "name": "TMX-A3-P10 | Printed USB retaining bridge",
+                    "triangle_count": 8724
+                },
+                {
+                    "bbox": {
+                        "depth": 28.47908592224121,
+                        "height": 3.799999952316284,
+                        "width": 28.47907829284668,
+                        "x": 94.29463195800781,
+                        "y": 171.68002319335938,
+                        "z": 0.0
+                    },
+                    "id": 33,
+                    "name": "TMX-A3-P11 | AO2 threaded adapter",
+                    "triangle_count": 19556
+                },
+                {
+                    "bbox": {
+                        "depth": 21.920307159423828,
+                        "height": 4.400000095367432,
+                        "width": 21.920316696166992,
+                        "x": 142.35931396484375,
+                        "y": 106.69306945800781,
+                        "z": 0.0
+                    },
+                    "id": 37,
+                    "name": "TMX-A3-P09 | Printed USB bezel and hidden flange",
+                    "triangle_count": 9352
+                },
+                {
+                    "bbox": {
+                        "depth": 20.000003814697266,
+                        "height": 20.0,
+                        "width": 7.449995994567871,
+                        "x": 251.05064392089844,
+                        "y": 107.28721618652344,
+                        "z": 0.0
+                    },
+                    "id": 41,
+                    "name": "C07 | Display edge and seating ledge",
+                    "triangle_count": 36
+                },
+                {
+                    "bbox": {
+                        "depth": 17.5362491607666,
+                        "height": 21.700000762939453,
+                        "width": 17.5362548828125,
+                        "x": 224.39674377441406,
+                        "y": 85.29220581054688,
+                        "z": 0.0
+                    },
+                    "id": 45,
+                    "name": "C08 | Battery divider and support rail",
+                    "triangle_count": 20
+                },
+                {
+                    "bbox": {
+                        "depth": 16.0,
+                        "height": 0.6000000238418579,
+                        "width": 13.60000228881836,
+                        "x": 163.2460479736328,
+                        "y": 82.13883972167969,
+                        "z": 0.0
+                    },
+                    "id": 49,
+                    "name": "D03 | USB daughterboard replica - 0.60 mm",
+                    "triangle_count": 588
+                },
+                {
+                    "bbox": {
+                        "depth": 10.299997329711914,
+                        "height": 6.400000095367432,
+                        "width": 6.999998092651367,
+                        "x": 99.2408218383789,
+                        "y": 153.53964233398438,
+                        "z": 0.0
+                    },
+                    "id": 53,
+                    "name": "TMX-A3-P04 | Lower display retainer",
+                    "triangle_count": 4360
+                },
+                {
+                    "bbox": {
+                        "depth": 11.80867862701416,
+                        "height": 6.400000095367432,
+                        "width": 11.80868148803711,
+                        "x": 86.97439575195313,
+                        "y": 202.47230529785156,
+                        "z": 0.0
+                    },
+                    "id": 57,
+                    "name": "TMX-A3-P05 | Upper display retainer",
+                    "triangle_count": 4360
+                }
+            ],
+            "sliced_time": 2126,
+            "sliced_time_with_cache": 1241,
+            "total_predication": 11357.017578125,
+            "triangle_count": 152740,
+            "warning_message": ""
+        },
+        {
+            "feature_type_times": {
+                "Bottom surface": 72.0185775756836,
+                "Bridge": 107.43401336669922,
+                "Brim": 36.009071350097656,
+                "Custom": 300.1409912109375,
+                "Flush": 26.0,
+                "Gap infill": 1.6585476398468018,
+                "Inner wall": 2313.6103515625,
+                "Internal solid infill": 365.05523681640625,
+                "Outer wall": 1910.8133544921875,
+                "Overhang wall": 45.34432601928711,
+                "Sparse infill": 194.95993041992188,
+                "Support": 398.4872741699219,
+                "Support interface": 69.52104187011719,
+                "Support transition": 14.7432222366333,
+                "Top surface": 67.6351089477539,
+                "Travel": 1365.708984375,
+                "Undefined": 1357.39306640625
+            },
+            "filament_change_times": 0,
+            "filaments": [
+                {
+                    "filament_id": "GFA00",
+                    "id": 1,
+                    "main_used_g": 30.464599609375,
+                    "total_used_g": 30.464599609375
+                }
+            ],
+            "generate_support_material_time": 115,
+            "id": 2,
+            "infill_time": 47,
+            "layer_filament_change": 0,
+            "main_predication": 6937.55029296875,
+            "make_perimeters_time": 137,
+            "obj_cached_cnt": 0,
+            "objects": [
+                {
+                    "bbox": {
+                        "depth": 47.0,
+                        "height": 33.0,
+                        "width": 79.0,
+                        "x": 555.5,
+                        "y": 136.5,
+                        "z": 0.0
+                    },
+                    "id": 61,
+                    "name": "TMX-A3-P07 | Sampling manifold",
+                    "triangle_count": 224504
+                }
+            ],
+            "sliced_time": 832,
+            "sliced_time_with_cache": 513,
+            "total_predication": 7281.37548828125,
+            "triangle_count": 224504,
+            "warning_message": ""
+        },
+        {
+            "feature_type_times": {
+                "Bottom surface": 252.24969482421875,
+                "Bridge": 327.8082580566406,
+                "Brim": 72.34820556640625,
+                "Custom": 299.9554748535156,
+                "Flush": 26.0,
+                "Gap infill": 2.4381070137023926,
+                "Inner wall": 9373.041015625,
+                "Internal solid infill": 1990.9085693359375,
+                "Outer wall": 8692.763671875,
+                "Overhang wall": 177.31201171875,
+                "Sparse infill": 2501.760498046875,
+                "Support": 1419.8365478515625,
+                "Support interface": 179.41510009765625,
+                "Support transition": 63.3013801574707,
+                "Top surface": 182.71688842773438,
+                "Travel": 2702.0537109375,
+                "Undefined": 2694.117919921875
+            },
+            "filament_change_times": 0,
+            "filaments": [
+                {
+                    "filament_id": "GFA00",
+                    "id": 1,
+                    "main_used_g": 114.41195678710938,
+                    "total_used_g": 114.41195678710938
+                }
+            ],
+            "generate_support_material_time": 476,
+            "id": 3,
+            "infill_time": 162,
+            "layer_filament_change": 0,
+            "main_predication": 27922.03515625,
+            "make_perimeters_time": 613,
+            "obj_cached_cnt": 0,
+            "objects": [
+                {
+                    "bbox": {
+                        "depth": 180.0,
+                        "height": 40.599998474121094,
+                        "width": 85.00000762939453,
+                        "x": 132.49998474121094,
+                        "y": -314.0,
+                        "z": 0.0
+                    },
+                    "id": 65,
+                    "name": "TMX-A3-P01 | Main housing",
+                    "triangle_count": 115174
+                }
+            ],
+            "sliced_time": 2542,
+            "sliced_time_with_cache": 1241,
+            "total_predication": 28266.0546875,
+            "triangle_count": 115174,
+            "warning_message": ""
+        },
+        {
+            "feature_type_times": {
+                "Bottom surface": 483.0548400878906,
+                "Bridge": 626.5921630859375,
+                "Brim": 78.4685287475586,
+                "Custom": 301.3888854980469,
+                "Flush": 26.0,
+                "Gap infill": 1.9835180044174194,
+                "Inner wall": 787.8101806640625,
+                "Internal solid infill": 3430.8935546875,
+                "Outer wall": 624.9801635742188,
+                "Overhang wall": 17.50188446044922,
+                "Sparse infill": 512.4793701171875,
+                "Support": 10.813165664672852,
+                "Support interface": 6.899633407592773,
+                "Support transition": 2.940749406814575,
+                "Top surface": 281.0475769042969,
+                "Travel": 333.771728515625,
+                "Undefined": 324.395751953125
+            },
+            "filament_change_times": 0,
+            "filaments": [
+                {
+                    "filament_id": "GFA00",
+                    "id": 1,
+                    "main_used_g": 39.739593505859375,
+                    "total_used_g": 39.739593505859375
+                }
+            ],
+            "generate_support_material_time": 233,
+            "id": 4,
+            "infill_time": 111,
+            "layer_filament_change": 0,
+            "main_predication": 7173.16650390625,
+            "make_perimeters_time": 119,
+            "obj_cached_cnt": 0,
+            "objects": [
+                {
+                    "bbox": {
+                        "depth": 179.5,
+                        "height": 11.800000190734863,
+                        "width": 84.49999237060547,
+                        "x": 552.75,
+                        "y": -313.75,
+                        "z": 0.0
+                    },
+                    "id": 69,
+                    "name": "TMX-A3-P02 | Single rear cover",
+                    "triangle_count": 359072
+                }
+            ],
+            "sliced_time": 775,
+            "sliced_time_with_cache": 300,
+            "total_predication": 7517.17919921875,
+            "triangle_count": 359072,
+            "warning_message": ""
+        }
+    ],
+    "sparse_infill_density": 20.0,
+    "upward_compatible_machine": [
+        "Bambu Lab H2D Pro 0.4 nozzle"
+    ],
+    "wall_loops": 4
+}

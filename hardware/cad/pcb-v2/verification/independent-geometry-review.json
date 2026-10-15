@@ -1,0 +1,537 @@
+{
+  "input_sha256": {
+    "hardware/cad/pcb-v2/parts/TMX-A3-P01.step": "1139f22e01d692b8f32ced147bc28b396461b45793dd08b1e7cf70d62bc3c48a",
+    "hardware/cad/pcb-v2/parts/TMX-A3-P02.step": "b829d73a5c2404b46e2966cc9c7b8fa605cf3bfdb1beb2f504138286456c791b",
+    "hardware/cad/pcb-v2/parts/TMX-A3-P03.step": "e4c4724c7f3b4b7792fc08059b687cd5e9a33d2d19828d6cc3a63bb8a4416c9b",
+    "hardware/cad/pcb-v2/parts/TMX-V2-P12.step": "cdbc915ff56f8d8d45ece20485dfb1e7c41bc281545d9ea9d091c4f653258a0b"
+  },
+  "pcb_translation_mm": [
+    50.4,
+    120,
+    20.5529
+  ],
+  "geometry": {
+    "TMX-A3-P01": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 98861.05121393217,
+      "bounds": {
+        "min": [
+          -1.6769699862735717e-15,
+          -7.15184003451423e-16,
+          -5.187065942908053e-14
+        ],
+        "max": [
+          96.6,
+          180.0,
+          40.600000000000044
+        ],
+        "size": [
+          96.6,
+          180.0,
+          40.600000000000094
+        ],
+        "center": [
+          48.3,
+          90.0,
+          20.299999999999997
+        ]
+      }
+    },
+    "TMX-A3-P02": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 35539.77078849092,
+      "bounds": {
+        "min": [
+          0.25,
+          0.2499999,
+          37.35
+        ],
+        "max": [
+          96.6,
+          179.75,
+          43.0
+        ],
+        "size": [
+          96.35,
+          179.5000001,
+          5.649999999999999
+        ],
+        "center": [
+          48.425,
+          89.99999995,
+          40.175
+        ]
+      }
+    },
+    "TMX-A3-P03": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 5045.389521930384,
+      "bounds": {
+        "min": [
+          50.4,
+          20.5,
+          16.5
+        ],
+        "max": [
+          80.6,
+          120.5,
+          20.5
+        ],
+        "size": [
+          30.199999999999996,
+          100.0,
+          4.0
+        ],
+        "center": [
+          65.5,
+          70.5,
+          18.5
+        ]
+      }
+    },
+    "TMX-V2-P12": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1423.0757782337726,
+      "bounds": {
+        "min": [
+          87.2,
+          13.2,
+          18.5
+        ],
+        "max": [
+          96.6,
+          46.3,
+          40.6
+        ],
+        "size": [
+          9.399999999999991,
+          33.099999999999994,
+          22.1
+        ],
+        "center": [
+          91.9,
+          29.75,
+          29.55
+        ]
+      }
+    }
+  },
+  "static": [
+    {
+      "pair": [
+        "TMX-A3-P01",
+        "TMX-V2-P12"
+      ],
+      "distance_mm": 0.0,
+      "intersection_volume_mm3": 0,
+      "coplanar_contact_area_mm2": 0,
+      "common_valid": true,
+      "common_signed_solid_volumes_mm3": [],
+      "boolean_orientation_warning": false,
+      "contact_edges": 0,
+      "volume_pass": true
+    },
+    {
+      "pair": [
+        "TMX-A3-P01",
+        "TMX-A3-P02"
+      ],
+      "distance_mm": 0.19999999999999574,
+      "intersection_volume_mm3": 0.0,
+      "coplanar_contact_area_mm2": 0.0,
+      "volume_pass": true
+    },
+    {
+      "pair": [
+        "TMX-V2-P12",
+        "TMX-A3-P02"
+      ],
+      "distance_mm": 0.19999999999999574,
+      "intersection_volume_mm3": 0.0,
+      "coplanar_contact_area_mm2": 0.0,
+      "volume_pass": true
+    },
+    {
+      "pair": [
+        "TMX-A3-P01",
+        "TMX-A3-P03"
+      ],
+      "distance_mm": 0.0,
+      "intersection_volume_mm3": 0,
+      "coplanar_contact_area_mm2": 0,
+      "common_valid": true,
+      "common_signed_solid_volumes_mm3": [],
+      "boolean_orientation_warning": false,
+      "contact_edges": 0,
+      "volume_pass": true
+    },
+    {
+      "part": "TMX-A3-P01",
+      "pcb_contacts_and_intersections": []
+    },
+    {
+      "part": "TMX-A3-P02",
+      "pcb_contacts_and_intersections": []
+    },
+    {
+      "part": "TMX-A3-P03",
+      "pcb_contacts_and_intersections": []
+    },
+    {
+      "part": "TMX-V2-P12",
+      "pcb_contacts_and_intersections": []
+    }
+  ],
+  "bearing_patch_checks": {
+    "lower": {
+      "under_support_witness_fill_mm3": 0.11600000000001806,
+      "under_expected_mm3": 0.11600000000001806,
+      "top_capture_witness_fill_mm3": 0.11600000000001807,
+      "top_expected_mm3": 0.11600000000001807
+    },
+    "upper": {
+      "under_support_witness_fill_mm3": 0.11600000000001806,
+      "under_expected_mm3": 0.11600000000001806,
+      "top_capture_witness_fill_mm3": 0.11600000000001807,
+      "top_expected_mm3": 0.11600000000001807
+    }
+  },
+  "thickness_checks": [
+    {
+      "thickness_mm": 1.44,
+      "bezel": {
+        "distance_mm": 0.20000000000000284,
+        "intersection_volume_mm3": 0.0,
+        "coplanar_contact_area_mm2": 0.0,
+        "volume_pass": true
+      },
+      "housing": {
+        "distance_mm": 0.0,
+        "intersection_volume_mm3": 0,
+        "coplanar_contact_area_mm2": 0,
+        "common_valid": true,
+        "common_signed_solid_volumes_mm3": [],
+        "boolean_orientation_warning": false,
+        "contact_edges": 0,
+        "volume_pass": true
+      }
+    },
+    {
+      "thickness_mm": 1.6,
+      "bezel": {
+        "distance_mm": 0.20000000000000284,
+        "intersection_volume_mm3": 0.0,
+        "coplanar_contact_area_mm2": 0.0,
+        "volume_pass": true
+      },
+      "housing": {
+        "distance_mm": 0.0,
+        "intersection_volume_mm3": 0,
+        "coplanar_contact_area_mm2": 0,
+        "common_valid": true,
+        "common_signed_solid_volumes_mm3": [],
+        "boolean_orientation_warning": false,
+        "contact_edges": 0,
+        "volume_pass": true
+      }
+    },
+    {
+      "thickness_mm": 1.76,
+      "bezel": {
+        "distance_mm": 0.09999999999999787,
+        "intersection_volume_mm3": 0.0,
+        "coplanar_contact_area_mm2": 0.0,
+        "volume_pass": true
+      },
+      "housing": {
+        "distance_mm": 0.0,
+        "intersection_volume_mm3": 0,
+        "coplanar_contact_area_mm2": 0,
+        "common_valid": true,
+        "common_signed_solid_volumes_mm3": [],
+        "boolean_orientation_warning": false,
+        "contact_edges": 0,
+        "volume_pass": true
+      }
+    }
+  ],
+  "sweeps": [
+    {
+      "label": "bezel first +0.10Z seat release",
+      "start_offset_mm": [
+        0,
+        0,
+        0
+      ],
+      "translation_mm": [
+        0,
+        0,
+        0.1
+      ],
+      "method": "midpoint exact BREP distance with rigid-translation Lipschitz bound; EPS=1e-6 mm",
+      "sample_evaluations": 4,
+      "min_sample_distance_mm": 0.0,
+      "volume_collisions": [],
+      "uncertified_intervals": [],
+      "certified_clear": true
+    },
+    {
+      "label": "bezel +X withdrawal after seat release",
+      "start_offset_mm": [
+        0,
+        0,
+        0.1
+      ],
+      "translation_mm": [
+        15,
+        0,
+        0
+      ],
+      "method": "midpoint exact BREP distance with rigid-translation Lipschitz bound; EPS=1e-6 mm",
+      "sample_evaluations": 82,
+      "min_sample_distance_mm": 0.10000000000000142,
+      "volume_collisions": [],
+      "uncertified_intervals": [],
+      "certified_clear": true
+    },
+    {
+      "label": "cover +Z removal after four rear screws removed",
+      "start_offset_mm": [
+        0,
+        0,
+        0
+      ],
+      "translation_mm": [
+        0,
+        0,
+        13
+      ],
+      "method": "midpoint exact BREP distance with rigid-translation Lipschitz bound; EPS=1e-6 mm",
+      "sample_evaluations": 66,
+      "min_sample_distance_mm": 0.19999999999999574,
+      "volume_collisions": [],
+      "uncertified_intervals": [],
+      "certified_clear": true
+    },
+    {
+      "label": "PCB+carrier +25Z with button retained",
+      "start_offset_mm": [
+        0,
+        0,
+        0
+      ],
+      "translation_mm": [
+        0,
+        0,
+        25
+      ],
+      "method": "midpoint exact BREP distance with rigid-translation Lipschitz bound; EPS=1e-6 mm",
+      "sample_evaluations": 162,
+      "min_sample_distance_mm": 0.0,
+      "volume_collisions": [],
+      "uncertified_intervals": [],
+      "certified_clear": true
+    }
+  ],
+  "limits": [
+    "No native Fusion save/reopen claim. No strength, fit tolerance, print-process, or weather-seal qualification.",
+    "Missing native component models are not validated by a STEP-only clearance check.",
+    "Static and sweep contacts are separate from positive-volume overlap.",
+    "coplanar_contact_area_mm2 is only the area of faces returned by the solid Boolean common; zero does not mean an actual bearing interface has zero contact area. Zero distance without common-solid volume is reported separately."
+  ],
+  "usb_screws_and_driver_access": [
+    {
+      "axis_xy_mm": [
+        91,
+        17
+      ],
+      "source_screw": "(Unsaved) [0:1:1:1] / M2 x 5 socket_cap screw \u2014 GEN-M2-SHCS-L5-AF1.5:3 [0:1:1:1:44]",
+      "new_under_head_z_mm": 28.2,
+      "screw_housing": {
+        "distance_mm": 0.4999999499999994,
+        "intersection_volume_mm3": 0.0,
+        "coplanar_contact_area_mm2": 0.0,
+        "volume_pass": true
+      },
+      "screw_bezel": {
+        "distance_mm": 3.552713678800501e-15,
+        "intersection_volume_mm3": 0,
+        "coplanar_contact_area_mm2": 0,
+        "common_valid": true,
+        "common_signed_solid_volumes_mm3": [],
+        "boolean_orientation_warning": false,
+        "contact_edges": 0,
+        "volume_pass": true
+      },
+      "driver_gauge_diameter_mm": 4.4,
+      "driver_gauge_z_mm": [
+        30.2,
+        60
+      ],
+      "driver_gauge_housing": {
+        "distance_mm": 0.20000000000000107,
+        "intersection_volume_mm3": 0.0,
+        "coplanar_contact_area_mm2": 0.0,
+        "volume_pass": true
+      },
+      "driver_gauge_bezel": {
+        "distance_mm": 2.0,
+        "intersection_volume_mm3": 0.0,
+        "coplanar_contact_area_mm2": 0.0,
+        "volume_pass": true
+      }
+    },
+    {
+      "axis_xy_mm": [
+        91,
+        42.5
+      ],
+      "source_screw": "(Unsaved) [0:1:1:1] / M2 x 5 socket_cap screw \u2014 GEN-M2-SHCS-L5-AF1.5:4 [0:1:1:1:45]",
+      "new_under_head_z_mm": 28.2,
+      "screw_housing": {
+        "distance_mm": 0.500000049999997,
+        "intersection_volume_mm3": 0.0,
+        "coplanar_contact_area_mm2": 0.0,
+        "volume_pass": true
+      },
+      "screw_bezel": {
+        "distance_mm": 3.552713678800501e-15,
+        "intersection_volume_mm3": 0,
+        "coplanar_contact_area_mm2": 0,
+        "common_valid": true,
+        "common_signed_solid_volumes_mm3": [],
+        "boolean_orientation_warning": false,
+        "contact_edges": 0,
+        "volume_pass": true
+      },
+      "driver_gauge_diameter_mm": 4.4,
+      "driver_gauge_z_mm": [
+        30.2,
+        60
+      ],
+      "driver_gauge_housing": {
+        "distance_mm": 0.19999999999999574,
+        "intersection_volume_mm3": 0.0,
+        "coplanar_contact_area_mm2": 0.0,
+        "volume_pass": true
+      },
+      "driver_gauge_bezel": {
+        "distance_mm": 2.0,
+        "intersection_volume_mm3": 0.0,
+        "coplanar_contact_area_mm2": 0.0,
+        "volume_pass": true
+      }
+    }
+  ],
+  "old_port_closure": {
+    "witness_volume_mm3": 176.4,
+    "filled_volume_mm3": 176.4,
+    "pass": true
+  },
+  "old_cover_usb_retirement": {
+    "remaining_below_plate_mm3": 0,
+    "plate_witness_missing_mm3": 0.0
+  },
+  "battery": [
+    {
+      "part_id": "TMX-A3-C02",
+      "name": "Battery / FMA protected holder - owner-measured envelope:1",
+      "housing": {
+        "distance_mm": 0.0,
+        "intersection_volume_mm3": 0,
+        "coplanar_contact_area_mm2": 0,
+        "common_valid": true,
+        "common_signed_solid_volumes_mm3": [],
+        "boolean_orientation_warning": false,
+        "contact_edges": 0,
+        "volume_pass": true
+      },
+      "cover": {
+        "distance_mm": 0.5,
+        "intersection_volume_mm3": 0.0,
+        "coplanar_contact_area_mm2": 0.0,
+        "volume_pass": true
+      }
+    },
+    {
+      "part_id": "TMX-A3-C03-V01",
+      "name": "Battery / 18650 cell A - owner-rated 3400 mAh:1",
+      "housing": {
+        "distance_mm": 2.1999999999999993,
+        "intersection_volume_mm3": 0.0,
+        "coplanar_contact_area_mm2": 0.0,
+        "volume_pass": true
+      },
+      "cover": {
+        "distance_mm": 4.676792079435619,
+        "intersection_volume_mm3": 0.0,
+        "coplanar_contact_area_mm2": 0.0,
+        "volume_pass": true
+      }
+    },
+    {
+      "part_id": "TMX-A3-C03-V02",
+      "name": "Battery / 18650 cell B - owner-rated 3400 mAh:1",
+      "housing": {
+        "distance_mm": 2.5,
+        "intersection_volume_mm3": 0.0,
+        "coplanar_contact_area_mm2": 0.0,
+        "volume_pass": true
+      },
+      "cover": {
+        "distance_mm": 4.676792079435617,
+        "intersection_volume_mm3": 0.0,
+        "coplanar_contact_area_mm2": 0.0,
+        "volume_pass": true
+      }
+    },
+    {
+      "part_id": "TMX-A3-C10-V01",
+      "name": "Battery / red RCY disconnect body - provisional reference:1",
+      "housing": {
+        "distance_mm": 7.5,
+        "intersection_volume_mm3": 0.0,
+        "coplanar_contact_area_mm2": 0.0,
+        "volume_pass": true
+      },
+      "cover": {
+        "distance_mm": 8.799999999999997,
+        "intersection_volume_mm3": 0.0,
+        "coplanar_contact_area_mm2": 0.0,
+        "volume_pass": true
+      }
+    },
+    {
+      "part_id": "TMX-A3-C10-V02",
+      "name": "Battery / red RCY disconnect mate - provisional reference:1",
+      "housing": {
+        "distance_mm": 7.5,
+        "intersection_volume_mm3": 0.0,
+        "coplanar_contact_area_mm2": 0.0,
+        "volume_pass": true
+      },
+      "cover": {
+        "distance_mm": 6.599999999999994,
+        "intersection_volume_mm3": 0.0,
+        "coplanar_contact_area_mm2": 0.0,
+        "volume_pass": true
+      }
+    }
+  ],
+  "controls": {
+    "overlap_detected": true,
+    "coplanar_zero_volume": true,
+    "real_bezel_inserted_too_low_detected": true,
+    "old_usb_key_present_detected": true,
+    "old_port_open_detected": true,
+    "previous_end_wall_head_clash_detected": true,
+    "midpath_collision_detected": true
+  },
+  "elapsed_seconds": 142.79633784294128,
+  "input_hashes_still_match": true,
+  "all_controls_pass": true
+}

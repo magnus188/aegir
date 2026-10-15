@@ -1,0 +1,74 @@
+{
+  "project": "/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/cad/rev04/original-fit-check/Bambu Studio/03_Original_housing/03_Original_housing.3mf",
+  "sha256": "65e3635e39658590ff236bf4b85e4b80d6b4fcfe801a4db75afcb0b8f26e3426",
+  "slicer": "02.08.02.61",
+  "layer_count": 507,
+  "declared_layer_count": 507,
+  "settings": {
+    "printer_model": "Bambu Lab H2D",
+    "nozzle_diameter": [
+      "0.4",
+      "0.4"
+    ],
+    "layer_height": "0.1",
+    "filament_type": [
+      "PLA"
+    ],
+    "curr_bed_type": "Textured PEI Plate",
+    "enable_support": "1",
+    "support_type": "normal(auto)",
+    "wall_loops": "4"
+  },
+  "generated_support_segments": 48654,
+  "support_blockers_in_archive": [],
+  "support_conflicts_with_exclusion_volumes": [],
+  "island_candidate_layers": [
+    {
+      "layer": 328,
+      "z_mm": 25.3,
+      "segments": 2010,
+      "support_segments": 369,
+      "island_candidates_ge_0_25mm2": 1,
+      "largest_island_candidate_mm2": 35.25,
+      "occupied_raster_area_mm2": 1689.0
+    },
+    {
+      "layer": 391,
+      "z_mm": 30.8,
+      "segments": 3598,
+      "support_segments": 0,
+      "island_candidates_ge_0_25mm2": 1,
+      "largest_island_candidate_mm2": 35.25,
+      "occupied_raster_area_mm2": 1722.938
+    }
+  ],
+  "unhandled_extruding_moves": [],
+  "slicer_warnings": [],
+  "selected_visual_layers": [
+    1,
+    5,
+    9,
+    24,
+    28,
+    78,
+    156,
+    229,
+    301,
+    371,
+    445,
+    507
+  ],
+  "native_plate_images": [
+    "/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/cad/rev04/original-fit-check/Bambu Studio/03_Original_housing/inspection/plate_1.png",
+    "/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/cad/rev04/original-fit-check/Bambu Studio/03_Original_housing/inspection/top_1.png"
+  ],
+  "limits": [
+    "G2/G3 arcs are linearized at at most 0.15 mm path steps.",
+    "All-layer connectivity is a 0.25 mm raster screening of connected deposits, retaining prior deposit Z within0.5mm and one-pixel contact margin. This accommodates independently interleaved support layers; it is not a bridge-strength or full unsupported-area proof.",
+    "Support conflict checks use conservative XY line-width envelopes and layer thickness against the core of actual archived blocker boxes, excluding their named bead-width safety halo.",
+    "Selected contact sheet has not been marked visually reviewed automatically.",
+    "No physical print, sensor installation, seal, heat-set or thermal qualification is implied."
+  ],
+  "physical_print_jobs_sent": false,
+  "visual_review": "pending"
+}

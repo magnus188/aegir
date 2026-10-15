@@ -1,0 +1,88 @@
+[
+  {
+    "name": "01_Small_component_fit_checks",
+    "ids": [
+      "TMX-A3-P03",
+      "TMX-A3-P04",
+      "TMX-A3-P05",
+      "TMX-A3-P08",
+      "TMX-A3-P06",
+      "TMX-A3-P11",
+      "TMX-A3-P09",
+      "TMX-A3-P10",
+      "D02",
+      "D03",
+      "C07",
+      "C08",
+      "C09",
+      "C10"
+    ],
+    "project": "Bambu Studio/01_Small_component_fit_checks/01_Small_component_fit_checks.3mf",
+    "sha256": "d099e534ee462f2ce37fb571e2e54c856d2696f5f391600f29d5203f6734ff87",
+    "predicted_seconds": 11357,
+    "predicted_weight_g": 40.63,
+    "layer_height_mm": 0.1,
+    "layer_events": 249,
+    "support_conflicts": 0,
+    "island_candidate_layers": [],
+    "warnings": [],
+    "native_plate_preview": "Bambu Studio/01_Small_component_fit_checks/inspection/plate_1.png",
+    "reopened": true,
+    "physical_printed": false
+  },
+  {
+    "name": "03_Original_housing",
+    "ids": [
+      "TMX-A3-P01"
+    ],
+    "project": "Bambu Studio/03_Original_housing/03_Original_housing.3mf",
+    "sha256": "65e3635e39658590ff236bf4b85e4b80d6b4fcfe801a4db75afcb0b8f26e3426",
+    "predicted_seconds": 28265,
+    "predicted_weight_g": 114.41,
+    "layer_height_mm": 0.1,
+    "layer_events": 507,
+    "support_conflicts": 0,
+    "island_candidate_layers": [
+      {
+        "layer": 328,
+        "z_mm": 25.3,
+        "segments": 2010,
+        "support_segments": 369,
+        "island_candidates_ge_0_25mm2": 1,
+        "largest_island_candidate_mm2": 35.25,
+        "occupied_raster_area_mm2": 1689.0
+      },
+      {
+        "layer": 391,
+        "z_mm": 30.8,
+        "segments": 3598,
+        "support_segments": 0,
+        "island_candidates_ge_0_25mm2": 1,
+        "largest_island_candidate_mm2": 35.25,
+        "occupied_raster_area_mm2": 1722.938
+      }
+    ],
+    "warnings": [],
+    "native_plate_preview": "Bambu Studio/03_Original_housing/inspection/plate_1.png",
+    "reopened": true,
+    "physical_printed": false
+  },
+  {
+    "name": "04_Original_rear_lid",
+    "ids": [
+      "TMX-A3-P02"
+    ],
+    "project": "Bambu Studio/04_Original_rear_lid/04_Original_rear_lid.3mf",
+    "sha256": "18f00b881928621dcd5d12bd5649647439e4eb7807e635c927b1de6d4577061c",
+    "predicted_seconds": 7516,
+    "predicted_weight_g": 39.74,
+    "layer_height_mm": 0.1,
+    "layer_events": 121,
+    "support_conflicts": 0,
+    "island_candidate_layers": [],
+    "warnings": [],
+    "native_plate_preview": "Bambu Studio/04_Original_rear_lid/inspection/plate_1.png",
+    "reopened": true,
+    "physical_printed": false
+  }
+]

@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "scope": "Independent static electronics versus all nine final printed parts; no builder calls and no source mutations.",
+  "source_files": [
+    {
+      "path": "hardware/cad/pcb-v2-flush/Trimix_Enclosure_PCB2.step",
+      "sha256": "79225d79da03dffc99aed4493ad1db59cdcac9ab09d6a4aa10a84cceb84351cc"
+    },
+    {
+      "path": "hardware/pcb/analyzer-v2/Trimix_Analyzer.kicad_pcb",
+      "sha256": "1df55664b1f57ec4dcc38bbd2358f5aee306f59696f52271aafb94f233b992bc"
+    },
+    {
+      "path": "hardware/pcb/analyzer-v2/review/Trimix_PCB_V2_Mechanical.step",
+      "sha256": "3498d386c480d86322c211ac33cb6374d962162a937a167221fb9be26367aefb"
+    },
+    {
+      "path": "hardware/cad/pcb-v2-flush/verification/component-height-contract.json",
+      "sha256": "fe8efd0d19bc2cbea2c4257ac367131752aafd360208e59382f14a45f1f1b5a8"
+    },
+    {
+      "path": "hardware/pcb/analyzer-v2/manufacturing/placement-populated.csv",
+      "sha256": "589cd7994b4df2c5b077b4889663847bf052d69771a01169eb0fd4046b07e876"
+    }
+  ],
+  "source_hashes_unchanged": true,
+  "fitted_component_count": 148,
+  "actual_modeled_fitted_references": 142,
+  "missing_fitted_models_covered": [
+    "L101",
+    "L201",
+    "L701",
+    "U110",
+    "U111",
+    "U115"
+  ],
+  "excluded_DNP": [
+    "C503",
+    "C706",
+    "R602",
+    "R603",
+    "R604",
+    "R804"
+  ],
+  "printed_part_count": 9,
+  "printed_parts": [
+    "TMX-A3-P01",
+    "TMX-A3-P02",
+    "TMX-A3-P03",
+    "TMX-A3-P04",
+    "TMX-A3-P05",
+    "TMX-A3-P07",
+    "TMX-A3-P08",
+    "TMX-A3-P11",
+    "TMX-V2-P12"
+  ],
+  "registration_mm": [
+    50.4,
+    120.0,
+    20.5529
+  ],
+  "nominal": {
+    "pair_count": 1341,
+    "intersection_count": 0,
+    "intersections": []
+  },
+  "clearance": {
+    "pair_count": 1800,
+    "intersection_count": 0,
+    "intersections": []
+  },
+  "nominal_pass": true,
+  "clearance_pass": true,
+  "limits": [
+    "Actual STEP models may be generic, simplified or incomplete; six absent models are covered by explicit maximum/assembly allocations.",
+    "Clearance boxes are conservative AABBs; reported overlap does not by itself establish exact physical contact.",
+    "J901 envelope uses actual model plus0.15mm assembly then0.5mm clearance; independent maximum dimensional tolerance remains open.",
+    "No connector mate, cable bend, insertion/removal sweep, support strength, printed tolerance, thermal or waterproof certification."
+  ],
+  "pass": true,
+  "port_clearance_disposition": {
+    "status": "clearance_screen_clear",
+    "generic_clearance_exception_applied": false,
+    "intersection_count": 0,
+    "remaining": "Physical selected cable/full engagement, print and component tolerance checks required. Static envelope clearance is not mechanical or manufacturing release."
+  }
+}

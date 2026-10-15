@@ -1,0 +1,1863 @@
+{
+  "status": "read_only_clearance_envelopes_ready_for_case_candidate",
+  "sources": [
+    {
+      "path": "/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/pcb/analyzer-v2/Trimix_Analyzer.kicad_pcb",
+      "sha256": "1df55664b1f57ec4dcc38bbd2358f5aee306f59696f52271aafb94f233b992bc"
+    },
+    {
+      "path": "/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/pcb/analyzer-v2/review/Trimix_PCB_V2_Mechanical.step",
+      "sha256": "3498d386c480d86322c211ac33cb6374d962162a937a167221fb9be26367aefb"
+    },
+    {
+      "path": "/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/cad/pcb-v2/verification/component-height-contract.json",
+      "sha256": "fe8efd0d19bc2cbea2c4257ac367131752aafd360208e59382f14a45f1f1b5a8"
+    },
+    {
+      "path": "/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/cad/rev04/original-fit-check/Trimix_Enclosure_A3_Original.step",
+      "sha256": "fab4ac189ffb369f3edf88eecf946b7e34c1c8f543a5e2456ca501b91afb08cc"
+    }
+  ],
+  "registration": {
+    "raw_kicad_origin_mm": [
+      19.9,
+      21.48491
+    ],
+    "step_translation_mm": [
+      50.4,
+      120.0,
+      20.5529
+    ],
+    "mount_planes": {
+      "bottom_mm": 20.5,
+      "top_mm": 22.1
+    },
+    "mount_axes_mm": [
+      [
+        76.0,
+        28.0
+      ],
+      [
+        54.8,
+        114.0
+      ]
+    ]
+  },
+  "underside_count": 19,
+  "absent_fitted_model_count": 6,
+  "absent_fitted_models": [
+    "L101",
+    "L201",
+    "L701",
+    "U110",
+    "U111",
+    "U115"
+  ],
+  "extra_step_references_excluded_from_population": [
+    "C503",
+    "C706",
+    "R602",
+    "R603",
+    "R604",
+    "R804"
+  ],
+  "keepout_count": 24,
+  "keepouts": [
+    {
+      "reference": "C107",
+      "side": "B.Cu",
+      "MPN": "C2012X5R1A476M125AC",
+      "missing_from_step": false,
+      "underside": true,
+      "source_contract_bounds_mm": [
+        [
+          63.175000000000004,
+          40.150000000000006,
+          18.900000000000002
+        ],
+        [
+          65.375,
+          41.599999999999994,
+          20.5
+        ]
+      ],
+      "actual_step_models": [
+        {
+          "path": "Trimix_PCB_V2_Mechanical 1 [0:1:1:1] / C107 [0:1:1:1:132] / =>[0:1:1:21] [0:1:1:20:1]",
+          "bounds_mm": [
+            [
+              63.275,
+              40.25,
+              19.2179
+            ],
+            [
+              65.275,
+              41.5,
+              20.4679
+            ]
+          ]
+        }
+      ],
+      "union_before_extra_clearance_mm": [
+        [
+          63.175000000000004,
+          40.150000000000006,
+          18.900000000000002
+        ],
+        [
+          65.375,
+          41.599999999999994,
+          20.5
+        ]
+      ],
+      "keepout_bounds_mm": [
+        [
+          62.675000000000004,
+          39.650000000000006,
+          18.400000000000002
+        ],
+        [
+          65.875,
+          42.099999999999994,
+          20.5
+        ]
+      ],
+      "extra_lateral_clearance_mm": 0.5,
+      "extra_z_clearance_mm": 0.5,
+      "assembly_allowance_in_contract_mm": 0.15,
+      "body_height_basis": "explicit manufacturer maximum length/width/height from source-matched part fields; assembly allowance is separate",
+      "source_url": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C2012X5R1A476M125AC"
+    },
+    {
+      "reference": "C111",
+      "side": "B.Cu",
+      "MPN": "C1608X7R1H104K080AA",
+      "missing_from_step": false,
+      "underside": true,
+      "source_contract_bounds_mm": [
+        [
+          78.6,
+          46.48491,
+          19.450000000000003
+        ],
+        [
+          79.79999999999998,
+          48.48491,
+          20.5
+        ]
+      ],
+      "actual_step_models": [
+        {
+          "path": "Trimix_PCB_V2_Mechanical 1 [0:1:1:1] / C111 [0:1:1:1:148] / =>[0:1:1:3] [0:1:1:2:1]",
+          "bounds_mm": [
+            [
+              78.8,
+              46.68491,
+              19.6679
+            ],
+            [
+              79.6,
+              48.284909999999996,
+              20.4679
+            ]
+          ]
+        }
+      ],
+      "union_before_extra_clearance_mm": [
+        [
+          78.6,
+          46.48491,
+          19.450000000000003
+        ],
+        [
+          79.79999999999998,
+          48.48491,
+          20.5
+        ]
+      ],
+      "keepout_bounds_mm": [
+        [
+          78.1,
+          45.98491,
+          18.950000000000003
+        ],
+        [
+          80.29999999999998,
+          48.98491,
+          20.5
+        ]
+      ],
+      "extra_lateral_clearance_mm": 0.5,
+      "extra_z_clearance_mm": 0.5,
+      "assembly_allowance_in_contract_mm": 0.15,
+      "body_height_basis": "manufacturer package/part dimension; conservative package maxima where listed; extra0.15mm per-side XY allowance around F.Fab",
+      "source_url": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608X7R1H104K080AA"
+    },
+    {
+      "reference": "C112",
+      "side": "B.Cu",
+      "MPN": "C1608X7R1H104K080AA",
+      "missing_from_step": false,
+      "underside": true,
+      "source_contract_bounds_mm": [
+        [
+          78.475,
+          33.159909999999996,
+          19.450000000000003
+        ],
+        [
+          79.67499999999998,
+          35.15991000000001,
+          20.5
+        ]
+      ],
+      "actual_step_models": [
+        {
+          "path": "Trimix_PCB_V2_Mechanical 1 [0:1:1:1] / C112 [0:1:1:1:143] / =>[0:1:1:3] [0:1:1:2:1]",
+          "bounds_mm": [
+            [
+              78.675,
+              33.35991,
+              19.6679
+            ],
+            [
+              79.475,
+              34.959909999999994,
+              20.4679
+            ]
+          ]
+        }
+      ],
+      "union_before_extra_clearance_mm": [
+        [
+          78.475,
+          33.159909999999996,
+          19.450000000000003
+        ],
+        [
+          79.67499999999998,
+          35.15991000000001,
+          20.5
+        ]
+      ],
+      "keepout_bounds_mm": [
+        [
+          77.975,
+          32.659909999999996,
+          18.950000000000003
+        ],
+        [
+          80.17499999999998,
+          35.65991000000001,
+          20.5
+        ]
+      ],
+      "extra_lateral_clearance_mm": 0.5,
+      "extra_z_clearance_mm": 0.5,
+      "assembly_allowance_in_contract_mm": 0.15,
+      "body_height_basis": "manufacturer package/part dimension; conservative package maxima where listed; extra0.15mm per-side XY allowance around F.Fab",
+      "source_url": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608X7R1H104K080AA"
+    },
+    {
+      "reference": "C113",
+      "side": "B.Cu",
+      "MPN": "C1608X7R1H104K080AA",
+      "missing_from_step": false,
+      "underside": true,
+      "source_contract_bounds_mm": [
+        [
+          78.42500000000001,
+          36.959909999999994,
+          19.450000000000003
+        ],
+        [
+          79.625,
+          38.95991000000001,
+          20.5
+        ]
+      ],
+      "actual_step_models": [
+        {
+          "path": "Trimix_PCB_V2_Mechanical 1 [0:1:1:1] / C113 [0:1:1:1:136] / =>[0:1:1:3] [0:1:1:2:1]",
+          "bounds_mm": [
+            [
+              78.625,
+              37.159909999999996,
+              19.6679
+            ],
+            [
+              79.425,
+              38.75990999999999,
+              20.4679
+            ]
+          ]
+        }
+      ],
+      "union_before_extra_clearance_mm": [
+        [
+          78.42500000000001,
+          36.959909999999994,
+          19.450000000000003
+        ],
+        [
+          79.625,
+          38.95991000000001,
+          20.5
+        ]
+      ],
+      "keepout_bounds_mm": [
+        [
+          77.92500000000001,
+          36.459909999999994,
+          18.950000000000003
+        ],
+        [
+          80.125,
+          39.45991000000001,
+          20.5
+        ]
+      ],
+      "extra_lateral_clearance_mm": 0.5,
+      "extra_z_clearance_mm": 0.5,
+      "assembly_allowance_in_contract_mm": 0.15,
+      "body_height_basis": "manufacturer package/part dimension; conservative package maxima where listed; extra0.15mm per-side XY allowance around F.Fab",
+      "source_url": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608X7R1H104K080AA"
+    },
+    {
+      "reference": "C114",
+      "side": "B.Cu",
+      "MPN": "C3216X7R1E475K160AC",
+      "missing_from_step": false,
+      "underside": true,
+      "source_contract_bounds_mm": [
+        [
+          58.50000000000001,
+          29.0,
+          18.55
+        ],
+        [
+          62.1,
+          31.0,
+          20.5
+        ]
+      ],
+      "actual_step_models": [
+        {
+          "path": "Trimix_PCB_V2_Mechanical 1 [0:1:1:1] / C114 [0:1:1:1:144] / =>[0:1:1:19] [0:1:1:18:1]",
+          "bounds_mm": [
+            [
+              58.7,
+              29.19999999999999,
+              18.867900000000002
+            ],
+            [
+              61.9,
+              30.80000000000001,
+              20.4679
+            ]
+          ]
+        }
+      ],
+      "union_before_extra_clearance_mm": [
+        [
+          58.50000000000001,
+          29.0,
+          18.55
+        ],
+        [
+          62.1,
+          31.0,
+          20.5
+        ]
+      ],
+      "keepout_bounds_mm": [
+        [
+          58.00000000000001,
+          28.5,
+          18.05
+        ],
+        [
+          62.6,
+          31.5,
+          20.5
+        ]
+      ],
+      "extra_lateral_clearance_mm": 0.5,
+      "extra_z_clearance_mm": 0.5,
+      "assembly_allowance_in_contract_mm": 0.15,
+      "body_height_basis": "manufacturer package/part dimension; conservative package maxima where listed; extra0.15mm per-side XY allowance around F.Fab",
+      "source_url": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C3216X7R1E475K160AC"
+    },
+    {
+      "reference": "C115",
+      "side": "B.Cu",
+      "MPN": "C1608X7R1H104K080AA",
+      "missing_from_step": false,
+      "underside": true,
+      "source_contract_bounds_mm": [
+        [
+          61.800000000000004,
+          26.25,
+          19.450000000000003
+        ],
+        [
+          63.00000000000001,
+          28.25,
+          20.5
+        ]
+      ],
+      "actual_step_models": [
+        {
+          "path": "Trimix_PCB_V2_Mechanical 1 [0:1:1:1] / C115 [0:1:1:1:137] / =>[0:1:1:3] [0:1:1:2:1]",
+          "bounds_mm": [
+            [
+              62.0,
+              26.450000000000003,
+              19.6679
+            ],
+            [
+              62.8,
+              28.049999999999997,
+              20.4679
+            ]
+          ]
+        }
+      ],
+      "union_before_extra_clearance_mm": [
+        [
+          61.800000000000004,
+          26.25,
+          19.450000000000003
+        ],
+        [
+          63.00000000000001,
+          28.25,
+          20.5
+        ]
+      ],
+      "keepout_bounds_mm": [
+        [
+          61.300000000000004,
+          25.75,
+          18.950000000000003
+        ],
+        [
+          63.50000000000001,
+          28.75,
+          20.5
+        ]
+      ],
+      "extra_lateral_clearance_mm": 0.5,
+      "extra_z_clearance_mm": 0.5,
+      "assembly_allowance_in_contract_mm": 0.15,
+      "body_height_basis": "manufacturer package/part dimension; conservative package maxima where listed; extra0.15mm per-side XY allowance around F.Fab",
+      "source_url": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608X7R1H104K080AA"
+    },
+    {
+      "reference": "C116",
+      "side": "B.Cu",
+      "MPN": "GRM1555C1H332JE01D",
+      "missing_from_step": false,
+      "underside": true,
+      "source_contract_bounds_mm": [
+        [
+          66.625,
+          30.424999999999997,
+          19.8
+        ],
+        [
+          67.17500000000001,
+          31.47500000000001,
+          20.5
+        ]
+      ],
+      "actual_step_models": [
+        {
+          "path": "Trimix_PCB_V2_Mechanical 1 [0:1:1:1] / C116 [0:1:1:1:140] / =>[0:1:1:11] [0:1:1:10:1]",
+          "bounds_mm": [
+            [
+              66.65,
+              30.450000000000003,
+              19.9679
+            ],
+            [
+              67.15,
+              31.450000000000003,
+              20.4679
+            ]
+          ]
+        }
+      ],
+      "union_before_extra_clearance_mm": [
+        [
+          66.625,
+          30.424999999999997,
+          19.8
+        ],
+        [
+          67.17500000000001,
+          31.47500000000001,
+          20.5
+        ]
+      ],
+      "keepout_bounds_mm": [
+        [
+          66.125,
+          29.924999999999997,
+          19.3
+        ],
+        [
+          67.67500000000001,
+          31.97500000000001,
+          20.5
+        ]
+      ],
+      "extra_lateral_clearance_mm": 0.5,
+      "extra_z_clearance_mm": 0.5,
+      "assembly_allowance_in_contract_mm": 0.15,
+      "body_height_basis": "explicit manufacturer maximum length/width/height from source-matched part fields; assembly allowance is separate",
+      "source_url": "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM1555C1H332JE01-01A.pdf"
+    },
+    {
+      "reference": "L101",
+      "side": "F.Cu",
+      "MPN": "74437349010",
+      "missing_from_step": true,
+      "underside": false,
+      "source_contract_bounds_mm": [
+        [
+          60.449999999999996,
+          39.7,
+          22.1
+        ],
+        [
+          67.35,
+          47.3,
+          27.25
+        ]
+      ],
+      "actual_step_models": [],
+      "union_before_extra_clearance_mm": [
+        [
+          60.449999999999996,
+          39.7,
+          22.1
+        ],
+        [
+          67.35,
+          47.3,
+          27.25
+        ]
+      ],
+      "keepout_bounds_mm": [
+        [
+          59.949999999999996,
+          39.2,
+          22.1
+        ],
+        [
+          67.85,
+          47.8,
+          27.75
+        ]
+      ],
+      "extra_lateral_clearance_mm": 0.5,
+      "extra_z_clearance_mm": 0.5,
+      "assembly_allowance_in_contract_mm": 0.15,
+      "body_height_basis": "manufacturer package/part dimension; conservative package maxima where listed",
+      "source_url": "https://www.we-online.com/components/products/datasheet/74437349010.pdf"
+    },
+    {
+      "reference": "L201",
+      "side": "F.Cu",
+      "MPN": "XGL4030-152MEC",
+      "missing_from_step": true,
+      "underside": false,
+      "source_contract_bounds_mm": [
+        [
+          61.25000000000001,
+          52.06491,
+          22.1
+        ],
+        [
+          65.55000000000001,
+          56.36491000000001,
+          25.35
+        ]
+      ],
+      "actual_step_models": [],
+      "union_before_extra_clearance_mm": [
+        [
+          61.25000000000001,
+          52.06491,
+          22.1
+        ],
+        [
+          65.55000000000001,
+          56.36491000000001,
+          25.35
+        ]
+      ],
+      "keepout_bounds_mm": [
+        [
+          60.75000000000001,
+          51.56491,
+          22.1
+        ],
+        [
+          66.05000000000001,
+          56.86491000000001,
+          25.85
+        ]
+      ],
+      "extra_lateral_clearance_mm": 0.5,
+      "extra_z_clearance_mm": 0.5,
+      "assembly_allowance_in_contract_mm": 0.15,
+      "body_height_basis": "manufacturer package/part dimension; conservative package maxima where listed",
+      "source_url": "https://www.coilcraft.com/pdfs/xgl4030.pdf"
+    },
+    {
+      "reference": "L701",
+      "side": "F.Cu",
+      "MPN": "XGL4020-102MEC",
+      "missing_from_step": true,
+      "underside": false,
+      "source_contract_bounds_mm": [
+        [
+          67.75,
+          67.2,
+          22.1
+        ],
+        [
+          72.05000000000001,
+          71.50000000000001,
+          24.35
+        ]
+      ],
+      "actual_step_models": [],
+      "union_before_extra_clearance_mm": [
+        [
+          67.75,
+          67.2,
+          22.1
+        ],
+        [
+          72.05000000000001,
+          71.50000000000001,
+          24.35
+        ]
+      ],
+      "keepout_bounds_mm": [
+        [
+          67.25,
+          66.7,
+          22.1
+        ],
+        [
+          72.55000000000001,
+          72.00000000000001,
+          24.85
+        ]
+      ],
+      "extra_lateral_clearance_mm": 0.5,
+      "extra_z_clearance_mm": 0.5,
+      "assembly_allowance_in_contract_mm": 0.15,
+      "body_height_basis": "manufacturer package/part dimension; conservative package maxima where listed",
+      "source_url": "https://www.coilcraft.com/pdfs/xgl4020.pdf"
+    },
+    {
+      "reference": "R112",
+      "side": "B.Cu",
+      "MPN": "RC0603FR-0710KL",
+      "missing_from_step": false,
+      "underside": true,
+      "source_contract_bounds_mm": [
+        [
+          78.73749999999998,
+          42.509910000000005,
+          19.75
+        ],
+        [
+          79.6625,
+          44.209909999999994,
+          20.5
+        ]
+      ],
+      "actual_step_models": [
+        {
+          "path": "Trimix_PCB_V2_Mechanical 1 [0:1:1:1] / R112 [0:1:1:1:142] / =>[0:1:1:7] [0:1:1:6:1]",
+          "bounds_mm": [
+            [
+              78.8,
+              42.55991,
+              20.0179
+            ],
+            [
+              79.6,
+              44.159909999999996,
+              20.4679
+            ]
+          ]
+        }
+      ],
+      "union_before_extra_clearance_mm": [
+        [
+          78.73749999999998,
+          42.509910000000005,
+          19.75
+        ],
+        [
+          79.6625,
+          44.209909999999994,
+          20.5
+        ]
+      ],
+      "keepout_bounds_mm": [
+        [
+          78.23749999999998,
+          42.009910000000005,
+          19.25
+        ],
+        [
+          80.1625,
+          44.709909999999994,
+          20.5
+        ]
+      ],
+      "extra_lateral_clearance_mm": 0.5,
+      "extra_z_clearance_mm": 0.5,
+      "assembly_allowance_in_contract_mm": 0.15,
+      "body_height_basis": "conservative resistor height allowance; exact maximum not separately supplied",
+      "source_url": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
+    },
+    {
+      "reference": "R119",
+      "side": "B.Cu",
+      "MPN": "RT0402BRD0719K1L",
+      "missing_from_step": false,
+      "underside": true,
+      "source_contract_bounds_mm": [
+        [
+          55.025,
+          31.309909999999988,
+          20.0
+        ],
+        [
+          56.12500000000001,
+          31.85991,
+          20.5
+        ]
+      ],
+      "actual_step_models": [
+        {
+          "path": "Trimix_PCB_V2_Mechanical 1 [0:1:1:1] / R119 [0:1:1:1:134] / =>[0:1:1:5] [0:1:1:4:1]",
+          "bounds_mm": [
+            [
+              55.074999999999996,
+              31.334909999999994,
+              20.117900000000002
+            ],
+            [
+              56.074999999999996,
+              31.834909999999994,
+              20.4679
+            ]
+          ]
+        }
+      ],
+      "union_before_extra_clearance_mm": [
+        [
+          55.025,
+          31.309909999999988,
+          20.0
+        ],
+        [
+          56.12500000000001,
+          31.85991,
+          20.5
+        ]
+      ],
+      "keepout_bounds_mm": [
+        [
+          54.525,
+          30.809909999999988,
+          19.5
+        ],
+        [
+          56.62500000000001,
+          32.35991,
+          20.5
+        ]
+      ],
+      "extra_lateral_clearance_mm": 0.5,
+      "extra_z_clearance_mm": 0.5,
+      "assembly_allowance_in_contract_mm": 0.15,
+      "body_height_basis": "explicit manufacturer maximum length/width/height from source-matched part fields; assembly allowance is separate",
+      "source_url": "https://yageogroup.com/content/datasheet/asset/file/pyu-rt_1-to-0-01_rohs_l"
+    },
+    {
+      "reference": "R121",
+      "side": "B.Cu",
+      "MPN": "TNPW060334K0BYEA",
+      "missing_from_step": false,
+      "underside": true,
+      "source_contract_bounds_mm": [
+        [
+          58.68750000000001,
+          34.349999999999994,
+          19.75
+        ],
+        [
+          59.612500000000004,
+          36.05,
+          20.5
+        ]
+      ],
+      "actual_step_models": [
+        {
+          "path": "Trimix_PCB_V2_Mechanical 1 [0:1:1:1] / R121 [0:1:1:1:131] / =>[0:1:1:7] [0:1:1:6:1]",
+          "bounds_mm": [
+            [
+              58.75,
+              34.400000000000006,
+              20.0179
+            ],
+            [
+              59.55,
+              36.0,
+              20.4679
+            ]
+          ]
+        }
+      ],
+      "union_before_extra_clearance_mm": [
+        [
+          58.68750000000001,
+          34.349999999999994,
+          19.75
+        ],
+        [
+          59.612500000000004,
+          36.05,
+          20.5
+        ]
+      ],
+      "keepout_bounds_mm": [
+        [
+          58.18750000000001,
+          33.849999999999994,
+          19.25
+        ],
+        [
+          60.112500000000004,
+          36.55,
+          20.5
+        ]
+      ],
+      "extra_lateral_clearance_mm": 0.5,
+      "extra_z_clearance_mm": 0.5,
+      "assembly_allowance_in_contract_mm": 0.15,
+      "body_height_basis": "explicit manufacturer maximum height from the source-matched native part fields",
+      "source_url": "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+    },
+    {
+      "reference": "R122",
+      "side": "B.Cu",
+      "MPN": "TNPW0603649RBYEA",
+      "missing_from_step": false,
+      "underside": true,
+      "source_contract_bounds_mm": [
+        [
+          60.00000000000001,
+          31.737499999999997,
+          19.75
+        ],
+        [
+          61.699999999999996,
+          32.662499999999994,
+          20.5
+        ]
+      ],
+      "actual_step_models": [
+        {
+          "path": "Trimix_PCB_V2_Mechanical 1 [0:1:1:1] / R122 [0:1:1:1:138] / =>[0:1:1:7] [0:1:1:6:1]",
+          "bounds_mm": [
+            [
+              60.05,
+              31.799999999999997,
+              20.0179
+            ],
+            [
+              61.65,
+              32.60000000000001,
+              20.4679
+            ]
+          ]
+        }
+      ],
+      "union_before_extra_clearance_mm": [
+        [
+          60.00000000000001,
+          31.737499999999997,
+          19.75
+        ],
+        [
+          61.699999999999996,
+          32.662499999999994,
+          20.5
+        ]
+      ],
+      "keepout_bounds_mm": [
+        [
+          59.50000000000001,
+          31.237499999999997,
+          19.25
+        ],
+        [
+          62.199999999999996,
+          33.162499999999994,
+          20.5
+        ]
+      ],
+      "extra_lateral_clearance_mm": 0.5,
+      "extra_z_clearance_mm": 0.5,
+      "assembly_allowance_in_contract_mm": 0.15,
+      "body_height_basis": "explicit manufacturer maximum height from the source-matched native part fields",
+      "source_url": "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+    },
+    {
+      "reference": "R123",
+      "side": "B.Cu",
+      "MPN": "TNPW060310K0BYEA",
+      "missing_from_step": false,
+      "underside": true,
+      "source_contract_bounds_mm": [
+        [
+          63.275,
+          31.9375,
+          19.75
+        ],
+        [
+          64.975,
+          32.8625,
+          20.5
+        ]
+      ],
+      "actual_step_models": [
+        {
+          "path": "Trimix_PCB_V2_Mechanical 1 [0:1:1:1] / R123 [0:1:1:1:141] / =>[0:1:1:7] [0:1:1:6:1]",
+          "bounds_mm": [
+            [
+              63.324999999999996,
+              32.0,
+              20.0179
+            ],
+            [
+              64.925,
+              32.80000000000001,
+              20.4679
+            ]
+          ]
+        }
+      ],
+      "union_before_extra_clearance_mm": [
+        [
+          63.275,
+          31.9375,
+          19.75
+        ],
+        [
+          64.975,
+          32.8625,
+          20.5
+        ]
+      ],
+      "keepout_bounds_mm": [
+        [
+          62.775,
+          31.4375,
+          19.25
+        ],
+        [
+          65.475,
+          33.3625,
+          20.5
+        ]
+      ],
+      "extra_lateral_clearance_mm": 0.5,
+      "extra_z_clearance_mm": 0.5,
+      "assembly_allowance_in_contract_mm": 0.15,
+      "body_height_basis": "explicit manufacturer maximum height from the source-matched native part fields",
+      "source_url": "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+    },
+    {
+      "reference": "R124",
+      "side": "B.Cu",
+      "MPN": "TNPW060321K5BEEA",
+      "missing_from_step": false,
+      "underside": true,
+      "source_contract_bounds_mm": [
+        [
+          65.9375,
+          32.8,
+          19.75
+        ],
+        [
+          66.86249999999998,
+          34.5,
+          20.5
+        ]
+      ],
+      "actual_step_models": [
+        {
+          "path": "Trimix_PCB_V2_Mechanical 1 [0:1:1:1] / R124 [0:1:1:1:139] / =>[0:1:1:7] [0:1:1:6:1]",
+          "bounds_mm": [
+            [
+              66.0,
+              32.85000000000001,
+              20.0179
+            ],
+            [
+              66.8,
+              34.45,
+              20.4679
+            ]
+          ]
+        }
+      ],
+      "union_before_extra_clearance_mm": [
+        [
+          65.9375,
+          32.8,
+          19.75
+        ],
+        [
+          66.86249999999998,
+          34.5,
+          20.5
+        ]
+      ],
+      "keepout_bounds_mm": [
+        [
+          65.4375,
+          32.3,
+          19.25
+        ],
+        [
+          67.36249999999998,
+          35.0,
+          20.5
+        ]
+      ],
+      "extra_lateral_clearance_mm": 0.5,
+      "extra_z_clearance_mm": 0.5,
+      "assembly_allowance_in_contract_mm": 0.15,
+      "body_height_basis": "explicit manufacturer maximum height from the source-matched native part fields",
+      "source_url": "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+    },
+    {
+      "reference": "R125",
+      "side": "B.Cu",
+      "MPN": "TNPW060310K0BEEA",
+      "missing_from_step": false,
+      "underside": true,
+      "source_contract_bounds_mm": [
+        [
+          67.86249999999998,
+          32.2,
+          19.75
+        ],
+        [
+          68.7875,
+          33.900000000000006,
+          20.5
+        ]
+      ],
+      "actual_step_models": [
+        {
+          "path": "Trimix_PCB_V2_Mechanical 1 [0:1:1:1] / R125 [0:1:1:1:146] / =>[0:1:1:7] [0:1:1:6:1]",
+          "bounds_mm": [
+            [
+              67.925,
+              32.25,
+              20.0179
+            ],
+            [
+              68.725,
+              33.849999999999994,
+              20.4679
+            ]
+          ]
+        }
+      ],
+      "union_before_extra_clearance_mm": [
+        [
+          67.86249999999998,
+          32.2,
+          19.75
+        ],
+        [
+          68.7875,
+          33.900000000000006,
+          20.5
+        ]
+      ],
+      "keepout_bounds_mm": [
+        [
+          67.36249999999998,
+          31.700000000000003,
+          19.25
+        ],
+        [
+          69.2875,
+          34.400000000000006,
+          20.5
+        ]
+      ],
+      "extra_lateral_clearance_mm": 0.5,
+      "extra_z_clearance_mm": 0.5,
+      "assembly_allowance_in_contract_mm": 0.15,
+      "body_height_basis": "explicit manufacturer maximum height from the source-matched native part fields",
+      "source_url": "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+    },
+    {
+      "reference": "R126",
+      "side": "B.Cu",
+      "MPN": "TNPW06031K65BEEA",
+      "missing_from_step": false,
+      "underside": true,
+      "source_contract_bounds_mm": [
+        [
+          68.6875,
+          29.150000000000006,
+          19.75
+        ],
+        [
+          69.61249999999998,
+          30.849999999999994,
+          20.5
+        ]
+      ],
+      "actual_step_models": [
+        {
+          "path": "Trimix_PCB_V2_Mechanical 1 [0:1:1:1] / R126 [0:1:1:1:135] / =>[0:1:1:7] [0:1:1:6:1]",
+          "bounds_mm": [
+            [
+              68.75,
+              29.200000000000003,
+              20.0179
+            ],
+            [
+              69.55,
+              30.799999999999997,
+              20.4679
+            ]
+          ]
+        }
+      ],
+      "union_before_extra_clearance_mm": [
+        [
+          68.6875,
+          29.150000000000006,
+          19.75
+        ],
+        [
+          69.61249999999998,
+          30.849999999999994,
+          20.5
+        ]
+      ],
+      "keepout_bounds_mm": [
+        [
+          68.1875,
+          28.650000000000006,
+          19.25
+        ],
+        [
+          70.11249999999998,
+          31.349999999999994,
+          20.5
+        ]
+      ],
+      "extra_lateral_clearance_mm": 0.5,
+      "extra_z_clearance_mm": 0.5,
+      "assembly_allowance_in_contract_mm": 0.15,
+      "body_height_basis": "explicit manufacturer maximum height from the source-matched native part fields",
+      "source_url": "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+    },
+    {
+      "reference": "R127",
+      "side": "B.Cu",
+      "MPN": "RC0603FR-0710KL",
+      "missing_from_step": false,
+      "underside": true,
+      "source_contract_bounds_mm": [
+        [
+          60.18750000000001,
+          26.400000000000006,
+          19.75
+        ],
+        [
+          61.112500000000004,
+          28.099999999999994,
+          20.5
+        ]
+      ],
+      "actual_step_models": [
+        {
+          "path": "Trimix_PCB_V2_Mechanical 1 [0:1:1:1] / R127 [0:1:1:1:147] / =>[0:1:1:7] [0:1:1:6:1]",
+          "bounds_mm": [
+            [
+              60.25,
+              26.450000000000003,
+              20.0179
+            ],
+            [
+              61.05,
+              28.049999999999997,
+              20.4679
+            ]
+          ]
+        }
+      ],
+      "union_before_extra_clearance_mm": [
+        [
+          60.18750000000001,
+          26.400000000000006,
+          19.75
+        ],
+        [
+          61.112500000000004,
+          28.099999999999994,
+          20.5
+        ]
+      ],
+      "keepout_bounds_mm": [
+        [
+          59.68750000000001,
+          25.900000000000006,
+          19.25
+        ],
+        [
+          61.612500000000004,
+          28.599999999999994,
+          20.5
+        ]
+      ],
+      "extra_lateral_clearance_mm": 0.5,
+      "extra_z_clearance_mm": 0.5,
+      "assembly_allowance_in_contract_mm": 0.15,
+      "body_height_basis": "explicit manufacturer maximum height from the source-matched native part fields",
+      "source_url": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
+    },
+    {
+      "reference": "R128",
+      "side": "B.Cu",
+      "MPN": "RC0603FR-07100KL",
+      "missing_from_step": false,
+      "underside": true,
+      "source_contract_bounds_mm": [
+        [
+          58.43750000000001,
+          26.400000000000006,
+          19.75
+        ],
+        [
+          59.362500000000004,
+          28.099999999999994,
+          20.5
+        ]
+      ],
+      "actual_step_models": [
+        {
+          "path": "Trimix_PCB_V2_Mechanical 1 [0:1:1:1] / R128 [0:1:1:1:145] / =>[0:1:1:7] [0:1:1:6:1]",
+          "bounds_mm": [
+            [
+              58.5,
+              26.450000000000003,
+              20.0179
+            ],
+            [
+              59.3,
+              28.049999999999997,
+              20.4679
+            ]
+          ]
+        }
+      ],
+      "union_before_extra_clearance_mm": [
+        [
+          58.43750000000001,
+          26.400000000000006,
+          19.75
+        ],
+        [
+          59.362500000000004,
+          28.099999999999994,
+          20.5
+        ]
+      ],
+      "keepout_bounds_mm": [
+        [
+          57.93750000000001,
+          25.900000000000006,
+          19.25
+        ],
+        [
+          59.862500000000004,
+          28.599999999999994,
+          20.5
+        ]
+      ],
+      "extra_lateral_clearance_mm": 0.5,
+      "extra_z_clearance_mm": 0.5,
+      "assembly_allowance_in_contract_mm": 0.15,
+      "body_height_basis": "conservative resistor height allowance; exact maximum not separately supplied",
+      "source_url": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
+    },
+    {
+      "reference": "R504",
+      "side": "B.Cu",
+      "MPN": "RT0603BRD0710KL",
+      "missing_from_step": false,
+      "underside": true,
+      "source_contract_bounds_mm": [
+        [
+          53.050000000000004,
+          73.03491000000001,
+          19.8
+        ],
+        [
+          53.949999999999996,
+          74.73491,
+          20.5
+        ]
+      ],
+      "actual_step_models": [
+        {
+          "path": "Trimix_PCB_V2_Mechanical 1 [0:1:1:1] / R504 [0:1:1:1:133] / =>[0:1:1:7] [0:1:1:6:1]",
+          "bounds_mm": [
+            [
+              53.1,
+              73.08491,
+              20.0179
+            ],
+            [
+              53.9,
+              74.68491,
+              20.4679
+            ]
+          ]
+        }
+      ],
+      "union_before_extra_clearance_mm": [
+        [
+          53.050000000000004,
+          73.03491000000001,
+          19.8
+        ],
+        [
+          53.949999999999996,
+          74.73491,
+          20.5
+        ]
+      ],
+      "keepout_bounds_mm": [
+        [
+          52.550000000000004,
+          72.53491000000001,
+          19.3
+        ],
+        [
+          54.449999999999996,
+          75.23491,
+          20.5
+        ]
+      ],
+      "extra_lateral_clearance_mm": 0.5,
+      "extra_z_clearance_mm": 0.5,
+      "assembly_allowance_in_contract_mm": 0.15,
+      "body_height_basis": "explicit manufacturer maximum length/width/height from source-matched part fields; assembly allowance is separate",
+      "source_url": "https://yageogroup.com/content/datasheet/asset/file/pyu-rt_1-to-0-01_rohs_l"
+    },
+    {
+      "reference": "U110",
+      "side": "F.Cu",
+      "MPN": "TUSB320LAIRWBR",
+      "missing_from_step": true,
+      "underside": false,
+      "source_contract_bounds_mm": [
+        [
+          74.775,
+          41.775000000000006,
+          22.1
+        ],
+        [
+          76.42500000000001,
+          43.42500000000001,
+          22.65
+        ]
+      ],
+      "actual_step_models": [],
+      "union_before_extra_clearance_mm": [
+        [
+          74.775,
+          41.775000000000006,
+          22.1
+        ],
+        [
+          76.42500000000001,
+          43.42500000000001,
+          22.65
+        ]
+      ],
+      "keepout_bounds_mm": [
+        [
+          74.275,
+          41.275000000000006,
+          22.1
+        ],
+        [
+          76.92500000000001,
+          43.92500000000001,
+          23.15
+        ]
+      ],
+      "extra_lateral_clearance_mm": 0.5,
+      "extra_z_clearance_mm": 0.5,
+      "assembly_allowance_in_contract_mm": 0.15,
+      "body_height_basis": "manufacturer package/part dimension; conservative package maxima where listed",
+      "source_url": "https://www.ti.com/lit/ds/symlink/tusb320lai.pdf"
+    },
+    {
+      "reference": "U111",
+      "side": "F.Cu",
+      "MPN": "PI3USB9201ZTAEX",
+      "missing_from_step": true,
+      "underside": false,
+      "source_contract_bounds_mm": [
+        [
+          75.82499999999999,
+          44.925,
+          22.1
+        ],
+        [
+          77.875,
+          46.97500000000001,
+          22.9
+        ]
+      ],
+      "actual_step_models": [],
+      "union_before_extra_clearance_mm": [
+        [
+          75.82499999999999,
+          44.925,
+          22.1
+        ],
+        [
+          77.875,
+          46.97500000000001,
+          22.9
+        ]
+      ],
+      "keepout_bounds_mm": [
+        [
+          75.32499999999999,
+          44.425,
+          22.1
+        ],
+        [
+          78.375,
+          47.47500000000001,
+          23.4
+        ]
+      ],
+      "extra_lateral_clearance_mm": 0.5,
+      "extra_z_clearance_mm": 0.5,
+      "assembly_allowance_in_contract_mm": 0.15,
+      "body_height_basis": "manufacturer package/part dimension; conservative package maxima where listed",
+      "source_url": "https://www.diodes.com/datasheet/download/PI3USB9201.pdf"
+    },
+    {
+      "reference": "U115",
+      "side": "B.Cu",
+      "MPN": "TPS259470ARPWR",
+      "missing_from_step": true,
+      "underside": true,
+      "source_contract_bounds_mm": [
+        [
+          63.85,
+          28.950000000000003,
+          19.35
+        ],
+        [
+          65.94999999999999,
+          31.049999999999997,
+          20.5
+        ]
+      ],
+      "actual_step_models": [],
+      "union_before_extra_clearance_mm": [
+        [
+          63.85,
+          28.950000000000003,
+          19.35
+        ],
+        [
+          65.94999999999999,
+          31.049999999999997,
+          20.5
+        ]
+      ],
+      "keepout_bounds_mm": [
+        [
+          63.35,
+          28.450000000000003,
+          18.85
+        ],
+        [
+          66.44999999999999,
+          31.549999999999997,
+          20.5
+        ]
+      ],
+      "extra_lateral_clearance_mm": 0.5,
+      "extra_z_clearance_mm": 0.5,
+      "assembly_allowance_in_contract_mm": 0.15,
+      "body_height_basis": "manufacturer package/part dimension; conservative package maxima where listed",
+      "source_url": "https://www.ti.com/lit/ds/symlink/tps25947.pdf"
+    }
+  ],
+  "original_case_intersections": [
+    {
+      "reference": "C107",
+      "part_id": "TMX-A3-P03",
+      "name": "Carrier / removable electronics tray:1",
+      "clearance_envelope_intersection_mm3": 15.679999999999906,
+      "body_and_assembly_envelope_intersection_mm3": 5.103999999999942,
+      "interpretation": "Keepout violation; dimensions are conservative AABB union, not measured physical penetration"
+    },
+    {
+      "reference": "C111",
+      "part_id": "TMX-A3-P03",
+      "name": "Carrier / removable electronics tray:1",
+      "clearance_envelope_intersection_mm3": 10.22999999999993,
+      "body_and_assembly_envelope_intersection_mm3": 2.5199999999999694,
+      "interpretation": "Keepout violation; dimensions are conservative AABB union, not measured physical penetration"
+    },
+    {
+      "reference": "C112",
+      "part_id": "TMX-A3-P03",
+      "name": "Carrier / removable electronics tray:1",
+      "clearance_envelope_intersection_mm3": 10.229999999999977,
+      "body_and_assembly_envelope_intersection_mm3": 2.519999999999987,
+      "interpretation": "Keepout violation; dimensions are conservative AABB union, not measured physical penetration"
+    },
+    {
+      "reference": "C113",
+      "part_id": "TMX-A3-P03",
+      "name": "Carrier / removable electronics tray:1",
+      "clearance_envelope_intersection_mm3": 10.229999999999977,
+      "body_and_assembly_envelope_intersection_mm3": 2.5199999999999867,
+      "interpretation": "Keepout violation; dimensions are conservative AABB union, not measured physical penetration"
+    },
+    {
+      "reference": "C114",
+      "part_id": "TMX-A3-P03",
+      "name": "Carrier / removable electronics tray:1",
+      "clearance_envelope_intersection_mm3": 27.599999999999966,
+      "body_and_assembly_envelope_intersection_mm3": 14.039999999999974,
+      "interpretation": "Keepout violation; dimensions are conservative AABB union, not measured physical penetration"
+    },
+    {
+      "reference": "C115",
+      "part_id": "TMX-A3-P03",
+      "name": "Carrier / removable electronics tray:1",
+      "clearance_envelope_intersection_mm3": 10.229999999999995,
+      "body_and_assembly_envelope_intersection_mm3": 2.519999999999999,
+      "interpretation": "Keepout violation; dimensions are conservative AABB union, not measured physical penetration"
+    },
+    {
+      "reference": "C116",
+      "part_id": "TMX-A3-P03",
+      "name": "Carrier / removable electronics tray:1",
+      "clearance_envelope_intersection_mm3": 3.813000000000047,
+      "body_and_assembly_envelope_intersection_mm3": 0.4042500000000123,
+      "interpretation": "Keepout violation; dimensions are conservative AABB union, not measured physical penetration"
+    },
+    {
+      "reference": "R112",
+      "part_id": "TMX-A3-P03",
+      "name": "Carrier / removable electronics tray:1",
+      "clearance_envelope_intersection_mm3": 6.496875000000011,
+      "body_and_assembly_envelope_intersection_mm3": 1.1793750000000065,
+      "interpretation": "Keepout violation; dimensions are conservative AABB union, not measured physical penetration"
+    },
+    {
+      "reference": "R119",
+      "part_id": "TMX-A3-P03",
+      "name": "Carrier / removable electronics tray:1",
+      "clearance_envelope_intersection_mm3": 3.255000000000037,
+      "body_and_assembly_envelope_intersection_mm3": 0.3025000000000086,
+      "interpretation": "Keepout violation; dimensions are conservative AABB union, not measured physical penetration"
+    },
+    {
+      "reference": "R121",
+      "part_id": "TMX-A3-P03",
+      "name": "Carrier / removable electronics tray:1",
+      "clearance_envelope_intersection_mm3": 6.4968749999999975,
+      "body_and_assembly_envelope_intersection_mm3": 1.1793749999999983,
+      "interpretation": "Keepout violation; dimensions are conservative AABB union, not measured physical penetration"
+    },
+    {
+      "reference": "R122",
+      "part_id": "TMX-A3-P03",
+      "name": "Carrier / removable electronics tray:1",
+      "clearance_envelope_intersection_mm3": 6.496874999999963,
+      "body_and_assembly_envelope_intersection_mm3": 1.1793749999999885,
+      "interpretation": "Keepout violation; dimensions are conservative AABB union, not measured physical penetration"
+    },
+    {
+      "reference": "R123",
+      "part_id": "TMX-A3-P03",
+      "name": "Carrier / removable electronics tray:1",
+      "clearance_envelope_intersection_mm3": 6.49687499999998,
+      "body_and_assembly_envelope_intersection_mm3": 1.1793749999999934,
+      "interpretation": "Keepout violation; dimensions are conservative AABB union, not measured physical penetration"
+    },
+    {
+      "reference": "R124",
+      "part_id": "TMX-A3-P03",
+      "name": "Carrier / removable electronics tray:1",
+      "clearance_envelope_intersection_mm3": 6.4968749999999496,
+      "body_and_assembly_envelope_intersection_mm3": 1.17937499999998,
+      "interpretation": "Keepout violation; dimensions are conservative AABB union, not measured physical penetration"
+    },
+    {
+      "reference": "R125",
+      "part_id": "TMX-A3-P03",
+      "name": "Carrier / removable electronics tray:1",
+      "clearance_envelope_intersection_mm3": 6.4968750000000455,
+      "body_and_assembly_envelope_intersection_mm3": 1.1793750000000165,
+      "interpretation": "Keepout violation; dimensions are conservative AABB union, not measured physical penetration"
+    },
+    {
+      "reference": "R126",
+      "part_id": "TMX-A3-P03",
+      "name": "Carrier / removable electronics tray:1",
+      "clearance_envelope_intersection_mm3": 6.496874999999916,
+      "body_and_assembly_envelope_intersection_mm3": 1.1793749999999703,
+      "interpretation": "Keepout violation; dimensions are conservative AABB union, not measured physical penetration"
+    },
+    {
+      "reference": "R127",
+      "part_id": "TMX-A3-P03",
+      "name": "Carrier / removable electronics tray:1",
+      "clearance_envelope_intersection_mm3": 6.496874999999964,
+      "body_and_assembly_envelope_intersection_mm3": 1.1793749999999885,
+      "interpretation": "Keepout violation; dimensions are conservative AABB union, not measured physical penetration"
+    },
+    {
+      "reference": "R128",
+      "part_id": "TMX-A3-P03",
+      "name": "Carrier / removable electronics tray:1",
+      "clearance_envelope_intersection_mm3": 6.496874999999964,
+      "body_and_assembly_envelope_intersection_mm3": 1.1793749999999885,
+      "interpretation": "Keepout violation; dimensions are conservative AABB union, not measured physical penetration"
+    },
+    {
+      "reference": "R504",
+      "part_id": "TMX-A3-P03",
+      "name": "Carrier / removable electronics tray:1",
+      "clearance_envelope_intersection_mm3": 6.155999999999943,
+      "body_and_assembly_envelope_intersection_mm3": 1.0709999999999815,
+      "interpretation": "Keepout violation; dimensions are conservative AABB union, not measured physical penetration"
+    },
+    {
+      "reference": "U115",
+      "part_id": "TMX-A3-P03",
+      "name": "Carrier / removable electronics tray:1",
+      "clearance_envelope_intersection_mm3": 15.85649999999989,
+      "body_and_assembly_envelope_intersection_mm3": 5.07149999999995,
+      "interpretation": "Keepout violation; dimensions are conservative AABB union, not measured physical penetration"
+    }
+  ],
+  "through_hole_models_with_underside_tails": [
+    {
+      "reference": "J501",
+      "definition_name": "PinHeader_1x03_P254mm_Vertical",
+      "world_model_bounds_mm": [
+        [
+          53.129999999999995,
+          78.68991,
+          19.13209999999978
+        ],
+        [
+          55.67,
+          86.30991,
+          30.67210000000022
+        ]
+      ],
+      "note": "Inspect actual below-board solids for tail relief; full AABB includes above-board body and must not be cut blindly."
+    },
+    {
+      "reference": "J701",
+      "definition_name": "JST_B4B_XH_A",
+      "world_model_bounds_mm": [
+        [
+          66.9,
+          88.125,
+          18.732099999999736
+        ],
+        [
+          79.3,
+          93.875,
+          29.1321
+        ]
+      ],
+      "note": "Inspect actual below-board solids for tail relief; full AABB includes above-board body and must not be cut blindly."
+    },
+    {
+      "reference": "J601",
+      "definition_name": "JST_B4B_XH_A",
+      "world_model_bounds_mm": [
+        [
+          66.9,
+          96.125,
+          18.732099999999736
+        ],
+        [
+          79.3,
+          101.875,
+          29.1321
+        ]
+      ],
+      "note": "Inspect actual below-board solids for tail relief; full AABB includes above-board body and must not be cut blindly."
+    },
+    {
+      "reference": "J801",
+      "definition_name": "PinHeader_1x02_P254mm_Vertical",
+      "world_model_bounds_mm": [
+        [
+          52.854999,
+          67.22999999999999,
+          19.13209999999978
+        ],
+        [
+          57.934999,
+          69.77000000000001,
+          30.67210000000022
+        ]
+      ],
+      "note": "Inspect actual below-board solids for tail relief; full AABB includes above-board body and must not be cut blindly."
+    },
+    {
+      "reference": "J402",
+      "definition_name": "Amphenol RF 142138 - drawing reconstruction; mating details reference",
+      "world_model_bounds_mm": [
+        [
+          51.35,
+          99.9,
+          18.232100000000003
+        ],
+        [
+          58.35,
+          106.9,
+          29.732100000000003
+        ]
+      ],
+      "note": "Inspect actual below-board solids for tail relief; full AABB includes above-board body and must not be cut blindly."
+    },
+    {
+      "reference": "J103",
+      "definition_name": "PinHeader_1x02_P254mm_Vertical",
+      "world_model_bounds_mm": [
+        [
+          53.129999999999995,
+          38.465,
+          19.13209999999978
+        ],
+        [
+          55.67,
+          43.545000000000016,
+          30.67210000000022
+        ]
+      ],
+      "note": "Inspect actual below-board solids for tail relief; full AABB includes above-board body and must not be cut blindly."
+    },
+    {
+      "reference": "J104",
+      "definition_name": "PinHeader_1x02_P254mm_Vertical",
+      "world_model_bounds_mm": [
+        [
+          53.129999999999995,
+          46.465,
+          19.13209999999978
+        ],
+        [
+          55.67,
+          51.545000000000016,
+          30.67210000000022
+        ]
+      ],
+      "note": "Inspect actual below-board solids for tail relief; full AABB includes above-board body and must not be cut blindly."
+    },
+    {
+      "reference": "J802",
+      "definition_name": "PinHeader_1x02_P254mm_Vertical",
+      "world_model_bounds_mm": [
+        [
+          54.855,
+          63.43,
+          19.13209999999978
+        ],
+        [
+          59.935,
+          65.97,
+          30.67210000000022
+        ]
+      ],
+      "note": "Inspect actual below-board solids for tail relief; full AABB includes above-board body and must not be cut blindly."
+    },
+    {
+      "reference": "J301",
+      "definition_name": "Samtec HTSW-113-07-L-D-007 nominal drawing reconstruction",
+      "world_model_bounds_mm": [
+        [
+          73.8804,
+          49.485,
+          19.592100000000002
+        ],
+        [
+          78.90960000000001,
+          82.505,
+          30.5141
+        ]
+      ],
+      "note": "Inspect actual below-board solids for tail relief; full AABB includes above-board body and must not be cut blindly."
+    },
+    {
+      "reference": "J401",
+      "definition_name": "PinHeader_1x03_P254mm_Vertical",
+      "world_model_bounds_mm": [
+        [
+          54.03,
+          89.19,
+          19.13209999999978
+        ],
+        [
+          56.57,
+          96.81,
+          30.67210000000022
+        ]
+      ],
+      "note": "Inspect actual below-board solids for tail relief; full AABB includes above-board body and must not be cut blindly."
+    }
+  ],
+  "limitations": [
+    "No source CAD modified.",
+    "STEP AABBs and stated maximum/assembly envelope are conservative geometric allocations, not exact physical geometry.",
+    "Through-hole pin tails require separate actual-shape relief.",
+    "Fixed mounting datums are retained; no mechanical strength or insertion-load qualification."
+  ]
+}

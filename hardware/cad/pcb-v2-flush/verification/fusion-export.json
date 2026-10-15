@@ -1,0 +1,10 @@
+{
+  "assembly_sha256": "79225d79da03dffc99aed4493ad1db59cdcac9ab09d6a4aa10a84cceb84351cc",
+  "fusion_sha256": "c83266f1daf5f2f9fe5356fb41434e3772d82dae88234c1f74a4cfa6686505de",
+  "native_fusion_export_confirmed": true,
+  "zip_integrity_pass": true,
+  "entries": 431,
+  "source_document_name": "Trimix_Enclosure_PCB2_Flush",
+  "limitations": "STEP-imported BREP document; original parametric timeline is preserved separately.",
+  "selection_status": "Not selected: user prefers to retain 85 mm width."
+}

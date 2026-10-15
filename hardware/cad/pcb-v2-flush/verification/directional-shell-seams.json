@@ -1,0 +1,173 @@
+{
+  "input_sha256": {
+    "pcb-v2:TMX-A3-P01": "1139f22e01d692b8f32ced147bc28b396461b45793dd08b1e7cf70d62bc3c48a",
+    "pcb-v2:TMX-A3-P02": "b829d73a5c2404b46e2966cc9c7b8fa605cf3bfdb1beb2f504138286456c791b",
+    "pcb-v2-flush:TMX-A3-P01": "c08adeb1af4e3e3784cdb7725dabd13836bc9bffc697528776608c990bceb452",
+    "pcb-v2-flush:TMX-A3-P02": "68f058cf207becf669b234a4e59701390a5582eed6c89001ea667fd959d4a1d5"
+  },
+  "checks": {
+    "TMX-A3-P01": {
+      "old_volume_mm3": 98861.05121393217,
+      "new_volume_mm3": 121137.36311964989,
+      "old_common_new": {
+        "valid": false,
+        "solid_volumes_mm3": [
+          -94.86700609072808,
+          -163.77757012026717,
+          -94.86700609072773,
+          -48.406706804062736,
+          -5.361651462126591
+        ],
+        "absolute_common_volume_mm3": 407.2799405679123,
+        "faces": 10,
+        "edges": 15
+      },
+      "new_common_old": {
+        "valid": false,
+        "solid_volumes_mm3": [
+          -94.86700609072808,
+          -163.77757012026717,
+          -94.86700609072773,
+          -48.406706804062736,
+          -5.361651462126591
+        ],
+        "absolute_common_volume_mm3": 407.2799405679123,
+        "faces": 10,
+        "edges": 15
+      },
+      "old_minus_new": {
+        "valid": false,
+        "solid_volumes_mm3": [
+          99268.07829986863,
+          0.25285132070011124
+        ],
+        "absolute_common_volume_mm3": 99268.33115118934,
+        "faces": 268,
+        "edges": 695
+      },
+      "new_minus_old": {
+        "valid": false,
+        "solid_volumes_mm3": [
+          99268.07829965475,
+          22276.563625971892
+        ],
+        "absolute_common_volume_mm3": 121544.64192562664,
+        "faces": 292,
+        "edges": 752
+      },
+      "directional_common_equal": true,
+      "old_material_retained": false,
+      "negative_or_invalid_common": true,
+      "small_positive_added_solids_mm3": []
+    },
+    "TMX-A3-P02": {
+      "old_volume_mm3": 35539.77078849092,
+      "new_volume_mm3": 39406.62370783487,
+      "old_common_new": {
+        "valid": false,
+        "solid_volumes_mm3": [
+          77.20778105462246,
+          77.20778105462247,
+          77.20778105462246,
+          77.20778105462246,
+          -12.259279932470761,
+          -12.259279932470767
+        ],
+        "absolute_common_volume_mm3": 333.3496840834314,
+        "faces": 12,
+        "edges": 18
+      },
+      "new_common_old": {
+        "valid": false,
+        "solid_volumes_mm3": [
+          77.20778105462246,
+          77.20778105462247,
+          77.20778105462246,
+          77.20778105462246,
+          -12.259279932470761,
+          -12.259279932470767
+        ],
+        "absolute_common_volume_mm3": 333.3496840834314,
+        "faces": 12,
+        "edges": 18
+      },
+      "old_minus_new": {
+        "valid": false,
+        "solid_volumes_mm3": [
+          35255.458224137394
+        ],
+        "absolute_common_volume_mm3": 35255.458224137394,
+        "faces": 117,
+        "edges": 249
+      },
+      "new_minus_old": {
+        "valid": false,
+        "solid_volumes_mm3": [
+          35255.45822413811,
+          3556.943959671252,
+          309.90895967121065
+        ],
+        "absolute_common_volume_mm3": 39122.31114348057,
+        "faces": 143,
+        "edges": 299
+      },
+      "directional_common_equal": true,
+      "old_material_retained": false,
+      "negative_or_invalid_common": true,
+      "small_positive_added_solids_mm3": []
+    }
+  },
+  "limits": [
+    "Boolean orientation and continuity audit only; does not establish print strength, ergonomics or environmental sealing."
+  ],
+  "material_witnesses": {
+    "continuous_front_floor_across_old_new_seam": {
+      "expected_mm3": 3912.0,
+      "filled_mm3": 3912.0,
+      "missing_mm3": 0,
+      "missing_valid": true,
+      "pass": true
+    },
+    "new_continuous_right_wall_between_usb_button": {
+      "expected_mm3": 3663.000000000005,
+      "filled_mm3": 3663.000000000005,
+      "missing_mm3": 0,
+      "missing_valid": true,
+      "pass": true
+    },
+    "new_continuous_right_wall_between_button_gas": {
+      "expected_mm3": 1628.000000000002,
+      "filled_mm3": 1628.000000000002,
+      "missing_mm3": 0,
+      "missing_valid": true,
+      "pass": true
+    },
+    "new_rear_cover_across_old_new_seam": {
+      "expected_mm3": 3129.6000000000076,
+      "filled_mm3": 3124.6467117528077,
+      "missing_mm3": 4.953288247199806,
+      "missing_valid": true,
+      "pass": false
+    }
+  },
+  "front_section_z1": {
+    "section": {
+      "valid": true,
+      "solid_volumes_mm3": [
+        18.183898510707078
+      ],
+      "absolute_common_volume_mm3": 18.183898510707078,
+      "faces": 18,
+      "edges": 48
+    },
+    "top_horizontal_faces": [
+      {
+        "area_mm2": 9091.946934771564,
+        "wires": 2
+      }
+    ],
+    "expected_one_face_two_wires": true
+  },
+  "hashes_unchanged": true,
+  "pass": false
+}

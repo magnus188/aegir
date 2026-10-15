@@ -1,0 +1,26 @@
+{
+  "output": "hardware/cad/pcb-v2-flush/views/pcb2-case-open.png",
+  "leaf_instances": 200,
+  "triangles": 365572,
+  "view": "iso",
+  "bounds": [
+    [
+      -6.0,
+      -1e-07,
+      -1.0000005187065943e-07
+    ],
+    [
+      96.60000009999999,
+      180.0000001,
+      43.0
+    ]
+  ],
+  "source": "/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/cad/pcb-v2-flush/Trimix_Enclosure_PCB2.step",
+  "sha256": "79225d79da03dffc99aed4493ad1db59cdcac9ab09d6a4aa10a84cceb84351cc",
+  "settings": {
+    "view": "iso",
+    "hide": "TMX-A3-P02",
+    "title": "PCB 2.0 \u2013 faktisk CAD-geometri, baklokket skjult"
+  },
+  "method": "Actual STEP BREP tessellation, orthographic per-pixel depth buffer; illustrative colors"
+}

@@ -1,0 +1,58 @@
+{
+  "units": "mm",
+  "coordinates": "Native assembly coordinates before print rotation/translation",
+  "source": "Root Fusion geometry owner supplied these exclusion bounds for revised teardrop roofs on 2026-09-06",
+  "role": "Non-printable Bambu support_blocker volumes; never subtract from manufactured geometry",
+  "blockers": [
+    {
+      "id": "Gas inlet exclusion",
+      "bounds_mm": [
+        [
+          63,
+          159.9,
+          19.4
+        ],
+        [
+          83,
+          167.6,
+          25.6
+        ]
+      ],
+      "safety_halo_mm": 0.35
+    },
+    {
+      "id": "Gas exhaust exclusion",
+      "bounds_mm": [
+        [
+          2.8,
+          159.9,
+          19.4
+        ],
+        [
+          10.1,
+          165.1,
+          25.6
+        ]
+      ],
+      "safety_halo_mm": 0.35
+    },
+    {
+      "id": "Gas rear return exclusion",
+      "bounds_mm": [
+        [
+          4.9,
+          145.3,
+          30.9
+        ],
+        [
+          10.1,
+          165.1,
+          36.1
+        ]
+      ],
+      "safety_halo_mm": 0.35
+    }
+  ],
+  "external_support_intent": "External inlet underside supports below native Z17.5 are accessible. Verify all generated support paths against the protected regions and document removal access.",
+  "safety_halo_basis": "Expand blockers0.35mm beyond protected core so generated support beads, not only their centrelines, stay out. Audit original core with line-width and layer-height envelope."
+}

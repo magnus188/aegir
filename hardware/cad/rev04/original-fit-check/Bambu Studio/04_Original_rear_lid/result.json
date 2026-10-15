@@ -1,0 +1,72 @@
+{
+    "error_string": "Success.",
+    "export_time": 763,
+    "layer_height": 0.10000000149011612,
+    "plate_index": 0,
+    "prepare_time": 618,
+    "return_code": 0,
+    "sliced_plates": [
+        {
+            "feature_type_times": {
+                "Bottom surface": 483.0547790527344,
+                "Bridge": 626.592041015625,
+                "Brim": 78.50457763671875,
+                "Custom": 301.15887451171875,
+                "Flush": 26.0,
+                "Gap infill": 1.9835180044174194,
+                "Inner wall": 787.8126220703125,
+                "Internal solid infill": 3430.893310546875,
+                "Outer wall": 624.9801635742188,
+                "Overhang wall": 17.501873016357422,
+                "Sparse infill": 512.4794311523438,
+                "Support": 10.874746322631836,
+                "Support interface": 6.899633407592773,
+                "Support transition": 2.940749406814575,
+                "Top surface": 281.047607421875,
+                "Travel": 333.5161437988281,
+                "Undefined": 324.1401672363281
+            },
+            "filament_change_times": 0,
+            "filaments": [
+                {
+                    "filament_id": "GFA00",
+                    "id": 1,
+                    "main_used_g": 39.740211486816406,
+                    "total_used_g": 39.740211486816406
+                }
+            ],
+            "generate_support_material_time": 232,
+            "id": 1,
+            "infill_time": 116,
+            "layer_filament_change": 0,
+            "main_predication": 7173.01318359375,
+            "make_perimeters_time": 124,
+            "obj_cached_cnt": 0,
+            "objects": [
+                {
+                    "bbox": {
+                        "depth": 179.5,
+                        "height": 11.800000190734863,
+                        "width": 84.50000762939453,
+                        "x": 132.74998474121094,
+                        "y": 70.25,
+                        "z": 0.0
+                    },
+                    "id": 5,
+                    "name": "TMX-A3-P02 | Single rear cover",
+                    "triangle_count": 359072
+                }
+            ],
+            "sliced_time": 828,
+            "sliced_time_with_cache": 306,
+            "total_predication": 7516.7958984375,
+            "triangle_count": 359072,
+            "warning_message": ""
+        }
+    ],
+    "sparse_infill_density": 20.0,
+    "upward_compatible_machine": [
+        "Bambu Lab H2D Pro 0.4 nozzle"
+    ],
+    "wall_loops": 4
+}

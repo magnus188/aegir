@@ -1,0 +1,55 @@
+{
+  "status": "Placement investigation only. No routed PCB or finished case produced.",
+  "preferred_pose": {
+    "core_shift_mm": [
+      0,
+      -18.9,
+      3.5
+    ],
+    "socket_mouth_world_mm": [
+      42.5,
+      1.3,
+      27.33
+    ],
+    "nominal_pcb_size_xy_mm": [
+      46.38491,
+      99.8
+    ],
+    "retained_nominal_case_xyz_mm": [
+      85,
+      180,
+      43
+    ]
+  },
+  "checks": {
+    "nominal-placement-review.json": {
+      "sha256": "d284f1e1776e9a3b1e85c8cb7b186adc5d56177d55645edb05a817de481b3945",
+      "status": "Exact selected placement only; no CAD/PCB/schematic modification. Housing pocket, board mounts, carrier, USB support and cable-fit design remain open.",
+      "pass": true
+    },
+    "component-reserve-screen.json": {
+      "sha256": "6fa5ba783f9d4922a5e7dc2b17d5582076e0b507ce4a0ea7007f14f75f14d572",
+      "status": "pass_for_selected_static_component_reserves",
+      "pass": true
+    },
+    "source-preservation.json": {
+      "sha256": "2eb9afec73c783ac0b7e53869da2cc8ac94c51f9df8cb9fa028417b1eb237509",
+      "status": null,
+      "pass": true
+    }
+  },
+  "files": {
+    "LES-MEG.txt": "fadcbdbac495f9b4026ee71d641b1844ac297bd5976ad917176202f1e364be5b",
+    "verification/source-hashes.json": "42bbfb335176bcfeffd89705d055a1f51df0c66ea744aa0458aa7d973732e672",
+    "verification/usb-layout-study.json": "5961ebc659050c7f576833ab58530f307232a6979458a9a1058e4d1ff8ff9bde",
+    "verification/nominal-placement-review.json": "d284f1e1776e9a3b1e85c8cb7b186adc5d56177d55645edb05a817de481b3945",
+    "verification/source-preservation.json": "2eb9afec73c783ac0b7e53869da2cc8ac94c51f9df8cb9fa028417b1eb237509",
+    "verification/component-reserve-screen.json": "6fa5ba783f9d4922a5e7dc2b17d5582076e0b507ce4a0ea7007f14f75f14d572",
+    "verification/mechanical-placement-review.txt": "24bbf16d2c8aea97cc62e255a423f62284d75d10d2306ae9709f0e014cb5fbf4",
+    "scripts/verify_nominal_placement.py": "2c20dd3c9c06588d03f876b03aca8bbce4c8b22908313f66f4963c1da1c01db1",
+    "scripts/component_reserve_screen.py": "628cad0d479ffd59159accaa026e22de4a1fb8373c2355558f547fa73046cdbd",
+    "scripts/draw_placement.py": "e6a33198434825e37f2dcd168e940e1db1198f1e8a9c598a3edf0727fa3c6e49",
+    "views/usb-i-bunnen-studie.png": "3d3cc2b1bdf21890060d391635a9528d8a50dcb3ee92975ad0615e17ab42b009",
+    "views/usb-i-bunnen-studie.svg": "70bbf4e10b934b2f1b13397bcbcaf9fa819bc9a74a864cb0c7009cd11a745ecf"
+  }
+}
