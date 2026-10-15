@@ -1,0 +1,8 @@
+{
+  "board_sha256": "59a0be0876394c670bd6c852033312527ccf9a4e02e94ac0437080b83f57085c",
+  "report_sha256": "eeb0e642309dd25c228e2fff3f8302b946ab4c5c62dead659c5f94489a7bed4d",
+  "violations": 0,
+  "unconnected_items": 0,
+  "schematic_parity": 0,
+  "method": "Native kicad-cli pcb drc --refill-zones --save-board --schematic-parity --severity-all"
+}

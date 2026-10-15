@@ -1,0 +1,50 @@
+{
+  "file": "Trimix_PCB_V2_Mechanical.step",
+  "sha256": "3498d386c480d86322c211ac33cb6374d962162a937a167221fb9be26367aefb",
+  "observed_pcb_brep_vertex_bounds_mm": {
+    "min": [
+      0.0,
+      -99.0,
+      0.0
+    ],
+    "max": [
+      45.1,
+      -0.0,
+      1.4942
+    ]
+  },
+  "vertex_count": 218,
+  "native_pcb_user_origin_mm": [
+    19.9,
+    21.48491
+  ],
+  "step_xy_from_native": "X=x-19.9; Y=-(y-21.48491)",
+  "finished_board_nominal_world_z_mm": [
+    20.5,
+    22.1
+  ],
+  "centred_substrate_import_translation_mm": [
+    50.4,
+    120,
+    20.5529
+  ],
+  "rotation_deg": [
+    0,
+    0,
+    0
+  ],
+  "front_component_model_datum_step_z_mm": 1.5792,
+  "front_component_model_datum_world_z_mm": 22.1321,
+  "usb_mouth_nominal_world_xyz_mm": [
+    95.5,
+    29.48491,
+    23.83
+  ],
+  "usb_mouth_export_model_world_z_mm_approx": 23.8621,
+  "native_fusion_fit_verified": false,
+  "notes": [
+    "Bounds are extracted from the PCB BREP vertex records, not an imported all-body collision check.",
+    "Apply no second Y flip and do not scale purchased components.",
+    "Finished thickness and component occupied-space allowances remain required."
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "date": "2026-10-15",
+  "source": "https://cart.jlcpcb.com/quote",
+  "status": "calculator estimate only; no Gerber upload or factory DFM confirmation for this variant yet",
+  "quantity": 5,
+  "unit": "USD",
+  "board_dimensions_mm": [
+    45.1,
+    99
+  ],
+  "layers": 4,
+  "thickness_mm": 1.6,
+  "material": "FR4 TG155",
+  "stackup": "JLC04161H-3313",
+  "outer_copper_oz": 1,
+  "inner_copper_oz": 0.5,
+  "finish": "ENIG 1 microinch",
+  "mask": "green",
+  "silkscreen": "white",
+  "via_covering": "Epoxy Filled & Capped",
+  "via_plating": "Horizontal Electroless Copper Plating",
+  "calculator_via_category": "0.3mm/(0.4/0.45mm)",
+  "actual_smallest_drill_mm": 0.2,
+  "actual_smallest_thermal_copper_mm": 0.45,
+  "via_category_condition": "Supplier must confirm actual 0.20 mm thermal drills with >=0.45 mm copper qualify; do NOT enlarge drills to 0.30 mm. Thermal holes are KiCad plated pads and require explicit coordinate classification.",
+  "electrical_test": "Flying Probe Fully Test; no 4-wire Kelvin addon",
+  "production_file_confirmation": "Yes, do not confirm automatically",
+  "amount_before_shipping_tax_parts_assembly": 50.02,
+  "breakdown": {
+    "base": 8.0,
+    "via_covering": 17.09,
+    "ENIG": 17.1,
+    "TG155": 3.42,
+    "via_plating": 3.36,
+    "production_file_confirmation": 1.05
+  },
+  "same_calculator_before_optional_file_confirmation_fee": 48.97,
+  "excluded": [
+    "shipping",
+    "tax/VAT",
+    "components",
+    "assembly",
+    "factory special-case surcharges"
+  ],
+  "shipping_display_not_relied_on": {
+    "USD": 31.44,
+    "method": "DHL Express (DDP)",
+    "reason": "Destination not explicitly verified; not a Norway delivered quote."
+  },
+  "proof": "../review/jlc-price-estimate.jpg",
+  "dom_evidence": "jlc-calculator-dom.txt",
+  "board_sha256": "1df55664b1f57ec4dcc38bbd2358f5aee306f59696f52271aafb94f233b992bc",
+  "caveats": [
+    "No fresh PCBWay quote for this variant.",
+    "Original USD450+ and this JLC calculator involve different suppliers; the reduction is not solely a layout saving.",
+    "No claim that the NOK400 delivered budget has been achieved."
+  ],
+  "overview_proof": "../review/jlc-price-overview.jpg",
+  "upload_attempt": "The browser file chooser event timed out. Native Codex app control is unavailable to the computer-use tool. No Gerber upload was confirmed; estimator only."
+}

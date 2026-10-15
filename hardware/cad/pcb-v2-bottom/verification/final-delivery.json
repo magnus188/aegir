@@ -1,0 +1,168 @@
+{
+  "timestamp_utc": "2026-10-15T19:24:55.406656+00:00",
+  "status": "Completed PCB layout and CAD prototype; independent digital checks passed",
+  "production_release": false,
+  "board_sha256": "59a0be0876394c670bd6c852033312527ccf9a4e02e94ac0437080b83f57085c",
+  "assembly_sha256": "cd3415fa71f6ea861aad5431b4af8b44af02217d2e5b17a71d7bb2bab0160402",
+  "preserved_sources": {
+    "design_sources": {
+      "files_checked": 18,
+      "unchanged": true,
+      "manifest_sha256": "acebcdfa07b780d17bf0718d5da55a834ecc15daf6c503c3b314df80e0d2d9a2"
+    },
+    "canonical_sources": {
+      "files_checked": 51,
+      "unchanged": true,
+      "manifest_sha256": "12e91986281369c36cefdda2c8eca19386d702f23d3b1ba262d95105bdefa832"
+    },
+    "derived_schematics": {
+      "files_checked": 14,
+      "byte_identical": true
+    }
+  },
+  "checks": {
+    "native_DRC_violations": 0,
+    "unconnected_items": 0,
+    "schematic_parity": 0,
+    "PCB_preservation": "28/28",
+    "USB_paths": "7/7",
+    "CAM": "44/44",
+    "CAM_process": "13/13",
+    "case_static_fit": true,
+    "continuous_removal_paths": 3,
+    "valid_print_meshes": 9
+  },
+  "reports": {
+    "hardware/cad/pcb-v2-bottom/verification/electronics-fit-independent.json": "5972234ab5dda97eee956f5a3bf579d7deae71d4f14707ff63b8754a37c3fc87",
+    "hardware/cad/pcb-v2-bottom/verification/mechanical-interfaces-independent.json": "34b2b00ccf5f3e93d22deb939a47ded6c4d9acca8af79d95b869defb02a93b5e",
+    "hardware/cad/pcb-v2-bottom/verification/delivery-checks.json": "7ca26772a8b1953c6d510b03e990d7708edfcdeb53d213c38bbc857f15a144b6",
+    "hardware/pcb/analyzer-v2-bottom/reference/verification/bottom-invariants.json": "bf53e1efda35fc7acdaa266351786bb1c7839c893b927df2537f622806aac0c1",
+    "hardware/pcb/analyzer-v2-bottom/reference/verification/usb-path-review.json": "ea5ac483cb1a2a94d71f6cc8c4a8c1eb39559295c0f24c98c124abefaa1b850e",
+    "hardware/pcb/analyzer-v2-bottom/manufacturing/independent-cam/audit.json": "b85d9ec23aabbf1e78e0f1a34d248d5bd0a722c1abcfb7f3cd5511e37508836e",
+    "hardware/pcb/analyzer-v2-bottom/manufacturing/cam-process-checks.json": "d35c1b21a1f414892ed22189d5e1454cf5eb2f339ee2f187f2ac252e618fbe87"
+  },
+  "native_Fusion_export": {
+    "method": "Local STEP opened in Fusion UI and exported as Autodesk Fusion Archive",
+    "source_assembly_sha256": "cd3415fa71f6ea861aad5431b4af8b44af02217d2e5b17a71d7bb2bab0160402",
+    "sha256": "0a07345f4647d66639d1f0e1480142ff395b2ed6a55ef118306c9a299459f2cc",
+    "zip_integrity_pass": true,
+    "archive_members": 431,
+    "editable_BREP": true,
+    "original_parametric_timeline": false,
+    "scope": "Native export lineage and archive integrity checked; no independent F3D BREP roundtrip audit"
+  },
+  "build_report_note": "Build-stage pending status is superseded by the exact-assembly independent reports above.",
+  "limitations": [
+    "Supplier footprint, short USB shell-stake soldering, selected fill/cap holes and matched stencil review pending.",
+    "Physical USB insertion/extraction/side load, screw/insert retention and print tolerances require prototype testing.",
+    "Charging/temperature, transient/ESD and sensor calibration require physical qualification.",
+    "No waterproof or print-strength qualification; no new fabrication price confirmed.",
+    "Inherited charging annotation and ERC findings are documented; verified source schematics remain unchanged."
+  ],
+  "artifacts": {
+    "hardware/cad/pcb-v2-bottom/Trimix_Enclosure_PCB2_Bottom.step": {
+      "sha256": "cd3415fa71f6ea861aad5431b4af8b44af02217d2e5b17a71d7bb2bab0160402",
+      "bytes": 32544281
+    },
+    "hardware/cad/pcb-v2-bottom/Trimix_Enclosure_PCB2_Bottom.f3d": {
+      "sha256": "0a07345f4647d66639d1f0e1480142ff395b2ed6a55ef118306c9a299459f2cc",
+      "bytes": 7667431
+    },
+    "hardware/cad/pcb-v2-bottom/Trimix_PCB2_Bottom_PrintParts.zip": {
+      "sha256": "fdb2ec9f82ac238688e29a4b703394ab50b9fa3d72985bd733c379f6487699e2",
+      "bytes": 924064
+    },
+    "hardware/pcb/analyzer-v2-bottom/manufacturing/Trimix_PCB_2_0_BOTTOM_QUOTE_ONLY.zip": {
+      "sha256": "4609aa368c7bf6db33b66d4c284c8287dccaa7590e3ae8208b48a5c2b615b043",
+      "bytes": 452432
+    },
+    "hardware/pcb/analyzer-v2-bottom/Trimix_Analyzer.kicad_pcb": {
+      "sha256": "59a0be0876394c670bd6c852033312527ccf9a4e02e94ac0437080b83f57085c",
+      "bytes": 1958082
+    },
+    "hardware/pcb/analyzer-v2-bottom/Trimix_Analyzer.kicad_pro": {
+      "sha256": "a19783ba0c7ddf75f1f4c9d4852db2b5f5c1939d6c844cb8ac0d7d6a9c6b418a",
+      "bytes": 17887
+    },
+    "hardware/cad/pcb-v2-bottom/LES-MEG.txt": {
+      "sha256": "af6e988ea509e95d7f2e218c66daf861cab58aaa8f8cefce584524145330bfe6",
+      "bytes": 7717
+    },
+    "hardware/pcb/analyzer-v2-bottom/LES-MEG.txt": {
+      "sha256": "b1b73c02e6a97f577dcc90327adf68e632f130a07a96e3eb871d5109f459278e",
+      "bytes": 3068
+    },
+    "hardware/pcb/analyzer-v2-bottom/review/Trimix_PCB_V2_Bottom_Mechanical.step": {
+      "sha256": "7a45218372eabc6bcc528d1cd8339923ae3ebecf3b5b9947e5490ee32d9d9773",
+      "bytes": 5330101
+    },
+    "hardware/cad/pcb-v2-bottom/parts/TMX-A3-P01.step": {
+      "sha256": "87594925ca9c36f81a96327c27e5e8c8cc099ebd7fa74adc53a7203bc88f1e2a",
+      "bytes": 794025
+    },
+    "hardware/cad/pcb-v2-bottom/parts/TMX-A3-P01.stl": {
+      "sha256": "21890698717489bd315cbfe349e2c6e61ef5399bca3775139c74128f3556b4a9",
+      "bytes": 674484
+    },
+    "hardware/cad/pcb-v2-bottom/parts/TMX-A3-P02.step": {
+      "sha256": "f9b5dd1246993fb4842a5b23f80627d1799049576837fe64d26158ae1c47a5b4",
+      "bytes": 307457
+    },
+    "hardware/cad/pcb-v2-bottom/parts/TMX-A3-P02.stl": {
+      "sha256": "3dc35c25ec7009eac04774ebda6760497085832d3bbc03f6c21639e5e7988d90",
+      "bytes": 753384
+    },
+    "hardware/cad/pcb-v2-bottom/parts/TMX-A3-P03.step": {
+      "sha256": "72a81826cca0bdaa758b0a465634746dcc2bbf498fcabdf683dd27d7d683d443",
+      "bytes": 875127
+    },
+    "hardware/cad/pcb-v2-bottom/parts/TMX-A3-P03.stl": {
+      "sha256": "0e541f4bb13506cffb05e161d843e8987a7bbca38f8834337c8b7003a6323e6b",
+      "bytes": 99884
+    },
+    "hardware/cad/pcb-v2-bottom/parts/TMX-A3-P04.stl": {
+      "sha256": "4cc0226b48a73540e4b228e1c9682e0e5dcc705ebfe7a7f29673ca360bf1b58f",
+      "bytes": 27284
+    },
+    "hardware/cad/pcb-v2-bottom/parts/TMX-A3-P05.stl": {
+      "sha256": "183e745e642a35c16599cf76eb7553d89b4f7bc5e69c3cb859c186b162261d58",
+      "bytes": 27284
+    },
+    "hardware/cad/pcb-v2-bottom/parts/TMX-A3-P07.stl": {
+      "sha256": "3731e777ef455245de1e9d966b588c7734641370e1bdd45e8a5abe6f22ea2d2d",
+      "bytes": 923284
+    },
+    "hardware/cad/pcb-v2-bottom/parts/TMX-A3-P08.stl": {
+      "sha256": "77e1f2aa1896d2f48a051718b7c84ee842057a6bac1c7cf5143f6beb6113d37b",
+      "bytes": 104684
+    },
+    "hardware/cad/pcb-v2-bottom/parts/TMX-A3-P11.stl": {
+      "sha256": "4983bda7bba11917a174b4228f71f70a04aaf7afd8682ea8d19ee9a28b98aa15",
+      "bytes": 341384
+    },
+    "hardware/cad/pcb-v2-bottom/parts/TMX-V2-P12.step": {
+      "sha256": "4ad6ffd0a737ff937ea578d31bd5b1389e3a8bf4e1b2e42e2bbbd757f45f182e",
+      "bytes": 144267
+    },
+    "hardware/cad/pcb-v2-bottom/parts/TMX-V2-P12.stl": {
+      "sha256": "1bcc2422235a2b638a03c715a1d1f0859e5fbf3a1212e2034afbf90cd318c6c3",
+      "bytes": 141884
+    },
+    "hardware/cad/pcb-v2-bottom/views/usb-bottom-closed.json": {
+      "sha256": "7b6a340fe330acaa7eda6e2f28ef0ba03492d70ec449cdcb178968f2fa727038",
+      "bytes": 651
+    },
+    "hardware/cad/pcb-v2-bottom/views/usb-bottom-closed.png": {
+      "sha256": "1ed5beb1f3e2bbc1aa29fa610a0979666132bdcfdebc6189078035adb68e22e8",
+      "bytes": 47893
+    },
+    "hardware/cad/pcb-v2-bottom/views/usb-bottom-open.json": {
+      "sha256": "e75c95d571cccaf24b9030a96fc1628daf78eca70451c47b3c35fef21c5f9be8",
+      "bytes": 708
+    },
+    "hardware/cad/pcb-v2-bottom/views/usb-bottom-open.png": {
+      "sha256": "838df2fb31cfe577718d21a4cb41c149fe1c39fa2918f78a6e7a7fda5743b621",
+      "bytes": 77122
+    }
+  }
+}

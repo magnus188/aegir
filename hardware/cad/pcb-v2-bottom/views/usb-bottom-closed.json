@@ -1,0 +1,23 @@
+{
+  "output": "hardware/cad/pcb-v2-bottom/views/usb-bottom-closed.png",
+  "leaf_instances": 201,
+  "triangles": 374454,
+  "view": "bottomiso",
+  "bounds": [
+    [
+      -6.0,
+      -1.0000000071518399e-07,
+      -1e-07
+    ],
+    [
+      91.0,
+      180.0,
+      43.0000001
+    ]
+  ],
+  "source": "/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/cad/pcb-v2-bottom/Trimix_Enclosure_PCB2_Bottom.step",
+  "sha256": "cd3415fa71f6ea861aad5431b4af8b44af02217d2e5b17a71d7bb2bab0160402",
+  "hidden": null,
+  "section": false,
+  "method": "Actual STEP BREP tessellation; orthographic per-pixel depth buffer; illustrative colors"
+}

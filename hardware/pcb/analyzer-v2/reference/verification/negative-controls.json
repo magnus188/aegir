@@ -1,0 +1,25 @@
+{
+  "purpose": "Deliberately invalid board copies; no canonical or actual variant mutation",
+  "source_board_sha256": "e5dd1a3131cbc76eeb74a2a957fd860f1adaa890bcdcdb1c6d2228629902c254",
+  "verifier_sha256": "ca9e6a0e6abefae86bffc30ab65f01aa071576c29d1e3b46b033778e76d4b577",
+  "controls": [
+    {
+      "name": "removed-esd-bridge",
+      "detected": true,
+      "exit_code": 1,
+      "failed_checks": [
+        "U901's four NC-pad pairs have real direct PCB copper bridges, not merely matching net names"
+      ],
+      "modified_board_sha256": "f4270520e171c44666bc443c1f70fddea48c278a4c0de3942e7552dde4580b36"
+    },
+    {
+      "name": "shifted-original-track",
+      "detected": true,
+      "exit_code": 1,
+      "failed_checks": [
+        "Every original track/via is preserved except three exact VSYS adjustments and the redundant J101 stub"
+      ],
+      "modified_board_sha256": "e7d59aecf3156485ba7c516f84295c118c1379d510d2cdf32493484284ac2cbd"
+    }
+  ]
+}

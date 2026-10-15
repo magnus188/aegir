@@ -1,0 +1,19 @@
+{
+  "model": "/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/kicad/analyzer/Trimix_Analog.3dshapes/Vishay_ACAS0606_AT.step",
+  "sha256": "b233db0454a9682a47a4edf6481cd8ce40712b92cf0206faafaf58f3a2981c76",
+  "nominal_bounds_mm": [
+    [
+      -0.75,
+      -0.8,
+      0
+    ],
+    [
+      0.75,
+      0.8,
+      0.45
+    ]
+  ],
+  "solid_count": 5,
+  "source": "Vishay ACAS0606 AT manufacturer drawing, doc28950",
+  "limits": "Drawing-derived nominal body; contacts are approximate end-wrap envelopes, not manufacturer CAD."
+}

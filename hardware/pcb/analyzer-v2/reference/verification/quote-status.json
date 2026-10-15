@@ -1,0 +1,7 @@
+{
+  "status": "root browser calculator completed",
+  "estimate_USD": 50.02,
+  "quantity": 5,
+  "evidence": "../price-estimate.json",
+  "factory_quote_pending": true
+}

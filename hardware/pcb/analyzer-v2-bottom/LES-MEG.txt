@@ -1,0 +1,54 @@
+TRIMIX PCB 2.0 – USB-C I BUNNEN
+15. oktober 2026 – ferdig layout og prototypegrunnlag
+
+Åpne Trimix_Analyzer.kicad_pro i denne mappen. Denne varianten hører sammen
+med kabinettet i hardware/cad/pcb-v2-bottom. Tidligere varianter er beholdt.
+
+GCT USB4105-GF-A, ESD-kretsen og den lokale USB-rutingen er flyttet som en
+gruppe til bunnen. Fem forbindelser til hovedkretsen er rutet på nytt.
+Hovedkretsens komponentplassering, eksisterende spor/viaer og alle 14
+skjemaer fra PCB 2.0 er bevart. Ingen elektrisk funksjon er bevisst endret.
+Originalfilene fra den tidligere gjennomgangen er også uendret.
+
+Kortet er 46,38491 x 99,8 mm, med fire kobberlag og 1,6 mm nominell tykkelse.
+VBUS-forbindelsen har 1 mm spor og to parallelle overgangsviaer. Et lokalt
+D+-spor på 7,63 mm bruker In1. Jordplanet er fortsatt sammenhengende;
+termiske kobberområder rundt U101/U201 er bevart innen numerisk toleranse.
+Ny kobberfylling er derfor kontrollert, ikke påstått identisk over hele kortet.
+
+SLUTTKONTROLLER
+Native KiCad DRC: 0 brudd, 0 manglende forbindelser, 0 skjemaavvik.
+Uavhengig bevaring: 28/28. USB-/ESD-forbindelser: 7/7.
+Eksportert CAM: 44/44, ingen åpne nett. Prosesskontroll: 13/13.
+Bevisst defekte kontrollkopier ble avvist av kontrollene.
+Rapportene ligger i reference/verification og manufacturing.
+
+FILER TIL FABRIKKENS PRISTILBUD OG GJENNOMGANG
+manufacturing/Trimix_PCB_2_0_BOTTOM_QUOTE_ONLY.zip inneholder Gerber,
+borefiler, samsvarende BOM/plasseringslister, 6 DNP-posisjoner og notater.
+148 komponenter monteres per kort. Listen for to kort inkluderer ikke
+leverandørens ekstra oppstarts-/svinnmengder. Ingen komponenter leveres selv.
+Systemdeler som batteripakke, skjerm, sensorer og kabler er egne deler.
+
+27 konkret angitte hull beholder krav om resin-fylling, planering og
+kobberkappe. Dette må ikke brukes på alle hull med samme diameter.
+Løsningen fjerner USB-datterkortet og bruker et mindre samlet kort, men
+prisen er ikke bekreftet. Fire lag og hullbehandlingen beholdes for å
+unngå en uprøvd endring av kjøling og monteringsprosess.
+
+Fabrikken må godkjenne USB-fotavtrykket og loddeprosessen for de korte
+skjermfestene, hullbehandlingen, stensil og dobbeltsidig montering.
+De rå paste-filene er kontrollfiler; DNP-åpninger må fjernes fra en faktisk
+stensil. Les FABRICATION_AND_ASSEMBLY_REVIEW_NOTES.txt før opplasting.
+
+BEVARTE IGANGKJØRINGSKRAV
+J104: monter kontaktpinnene, men ingen jumper før ladefunksjonen er testet.
+Charging-siden har en gammel ca. 0,57 A-merknad for R103=300 ohm.
+USB_Input_Limiter-siden dokumenterer ca. 1,06–1,31 A for samme motstand,
+med ytterligere kilde-/registerbegrensninger. Skjemaene er ikke endret her.
+Tre tidligere ERC-funn er også videreført, ikke løst av denne omplasseringen.
+
+Kontrollene dokumenterer layout og eksport, ikke målt produktsikkerhet.
+Prøvebygg må fortsatt kontrollere lodding, lading/temperatur, USB-innsetting,
+uttrekk/sidekrefter, transienter/ESD og målekretsens kalibrering før bruk.
+Ingen bestilling eller produksjonsgodkjenning er gjort med denne pakken.

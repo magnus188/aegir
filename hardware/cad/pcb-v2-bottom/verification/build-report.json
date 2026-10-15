@@ -1,0 +1,5951 @@
+{
+  "status": "FIT PROTOTYPE; independent component/load-path/removal checks pending",
+  "pcb": {
+    "mode": "ACTUAL BOTTOM PCB STEP; mechanical placements frozen, routing release separate",
+    "source": "hardware/pcb/analyzer-v2-bottom/review/Trimix_PCB_V2_Bottom_Mechanical.step",
+    "source_sha256": "7a45218372eabc6bcc528d1cd8339923ae3ebecf3b5b9947e5490ee32d9d9773",
+    "translation_mm": [
+      30.5,
+      122.58491,
+      24.0529
+    ],
+    "substrate_bounds": {
+      "min": [
+        34.01509,
+        1.2999999999999972,
+        24.0529
+      ],
+      "max": [
+        80.4,
+        101.1,
+        25.5471
+      ],
+      "size": [
+        46.384910000000005,
+        99.8,
+        1.4941999999999993
+      ],
+      "center": [
+        57.207545,
+        51.199999999999996,
+        24.8
+      ]
+    },
+    "connector_bounds": {
+      "min": [
+        38.0299998995145,
+        1.299999899999997,
+        24.6821
+      ],
+      "max": [
+        46.97000010048551,
+        9.080000000000002,
+        28.942100100000005
+      ],
+      "size": [
+        8.940000200971006,
+        7.780000100000005,
+        4.260000100000006
+      ],
+      "center": [
+        42.5,
+        5.18999995,
+        26.81210005
+      ]
+    },
+    "filled_notch_probe": {
+      "expected_mm3": 25.199999999999974,
+      "filled_mm3": 25.199999999999974,
+      "pass": true
+    }
+  },
+  "sources": {
+    "hardware/cad/rev04/original-fit-check/Trimix_Enclosure_A3_Original.step": "fab4ac189ffb369f3edf88eecf946b7e34c1c8f543a5e2456ca501b91afb08cc",
+    "hardware/cad/rev04/original-fit-check/Trimix_Enclosure_A3_Original.f3d": "f836b961124858c2dcd7a1dfc21f7061664676e73ff97e3bc7135f1e24771a1c",
+    "hardware/pcb/analyzer-v2/review/Trimix_PCB_V2_Mechanical.step": "3498d386c480d86322c211ac33cb6374d962162a937a167221fb9be26367aefb",
+    "hardware/pcb/analyzer-v2-bottom/review/Trimix_PCB_V2_Bottom_Mechanical.step": "7a45218372eabc6bcc528d1cd8339923ae3ebecf3b5b9947e5490ee32d9d9773"
+  },
+  "core_shift_mm": [
+    0,
+    -18.9,
+    3.5
+  ],
+  "main_pcb_nominal_planes_mm": [
+    24,
+    25.6
+  ],
+  "usb_mouth_mm": [
+    42.5,
+    1.3,
+    27.33
+  ],
+  "carrier_scrap": [],
+  "changed_print_parts": {
+    "TMX-A3-P01": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 98873.28257022929,
+      "bounds": {
+        "min": [
+          -1.7763568394002505e-15,
+          -1.0000000266453525e-07,
+          -1e-07
+        ],
+        "max": [
+          85.0000001,
+          180.00000000000048,
+          40.6000001
+        ],
+        "size": [
+          85.0000001,
+          180.00000010000048,
+          40.600000200000004
+        ],
+        "center": [
+          42.50000005,
+          89.99999995000024,
+          20.3
+        ]
+      }
+    },
+    "TMX-A3-P02": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 34989.84507760551,
+      "bounds": {
+        "min": [
+          0.2499999999999991,
+          0.24999989999999023,
+          32.8
+        ],
+        "max": [
+          84.7500001,
+          179.75,
+          43.0000001
+        ],
+        "size": [
+          84.5000001,
+          179.50000010000002,
+          10.200000100000004
+        ],
+        "center": [
+          42.50000005,
+          89.99999994999999,
+          37.90000005
+        ]
+      }
+    },
+    "TMX-A3-P03": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 4863.149521930368,
+      "bounds": {
+        "min": [
+          50.4,
+          2.6,
+          20.0
+        ],
+        "max": [
+          80.60000000000001,
+          100.90000000000002,
+          24.0
+        ],
+        "size": [
+          30.20000000000001,
+          98.30000000000003,
+          4.0
+        ],
+        "center": [
+          65.5,
+          51.75000000000001,
+          22.0
+        ]
+      }
+    },
+    "TMX-V2-P12": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 2100.35708162475,
+      "bounds": {
+        "min": [
+          26.21509,
+          0.13669950738916256,
+          22.2
+        ],
+        "max": [
+          52.60000000000001,
+          26.3,
+          40.6
+        ],
+        "size": [
+          26.38491000000001,
+          26.163300492610837,
+          18.400000000000002
+        ],
+        "center": [
+          39.407545000000006,
+          13.218349753694582,
+          31.4
+        ]
+      }
+    }
+  },
+  "assembly_file": "Trimix_Enclosure_PCB2_Bottom.step",
+  "usb_boss_axes_mm": [
+    [
+      30.01509,
+      5.8
+    ],
+    [
+      42.5,
+      22.5
+    ]
+  ],
+  "usb_insert_bottom_top_mm": [
+    27.3,
+    30.3
+  ],
+  "usb_screw_underhead_tip_mm": [
+    32.3,
+    27.3
+  ],
+  "usb_bearing_patches_xy_mm": [
+    [
+      34.81509,
+      36.81509,
+      3,
+      8.8
+    ],
+    [
+      48.5,
+      50.5,
+      3,
+      8.8
+    ]
+  ],
+  "usb_top_capture_bottom_mm": 25.86,
+  "main_mount_axes_mm": [
+    [
+      76,
+      9.1
+    ],
+    [
+      54.8,
+      95.1
+    ]
+  ],
+  "main_insert_bottom_top_mm": [
+    19,
+    22
+  ],
+  "main_screw_underhead_tip_mm": [
+    25.6,
+    18.6
+  ],
+  "moved_cover_screw_axis_mm": {
+    "direction": "+X head / -X insertion",
+    "yz": [
+      17,
+      37
+    ],
+    "underhead_x": 83.1,
+    "tip_x": 75.1,
+    "head_outer_x": 84.75,
+    "insert_x_extent": [
+      75.4,
+      80.4
+    ],
+    "lid_leg_box": [
+      72.6,
+      80.4,
+      12.8,
+      21.2,
+      32.8,
+      40.8
+    ],
+    "fixed_bearing_rib_box": [
+      80.7,
+      82.7,
+      12.8,
+      21.2,
+      32.8,
+      40.6
+    ],
+    "leg_rib_gap_mm": 0.3
+  },
+  "local_outer_corner_change": {
+    "corner": "lower-right",
+    "old_radius_mm": 8,
+    "new_radius_mm": 4,
+    "stock_extent_xy_mm": [
+      77.6,
+      85,
+      0,
+      8.25
+    ],
+    "original_rear_taper_preserved": true,
+    "matching_lid_corner": true
+  },
+  "main_withdrawal_channel_box_mm": [
+    50,
+    81.1,
+    1.7,
+    4.6,
+    19.7,
+    40.7
+  ],
+  "front_wall_skin": {
+    "flat_min_mm": 1.45,
+    "corner_horizontal_min_mm": 1.4260924647532502,
+    "conservative_surface_normal_lower_bound_mm": 1.426038395429753,
+    "derivation": "At rearZ40.6, R4 corner centre(80.75,4.25), nearest channel corner(81.1,1.7); thickness4-sqrt(0.35^2+2.55^2). Dividing by sqrt(1+2*(0.25/40.6)^2) conservatively accounts for loft slope. This is channel skin, not a blanket minimum over all designed holes or cosmetic rims."
+  },
+  "usb_load_path": {
+    "bearing_area_each_mm2": 11.6,
+    "floor_thickness_mm": 4,
+    "retainer_frame_thickness_mm": 4,
+    "screw_seat_thickness_mm": 2,
+    "upper_capture_nominal_gap_mm": 0.26,
+    "upper_capture_max_board_gap_mm": 0.1,
+    "insertion_stop_travel_mm": 0.1,
+    "extraction_stop_travel_mm": 0.2,
+    "description": "Insertion+Y: connector board to bare FR4 rear-edge stop, into original divider. Extraction-Y: bare front FR4 margins to removable panel rear face, into retainer frame and two M2 screws/inserts/floor. BendingZ: bare USB-wing margins captured between full lower ledges and upper feet; no component or pin contact. Tolerances, printing anisotropy, insert retention and real cable loads require prototype checks."
+  },
+  "assembly_removal_steps": [
+    "remove three top cover screws plus one horizontal right-side M3x8, then lift cover+Z (its M3 insert leg leaves with it)",
+    "remove two USB M2x5 and lift USB retainer+Z",
+    "disconnect harnesses, remove two PCB M2x7, then lift PCB+carrier+Z"
+  ],
+  "issues": [],
+  "assembly_instances": [
+    {
+      "part_id": "TMX-A3-P01",
+      "name": "01 Shape A housing:1",
+      "bounds": {
+        "min": [
+          -1.7763568394002505e-15,
+          -1.0000000266453525e-07,
+          -1e-07
+        ],
+        "max": [
+          85.0000001,
+          180.00000000000048,
+          40.6000001
+        ],
+        "size": [
+          85.0000001,
+          180.00000010000048,
+          40.600000200000004
+        ],
+        "center": [
+          42.50000005,
+          89.99999995000024,
+          20.3
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 98873.28257022929
+    },
+    {
+      "part_id": "TMX-A3-P02",
+      "name": "02 Single rear cover:1",
+      "bounds": {
+        "min": [
+          0.2499999999999991,
+          0.24999989999999023,
+          32.8
+        ],
+        "max": [
+          84.7500001,
+          179.75,
+          43.0000001
+        ],
+        "size": [
+          84.5000001,
+          179.50000010000002,
+          10.200000100000004
+        ],
+        "center": [
+          42.50000005,
+          89.99999994999999,
+          37.90000005
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 34989.84507760551
+    },
+    {
+      "part_id": "TMX-A3-F01",
+      "name": "M3 x 8 button screw \u2014 GEN-M3-BHCS-L8-AF2:1",
+      "bounds": {
+        "min": [
+          5.1499999999999995,
+          5.15,
+          33.349999999999994
+        ],
+        "max": [
+          10.85,
+          10.850000099999999,
+          43.0
+        ],
+        "size": [
+          5.7,
+          5.700000099999999,
+          9.650000000000006
+        ],
+        "center": [
+          8.0,
+          8.00000005,
+          38.175
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 88.27152332817529
+    },
+    {
+      "part_id": "TMX-A3-F04",
+      "name": "M3 insert OD4.2 x5 \u2014 GEN-M3-HEATSET-OD4.2-L5:1",
+      "bounds": {
+        "min": [
+          5.9,
+          5.9,
+          34.0
+        ],
+        "max": [
+          10.1,
+          10.1,
+          39.0
+        ],
+        "size": [
+          4.199999999999999,
+          4.199999999999999,
+          5.0
+        ],
+        "center": [
+          8.0,
+          8.0,
+          36.5
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 30.88970976642165
+    },
+    {
+      "part_id": "TMX-A3-P03",
+      "name": "Carrier / removable electronics tray:1",
+      "bounds": {
+        "min": [
+          50.4,
+          2.6,
+          20.0
+        ],
+        "max": [
+          80.60000000000001,
+          100.90000000000002,
+          24.0
+        ],
+        "size": [
+          30.20000000000001,
+          98.30000000000003,
+          4.0
+        ],
+        "center": [
+          65.5,
+          51.75000000000001,
+          22.0
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 4863.149521930368
+    },
+    {
+      "part_id": "TMX-A3-F03",
+      "name": "M2 x 7 socket_cap screw \u2014 GEN-M2-SHCS-L7-AF1.5:1",
+      "bounds": {
+        "min": [
+          74.0999999,
+          7.200000000000001,
+          18.6
+        ],
+        "max": [
+          77.9,
+          11.0000001,
+          27.6
+        ],
+        "size": [
+          3.8000001000000054,
+          3.8000000999999983,
+          9.0
+        ],
+        "center": [
+          75.99999995,
+          9.10000005,
+          23.1
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 40.52412651289782
+    },
+    {
+      "part_id": "TMX-A3-P04",
+      "name": "Display / lower rear-release retainer:1",
+      "bounds": {
+        "min": [
+          65.5,
+          5.699999999999999,
+          14.1
+        ],
+        "max": [
+          72.5,
+          16.0,
+          20.5
+        ],
+        "size": [
+          7.0,
+          10.3,
+          6.4
+        ],
+        "center": [
+          69.0,
+          10.85,
+          17.3
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 185.29048743125497
+    },
+    {
+      "part_id": "TMX-A3-P05",
+      "name": "Display / upper rear-release retainer:1",
+      "bounds": {
+        "min": [
+          7.0,
+          119.80000000000001,
+          14.1
+        ],
+        "max": [
+          14.0,
+          129.5,
+          20.5
+        ],
+        "size": [
+          7.0,
+          9.699999999999989,
+          6.4
+        ],
+        "center": [
+          10.5,
+          124.65,
+          17.3
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 152.49048743125465
+    },
+    {
+      "part_id": "TMX-A3-F02",
+      "name": "M2 x 5 socket_cap screw \u2014 GEN-M2-SHCS-L5-AF1.5:1",
+      "bounds": {
+        "min": [
+          67.0999999,
+          10.4,
+          15.5
+        ],
+        "max": [
+          70.9000001,
+          14.2000001,
+          22.5
+        ],
+        "size": [
+          3.8000001999999995,
+          3.8000001,
+          7.0
+        ],
+        "center": [
+          69.0,
+          12.300000050000001,
+          19.0
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 34.85355177316824
+    },
+    {
+      "part_id": "TMX-A3-C02",
+      "name": "Battery / FMA protected holder - owner-measured envelope:1",
+      "bounds": {
+        "min": [
+          5.4,
+          27.0,
+          16.5
+        ],
+        "max": [
+          47.400000000000006,
+          107.4,
+          36.85
+        ],
+        "size": [
+          42.00000000000001,
+          80.4,
+          20.35
+        ],
+        "center": [
+          26.400000000000002,
+          67.2,
+          26.675
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 9872.41141050058
+    },
+    {
+      "part_id": "TMX-A3-C03-V01",
+      "name": "Battery / 18650 cell A - owner-rated 3400 mAh:1",
+      "bounds": {
+        "min": [
+          7.1,
+          32.0,
+          17.65
+        ],
+        "max": [
+          25.300000000000004,
+          101.0,
+          35.85
+        ],
+        "size": [
+          18.200000000000003,
+          69.0,
+          18.200000000000003
+        ],
+        "center": [
+          16.200000000000003,
+          66.5,
+          26.75
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 17950.714847420186
+    },
+    {
+      "part_id": "TMX-A3-C03-V02",
+      "name": "Battery / 18650 cell B - owner-rated 3400 mAh:1",
+      "bounds": {
+        "min": [
+          27.5,
+          32.0,
+          17.65
+        ],
+        "max": [
+          45.7,
+          101.0,
+          35.85
+        ],
+        "size": [
+          18.200000000000003,
+          69.0,
+          18.200000000000003
+        ],
+        "center": [
+          36.6,
+          66.5,
+          26.75
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 17950.714847420186
+    },
+    {
+      "part_id": "TMX-A3-C10-V01",
+      "name": "Battery / red RCY disconnect body - provisional reference:1",
+      "bounds": {
+        "min": [
+          23.0,
+          110.0,
+          28.0
+        ],
+        "max": [
+          35.0,
+          120.0,
+          32.0
+        ],
+        "size": [
+          12.0,
+          10.0,
+          4.0
+        ],
+        "center": [
+          29.0,
+          115.0,
+          30.0
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 472.79999999999995
+    },
+    {
+      "part_id": "TMX-A3-C10-V02",
+      "name": "Battery / red RCY disconnect mate - provisional reference:1",
+      "bounds": {
+        "min": [
+          23.0,
+          110.0,
+          32.0
+        ],
+        "max": [
+          35.0,
+          120.0,
+          34.2
+        ],
+        "size": [
+          12.0,
+          10.0,
+          2.200000000000003
+        ],
+        "center": [
+          29.0,
+          115.0,
+          33.1
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 264.00000000000034
+    },
+    {
+      "part_id": "TMX-A3-P07",
+      "name": "Chamber / A3 top manifold with serial return:1",
+      "bounds": {
+        "min": [
+          3.0,
+          130.0,
+          2.9999999
+        ],
+        "max": [
+          82.0000001,
+          177.0000001,
+          36.0000001
+        ],
+        "size": [
+          79.0000001,
+          47.000000099999994,
+          33.0000002
+        ],
+        "center": [
+          42.50000005,
+          153.50000004999998,
+          19.5
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 23543.604121437904
+    },
+    {
+      "part_id": "TMX-A3-P08",
+      "name": "Chamber / A3 four-screw service lid:1",
+      "bounds": {
+        "min": [
+          3.0,
+          130.0,
+          27.3
+        ],
+        "max": [
+          72.5,
+          177.0,
+          38.0
+        ],
+        "size": [
+          69.5,
+          47.0,
+          10.7
+        ],
+        "center": [
+          37.75,
+          153.5,
+          32.65
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 4084.689383113251
+    },
+    {
+      "part_id": "TMX-A3-P11",
+      "name": "Chamber / AO2 hand-tight adapter reference:1",
+      "bounds": {
+        "min": [
+          34.9999999,
+          132.3999999,
+          11.649999900000001
+        ],
+        "max": [
+          38.80000010000002,
+          152.6000001,
+          31.850000100000003
+        ],
+        "size": [
+          3.800000200000021,
+          20.200000199999977,
+          20.2000002
+        ],
+        "center": [
+          36.900000000000006,
+          142.5,
+          21.75
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 501.3393732752125
+    },
+    {
+      "part_id": "TMX-A3-C06",
+      "name": "Sensor / AO2 dry body with wetted threaded nose:1",
+      "bounds": {
+        "min": [
+          32.4999999,
+          127.85,
+          7.1
+        ],
+        "max": [
+          70.75,
+          157.15,
+          36.4
+        ],
+        "size": [
+          38.2500001,
+          29.30000000000001,
+          29.299999999999997
+        ],
+        "center": [
+          51.62499995,
+          142.5,
+          21.75
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 22603.64016416586
+    },
+    {
+      "part_id": "TMX-A3-C12",
+      "name": "Sensor / AO2 cable connector allowance:1",
+      "bounds": {
+        "min": [
+          70.75,
+          137.5,
+          16.75
+        ],
+        "max": [
+          77.25,
+          147.5,
+          26.75
+        ],
+        "size": [
+          6.5,
+          10.0,
+          10.0
+        ],
+        "center": [
+          74.0,
+          142.5,
+          21.75
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 649.9999999999998
+    },
+    {
+      "part_id": "TMX-A3-C09",
+      "name": "Sensor / ZE07-CO drawing-derived assembly:1",
+      "bounds": {
+        "min": [
+          5.5,
+          132.3,
+          5.4
+        ],
+        "max": [
+          27.25,
+          157.7,
+          27.799999999999997
+        ],
+        "size": [
+          21.75,
+          25.399999999999977,
+          22.4
+        ],
+        "center": [
+          16.375,
+          145.0,
+          16.599999999999998
+        ]
+      },
+      "solid_count": 3,
+      "volume_mm3": 6322.395731494954
+    },
+    {
+      "part_id": "TMX-A3-C07",
+      "name": "Sensor / MD62 body and full-length lead references:1",
+      "bounds": {
+        "min": [
+          19.0,
+          163.0,
+          8.0
+        ],
+        "max": [
+          60.0,
+          172.5,
+          27.0
+        ],
+        "size": [
+          41.0,
+          9.5,
+          19.0
+        ],
+        "center": [
+          39.5,
+          167.75,
+          17.5
+        ]
+      },
+      "solid_count": 5,
+      "volume_mm3": 2548.205750411731
+    },
+    {
+      "part_id": "TMX-A3-C08",
+      "name": "Sensor / GYBMEP humidity breakout reference:1",
+      "bounds": {
+        "min": [
+          53.0,
+          162.8,
+          6.0
+        ],
+        "max": [
+          70.0,
+          174.8,
+          11.0
+        ],
+        "size": [
+          17.0,
+          12.0,
+          5.0
+        ],
+        "center": [
+          61.5,
+          168.8,
+          8.5
+        ]
+      },
+      "solid_count": 3,
+      "volume_mm3": 405.2
+    },
+    {
+      "part_id": "TMX-A3-C11-V01",
+      "name": "Gas / Viewer-left inlet fitting reference:1",
+      "bounds": {
+        "min": [
+          82.0,
+          158.5,
+          18.0
+        ],
+        "max": [
+          91.0,
+          166.5,
+          26.0
+        ],
+        "size": [
+          9.0,
+          8.0,
+          8.0
+        ],
+        "center": [
+          86.5,
+          162.5,
+          22.0
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 275.67475535250406
+    },
+    {
+      "part_id": "TMX-A3-C11-V02",
+      "name": "Gas / Viewer-right exhaust fitting reference:1",
+      "bounds": {
+        "min": [
+          -6.0,
+          158.5,
+          18.0
+        ],
+        "max": [
+          3.0,
+          166.5,
+          26.0
+        ],
+        "size": [
+          9.0,
+          8.0,
+          8.0
+        ],
+        "center": [
+          -1.5,
+          162.5,
+          22.0
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 275.67475535250406
+    },
+    {
+      "part_id": "TMX-A3-S02",
+      "name": "Chamber / AO2 face-seal allowance:1",
+      "bounds": {
+        "min": [
+          38.8,
+          132.4,
+          11.65
+        ],
+        "max": [
+          39.0,
+          152.6,
+          31.85
+        ],
+        "size": [
+          0.20000000000000284,
+          20.19999999999999,
+          20.200000000000003
+        ],
+        "center": [
+          38.9,
+          142.5,
+          21.75
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 23.882387352589944
+    },
+    {
+      "part_id": "TMX-A3-S01",
+      "name": "Chamber / sealed harness feedthrough allowance:1",
+      "bounds": {
+        "min": [
+          14.8,
+          128.7,
+          29.3
+        ],
+        "max": [
+          19.2,
+          132.0,
+          33.7
+        ],
+        "size": [
+          4.399999999999999,
+          3.3000000000000114,
+          4.400000000000002
+        ],
+        "center": [
+          17.0,
+          130.35,
+          31.5
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 50.17751786313634
+    },
+    {
+      "part_id": "TMX-V2-F01-SIDE",
+      "name": "M3 x 8 button screw \u2014 GEN-M3-BHCS-L8-AF2:2",
+      "bounds": {
+        "min": [
+          75.1,
+          14.15,
+          34.15
+        ],
+        "max": [
+          84.75,
+          19.85,
+          39.8500001
+        ],
+        "size": [
+          9.650000000000006,
+          5.700000000000001,
+          5.700000100000004
+        ],
+        "center": [
+          79.925,
+          17.0,
+          37.00000005
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 88.27152332817535
+    },
+    {
+      "part_id": "TMX-A3-F01",
+      "name": "M3 x 8 button screw \u2014 GEN-M3-BHCS-L8-AF2:3",
+      "bounds": {
+        "min": [
+          5.1499999999999995,
+          169.15,
+          33.349999999999994
+        ],
+        "max": [
+          10.850000099999999,
+          174.85,
+          43.0
+        ],
+        "size": [
+          5.7000001,
+          5.699999999999989,
+          9.650000000000006
+        ],
+        "center": [
+          8.000000049999999,
+          172.0,
+          38.175
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 88.27152332817522
+    },
+    {
+      "part_id": "TMX-A3-F01",
+      "name": "M3 x 8 button screw \u2014 GEN-M3-BHCS-L8-AF2:4",
+      "bounds": {
+        "min": [
+          74.14999999999999,
+          169.1499999,
+          33.349999999999994
+        ],
+        "max": [
+          79.85,
+          174.8500001,
+          43.0
+        ],
+        "size": [
+          5.700000000000003,
+          5.700000199999977,
+          9.650000000000006
+        ],
+        "center": [
+          77.0,
+          172.0,
+          38.175
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 88.27152332817522
+    },
+    {
+      "part_id": "TMX-V2-F04-SIDE",
+      "name": "M3 insert OD4.2 x5 \u2014 GEN-M3-HEATSET-OD4.2-L5:2",
+      "bounds": {
+        "min": [
+          75.4,
+          14.9,
+          34.9
+        ],
+        "max": [
+          80.4,
+          19.1,
+          39.1
+        ],
+        "size": [
+          5.0,
+          4.200000000000001,
+          4.200000000000003
+        ],
+        "center": [
+          77.9,
+          17.0,
+          37.0
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 30.889709766421646
+    },
+    {
+      "part_id": "TMX-A3-F04",
+      "name": "M3 insert OD4.2 x5 \u2014 GEN-M3-HEATSET-OD4.2-L5:3",
+      "bounds": {
+        "min": [
+          5.9,
+          169.9,
+          34.0
+        ],
+        "max": [
+          10.1,
+          174.1,
+          39.0
+        ],
+        "size": [
+          4.199999999999999,
+          4.199999999999989,
+          5.0
+        ],
+        "center": [
+          8.0,
+          172.0,
+          36.5
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 30.889709766421582
+    },
+    {
+      "part_id": "TMX-A3-F04",
+      "name": "M3 insert OD4.2 x5 \u2014 GEN-M3-HEATSET-OD4.2-L5:4",
+      "bounds": {
+        "min": [
+          74.9,
+          169.9,
+          34.0
+        ],
+        "max": [
+          79.1,
+          174.1,
+          39.0
+        ],
+        "size": [
+          4.199999999999989,
+          4.199999999999989,
+          5.0
+        ],
+        "center": [
+          77.0,
+          172.0,
+          36.5
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 30.889709766421607
+    },
+    {
+      "part_id": "TMX-A3-F03",
+      "name": "M2 x 7 socket_cap screw \u2014 GEN-M2-SHCS-L7-AF1.5:2",
+      "bounds": {
+        "min": [
+          52.899999900000005,
+          93.1999999,
+          18.6
+        ],
+        "max": [
+          56.7,
+          97.0000001,
+          27.6
+        ],
+        "size": [
+          3.8000000999999983,
+          3.8000001999999995,
+          9.0
+        ],
+        "center": [
+          54.79999995,
+          95.1,
+          23.1
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 40.52412651289779
+    },
+    {
+      "part_id": "TMX-A3-F02",
+      "name": "M2 x 5 socket_cap screw \u2014 GEN-M2-SHCS-L5-AF1.5:2",
+      "bounds": {
+        "min": [
+          8.5999999,
+          124.1,
+          15.5
+        ],
+        "max": [
+          12.4000001,
+          127.9,
+          22.5
+        ],
+        "size": [
+          3.8000001999999995,
+          3.8000000000000114,
+          7.0
+        ],
+        "center": [
+          10.5,
+          126.0,
+          19.0
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 34.853551773168206
+    },
+    {
+      "part_id": "TMX-A3-F05",
+      "name": "M2 insert OD3.2 x4 \u2014 GEN-M2-HEATSET-OD3.2-L4:3",
+      "bounds": {
+        "min": [
+          67.4,
+          10.700000000000001,
+          14.5
+        ],
+        "max": [
+          70.6,
+          13.9,
+          18.5
+        ],
+        "size": [
+          3.1999999999999886,
+          3.1999999999999993,
+          4.0
+        ],
+        "center": [
+          69.0,
+          12.3,
+          16.5
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 17.828538309122074
+    },
+    {
+      "part_id": "TMX-A3-F05",
+      "name": "M2 insert OD3.2 x4 \u2014 GEN-M2-HEATSET-OD3.2-L4:4",
+      "bounds": {
+        "min": [
+          8.9,
+          124.4,
+          14.5
+        ],
+        "max": [
+          12.1,
+          127.6,
+          18.5
+        ],
+        "size": [
+          3.1999999999999993,
+          3.1999999999999886,
+          4.0
+        ],
+        "center": [
+          10.5,
+          126.0,
+          16.5
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 17.828538309122077
+    },
+    {
+      "part_id": "TMX-A3-F02",
+      "name": "M2 x 5 socket_cap screw \u2014 GEN-M2-SHCS-L5-AF1.5:5",
+      "bounds": {
+        "min": [
+          16.0999999,
+          157.1,
+          33.0
+        ],
+        "max": [
+          19.9,
+          160.9,
+          40.0
+        ],
+        "size": [
+          3.8000000999999983,
+          3.8000000000000114,
+          7.0
+        ],
+        "center": [
+          17.99999995,
+          159.0,
+          36.5
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 34.853551773168235
+    },
+    {
+      "part_id": "TMX-A3-F02",
+      "name": "M2 x 5 socket_cap screw \u2014 GEN-M2-SHCS-L5-AF1.5:6",
+      "bounds": {
+        "min": [
+          28.5999999,
+          133.1,
+          33.0
+        ],
+        "max": [
+          32.4000001,
+          136.9,
+          40.0
+        ],
+        "size": [
+          3.8000001999999995,
+          3.8000000000000114,
+          7.0
+        ],
+        "center": [
+          30.5,
+          135.0,
+          36.5
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 34.853551773168235
+    },
+    {
+      "part_id": "TMX-A3-F02",
+      "name": "M2 x 5 socket_cap screw \u2014 GEN-M2-SHCS-L5-AF1.5:7",
+      "bounds": {
+        "min": [
+          15.0999999,
+          170.29999999999998,
+          33.0
+        ],
+        "max": [
+          18.9,
+          174.1,
+          40.0
+        ],
+        "size": [
+          3.8000000999999983,
+          3.8000000000000114,
+          7.0
+        ],
+        "center": [
+          16.99999995,
+          172.2,
+          36.5
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 34.853551773168235
+    },
+    {
+      "part_id": "TMX-A3-F02",
+      "name": "M2 x 5 socket_cap screw \u2014 GEN-M2-SHCS-L5-AF1.5:8",
+      "bounds": {
+        "min": [
+          66.0999999,
+          170.29999999999998,
+          33.0
+        ],
+        "max": [
+          69.9000001,
+          174.1,
+          40.0
+        ],
+        "size": [
+          3.8000001999999995,
+          3.8000000000000114,
+          7.0
+        ],
+        "center": [
+          68.0,
+          172.2,
+          36.5
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 34.853551773168256
+    },
+    {
+      "part_id": "TMX-A3-F05",
+      "name": "M2 insert OD3.2 x4 \u2014 GEN-M2-HEATSET-OD3.2-L4:7",
+      "bounds": {
+        "min": [
+          16.4,
+          157.4,
+          32.0
+        ],
+        "max": [
+          19.6,
+          160.6,
+          36.0
+        ],
+        "size": [
+          3.200000000000003,
+          3.1999999999999886,
+          4.0
+        ],
+        "center": [
+          18.0,
+          159.0,
+          34.0
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 17.828538309122074
+    },
+    {
+      "part_id": "TMX-A3-F05",
+      "name": "M2 insert OD3.2 x4 \u2014 GEN-M2-HEATSET-OD3.2-L4:8",
+      "bounds": {
+        "min": [
+          28.9,
+          133.4,
+          32.0
+        ],
+        "max": [
+          32.1,
+          136.6,
+          36.0
+        ],
+        "size": [
+          3.200000000000003,
+          3.1999999999999886,
+          4.0
+        ],
+        "center": [
+          30.5,
+          135.0,
+          34.0
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 17.828538309122074
+    },
+    {
+      "part_id": "TMX-A3-F05",
+      "name": "M2 insert OD3.2 x4 \u2014 GEN-M2-HEATSET-OD3.2-L4:9",
+      "bounds": {
+        "min": [
+          15.4,
+          170.6,
+          32.0
+        ],
+        "max": [
+          18.6,
+          173.79999999999998,
+          36.0
+        ],
+        "size": [
+          3.200000000000001,
+          3.1999999999999886,
+          4.0
+        ],
+        "center": [
+          17.0,
+          172.2,
+          34.0
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 17.82853830912207
+    },
+    {
+      "part_id": "TMX-A3-F05",
+      "name": "M2 insert OD3.2 x4 \u2014 GEN-M2-HEATSET-OD3.2-L4:10",
+      "bounds": {
+        "min": [
+          66.4,
+          170.6,
+          32.0
+        ],
+        "max": [
+          69.6,
+          173.79999999999998,
+          36.0
+        ],
+        "size": [
+          3.1999999999999886,
+          3.1999999999999886,
+          4.0
+        ],
+        "center": [
+          68.0,
+          172.2,
+          34.0
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 17.82853830912207
+    },
+    {
+      "part_id": "TMX-A3-C01-V01",
+      "name": "03 Guition factory casing \u2014 measured envelope:1",
+      "bounds": {
+        "min": [
+          7.85,
+          5.199999999999999,
+          0.4
+        ],
+        "max": [
+          77.15,
+          122.0,
+          14.1
+        ],
+        "size": [
+          69.30000000000001,
+          116.8,
+          13.7
+        ],
+        "center": [
+          42.5,
+          63.6,
+          7.25
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 26097.503277416734
+    },
+    {
+      "part_id": "TMX-A3-C01-V02",
+      "name": "04 Guition front glass \u2014 drawing reference:1",
+      "bounds": {
+        "min": [
+          9.099999999999994,
+          6.39999999999999,
+          0.4
+        ],
+        "max": [
+          75.9,
+          120.8,
+          1.6
+        ],
+        "size": [
+          66.80000000000001,
+          114.4,
+          1.2000000000000002
+        ],
+        "center": [
+          42.5,
+          63.599999999999994,
+          1.0
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 8644.646400000003
+    },
+    {
+      "part_id": "TMX-A3-C01-V03",
+      "name": "05 Active 4.3 inch screen:1",
+      "bounds": {
+        "min": [
+          14.42,
+          16.799999999999997,
+          0.4
+        ],
+        "max": [
+          70.58,
+          110.39999999999999,
+          0.5
+        ],
+        "size": [
+          56.16,
+          93.6,
+          0.09999999999999998
+        ],
+        "center": [
+          42.5,
+          63.599999999999994,
+          0.45
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 525.6575999999998
+    },
+    {
+      "part_id": "TMX-A3-C01-V04",
+      "name": "06 Guition PCB and connectors \u2014 illustrative detail:1",
+      "bounds": {
+        "min": [
+          9.969999999999999,
+          9.599999999999989,
+          8.0
+        ],
+        "max": [
+          75.03,
+          117.6,
+          13.600000000000001
+        ],
+        "size": [
+          65.06,
+          108.0,
+          5.600000000000001
+        ],
+        "center": [
+          42.5,
+          63.599999999999994,
+          10.8
+        ]
+      },
+      "solid_count": 9,
+      "volume_mm3": 13966.004293856406
+    },
+    {
+      "part_id": "TMX-A3-C04-V01",
+      "name": "Controls / left 1NO button body:1",
+      "bounds": {
+        "min": [
+          60.0,
+          106.0,
+          24.0
+        ],
+        "max": [
+          86.30000000000001,
+          120.0,
+          38.0
+        ],
+        "size": [
+          26.30000000000001,
+          14.0,
+          14.0
+        ],
+        "center": [
+          73.15,
+          113.0,
+          31.0
+        ]
+      },
+      "solid_count": 3,
+      "volume_mm3": 2534.5641591053486
+    },
+    {
+      "part_id": "TMX-A3-C04-V02",
+      "name": "Controls / left momentary power cap:1",
+      "bounds": {
+        "min": [
+          86.30000000000001,
+          108.5,
+          26.5
+        ],
+        "max": [
+          86.5,
+          117.5,
+          35.5
+        ],
+        "size": [
+          0.19999999999998863,
+          9.0,
+          9.0
+        ],
+        "center": [
+          86.4,
+          113.0,
+          31.0
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 12.723450247037938
+    },
+    {
+      "part_id": "TMX-A3-C04-V03",
+      "name": "Controls / button retaining nut reference:1",
+      "bounds": {
+        "min": [
+          80.5,
+          105.8,
+          23.8
+        ],
+        "max": [
+          82.5,
+          120.2,
+          38.2
+        ],
+        "size": [
+          2.0,
+          14.400000000000006,
+          14.400000000000002
+        ],
+        "center": [
+          81.5,
+          113.0,
+          31.0
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 99.52565526572457
+    },
+    {
+      "part_id": "TMX-V2-P12",
+      "name": "Removable supported bottom USB retainer",
+      "bounds": {
+        "min": [
+          26.21509,
+          0.13669950738916256,
+          22.2
+        ],
+        "max": [
+          52.60000000000001,
+          26.3,
+          40.6
+        ],
+        "size": [
+          26.38491000000001,
+          26.163300492610837,
+          18.400000000000002
+        ],
+        "center": [
+          39.407545000000006,
+          13.218349753694582,
+          31.4
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 2100.35708162475
+    },
+    {
+      "part_id": "TMX-V2-F02-1",
+      "name": "USB reused M2x5",
+      "bounds": {
+        "min": [
+          28.1150899,
+          3.89999995,
+          27.299999999999997
+        ],
+        "max": [
+          31.9150901,
+          7.6999999500000005,
+          34.3
+        ],
+        "size": [
+          3.8000001999999995,
+          3.8000000000000003,
+          7.0
+        ],
+        "center": [
+          30.01509,
+          5.79999995,
+          30.799999999999997
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 34.85355177316821
+    },
+    {
+      "part_id": "TMX-V2-F05-1",
+      "name": "TC-M2x3 insert envelope",
+      "bounds": {
+        "min": [
+          28.21509,
+          4.0,
+          27.3
+        ],
+        "max": [
+          31.81509,
+          7.6,
+          30.3
+        ],
+        "size": [
+          3.6000000000000014,
+          3.5999999999999996,
+          3.0
+        ],
+        "center": [
+          30.01509,
+          5.8,
+          28.8
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 21.111502632123408
+    },
+    {
+      "part_id": "TMX-V2-F02-2",
+      "name": "USB reused M2x5",
+      "bounds": {
+        "min": [
+          40.5999999,
+          20.59999985,
+          27.299999999999997
+        ],
+        "max": [
+          44.4,
+          24.399999949999998,
+          34.3
+        ],
+        "size": [
+          3.8000000999999983,
+          3.8000000999999983,
+          7.0
+        ],
+        "center": [
+          42.49999995,
+          22.4999999,
+          30.799999999999997
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 34.853551773168206
+    },
+    {
+      "part_id": "TMX-V2-F05-2",
+      "name": "TC-M2x3 insert envelope",
+      "bounds": {
+        "min": [
+          40.7,
+          20.7,
+          27.3
+        ],
+        "max": [
+          44.3,
+          24.3,
+          30.3
+        ],
+        "size": [
+          3.5999999999999943,
+          3.6000000000000014,
+          3.0
+        ],
+        "center": [
+          42.5,
+          22.5,
+          28.8
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 21.111502632123408
+    },
+    {
+      "part_id": "TMX-V2-F05-3",
+      "name": "Main PCB TC-M2x3 insert envelope",
+      "bounds": {
+        "min": [
+          74.2,
+          7.3,
+          19.0
+        ],
+        "max": [
+          77.8,
+          10.9,
+          22.0
+        ],
+        "size": [
+          3.5999999999999943,
+          3.6000000000000005,
+          3.0
+        ],
+        "center": [
+          76.0,
+          9.1,
+          20.5
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 21.11150263212343
+    },
+    {
+      "part_id": "TMX-V2-F05-4",
+      "name": "Main PCB TC-M2x3 insert envelope",
+      "bounds": {
+        "min": [
+          53.0,
+          93.3,
+          19.0
+        ],
+        "max": [
+          56.599999999999994,
+          96.89999999999999,
+          22.0
+        ],
+        "size": [
+          3.5999999999999943,
+          3.5999999999999943,
+          3.0
+        ],
+        "center": [
+          54.8,
+          95.1,
+          20.5
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 21.11150263212342
+    },
+    {
+      "part_id": "PCB2-C403",
+      "name": "=>[0:1:1:3]",
+      "bounds": {
+        "min": [
+          56.5,
+          68.400001,
+          25.6321
+        ],
+        "max": [
+          58.1,
+          69.20000100000001,
+          26.432100000000002
+        ],
+        "size": [
+          1.6000000000000014,
+          0.8000000000000114,
+          0.8000000000000007
+        ],
+        "center": [
+          57.3,
+          68.80000100000001,
+          26.0321
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 0.9303638934211739
+    },
+    {
+      "part_id": "PCB2-C407",
+      "name": "=>[0:1:1:3]",
+      "bounds": {
+        "min": [
+          60.775,
+          72.19999999999999,
+          25.6321
+        ],
+        "max": [
+          62.375,
+          73.0,
+          26.432100000000002
+        ],
+        "size": [
+          1.6000000000000014,
+          0.8000000000000114,
+          0.8000000000000007
+        ],
+        "center": [
+          61.575,
+          72.6,
+          26.0321
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 0.9303638934211735
+    },
+    {
+      "part_id": "PCB2-C507",
+      "name": "=>[0:1:1:3]",
+      "bounds": {
+        "min": [
+          56.65,
+          62.19999999999998,
+          25.6321
+        ],
+        "max": [
+          57.45,
+          63.799999999999976,
+          26.432100000000002
+        ],
+        "size": [
+          0.8000000000000043,
+          1.5999999999999943,
+          0.8000000000000007
+        ],
+        "center": [
+          57.05,
+          62.99999999999998,
+          26.0321
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 0.9303638934211671
+    },
+    {
+      "part_id": "PCB2-C802",
+      "name": "=>[0:1:1:3]",
+      "bounds": {
+        "min": [
+          64.4,
+          43.19999999999999,
+          25.6321
+        ],
+        "max": [
+          66.0,
+          44.0,
+          26.432100000000002
+        ],
+        "size": [
+          1.5999999999999943,
+          0.8000000000000114,
+          0.8000000000000007
+        ],
+        "center": [
+          65.2,
+          43.599999999999994,
+          26.0321
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 0.9303638934211723
+    },
+    {
+      "part_id": "PCB2-R101",
+      "name": "=>[0:1:1:5]",
+      "bounds": {
+        "min": [
+          64.75,
+          11.899999999999977,
+          25.6321
+        ],
+        "max": [
+          65.75,
+          12.399999999999977,
+          25.982100000000003
+        ],
+        "size": [
+          1.0,
+          0.5,
+          0.3500000000000014
+        ],
+        "center": [
+          65.25,
+          12.149999999999977,
+          25.807100000000002
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 0.163448451000648
+    },
+    {
+      "part_id": "PCB2-R703",
+      "name": "=>[0:1:1:7]",
+      "bounds": {
+        "min": [
+          71.0,
+          37.05,
+          25.6321
+        ],
+        "max": [
+          71.8,
+          38.64999999999999,
+          26.082100000000004
+        ],
+        "size": [
+          0.7999999999999972,
+          1.5999999999999943,
+          0.45000000000000284
+        ],
+        "center": [
+          71.4,
+          37.849999999999994,
+          25.857100000000003
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 0.5372187601976267
+    },
+    {
+      "part_id": "PCB2-C105",
+      "name": "=>[0:1:1:9]",
+      "bounds": {
+        "min": [
+          57.349999,
+          13.75,
+          25.6321
+        ],
+        "max": [
+          59.849999000000004,
+          16.949999999999996,
+          28.1321
+        ],
+        "size": [
+          2.500000000000007,
+          3.1999999999999957,
+          2.5
+        ],
+        "center": [
+          58.599999,
+          15.349999999999998,
+          26.8821
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 19.050964954386348
+    },
+    {
+      "part_id": "PCB2-C103",
+      "name": "=>[0:1:1:11]",
+      "bounds": {
+        "min": [
+          66.025,
+          19.259909999999987,
+          25.6321
+        ],
+        "max": [
+          67.025,
+          19.759909999999994,
+          26.1321
+        ],
+        "size": [
+          1.0,
+          0.5000000000000071,
+          0.5
+        ],
+        "center": [
+          66.525,
+          19.50990999999999,
+          25.8821
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 0.22661663706143662
+    },
+    {
+      "part_id": "PCB2-R410",
+      "name": "=>[0:1:1:7]",
+      "bounds": {
+        "min": [
+          65.1,
+          64.30000000000001,
+          25.6321
+        ],
+        "max": [
+          66.7,
+          65.10000000000002,
+          26.082100000000004
+        ],
+        "size": [
+          1.6000000000000085,
+          0.8000000000000114,
+          0.45000000000000284
+        ],
+        "center": [
+          65.9,
+          64.70000000000002,
+          25.857100000000003
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 0.5372187601976322
+    },
+    {
+      "part_id": "PCB2-C402",
+      "name": "=>[0:1:1:3]",
+      "bounds": {
+        "min": [
+          58.224999999999994,
+          70.60991,
+          25.6321
+        ],
+        "max": [
+          59.025000000000006,
+          72.20991,
+          26.432100000000002
+        ],
+        "size": [
+          0.8000000000000114,
+          1.5999999999999943,
+          0.8000000000000007
+        ],
+        "center": [
+          58.625,
+          71.40991,
+          26.0321
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 0.9303638934211687
+    },
+    {
+      "part_id": "PCB2-R601",
+      "name": "=>[0:1:1:7]",
+      "bounds": {
+        "min": [
+          51.25,
+          39.8,
+          25.6321
+        ],
+        "max": [
+          52.05,
+          41.39999999999999,
+          26.082100000000004
+        ],
+        "size": [
+          0.7999999999999972,
+          1.5999999999999943,
+          0.45000000000000284
+        ],
+        "center": [
+          51.65,
+          40.599999999999994,
+          25.857100000000003
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 0.5372187601976267
+    },
+    {
+      "part_id": "PCB2-Q110",
+      "name": "=>[0:1:1:13]",
+      "bounds": {
+        "min": [
+          67.15,
+          10.099999899999993,
+          25.6321
+        ],
+        "max": [
+          69.65,
+          13.100000099999995,
+          26.8321001
+        ],
+        "size": [
+          2.5,
+          3.0000002000000023,
+          1.2000001000000005
+        ],
+        "center": [
+          68.4,
+          11.599999999999994,
+          26.23210005
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 4.402523112082163
+    },
+    {
+      "part_id": "PCB2-C509",
+      "name": "=>[0:1:1:3]",
+      "bounds": {
+        "min": [
+          61.849999999999994,
+          62.300000000000004,
+          25.6321
+        ],
+        "max": [
+          63.45,
+          63.100000000000016,
+          26.432100000000002
+        ],
+        "size": [
+          1.6000000000000085,
+          0.8000000000000114,
+          0.8000000000000007
+        ],
+        "center": [
+          62.65,
+          62.70000000000001,
+          26.0321
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 0.9303638934211756
+    },
+    {
+      "part_id": "PCB2-R401",
+      "name": "=>[0:1:1:7]",
+      "bounds": {
+        "min": [
+          51.299999,
+          70.54000099999998,
+          25.6321
+        ],
+        "max": [
+          52.099999,
+          72.14000099999998,
+          26.082100000000004
+        ],
+        "size": [
+          0.7999999999999972,
+          1.6000000000000085,
+          0.45000000000000284
+        ],
+        "center": [
+          51.699999,
+          71.34000099999997,
+          25.857100000000003
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 0.5372187601976267
+    },
+    {
+      "part_id": "PCB2-C504",
+      "name": "=>[0:1:1:3]",
+      "bounds": {
+        "min": [
+          58.099999999999994,
+          52.599999999999994,
+          25.6321
+        ],
+        "max": [
+          59.7,
+          53.400000000000006,
+          26.432100000000002
+        ],
+        "size": [
+          1.6000000000000085,
+          0.8000000000000114,
+          0.8000000000000007
+        ],
+        "center": [
+          58.9,
+          53.0,
+          26.0321
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 0.9303638934211756
+    },
+    {
+      "part_id": "PCB2-J501",
+      "name": "=>[0:1:1:15]",
+      "bounds": {
+        "min": [
+          53.129999999999995,
+          59.78990999999998,
+          22.63209999999978
+        ],
+        "max": [
+          55.67,
+          67.40990999999998,
+          34.17210000000022
+        ],
+        "size": [
+          2.5400000000000063,
+          7.6200000000000045,
+          11.54000000000044
+        ],
+        "center": [
+          54.4,
+          63.59990999999998,
+          28.4021
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 59.07332816000015
+    },
+    {
+      "part_id": "PCB2-J701",
+      "name": "=>[0:1:1:17]",
+      "bounds": {
+        "min": [
+          66.9,
+          69.225,
+          22.232099999999736
+        ],
+        "max": [
+          79.30000000000001,
+          74.975,
+          32.6321
+        ],
+        "size": [
+          12.400000000000006,
+          5.75,
+          10.400000000000265
+        ],
+        "center": [
+          73.10000000000001,
+          72.1,
+          27.43209999999987
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 247.86345319733337
+    },
+    {
+      "part_id": "PCB2-C701",
+      "name": "=>[0:1:1:19]",
+      "bounds": {
+        "min": [
+          64.69999999999999,
+          49.0,
+          25.6321
+        ],
+        "max": [
+          66.30000000000001,
+          52.199999999999996,
+          27.232100000000003
+        ],
+        "size": [
+          1.6000000000000227,
+          3.1999999999999957,
+          1.6000000000000014
+        ],
+        "center": [
+          65.5,
+          50.599999999999994,
+          26.432100000000002
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 7.588564954386369
+    },
+    {
+      "part_id": "PCB2-C803",
+      "name": "=>[0:1:1:21]",
+      "bounds": {
+        "min": [
+          61.65,
+          31.125,
+          25.6321
+        ],
+        "max": [
+          63.65,
+          32.375,
+          26.8821
+        ],
+        "size": [
+          2.0,
+          1.25,
+          1.25
+        ],
+        "center": [
+          62.65,
+          31.75,
+          26.2571
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 2.8899330964914833
+    },
+    {
+      "part_id": "PCB2-C303",
+      "name": "=>[0:1:1:3]",
+      "bounds": {
+        "min": [
+          61.599999999999994,
+          51.04999999999998,
+          25.6321
+        ],
+        "max": [
+          63.2,
+          51.849999999999994,
+          26.432100000000002
+        ],
+        "size": [
+          1.6000000000000085,
+          0.8000000000000114,
+          0.8000000000000007
+        ],
+        "center": [
+          62.4,
+          51.44999999999999,
+          26.0321
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 0.9303638934211753
+    },
+    {
+      "part_id": "PCB2-C801",
+      "name": "=>[0:1:1:3]",
+      "bounds": {
+        "min": [
+          55.349999999999994,
+          42.69999999999999,
+          25.6321
+        ],
+        "max": [
+          56.95,
+          43.5,
+          26.432100000000002
+        ],
+        "size": [
+          1.6000000000000085,
+          0.8000000000000114,
+          0.8000000000000007
+        ],
+        "center": [
+          56.15,
+          43.099999999999994,
+          26.0321
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 0.9303638934211755
+    },
+    {
+      "part_id": "PCB2-C301",
+      "name": "=>[0:1:1:21]",
+      "bounds": {
+        "min": [
+          67.4,
+          33.474999999999994,
+          25.6321
+        ],
+        "max": [
+          69.4,
+          34.724999999999994,
+          26.8821
+        ],
+        "size": [
+          2.0,
+          1.25,
+          1.25
+        ],
+        "center": [
+          68.4,
+          34.099999999999994,
+          26.2571
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 2.889933096491484
+    },
+    {
+      "part_id": "PCB2-C409",
+      "name": "=>[0:1:1:3]",
+      "bounds": {
+        "min": [
+          51.299999,
+          64.0,
+          25.6321
+        ],
+        "max": [
+          52.099999,
+          65.6,
+          26.432100000000002
+        ],
+        "size": [
+          0.7999999999999972,
+          1.5999999999999943,
+          0.8000000000000007
+        ],
+        "center": [
+          51.699999,
+          64.8,
+          26.0321
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 0.9303638934211653
+    },
+    {
+      "part_id": "PCB2-R117",
+      "name": "=>[0:1:1:7]",
+      "bounds": {
+        "min": [
+          70.975,
+          17.98491,
+          25.6321
+        ],
+        "max": [
+          71.775,
+          19.584909999999994,
+          26.082100000000004
+        ],
+        "size": [
+          0.8000000000000114,
+          1.5999999999999943,
+          0.45000000000000284
+        ],
+        "center": [
+          71.375,
+          18.784909999999996,
+          25.857100000000003
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 0.5372187601976298
+    },
+    {
+      "part_id": "PCB2-R102",
+      "name": "=>[0:1:1:7]",
+      "bounds": {
+        "min": [
+          60.900000000000006,
+          12.049999999999997,
+          25.6321
+        ],
+        "max": [
+          61.7,
+          13.649999999999991,
+          26.082100000000004
+        ],
+        "size": [
+          0.7999999999999972,
+          1.5999999999999943,
+          0.45000000000000284
+        ],
+        "center": [
+          61.300000000000004,
+          12.849999999999994,
+          25.857100000000003
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 0.5372187601976267
+    },
+    {
+      "part_id": "PCB2-J601",
+      "name": "=>[0:1:1:17]",
+      "bounds": {
+        "min": [
+          66.9,
+          77.225,
+          22.232099999999736
+        ],
+        "max": [
+          79.30000000000001,
+          82.975,
+          32.6321
+        ],
+        "size": [
+          12.400000000000006,
+          5.75,
+          10.400000000000265
+        ],
+        "center": [
+          73.10000000000001,
+          80.1,
+          27.43209999999987
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 247.8634531973335
+    },
+    {
+      "part_id": "PCB2-Q601",
+      "name": "=>[0:1:1:13]",
+      "bounds": {
+        "min": [
+          68.65,
+          64.5999999,
+          25.6321
+        ],
+        "max": [
+          71.15,
+          67.60000009999999,
+          26.8321001
+        ],
+        "size": [
+          2.5,
+          3.000000199999988,
+          1.2000001000000005
+        ],
+        "center": [
+          69.9,
+          66.1,
+          26.23210005
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 4.4025231120821635
+    },
+    {
+      "part_id": "PCB2-R201",
+      "name": "=>[0:1:1:7]",
+      "bounds": {
+        "min": [
+          58.4,
+          40.94999999999999,
+          25.6321
+        ],
+        "max": [
+          60.0,
+          41.75,
+          26.082100000000004
+        ],
+        "size": [
+          1.6000000000000014,
+          0.8000000000000114,
+          0.45000000000000284
+        ],
+        "center": [
+          59.2,
+          41.349999999999994,
+          25.857100000000003
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 0.5372187601976315
+    },
+    {
+      "part_id": "PCB2-C705",
+      "name": "=>[0:1:1:21]",
+      "bounds": {
+        "min": [
+          53.45,
+          39.974999999999994,
+          25.6321
+        ],
+        "max": [
+          55.45,
+          41.224999999999994,
+          26.8821
+        ],
+        "size": [
+          2.0,
+          1.25,
+          1.25
+        ],
+        "center": [
+          54.45,
+          40.599999999999994,
+          26.2571
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 2.8899330964914833
+    },
+    {
+      "part_id": "PCB2-C404",
+      "name": "=>[0:1:1:3]",
+      "bounds": {
+        "min": [
+          62.2,
+          67.69999999999999,
+          25.6321
+        ],
+        "max": [
+          63.8,
+          68.5,
+          26.432100000000002
+        ],
+        "size": [
+          1.5999999999999943,
+          0.8000000000000114,
+          0.8000000000000007
+        ],
+        "center": [
+          63.0,
+          68.1,
+          26.0321
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 0.9303638934211724
+    },
+    {
+      "part_id": "PCB2-U501",
+      "name": "=>[0:1:1:23]",
+      "bounds": {
+        "min": [
+          52.9499999,
+          53.99999999999997,
+          25.6321
+        ],
+        "max": [
+          55.850000099999995,
+          56.79999999999998,
+          27.182100100000003
+        ],
+        "size": [
+          2.900000199999994,
+          2.8000000000000114,
+          1.5500001000000019
+        ],
+        "center": [
+          54.4,
+          55.39999999999998,
+          26.407100050000004
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 6.480480466548725
+    },
+    {
+      "part_id": "PCB2-C502",
+      "name": "=>[0:1:1:3]",
+      "bounds": {
+        "min": [
+          53.599999999999994,
+          57.99999999999997,
+          25.6321
+        ],
+        "max": [
+          55.2,
+          58.79999999999998,
+          26.432100000000002
+        ],
+        "size": [
+          1.6000000000000085,
+          0.8000000000000114,
+          0.8000000000000007
+        ],
+        "center": [
+          54.4,
+          58.39999999999998,
+          26.0321
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 0.9303638934211755
+    },
+    {
+      "part_id": "PCB2-Q602",
+      "name": "=>[0:1:1:13]",
+      "bounds": {
+        "min": [
+          69.65,
+          60.399999899999976,
+          25.6321
+        ],
+        "max": [
+          72.15,
+          63.40000009999998,
+          26.8321001
+        ],
+        "size": [
+          2.5,
+          3.0000002000000023,
+          1.2000001000000005
+        ],
+        "center": [
+          70.9,
+          61.89999999999998,
+          26.23210005
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 4.402523112082176
+    },
+    {
+      "part_id": "PCB2-Q101",
+      "name": "=>[0:1:1:13]",
+      "bounds": {
+        "min": [
+          69.15,
+          20.849999899999993,
+          25.6321
+        ],
+        "max": [
+          71.65,
+          23.850000099999995,
+          26.8321001
+        ],
+        "size": [
+          2.5,
+          3.0000002000000023,
+          1.2000001000000005
+        ],
+        "center": [
+          70.4,
+          22.349999999999994,
+          26.23210005
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 4.4025231120821635
+    },
+    {
+      "part_id": "PCB2-R103",
+      "name": "=>[0:1:1:7]",
+      "bounds": {
+        "min": [
+          64.1,
+          13.150000000000006,
+          25.6321
+        ],
+        "max": [
+          65.7,
+          13.950000000000017,
+          26.082100000000004
+        ],
+        "size": [
+          1.6000000000000085,
+          0.8000000000000114,
+          0.45000000000000284
+        ],
+        "center": [
+          64.9,
+          13.550000000000011,
+          25.857100000000003
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 0.5372187601976322
+    },
+    {
+      "part_id": "PCB2-R406",
+      "name": "=>[0:1:1:7]",
+      "bounds": {
+        "min": [
+          60.925,
+          82.30990999999997,
+          25.6321
+        ],
+        "max": [
+          62.525000000000006,
+          83.10990999999999,
+          26.082100000000004
+        ],
+        "size": [
+          1.6000000000000085,
+          0.8000000000000114,
+          0.45000000000000284
+        ],
+        "center": [
+          61.725,
+          82.70990999999998,
+          25.857100000000003
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 0.5372187601976322
+    },
+    {
+      "part_id": "PCB2-R505",
+      "name": "=>[0:1:1:7]",
+      "bounds": {
+        "min": [
+          72.0,
+          57.88491,
+          25.6321
+        ],
+        "max": [
+          72.8,
+          59.48490999999999,
+          26.082100000000004
+        ],
+        "size": [
+          0.7999999999999972,
+          1.5999999999999943,
+          0.45000000000000284
+        ],
+        "center": [
+          72.4,
+          58.684909999999995,
+          25.857100000000003
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 0.5372187601976267
+    },
+    {
+      "part_id": "PCB2-R702",
+      "name": "=>[0:1:1:5]",
+      "bounds": {
+        "min": [
+          68.65,
+          44.18491,
+          25.6321
+        ],
+        "max": [
+          69.15,
+          45.18491,
+          25.982100000000003
+        ],
+        "size": [
+          0.5,
+          1.0,
+          0.3500000000000014
+        ],
+        "center": [
+          68.9,
+          44.68491,
+          25.807100000000002
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 0.16344845100064914
+    },
+    {
+      "part_id": "PCB2-C505",
+      "name": "=>[0:1:1:3]",
+      "bounds": {
+        "min": [
+          59.2,
+          48.8,
+          25.6321
+        ],
+        "max": [
+          60.0,
+          50.39999999999999,
+          26.432100000000002
+        ],
+        "size": [
+          0.7999999999999972,
+          1.5999999999999943,
+          0.8000000000000007
+        ],
+        "center": [
+          59.6,
+          49.599999999999994,
+          26.0321
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 0.9303638934211655
+    },
+    {
+      "part_id": "PCB2-R507",
+      "name": "=>[0:1:1:7]",
+      "bounds": {
+        "min": [
+          53.349999999999994,
+          68.44999999999999,
+          25.6321
+        ],
+        "max": [
+          54.95,
+          69.25,
+          26.082100000000004
+        ],
+        "size": [
+          1.6000000000000085,
+          0.8000000000000114,
+          0.45000000000000284
+        ],
+        "center": [
+          54.15,
+          68.85,
+          25.857100000000003
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 0.5372187601976322
+    },
+    {
+      "part_id": "PCB2-R408",
+      "name": "=>[0:1:1:7]",
+      "bounds": {
+        "min": [
+          63.75,
+          70.44999999999999,
+          25.6321
+        ],
+        "max": [
+          65.35,
+          71.25,
+          26.082100000000004
+        ],
+        "size": [
+          1.5999999999999943,
+          0.8000000000000114,
+          0.45000000000000284
+        ],
+        "center": [
+          64.55,
+          70.85,
+          25.857100000000003
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 0.5372187601976308
+    },
+    {
+      "part_id": "PCB2-R409",
+      "name": "=>[0:1:1:7]",
+      "bounds": {
+        "min": [
+          61.849999999999994,
+          64.4,
+          25.6321
+        ],
+        "max": [
+          63.45,
+          65.20000000000002,
+          26.082100000000004
+        ],
+        "size": [
+          1.6000000000000085,
+          0.8000000000000114,
+          0.45000000000000284
+        ],
+        "center": [
+          62.65,
+          64.80000000000001,
+          25.857100000000003
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 0.5372187601976322
+    },
+    {
+      "part_id": "PCB2-C804",
+      "name": "=>[0:1:1:3]",
+      "bounds": {
+        "min": [
+          66.6,
+          35.69999999999999,
+          25.6321
+        ],
+        "max": [
+          68.2,
+          36.5,
+          26.432100000000002
+        ],
+        "size": [
+          1.6000000000000085,
+          0.8000000000000114,
+          0.8000000000000007
+        ],
+        "center": [
+          67.4,
+          36.099999999999994,
+          26.0321
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 0.9303638934211754
+    },
+    {
+      "part_id": "PCB2-J801",
+      "name": "=>[0:1:1:25]",
+      "bounds": {
+        "min": [
+          52.854999,
+          48.32999999999999,
+          22.63209999999978
+        ],
+        "max": [
+          57.934999000000005,
+          50.87,
+          34.17210000000022
+        ],
+        "size": [
+          5.080000000000005,
+          2.5400000000000063,
+          11.54000000000044
+        ],
+        "center": [
+          55.394999,
+          49.599999999999994,
+          28.4021
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 39.382218773333406
+    },
+    {
+      "part_id": "PCB2-R402",
+      "name": "=>[0:1:1:7]",
+      "bounds": {
+        "min": [
+          51.299999,
+          77.0,
+          25.6321
+        ],
+        "max": [
+          52.099999,
+          78.60000000000001,
+          26.082100000000004
+        ],
+        "size": [
+          0.7999999999999972,
+          1.6000000000000085,
+          0.45000000000000284
+        ],
+        "center": [
+          51.699999,
+          77.80000000000001,
+          25.857100000000003
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 0.5372187601976267
+    },
+    {
+      "part_id": "PCB2-R115",
+      "name": "=>[0:1:1:5]",
+      "bounds": {
+        "min": [
+          72.6,
+          15.684909999999999,
+          25.6321
+        ],
+        "max": [
+          73.1,
+          16.684910000000006,
+          25.982100000000003
+        ],
+        "size": [
+          0.5,
+          1.000000000000007,
+          0.3500000000000014
+        ],
+        "center": [
+          72.85,
+          16.184910000000002,
+          25.807100000000002
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 0.16344845100064911
+    },
+    {
+      "part_id": "PCB2-C401",
+      "name": "=>[0:1:1:3]",
+      "bounds": {
+        "min": [
+          58.224999999999994,
+          73.925,
+          25.6321
+        ],
+        "max": [
+          59.025000000000006,
+          75.52499999999999,
+          26.432100000000002
+        ],
+        "size": [
+          0.8000000000000114,
+          1.5999999999999943,
+          0.8000000000000007
+        ],
+        "center": [
+          58.625,
+          74.725,
+          26.0321
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 0.9303638934211685
+    },
+    {
+      "part_id": "PCB2-R107",
+      "name": "=>[0:1:1:7]",
+      "bounds": {
+        "min": [
+          72.975,
+          25.69999999999999,
+          25.6321
+        ],
+        "max": [
+          74.575,
+          26.5,
+          26.082100000000004
+        ],
+        "size": [
+          1.6000000000000085,
+          0.8000000000000114,
+          0.45000000000000284
+        ],
+        "center": [
+          73.775,
+          26.099999999999994,
+          25.857100000000003
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 0.5372187601976323
+    },
+    {
+      "part_id": "PCB2-R118",
+      "name": "=>[0:1:1:5]",
+      "bounds": {
+        "min": [
+          60.65,
+          8.899999999999977,
+          25.6321
+        ],
+        "max": [
+          61.65,
+          9.399999999999977,
+          25.982100000000003
+        ],
+        "size": [
+          1.0,
+          0.5,
+          0.3500000000000014
+        ],
+        "center": [
+          61.15,
+          9.149999999999977,
+          25.807100000000002
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 0.16344845100064817
+    },
+    {
+      "part_id": "PCB2-R120",
+      "name": "=>[0:1:1:7]",
+      "bounds": {
+        "min": [
+          51.525,
+          7.949999999999989,
+          25.6321
+        ],
+        "max": [
+          53.125,
+          8.75,
+          26.082100000000004
+        ],
+        "size": [
+          1.6000000000000014,
+          0.8000000000000114,
+          0.45000000000000284
+        ],
+        "center": [
+          52.325,
+          8.349999999999994,
+          25.857100000000003
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 0.5372187601976315
+    },
+    {
+      "part_id": "PCB2-J402",
+      "name": "=>[0:1:1:27]",
+      "bounds": {
+        "min": [
+          51.35,
+          80.99999999999997,
+          21.732100000000003
+        ],
+        "max": [
+          58.35,
+          87.99999999999997,
+          33.2321
+        ],
+        "size": [
+          7.0,
+          7.0,
+          11.5
+        ],
+        "center": [
+          54.85,
+          84.49999999999997,
+          27.482100000000003
+        ]
+      },
+      "solid_count": 3,
+      "volume_mm3": 161.62720551770835
+    },
+    {
+      "part_id": "PCB2-R105",
+      "name": "=>[0:1:1:7]",
+      "bounds": {
+        "min": [
+          55.75,
+          16.049999999999997,
+          25.6321
+        ],
+        "max": [
+          56.55,
+          17.64999999999999,
+          26.082100000000004
+        ],
+        "size": [
+          0.7999999999999972,
+          1.5999999999999943,
+          0.45000000000000284
+        ],
+        "center": [
+          56.15,
+          16.849999999999994,
+          25.857100000000003
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 0.5372187601976267
+    },
+    {
+      "part_id": "PCB2-R704",
+      "name": "=>[0:1:1:7]",
+      "bounds": {
+        "min": [
+          74.35,
+          67.30000000000001,
+          25.6321
+        ],
+        "max": [
+          75.95,
+          68.10000000000002,
+          26.082100000000004
+        ],
+        "size": [
+          1.6000000000000085,
+          0.8000000000000114,
+          0.45000000000000284
+        ],
+        "center": [
+          75.15,
+          67.70000000000002,
+          25.857100000000003
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 0.5372187601976322
+    },
+    {
+      "part_id": "PCB2-J103",
+      "name": "=>[0:1:1:25]",
+      "bounds": {
+        "min": [
+          53.129999999999995,
+          19.564999999999998,
+          22.63209999999978
+        ],
+        "max": [
+          55.67,
+          24.645000000000007,
+          34.17210000000022
+        ],
+        "size": [
+          2.5400000000000063,
+          5.080000000000009,
+          11.54000000000044
+        ],
+        "center": [
+          54.4,
+          22.105000000000004,
+          28.4021
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 39.38221877333355
+    },
+    {
+      "part_id": "PCB2-C203",
+      "name": "=>[0:1:1:3]",
+      "bounds": {
+        "min": [
+          61.4,
+          42.99999999999997,
+          25.6321
+        ],
+        "max": [
+          63.0,
+          43.79999999999998,
+          26.432100000000002
+        ],
+        "size": [
+          1.6000000000000014,
+          0.8000000000000114,
+          0.8000000000000007
+        ],
+        "center": [
+          62.2,
+          43.39999999999998,
+          26.0321
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 0.9303638934211738
+    },
+    {
+      "part_id": "PCB2-C101",
+      "name": "=>[0:1:1:3]",
+      "bounds": {
+        "min": [
+          57.9,
+          18.400000000000006,
+          25.6321
+        ],
+        "max": [
+          59.5,
+          19.200000000000017,
+          26.432100000000002
+        ],
+        "size": [
+          1.6000000000000014,
+          0.8000000000000114,
+          0.8000000000000007
+        ],
+        "center": [
+          58.7,
+          18.80000000000001,
+          26.0321
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 0.930363893421174
+    },
+    {
+      "part_id": "PCB2-RN501",
+      "name": "=>[0:1:1:29]",
+      "bounds": {
+        "min": [
+          56.849999999999994,
+          59.40000000000001,
+          25.6321
+        ],
+        "max": [
+          58.35000000000001,
+          61.00000000000001,
+          26.082100000000004
+        ],
+        "size": [
+          1.5000000000000142,
+          1.5999999999999943,
+          0.45000000000000284
+        ],
+        "center": [
+          57.6,
+          60.20000000000001,
+          25.857100000000003
+        ]
+      },
+      "solid_count": 5,
+      "volume_mm3": 1.079999999999997
+    },
+    {
+      "part_id": "PCB2-C508",
+      "name": "=>[0:1:1:3]",
+      "bounds": {
+        "min": [
+          65.1,
+          62.300000000000004,
+          25.6321
+        ],
+        "max": [
+          66.7,
+          63.100000000000016,
+          26.432100000000002
+        ],
+        "size": [
+          1.6000000000000085,
+          0.8000000000000114,
+          0.8000000000000007
+        ],
+        "center": [
+          65.9,
+          62.70000000000001,
+          26.0321
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 0.9303638934211755
+    },
+    {
+      "part_id": "PCB2-R202",
+      "name": "=>[0:1:1:7]",
+      "bounds": {
+        "min": [
+          58.4,
+          42.650000000000006,
+          25.6321
+        ],
+        "max": [
+          60.0,
+          43.45000000000002,
+          26.082100000000004
+        ],
+        "size": [
+          1.6000000000000014,
+          0.8000000000000114,
+          0.45000000000000284
+        ],
+        "center": [
+          59.2,
+          43.05000000000001,
+          25.857100000000003
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 0.5372187601976316
+    },
+    {
+      "part_id": "PCB2-C408",
+      "name": "=>[0:1:1:3]",
+      "bounds": {
+        "min": [
+          63.75,
+          72.19999999999999,
+          25.6321
+        ],
+        "max": [
+          65.35,
+          73.0,
+          26.432100000000002
+        ],
+        "size": [
+          1.5999999999999943,
+          0.8000000000000114,
+          0.8000000000000007
+        ],
+        "center": [
+          64.55,
+          72.6,
+          26.0321
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 0.9303638934211722
+    },
+    {
+      "part_id": "PCB2-J104",
+      "name": "=>[0:1:1:25]",
+      "bounds": {
+        "min": [
+          53.129999999999995,
+          27.564999999999998,
+          22.63209999999978
+        ],
+        "max": [
+          55.67,
+          32.645,
+          34.17210000000022
+        ],
+        "size": [
+          2.5400000000000063,
+          5.080000000000005,
+          11.54000000000044
+        ],
+        "center": [
+          54.4,
+          30.105,
+          28.4021
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 39.38221877333352
+    },
+    {
+      "part_id": "PCB2-C704",
+      "name": "=>[0:1:1:21]",
+      "bounds": {
+        "min": [
+          52.025,
+          43.099999999999994,
+          25.6321
+        ],
+        "max": [
+          53.275,
+          45.099999999999994,
+          26.8821
+        ],
+        "size": [
+          1.25,
+          2.0,
+          1.25
+        ],
+        "center": [
+          52.65,
+          44.099999999999994,
+          26.2571
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 2.8899330964914927
+    },
+    {
+      "part_id": "PCB2-U701",
+      "name": "=>[0:1:1:31]",
+      "bounds": {
+        "min": [
+          69.2249999,
+          46.30990990000001,
+          25.6320999
+        ],
+        "max": [
+          70.8250001,
+          47.90991010000002,
+          26.2621001
+        ],
+        "size": [
+          1.6000001999999967,
+          1.6000002000000109,
+          0.6300002000000013
+        ],
+        "center": [
+          70.025,
+          47.10991000000001,
+          25.9471
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 1.1398534471066735
+    },
+    {
+      "part_id": "PCB2-C708",
+      "name": "=>[0:1:1:21]",
+      "bounds": {
+        "min": [
+          53.45,
+          37.724999999999994,
+          25.6321
+        ],
+        "max": [
+          55.45,
+          38.974999999999994,
+          26.8821
+        ],
+        "size": [
+          2.0,
+          1.25,
+          1.25
+        ],
+        "center": [
+          54.45,
+          38.349999999999994,
+          26.2571
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 2.8899330964914833
+    },
+    {
+      "part_id": "PCB2-R802",
+      "name": "=>[0:1:1:7]",
+      "bounds": {
+        "min": [
+          51.25,
+          26.799999999999997,
+          25.6321
+        ],
+        "max": [
+          52.05,
+          28.39999999999999,
+          26.082100000000004
+        ],
+        "size": [
+          0.7999999999999972,
+          1.5999999999999943,
+          0.45000000000000284
+        ],
+        "center": [
+          51.65,
+          27.599999999999994,
+          25.857100000000003
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 0.5372187601976267
+    },
+    {
+      "part_id": "PCB2-R407",
+      "name": "=>[0:1:1:7]",
+      "bounds": {
+        "min": [
+          60.775,
+          70.44999999999999,
+          25.6321
+        ],
+        "max": [
+          62.375,
+          71.25,
+          26.082100000000004
+        ],
+        "size": [
+          1.6000000000000014,
+          0.8000000000000114,
+          0.45000000000000284
+        ],
+        "center": [
+          61.575,
+          70.85,
+          25.857100000000003
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 0.5372187601976315
+    },
+    {
+      "part_id": "PCB2-C206",
+      "name": "=>[0:1:1:9]",
+      "bounds": {
+        "min": [
+          56.95,
+          30.94999999999999,
+          25.6321
+        ],
+        "max": [
+          60.150000000000006,
+          33.44999999999999,
+          28.1321
+        ],
+        "size": [
+          3.200000000000003,
+          2.5,
+          2.5
+        ],
+        "center": [
+          58.550000000000004,
+          32.19999999999999,
+          26.8821
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 19.050964954386377
+    },
+    {
+      "part_id": "PCB2-R110",
+      "name": "=>[0:1:1:7]",
+      "bounds": {
+        "min": [
+          73.075,
+          27.19999999999999,
+          25.6321
+        ],
+        "max": [
+          74.675,
+          28.0,
+          26.082100000000004
+        ],
+        "size": [
+          1.5999999999999943,
+          0.8000000000000114,
+          0.45000000000000284
+        ],
+        "center": [
+          73.875,
+          27.599999999999994,
+          25.857100000000003
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 0.5372187601976309
+    },
+    {
+      "part_id": "PCB2-U114",
+      "name": "=>[0:1:1:33]",
+      "bounds": {
+        "min": [
+          56.49999999999999,
+          9.14999989999999,
+          25.6321
+        ],
+        "max": [
+          59.300000000000004,
+          12.050000099999998,
+          27.182100100000003
+        ],
+        "size": [
+          2.8000000000000114,
+          2.900000200000008,
+          1.5500001000000019
+        ],
+        "center": [
+          57.9,
+          10.599999999999994,
+          26.407100050000004
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 6.56561363443968
+    },
+    {
+      "part_id": "PCB2-R403",
+      "name": "=>[0:1:1:7]",
+      "bounds": {
+        "min": [
+          51.299999,
+          73.78999999999998,
+          25.6321
+        ],
+        "max": [
+          52.099999,
+          75.38999999999999,
+          26.082100000000004
+        ],
+        "size": [
+          0.7999999999999972,
+          1.6000000000000085,
+          0.45000000000000284
+        ],
+        "center": [
+          51.699999,
+          74.58999999999997,
+          25.857100000000003
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 0.5372187601976267
+    },
+    {
+      "part_id": "PCB2-R405",
+      "name": "=>[0:1:1:7]",
+      "bounds": {
+        "min": [
+          58.225,
+          77.24009,
+          25.6321
+        ],
+        "max": [
+          59.025,
+          78.84008999999999,
+          26.082100000000004
+        ],
+        "size": [
+          0.7999999999999972,
+          1.5999999999999943,
+          0.45000000000000284
+        ],
+        "center": [
+          58.625,
+          78.04008999999999,
+          25.857100000000003
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 0.5372187601976266
+    },
+    {
+      "part_id": "PCB2-R303",
+      "name": "=>[0:1:1:7]",
+      "bounds": {
+        "min": [
+          69.5,
+          35.8,
+          25.6321
+        ],
+        "max": [
+          70.3,
+          37.39999999999999,
+          26.082100000000004
+        ],
+        "size": [
+          0.7999999999999972,
+          1.5999999999999943,
+          0.45000000000000284
+        ],
+        "center": [
+          69.9,
+          36.599999999999994,
+          25.857100000000003
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 0.5372187601976266
+    },
+    {
+      "part_id": "PCB2-R116",
+      "name": "=>[0:1:1:7]",
+      "bounds": {
+        "min": [
+          57.349999999999994,
+          5.949999999999989,
+          25.6321
+        ],
+        "max": [
+          58.95,
+          6.75,
+          26.082100000000004
+        ],
+        "size": [
+          1.6000000000000085,
+          0.8000000000000114,
+          0.45000000000000284
+        ],
+        "center": [
+          58.15,
+          6.349999999999994,
+          25.857100000000003
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 0.5372187601976322
+    },
+    {
+      "part_id": "PCB2-C108",
+      "name": "=>[0:1:1:3]",
+      "bounds": {
+        "min": [
+          66.775,
+          17.684909999999974,
+          25.6321
+        ],
+        "max": [
+          68.375,
+          18.484909999999985,
+          26.432100000000002
+        ],
+        "size": [
+          1.5999999999999943,
+          0.8000000000000114,
+          0.8000000000000007
+        ],
+        "center": [
+          67.575,
+          18.08490999999998,
+          26.0321
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 0.9303638934211722
+    },
+    {
+      "part_id": "PCB2-U703",
+      "name": "=>[0:1:1:35]",
+      "bounds": {
+        "min": [
+          61.849999999999994,
+          53.9999999,
+          25.6321
+        ],
+        "max": [
+          64.95,
+          56.0000001,
+          26.482100100000004
+        ],
+        "size": [
+          3.1000000000000085,
+          2.0000002000000023,
+          0.8500001000000026
+        ],
+        "center": [
+          63.4,
+          55.0,
+          26.057100050000003
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 3.3357362714289676
+    },
+    {
+      "part_id": "PCB2-R301",
+      "name": "=>[0:1:1:7]",
+      "bounds": {
+        "min": [
+          61.55,
+          29.549999999999983,
+          25.6321
+        ],
+        "max": [
+          63.150000000000006,
+          30.349999999999994,
+          26.082100000000004
+        ],
+        "size": [
+          1.6000000000000085,
+          0.8000000000000114,
+          0.45000000000000284
+        ],
+        "center": [
+          62.35,
+          29.94999999999999,
+          25.857100000000003
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 0.5372187601976322
+    },
+    {
+      "part_id": "PCB2-U113",
+      "name": "=>[0:1:1:33]",
+      "bounds": {
+        "min": [
+          74.0,
+          13.849999900000007,
+          25.6321
+        ],
+        "max": [
+          76.8,
+          16.750000100000015,
+          27.182100100000003
+        ],
+        "size": [
+          2.799999999999997,
+          2.900000200000008,
+          1.5500001000000019
+        ],
+        "center": [
+          75.4,
+          15.300000000000011,
+          26.407100050000004
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 6.5656136344396785
+    },
+    {
+      "part_id": "PCB2-R506",
+      "name": "=>[0:1:1:7]",
+      "bounds": {
+        "min": [
+          58.599999999999994,
+          62.300000000000004,
+          25.6321
+        ],
+        "max": [
+          60.2,
+          63.100000000000016,
+          26.082100000000004
+        ],
+        "size": [
+          1.6000000000000085,
+          0.8000000000000114,
+          0.45000000000000284
+        ],
+        "center": [
+          59.4,
+          62.70000000000001,
+          25.857100000000003
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 0.5372187601976322
+    },
+    {
+      "part_id": "PCB2-U801",
+      "name": "=>[0:1:1:37]",
+      "bounds": {
+        "min": [
+          62.6,
+          44.64999989999999,
+          25.6321
+        ],
+        "max": [
+          65.4,
+          47.5500001,
+          26.5821001
+        ],
+        "size": [
+          2.8000000000000043,
+          2.900000200000008,
+          0.9500001000000005
+        ],
+        "center": [
+          64.0,
+          46.099999999999994,
+          26.10710005
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 4.011558757869441
+    },
+    {
+      "part_id": "PCB2-C707",
+      "name": "=>[0:1:1:21]",
+      "bounds": {
+        "min": [
+          71.475,
+          31.17500000000001,
+          25.6321
+        ],
+        "max": [
+          72.72500000000001,
+          33.17500000000001,
+          26.8821
+        ],
+        "size": [
+          1.2500000000000142,
+          2.0,
+          1.25
+        ],
+        "center": [
+          72.1,
+          32.17500000000001,
+          26.2571
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 2.889933096491492
+    },
+    {
+      "part_id": "PCB2-C506",
+      "name": "=>[0:1:1:3]",
+      "bounds": {
+        "min": [
+          66.649999,
+          66.27499999999998,
+          25.6321
+        ],
+        "max": [
+          67.449999,
+          67.87499999999999,
+          26.432100000000002
+        ],
+        "size": [
+          0.8000000000000114,
+          1.6000000000000085,
+          0.8000000000000007
+        ],
+        "center": [
+          67.049999,
+          67.07499999999999,
+          26.0321
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 0.9303638934211664
+    },
+    {
+      "part_id": "PCB2-C106",
+      "name": "=>[0:1:1:19]",
+      "bounds": {
+        "min": [
+          51.75,
+          9.54999999999999,
+          25.6321
+        ],
+        "max": [
+          54.95,
+          11.149999999999999,
+          27.232100000000003
+        ],
+        "size": [
+          3.200000000000003,
+          1.6000000000000085,
+          1.6000000000000014
+        ],
+        "center": [
+          53.35,
+          10.349999999999994,
+          26.432100000000002
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 7.5885649543863956
+    },
+    {
+      "part_id": "PCB2-R701",
+      "name": "=>[0:1:1:7]",
+      "bounds": {
+        "min": [
+          67.05,
+          44.09999999999998,
+          25.6321
+        ],
+        "max": [
+          67.85,
+          45.699999999999974,
+          26.082100000000004
+        ],
+        "size": [
+          0.7999999999999972,
+          1.5999999999999943,
+          0.45000000000000284
+        ],
+        "center": [
+          67.44999999999999,
+          44.89999999999998,
+          25.857100000000003
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 0.5372187601976235
+    },
+    {
+      "part_id": "PCB2-C501",
+      "name": "=>[0:1:1:3]",
+      "bounds": {
+        "min": [
+          53.599999999999994,
+          51.99999999999997,
+          25.6321
+        ],
+        "max": [
+          55.2,
+          52.79999999999998,
+          26.432100000000002
+        ],
+        "size": [
+          1.6000000000000085,
+          0.8000000000000114,
+          0.8000000000000007
+        ],
+        "center": [
+          54.4,
+          52.39999999999998,
+          26.0321
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 0.9303638934211755
+    },
+    {
+      "part_id": "PCB2-C102",
+      "name": "=>[0:1:1:9]",
+      "bounds": {
+        "min": [
+          57.25,
+          20.400000000000006,
+          25.6321
+        ],
+        "max": [
+          59.75,
+          23.6,
+          28.1321
+        ],
+        "size": [
+          2.5,
+          3.1999999999999957,
+          2.5
+        ],
+        "center": [
+          58.5,
+          22.000000000000004,
+          26.8821
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 19.050964954386345
+    },
+    {
+      "part_id": "PCB2-C703",
+      "name": "=>[0:1:1:21]",
+      "bounds": {
+        "min": [
+          69.02499999999999,
+          38.80000000000001,
+          25.6321
+        ],
+        "max": [
+          70.275,
+          40.80000000000001,
+          26.8821
+        ],
+        "size": [
+          1.2500000000000142,
+          2.0,
+          1.25
+        ],
+        "center": [
+          69.65,
+          39.80000000000001,
+          26.2571
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 2.889933096491492
+    },
+    {
+      "part_id": "PCB2-R203",
+      "name": "=>[0:1:1:7]",
+      "bounds": {
+        "min": [
+          53.849999999999994,
+          33.69999999999999,
+          25.6321
+        ],
+        "max": [
+          55.45,
+          34.5,
+          26.082100000000004
+        ],
+        "size": [
+          1.6000000000000085,
+          0.8000000000000114,
+          0.45000000000000284
+        ],
+        "center": [
+          54.65,
+          34.099999999999994,
+          25.857100000000003
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 0.5372187601976322
+    },
+    {
+      "part_id": "PCB2-U702",
+      "name": "=>[0:1:1:23]",
+      "bounds": {
+        "min": [
+          68.0,
+          54.249999899999985,
+          25.6321
+        ],
+        "max": [
+          70.8,
+          57.15000009999999,
+          27.182100100000003
+        ],
+        "size": [
+          2.799999999999997,
+          2.900000200000008,
+          1.5500001000000019
+        ],
+        "center": [
+          69.4,
+          55.69999999999999,
+          26.407100050000004
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 6.480480466548704
+    },
+    {
+      "part_id": "PCB2-J802",
+      "name": "=>[0:1:1:25]",
+      "bounds": {
+        "min": [
+          54.855000000000004,
+          44.53000000000001,
+          22.63209999999978
+        ],
+        "max": [
+          59.935,
+          47.070000000000014,
+          34.17210000000022
+        ],
+        "size": [
+          5.079999999999998,
+          2.5400000000000063,
+          11.54000000000044
+        ],
+        "center": [
+          57.395,
+          45.80000000000001,
+          28.4021
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 39.38221877333336
+    },
+    {
+      "part_id": "PCB2-J301",
+      "name": "=>[0:1:1:39]",
+      "bounds": {
+        "min": [
+          73.8804,
+          30.584999999999983,
+          23.092100000000002
+        ],
+        "max": [
+          78.90960000000001,
+          63.60499999999998,
+          34.0141
+        ],
+        "size": [
+          5.029200000000017,
+          33.019999999999996,
+          10.921999999999997
+        ],
+        "center": [
+          76.39500000000001,
+          47.094999999999985,
+          28.5531
+        ]
+      },
+      "solid_count": 26,
+      "volume_mm3": 507.63470735999834
+    },
+    {
+      "part_id": "PCB2-U301",
+      "name": "=>[0:1:1:41]",
+      "bounds": {
+        "min": [
+          67.4,
+          30.310000000000006,
+          25.6321
+        ],
+        "max": [
+          69.4,
+          32.290000000000006,
+          26.552100000000003
+        ],
+        "size": [
+          2.0,
+          1.9800000000000004,
+          0.9200000000000017
+        ],
+        "center": [
+          68.4,
+          31.300000000000004,
+          26.092100000000002
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 3.5576303537555525
+    },
+    {
+      "part_id": "PCB2-C204",
+      "name": "=>[0:1:1:9]",
+      "bounds": {
+        "min": [
+          56.95,
+          37.659909999999996,
+          25.6321
+        ],
+        "max": [
+          60.150000000000006,
+          40.159909999999996,
+          28.1321
+        ],
+        "size": [
+          3.200000000000003,
+          2.5,
+          2.5
+        ],
+        "center": [
+          58.550000000000004,
+          38.909909999999996,
+          26.8821
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 19.050964954386377
+    },
+    {
+      "part_id": "PCB2-C601",
+      "name": "=>[0:1:1:21]",
+      "bounds": {
+        "min": [
+          68.9,
+          58.37499999999998,
+          25.6321
+        ],
+        "max": [
+          70.9,
+          59.62499999999998,
+          26.8821
+        ],
+        "size": [
+          2.0,
+          1.25,
+          1.25
+        ],
+        "center": [
+          69.9,
+          58.99999999999998,
+          26.2571
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 2.8899330964914838
+    },
+    {
+      "part_id": "PCB2-R803",
+      "name": "=>[0:1:1:7]",
+      "bounds": {
+        "min": [
+          51.25,
+          19.049999999999997,
+          25.6321
+        ],
+        "max": [
+          52.05,
+          20.64999999999999,
+          26.082100000000004
+        ],
+        "size": [
+          0.7999999999999972,
+          1.5999999999999943,
+          0.45000000000000284
+        ],
+        "center": [
+          51.65,
+          19.849999999999994,
+          25.857100000000003
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 0.5372187601976266
+    },
+    {
+      "part_id": "PCB2-C110",
+      "name": "=>[0:1:1:3]",
+      "bounds": {
+        "min": [
+          72.7,
+          22.89999999999999,
+          25.6321
+        ],
+        "max": [
+          73.5,
+          24.49999999999999,
+          26.432100000000002
+        ],
+        "size": [
+          0.7999999999999972,
+          1.5999999999999979,
+          0.8000000000000007
+        ],
+        "center": [
+          73.1,
+          23.69999999999999,
+          26.0321
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 0.9303638934211654
+    },
+    {
+      "part_id": "PCB2-C205",
+      "name": "=>[0:1:1:9]",
+      "bounds": {
+        "min": [
+          56.95,
+          34.349999999999994,
+          25.6321
+        ],
+        "max": [
+          60.150000000000006,
+          36.849999999999994,
+          28.1321
+        ],
+        "size": [
+          3.200000000000003,
+          2.5,
+          2.5
+        ],
+        "center": [
+          58.550000000000004,
+          35.599999999999994,
+          26.8821
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 19.050964954386377
+    },
+    {
+      "part_id": "PCB2-U201",
+      "name": "=>[0:1:1:43]",
+      "bounds": {
+        "min": [
+          61.9,
+          38.10999999999999,
+          25.6321
+        ],
+        "max": [
+          64.9,
+          42.08999999999999,
+          26.4021
+        ],
+        "size": [
+          3.000000000000007,
+          3.979999999999997,
+          0.7699999999999996
+        ],
+        "center": [
+          63.400000000000006,
+          40.099999999999994,
+          26.0171
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 9.03673373852123
+    },
+    {
+      "part_id": "PCB2-Q111",
+      "name": "=>[0:1:1:13]",
+      "bounds": {
+        "min": [
+          69.15,
+          13.599999899999993,
+          25.6321
+        ],
+        "max": [
+          71.65,
+          16.600000099999995,
+          26.8321001
+        ],
+        "size": [
+          2.5,
+          3.0000002000000023,
+          1.2000001000000005
+        ],
+        "center": [
+          70.4,
+          15.099999999999994,
+          26.23210005
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 4.4025231120821635
+    },
+    {
+      "part_id": "PCB2-U401",
+      "name": "=>[0:1:1:45]",
+      "bounds": {
+        "min": [
+          60.4999999,
+          74.7,
+          25.6321
+        ],
+        "max": [
+          65.5000001,
+          81.10000000000001,
+          26.732100100000004
+        ],
+        "size": [
+          5.000000199999995,
+          6.400000000000006,
+          1.1000001000000026
+        ],
+        "center": [
+          63.0,
+          77.9,
+          26.182100050000003
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 21.858820464651647
+    },
+    {
+      "part_id": "PCB2-R705",
+      "name": "=>[0:1:1:7]",
+      "bounds": {
+        "min": [
+          77.6,
+          67.30000000000001,
+          25.6321
+        ],
+        "max": [
+          79.2,
+          68.10000000000002,
+          26.082100000000004
+        ],
+        "size": [
+          1.6000000000000085,
+          0.8000000000000114,
+          0.45000000000000284
+        ],
+        "center": [
+          78.4,
+          67.70000000000002,
+          25.857100000000003
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 0.5372187601976323
+    },
+    {
+      "part_id": "PCB2-J901",
+      "name": "=>[0:1:1:47]",
+      "bounds": {
+        "min": [
+          38.0299998995145,
+          1.299999899999997,
+          24.6821
+        ],
+        "max": [
+          46.97000010048551,
+          9.080000000000002,
+          28.942100100000005
+        ],
+        "size": [
+          8.940000200971006,
+          7.780000100000005,
+          4.260000100000006
+        ],
+        "center": [
+          42.5,
+          5.18999995,
+          26.81210005
+        ]
+      },
+      "solid_count": 36,
+      "volume_mm3": 119.86130380929241
+    },
+    {
+      "part_id": "PCB2-C104",
+      "name": "=>[0:1:1:9]",
+      "bounds": {
+        "min": [
+          68.4,
+          24.599999999999994,
+          25.6321
+        ],
+        "max": [
+          71.60000000000001,
+          27.099999999999994,
+          28.1321
+        ],
+        "size": [
+          3.200000000000003,
+          2.5,
+          2.5
+        ],
+        "center": [
+          70.0,
+          25.849999999999994,
+          26.8821
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 19.05096495438635
+    },
+    {
+      "part_id": "PCB2-Q112",
+      "name": "=>[0:1:1:13]",
+      "bounds": {
+        "min": [
+          73.9,
+          2.849999899999993,
+          25.6321
+        ],
+        "max": [
+          76.4,
+          5.8500000999999955,
+          26.8321001
+        ],
+        "size": [
+          2.5,
+          3.0000002000000023,
+          1.2000001000000005
+        ],
+        "center": [
+          75.15,
+          4.349999999999994,
+          26.23210005
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 4.402523112082164
+    },
+    {
+      "part_id": "PCB2-U112",
+      "name": "=>[0:1:1:35]",
+      "bounds": {
+        "min": [
+          74.05,
+          19.599999899999993,
+          25.6321
+        ],
+        "max": [
+          77.15,
+          21.600000099999995,
+          26.482100100000004
+        ],
+        "size": [
+          3.1000000000000085,
+          2.0000002000000023,
+          0.8500001000000026
+        ],
+        "center": [
+          75.6,
+          20.599999999999994,
+          26.057100050000003
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 3.3357362714289707
+    },
+    {
+      "part_id": "PCB2-R302",
+      "name": "=>[0:1:1:7]",
+      "bounds": {
+        "min": [
+          53.0,
+          17.19999999999999,
+          25.6321
+        ],
+        "max": [
+          54.6,
+          18.0,
+          26.082100000000004
+        ],
+        "size": [
+          1.6000000000000014,
+          0.8000000000000114,
+          0.45000000000000284
+        ],
+        "center": [
+          53.8,
+          17.599999999999994,
+          25.857100000000003
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 0.5372187601976316
+    },
+    {
+      "part_id": "PCB2-R114",
+      "name": "=>[0:1:1:7]",
+      "bounds": {
+        "min": [
+          71.75,
+          7.549999999999997,
+          25.6321
+        ],
+        "max": [
+          72.55,
+          9.149999999999991,
+          26.082100000000004
+        ],
+        "size": [
+          0.7999999999999972,
+          1.5999999999999943,
+          0.45000000000000284
+        ],
+        "center": [
+          72.15,
+          8.349999999999994,
+          25.857100000000003
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 0.5372187601976267
+    },
+    {
+      "part_id": "PCB2-R111",
+      "name": "=>[0:1:1:7]",
+      "bounds": {
+        "min": [
+          77.4,
+          22.750000000000014,
+          25.6321
+        ],
+        "max": [
+          78.2,
+          24.35000000000001,
+          26.082100000000004
+        ],
+        "size": [
+          0.7999999999999972,
+          1.5999999999999943,
+          0.45000000000000284
+        ],
+        "center": [
+          77.80000000000001,
+          23.55000000000001,
+          25.857100000000003
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 0.5372187601976236
+    },
+    {
+      "part_id": "PCB2-U502",
+      "name": "=>[0:1:1:45]",
+      "bounds": {
+        "min": [
+          59.8,
+          56.59999989999999,
+          25.6321
+        ],
+        "max": [
+          66.2,
+          61.600000099999995,
+          26.732100100000004
+        ],
+        "size": [
+          6.400000000000006,
+          5.000000200000002,
+          1.1000001000000026
+        ],
+        "center": [
+          63.0,
+          59.099999999999994,
+          26.182100050000003
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 21.858820464651583
+    },
+    {
+      "part_id": "PCB2-C302",
+      "name": "=>[0:1:1:3]",
+      "bounds": {
+        "min": [
+          61.099999999999994,
+          52.599999999999994,
+          25.6321
+        ],
+        "max": [
+          62.7,
+          53.400000000000006,
+          26.432100000000002
+        ],
+        "size": [
+          1.6000000000000085,
+          0.8000000000000114,
+          0.8000000000000007
+        ],
+        "center": [
+          61.9,
+          53.0,
+          26.0321
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 0.9303638934211755
+    },
+    {
+      "part_id": "PCB2-R501",
+      "name": "=>[0:1:1:7]",
+      "bounds": {
+        "min": [
+          51.8,
+          46.49999999999997,
+          25.6321
+        ],
+        "max": [
+          53.400000000000006,
+          47.29999999999998,
+          26.082100000000004
+        ],
+        "size": [
+          1.6000000000000085,
+          0.8000000000000114,
+          0.45000000000000284
+        ],
+        "center": [
+          52.6,
+          46.89999999999998,
+          25.857100000000003
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 0.5372187601976322
+    },
+    {
+      "part_id": "PCB2-U101",
+      "name": "=>[0:1:1:49]",
+      "bounds": {
+        "min": [
+          61.4,
+          15.099999999999994,
+          25.6321
+        ],
+        "max": [
+          65.4,
+          19.099999999999994,
+          26.392100000000003
+        ],
+        "size": [
+          4.000000000000007,
+          4.0,
+          0.7600000000000016
+        ],
+        "center": [
+          63.400000000000006,
+          17.099999999999994,
+          26.012100000000004
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 11.07915287225173
+    },
+    {
+      "part_id": "PCB2-C201",
+      "name": "=>[0:1:1:19]",
+      "bounds": {
+        "min": [
+          66.6,
+          37.75,
+          25.6321
+        ],
+        "max": [
+          68.2,
+          40.949999999999996,
+          27.232100000000003
+        ],
+        "size": [
+          1.6000000000000085,
+          3.1999999999999957,
+          1.6000000000000014
+        ],
+        "center": [
+          67.4,
+          39.349999999999994,
+          26.432100000000002
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 7.588564954386358
+    },
+    {
+      "part_id": "PCB2-R104",
+      "name": "=>[0:1:1:7]",
+      "bounds": {
+        "min": [
+          54.599999999999994,
+          7.699999999999989,
+          25.6321
+        ],
+        "max": [
+          56.2,
+          8.5,
+          26.082100000000004
+        ],
+        "size": [
+          1.6000000000000085,
+          0.8000000000000114,
+          0.45000000000000284
+        ],
+        "center": [
+          55.4,
+          8.099999999999994,
+          25.857100000000003
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 0.5372187601976323
+    },
+    {
+      "part_id": "PCB2-D901",
+      "name": "=>[0:1:1:51]",
+      "bounds": {
+        "min": [
+          46.3999999,
+          10.299999899999984,
+          25.6320999
+        ],
+        "max": [
+          48.0000001,
+          11.100000099999994,
+          26.2621001
+        ],
+        "size": [
+          1.6000002000000038,
+          0.8000002000000102,
+          0.6300002000000013
+        ],
+        "center": [
+          47.2,
+          10.699999999999989,
+          25.9471
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 0.5848974277017727
+    },
+    {
+      "part_id": "PCB2-C202",
+      "name": "=>[0:1:1:19]",
+      "bounds": {
+        "min": [
+          68.5,
+          28.04999999999999,
+          25.6321
+        ],
+        "max": [
+          71.7,
+          29.65,
+          27.232100000000003
+        ],
+        "size": [
+          3.200000000000003,
+          1.6000000000000085,
+          1.6000000000000014
+        ],
+        "center": [
+          70.1,
+          28.849999999999994,
+          26.432100000000002
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 7.588564954386392
+    },
+    {
+      "part_id": "PCB2-C405",
+      "name": "=>[0:1:1:3]",
+      "bounds": {
+        "min": [
+          62.2,
+          66.09999999999997,
+          25.6321
+        ],
+        "max": [
+          63.8,
+          66.89999999999998,
+          26.432100000000002
+        ],
+        "size": [
+          1.5999999999999943,
+          0.8000000000000114,
+          0.8000000000000007
+        ],
+        "center": [
+          63.0,
+          66.49999999999997,
+          26.0321
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 0.9303638934211723
+    },
+    {
+      "part_id": "PCB2-R404",
+      "name": "=>[0:1:1:7]",
+      "bounds": {
+        "min": [
+          51.3,
+          67.3,
+          25.6321
+        ],
+        "max": [
+          52.099999999999994,
+          68.89999999999999,
+          26.082100000000004
+        ],
+        "size": [
+          0.7999999999999972,
+          1.5999999999999943,
+          0.45000000000000284
+        ],
+        "center": [
+          51.699999999999996,
+          68.1,
+          25.857100000000003
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 0.5372187601976266
+    },
+    {
+      "part_id": "PCB2-R113",
+      "name": "=>[0:1:1:7]",
+      "bounds": {
+        "min": [
+          75.6,
+          17.44999999999999,
+          25.6321
+        ],
+        "max": [
+          77.2,
+          18.25,
+          26.082100000000004
+        ],
+        "size": [
+          1.6000000000000085,
+          0.8000000000000114,
+          0.45000000000000284
+        ],
+        "center": [
+          76.4,
+          17.849999999999994,
+          25.857100000000003
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 0.5372187601976323
+    },
+    {
+      "part_id": "PCB2-C406",
+      "name": "=>[0:1:1:3]",
+      "bounds": {
+        "min": [
+          60.2,
+          67.3,
+          25.6321
+        ],
+        "max": [
+          61.0,
+          68.89999999999999,
+          26.432100000000002
+        ],
+        "size": [
+          0.7999999999999972,
+          1.5999999999999943,
+          0.8000000000000007
+        ],
+        "center": [
+          60.6,
+          68.1,
+          26.0321
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 0.9303638934211653
+    },
+    {
+      "part_id": "PCB2-U302",
+      "name": "=>[0:1:1:53]",
+      "bounds": {
+        "min": [
+          61.349999999999994,
+          48.59999989999999,
+          25.6321
+        ],
+        "max": [
+          63.45,
+          50.600000099999995,
+          26.732100100000004
+        ],
+        "size": [
+          2.1000000000000085,
+          2.0000002000000023,
+          1.1000001000000026
+        ],
+        "center": [
+          62.4,
+          49.599999999999994,
+          26.182100050000003
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 2.3414748095661384
+    },
+    {
+      "part_id": "PCB2-U901",
+      "name": "=>[0:1:1:55]",
+      "bounds": {
+        "min": [
+          41.26,
+          11.800000000000011,
+          25.6321
+        ],
+        "max": [
+          43.739999999999995,
+          12.800000000000011,
+          26.1521
+        ],
+        "size": [
+          2.479999999999997,
+          1.0,
+          0.5199999999999996
+        ],
+        "center": [
+          42.5,
+          12.300000000000011,
+          25.8921
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 1.230627433388227
+    },
+    {
+      "part_id": "PCB2-R801",
+      "name": "=>[0:1:1:7]",
+      "bounds": {
+        "min": [
+          54.349999999999994,
+          25.69999999999999,
+          25.6321
+        ],
+        "max": [
+          55.95,
+          26.5,
+          26.082100000000004
+        ],
+        "size": [
+          1.6000000000000085,
+          0.8000000000000114,
+          0.45000000000000284
+        ],
+        "center": [
+          55.15,
+          26.099999999999994,
+          25.857100000000003
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 0.537218760197632
+    },
+    {
+      "part_id": "PCB2-J401",
+      "name": "=>[0:1:1:15]",
+      "bounds": {
+        "min": [
+          54.03,
+          70.29,
+          22.63209999999978
+        ],
+        "max": [
+          56.57,
+          77.91000000000001,
+          34.17210000000022
+        ],
+        "size": [
+          2.539999999999999,
+          7.6200000000000045,
+          11.54000000000044
+        ],
+        "center": [
+          55.3,
+          74.10000000000001,
+          28.4021
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 59.07332816000013
+    },
+    {
+      "part_id": "PCB2-C702",
+      "name": "=>[0:1:1:21]",
+      "bounds": {
+        "min": [
+          70.27499999999999,
+          44.00990999999999,
+          25.6321
+        ],
+        "max": [
+          72.275,
+          45.25990999999999,
+          26.8821
+        ],
+        "size": [
+          2.000000000000014,
+          1.25,
+          1.25
+        ],
+        "center": [
+          71.275,
+          44.63490999999999,
+          26.2571
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 2.8899330964914833
+    },
+    {
+      "part_id": "PCB2-R121",
+      "name": "=>[0:1:1:7]",
+      "bounds": {
+        "min": [
+          58.75,
+          15.500000000000014,
+          23.517899999999997
+        ],
+        "max": [
+          59.55,
+          17.10000000000001,
+          23.9679
+        ],
+        "size": [
+          0.7999999999999972,
+          1.5999999999999943,
+          0.45000000000000284
+        ],
+        "center": [
+          59.15,
+          16.30000000000001,
+          23.7429
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 0.5372187601976267
+    },
+    {
+      "part_id": "PCB2-C107",
+      "name": "=>[0:1:1:21]",
+      "bounds": {
+        "min": [
+          63.275,
+          21.349999999999994,
+          22.7179
+        ],
+        "max": [
+          65.275,
+          22.599999999999994,
+          23.9679
+        ],
+        "size": [
+          2.000000000000007,
+          1.25,
+          1.25
+        ],
+        "center": [
+          64.275,
+          21.974999999999994,
+          23.3429
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 2.8899330964914878
+    },
+    {
+      "part_id": "PCB2-R504",
+      "name": "=>[0:1:1:7]",
+      "bounds": {
+        "min": [
+          53.1,
+          54.184910000000016,
+          23.517899999999997
+        ],
+        "max": [
+          53.9,
+          55.78491000000001,
+          23.9679
+        ],
+        "size": [
+          0.7999999999999972,
+          1.5999999999999943,
+          0.45000000000000284
+        ],
+        "center": [
+          53.5,
+          54.98491000000001,
+          23.7429
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 0.5372187601976267
+    },
+    {
+      "part_id": "PCB2-R119",
+      "name": "=>[0:1:1:5]",
+      "bounds": {
+        "min": [
+          55.075,
+          12.434910000000002,
+          23.6179
+        ],
+        "max": [
+          56.075,
+          12.934910000000002,
+          23.9679
+        ],
+        "size": [
+          1.0,
+          0.5,
+          0.3500000000000014
+        ],
+        "center": [
+          55.575,
+          12.684910000000002,
+          23.7929
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 0.16344845100064812
+    },
+    {
+      "part_id": "PCB2-R126",
+      "name": "=>[0:1:1:7]",
+      "bounds": {
+        "min": [
+          68.75,
+          10.299999999999997,
+          23.517899999999997
+        ],
+        "max": [
+          69.55,
+          11.899999999999991,
+          23.9679
+        ],
+        "size": [
+          0.7999999999999972,
+          1.5999999999999943,
+          0.45000000000000284
+        ],
+        "center": [
+          69.15,
+          11.099999999999994,
+          23.7429
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 0.5372187601976267
+    },
+    {
+      "part_id": "PCB2-C113",
+      "name": "=>[0:1:1:3]",
+      "bounds": {
+        "min": [
+          78.625,
+          18.259910000000005,
+          23.1679
+        ],
+        "max": [
+          79.425,
+          19.859910000000003,
+          23.9679
+        ],
+        "size": [
+          0.7999999999999972,
+          1.5999999999999979,
+          0.8000000000000007
+        ],
+        "center": [
+          79.025,
+          19.059910000000002,
+          23.5679
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 0.9303638934211657
+    },
+    {
+      "part_id": "PCB2-C115",
+      "name": "=>[0:1:1:3]",
+      "bounds": {
+        "min": [
+          62.0,
+          7.5499999999999945,
+          23.1679
+        ],
+        "max": [
+          62.8,
+          9.149999999999991,
+          23.9679
+        ],
+        "size": [
+          0.7999999999999972,
+          1.599999999999997,
+          0.8000000000000007
+        ],
+        "center": [
+          62.4,
+          8.349999999999993,
+          23.5679
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 0.9303638934211653
+    },
+    {
+      "part_id": "PCB2-R122",
+      "name": "=>[0:1:1:7]",
+      "bounds": {
+        "min": [
+          60.05,
+          12.900000000000006,
+          23.517899999999997
+        ],
+        "max": [
+          61.650000000000006,
+          13.700000000000017,
+          23.9679
+        ],
+        "size": [
+          1.6000000000000085,
+          0.8000000000000114,
+          0.45000000000000284
+        ],
+        "center": [
+          60.85,
+          13.300000000000011,
+          23.7429
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 0.5372187601976324
+    },
+    {
+      "part_id": "PCB2-R124",
+      "name": "=>[0:1:1:7]",
+      "bounds": {
+        "min": [
+          66.0,
+          13.950000000000003,
+          23.517899999999997
+        ],
+        "max": [
+          66.8,
+          15.549999999999997,
+          23.9679
+        ],
+        "size": [
+          0.7999999999999972,
+          1.5999999999999943,
+          0.45000000000000284
+        ],
+        "center": [
+          66.4,
+          14.75,
+          23.7429
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 0.5372187601976267
+    },
+    {
+      "part_id": "PCB2-C116",
+      "name": "=>[0:1:1:11]",
+      "bounds": {
+        "min": [
+          66.65,
+          11.550000000000011,
+          23.4679
+        ],
+        "max": [
+          67.15,
+          12.550000000000011,
+          23.9679
+        ],
+        "size": [
+          0.5,
+          1.0,
+          0.5
+        ],
+        "center": [
+          66.9,
+          12.050000000000011,
+          23.7179
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 0.22661663706143584
+    },
+    {
+      "part_id": "PCB2-R123",
+      "name": "=>[0:1:1:7]",
+      "bounds": {
+        "min": [
+          63.325,
+          13.099999999999994,
+          23.517899999999997
+        ],
+        "max": [
+          64.925,
+          13.900000000000006,
+          23.9679
+        ],
+        "size": [
+          1.5999999999999943,
+          0.8000000000000114,
+          0.45000000000000284
+        ],
+        "center": [
+          64.125,
+          13.5,
+          23.7429
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 0.5372187601976309
+    },
+    {
+      "part_id": "PCB2-R112",
+      "name": "=>[0:1:1:7]",
+      "bounds": {
+        "min": [
+          78.8,
+          23.659909999999982,
+          23.517899999999997
+        ],
+        "max": [
+          79.6,
+          25.259909999999977,
+          23.9679
+        ],
+        "size": [
+          0.7999999999999972,
+          1.5999999999999943,
+          0.45000000000000284
+        ],
+        "center": [
+          79.19999999999999,
+          24.45990999999998,
+          23.7429
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 0.5372187601976236
+    },
+    {
+      "part_id": "PCB2-C112",
+      "name": "=>[0:1:1:3]",
+      "bounds": {
+        "min": [
+          78.675,
+          14.45990999999999,
+          23.1679
+        ],
+        "max": [
+          79.47500000000001,
+          16.059909999999988,
+          23.9679
+        ],
+        "size": [
+          0.8000000000000114,
+          1.5999999999999979,
+          0.8000000000000007
+        ],
+        "center": [
+          79.075,
+          15.259909999999989,
+          23.5679
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 0.9303638934211667
+    },
+    {
+      "part_id": "PCB2-C114",
+      "name": "=>[0:1:1:19]",
+      "bounds": {
+        "min": [
+          58.7,
+          10.29999999999999,
+          22.3679
+        ],
+        "max": [
+          61.900000000000006,
+          11.899999999999999,
+          23.9679
+        ],
+        "size": [
+          3.200000000000003,
+          1.6000000000000085,
+          1.6000000000000014
+        ],
+        "center": [
+          60.300000000000004,
+          11.099999999999994,
+          23.1679
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 7.588564954386394
+    },
+    {
+      "part_id": "PCB2-R128",
+      "name": "=>[0:1:1:7]",
+      "bounds": {
+        "min": [
+          58.5,
+          7.549999999999997,
+          23.517899999999997
+        ],
+        "max": [
+          59.3,
+          9.149999999999991,
+          23.9679
+        ],
+        "size": [
+          0.7999999999999972,
+          1.5999999999999943,
+          0.45000000000000284
+        ],
+        "center": [
+          58.9,
+          8.349999999999994,
+          23.7429
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 0.5372187601976267
+    },
+    {
+      "part_id": "PCB2-R125",
+      "name": "=>[0:1:1:7]",
+      "bounds": {
+        "min": [
+          67.92500000000001,
+          13.34999999999998,
+          23.517899999999997
+        ],
+        "max": [
+          68.72500000000001,
+          14.949999999999974,
+          23.9679
+        ],
+        "size": [
+          0.7999999999999972,
+          1.5999999999999943,
+          0.45000000000000284
+        ],
+        "center": [
+          68.32500000000002,
+          14.149999999999977,
+          23.7429
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 0.5372187601976236
+    },
+    {
+      "part_id": "PCB2-R127",
+      "name": "=>[0:1:1:7]",
+      "bounds": {
+        "min": [
+          60.25,
+          7.549999999999997,
+          23.517899999999997
+        ],
+        "max": [
+          61.05,
+          9.149999999999991,
+          23.9679
+        ],
+        "size": [
+          0.7999999999999972,
+          1.5999999999999943,
+          0.45000000000000284
+        ],
+        "center": [
+          60.65,
+          8.349999999999994,
+          23.7429
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 0.5372187601976268
+    },
+    {
+      "part_id": "PCB2-C111",
+      "name": "=>[0:1:1:3]",
+      "bounds": {
+        "min": [
+          78.8,
+          27.784909999999982,
+          23.1679
+        ],
+        "max": [
+          79.60000000000001,
+          29.38490999999998,
+          23.9679
+        ],
+        "size": [
+          0.8000000000000114,
+          1.5999999999999979,
+          0.8000000000000007
+        ],
+        "center": [
+          79.2,
+          28.58490999999998,
+          23.5679
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 0.9303638934211665
+    },
+    {
+      "part_id": "PCB2-substrate",
+      "name": "=>[0:1:1:56]",
+      "bounds": {
+        "min": [
+          34.01509,
+          1.2999999999999972,
+          24.0529
+        ],
+        "max": [
+          80.4,
+          101.1,
+          25.5471
+        ],
+        "size": [
+          46.384910000000005,
+          99.8,
+          1.4941999999999993
+        ],
+        "center": [
+          57.207545,
+          51.199999999999996,
+          24.8
+        ]
+      },
+      "solid_count": 1,
+      "volume_mm3": 4222.989314668496
+    }
+  ],
+  "source_hashes_unchanged": true
+}

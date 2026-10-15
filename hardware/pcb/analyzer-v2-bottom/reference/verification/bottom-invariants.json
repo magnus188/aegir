@@ -1,0 +1,2055 @@
+{
+  "timestamp_utc": "2026-10-15T18:50:33.896061+00:00",
+  "purpose": "Independent bottom-USB preservation audit; not production release",
+  "input_sha256": {
+    "hardware/pcb/analyzer/Carbon_Monoxide.kicad_sch": "e05b21e25d82c727ea046086cab4b3bb2a3f3797fb877754c356ca801ca57a96",
+    "hardware/pcb/analyzer/Charging.kicad_sch": "90629a30bf80f1f3e93365ff6c38ec77a3682291129bf6fb80200bb00932c6a7",
+    "hardware/pcb/analyzer/Environment.kicad_sch": "a1cd76c7502b1720cbaa00b3eb258ff24178aadee432b8c3d760d3571a4524a7",
+    "hardware/pcb/analyzer/Gauge_Interface.kicad_sch": "ba7cd46b5f575c20b85fe264e02f405a459ce6de5958aa35b8115688eedfed6e",
+    "hardware/pcb/analyzer/Helium.kicad_sch": "9ea2437448c99602f45d038a4acacd7bc13256d081d157b55d011494bb1f64ce",
+    "hardware/pcb/analyzer/Oxygen.kicad_sch": "97c645a89bb9f7335fbd80882cd5aa9cb9fe19d51262fb48f73e1e3eb0a0ba13",
+    "hardware/pcb/analyzer/Power_Control.kicad_sch": "1d0e88653e2c66d3de08e57afb512cc088b87d9d772afcf86f58d5951b05244d",
+    "hardware/pcb/analyzer/Supply_5V.kicad_sch": "bfd05c6d9788d346bc97a99eba06bca5458786f583a7b40c8c792b0b36da4451",
+    "hardware/pcb/analyzer/Testpoints.kicad_sch": "2c5cfad1891b3d6fa4538d4227cca4a4008e820ebf930dc40d8b1512b73ccc78",
+    "hardware/pcb/analyzer/Trimix_Analog.pretty/Vishay_ACAS0606_AT_IEC.kicad_mod": "9636a026eb88d83396f6ecefc1eeeccaeb4e307e383b1a20a53adaae013d6b91",
+    "hardware/pcb/analyzer/Trimix_Analyzer.kicad_dru": "d98f09ae243f23089c8acb7c65119db01ae3bad6c7568f1ffeb7d472af0d5085",
+    "hardware/pcb/analyzer/Trimix_Analyzer.kicad_pcb": "5382ab1d68a307343b9165bacb90025dee995f66c4689cadbe77df3740eb5f11",
+    "hardware/pcb/analyzer/Trimix_Analyzer.kicad_pro": "a19783ba0c7ddf75f1f4c9d4852db2b5f5c1939d6c844cb8ac0d7d6a9c6b418a",
+    "hardware/pcb/analyzer/Trimix_Analyzer.kicad_sch": "0f3da790cab859155b557f8dfa76146ecd49850168362410329309915e6043b4",
+    "hardware/pcb/analyzer/Trimix_Analyzer_add.3V3_Plane.kicad_dru": "d98f09ae243f23089c8acb7c65119db01ae3bad6c7568f1ffeb7d472af0d5085",
+    "hardware/pcb/analyzer/Trimix_Analyzer_add.3V3_Plane.kicad_pcb": "deb5401f91ab411ee424b083a6994eae3d5ef9e010bef62b27cdb6c764e86532",
+    "hardware/pcb/analyzer/Trimix_Analyzer_add.3V3_Plane.kicad_pro": "a19783ba0c7ddf75f1f4c9d4852db2b5f5c1939d6c844cb8ac0d7d6a9c6b418a",
+    "hardware/pcb/analyzer/Trimix_Connectors.pretty/USB_C_GCT_USB4720-03-A.kicad_mod": "f5ad113d89fc6598063a178c99f4328b13693a5cef5de87101cd3ebffeb5b6e0",
+    "hardware/pcb/analyzer/Trimix_Connectors.pretty/USB_C_GCT_USB4720-03-A_A3.kicad_mod": "19590b12067c116b622a1e7e21939e5619eb9a397f9c862e0f06f9c3bdf3b326",
+    "hardware/pcb/analyzer/Trimix_Power.pretty/Battery_Pigtail_2x22AWG_P4.2_D1.00_Pad1.85.kicad_mod": "6342cc910fdedc8e17b459d0a89b220766f867a5e09539d9b1cf188665f04e47",
+    "hardware/pcb/analyzer/Trimix_Power.pretty/C_TDK_C1005_Recommended.kicad_mod": "9a565bf8e0e929d622eb4b0624f648b692e76d7ac14bec5c55db1015df4df1c5",
+    "hardware/pcb/analyzer/Trimix_Power.pretty/C_TDK_C2012_Recommended.kicad_mod": "4ea675dc1e05a9404486123c7386702dc589ab8163a7e4c0e4aaba7d758532e3",
+    "hardware/pcb/analyzer/Trimix_Power.pretty/DMN2056U_SOT23_Diodes_Recommended.kicad_mod": "a9892819aa3cf193fd23b869e9411a6d964d0384313657b1e609b2cd9f779940",
+    "hardware/pcb/analyzer/Trimix_Power.pretty/L_Coilcraft_XGL4020.kicad_mod": "27ff42430a8b9c2dda476652105edc40c75e07d28d258d61f0c6a59db4521882",
+    "hardware/pcb/analyzer/Trimix_Power.pretty/L_Coilcraft_XGL4030.kicad_mod": "6e74415cae525a2b5c78427d0f9976555d811a5d084270bb5043980ff319a350",
+    "hardware/pcb/analyzer/Trimix_Power.pretty/L_Wurth_74437349010_7050.kicad_mod": "75087d2ef8c1b32e98f1a345a5cc1274d22a811bc5a5ad1dd5f36829896add8f",
+    "hardware/pcb/analyzer/Trimix_Power.pretty/PI3USB9201_UQFN2020_12_TypeC.kicad_mod": "f1c0e28ec11a295e9e155c7ae491f88b66cbee85ecd9d3013e67ead8e9a54908",
+    "hardware/pcb/analyzer/Trimix_Power.pretty/SMB_Amphenol_142138.kicad_mod": "40eaf258adef8d5cf33dd07026ddab16d831979df74520ef9413ecdfad3aa23f",
+    "hardware/pcb/analyzer/Trimix_Power.pretty/Samtec_HTSW-113-07-L-D-007_P2.54mm_Key7.kicad_mod": "c01f74e0822d5a9bc05cfe4bd8395860a96f53118e15777e16f80b832837d9f1",
+    "hardware/pcb/analyzer/Trimix_Power.pretty/TI_DCU8_CompactSilk.kicad_mod": "2d9132b3911871f7de9dbd6de621d05181c2d98bb877dd33ca10ed92685ad479",
+    "hardware/pcb/analyzer/Trimix_Power.pretty/TI_DDC0006A.kicad_mod": "eae8c71ce571d3eeb52c7aa1e7f890db9c6d3104919b39191fc8b166d172b139",
+    "hardware/pcb/analyzer/Trimix_Power.pretty/TI_DSJ_14.kicad_mod": "731b91f82a866072aa6b5959dbe097e344cefe3913ff3851af3e543110d4d708",
+    "hardware/pcb/analyzer/Trimix_Power.pretty/TI_RPW0010A.kicad_mod": "7e98656f619d151566dd1a4c23cb0c432cff3e94106af1dbb1804f780c764a22",
+    "hardware/pcb/analyzer/Trimix_Power.pretty/TI_RTW24_4x4_ThermalVias_ServicePad.kicad_mod": "06f4bda67014bbbf010b61fc95d79679a99a0214cd1249306d2f30218ce7bbcc",
+    "hardware/pcb/analyzer/Trimix_Power.pretty/TPS22950_YBH6.kicad_mod": "ec47a2633c4bfc412b56244e048dbc135ce84e0572d43fd5e523cf8c585e0fea",
+    "hardware/pcb/analyzer/Trimix_Power.pretty/TestPoint_Pad_D0.8mm.kicad_mod": "991e5303548cdf32629ff8d316dfe1544badcf3685b7bbe32110b218fa12de47",
+    "hardware/pcb/analyzer/Trimix_Power.pretty/USB_Harness_6P_P1.8mm.kicad_mod": "f93e71156756ed348bc7ab072f7ebbcf482ae089d6a043d1497bd7805024f48b",
+    "hardware/pcb/analyzer/USB_Input.kicad_sch": "96fb60a7d762b37ae10786b16cd491c82d2e5a4c9afdebccda617c4bf47f6bc7",
+    "hardware/pcb/analyzer/USB_Input_Limiter.kicad_sch": "bf80854f95976d92f2cc61a1e625c3e508d5cb372a49509f0814c8b2ce63afce",
+    "hardware/pcb/analyzer/USB_Overvoltage.kicad_sch": "38f034afd6a19b6d6cb93b8e161acc4c58c0dd175a7d618c9bbbd993170792b8",
+    "hardware/pcb/analyzer/USB_Source_Control.kicad_sch": "9a23d2ec009f071881d3bcbfa09d47354d9d38c6669f57cb7db8d20b636fb915",
+    "hardware/pcb/analyzer/previews/Trimix_Analyzer_Preview.kicad_pcb": "9b73346837d06b91558f8f83b9c87897adf574f9d600f88aac8a39799a8b7195",
+    "hardware/pcb/analyzer/previews/Trimix_Analyzer_Preview.kicad_pro": "a3c70c5113d861516b1830568aa76b83a2245cf6cd840107c9d9cbaee4f31d14",
+    "hardware/pcb/analyzer-v2/Carbon_Monoxide.kicad_sch": "e05b21e25d82c727ea046086cab4b3bb2a3f3797fb877754c356ca801ca57a96",
+    "hardware/pcb/analyzer-v2/Charging.kicad_sch": "afe2b65761ab48c2ab009336f6bd0782e343cbd33043100822e29cfa4a65c1da",
+    "hardware/pcb/analyzer-v2/Environment.kicad_sch": "a1cd76c7502b1720cbaa00b3eb258ff24178aadee432b8c3d760d3571a4524a7",
+    "hardware/pcb/analyzer-v2/Gauge_Interface.kicad_sch": "ba7cd46b5f575c20b85fe264e02f405a459ce6de5958aa35b8115688eedfed6e",
+    "hardware/pcb/analyzer-v2/Helium.kicad_sch": "9ea2437448c99602f45d038a4acacd7bc13256d081d157b55d011494bb1f64ce",
+    "hardware/pcb/analyzer-v2/Oxygen.kicad_sch": "97c645a89bb9f7335fbd80882cd5aa9cb9fe19d51262fb48f73e1e3eb0a0ba13",
+    "hardware/pcb/analyzer-v2/Power_Control.kicad_sch": "1d0e88653e2c66d3de08e57afb512cc088b87d9d772afcf86f58d5951b05244d",
+    "hardware/pcb/analyzer-v2/Supply_5V.kicad_sch": "bfd05c6d9788d346bc97a99eba06bca5458786f583a7b40c8c792b0b36da4451",
+    "hardware/pcb/analyzer-v2/Testpoints.kicad_sch": "2c5cfad1891b3d6fa4538d4227cca4a4008e820ebf930dc40d8b1512b73ccc78",
+    "hardware/pcb/analyzer-v2/Trimix_Analyzer.kicad_dru": "194c12b0abc86e46d020ff7fc56561faa65d92891e188cb8a6f62491738585a9",
+    "hardware/pcb/analyzer-v2/Trimix_Analyzer.kicad_pcb": "1df55664b1f57ec4dcc38bbd2358f5aee306f59696f52271aafb94f233b992bc",
+    "hardware/pcb/analyzer-v2/Trimix_Analyzer.kicad_pro": "a19783ba0c7ddf75f1f4c9d4852db2b5f5c1939d6c844cb8ac0d7d6a9c6b418a",
+    "hardware/pcb/analyzer-v2/Trimix_Analyzer.kicad_sch": "0f3da790cab859155b557f8dfa76146ecd49850168362410329309915e6043b4",
+    "hardware/pcb/analyzer-v2/USB_Input.kicad_sch": "1593b35a796a78a199dce22b0f7c309d555aed3a6287fb038c93ce9b28488281",
+    "hardware/pcb/analyzer-v2/USB_Input_Limiter.kicad_sch": "bf80854f95976d92f2cc61a1e625c3e508d5cb372a49509f0814c8b2ce63afce",
+    "hardware/pcb/analyzer-v2/USB_Overvoltage.kicad_sch": "38f034afd6a19b6d6cb93b8e161acc4c58c0dd175a7d618c9bbbd993170792b8",
+    "hardware/pcb/analyzer-v2/USB_Source_Control.kicad_sch": "9a23d2ec009f071881d3bcbfa09d47354d9d38c6669f57cb7db8d20b636fb915",
+    "hardware/pcb/analyzer-v2/reference/added-copper-uuids.json": "0ba359e566caeab2ea509ca7165e6980a833f7d60f018c59540c860508bccf61",
+    "hardware/pcb/analyzer-v2/reference/original-source-hashes.json": "12e91986281369c36cefdda2c8eca19386d702f23d3b1ba262d95105bdefa832",
+    "hardware/pcb/analyzer-v2/scripts/verify_variant.py": "ca9e6a0e6abefae86bffc30ab65f01aa071576c29d1e3b46b033778e76d4b577",
+    "hardware/pcb/analyzer-v2-bottom/Carbon_Monoxide.kicad_sch": "e05b21e25d82c727ea046086cab4b3bb2a3f3797fb877754c356ca801ca57a96",
+    "hardware/pcb/analyzer-v2-bottom/Charging.kicad_sch": "afe2b65761ab48c2ab009336f6bd0782e343cbd33043100822e29cfa4a65c1da",
+    "hardware/pcb/analyzer-v2-bottom/Environment.kicad_sch": "a1cd76c7502b1720cbaa00b3eb258ff24178aadee432b8c3d760d3571a4524a7",
+    "hardware/pcb/analyzer-v2-bottom/Gauge_Interface.kicad_sch": "ba7cd46b5f575c20b85fe264e02f405a459ce6de5958aa35b8115688eedfed6e",
+    "hardware/pcb/analyzer-v2-bottom/Helium.kicad_sch": "9ea2437448c99602f45d038a4acacd7bc13256d081d157b55d011494bb1f64ce",
+    "hardware/pcb/analyzer-v2-bottom/Oxygen.kicad_sch": "97c645a89bb9f7335fbd80882cd5aa9cb9fe19d51262fb48f73e1e3eb0a0ba13",
+    "hardware/pcb/analyzer-v2-bottom/Power_Control.kicad_sch": "1d0e88653e2c66d3de08e57afb512cc088b87d9d772afcf86f58d5951b05244d",
+    "hardware/pcb/analyzer-v2-bottom/Supply_5V.kicad_sch": "bfd05c6d9788d346bc97a99eba06bca5458786f583a7b40c8c792b0b36da4451",
+    "hardware/pcb/analyzer-v2-bottom/Testpoints.kicad_sch": "2c5cfad1891b3d6fa4538d4227cca4a4008e820ebf930dc40d8b1512b73ccc78",
+    "hardware/pcb/analyzer-v2-bottom/Trimix_Analyzer.kicad_dru": "194c12b0abc86e46d020ff7fc56561faa65d92891e188cb8a6f62491738585a9",
+    "hardware/pcb/analyzer-v2-bottom/Trimix_Analyzer.kicad_pcb": "59a0be0876394c670bd6c852033312527ccf9a4e02e94ac0437080b83f57085c",
+    "hardware/pcb/analyzer-v2-bottom/Trimix_Analyzer.kicad_pro": "a19783ba0c7ddf75f1f4c9d4852db2b5f5c1939d6c844cb8ac0d7d6a9c6b418a",
+    "hardware/pcb/analyzer-v2-bottom/Trimix_Analyzer.kicad_sch": "0f3da790cab859155b557f8dfa76146ecd49850168362410329309915e6043b4",
+    "hardware/pcb/analyzer-v2-bottom/USB_Input.kicad_sch": "1593b35a796a78a199dce22b0f7c309d555aed3a6287fb038c93ce9b28488281",
+    "hardware/pcb/analyzer-v2-bottom/USB_Input_Limiter.kicad_sch": "bf80854f95976d92f2cc61a1e625c3e508d5cb372a49509f0814c8b2ce63afce",
+    "hardware/pcb/analyzer-v2-bottom/USB_Overvoltage.kicad_sch": "38f034afd6a19b6d6cb93b8e161acc4c58c0dd175a7d618c9bbbd993170792b8",
+    "hardware/pcb/analyzer-v2-bottom/USB_Source_Control.kicad_sch": "9a23d2ec009f071881d3bcbfa09d47354d9d38c6669f57cb7db8d20b636fb915",
+    "hardware/pcb/analyzer-v2-bottom/reference/final-drc.json": "eeb0e642309dd25c228e2fff3f8302b946ab4c5c62dead659c5f94489a7bed4d",
+    "hardware/pcb/analyzer-v2-bottom/reference/verification/baseline-netlist.xml": "91ebce4b0b2bc693cc3621df40035512eb29f5d2f852cea30792747b2e5ad6e5",
+    "hardware/pcb/analyzer-v2-bottom/reference/verification/bottom-netlist.xml": "247d579528c37306078a4271416511c195a6402aa31c4dbd97c3ca5d3a6e2ed0",
+    "hardware/pcb/analyzer-v2-bottom/scripts/verify_bottom_variant.py": "265d24d82c1c44ea73257b472434e132a0d22628b994af03d6d3200956d371cb",
+    "hardware/pcb/usb-input/Trimix_USB.pretty/TI_DQA0010B.kicad_mod": "31c0a4eca41ce6a0dbc39ff1d2afdb499d5322652f42d3bd3560a80979590131",
+    "hardware/pcb/usb-input/Trimix_USB.pretty/TI_DYA0002A.kicad_mod": "b2c037451051c9188eb8e44151f4e55255408a4eb74e8e417bfe8bf73412fec6",
+    "hardware/pcb/usb-input/Trimix_USB.pretty/USB4720_RevB.kicad_mod": "360952a8651a8fe8557c4cb41f19eb757bfd05cb09d1ca73c54da81051b81d02",
+    "hardware/pcb/usb-input/Trimix_USB.pretty/USB_Harness_6P_P1.8mm.kicad_mod": "f93e71156756ed348bc7ab072f7ebbcf482ae089d6a043d1497bd7805024f48b",
+    "hardware/pcb/usb-input/Trimix_USB_Input.kicad_dru": "3002618eccd3357baae76be67ae35caff58a6506f8248d9e72b5451902691e36",
+    "hardware/pcb/usb-input/Trimix_USB_Input.kicad_pcb": "63d5742a1f8a2598a80c5d6a962a5551b9bebfa1a59c6780a00ab8ba3dd15ea7",
+    "hardware/pcb/usb-input/Trimix_USB_Input.kicad_pro": "715e2524f254c50613fc942c7365e1b0f4c795cb1c6debe2ae2a5b682231584a",
+    "hardware/pcb/usb-input/Trimix_USB_Input.kicad_sch": "1e2157b972ae6687bb1fe1a379593fd297aba0af529cc1a904eb665462b11a96"
+  },
+  "fresh_netlist_exports": [
+    {
+      "source": "hardware/pcb/analyzer-v2",
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "source": "hardware/pcb/analyzer-v2-bottom",
+      "returncode": 0,
+      "stderr": ""
+    }
+  ],
+  "checks": [
+    {
+      "check": "PCB2 source is the independently frozen original integration",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "51-file canonical manifest is the independently pinned manifest",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "All51 canonical files are byte-identical",
+      "passed": true,
+      "details": {
+        "count": 51,
+        "changed": []
+      }
+    },
+    {
+      "check": "All14 derived schematics are byte-identical to PCB2",
+      "passed": true,
+      "details": []
+    },
+    {
+      "check": "PCB2 reference sheets still contain only the prior explicit metadata/annotation adaptations to original51 sources",
+      "passed": true,
+      "details": []
+    },
+    {
+      "check": "Footprint reference membership is identical",
+      "passed": true,
+      "details": {
+        "source": 171,
+        "candidate": 171
+      }
+    },
+    {
+      "check": "All retained core footprints retain native placement, identity, values and population",
+      "passed": true,
+      "details": []
+    },
+    {
+      "check": "Every retained core pad is identical, including thermal lands, layers, nets and holes",
+      "passed": true,
+      "details": []
+    },
+    {
+      "check": "All35 USB pads and three footprints undergo only the approved rigid transform",
+      "passed": true,
+      "details": []
+    },
+    {
+      "check": "Every pad-to-net assignment is unchanged",
+      "passed": true,
+      "details": []
+    },
+    {
+      "check": "Independent local USB selection is exactly92 items (76tracks,16vias)",
+      "passed": true,
+      "details": {
+        "count": 92
+      }
+    },
+    {
+      "check": "All2199 non-USB-added copper objects plus9 retained former-J101 replacements are exact",
+      "passed": true,
+      "details": {
+        "protected_count": 2208,
+        "mismatches": []
+      }
+    },
+    {
+      "check": "All92 USB-local copper items preserve topology, widths, layers, drills and treatment under rotation",
+      "passed": true,
+      "details": []
+    },
+    {
+      "check": "Only the26 superseded USB-link copper objects may be removed/rerouted",
+      "passed": true,
+      "details": {
+        "allowed_uuids": [
+          "06767bfe-295a-457d-9c01-c45c6f57ab1b",
+          "12acb6e8-d3dd-4904-b2e0-4f6666b59590",
+          "241c8a96-0d27-4bc0-b08c-4c1c2c424701",
+          "33e46e3b-279d-484a-89a8-d73de8b59da3",
+          "38f29aa2-8384-4a2b-9467-b161d23e3e16",
+          "3e7f5cca-3a49-4a28-9e7f-deed14f6cd1c",
+          "416205b6-93a1-4c97-9720-752d49a6f8cd",
+          "44ecc47c-0b65-4c0a-ad6e-c47a5c59b335",
+          "57ab187a-6261-4540-88a6-d947925e44ba",
+          "58d29806-62d6-4f43-99d5-b92dab41312c",
+          "59486aa9-18b3-4ca5-9dde-20beec0b1afd",
+          "5ba6328d-2dc0-4a5f-92ef-e173ddcf0cc5",
+          "5c32f53b-5ed0-40a1-a6d0-6c1e9afbdda7",
+          "73f3c9ee-3747-481c-a65c-4da8567f98d3",
+          "8c9a4294-05a0-48ba-b1cd-f64f05076848",
+          "a8b8d8de-3a54-4d0c-83e9-362ed9cb9e1c",
+          "ab16cbba-9d0c-46d4-b633-83e139db0753",
+          "b524482e-a9f9-4dcd-8f54-de2a2894077a",
+          "b6e31eef-1cea-4aeb-aac8-bf84f935b972",
+          "c01ba729-73bd-433b-ae85-c9ad0916eea0",
+          "cb4f2d79-f3fc-4b4b-9347-230e0d7715ae",
+          "d2ded058-5f79-4cfa-9504-106679960ec1",
+          "deee113b-f1a2-4e6e-8059-cca36f3eaa6a",
+          "e1b0d19b-af76-4189-9fc2-676edbf4da02",
+          "e25738f9-2283-47a7-9d16-f8283be1f467",
+          "eefbf5d7-da19-40f3-b5ad-b3877927125d"
+        ],
+        "removed_uuids": [
+          "06767bfe-295a-457d-9c01-c45c6f57ab1b",
+          "12acb6e8-d3dd-4904-b2e0-4f6666b59590",
+          "241c8a96-0d27-4bc0-b08c-4c1c2c424701",
+          "33e46e3b-279d-484a-89a8-d73de8b59da3",
+          "38f29aa2-8384-4a2b-9467-b161d23e3e16",
+          "3e7f5cca-3a49-4a28-9e7f-deed14f6cd1c",
+          "416205b6-93a1-4c97-9720-752d49a6f8cd",
+          "44ecc47c-0b65-4c0a-ad6e-c47a5c59b335",
+          "57ab187a-6261-4540-88a6-d947925e44ba",
+          "58d29806-62d6-4f43-99d5-b92dab41312c",
+          "59486aa9-18b3-4ca5-9dde-20beec0b1afd",
+          "5ba6328d-2dc0-4a5f-92ef-e173ddcf0cc5",
+          "5c32f53b-5ed0-40a1-a6d0-6c1e9afbdda7",
+          "73f3c9ee-3747-481c-a65c-4da8567f98d3",
+          "8c9a4294-05a0-48ba-b1cd-f64f05076848",
+          "a8b8d8de-3a54-4d0c-83e9-362ed9cb9e1c",
+          "ab16cbba-9d0c-46d4-b633-83e139db0753",
+          "b524482e-a9f9-4dcd-8f54-de2a2894077a",
+          "b6e31eef-1cea-4aeb-aac8-bf84f935b972",
+          "c01ba729-73bd-433b-ae85-c9ad0916eea0",
+          "cb4f2d79-f3fc-4b4b-9347-230e0d7715ae",
+          "d2ded058-5f79-4cfa-9504-106679960ec1",
+          "deee113b-f1a2-4e6e-8059-cca36f3eaa6a",
+          "e1b0d19b-af76-4189-9fc2-676edbf4da02",
+          "e25738f9-2283-47a7-9d16-f8283be1f467",
+          "eefbf5d7-da19-40f3-b5ad-b3877927125d"
+        ],
+        "unexpected_removals": []
+      }
+    },
+    {
+      "check": "No copper outside USB-local and superseded-link scope changes",
+      "passed": true,
+      "details": {
+        "unexpected_changed": []
+      }
+    },
+    {
+      "check": "New links preserve1mm VBUS minimum,0.15mm signals and ordinary vias; only exact bounded D+ hop uses In1",
+      "passed": true,
+      "details": {
+        "new_copper_count": 76,
+        "link_item_count": 76,
+        "approved_In1_Dplus_endpoints": [
+          [
+            [
+              39.85,
+              111.9
+            ],
+            [
+              37.375,
+              114.375
+            ]
+          ],
+          [
+            [
+              37.375,
+              114.375
+            ],
+            [
+              37.375,
+              118.475
+            ]
+          ],
+          [
+            [
+              37.375,
+              118.475
+            ],
+            [
+              37.35,
+              118.48491
+            ]
+          ]
+        ],
+        "mismatches": []
+      }
+    },
+    {
+      "check": "All five rerouted links explicitly use preserved post-ESD exits and exact retained-source core-entry anchors",
+      "passed": true,
+      "details": [
+        {
+          "net": "USB_CC1",
+          "protected_local_exit_native_mm": [
+            13.35,
+            108.20991
+          ],
+          "allowed_retained_core_entries_native_mm": [
+            [
+              33.75,
+              118.48491
+            ]
+          ],
+          "independently_proven_source_entries_native_mm": [
+            [
+              33.75,
+              118.48491
+            ]
+          ],
+          "both_anchors_explicit": true
+        },
+        {
+          "net": "USB_CC2",
+          "protected_local_exit_native_mm": [
+            12.6,
+            108.28491
+          ],
+          "allowed_retained_core_entries_native_mm": [
+            [
+              35.55,
+              118.48491
+            ]
+          ],
+          "independently_proven_source_entries_native_mm": [
+            [
+              35.55,
+              118.48491
+            ]
+          ],
+          "both_anchors_explicit": true
+        },
+        {
+          "net": "USB_5V",
+          "protected_local_exit_native_mm": [
+            17.2,
+            108.48491
+          ],
+          "allowed_retained_core_entries_native_mm": [
+            [
+              30.15,
+              118.48491
+            ]
+          ],
+          "independently_proven_source_entries_native_mm": [
+            [
+              30.15,
+              118.48491
+            ]
+          ],
+          "both_anchors_explicit": true
+        },
+        {
+          "net": "USB_D_P",
+          "protected_local_exit_native_mm": [
+            11.4,
+            108.28491
+          ],
+          "allowed_retained_core_entries_native_mm": [
+            [
+              37.35,
+              118.48491
+            ],
+            [
+              48.835,
+              115.52462
+            ]
+          ],
+          "independently_proven_source_entries_native_mm": [
+            [
+              37.35,
+              118.48491
+            ],
+            [
+              48.835,
+              115.52462
+            ]
+          ],
+          "both_anchors_explicit": true
+        },
+        {
+          "net": "USB_D_M",
+          "protected_local_exit_native_mm": [
+            10.65,
+            108.68491
+          ],
+          "allowed_retained_core_entries_native_mm": [
+            [
+              39.15,
+              118.48491
+            ]
+          ],
+          "independently_proven_source_entries_native_mm": [
+            [
+              39.15,
+              118.48491
+            ]
+          ],
+          "both_anchors_explicit": true
+        }
+      ]
+    },
+    {
+      "check": "U901 four NC pairs retain actual direct copper bridges",
+      "passed": true,
+      "details": [
+        {
+          "pins": [
+            "1",
+            "10"
+          ],
+          "net": "USB_CC1",
+          "direct_segments": [
+            "f967a025-f6ef-4610-a675-677968e64b8b"
+          ]
+        },
+        {
+          "pins": [
+            "2",
+            "9"
+          ],
+          "net": "USB_CC2",
+          "direct_segments": [
+            "b3204fdb-dbfe-4d5e-99a7-cab6b9907378"
+          ]
+        },
+        {
+          "pins": [
+            "4",
+            "7"
+          ],
+          "net": "USB_D_P",
+          "direct_segments": [
+            "374a9804-597e-4855-adb1-93b4341e27d9"
+          ]
+        },
+        {
+          "pins": [
+            "5",
+            "6"
+          ],
+          "net": "USB_D_M",
+          "direct_segments": [
+            "0547b024-dad9-48b1-a268-998029898092"
+          ]
+        }
+      ]
+    },
+    {
+      "check": "USB-C and ESD pin mappings retain polarity, channels and VBUS/GND protection",
+      "passed": true,
+      "details": []
+    },
+    {
+      "check": "All24 thermal drills/lands retain exact location,0.20mm bores and ground mapping",
+      "passed": true,
+      "details": [
+        {
+          "reference": "U101",
+          "uuid": "54bc8f57-5ed8-4529-b1c5-414914b019c1",
+          "world_xy_mm": [
+            31.799999999999997,
+            104.38491
+          ],
+          "raw_pad": [
+            "pad",
+            "25",
+            "thru_hole",
+            "circle",
+            [
+              "at",
+              -1.1,
+              -1.1
+            ],
+            [
+              "size",
+              0.5,
+              0.5
+            ],
+            [
+              "drill",
+              0.2
+            ],
+            [
+              "property",
+              "pad_prop_heatsink"
+            ],
+            [
+              "layers",
+              "*.Cu"
+            ],
+            [
+              "remove_unused_layers",
+              "no"
+            ],
+            [
+              "net",
+              "GND"
+            ],
+            [
+              "pinfunction",
+              "PGND_25"
+            ],
+            [
+              "pintype",
+              "passive"
+            ],
+            [
+              "uuid",
+              "54bc8f57-5ed8-4529-b1c5-414914b019c1"
+            ]
+          ]
+        },
+        {
+          "reference": "U101",
+          "uuid": "e4ecb0fd-46de-43e9-9e0d-9b2b31e3a2e6",
+          "world_xy_mm": [
+            31.799999999999997,
+            105.48491
+          ],
+          "raw_pad": [
+            "pad",
+            "25",
+            "thru_hole",
+            "circle",
+            [
+              "at",
+              -1.1,
+              0
+            ],
+            [
+              "size",
+              0.5,
+              0.5
+            ],
+            [
+              "drill",
+              0.2
+            ],
+            [
+              "property",
+              "pad_prop_heatsink"
+            ],
+            [
+              "layers",
+              "*.Cu"
+            ],
+            [
+              "remove_unused_layers",
+              "no"
+            ],
+            [
+              "net",
+              "GND"
+            ],
+            [
+              "pinfunction",
+              "PGND_25"
+            ],
+            [
+              "pintype",
+              "passive"
+            ],
+            [
+              "uuid",
+              "e4ecb0fd-46de-43e9-9e0d-9b2b31e3a2e6"
+            ]
+          ]
+        },
+        {
+          "reference": "U101",
+          "uuid": "391e0442-fb4a-427e-b000-55be960bc76b",
+          "world_xy_mm": [
+            31.799999999999997,
+            106.58491
+          ],
+          "raw_pad": [
+            "pad",
+            "25",
+            "thru_hole",
+            "circle",
+            [
+              "at",
+              -1.1,
+              1.1
+            ],
+            [
+              "size",
+              0.5,
+              0.5
+            ],
+            [
+              "drill",
+              0.2
+            ],
+            [
+              "property",
+              "pad_prop_heatsink"
+            ],
+            [
+              "layers",
+              "*.Cu"
+            ],
+            [
+              "remove_unused_layers",
+              "no"
+            ],
+            [
+              "net",
+              "GND"
+            ],
+            [
+              "pinfunction",
+              "PGND_25"
+            ],
+            [
+              "pintype",
+              "passive"
+            ],
+            [
+              "uuid",
+              "391e0442-fb4a-427e-b000-55be960bc76b"
+            ]
+          ]
+        },
+        {
+          "reference": "U101",
+          "uuid": "dae1696b-bcc5-4b35-b050-705de09a8636",
+          "world_xy_mm": [
+            32.9,
+            104.38491
+          ],
+          "raw_pad": [
+            "pad",
+            "25",
+            "thru_hole",
+            "circle",
+            [
+              "at",
+              0,
+              -1.1
+            ],
+            [
+              "size",
+              0.5,
+              0.5
+            ],
+            [
+              "drill",
+              0.2
+            ],
+            [
+              "property",
+              "pad_prop_heatsink"
+            ],
+            [
+              "layers",
+              "*.Cu"
+            ],
+            [
+              "remove_unused_layers",
+              "no"
+            ],
+            [
+              "net",
+              "GND"
+            ],
+            [
+              "pinfunction",
+              "PGND_25"
+            ],
+            [
+              "pintype",
+              "passive"
+            ],
+            [
+              "uuid",
+              "dae1696b-bcc5-4b35-b050-705de09a8636"
+            ]
+          ]
+        },
+        {
+          "reference": "U101",
+          "uuid": "f685e1fc-4f48-4058-8428-b30b40526df7",
+          "world_xy_mm": [
+            32.9,
+            105.48491
+          ],
+          "raw_pad": [
+            "pad",
+            "25",
+            "thru_hole",
+            "circle",
+            [
+              "at",
+              0,
+              0
+            ],
+            [
+              "size",
+              0.5,
+              0.5
+            ],
+            [
+              "drill",
+              0.2
+            ],
+            [
+              "property",
+              "pad_prop_heatsink"
+            ],
+            [
+              "layers",
+              "*.Cu"
+            ],
+            [
+              "remove_unused_layers",
+              "no"
+            ],
+            [
+              "net",
+              "GND"
+            ],
+            [
+              "pinfunction",
+              "PGND_25"
+            ],
+            [
+              "pintype",
+              "passive"
+            ],
+            [
+              "uuid",
+              "f685e1fc-4f48-4058-8428-b30b40526df7"
+            ]
+          ]
+        },
+        {
+          "reference": "U101",
+          "uuid": "159cd6c8-d9ce-4edc-8fce-219cf1acc933",
+          "world_xy_mm": [
+            32.9,
+            106.58491
+          ],
+          "raw_pad": [
+            "pad",
+            "25",
+            "thru_hole",
+            "circle",
+            [
+              "at",
+              0,
+              1.1
+            ],
+            [
+              "size",
+              0.5,
+              0.5
+            ],
+            [
+              "drill",
+              0.2
+            ],
+            [
+              "property",
+              "pad_prop_heatsink"
+            ],
+            [
+              "layers",
+              "*.Cu"
+            ],
+            [
+              "remove_unused_layers",
+              "no"
+            ],
+            [
+              "net",
+              "GND"
+            ],
+            [
+              "pinfunction",
+              "PGND_25"
+            ],
+            [
+              "pintype",
+              "passive"
+            ],
+            [
+              "uuid",
+              "159cd6c8-d9ce-4edc-8fce-219cf1acc933"
+            ]
+          ]
+        },
+        {
+          "reference": "U101",
+          "uuid": "8f24e3f9-48bd-4221-91d2-a86ae10c441a",
+          "world_xy_mm": [
+            34.0,
+            104.38491
+          ],
+          "raw_pad": [
+            "pad",
+            "25",
+            "thru_hole",
+            "circle",
+            [
+              "at",
+              1.1,
+              -1.1
+            ],
+            [
+              "size",
+              0.5,
+              0.5
+            ],
+            [
+              "drill",
+              0.2
+            ],
+            [
+              "property",
+              "pad_prop_heatsink"
+            ],
+            [
+              "layers",
+              "*.Cu"
+            ],
+            [
+              "remove_unused_layers",
+              "no"
+            ],
+            [
+              "net",
+              "GND"
+            ],
+            [
+              "pinfunction",
+              "PGND_25"
+            ],
+            [
+              "pintype",
+              "passive"
+            ],
+            [
+              "uuid",
+              "8f24e3f9-48bd-4221-91d2-a86ae10c441a"
+            ]
+          ]
+        },
+        {
+          "reference": "U101",
+          "uuid": "05a293a1-dae2-46b0-917b-37451d9caf84",
+          "world_xy_mm": [
+            34.0,
+            105.48491
+          ],
+          "raw_pad": [
+            "pad",
+            "25",
+            "thru_hole",
+            "circle",
+            [
+              "at",
+              1.1,
+              0
+            ],
+            [
+              "size",
+              0.5,
+              0.5
+            ],
+            [
+              "drill",
+              0.2
+            ],
+            [
+              "property",
+              "pad_prop_heatsink"
+            ],
+            [
+              "layers",
+              "*.Cu"
+            ],
+            [
+              "remove_unused_layers",
+              "no"
+            ],
+            [
+              "net",
+              "GND"
+            ],
+            [
+              "pinfunction",
+              "PGND_25"
+            ],
+            [
+              "pintype",
+              "passive"
+            ],
+            [
+              "uuid",
+              "05a293a1-dae2-46b0-917b-37451d9caf84"
+            ]
+          ]
+        },
+        {
+          "reference": "U101",
+          "uuid": "a230bb3e-b006-4938-b888-7e73f0a9fd13",
+          "world_xy_mm": [
+            34.0,
+            106.58491
+          ],
+          "raw_pad": [
+            "pad",
+            "25",
+            "thru_hole",
+            "circle",
+            [
+              "at",
+              1.1,
+              1.1
+            ],
+            [
+              "size",
+              0.5,
+              0.5
+            ],
+            [
+              "drill",
+              0.2
+            ],
+            [
+              "property",
+              "pad_prop_heatsink"
+            ],
+            [
+              "layers",
+              "*.Cu"
+            ],
+            [
+              "remove_unused_layers",
+              "no"
+            ],
+            [
+              "net",
+              "GND"
+            ],
+            [
+              "pinfunction",
+              "PGND_25"
+            ],
+            [
+              "pintype",
+              "passive"
+            ],
+            [
+              "uuid",
+              "a230bb3e-b006-4938-b888-7e73f0a9fd13"
+            ]
+          ]
+        },
+        {
+          "reference": "U201",
+          "uuid": "3cc80371-5665-4457-ac81-8ef0cf637643",
+          "world_xy_mm": [
+            32.4,
+            81.48491
+          ],
+          "raw_pad": [
+            "pad",
+            "15",
+            "thru_hole",
+            "circle",
+            [
+              "at",
+              -0.5,
+              -1
+            ],
+            [
+              "size",
+              0.45,
+              0.45
+            ],
+            [
+              "drill",
+              0.2
+            ],
+            [
+              "layers",
+              "*.Cu"
+            ],
+            [
+              "remove_unused_layers",
+              "no"
+            ],
+            [
+              "net",
+              "GND"
+            ],
+            [
+              "pinfunction",
+              "PGND/EP_15"
+            ],
+            [
+              "pintype",
+              "power_in"
+            ],
+            [
+              "zone_connect",
+              2
+            ],
+            [
+              "uuid",
+              "3cc80371-5665-4457-ac81-8ef0cf637643"
+            ]
+          ]
+        },
+        {
+          "reference": "U201",
+          "uuid": "f46ea153-3a88-4aab-8a2b-bbca6da5f524",
+          "world_xy_mm": [
+            32.4,
+            81.98491
+          ],
+          "raw_pad": [
+            "pad",
+            "15",
+            "thru_hole",
+            "circle",
+            [
+              "at",
+              -0.5,
+              -0.5
+            ],
+            [
+              "size",
+              0.45,
+              0.45
+            ],
+            [
+              "drill",
+              0.2
+            ],
+            [
+              "layers",
+              "*.Cu"
+            ],
+            [
+              "remove_unused_layers",
+              "no"
+            ],
+            [
+              "net",
+              "GND"
+            ],
+            [
+              "pinfunction",
+              "PGND/EP_15"
+            ],
+            [
+              "pintype",
+              "power_in"
+            ],
+            [
+              "zone_connect",
+              2
+            ],
+            [
+              "uuid",
+              "f46ea153-3a88-4aab-8a2b-bbca6da5f524"
+            ]
+          ]
+        },
+        {
+          "reference": "U201",
+          "uuid": "c0795945-3276-4346-9cc5-32ddddb64e55",
+          "world_xy_mm": [
+            32.4,
+            82.48491
+          ],
+          "raw_pad": [
+            "pad",
+            "15",
+            "thru_hole",
+            "circle",
+            [
+              "at",
+              -0.5,
+              0
+            ],
+            [
+              "size",
+              0.45,
+              0.45
+            ],
+            [
+              "drill",
+              0.2
+            ],
+            [
+              "layers",
+              "*.Cu"
+            ],
+            [
+              "remove_unused_layers",
+              "no"
+            ],
+            [
+              "net",
+              "GND"
+            ],
+            [
+              "pinfunction",
+              "PGND/EP_15"
+            ],
+            [
+              "pintype",
+              "power_in"
+            ],
+            [
+              "zone_connect",
+              2
+            ],
+            [
+              "uuid",
+              "c0795945-3276-4346-9cc5-32ddddb64e55"
+            ]
+          ]
+        },
+        {
+          "reference": "U201",
+          "uuid": "2703c475-5178-432e-b929-132a787ca5e9",
+          "world_xy_mm": [
+            32.4,
+            82.98491
+          ],
+          "raw_pad": [
+            "pad",
+            "15",
+            "thru_hole",
+            "circle",
+            [
+              "at",
+              -0.5,
+              0.5
+            ],
+            [
+              "size",
+              0.45,
+              0.45
+            ],
+            [
+              "drill",
+              0.2
+            ],
+            [
+              "layers",
+              "*.Cu"
+            ],
+            [
+              "remove_unused_layers",
+              "no"
+            ],
+            [
+              "net",
+              "GND"
+            ],
+            [
+              "pinfunction",
+              "PGND/EP_15"
+            ],
+            [
+              "pintype",
+              "power_in"
+            ],
+            [
+              "zone_connect",
+              2
+            ],
+            [
+              "uuid",
+              "2703c475-5178-432e-b929-132a787ca5e9"
+            ]
+          ]
+        },
+        {
+          "reference": "U201",
+          "uuid": "d1e197e0-ab20-496b-82e4-0f8a2167d713",
+          "world_xy_mm": [
+            32.4,
+            83.48491
+          ],
+          "raw_pad": [
+            "pad",
+            "15",
+            "thru_hole",
+            "circle",
+            [
+              "at",
+              -0.5,
+              1
+            ],
+            [
+              "size",
+              0.45,
+              0.45
+            ],
+            [
+              "drill",
+              0.2
+            ],
+            [
+              "layers",
+              "*.Cu"
+            ],
+            [
+              "remove_unused_layers",
+              "no"
+            ],
+            [
+              "net",
+              "GND"
+            ],
+            [
+              "pinfunction",
+              "PGND/EP_15"
+            ],
+            [
+              "pintype",
+              "power_in"
+            ],
+            [
+              "zone_connect",
+              2
+            ],
+            [
+              "uuid",
+              "d1e197e0-ab20-496b-82e4-0f8a2167d713"
+            ]
+          ]
+        },
+        {
+          "reference": "U201",
+          "uuid": "ec2ce9aa-1a4b-4bee-9ef2-815793f788b4",
+          "world_xy_mm": [
+            32.9,
+            81.48491
+          ],
+          "raw_pad": [
+            "pad",
+            "15",
+            "thru_hole",
+            "circle",
+            [
+              "at",
+              0,
+              -1
+            ],
+            [
+              "size",
+              0.45,
+              0.45
+            ],
+            [
+              "drill",
+              0.2
+            ],
+            [
+              "layers",
+              "*.Cu"
+            ],
+            [
+              "remove_unused_layers",
+              "no"
+            ],
+            [
+              "net",
+              "GND"
+            ],
+            [
+              "pinfunction",
+              "PGND/EP_15"
+            ],
+            [
+              "pintype",
+              "power_in"
+            ],
+            [
+              "zone_connect",
+              2
+            ],
+            [
+              "uuid",
+              "ec2ce9aa-1a4b-4bee-9ef2-815793f788b4"
+            ]
+          ]
+        },
+        {
+          "reference": "U201",
+          "uuid": "72046401-8913-493c-9912-1916d6fa26e1",
+          "world_xy_mm": [
+            32.9,
+            81.98491
+          ],
+          "raw_pad": [
+            "pad",
+            "15",
+            "thru_hole",
+            "circle",
+            [
+              "at",
+              0,
+              -0.5
+            ],
+            [
+              "size",
+              0.45,
+              0.45
+            ],
+            [
+              "drill",
+              0.2
+            ],
+            [
+              "layers",
+              "*.Cu"
+            ],
+            [
+              "remove_unused_layers",
+              "no"
+            ],
+            [
+              "net",
+              "GND"
+            ],
+            [
+              "pinfunction",
+              "PGND/EP_15"
+            ],
+            [
+              "pintype",
+              "power_in"
+            ],
+            [
+              "zone_connect",
+              2
+            ],
+            [
+              "uuid",
+              "72046401-8913-493c-9912-1916d6fa26e1"
+            ]
+          ]
+        },
+        {
+          "reference": "U201",
+          "uuid": "8862aac3-9cfa-4bcf-94fd-2c32c6ac06e8",
+          "world_xy_mm": [
+            32.9,
+            82.48491
+          ],
+          "raw_pad": [
+            "pad",
+            "15",
+            "thru_hole",
+            "circle",
+            [
+              "at",
+              0,
+              0
+            ],
+            [
+              "size",
+              0.45,
+              0.45
+            ],
+            [
+              "drill",
+              0.2
+            ],
+            [
+              "layers",
+              "*.Cu"
+            ],
+            [
+              "remove_unused_layers",
+              "no"
+            ],
+            [
+              "net",
+              "GND"
+            ],
+            [
+              "pinfunction",
+              "PGND/EP_15"
+            ],
+            [
+              "pintype",
+              "power_in"
+            ],
+            [
+              "zone_connect",
+              2
+            ],
+            [
+              "uuid",
+              "8862aac3-9cfa-4bcf-94fd-2c32c6ac06e8"
+            ]
+          ]
+        },
+        {
+          "reference": "U201",
+          "uuid": "2f17bbb1-4b3d-464c-9dec-da248dcb9907",
+          "world_xy_mm": [
+            32.9,
+            82.98491
+          ],
+          "raw_pad": [
+            "pad",
+            "15",
+            "thru_hole",
+            "circle",
+            [
+              "at",
+              0,
+              0.5
+            ],
+            [
+              "size",
+              0.45,
+              0.45
+            ],
+            [
+              "drill",
+              0.2
+            ],
+            [
+              "layers",
+              "*.Cu"
+            ],
+            [
+              "remove_unused_layers",
+              "no"
+            ],
+            [
+              "net",
+              "GND"
+            ],
+            [
+              "pinfunction",
+              "PGND/EP_15"
+            ],
+            [
+              "pintype",
+              "power_in"
+            ],
+            [
+              "zone_connect",
+              2
+            ],
+            [
+              "uuid",
+              "2f17bbb1-4b3d-464c-9dec-da248dcb9907"
+            ]
+          ]
+        },
+        {
+          "reference": "U201",
+          "uuid": "7634bf56-e01a-4bad-a066-6ee16a7196a8",
+          "world_xy_mm": [
+            32.9,
+            83.48491
+          ],
+          "raw_pad": [
+            "pad",
+            "15",
+            "thru_hole",
+            "circle",
+            [
+              "at",
+              0,
+              1
+            ],
+            [
+              "size",
+              0.45,
+              0.45
+            ],
+            [
+              "drill",
+              0.2
+            ],
+            [
+              "layers",
+              "*.Cu"
+            ],
+            [
+              "remove_unused_layers",
+              "no"
+            ],
+            [
+              "net",
+              "GND"
+            ],
+            [
+              "pinfunction",
+              "PGND/EP_15"
+            ],
+            [
+              "pintype",
+              "power_in"
+            ],
+            [
+              "zone_connect",
+              2
+            ],
+            [
+              "uuid",
+              "7634bf56-e01a-4bad-a066-6ee16a7196a8"
+            ]
+          ]
+        },
+        {
+          "reference": "U201",
+          "uuid": "fd3a8726-7654-45df-80bf-0e7c2d3571be",
+          "world_xy_mm": [
+            33.4,
+            81.48491
+          ],
+          "raw_pad": [
+            "pad",
+            "15",
+            "thru_hole",
+            "circle",
+            [
+              "at",
+              0.5,
+              -1
+            ],
+            [
+              "size",
+              0.45,
+              0.45
+            ],
+            [
+              "drill",
+              0.2
+            ],
+            [
+              "layers",
+              "*.Cu"
+            ],
+            [
+              "remove_unused_layers",
+              "no"
+            ],
+            [
+              "net",
+              "GND"
+            ],
+            [
+              "pinfunction",
+              "PGND/EP_15"
+            ],
+            [
+              "pintype",
+              "power_in"
+            ],
+            [
+              "zone_connect",
+              2
+            ],
+            [
+              "uuid",
+              "fd3a8726-7654-45df-80bf-0e7c2d3571be"
+            ]
+          ]
+        },
+        {
+          "reference": "U201",
+          "uuid": "2f93aed7-6311-4616-8de3-401952707d0e",
+          "world_xy_mm": [
+            33.4,
+            81.98491
+          ],
+          "raw_pad": [
+            "pad",
+            "15",
+            "thru_hole",
+            "circle",
+            [
+              "at",
+              0.5,
+              -0.5
+            ],
+            [
+              "size",
+              0.45,
+              0.45
+            ],
+            [
+              "drill",
+              0.2
+            ],
+            [
+              "layers",
+              "*.Cu"
+            ],
+            [
+              "remove_unused_layers",
+              "no"
+            ],
+            [
+              "net",
+              "GND"
+            ],
+            [
+              "pinfunction",
+              "PGND/EP_15"
+            ],
+            [
+              "pintype",
+              "power_in"
+            ],
+            [
+              "zone_connect",
+              2
+            ],
+            [
+              "uuid",
+              "2f93aed7-6311-4616-8de3-401952707d0e"
+            ]
+          ]
+        },
+        {
+          "reference": "U201",
+          "uuid": "cbaa5418-0341-417f-a805-28340298bd11",
+          "world_xy_mm": [
+            33.4,
+            82.48491
+          ],
+          "raw_pad": [
+            "pad",
+            "15",
+            "thru_hole",
+            "circle",
+            [
+              "at",
+              0.5,
+              0
+            ],
+            [
+              "size",
+              0.45,
+              0.45
+            ],
+            [
+              "drill",
+              0.2
+            ],
+            [
+              "layers",
+              "*.Cu"
+            ],
+            [
+              "remove_unused_layers",
+              "no"
+            ],
+            [
+              "net",
+              "GND"
+            ],
+            [
+              "pinfunction",
+              "PGND/EP_15"
+            ],
+            [
+              "pintype",
+              "power_in"
+            ],
+            [
+              "zone_connect",
+              2
+            ],
+            [
+              "uuid",
+              "cbaa5418-0341-417f-a805-28340298bd11"
+            ]
+          ]
+        },
+        {
+          "reference": "U201",
+          "uuid": "5d8a8ea3-91ed-4dc5-8e2f-8cea841318a7",
+          "world_xy_mm": [
+            33.4,
+            82.98491
+          ],
+          "raw_pad": [
+            "pad",
+            "15",
+            "thru_hole",
+            "circle",
+            [
+              "at",
+              0.5,
+              0.5
+            ],
+            [
+              "size",
+              0.45,
+              0.45
+            ],
+            [
+              "drill",
+              0.2
+            ],
+            [
+              "layers",
+              "*.Cu"
+            ],
+            [
+              "remove_unused_layers",
+              "no"
+            ],
+            [
+              "net",
+              "GND"
+            ],
+            [
+              "pinfunction",
+              "PGND/EP_15"
+            ],
+            [
+              "pintype",
+              "power_in"
+            ],
+            [
+              "zone_connect",
+              2
+            ],
+            [
+              "uuid",
+              "5d8a8ea3-91ed-4dc5-8e2f-8cea841318a7"
+            ]
+          ]
+        },
+        {
+          "reference": "U201",
+          "uuid": "3b8bc2e4-0367-4287-8630-a4764ea18153",
+          "world_xy_mm": [
+            33.4,
+            83.48491
+          ],
+          "raw_pad": [
+            "pad",
+            "15",
+            "thru_hole",
+            "circle",
+            [
+              "at",
+              0.5,
+              1
+            ],
+            [
+              "size",
+              0.45,
+              0.45
+            ],
+            [
+              "drill",
+              0.2
+            ],
+            [
+              "layers",
+              "*.Cu"
+            ],
+            [
+              "remove_unused_layers",
+              "no"
+            ],
+            [
+              "net",
+              "GND"
+            ],
+            [
+              "pinfunction",
+              "PGND/EP_15"
+            ],
+            [
+              "pintype",
+              "power_in"
+            ],
+            [
+              "zone_connect",
+              2
+            ],
+            [
+              "uuid",
+              "3b8bc2e4-0367-4287-8630-a4764ea18153"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "check": "All layers, stackup,1.6mm general thickness and global setup are retained",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Design settings/netclasses and custom rules are unchanged",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "All zone semantics retained; only three exact GND contours and five matching edge-reserve contours adapt",
+      "passed": true,
+      "details": {
+        "allowed_polygon_changes": {
+          "531f7a80-57bf-49da-926b-ee1da1066b2c": [
+            [
+              3.51509,
+              121.28491
+            ],
+            [
+              21,
+              121.28491
+            ],
+            [
+              21,
+              120.48491
+            ],
+            [
+              49.9,
+              120.48491
+            ],
+            [
+              49.9,
+              38.48491
+            ],
+            [
+              28.8,
+              38.48491
+            ],
+            [
+              28.8,
+              21.48491
+            ],
+            [
+              19.9,
+              21.48491
+            ],
+            [
+              19.9,
+              104.38491
+            ],
+            [
+              3.51509,
+              104.38491
+            ]
+          ],
+          "a3ee32fc-511b-4512-acf0-db8842f10939": [
+            [
+              3.51509,
+              104.38491
+            ],
+            [
+              21,
+              104.38491
+            ],
+            [
+              21,
+              121.28491
+            ],
+            [
+              3.51509,
+              121.28491
+            ]
+          ],
+          "b76844b1-3616-4d68-9eb1-0974e35bc20d": [
+            [
+              3.51509,
+              104.38491
+            ],
+            [
+              21,
+              104.38491
+            ],
+            [
+              21,
+              121.28491
+            ],
+            [
+              3.51509,
+              121.28491
+            ]
+          ],
+          "b759ef5f-747e-431e-a3b1-071e532148d4": [
+            [
+              19.9,
+              21.48491
+            ],
+            [
+              20.4,
+              21.48491
+            ],
+            [
+              20.4,
+              104.38491
+            ],
+            [
+              19.9,
+              104.38491
+            ]
+          ],
+          "98a237f8-fda4-45e0-a4cd-1f55a012a4ca": [
+            [
+              49.4,
+              38.48491
+            ],
+            [
+              49.275,
+              38.48491
+            ],
+            [
+              49.275,
+              120.48491
+            ],
+            [
+              49.4,
+              120.48491
+            ]
+          ],
+          "752a4e3f-d3fd-4923-bf89-43e311b9cfa3": [
+            [
+              3.51509,
+              120.78491
+            ],
+            [
+              21,
+              120.78491
+            ],
+            [
+              21,
+              121.28491
+            ],
+            [
+              3.51509,
+              121.28491
+            ]
+          ],
+          "1a6f506a-b52d-4161-ba79-54fc7dc85e8e": [
+            [
+              20.5,
+              120.48491
+            ],
+            [
+              21,
+              120.48491
+            ],
+            [
+              21,
+              121.28491
+            ],
+            [
+              20.5,
+              121.28491
+            ]
+          ],
+          "5f563f3d-c3bf-4282-ad7f-ce7feec2097c": [
+            [
+              21,
+              119.98491
+            ],
+            [
+              49.9,
+              119.98491
+            ],
+            [
+              49.9,
+              120.48491
+            ],
+            [
+              21,
+              120.48491
+            ]
+          ]
+        },
+        "mismatches": []
+      }
+    },
+    {
+      "check": "Outline is the exact approved10-segment46.38491\u00d799.8mm closed profile",
+      "passed": true,
+      "details": {
+        "dimensions_mm": [
+          46.38491,
+          99.8
+        ],
+        "actual_edge_count": 10
+      }
+    },
+    {
+      "check": "Smallest native drill remains0.20mm",
+      "passed": true,
+      "details": {
+        "minimum_mm": 0.2,
+        "drill_item_count": 418
+      }
+    },
+    {
+      "check": "Fresh schematic graphs and component metadata remain identical",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Frozen native DRC reports zero violations,unconnected items and parity errors without new ignored checks",
+      "passed": true,
+      "details": {
+        "source_report": "hardware/pcb/analyzer-v2-bottom/reference/final-drc.json",
+        "date": "2026-10-15T20:49:13",
+        "included_severities": [
+          "error",
+          "warning",
+          "exclusion"
+        ],
+        "baseline_included_severities": [
+          "error",
+          "warning"
+        ],
+        "inspection_only": true
+      }
+    },
+    {
+      "check": "All captured native/source inputs remained stable throughout audit",
+      "passed": true,
+      "details": []
+    }
+  ],
+  "passed": 28,
+  "failed": 0,
+  "limitations": [
+    "Local USB ESD topology and source geometry are rigidly retained; longer rerouted links still require native DRC and independent CAM connectivity review.",
+    "Thermal drill/land and fill-rule identity does not by itself prove identical cooling. Independent filled copper/CAM comparison and physical temperature tests remain separate.",
+    "The DRC result is independently inspected, not rerun by this script. No fabrication, ESD, charger or mechanical release is claimed."
+  ]
+}

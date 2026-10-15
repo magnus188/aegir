@@ -1,0 +1,42 @@
+{
+  "purpose": "Deliberately invalid temporary copies confirm independent preservation/ESD checks reject relevant defects. No candidate was changed.",
+  "source_sha256": "59a0be0876394c670bd6c852033312527ccf9a4e02e94ac0437080b83f57085c",
+  "source_unchanged": true,
+  "tests": [
+    {
+      "negative_control": "Moved original core track",
+      "expected_detection": "All2199 non-USB-added copper objects plus9 retained former-J101 replacements are exact",
+      "detected": true,
+      "reported_failures": [
+        "All2199 non-USB-added copper objects plus9 retained former-J101 replacements are exact",
+        "No copper outside USB-local and superseded-link scope changes"
+      ],
+      "evidence": "build/pcb-v2-bottom-work/negative-controls/core-track-moved/bottom-invariants.json",
+      "evidence_sha256": "c142a6325911a00d5159dcfdf6abe1b3c66541be9c56b68cc8bfbf98185a9d06"
+    },
+    {
+      "negative_control": "Removed explicit U901 bridge",
+      "expected_detection": "U901 four NC pairs retain actual direct copper bridges",
+      "detected": true,
+      "reported_failures": [
+        "All92 USB-local copper items preserve topology, widths, layers, drills and treatment under rotation",
+        "Only the26 superseded USB-link copper objects may be removed/rerouted",
+        "U901 four NC pairs retain actual direct copper bridges"
+      ],
+      "evidence": "build/pcb-v2-bottom-work/negative-controls/esd-bridge-removed/bottom-invariants.json",
+      "evidence_sha256": "f7273b243ad068f9855b12dcccd7f269a7bc076ca1d6bfead4f39d5581bfbd8d"
+    },
+    {
+      "negative_control": "Same-net ESD bypass added",
+      "expected_detection": "No new same-net bypass around any U901 shunt-routing node",
+      "detected": true,
+      "reported_failures": [
+        "No new same-net bypass around any U901 shunt-routing node",
+        "New signal link centrelines remain behind the connector-side local routing within the USB wing"
+      ],
+      "evidence": "build/pcb-v2-bottom-work/negative-controls/same-net-esd-bypass.json",
+      "evidence_sha256": "5fc6ddad14755c29c48083b6aaf2c0a751d73c2b0a89b4680584f1213d933b29"
+    }
+  ],
+  "passed": true
+}

@@ -1,0 +1,32 @@
+PCB 2.0 – ACCEPTED BOTTOM USB-C PROTOTYPE
+
+Current PCB: pcb/analyzer-v2-bottom/Trimix_Analyzer.kicad_pro
+Current enclosure: cad/pcb-v2-bottom/Trimix_Enclosure_PCB2_Bottom.f3d
+Read: pcb/analyzer-v2-bottom/LES-MEG.txt and cad/pcb-v2-bottom/LES-MEG.txt.
+The enclosure folder also includes STEP, STL ZIP, assembly notes and previews.
+The PCB manufacturing folder includes Gerber/drill/BOM/placement files and
+independent audit reports. The package is for supplier review and quotation.
+
+The original engineer-reviewed projects in pcb/analyzer and pcb/usb-input
+remain unchanged. The integrated USB-C design is a changed derivative and
+has not inherited human approval of its new connector, routing or outline.
+The predecessor pcb/analyzer-v2 documents the first integration changes;
+analyzer-v2-bottom adds the bottom-facing placement and matching enclosure.
+
+The current circuit retains the original electrical connectivity. Earlier
+integration changed connector/assembly metadata and explanatory sheet text.
+All 14 sheets are byte-identical between analyzer-v2 and analyzer-v2-bottom.
+The original battery holder, cell positions and PCM arrangement are retained.
+
+Native PCB checks: zero DRC violations, unconnected items and parity errors.
+Independent checks: preservation28/28, USB paths7/7, CAM44/44, process13/13.
+Case: component clearances, support patches, screw access, three continuous
+removal paths and nine printable meshes checked. Physical qualification and
+supplier footprint/solder-process approval remain required before production.
+
+Recheck the delivered package without rebuilding geometry:
+  python3 hardware/cad/pcb-v2-bottom/scripts/package_delivery.py
+Historical audit paths are resolved relative to the current repository.
+CAD rebuilding requires the geometry runtime documented in
+cad/pcb-v2/scripts/geometry-runtime-requirements.txt; PCB operations require
+KiCad and the tools identified in the respective scripts and receipts.

@@ -1,0 +1,114 @@
+(footprint "PI3USB9201_UQFN2020_12_TypeC"
+	(version 20241229)
+	(generator "pcbnew")
+	(layer "F.Cu")
+	(descr "Diodes DS41358 Rev3-2 U-QFN2020-12 TypeC; top-view pin map. Land0.25x0.65 engineered from0.15-0.25x0.45-0.55 terminals; factory IPC/process acceptance required.")
+	(attr smd)
+	(property "Reference" "REF**"
+		(at 0 -2 0)
+		(layer "F.SilkS")
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+		)
+	)
+	(property "Value" "PI3USB9201_UQFN2020_12_TypeC"
+		(at 0 2 0)
+		(layer "F.Fab")
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(hide yes)
+		)
+	)
+	(fp_rect
+		(start -1 -1)
+		(end 1 1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_rect
+		(start -1.3 -1.3)
+		(end 1.3 1.3)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+	)
+	(pad "1" smd rect
+		(at -0.825 -0.2)
+		(size 0.65 0.25)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+	)
+	(pad "2" smd rect
+		(at -0.825 0.2)
+		(size 0.65 0.25)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+	)
+	(pad "3" smd rect
+		(at -0.6 0.825)
+		(size 0.25 0.65)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+	)
+	(pad "4" smd rect
+		(at -0.2 0.825)
+		(size 0.25 0.65)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+	)
+	(pad "5" smd rect
+		(at 0.2 0.825)
+		(size 0.25 0.65)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+	)
+	(pad "6" smd rect
+		(at 0.6 0.825)
+		(size 0.25 0.65)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+	)
+	(pad "7" smd rect
+		(at 0.825 0.2)
+		(size 0.65 0.25)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+	)
+	(pad "8" smd rect
+		(at 0.825 -0.2)
+		(size 0.65 0.25)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+	)
+	(pad "9" smd rect
+		(at 0.6 -0.825)
+		(size 0.25 0.65)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+	)
+	(pad "10" smd rect
+		(at 0.2 -0.825)
+		(size 0.25 0.65)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+	)
+	(pad "11" smd rect
+		(at -0.2 -0.825)
+		(size 0.25 0.65)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+	)
+	(pad "12" smd rect
+		(at -0.6 -0.825)
+		(size 0.25 0.65)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+	)
+	(fp_circle
+		(center -0.7 -0.6)
+		(end -0.6 -0.6)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill none)
+		(layer "F.Fab")
+	)
+)

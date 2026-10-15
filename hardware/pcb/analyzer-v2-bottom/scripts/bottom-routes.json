@@ -1,0 +1,1164 @@
+[
+  {
+    "kind": "track",
+    "net": "USB_5V",
+    "points": [
+      [
+        17.2,
+        108.48491
+      ],
+      [
+        17.2,
+        108.475
+      ]
+    ],
+    "width": 1.0,
+    "layer": "B.Cu"
+  },
+  {
+    "kind": "track",
+    "net": "USB_5V",
+    "points": [
+      [
+        17.2,
+        108.475
+      ],
+      [
+        20.775,
+        112.05
+      ]
+    ],
+    "width": 1.0,
+    "layer": "B.Cu"
+  },
+  {
+    "kind": "track",
+    "net": "USB_5V",
+    "points": [
+      [
+        20.775,
+        112.05
+      ],
+      [
+        20.775,
+        115.15
+      ]
+    ],
+    "width": 1.0,
+    "layer": "B.Cu"
+  },
+  {
+    "kind": "track",
+    "net": "USB_5V",
+    "points": [
+      [
+        20.775,
+        115.15
+      ],
+      [
+        24.1,
+        118.475
+      ]
+    ],
+    "width": 1.0,
+    "layer": "B.Cu"
+  },
+  {
+    "kind": "track",
+    "net": "USB_5V",
+    "points": [
+      [
+        24.1,
+        118.475
+      ],
+      [
+        30.15,
+        118.475
+      ]
+    ],
+    "width": 1.0,
+    "layer": "F.Cu"
+  },
+  {
+    "kind": "track",
+    "net": "USB_5V",
+    "points": [
+      [
+        30.15,
+        118.475
+      ],
+      [
+        30.15,
+        118.48491
+      ]
+    ],
+    "width": 1.0,
+    "layer": "F.Cu"
+  },
+  {
+    "kind": "track",
+    "net": "USB_D_M",
+    "points": [
+      [
+        10.65,
+        108.68491
+      ],
+      [
+        10.65,
+        108.675
+      ]
+    ],
+    "width": 0.15,
+    "layer": "F.Cu"
+  },
+  {
+    "kind": "track",
+    "net": "USB_D_M",
+    "points": [
+      [
+        10.65,
+        108.675
+      ],
+      [
+        10.875,
+        108.45
+      ]
+    ],
+    "width": 0.15,
+    "layer": "F.Cu"
+  },
+  {
+    "kind": "track",
+    "net": "USB_D_M",
+    "points": [
+      [
+        10.875,
+        108.45
+      ],
+      [
+        10.875,
+        108.025
+      ]
+    ],
+    "width": 0.15,
+    "layer": "F.Cu"
+  },
+  {
+    "kind": "track",
+    "net": "USB_D_M",
+    "points": [
+      [
+        10.875,
+        108.025
+      ],
+      [
+        11.15,
+        107.75
+      ]
+    ],
+    "width": 0.15,
+    "layer": "F.Cu"
+  },
+  {
+    "kind": "track",
+    "net": "USB_D_M",
+    "points": [
+      [
+        11.15,
+        107.75
+      ],
+      [
+        16.3,
+        107.75
+      ]
+    ],
+    "width": 0.15,
+    "layer": "F.Cu"
+  },
+  {
+    "kind": "track",
+    "net": "USB_D_M",
+    "points": [
+      [
+        16.3,
+        107.75
+      ],
+      [
+        20.3,
+        111.75
+      ]
+    ],
+    "width": 0.15,
+    "layer": "F.Cu"
+  },
+  {
+    "kind": "track",
+    "net": "USB_D_M",
+    "points": [
+      [
+        20.3,
+        111.75
+      ],
+      [
+        20.3,
+        115.825
+      ]
+    ],
+    "width": 0.15,
+    "layer": "F.Cu"
+  },
+  {
+    "kind": "track",
+    "net": "USB_D_M",
+    "points": [
+      [
+        20.3,
+        115.825
+      ],
+      [
+        23.75,
+        119.275
+      ]
+    ],
+    "width": 0.15,
+    "layer": "F.Cu"
+  },
+  {
+    "kind": "track",
+    "net": "USB_D_M",
+    "points": [
+      [
+        23.75,
+        119.275
+      ],
+      [
+        35.775,
+        119.275
+      ]
+    ],
+    "width": 0.15,
+    "layer": "F.Cu"
+  },
+  {
+    "kind": "track",
+    "net": "USB_D_M",
+    "points": [
+      [
+        35.775,
+        119.275
+      ],
+      [
+        37.1,
+        117.95
+      ]
+    ],
+    "width": 0.15,
+    "layer": "F.Cu"
+  },
+  {
+    "kind": "track",
+    "net": "USB_D_M",
+    "points": [
+      [
+        37.1,
+        117.95
+      ],
+      [
+        38.625,
+        117.95
+      ]
+    ],
+    "width": 0.15,
+    "layer": "F.Cu"
+  },
+  {
+    "kind": "track",
+    "net": "USB_D_M",
+    "points": [
+      [
+        38.625,
+        117.95
+      ],
+      [
+        39.15,
+        118.475
+      ]
+    ],
+    "width": 0.15,
+    "layer": "F.Cu"
+  },
+  {
+    "kind": "track",
+    "net": "USB_D_M",
+    "points": [
+      [
+        39.15,
+        118.475
+      ],
+      [
+        39.15,
+        118.48491
+      ]
+    ],
+    "width": 0.15,
+    "layer": "F.Cu"
+  },
+  {
+    "kind": "track",
+    "net": "USB_CC1",
+    "points": [
+      [
+        13.35,
+        108.20991
+      ],
+      [
+        13.35,
+        108.2
+      ]
+    ],
+    "width": 0.15,
+    "layer": "In2.Cu"
+  },
+  {
+    "kind": "track",
+    "net": "USB_CC1",
+    "points": [
+      [
+        13.35,
+        108.2
+      ],
+      [
+        18.325,
+        108.2
+      ]
+    ],
+    "width": 0.15,
+    "layer": "In2.Cu"
+  },
+  {
+    "kind": "track",
+    "net": "USB_CC1",
+    "points": [
+      [
+        18.325,
+        108.2
+      ],
+      [
+        22.75,
+        112.625
+      ]
+    ],
+    "width": 0.15,
+    "layer": "B.Cu"
+  },
+  {
+    "kind": "track",
+    "net": "USB_CC1",
+    "points": [
+      [
+        22.75,
+        112.625
+      ],
+      [
+        22.75,
+        113.3
+      ]
+    ],
+    "width": 0.15,
+    "layer": "B.Cu"
+  },
+  {
+    "kind": "track",
+    "net": "USB_CC1",
+    "points": [
+      [
+        22.75,
+        113.3
+      ],
+      [
+        28.525,
+        119.075
+      ]
+    ],
+    "width": 0.15,
+    "layer": "B.Cu"
+  },
+  {
+    "kind": "track",
+    "net": "USB_CC1",
+    "points": [
+      [
+        28.525,
+        119.075
+      ],
+      [
+        33.15,
+        119.075
+      ]
+    ],
+    "width": 0.15,
+    "layer": "B.Cu"
+  },
+  {
+    "kind": "track",
+    "net": "USB_CC1",
+    "points": [
+      [
+        33.15,
+        119.075
+      ],
+      [
+        33.75,
+        118.475
+      ]
+    ],
+    "width": 0.15,
+    "layer": "B.Cu"
+  },
+  {
+    "kind": "track",
+    "net": "USB_CC1",
+    "points": [
+      [
+        33.75,
+        118.475
+      ],
+      [
+        33.75,
+        118.48491
+      ]
+    ],
+    "width": 0.15,
+    "layer": "B.Cu"
+  },
+  {
+    "kind": "track",
+    "net": "USB_CC2",
+    "points": [
+      [
+        12.6,
+        108.28491
+      ],
+      [
+        12.6,
+        108.275
+      ]
+    ],
+    "width": 0.15,
+    "layer": "In2.Cu"
+  },
+  {
+    "kind": "track",
+    "net": "USB_CC2",
+    "points": [
+      [
+        12.6,
+        108.275
+      ],
+      [
+        12.825,
+        108.5
+      ]
+    ],
+    "width": 0.15,
+    "layer": "In2.Cu"
+  },
+  {
+    "kind": "track",
+    "net": "USB_CC2",
+    "points": [
+      [
+        12.825,
+        108.5
+      ],
+      [
+        12.825,
+        108.95
+      ]
+    ],
+    "width": 0.15,
+    "layer": "In2.Cu"
+  },
+  {
+    "kind": "track",
+    "net": "USB_CC2",
+    "points": [
+      [
+        12.825,
+        108.95
+      ],
+      [
+        14.15,
+        110.275
+      ]
+    ],
+    "width": 0.15,
+    "layer": "In2.Cu"
+  },
+  {
+    "kind": "track",
+    "net": "USB_CC2",
+    "points": [
+      [
+        14.15,
+        110.275
+      ],
+      [
+        18.825,
+        110.275
+      ]
+    ],
+    "width": 0.15,
+    "layer": "In2.Cu"
+  },
+  {
+    "kind": "track",
+    "net": "USB_CC2",
+    "points": [
+      [
+        18.825,
+        110.275
+      ],
+      [
+        20.375,
+        111.825
+      ]
+    ],
+    "width": 0.15,
+    "layer": "In2.Cu"
+  },
+  {
+    "kind": "track",
+    "net": "USB_CC2",
+    "points": [
+      [
+        20.375,
+        111.825
+      ],
+      [
+        20.375,
+        114.225
+      ]
+    ],
+    "width": 0.15,
+    "layer": "In2.Cu"
+  },
+  {
+    "kind": "track",
+    "net": "USB_CC2",
+    "points": [
+      [
+        20.375,
+        114.225
+      ],
+      [
+        20.45,
+        114.225
+      ]
+    ],
+    "width": 0.15,
+    "layer": "In2.Cu"
+  },
+  {
+    "kind": "track",
+    "net": "USB_CC2",
+    "points": [
+      [
+        20.45,
+        114.225
+      ],
+      [
+        23.7,
+        117.475
+      ]
+    ],
+    "width": 0.15,
+    "layer": "In2.Cu"
+  },
+  {
+    "kind": "track",
+    "net": "USB_CC2",
+    "points": [
+      [
+        23.7,
+        117.475
+      ],
+      [
+        26.125,
+        117.475
+      ]
+    ],
+    "width": 0.15,
+    "layer": "In2.Cu"
+  },
+  {
+    "kind": "track",
+    "net": "USB_CC2",
+    "points": [
+      [
+        26.125,
+        117.475
+      ],
+      [
+        26.375,
+        117.475
+      ]
+    ],
+    "width": 0.15,
+    "layer": "B.Cu"
+  },
+  {
+    "kind": "track",
+    "net": "USB_CC2",
+    "points": [
+      [
+        26.375,
+        117.475
+      ],
+      [
+        28.35,
+        119.45
+      ]
+    ],
+    "width": 0.15,
+    "layer": "B.Cu"
+  },
+  {
+    "kind": "track",
+    "net": "USB_CC2",
+    "points": [
+      [
+        28.35,
+        119.45
+      ],
+      [
+        34.575,
+        119.45
+      ]
+    ],
+    "width": 0.15,
+    "layer": "B.Cu"
+  },
+  {
+    "kind": "track",
+    "net": "USB_CC2",
+    "points": [
+      [
+        34.575,
+        119.45
+      ],
+      [
+        35.55,
+        118.48491
+      ]
+    ],
+    "width": 0.15,
+    "layer": "B.Cu"
+  },
+  {
+    "kind": "track",
+    "net": "USB_CC2",
+    "points": [
+      [
+        35.55,
+        118.48491
+      ],
+      [
+        35.55,
+        118.475
+      ]
+    ],
+    "width": 0.15,
+    "layer": "In2.Cu"
+  },
+  {
+    "kind": "track",
+    "net": "USB_CC2",
+    "points": [
+      [
+        35.55,
+        118.475
+      ],
+      [
+        35.55,
+        118.48491
+      ]
+    ],
+    "width": 0.15,
+    "layer": "In2.Cu"
+  },
+  {
+    "kind": "track",
+    "net": "USB_D_P",
+    "points": [
+      [
+        11.4,
+        108.28491
+      ],
+      [
+        11.4,
+        108.275
+      ]
+    ],
+    "width": 0.15,
+    "layer": "In2.Cu"
+  },
+  {
+    "kind": "track",
+    "net": "USB_D_P",
+    "points": [
+      [
+        11.4,
+        108.275
+      ],
+      [
+        14.5,
+        105.175
+      ]
+    ],
+    "width": 0.15,
+    "layer": "In2.Cu"
+  },
+  {
+    "kind": "track",
+    "net": "USB_D_P",
+    "points": [
+      [
+        14.5,
+        105.175
+      ],
+      [
+        25.55,
+        105.175
+      ]
+    ],
+    "width": 0.15,
+    "layer": "B.Cu"
+  },
+  {
+    "kind": "track",
+    "net": "USB_D_P",
+    "points": [
+      [
+        25.55,
+        105.175
+      ],
+      [
+        30.975,
+        99.75
+      ]
+    ],
+    "width": 0.15,
+    "layer": "B.Cu"
+  },
+  {
+    "kind": "track",
+    "net": "USB_D_P",
+    "points": [
+      [
+        30.975,
+        99.75
+      ],
+      [
+        34.575,
+        99.75
+      ]
+    ],
+    "width": 0.15,
+    "layer": "In2.Cu"
+  },
+  {
+    "kind": "track",
+    "net": "USB_D_P",
+    "points": [
+      [
+        34.575,
+        99.75
+      ],
+      [
+        38.9,
+        95.425
+      ]
+    ],
+    "width": 0.15,
+    "layer": "In2.Cu"
+  },
+  {
+    "kind": "track",
+    "net": "USB_D_P",
+    "points": [
+      [
+        38.9,
+        95.425
+      ],
+      [
+        39.4,
+        95.425
+      ]
+    ],
+    "width": 0.15,
+    "layer": "In2.Cu"
+  },
+  {
+    "kind": "track",
+    "net": "USB_D_P",
+    "points": [
+      [
+        39.4,
+        95.425
+      ],
+      [
+        39.9,
+        95.925
+      ]
+    ],
+    "width": 0.15,
+    "layer": "In2.Cu"
+  },
+  {
+    "kind": "track",
+    "net": "USB_D_P",
+    "points": [
+      [
+        39.9,
+        95.925
+      ],
+      [
+        40.425,
+        96.45
+      ]
+    ],
+    "width": 0.15,
+    "layer": "B.Cu"
+  },
+  {
+    "kind": "track",
+    "net": "USB_D_P",
+    "points": [
+      [
+        40.425,
+        96.45
+      ],
+      [
+        40.425,
+        101.675
+      ]
+    ],
+    "width": 0.15,
+    "layer": "B.Cu"
+  },
+  {
+    "kind": "track",
+    "net": "USB_D_P",
+    "points": [
+      [
+        40.425,
+        101.675
+      ],
+      [
+        40.775,
+        102.025
+      ]
+    ],
+    "width": 0.15,
+    "layer": "B.Cu"
+  },
+  {
+    "kind": "track",
+    "net": "USB_D_P",
+    "points": [
+      [
+        40.775,
+        102.025
+      ],
+      [
+        40.775,
+        105.525
+      ]
+    ],
+    "width": 0.15,
+    "layer": "B.Cu"
+  },
+  {
+    "kind": "track",
+    "net": "USB_D_P",
+    "points": [
+      [
+        40.775,
+        105.525
+      ],
+      [
+        40.2,
+        106.1
+      ]
+    ],
+    "width": 0.15,
+    "layer": "B.Cu"
+  },
+  {
+    "kind": "track",
+    "net": "USB_D_P",
+    "points": [
+      [
+        40.2,
+        106.1
+      ],
+      [
+        40.2,
+        106.45
+      ]
+    ],
+    "width": 0.15,
+    "layer": "In2.Cu"
+  },
+  {
+    "kind": "track",
+    "net": "USB_D_P",
+    "points": [
+      [
+        40.2,
+        106.45
+      ],
+      [
+        40.175,
+        106.475
+      ]
+    ],
+    "width": 0.15,
+    "layer": "In2.Cu"
+  },
+  {
+    "kind": "track",
+    "net": "USB_D_P",
+    "points": [
+      [
+        40.175,
+        106.475
+      ],
+      [
+        40.175,
+        110.0
+      ]
+    ],
+    "width": 0.15,
+    "layer": "In2.Cu"
+  },
+  {
+    "kind": "track",
+    "net": "USB_D_P",
+    "points": [
+      [
+        40.175,
+        110.0
+      ],
+      [
+        40.325,
+        110.15
+      ]
+    ],
+    "width": 0.15,
+    "layer": "In2.Cu"
+  },
+  {
+    "kind": "track",
+    "net": "USB_D_P",
+    "points": [
+      [
+        40.325,
+        110.15
+      ],
+      [
+        40.325,
+        110.7
+      ]
+    ],
+    "width": 0.15,
+    "layer": "In2.Cu"
+  },
+  {
+    "kind": "track",
+    "net": "USB_D_P",
+    "points": [
+      [
+        40.325,
+        110.7
+      ],
+      [
+        39.85,
+        111.175
+      ]
+    ],
+    "width": 0.15,
+    "layer": "In2.Cu"
+  },
+  {
+    "kind": "track",
+    "net": "USB_D_P",
+    "points": [
+      [
+        39.85,
+        111.175
+      ],
+      [
+        39.85,
+        111.9
+      ]
+    ],
+    "width": 0.15,
+    "layer": "In2.Cu"
+  },
+  {
+    "kind": "track",
+    "net": "USB_D_P",
+    "points": [
+      [
+        39.85,
+        111.9
+      ],
+      [
+        37.375,
+        114.375
+      ]
+    ],
+    "width": 0.15,
+    "layer": "In1.Cu"
+  },
+  {
+    "kind": "track",
+    "net": "USB_D_P",
+    "points": [
+      [
+        37.375,
+        114.375
+      ],
+      [
+        37.375,
+        118.475
+      ]
+    ],
+    "width": 0.15,
+    "layer": "In1.Cu"
+  },
+  {
+    "kind": "track",
+    "net": "USB_D_P",
+    "points": [
+      [
+        37.375,
+        118.475
+      ],
+      [
+        37.35,
+        118.48491
+      ]
+    ],
+    "width": 0.15,
+    "layer": "In1.Cu"
+  },
+  {
+    "kind": "via",
+    "net": "USB_5V",
+    "position": [
+      24.1,
+      118.475
+    ],
+    "diameter": 0.6,
+    "drill": 0.3
+  },
+  {
+    "kind": "via",
+    "net": "USB_CC1",
+    "position": [
+      18.325,
+      108.2
+    ],
+    "diameter": 0.5,
+    "drill": 0.25
+  },
+  {
+    "kind": "via",
+    "net": "USB_CC2",
+    "position": [
+      26.125,
+      117.475
+    ],
+    "diameter": 0.5,
+    "drill": 0.25
+  },
+  {
+    "kind": "via",
+    "net": "USB_D_P",
+    "position": [
+      14.5,
+      105.175
+    ],
+    "diameter": 0.5,
+    "drill": 0.25
+  },
+  {
+    "kind": "via",
+    "net": "USB_D_P",
+    "position": [
+      30.975,
+      99.75
+    ],
+    "diameter": 0.5,
+    "drill": 0.25
+  },
+  {
+    "kind": "via",
+    "net": "USB_D_P",
+    "position": [
+      39.9,
+      95.925
+    ],
+    "diameter": 0.5,
+    "drill": 0.25
+  },
+  {
+    "kind": "via",
+    "net": "USB_D_P",
+    "position": [
+      40.2,
+      106.1
+    ],
+    "diameter": 0.5,
+    "drill": 0.25
+  },
+  {
+    "kind": "via",
+    "net": "USB_D_P",
+    "position": [
+      39.85,
+      111.9
+    ],
+    "diameter": 0.5,
+    "drill": 0.25
+  },
+  {
+    "kind": "via",
+    "net": "USB_5V",
+    "position": [
+      24.700000000000003,
+      118.475
+    ],
+    "diameter": 0.6,
+    "drill": 0.3
+  },
+  {
+    "kind": "track",
+    "net": "USB_5V",
+    "points": [
+      [
+        24.1,
+        118.475
+      ],
+      [
+        24.700000000000003,
+        118.475
+      ]
+    ],
+    "width": 1.0,
+    "layer": "B.Cu"
+  }
+]

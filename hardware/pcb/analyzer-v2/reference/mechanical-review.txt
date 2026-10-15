@@ -1,0 +1,103 @@
+PCB 2.0 — independent mechanical placement proposal, 2026-10-15
+
+Scope: preserve the existing routed main-board core and the protected FMA
+2 × 18650 holder. This is a dimensional proposal for the PCB designer, not a
+Fusion fit validation or an enclosure manufacturing release.
+
+SOURCE BASIS
+- hardware/pcb/analyzer/Trimix_Analyzer.kicad_pcb
+- hardware/system-review/mechanical/connector-review/README.md and its v3
+  interface checkpoint, which remain the current mechanical baseline.
+- hardware/system-review/mechanical/README.md for unchanged PCB registration.
+- KiCad 10 installed Connector_USB.pretty/
+  USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal.kicad_mod
+  (names USB4105-GF-A explicitly and links the GCT drawing).
+
+COORDINATE CONTRACT
+Current native PCB origin is offset from the frozen mechanical contract:
+  u = PCB x - 19.9; v = PCB y - 21.48491 (millimetres)
+  world X = 50.4 + u = PCB x + 30.5
+  world Y = 120 - v = 141.48491 - PCB y
+  finished PCB back/front = world Z20.5/Z22.1 nominal.
+Existing core remains 30 x 99 mm. Do not recenter the core when its outline
+grows; preserve its exact two mount locations and the X/Y datum above.
+H1 lower mount: native (45.5,113.48491), world (76,28).
+H2 upper mount: world (54.8,114).
+
+RECOMMENDED PCB ARRANGEMENT
+Add material outside the existing +X edge (native x49.9), near the lower
+USB/power area. Face USB4105 outward in +X, with footprint rotation +90 deg.
+Keep the upper/lower extent unchanged so the board remains 99 mm long.
+The parent designer's conservative tab candidate is:
+  tab native x49.9..65, y103..120.48491
+  resulting bounding size 45.1 x 99 mm
+  connector footprint origin native (61.325,112), rotation +90 deg.
+  connector mouth and footprint indicated PCB edge native x=65.
+  connector signal-row native x57.645.
+  connector courtyard native x56.565..65.505, y106.68..117.32.
+This leaves 6.665 mm between the old core edge and connector courtyard for
+the existing protection components, their local ground return and fanout.
+The body/courtyard fits within the proposed tab's Y span. Keep the original
+H1 screw/driver access clear; the connector is laterally outside that hole.
+The old core's lower-region component bounds remain at or below x49.33;
+none enters the new tab. Full copper DRC is the PCB designer's check.
+
+A tighter option ends at native x=62 instead of 65 and places the socket
+origin at 58.325. It would be 42.1 × 99 mm overall, with only 3.665 mm between
+old core and connector courtyard. This is a mechanical option, not a
+routed design: choose it only if the ESD placement and safe fanout remain
+comfortable. Do not save 3 mm at the expense of routing or protection.
+
+The connector footprint mouth is at local y=+3.675, its contact row at
+y=-3.68, its body width 8.94 mm and body depth 7.35 mm. Do not infer a nose
+overhang from another GCT socket: this library's suggested PCB edge is at
+the front face. Use the manufacturer drawing and the selected plug when
+designing the wall recess, clearance opening and final standoff.
+
+ENCLOSURE CONSEQUENCES
+For the x=65 candidate, connector front face is world X95.5 and port centre
+is world Y29.48491. This is outside the current 85 mm-wide housing. A local
+side bulge around the lower USB tab is the smallest change to the rest of
+the case: preserve the front/display and the main core's current location.
+Do not just increase CaseWidth: existing expressions recenter the display,
+move PCB/support datums and enlarge other dependent geometry. The tab and
+its port need a separate extension datum or carefully revised expressions.
+Do not carry over the old 4.6 mm PCB-to-outer-wall gap at the socket mouth;
+that would recess the USB face excessively. Exact wall location depends on
+the selected cable plug moulding and opening, and remains to be fitted.
+
+Remove the old bottom USB cartridge and bridge, close its opening, and
+replace them with a supported side port. Provide a PCB underside ledge or
+equivalent load path near the socket and positive strain/load support so
+plug insertion does not rely on the tab flexing and solder alone. Preserve
+access to the two original PCB screws and rear removal of the board.
+The original narrow carrier also needs the new tab's support and local
+clearance for soldered shell stakes. Verify stake depth and assembly
+method against the exact GF-A drawing and the 1.6 mm board.
+
+The protected holder occupied envelope remains world X5.4..47.4,
+Y27..107.4,Z16.5..36.85, so the outward tab does not enter it. The display's
+retained baseline outer depth ends around world Z14.1, ahead of the PCB;
+the new connector is outward of its existing X envelope as well. These
+separations do not prove fit of the changed enclosure/supports or cables.
+The socket is not an IP-rated sealed panel connector; no waterproof claim
+is established by this integration or a printed cover.
+
+WHY NOT RETAIN THE OLD BOTTOM PORT POSITION
+The main-board lower edge is world Y21. The old USB nose is near Y0.61,
+and its centre is X42.5, left of the main core. A bottom extension to that
+position would add roughly 20 mm length and a leftward dogleg. It would
+increase the PCB beyond 100 mm and require a larger change to its outline.
+The side tab retains the original 99 mm length and core layout.
+
+OPEN VERIFICATION
+- The latest ConnectorReview v3 already has unresolved Guition remote
+  header, ribbon, small cable mates, wet/dry harness and SD service fit.
+  Those baseline failures remain; this proposal does not close them.
+- No native Fusion edits or Boolean collision tests have been performed.
+- Confirm the current GCT drawing, body/face height, shell-stake geometry,
+  PCB support, selected USB plug overmould and actual assembly sequence.
+- The tab width is subordinate to safe connector/ESD routing and DRC.
+- Complete updated enclosure and carrier CAD, then rerun actual-component,
+  mounting, plug insertion, board removal and printability checks before
+  releasing printed enclosure parts.

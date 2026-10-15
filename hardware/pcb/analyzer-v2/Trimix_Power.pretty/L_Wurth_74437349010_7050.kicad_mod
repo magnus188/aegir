@@ -1,0 +1,80 @@
+(footprint "L_Wurth_74437349010_7050"
+	(version 20241229)
+	(generator "pcbnew")
+	(layer "F.Cu")
+	(descr "Würth74437349010 Rev003.000; 8.4mm outer land width,2.5mm gap,2.95x3.5mm pads. No top traces/vias beneath center restricted strip.")
+	(attr smd)
+	(property "Reference" "REF**"
+		(at 0 -4.3 0)
+		(layer "F.SilkS")
+		(effects
+			(font
+				(size 1 1)
+			)
+		)
+	)
+	(property "Value" "L_Wurth_74437349010_7050"
+		(at 0 4.3 0)
+		(layer "F.Fab")
+		(effects
+			(font
+				(size 1 1)
+			)
+			(hide yes)
+		)
+	)
+	(fp_rect
+		(start -3.65 -3.3)
+		(end 3.65 3.3)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_rect
+		(start -4.5 -3.7)
+		(end 4.5 3.7)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+	)
+	(pad "1" smd rect
+		(at -2.725 0)
+		(size 2.95 3.5)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+	)
+	(pad "2" smd rect
+		(at 2.725 0)
+		(size 2.95 3.5)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+	)
+	(zone
+		(net 0)
+		(net_name "")
+		(layer "F.Cu")
+		(hatch edge 0.5)
+		(connect_pads
+			(clearance 0)
+		)
+		(min_thickness 0.25)
+		(filled_areas_thickness no)
+		(keepout
+			(tracks not_allowed)
+			(vias not_allowed)
+			(pads allowed)
+			(copperpour allowed)
+			(footprints allowed)
+		)
+		(polygon
+			(pts
+				(xy -1.25 -3.3)
+				(xy 1.25 -3.3)
+				(xy 1.25 3.3)
+				(xy -1.25 3.3)
+			)
+		)
+	)
+)

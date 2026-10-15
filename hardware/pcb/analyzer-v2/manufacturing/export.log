@@ -1,0 +1,69 @@
+{
+  "command": [
+    "/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli",
+    "pcb",
+    "export",
+    "gerbers",
+    "--layers",
+    "F.Cu,In1.Cu,In2.Cu,B.Cu,F.Mask,B.Mask,F.Paste,B.Paste,F.Silkscreen,B.Silkscreen,Edge.Cuts",
+    "--use-drill-file-origin",
+    "-o",
+    "/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/pcb/analyzer-v2/manufacturing/cam",
+    "/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/pcb/analyzer-v2/Trimix_Analyzer.kicad_pcb"
+  ],
+  "exit_code": 0,
+  "stdout": "Plotted to '/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/pcb/analyzer-v2/manufacturing/cam/Trimix_Analyzer-F_Cu.gtl'.\nPlotted to '/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/pcb/analyzer-v2/manufacturing/cam/Trimix_Analyzer-In1_Cu.g1'.\nPlotted to '/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/pcb/analyzer-v2/manufacturing/cam/Trimix_Analyzer-In2_Cu.g2'.\nPlotted to '/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/pcb/analyzer-v2/manufacturing/cam/Trimix_Analyzer-B_Cu.gbl'.\nPlotted to '/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/pcb/analyzer-v2/manufacturing/cam/Trimix_Analyzer-F_Paste.gtp'.\nPlotted to '/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/pcb/analyzer-v2/manufacturing/cam/Trimix_Analyzer-B_Paste.gbp'.\nPlotted to '/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/pcb/analyzer-v2/manufacturing/cam/Trimix_Analyzer-F_Silkscreen.gto'.\nPlotted to '/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/pcb/analyzer-v2/manufacturing/cam/Trimix_Analyzer-B_Silkscreen.gbo'.\nPlotted to '/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/pcb/analyzer-v2/manufacturing/cam/Trimix_Analyzer-F_Mask.gts'.\nPlotted to '/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/pcb/analyzer-v2/manufacturing/cam/Trimix_Analyzer-B_Mask.gbs'.\nPlotted to '/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/pcb/analyzer-v2/manufacturing/cam/Trimix_Analyzer-Edge_Cuts.gm1'.\n",
+  "stderr": ""
+}
+{
+  "command": [
+    "/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli",
+    "pcb",
+    "export",
+    "drill",
+    "--drill-origin",
+    "plot",
+    "--format",
+    "excellon",
+    "--excellon-units",
+    "mm",
+    "--excellon-zeros-format",
+    "decimal",
+    "--excellon-oval-format",
+    "route",
+    "--excellon-separate-th",
+    "--generate-map",
+    "--map-format",
+    "svg",
+    "--generate-report",
+    "--report-path",
+    "/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/pcb/analyzer-v2/manufacturing/cam/drill-report.txt",
+    "-o",
+    "/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/pcb/analyzer-v2/manufacturing/cam",
+    "/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/pcb/analyzer-v2/Trimix_Analyzer.kicad_pcb"
+  ],
+  "exit_code": 0,
+  "stdout": "Created file '/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/pcb/analyzer-v2/manufacturing/cam/Trimix_Analyzer-PTH.drl'\nCreated file '/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/pcb/analyzer-v2/manufacturing/cam/Trimix_Analyzer-NPTH.drl'\nCreated file '/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/pcb/analyzer-v2/manufacturing/cam/Trimix_Analyzer-PTH-drl_map.svg'.\nCreated file '/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/pcb/analyzer-v2/manufacturing/cam/Trimix_Analyzer-NPTH-drl_map.svg'.\nDone.\n",
+  "stderr": ""
+}
+{
+  "command": [
+    "/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli",
+    "pcb",
+    "export",
+    "pos",
+    "--format",
+    "csv",
+    "--units",
+    "mm",
+    "--use-drill-file-origin",
+    "--side",
+    "both",
+    "-o",
+    "/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/pcb/analyzer-v2/manufacturing/cam/placement-all.csv",
+    "/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/pcb/analyzer-v2/Trimix_Analyzer.kicad_pcb"
+  ],
+  "exit_code": 0,
+  "stdout": "Wrote position data to '/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/pcb/analyzer-v2/manufacturing/cam/placement-all.csv'.\n",
+  "stderr": ""
+}

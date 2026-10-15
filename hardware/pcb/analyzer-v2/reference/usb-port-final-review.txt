@@ -1,0 +1,64 @@
+PCB 2.0 USB-port independent review - 2026-10-15
+
+Scope: current hardware/pcb/analyzer-v2 candidate and build_variant.py,
+principally native x >= 53.6 mm. The protected-side main-board routes remain
+under construction and were not approved by this review.
+Board inspected SHA-256:
+d6176512c7b13835c9a9b00a0e0459775fdf45b8c87e76ec085003d05a6a6269
+Native copper and soldermask plots inspected in usb-connector/port-*-crop.png.
+The supplied port-drc3 report has no local USB-tab violations; its two warnings
+and four unconnected items concern the still-unfinished protected/core routes.
+
+Result: no new blocking electrical pinout or obvious local current-path defect
+found in this bounded review. This is not a system safety or manufacturing release.
+
+Checked details:
+- J901 rotation +90 degrees preserves A5=CC1 and B5=CC2. A6/B6 join D+;
+  A7/B7 join D-. All four logical VBUS contacts, four USB grounds and shell
+  stakes have the correct nets. SBU1/2 remain separately unconnected.
+- U901 channels match the original circuit. Explicit 1-10, 2-9, 4-7, 5-6 copper
+  links exist; the design correctly does not rely on internal connections to NC
+  pads. Grounds 3/8 have nearby separate 0.6/0.3 mm vias, with local top/bottom
+  ground pours and the extended internal GND plane.
+- D901 remains on connector VBUS before the existing OVP/input-limiter circuit.
+  Its local VBUS branch is about 1.60 mm long and 0.4 mm wide; its GND return
+  to a plane via is 0.76 mm long and 0.3 mm wide, with direct surrounding copper.
+  This is a short local shunt connection, not proof of system ESD immunity.
+- Each physical VBUS land has a short 0.4 mm escape, then 0.6 mm copper and two
+  0.3 mm drilled vias; the longer bottom-layer trunk is 1.0 mm wide. No thin
+  internal trace replaces the main power path. This presents no obvious local
+  bottleneck for the existing 1.4 A input ceiling. Hot-plug/drop/temperature
+  measurements under full current remain part of original prototype validation.
+- Bottom-layer VBUS under the connector is separated by the PCB dielectric.
+  The two signal vias at (58.8,111.75) and (58.8,112.75) are ordinary 0.5/0.25 mm
+  through vias, explicitly tented on both faces. The front soldermask export
+  confirms no apertures at these vias. They are outside solder-paste lands;
+  local via filling/capping is not required by this geometry. Preserve tenting
+  in CAM and inspect soldermask coverage before mounting the metal connector.
+  GCT's drawing does not specify a blanket under-body copper keepout; there is
+  no exposed signal land deliberately placed under the metal body.
+
+Remaining meaningful conditions:
+- The J901 GND-land 25 um rearward offset is the documented fabrication
+  adaptation, not a manufacturer-approved footprint. Maintain the narrow
+  0.20 mm NPTH rule; measured local clearance is 0.2187 mm. No 0.15 mm waiver.
+- Keep requested USB4105-GF-A. Its 0.95 mm shell stakes do not protrude through
+  1.6 mm PCB; component-side/reflow soldering and shell-slot paste treatment
+  must suit the assembly process. -120 would not remove this process requirement.
+- CC/D fanout includes a few millimetres of pre-clamp routing and layer changes.
+  Logical connectivity and short GND returns are correct, but only system ESD
+  and USB-source qualification testing can validate actual transient behaviour.
+- Existing hot-plug/OVP, charge-enable and enclosure qualification holds remain.
+
+Mechanical height from primary GCT Rev B4 drawing, page 1 side view:
+Mating centreline = 1.73 mm above PCB seating plane. With PCB top world Z22.1:
+  opening centre world Z23.83 mm; body top world Z25.41 mm.
+With current PCB registration, mouth is world X95.5, centre world Y29.48491.
+These are nominal dimensions; allow manufacturing/printing/plug tolerances and
+provide local PCB support for insertion loads. This port has no waterproof rating.
+
+Primary sources inspected:
+https://gct.co/files/drawings/usb4105.pdf (Rev B4; local original retained)
+https://www.ti.com/lit/ds/symlink/tpd4e05u06.pdf (pin table and layout guidance)
+https://www.ti.com/lit/ds/symlink/tpd1e10b06.pdf (short/wide return guidance)
+https://jlcpcb.com/capabilities/pcb-capabilities/ (NPTH copper clearance)

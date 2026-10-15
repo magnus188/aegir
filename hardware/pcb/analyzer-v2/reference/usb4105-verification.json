@@ -1,0 +1,31 @@
+{
+  "manufacturer": "GCT",
+  "part": "USB4105-GF-A",
+  "drawing_rev": "B4",
+  "drawing_revision_date": "2023-12-18",
+  "drawing_url": "https://gct.co/files/drawings/usb4105.pdf",
+  "product_url": "https://gct.co/connector/usb4105",
+  "digikey_url": "https://www.digikey.no/en/products/detail/gct/USB4105-GF-A/11198441",
+  "source_footprint": "/Applications/KiCad/KiCad.app/Contents/SharedSupport/footprints/Connector_USB.pretty/USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal.kicad_mod",
+  "output_footprint": "build/pcb-v2-work/usb-connector/USB4105.pretty/USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal.kicad_mod",
+  "geometry_modified": false,
+  "model_reference_modified": "${KIPRJMOD}/3dmodels/USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal.step",
+  "body_mm": {
+    "width": 8.94,
+    "length": 7.35,
+    "height_above_pcb": 3.31
+  },
+  "stem_length_mm": 0.95,
+  "pcb_edge_y_mm": 3.675,
+  "opening_direction": "+Y at rotation 0",
+  "courtyard_mm": [
+    -5.32,
+    -4.76,
+    5.32,
+    4.18
+  ],
+  "source_sha256": "3b8d7da3cae5114ec83022a759a78925113bc2eeec100ea447594f6d8687e4b8",
+  "footprint_sha256": "a7a252d2e2a887306384ee3c4c9890926c5bcdd330a3b310a2a84f62afae628e",
+  "model_sha256": "6338ce740fa231c2d3dcc6384e0576994a47240a312a21413cb85d76990a69a0",
+  "drawing_sha256": "fb331fbabee8392ed2937ed757c1610cb0f174b84625147c0b580a18eea8c0e5"
+}

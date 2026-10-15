@@ -1,0 +1,85 @@
+{
+  "same_as_original": true,
+  "error_count": 1,
+  "warning_count": 2,
+  "messages": [
+    {
+      "sheet": "/03  GUITION + FUEL GAUGE/",
+      "violation": {
+        "description": "Pins of type Open collector and Power output are connected",
+        "items": [
+          {
+            "description": "Symbol U302 Pin 5 [ST, Open collector, Line]",
+            "pos": {
+              "x": 0.7366,
+              "y": 2.4765
+            },
+            "uuid": "991d920b-13e3-4e55-b85b-3e724f870c86"
+          },
+          {
+            "description": "Symbol #FLG0103 Pin 1 [Power output, Line]",
+            "pos": {
+              "x": 0.762,
+              "y": 1.5367
+            },
+            "uuid": "4b8e713f-edeb-4760-98ca-954d700f013d"
+          }
+        ],
+        "severity": "error",
+        "type": "pin_to_pin"
+      }
+    },
+    {
+      "sheet": "/04  TWO OXYGEN INPUTS/",
+      "violation": {
+        "description": "Both O2_B_RAW_N and 02_B_RAW_N are attached to the same items; O2_B_RAW_N will be used in the netlist",
+        "items": [
+          {
+            "description": "Global Label 'O2_B_RAW_N'",
+            "pos": {
+              "x": 0.8001,
+              "y": 1.5113
+            },
+            "uuid": "4fd330b4-9323-4bf8-85fc-8fabcc099f47"
+          },
+          {
+            "description": "Label '02_B_RAW_N'",
+            "pos": {
+              "x": 0.6096,
+              "y": 1.5621
+            },
+            "uuid": "129f7114-13b8-4434-a7e1-67cb0a45e90b"
+          }
+        ],
+        "severity": "warning",
+        "type": "multiple_net_names"
+      }
+    },
+    {
+      "sheet": "/04  TWO OXYGEN INPUTS/",
+      "violation": {
+        "description": "Local and global labels have same name",
+        "items": [
+          {
+            "description": "Global Label 'O2_B_RAW_P'",
+            "pos": {
+              "x": 0.8001,
+              "y": 1.7653
+            },
+            "uuid": "8cd81c6b-5d96-4800-9cc6-8118822ae1b8"
+          },
+          {
+            "description": "Label 'O2_B_RAW_P'",
+            "pos": {
+              "x": 0.6477,
+              "y": 1.8161
+            },
+            "uuid": "fa2be636-8276-4c94-ac4e-05c0cc917b2b"
+          }
+        ],
+        "severity": "warning",
+        "type": "same_local_global_label"
+      }
+    }
+  ]
+}

@@ -1,0 +1,771 @@
+{
+  "input_sha256": {
+    "hardware/cad/pcb-v2-bottom/Trimix_Enclosure_PCB2_Bottom.step": "cd3415fa71f6ea861aad5431b4af8b44af02217d2e5b17a71d7bb2bab0160402",
+    "hardware/pcb/analyzer-v2/Trimix_Analyzer.kicad_pcb": "1df55664b1f57ec4dcc38bbd2358f5aee306f59696f52271aafb94f233b992bc",
+    "hardware/pcb/analyzer-v2/review/Trimix_PCB_V2_Mechanical.step": "3498d386c480d86322c211ac33cb6374d962162a937a167221fb9be26367aefb",
+    "hardware/cad/pcb-v2/verification/component-height-contract.json": "fe8efd0d19bc2cbea2c4257ac367131752aafd360208e59382f14a45f1f1b5a8",
+    "hardware/pcb/analyzer-v2-bottom/Trimix_Analyzer.kicad_pcb": "59a0be0876394c670bd6c852033312527ccf9a4e02e94ac0437080b83f57085c"
+  },
+  "inputs_unchanged": true,
+  "scope": "Static component and clearance-envelope fit plus independent assembly pose check. No case builder imports.",
+  "nominal": {
+    "pairs": 1341,
+    "intersections": [],
+    "invalid_common_operations": [],
+    "pass": true
+  },
+  "clearance": {
+    "pairs": 1800,
+    "intersections": [],
+    "invalid_common_operations": [],
+    "pass": true
+  },
+  "pose_checks": [
+    {
+      "reference": "C403",
+      "max_bounds_delta_mm": 2.842170943040401e-14,
+      "pass": true
+    },
+    {
+      "reference": "C407",
+      "max_bounds_delta_mm": 1.4210854715202004e-14,
+      "pass": true
+    },
+    {
+      "reference": "C507",
+      "max_bounds_delta_mm": 7.105427357601002e-15,
+      "pass": true
+    },
+    {
+      "reference": "C802",
+      "max_bounds_delta_mm": 1.4210854715202004e-14,
+      "pass": true
+    },
+    {
+      "reference": "R101",
+      "max_bounds_delta_mm": 8.881784197001252e-15,
+      "pass": true
+    },
+    {
+      "reference": "R703",
+      "max_bounds_delta_mm": 7.105427357601002e-15,
+      "pass": true
+    },
+    {
+      "reference": "C105",
+      "max_bounds_delta_mm": 7.105427357601002e-15,
+      "pass": true
+    },
+    {
+      "reference": "C103",
+      "max_bounds_delta_mm": 1.0658141036401503e-14,
+      "pass": true
+    },
+    {
+      "reference": "R410",
+      "max_bounds_delta_mm": 1.4210854715202004e-14,
+      "pass": true
+    },
+    {
+      "reference": "C402",
+      "max_bounds_delta_mm": 1.4210854715202004e-14,
+      "pass": true
+    },
+    {
+      "reference": "R601",
+      "max_bounds_delta_mm": 7.105427357601002e-15,
+      "pass": true
+    },
+    {
+      "reference": "Q110",
+      "max_bounds_delta_mm": 7.105427357601002e-15,
+      "pass": true
+    },
+    {
+      "reference": "C509",
+      "max_bounds_delta_mm": 7.105427357601002e-15,
+      "pass": true
+    },
+    {
+      "reference": "R401",
+      "max_bounds_delta_mm": 1.4210854715202004e-14,
+      "pass": true
+    },
+    {
+      "reference": "C504",
+      "max_bounds_delta_mm": 1.4210854715202004e-14,
+      "pass": true
+    },
+    {
+      "reference": "J501",
+      "max_bounds_delta_mm": 2.1671553440683056e-13,
+      "pass": true
+    },
+    {
+      "reference": "J701",
+      "max_bounds_delta_mm": 2.842170943040401e-14,
+      "pass": true
+    },
+    {
+      "reference": "C701",
+      "max_bounds_delta_mm": 1.4210854715202004e-14,
+      "pass": true
+    },
+    {
+      "reference": "C803",
+      "max_bounds_delta_mm": 7.105427357601002e-15,
+      "pass": true
+    },
+    {
+      "reference": "C303",
+      "max_bounds_delta_mm": 7.105427357601002e-15,
+      "pass": true
+    },
+    {
+      "reference": "C801",
+      "max_bounds_delta_mm": 7.105427357601002e-15,
+      "pass": true
+    },
+    {
+      "reference": "C301",
+      "max_bounds_delta_mm": 7.105427357601002e-15,
+      "pass": true
+    },
+    {
+      "reference": "C409",
+      "max_bounds_delta_mm": 1.4210854715202004e-14,
+      "pass": true
+    },
+    {
+      "reference": "R117",
+      "max_bounds_delta_mm": 7.105427357601002e-15,
+      "pass": true
+    },
+    {
+      "reference": "R102",
+      "max_bounds_delta_mm": 8.881784197001252e-15,
+      "pass": true
+    },
+    {
+      "reference": "J601",
+      "max_bounds_delta_mm": 2.842170943040401e-14,
+      "pass": true
+    },
+    {
+      "reference": "Q601",
+      "max_bounds_delta_mm": 1.4210854715202004e-14,
+      "pass": true
+    },
+    {
+      "reference": "R201",
+      "max_bounds_delta_mm": 1.4210854715202004e-14,
+      "pass": true
+    },
+    {
+      "reference": "C705",
+      "max_bounds_delta_mm": 7.105427357601002e-15,
+      "pass": true
+    },
+    {
+      "reference": "C404",
+      "max_bounds_delta_mm": 1.4210854715202004e-14,
+      "pass": true
+    },
+    {
+      "reference": "U501",
+      "max_bounds_delta_mm": 2.1316282072803006e-14,
+      "pass": true
+    },
+    {
+      "reference": "C502",
+      "max_bounds_delta_mm": 1.4210854715202004e-14,
+      "pass": true
+    },
+    {
+      "reference": "Q602",
+      "max_bounds_delta_mm": 1.4210854715202004e-14,
+      "pass": true
+    },
+    {
+      "reference": "Q101",
+      "max_bounds_delta_mm": 1.4210854715202004e-14,
+      "pass": true
+    },
+    {
+      "reference": "R103",
+      "max_bounds_delta_mm": 3.197442310920451e-14,
+      "pass": true
+    },
+    {
+      "reference": "R406",
+      "max_bounds_delta_mm": 1.4210854715202004e-14,
+      "pass": true
+    },
+    {
+      "reference": "R505",
+      "max_bounds_delta_mm": 7.105427357601002e-15,
+      "pass": true
+    },
+    {
+      "reference": "R702",
+      "max_bounds_delta_mm": 1.4210854715202004e-14,
+      "pass": true
+    },
+    {
+      "reference": "C505",
+      "max_bounds_delta_mm": 1.4210854715202004e-14,
+      "pass": true
+    },
+    {
+      "reference": "R507",
+      "max_bounds_delta_mm": 1.4210854715202004e-14,
+      "pass": true
+    },
+    {
+      "reference": "R408",
+      "max_bounds_delta_mm": 1.4210854715202004e-14,
+      "pass": true
+    },
+    {
+      "reference": "R409",
+      "max_bounds_delta_mm": 2.842170943040401e-14,
+      "pass": true
+    },
+    {
+      "reference": "C804",
+      "max_bounds_delta_mm": 7.105427357601002e-15,
+      "pass": true
+    },
+    {
+      "reference": "J801",
+      "max_bounds_delta_mm": 2.2026824808563106e-13,
+      "pass": true
+    },
+    {
+      "reference": "R402",
+      "max_bounds_delta_mm": 1.4210854715202004e-14,
+      "pass": true
+    },
+    {
+      "reference": "R115",
+      "max_bounds_delta_mm": 2.1316282072803006e-14,
+      "pass": true
+    },
+    {
+      "reference": "C401",
+      "max_bounds_delta_mm": 1.4210854715202004e-14,
+      "pass": true
+    },
+    {
+      "reference": "R107",
+      "max_bounds_delta_mm": 1.0658141036401503e-14,
+      "pass": true
+    },
+    {
+      "reference": "R118",
+      "max_bounds_delta_mm": 8.881784197001252e-15,
+      "pass": true
+    },
+    {
+      "reference": "R120",
+      "max_bounds_delta_mm": 1.1546319456101628e-14,
+      "pass": true
+    },
+    {
+      "reference": "J402",
+      "max_bounds_delta_mm": 3.552713678800501e-15,
+      "pass": true
+    },
+    {
+      "reference": "R105",
+      "max_bounds_delta_mm": 1.0658141036401503e-14,
+      "pass": true
+    },
+    {
+      "reference": "R704",
+      "max_bounds_delta_mm": 1.4210854715202004e-14,
+      "pass": true
+    },
+    {
+      "reference": "J103",
+      "max_bounds_delta_mm": 2.2026824808563106e-13,
+      "pass": true
+    },
+    {
+      "reference": "C203",
+      "max_bounds_delta_mm": 1.4210854715202004e-14,
+      "pass": true
+    },
+    {
+      "reference": "C101",
+      "max_bounds_delta_mm": 2.842170943040401e-14,
+      "pass": true
+    },
+    {
+      "reference": "RN501",
+      "max_bounds_delta_mm": 7.105427357601002e-15,
+      "pass": true
+    },
+    {
+      "reference": "C508",
+      "max_bounds_delta_mm": 7.105427357601002e-15,
+      "pass": true
+    },
+    {
+      "reference": "R202",
+      "max_bounds_delta_mm": 2.842170943040401e-14,
+      "pass": true
+    },
+    {
+      "reference": "C408",
+      "max_bounds_delta_mm": 1.4210854715202004e-14,
+      "pass": true
+    },
+    {
+      "reference": "J104",
+      "max_bounds_delta_mm": 2.2026824808563106e-13,
+      "pass": true
+    },
+    {
+      "reference": "C704",
+      "max_bounds_delta_mm": 7.105427357601002e-15,
+      "pass": true
+    },
+    {
+      "reference": "U701",
+      "max_bounds_delta_mm": 7.105427357601002e-15,
+      "pass": true
+    },
+    {
+      "reference": "C708",
+      "max_bounds_delta_mm": 7.105427357601002e-15,
+      "pass": true
+    },
+    {
+      "reference": "R802",
+      "max_bounds_delta_mm": 3.552713678800501e-15,
+      "pass": true
+    },
+    {
+      "reference": "R407",
+      "max_bounds_delta_mm": 1.4210854715202004e-14,
+      "pass": true
+    },
+    {
+      "reference": "C206",
+      "max_bounds_delta_mm": 1.4210854715202004e-14,
+      "pass": true
+    },
+    {
+      "reference": "R110",
+      "max_bounds_delta_mm": 1.4210854715202004e-14,
+      "pass": true
+    },
+    {
+      "reference": "U114",
+      "max_bounds_delta_mm": 7.105427357601002e-15,
+      "pass": true
+    },
+    {
+      "reference": "R403",
+      "max_bounds_delta_mm": 1.4210854715202004e-14,
+      "pass": true
+    },
+    {
+      "reference": "R405",
+      "max_bounds_delta_mm": 7.105427357601002e-15,
+      "pass": true
+    },
+    {
+      "reference": "R303",
+      "max_bounds_delta_mm": 7.105427357601002e-15,
+      "pass": true
+    },
+    {
+      "reference": "R116",
+      "max_bounds_delta_mm": 1.1546319456101628e-14,
+      "pass": true
+    },
+    {
+      "reference": "C108",
+      "max_bounds_delta_mm": 1.4210854715202004e-14,
+      "pass": true
+    },
+    {
+      "reference": "U703",
+      "max_bounds_delta_mm": 7.105427357601002e-15,
+      "pass": true
+    },
+    {
+      "reference": "R301",
+      "max_bounds_delta_mm": 1.7763568394002505e-14,
+      "pass": true
+    },
+    {
+      "reference": "U113",
+      "max_bounds_delta_mm": 2.842170943040401e-14,
+      "pass": true
+    },
+    {
+      "reference": "R506",
+      "max_bounds_delta_mm": 7.105427357601002e-15,
+      "pass": true
+    },
+    {
+      "reference": "U801",
+      "max_bounds_delta_mm": 1.4210854715202004e-14,
+      "pass": true
+    },
+    {
+      "reference": "C707",
+      "max_bounds_delta_mm": 2.842170943040401e-14,
+      "pass": true
+    },
+    {
+      "reference": "C506",
+      "max_bounds_delta_mm": 1.4210854715202004e-14,
+      "pass": true
+    },
+    {
+      "reference": "C106",
+      "max_bounds_delta_mm": 1.0658141036401503e-14,
+      "pass": true
+    },
+    {
+      "reference": "R701",
+      "max_bounds_delta_mm": 2.1316282072803006e-14,
+      "pass": true
+    },
+    {
+      "reference": "C501",
+      "max_bounds_delta_mm": 1.4210854715202004e-14,
+      "pass": true
+    },
+    {
+      "reference": "C102",
+      "max_bounds_delta_mm": 1.4210854715202004e-14,
+      "pass": true
+    },
+    {
+      "reference": "C703",
+      "max_bounds_delta_mm": 2.842170943040401e-14,
+      "pass": true
+    },
+    {
+      "reference": "R203",
+      "max_bounds_delta_mm": 1.4210854715202004e-14,
+      "pass": true
+    },
+    {
+      "reference": "U702",
+      "max_bounds_delta_mm": 1.4210854715202004e-14,
+      "pass": true
+    },
+    {
+      "reference": "J802",
+      "max_bounds_delta_mm": 2.2026824808563106e-13,
+      "pass": true
+    },
+    {
+      "reference": "J301",
+      "max_bounds_delta_mm": 3.552713678800501e-15,
+      "pass": true
+    },
+    {
+      "reference": "U301",
+      "max_bounds_delta_mm": 7.105427357601002e-15,
+      "pass": true
+    },
+    {
+      "reference": "C204",
+      "max_bounds_delta_mm": 7.105427357601002e-15,
+      "pass": true
+    },
+    {
+      "reference": "C601",
+      "max_bounds_delta_mm": 7.105427357601002e-15,
+      "pass": true
+    },
+    {
+      "reference": "R803",
+      "max_bounds_delta_mm": 3.552713678800501e-15,
+      "pass": true
+    },
+    {
+      "reference": "C110",
+      "max_bounds_delta_mm": 7.105427357601002e-15,
+      "pass": true
+    },
+    {
+      "reference": "C205",
+      "max_bounds_delta_mm": 1.4210854715202004e-14,
+      "pass": true
+    },
+    {
+      "reference": "U201",
+      "max_bounds_delta_mm": 7.105427357601002e-15,
+      "pass": true
+    },
+    {
+      "reference": "Q111",
+      "max_bounds_delta_mm": 1.4210854715202004e-14,
+      "pass": true
+    },
+    {
+      "reference": "U401",
+      "max_bounds_delta_mm": 2.842170943040401e-14,
+      "pass": true
+    },
+    {
+      "reference": "R705",
+      "max_bounds_delta_mm": 1.4210854715202004e-14,
+      "pass": true
+    },
+    {
+      "reference": "J901",
+      "max_bounds_delta_mm": 2.55351295663786e-14,
+      "pass": true
+    },
+    {
+      "reference": "C104",
+      "max_bounds_delta_mm": 1.4210854715202004e-14,
+      "pass": true
+    },
+    {
+      "reference": "Q112",
+      "max_bounds_delta_mm": 1.4210854715202004e-14,
+      "pass": true
+    },
+    {
+      "reference": "U112",
+      "max_bounds_delta_mm": 1.4210854715202004e-14,
+      "pass": true
+    },
+    {
+      "reference": "R302",
+      "max_bounds_delta_mm": 1.0658141036401503e-14,
+      "pass": true
+    },
+    {
+      "reference": "R114",
+      "max_bounds_delta_mm": 8.881784197001252e-15,
+      "pass": true
+    },
+    {
+      "reference": "R111",
+      "max_bounds_delta_mm": 2.1316282072803006e-14,
+      "pass": true
+    },
+    {
+      "reference": "U502",
+      "max_bounds_delta_mm": 7.105427357601002e-15,
+      "pass": true
+    },
+    {
+      "reference": "C302",
+      "max_bounds_delta_mm": 1.4210854715202004e-14,
+      "pass": true
+    },
+    {
+      "reference": "R501",
+      "max_bounds_delta_mm": 1.4210854715202004e-14,
+      "pass": true
+    },
+    {
+      "reference": "U101",
+      "max_bounds_delta_mm": 7.105427357601002e-15,
+      "pass": true
+    },
+    {
+      "reference": "C201",
+      "max_bounds_delta_mm": 7.105427357601002e-15,
+      "pass": true
+    },
+    {
+      "reference": "R104",
+      "max_bounds_delta_mm": 1.1546319456101628e-14,
+      "pass": true
+    },
+    {
+      "reference": "D901",
+      "max_bounds_delta_mm": 2.1316282072803006e-14,
+      "pass": true
+    },
+    {
+      "reference": "C202",
+      "max_bounds_delta_mm": 1.4210854715202004e-14,
+      "pass": true
+    },
+    {
+      "reference": "C405",
+      "max_bounds_delta_mm": 3.552713678800501e-15,
+      "pass": true
+    },
+    {
+      "reference": "R404",
+      "max_bounds_delta_mm": 7.105427357601002e-15,
+      "pass": true
+    },
+    {
+      "reference": "R113",
+      "max_bounds_delta_mm": 1.0658141036401503e-14,
+      "pass": true
+    },
+    {
+      "reference": "C406",
+      "max_bounds_delta_mm": 1.4210854715202004e-14,
+      "pass": true
+    },
+    {
+      "reference": "U302",
+      "max_bounds_delta_mm": 7.105427357601002e-15,
+      "pass": true
+    },
+    {
+      "reference": "U901",
+      "max_bounds_delta_mm": 2.842170943040401e-14,
+      "pass": true
+    },
+    {
+      "reference": "R801",
+      "max_bounds_delta_mm": 1.0658141036401503e-14,
+      "pass": true
+    },
+    {
+      "reference": "J401",
+      "max_bounds_delta_mm": 2.2026824808563106e-13,
+      "pass": true
+    },
+    {
+      "reference": "C702",
+      "max_bounds_delta_mm": 1.4210854715202004e-14,
+      "pass": true
+    },
+    {
+      "reference": "R121",
+      "max_bounds_delta_mm": 2.842170943040401e-14,
+      "pass": true
+    },
+    {
+      "reference": "C107",
+      "max_bounds_delta_mm": 7.105427357601002e-15,
+      "pass": true
+    },
+    {
+      "reference": "R504",
+      "max_bounds_delta_mm": 0.0,
+      "pass": true
+    },
+    {
+      "reference": "R119",
+      "max_bounds_delta_mm": 1.5987211554602254e-14,
+      "pass": true
+    },
+    {
+      "reference": "R126",
+      "max_bounds_delta_mm": 8.881784197001252e-15,
+      "pass": true
+    },
+    {
+      "reference": "C113",
+      "max_bounds_delta_mm": 1.7763568394002505e-14,
+      "pass": true
+    },
+    {
+      "reference": "C115",
+      "max_bounds_delta_mm": 1.4210854715202004e-14,
+      "pass": true
+    },
+    {
+      "reference": "R122",
+      "max_bounds_delta_mm": 3.197442310920451e-14,
+      "pass": true
+    },
+    {
+      "reference": "R124",
+      "max_bounds_delta_mm": 1.4210854715202004e-14,
+      "pass": true
+    },
+    {
+      "reference": "C116",
+      "max_bounds_delta_mm": 2.4868995751603507e-14,
+      "pass": true
+    },
+    {
+      "reference": "R123",
+      "max_bounds_delta_mm": 5.329070518200751e-15,
+      "pass": true
+    },
+    {
+      "reference": "R112",
+      "max_bounds_delta_mm": 1.7763568394002505e-14,
+      "pass": true
+    },
+    {
+      "reference": "C112",
+      "max_bounds_delta_mm": 1.0658141036401503e-14,
+      "pass": true
+    },
+    {
+      "reference": "C114",
+      "max_bounds_delta_mm": 1.0658141036401503e-14,
+      "pass": true
+    },
+    {
+      "reference": "R128",
+      "max_bounds_delta_mm": 8.881784197001252e-15,
+      "pass": true
+    },
+    {
+      "reference": "R125",
+      "max_bounds_delta_mm": 1.0658141036401503e-14,
+      "pass": true
+    },
+    {
+      "reference": "R127",
+      "max_bounds_delta_mm": 8.881784197001252e-15,
+      "pass": true
+    },
+    {
+      "reference": "C111",
+      "max_bounds_delta_mm": 1.7763568394002505e-14,
+      "pass": true
+    }
+  ],
+  "modeled_fitted_refs": 142,
+  "missing_fitted_refs": [
+    "L101",
+    "L201",
+    "L701",
+    "U110",
+    "U111",
+    "U115"
+  ],
+  "print_part_ids": [
+    "TMX-A3-P01",
+    "TMX-A3-P02",
+    "TMX-A3-P03",
+    "TMX-A3-P04",
+    "TMX-A3-P05",
+    "TMX-A3-P07",
+    "TMX-A3-P08",
+    "TMX-A3-P11",
+    "TMX-V2-P12"
+  ],
+  "core_shift_mm": [
+    0,
+    -18.9,
+    3.5
+  ],
+  "nominal_board_planes_mm": [
+    24,
+    25.6
+  ],
+  "limitations": [
+    "Must accompany exact independent PCB preservation/routing checks.",
+    "Six absent models use existing documented maximum/assembly allocations.",
+    "J901 uses actual model plus0.15mm assembly then0.5mm clearance; physical cable/component tolerance remains to be tested.",
+    "No strength, thermal, cable-mate, water-seal or assembly-path qualification."
+  ],
+  "pass": true
+}

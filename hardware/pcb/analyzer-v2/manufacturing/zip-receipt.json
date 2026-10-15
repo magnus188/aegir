@@ -1,0 +1,7 @@
+{
+  "path": "Trimix_PCB_2_0_QUOTE_ONLY.zip",
+  "sha256": "8936ba29ce73a9d56488b258722307cfb62e49633f909c236f8d4dd712268586",
+  "source_board_sha256": "1df55664b1f57ec4dcc38bbd2358f5aee306f59696f52271aafb94f233b992bc",
+  "file_count": 27,
+  "purpose": "Quotation/review only, no production release"
+}

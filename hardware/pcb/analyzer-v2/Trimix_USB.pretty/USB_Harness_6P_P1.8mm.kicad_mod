@@ -1,0 +1,80 @@
+(footprint "USB_Harness_6P_P1.8mm"
+	(version 20241229)
+	(generator "pcbnew")
+	(layer "F.Cu")
+	(descr "Six soldered wires:1USB5V2GND3CC1 4CC2 5D+6D-. Power24AWG stranded; signals28AWG.0.8mm finishedholes; inspect actual bundle/bend/strainrelief.")
+	(attr through_hole)
+	(property "Reference" "REF**"
+		(at 0 -2 0)
+		(layer "F.SilkS")
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+		)
+	)
+	(property "Value" "USB_Harness_6P_P1.8mm"
+		(at 0 2 0)
+		(layer "F.Fab")
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(hide yes)
+		)
+	)
+	(fp_rect
+		(start -5.4 -1)
+		(end 5.4 1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_rect
+		(start -5.7 -1.3)
+		(end 5.7 1.3)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+	)
+	(pad "1" thru_hole rect
+		(at -4.5 0)
+		(size 1.3 1.3)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+	)
+	(pad "2" thru_hole circle
+		(at -2.7 0)
+		(size 1.3 1.3)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+	)
+	(pad "3" thru_hole circle
+		(at -0.8999999999999999 0)
+		(size 1.3 1.3)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+	)
+	(pad "4" thru_hole circle
+		(at 0.9000000000000004 0)
+		(size 1.3 1.3)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+	)
+	(pad "5" thru_hole circle
+		(at 2.7 0)
+		(size 1.3 1.3)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+	)
+	(pad "6" thru_hole circle
+		(at 4.5 0)
+		(size 1.3 1.3)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+	)
+)

@@ -1,0 +1,6 @@
+PREDECESSOR GEOMETRY – REFERENCE FILES ONLY
+
+The accepted enclosure is ../pcb-v2-bottom/.
+This folder retains the predecessor STEP, shared geometry helpers and component
+contracts needed to rebuild and audit that enclosure. It is not the current
+print package. Use pcb-v2-bottom/LES-MEG.txt and its STEP/F3D/STL deliverables.

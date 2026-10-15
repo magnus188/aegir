@@ -1,0 +1,355 @@
+{
+  "timestamp_utc": "2026-10-15T18:50:34.592519+00:00",
+  "production_release": false,
+  "input_sha256": {
+    "/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/pcb/analyzer-v2/Trimix_Analyzer.kicad_pcb": "1df55664b1f57ec4dcc38bbd2358f5aee306f59696f52271aafb94f233b992bc",
+    "/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/pcb/analyzer-v2-bottom/Trimix_Analyzer.kicad_pcb": "59a0be0876394c670bd6c852033312527ccf9a4e02e94ac0437080b83f57085c",
+    "/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/pcb/analyzer-v2/reference/added-copper-uuids.json": "0ba359e566caeab2ea509ca7165e6980a833f7d60f018c59540c860508bccf61",
+    "/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/pcb/analyzer-v2-bottom/scripts/verify_usb_paths.py": "0f3743d14b3e005a91cd7ca9ced6fdf320617b0e35822d65cb782861f16583fc"
+  },
+  "checks": [
+    {
+      "check": "Frozen source establishes all four explicit ESD bridge-cut paths",
+      "passed": true,
+      "details": [
+        {
+          "net": "USB_CC1",
+          "active_pin": "1",
+          "nc_pin": "10",
+          "removed_bridge_uuids": [
+            "f967a025-f6ef-4610-a675-677968e64b8b"
+          ],
+          "port_is_one_physical_component": true,
+          "core_is_one_physical_component": true,
+          "port_connected_to_nc_pad": true,
+          "core_connected_to_active_pad": true,
+          "port_core_separated_after_cut": true,
+          "connector_side_copper_bounds_native_mm": [
+            54.135,
+            110.35,
+            59.05,
+            113.4
+          ],
+          "nearest_new_signal_link": {
+            "new_link_uuid": "ab16cbba-9d0c-46d4-b633-83e139db0753",
+            "new_link_net": "USB_CC2",
+            "new_link_layer": "In2.Cu",
+            "minimum_XY_projection_gap_mm": 2.0878545238568624,
+            "minimum_same_layer_gap_mm": 3.070589289731393
+          },
+          "passed": true
+        },
+        {
+          "net": "USB_CC2",
+          "active_pin": "2",
+          "nc_pin": "9",
+          "removed_bridge_uuids": [
+            "b3204fdb-dbfe-4d5e-99a7-cab6b9907378"
+          ],
+          "port_is_one_physical_component": true,
+          "core_is_one_physical_component": true,
+          "port_connected_to_nc_pad": true,
+          "core_connected_to_active_pad": true,
+          "port_core_separated_after_cut": true,
+          "connector_side_copper_bounds_native_mm": [
+            54.135,
+            110.1,
+            58.220000000000006,
+            111.6
+          ],
+          "nearest_new_signal_link": {
+            "new_link_uuid": "ab16cbba-9d0c-46d4-b633-83e139db0753",
+            "new_link_net": "USB_CC2",
+            "new_link_layer": "In2.Cu",
+            "minimum_XY_projection_gap_mm": 2.06057219114756,
+            "minimum_same_layer_gap_mm": null
+          },
+          "passed": true
+        },
+        {
+          "net": "USB_D_P",
+          "active_pin": "4",
+          "nc_pin": "7",
+          "removed_bridge_uuids": [
+            "374a9804-597e-4855-adb1-93b4341e27d9"
+          ],
+          "port_is_one_physical_component": true,
+          "core_is_one_physical_component": true,
+          "port_connected_to_nc_pad": true,
+          "core_connected_to_active_pad": true,
+          "port_core_separated_after_cut": true,
+          "connector_side_copper_bounds_native_mm": [
+            54.135,
+            111.0,
+            58.220000000000006,
+            112.95
+          ],
+          "nearest_new_signal_link": {
+            "new_link_uuid": "a8b8d8de-3a54-4d0c-83e9-362ed9cb9e1c",
+            "new_link_net": "USB_D_M",
+            "new_link_layer": "F.Cu",
+            "minimum_XY_projection_gap_mm": 1.831074994017529,
+            "minimum_same_layer_gap_mm": 1.831074994017529
+          },
+          "passed": true
+        },
+        {
+          "net": "USB_D_M",
+          "active_pin": "5",
+          "nc_pin": "6",
+          "removed_bridge_uuids": [
+            "0547b024-dad9-48b1-a268-998029898092"
+          ],
+          "port_is_one_physical_component": true,
+          "core_is_one_physical_component": true,
+          "port_connected_to_nc_pad": true,
+          "core_connected_to_active_pad": true,
+          "port_core_separated_after_cut": true,
+          "connector_side_copper_bounds_native_mm": [
+            54.135,
+            111.5,
+            59.575,
+            114.075
+          ],
+          "nearest_new_signal_link": {
+            "new_link_uuid": "a8b8d8de-3a54-4d0c-83e9-362ed9cb9e1c",
+            "new_link_net": "USB_D_M",
+            "new_link_layer": "F.Cu",
+            "minimum_XY_projection_gap_mm": 1.6850364121961565,
+            "minimum_same_layer_gap_mm": 1.6850364121961565
+          },
+          "passed": true
+        }
+      ]
+    },
+    {
+      "check": "No new same-net bypass around any U901 shunt-routing node",
+      "passed": true,
+      "details": [
+        {
+          "net": "USB_CC1",
+          "active_pin": "1",
+          "nc_pin": "10",
+          "removed_bridge_uuids": [
+            "f967a025-f6ef-4610-a675-677968e64b8b"
+          ],
+          "port_is_one_physical_component": true,
+          "core_is_one_physical_component": true,
+          "port_connected_to_nc_pad": true,
+          "core_connected_to_active_pad": true,
+          "port_core_separated_after_cut": true,
+          "connector_side_copper_bounds_native_mm": [
+            10.6,
+            110.41991,
+            13.65,
+            115.33491
+          ],
+          "nearest_new_signal_link": {
+            "new_link_uuid": "b6610109-a9a9-4dbb-abfb-a3166d52ca0c",
+            "new_link_net": "USB_CC2",
+            "new_link_layer": "In2.Cu",
+            "minimum_XY_projection_gap_mm": 0.7906396420262665,
+            "minimum_same_layer_gap_mm": 1.184429468794095
+          },
+          "passed": true
+        },
+        {
+          "net": "USB_CC2",
+          "active_pin": "2",
+          "nc_pin": "9",
+          "removed_bridge_uuids": [
+            "b3204fdb-dbfe-4d5e-99a7-cab6b9907378"
+          ],
+          "port_is_one_physical_component": true,
+          "core_is_one_physical_component": true,
+          "port_connected_to_nc_pad": true,
+          "core_connected_to_active_pad": true,
+          "port_core_separated_after_cut": true,
+          "connector_side_copper_bounds_native_mm": [
+            12.4,
+            110.41991,
+            13.9,
+            114.50491
+          ],
+          "nearest_new_signal_link": {
+            "new_link_uuid": "b6610109-a9a9-4dbb-abfb-a3166d52ca0c",
+            "new_link_net": "USB_CC2",
+            "new_link_layer": "In2.Cu",
+            "minimum_XY_projection_gap_mm": 1.1441930326195404,
+            "minimum_same_layer_gap_mm": null
+          },
+          "passed": true
+        },
+        {
+          "net": "USB_D_P",
+          "active_pin": "4",
+          "nc_pin": "7",
+          "removed_bridge_uuids": [
+            "374a9804-597e-4855-adb1-93b4341e27d9"
+          ],
+          "port_is_one_physical_component": true,
+          "core_is_one_physical_component": true,
+          "port_connected_to_nc_pad": true,
+          "core_connected_to_active_pad": true,
+          "port_core_separated_after_cut": true,
+          "connector_side_copper_bounds_native_mm": [
+            11.049999,
+            110.41991,
+            13.0,
+            114.50491
+          ],
+          "nearest_new_signal_link": {
+            "new_link_uuid": "fed8e815-38c2-4348-ab34-a675743b8680",
+            "new_link_net": "USB_D_M",
+            "new_link_layer": "F.Cu",
+            "minimum_XY_projection_gap_mm": 1.8310749940175313,
+            "minimum_same_layer_gap_mm": 1.8310749940175313
+          },
+          "passed": true
+        },
+        {
+          "net": "USB_D_M",
+          "active_pin": "5",
+          "nc_pin": "6",
+          "removed_bridge_uuids": [
+            "0547b024-dad9-48b1-a268-998029898092"
+          ],
+          "port_is_one_physical_component": true,
+          "core_is_one_physical_component": true,
+          "port_connected_to_nc_pad": true,
+          "core_connected_to_active_pad": true,
+          "port_core_separated_after_cut": true,
+          "connector_side_copper_bounds_native_mm": [
+            9.925,
+            110.41991,
+            12.5,
+            115.85991
+          ],
+          "nearest_new_signal_link": {
+            "new_link_uuid": "fed8e815-38c2-4348-ab34-a675743b8680",
+            "new_link_net": "USB_D_M",
+            "new_link_layer": "F.Cu",
+            "minimum_XY_projection_gap_mm": 1.6850364121961572,
+            "minimum_same_layer_gap_mm": 1.6850364121961572
+          },
+          "passed": true
+        }
+      ]
+    },
+    {
+      "check": "New signal link centrelines remain behind the connector-side local routing within the USB wing",
+      "passed": true,
+      "details": {
+        "native_region": "x < 18.8 and y > 110.3 excluded for new CC/D centreline routing",
+        "violations": []
+      }
+    },
+    {
+      "check": "New VBUS transition has two >=0.6/0.3 mm plated vias genuinely connected on both outer layers",
+      "passed": true,
+      "details": [
+        {
+          "uuid": "d7b1c02c-3c69-4b6a-8c8c-1d8ca5ad170e",
+          "position_CAM_mm": [
+            24.1,
+            -118.475
+          ],
+          "copper_mm": 0.6,
+          "drill_mm": 0.3,
+          "connected_to_new_power_copper": {
+            "F.Cu": true,
+            "B.Cu": true
+          },
+          "passed": true
+        },
+        {
+          "uuid": "e6a6b16c-6440-48c4-9da0-6f09c64e851e",
+          "position_CAM_mm": [
+            24.7,
+            -118.475
+          ],
+          "copper_mm": 0.6,
+          "drill_mm": 0.3,
+          "connected_to_new_power_copper": {
+            "F.Cu": true,
+            "B.Cu": true
+          },
+          "passed": true
+        }
+      ]
+    },
+    {
+      "check": "All new VBUS segments are >=1mm wide and on outer copper",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "New VBUS added link DC estimate is no worse than source predecessor under stated assumptions",
+      "passed": true,
+      "details": {
+        "method": "20 C bulk-copper DC estimate; sum every new segment including branch; assume balanced parallel via connection; not ampacity or temperature-rise certification",
+        "assumptions": {
+          "copper_resistivity_ohm_mm": 1.724e-05,
+          "outer_copper_thickness_mm": 0.035,
+          "via_barrel_plating_mm": 0.02,
+          "barrel_length_mm": 1.6
+        },
+        "old_link_length_mm": 34.21250340859455,
+        "new_total_link_segments_mm": 19.527893580374364,
+        "old_trace_resistance_ohm": 0.016852101678976286,
+        "new_trace_resistance_ohm": 0.00961888243787583,
+        "new_parallel_via_resistance_ohm": 0.0007316883250411402,
+        "scenarios": [
+          {
+            "amps": 1.4,
+            "new_link_drop_V": 0.014490799068083758,
+            "new_link_dissipation_W": 0.02028711869531726,
+            "old_link_drop_V": 0.0235929423505668,
+            "old_link_dissipation_W": 0.03303011929079352,
+            "meaning": "qualified-system setting envelope"
+          },
+          {
+            "amps": 3,
+            "new_link_drop_V": 0.031051712288750914,
+            "new_link_dissipation_W": 0.09315513686625274,
+            "old_link_drop_V": 0.05055630503692886,
+            "old_link_dissipation_W": 0.15166891511078656,
+            "meaning": "sensitivity only; not an authorized 3A operating current"
+          }
+        ]
+      }
+    },
+    {
+      "check": "Input files remained stable during path review",
+      "passed": true,
+      "details": null
+    }
+  ],
+  "passed": 7,
+  "failed": 0,
+  "inherited_limits": [
+    "Charging sheet still says 300 ohm gives ~0.57 A. This text is inherited and inconsistent with its unchanged R103 and with the correct note on USB_Input_Limiter. No schematic is edited.",
+    "TI BQ25895 KILIM table 320/355/390 A-ohm and 300 ohm +/-1% give a conditional 1.056\u20131.313 A range (typical1.183 A); lower IINLIM register and upstream hardware limit can dominate; ILIM can be disabled by register. This is not a comprehensive fault-current bound.",
+    "Upstream exact TPS22950CQDDCRQ1 limiter defaults to nominal50mA. The unchanged design requires qualified source plus authorization to raise that ceiling. J104 must remain open until cells, NTC and charging are validated.",
+    "D+/D- are BC1.2 detection only, not USB payload data. Longer unmatched routes are not claimed USB high-speed compliant.",
+    "The port remains a5V-only design. J104 inhibits charging, not all VBUS hot-plug/fault energy. Current-limit dynamics, transient coordination, ESD and full-load temperature still need physical verification."
+  ],
+  "sources": [
+    {
+      "url": "https://www.ti.com/lit/ds/symlink/tpd4e05u06.pdf",
+      "basis": "RevO pin table4-2 (NC pins have no internal signal connection) and section7.4.1 connector placement/separation"
+    },
+    {
+      "url": "https://www.ti.com/lit/ds/symlink/tpd1e10b06.pdf",
+      "basis": "RevG section7.4.1 short/wide ground-return guidance"
+    },
+    {
+      "url": "https://www.ti.com/lit/ds/symlink/bq25895.pdf",
+      "basis": "RevC section6 and7.5 ILIM function and KILIM table"
+    },
+    {
+      "file": "hardware/pcb/analyzer-v2/USB_Input_Limiter.kicad_sch",
+      "basis": "Unchanged source/permission/charging qualification restrictions and corrected300R range"
+    }
+  ]
+}

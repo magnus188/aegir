@@ -1,0 +1,1027 @@
+{
+  "timestamp_utc": "2026-10-15T14:03:02.276483+00:00",
+  "purpose": "Independent preservation and USB integration audit; not a production release",
+  "input_sha256": {
+    "hardware/pcb/analyzer/Carbon_Monoxide.kicad_sch": "e05b21e25d82c727ea046086cab4b3bb2a3f3797fb877754c356ca801ca57a96",
+    "hardware/pcb/analyzer/Charging.kicad_sch": "90629a30bf80f1f3e93365ff6c38ec77a3682291129bf6fb80200bb00932c6a7",
+    "hardware/pcb/analyzer/Environment.kicad_sch": "a1cd76c7502b1720cbaa00b3eb258ff24178aadee432b8c3d760d3571a4524a7",
+    "hardware/pcb/analyzer/Gauge_Interface.kicad_sch": "ba7cd46b5f575c20b85fe264e02f405a459ce6de5958aa35b8115688eedfed6e",
+    "hardware/pcb/analyzer/Helium.kicad_sch": "9ea2437448c99602f45d038a4acacd7bc13256d081d157b55d011494bb1f64ce",
+    "hardware/pcb/analyzer/Oxygen.kicad_sch": "97c645a89bb9f7335fbd80882cd5aa9cb9fe19d51262fb48f73e1e3eb0a0ba13",
+    "hardware/pcb/analyzer/Power_Control.kicad_sch": "1d0e88653e2c66d3de08e57afb512cc088b87d9d772afcf86f58d5951b05244d",
+    "hardware/pcb/analyzer/Supply_5V.kicad_sch": "bfd05c6d9788d346bc97a99eba06bca5458786f583a7b40c8c792b0b36da4451",
+    "hardware/pcb/analyzer/Testpoints.kicad_sch": "2c5cfad1891b3d6fa4538d4227cca4a4008e820ebf930dc40d8b1512b73ccc78",
+    "hardware/pcb/analyzer/Trimix_Analog.pretty/Vishay_ACAS0606_AT_IEC.kicad_mod": "9636a026eb88d83396f6ecefc1eeeccaeb4e307e383b1a20a53adaae013d6b91",
+    "hardware/pcb/analyzer/Trimix_Analyzer.kicad_dru": "d98f09ae243f23089c8acb7c65119db01ae3bad6c7568f1ffeb7d472af0d5085",
+    "hardware/pcb/analyzer/Trimix_Analyzer.kicad_pcb": "5382ab1d68a307343b9165bacb90025dee995f66c4689cadbe77df3740eb5f11",
+    "hardware/pcb/analyzer/Trimix_Analyzer.kicad_pro": "a19783ba0c7ddf75f1f4c9d4852db2b5f5c1939d6c844cb8ac0d7d6a9c6b418a",
+    "hardware/pcb/analyzer/Trimix_Analyzer.kicad_sch": "0f3da790cab859155b557f8dfa76146ecd49850168362410329309915e6043b4",
+    "hardware/pcb/analyzer/Trimix_Analyzer_add.3V3_Plane.kicad_dru": "d98f09ae243f23089c8acb7c65119db01ae3bad6c7568f1ffeb7d472af0d5085",
+    "hardware/pcb/analyzer/Trimix_Analyzer_add.3V3_Plane.kicad_pcb": "deb5401f91ab411ee424b083a6994eae3d5ef9e010bef62b27cdb6c764e86532",
+    "hardware/pcb/analyzer/Trimix_Analyzer_add.3V3_Plane.kicad_pro": "a19783ba0c7ddf75f1f4c9d4852db2b5f5c1939d6c844cb8ac0d7d6a9c6b418a",
+    "hardware/pcb/analyzer/Trimix_Connectors.pretty/USB_C_GCT_USB4720-03-A.kicad_mod": "f5ad113d89fc6598063a178c99f4328b13693a5cef5de87101cd3ebffeb5b6e0",
+    "hardware/pcb/analyzer/Trimix_Connectors.pretty/USB_C_GCT_USB4720-03-A_A3.kicad_mod": "19590b12067c116b622a1e7e21939e5619eb9a397f9c862e0f06f9c3bdf3b326",
+    "hardware/pcb/analyzer/Trimix_Power.pretty/Battery_Pigtail_2x22AWG_P4.2_D1.00_Pad1.85.kicad_mod": "6342cc910fdedc8e17b459d0a89b220766f867a5e09539d9b1cf188665f04e47",
+    "hardware/pcb/analyzer/Trimix_Power.pretty/C_TDK_C1005_Recommended.kicad_mod": "9a565bf8e0e929d622eb4b0624f648b692e76d7ac14bec5c55db1015df4df1c5",
+    "hardware/pcb/analyzer/Trimix_Power.pretty/C_TDK_C2012_Recommended.kicad_mod": "4ea675dc1e05a9404486123c7386702dc589ab8163a7e4c0e4aaba7d758532e3",
+    "hardware/pcb/analyzer/Trimix_Power.pretty/DMN2056U_SOT23_Diodes_Recommended.kicad_mod": "a9892819aa3cf193fd23b869e9411a6d964d0384313657b1e609b2cd9f779940",
+    "hardware/pcb/analyzer/Trimix_Power.pretty/L_Coilcraft_XGL4020.kicad_mod": "27ff42430a8b9c2dda476652105edc40c75e07d28d258d61f0c6a59db4521882",
+    "hardware/pcb/analyzer/Trimix_Power.pretty/L_Coilcraft_XGL4030.kicad_mod": "6e74415cae525a2b5c78427d0f9976555d811a5d084270bb5043980ff319a350",
+    "hardware/pcb/analyzer/Trimix_Power.pretty/L_Wurth_74437349010_7050.kicad_mod": "75087d2ef8c1b32e98f1a345a5cc1274d22a811bc5a5ad1dd5f36829896add8f",
+    "hardware/pcb/analyzer/Trimix_Power.pretty/PI3USB9201_UQFN2020_12_TypeC.kicad_mod": "f1c0e28ec11a295e9e155c7ae491f88b66cbee85ecd9d3013e67ead8e9a54908",
+    "hardware/pcb/analyzer/Trimix_Power.pretty/SMB_Amphenol_142138.kicad_mod": "40eaf258adef8d5cf33dd07026ddab16d831979df74520ef9413ecdfad3aa23f",
+    "hardware/pcb/analyzer/Trimix_Power.pretty/Samtec_HTSW-113-07-L-D-007_P2.54mm_Key7.kicad_mod": "c01f74e0822d5a9bc05cfe4bd8395860a96f53118e15777e16f80b832837d9f1",
+    "hardware/pcb/analyzer/Trimix_Power.pretty/TI_DCU8_CompactSilk.kicad_mod": "2d9132b3911871f7de9dbd6de621d05181c2d98bb877dd33ca10ed92685ad479",
+    "hardware/pcb/analyzer/Trimix_Power.pretty/TI_DDC0006A.kicad_mod": "eae8c71ce571d3eeb52c7aa1e7f890db9c6d3104919b39191fc8b166d172b139",
+    "hardware/pcb/analyzer/Trimix_Power.pretty/TI_DSJ_14.kicad_mod": "731b91f82a866072aa6b5959dbe097e344cefe3913ff3851af3e543110d4d708",
+    "hardware/pcb/analyzer/Trimix_Power.pretty/TI_RPW0010A.kicad_mod": "7e98656f619d151566dd1a4c23cb0c432cff3e94106af1dbb1804f780c764a22",
+    "hardware/pcb/analyzer/Trimix_Power.pretty/TI_RTW24_4x4_ThermalVias_ServicePad.kicad_mod": "06f4bda67014bbbf010b61fc95d79679a99a0214cd1249306d2f30218ce7bbcc",
+    "hardware/pcb/analyzer/Trimix_Power.pretty/TPS22950_YBH6.kicad_mod": "ec47a2633c4bfc412b56244e048dbc135ce84e0572d43fd5e523cf8c585e0fea",
+    "hardware/pcb/analyzer/Trimix_Power.pretty/TestPoint_Pad_D0.8mm.kicad_mod": "991e5303548cdf32629ff8d316dfe1544badcf3685b7bbe32110b218fa12de47",
+    "hardware/pcb/analyzer/Trimix_Power.pretty/USB_Harness_6P_P1.8mm.kicad_mod": "f93e71156756ed348bc7ab072f7ebbcf482ae089d6a043d1497bd7805024f48b",
+    "hardware/pcb/analyzer/USB_Input.kicad_sch": "96fb60a7d762b37ae10786b16cd491c82d2e5a4c9afdebccda617c4bf47f6bc7",
+    "hardware/pcb/analyzer/USB_Input_Limiter.kicad_sch": "bf80854f95976d92f2cc61a1e625c3e508d5cb372a49509f0814c8b2ce63afce",
+    "hardware/pcb/analyzer/USB_Overvoltage.kicad_sch": "38f034afd6a19b6d6cb93b8e161acc4c58c0dd175a7d618c9bbbd993170792b8",
+    "hardware/pcb/analyzer/USB_Source_Control.kicad_sch": "9a23d2ec009f071881d3bcbfa09d47354d9d38c6669f57cb7db8d20b636fb915",
+    "hardware/pcb/analyzer/previews/Trimix_Analyzer_Preview.kicad_pcb": "9b73346837d06b91558f8f83b9c87897adf574f9d600f88aac8a39799a8b7195",
+    "hardware/pcb/analyzer/previews/Trimix_Analyzer_Preview.kicad_pro": "a3c70c5113d861516b1830568aa76b83a2245cf6cd840107c9d9cbaee4f31d14",
+    "hardware/pcb/analyzer-v2/Carbon_Monoxide.kicad_sch": "e05b21e25d82c727ea046086cab4b3bb2a3f3797fb877754c356ca801ca57a96",
+    "hardware/pcb/analyzer-v2/Charging.kicad_sch": "afe2b65761ab48c2ab009336f6bd0782e343cbd33043100822e29cfa4a65c1da",
+    "hardware/pcb/analyzer-v2/Environment.kicad_sch": "a1cd76c7502b1720cbaa00b3eb258ff24178aadee432b8c3d760d3571a4524a7",
+    "hardware/pcb/analyzer-v2/Gauge_Interface.kicad_sch": "ba7cd46b5f575c20b85fe264e02f405a459ce6de5958aa35b8115688eedfed6e",
+    "hardware/pcb/analyzer-v2/Helium.kicad_sch": "9ea2437448c99602f45d038a4acacd7bc13256d081d157b55d011494bb1f64ce",
+    "hardware/pcb/analyzer-v2/Oxygen.kicad_sch": "97c645a89bb9f7335fbd80882cd5aa9cb9fe19d51262fb48f73e1e3eb0a0ba13",
+    "hardware/pcb/analyzer-v2/Power_Control.kicad_sch": "1d0e88653e2c66d3de08e57afb512cc088b87d9d772afcf86f58d5951b05244d",
+    "hardware/pcb/analyzer-v2/Supply_5V.kicad_sch": "bfd05c6d9788d346bc97a99eba06bca5458786f583a7b40c8c792b0b36da4451",
+    "hardware/pcb/analyzer-v2/Testpoints.kicad_sch": "2c5cfad1891b3d6fa4538d4227cca4a4008e820ebf930dc40d8b1512b73ccc78",
+    "hardware/pcb/analyzer-v2/Trimix_Analyzer.kicad_dru": "194c12b0abc86e46d020ff7fc56561faa65d92891e188cb8a6f62491738585a9",
+    "hardware/pcb/analyzer-v2/Trimix_Analyzer.kicad_pro": "a19783ba0c7ddf75f1f4c9d4852db2b5f5c1939d6c844cb8ac0d7d6a9c6b418a",
+    "hardware/pcb/analyzer-v2/Trimix_Analyzer.kicad_sch": "0f3da790cab859155b557f8dfa76146ecd49850168362410329309915e6043b4",
+    "hardware/pcb/analyzer-v2/USB_Input.kicad_sch": "1593b35a796a78a199dce22b0f7c309d555aed3a6287fb038c93ce9b28488281",
+    "hardware/pcb/analyzer-v2/USB_Input_Limiter.kicad_sch": "bf80854f95976d92f2cc61a1e625c3e508d5cb372a49509f0814c8b2ce63afce",
+    "hardware/pcb/analyzer-v2/USB_Overvoltage.kicad_sch": "38f034afd6a19b6d6cb93b8e161acc4c58c0dd175a7d618c9bbbd993170792b8",
+    "hardware/pcb/analyzer-v2/USB_Source_Control.kicad_sch": "9a23d2ec009f071881d3bcbfa09d47354d9d38c6669f57cb7db8d20b636fb915",
+    "hardware/pcb/analyzer-v2/reference/original-source-hashes.json": "12e91986281369c36cefdda2c8eca19386d702f23d3b1ba262d95105bdefa832",
+    "hardware/pcb/analyzer-v2/reference/verification/original-netlist.xml": "400789c22fecb8e8afb40621805f5cc0236453d8eea58f19e2501c60ecdb6f29",
+    "hardware/pcb/analyzer-v2/reference/verification/variant-netlist.xml": "b90ce44f53143df371008d4aa093dbc0635ed87b74c9bdece264b02e791ebf62",
+    "hardware/pcb/analyzer-v2/scripts/verify_variant.py": "ca9e6a0e6abefae86bffc30ab65f01aa071576c29d1e3b46b033778e76d4b577",
+    "hardware/pcb/usb-input/Trimix_USB.pretty/TI_DQA0010B.kicad_mod": "31c0a4eca41ce6a0dbc39ff1d2afdb499d5322652f42d3bd3560a80979590131",
+    "hardware/pcb/usb-input/Trimix_USB.pretty/TI_DYA0002A.kicad_mod": "b2c037451051c9188eb8e44151f4e55255408a4eb74e8e417bfe8bf73412fec6",
+    "hardware/pcb/usb-input/Trimix_USB.pretty/USB4720_RevB.kicad_mod": "360952a8651a8fe8557c4cb41f19eb757bfd05cb09d1ca73c54da81051b81d02",
+    "hardware/pcb/usb-input/Trimix_USB.pretty/USB_Harness_6P_P1.8mm.kicad_mod": "f93e71156756ed348bc7ab072f7ebbcf482ae089d6a043d1497bd7805024f48b",
+    "hardware/pcb/usb-input/Trimix_USB_Input.kicad_dru": "3002618eccd3357baae76be67ae35caff58a6506f8248d9e72b5451902691e36",
+    "hardware/pcb/usb-input/Trimix_USB_Input.kicad_pcb": "63d5742a1f8a2598a80c5d6a962a5551b9bebfa1a59c6780a00ab8ba3dd15ea7",
+    "hardware/pcb/usb-input/Trimix_USB_Input.kicad_pro": "715e2524f254c50613fc942c7365e1b0f4c795cb1c6debe2ae2a5b682231584a",
+    "hardware/pcb/usb-input/Trimix_USB_Input.kicad_sch": "1e2157b972ae6687bb1fe1a379593fd297aba0af529cc1a904eb665462b11a96",
+    "/var/folders/04/bnfywths6rg8h51hdv1jf40c0000gn/T/pcb-v2-verification-zbdju3vy/shifted-original-track.kicad_pcb": "e7d59aecf3156485ba7c516f84295c118c1379d510d2cdf32493484284ac2cbd"
+  },
+  "fresh_netlist_exports": [],
+  "netlist_freshness": "Caller-supplied XML; source freshness not independently established",
+  "checks": [
+    {
+      "check": "All canonical source files still match the frozen hash manifest",
+      "passed": true,
+      "details": {
+        "file_count": 51,
+        "mismatches": []
+      }
+    },
+    {
+      "check": "Canonical PCB matches the independently reviewed revision",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Derived schematic file set matches original",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Schematics retain all topology, symbol/pin geometry and UUIDs; only exact listed metadata and USB annotations change",
+      "passed": true,
+      "details": {
+        "allowed_changes": [
+          {
+            "file": "Charging.kicad_sch",
+            "reference": "J101",
+            "field": "on_board",
+            "old": "yes",
+            "new": "no"
+          },
+          {
+            "file": "Charging.kicad_sch",
+            "reference": "J101",
+            "field": "in_bom",
+            "old": "yes",
+            "new": "no"
+          },
+          {
+            "file": "USB_Input.kicad_sch",
+            "annotation": "title_block",
+            "field": "title",
+            "old": "Trimix USB input / source and ESD interface",
+            "new": "Trimix PCB 2.0 / integrated USB input and ESD"
+          },
+          {
+            "file": "USB_Input.kicad_sch",
+            "annotation": "title_block",
+            "field": "rev",
+            "old": "A3-USB6-ESD",
+            "new": "2.0-layout-01"
+          },
+          {
+            "file": "USB_Input.kicad_sch",
+            "annotation": "title_block",
+            "field": "date",
+            "old": "2026-09-07",
+            "new": "2026-10-15"
+          },
+          {
+            "file": "USB_Input.kicad_sch",
+            "annotation": "title_block",
+            "field": "comment 2",
+            "old": "GCT edge margin unresolved; factory assembly and physical tests pending.",
+            "new": "Same electrical nets; new connector/layout require DFM and prototype verification."
+          },
+          {
+            "file": "USB_Input.kicad_sch",
+            "annotation_uuid": "024ae10b-a413-4571-84d0-d253c9dfb851",
+            "field": "text content only",
+            "old": "01  SEALED USB-C RECEPTACLE",
+            "new": "01  USB-C RECEPTACLE | PCB 2.0"
+          },
+          {
+            "file": "USB_Input.kicad_sch",
+            "annotation_uuid": "320c6c03-4158-4a69-90e6-604456f1c7fa",
+            "field": "text content only",
+            "old": "03  SIX-WIRE OUTPUT",
+            "new": "03  NET REFERENCES | J101/J902 NOT FITTED"
+          },
+          {
+            "file": "USB_Input.kicad_sch",
+            "annotation_uuid": "41275033-a1ea-4904-8910-e7d14c44f22f",
+            "field": "text content only",
+            "old": "TRIMIX USB INPUT | GCT + ESD + SIX-WIRE HARNESS",
+            "new": "TRIMIX PCB 2.0 | USB-C + EXISTING ESD CIRCUIT"
+          },
+          {
+            "file": "USB_Input.kicad_sch",
+            "annotation_uuid": "99ca8298-63d1-48e8-9658-e8abe05084e6",
+            "field": "text content only",
+            "old": "Dedicated 0.60 +/-0.10 mm board. Nominal 5 V input; USB-C attachment and BC1.2 detection are on the main PCB.",
+            "new": "Integrated 4-layer / 1.6 mm main PCB. Nominal 5 V input; USB-C attachment and BC1.2 detection are unchanged."
+          },
+          {
+            "file": "USB_Input.kicad_sch",
+            "annotation_uuid": "b4854b23-7752-4c75-b291-c6f72d56445b",
+            "field": "text content only",
+            "old": "GCT Rev B cutout and fixed connector pose retained.\nNo copper-edge exception rule;0.10mm GCT edge margin needs closure.\nFactory stencil/reflow for U901; support the port internally.\nMeasure harness/solder height inside the 5.7 mm gap.\nNo 9/12/20 V request; tests required for both cable orientations,\nsource change, hot plug, overcurrent and assembled-port ESD.",
+            "new": "USB4105-GF-A top mount; no daughterboard or harness.\nGND lands offset 0.025 mm; supplier DFM approval pending.\nFactory stencil/reflow for U901 and connector shell slots.\nSupport the new PCB tab and socket inside the revised case.\nNo 9/12/20 V request; test both cable orientations, source\nchange, hot plug, temperature, overcurrent and port ESD."
+          },
+          {
+            "file": "USB_Input.kicad_sch",
+            "annotation_uuid": "bc8991be-ebb9-4d3a-969b-c11f60549d6d",
+            "field": "text content only",
+            "old": "1 = USB_5V   2 = GND\n3 = CC1       4 = CC2\n5 = D+        6 = D-\nDo not swap CC/data wires or populate old Rd.",
+            "new": "Net references only: no harness is assembled in PCB 2.0.\n1 = USB_5V   2 = GND\n3 = CC1       4 = CC2       5 = D+       6 = D-\nNo extra Rd: existing TUSB320LAI supplies termination."
+          },
+          {
+            "file": "USB_Input.kicad_sch",
+            "reference": "J901",
+            "field": "on_board",
+            "old": "no",
+            "new": "yes"
+          },
+          {
+            "file": "USB_Input.kicad_sch",
+            "reference": "J901",
+            "field": "in_bom",
+            "old": "no",
+            "new": "yes"
+          },
+          {
+            "file": "USB_Input.kicad_sch",
+            "reference": "J901",
+            "field": "Assembly",
+            "old": "USB daughterboard",
+            "new": "Integrated main PCB 2.0"
+          },
+          {
+            "file": "USB_Input.kicad_sch",
+            "reference": "J901",
+            "field": "Value",
+            "old": "USB4720-03-A",
+            "new": "USB4105-GF-A"
+          },
+          {
+            "file": "USB_Input.kicad_sch",
+            "reference": "J901",
+            "field": "MPN",
+            "old": "USB4720-03-A",
+            "new": "USB4105-GF-A"
+          },
+          {
+            "file": "USB_Input.kicad_sch",
+            "reference": "J901",
+            "field": "Footprint",
+            "old": "Trimix_USB:USB4720_RevB",
+            "new": "USB4105:USB_C_Receptacle_GCT_USB4105_GF_A_GroundLandOffset025"
+          },
+          {
+            "file": "USB_Input.kicad_sch",
+            "reference": "J901",
+            "field": "Datasheet",
+            "old": "https://gct.co/files/drawings/usb4720.pdf",
+            "new": "https://gct.co/files/drawings/usb4105.pdf"
+          },
+          {
+            "file": "USB_Input.kicad_sch",
+            "reference": "J901",
+            "field": "Board thickness",
+            "old": "0.60 +/-0.10 mm",
+            "new": "1.6 mm; top mount, plated shell slots"
+          },
+          {
+            "file": "USB_Input.kicad_sch",
+            "reference": "J901",
+            "field": "Interface",
+            "old": "GCT Rev B recommended lands; min0.10mm edge margin fails0.20mm general fabrication rule; no waiver",
+            "new": "GCT B4 / KiCad lands with 0.025 mm rearward GND land offset; DFM review required"
+          },
+          {
+            "file": "USB_Input.kicad_sch",
+            "reference": "U901",
+            "field": "on_board",
+            "old": "no",
+            "new": "yes"
+          },
+          {
+            "file": "USB_Input.kicad_sch",
+            "reference": "U901",
+            "field": "in_bom",
+            "old": "no",
+            "new": "yes"
+          },
+          {
+            "file": "USB_Input.kicad_sch",
+            "reference": "U901",
+            "field": "Assembly",
+            "old": "USB daughterboard; confirm DQA land/stencil variant with assembler",
+            "new": "Integrated main PCB 2.0"
+          },
+          {
+            "file": "USB_Input.kicad_sch",
+            "reference": "D901",
+            "field": "on_board",
+            "old": "no",
+            "new": "yes"
+          },
+          {
+            "file": "USB_Input.kicad_sch",
+            "reference": "D901",
+            "field": "in_bom",
+            "old": "no",
+            "new": "yes"
+          },
+          {
+            "file": "USB_Input.kicad_sch",
+            "reference": "D901",
+            "field": "Assembly",
+            "old": "USB daughterboard",
+            "new": "Integrated main PCB 2.0"
+          }
+        ],
+        "mismatches": []
+      }
+    },
+    {
+      "check": "All schematic nets and reference/pin/function/type memberships are identical",
+      "passed": true,
+      "details": {
+        "original_nets": 129,
+        "variant_nets": 129,
+        "different_nets": []
+      }
+    },
+    {
+      "check": "Exported component metadata differs only by explicit USB assembly substitutions",
+      "passed": true,
+      "details": {
+        "original_components": 173,
+        "variant_components": 173,
+        "unexpected_references": []
+      }
+    },
+    {
+      "check": "Physical membership removes only J101 and adds only J901, U901, D901",
+      "passed": true,
+      "details": {
+        "removed": [
+          "J101"
+        ],
+        "added": [
+          "D901",
+          "J901",
+          "U901"
+        ]
+      }
+    },
+    {
+      "check": "All retained footprint positions, orientations, layers, paths, identities and component values are unchanged",
+      "passed": true,
+      "details": []
+    },
+    {
+      "check": "All original pad geometry and pin-to-net assignments retained, except 15 enlarged U201 thermal lands",
+      "passed": true,
+      "details": {
+        "changed_thermal_lands": 15,
+        "mismatches": []
+      }
+    },
+    {
+      "check": "Every original track/via is preserved except three exact VSYS adjustments and the redundant J101 stub",
+      "passed": false,
+      "details": {
+        "original_by_type": {
+          "segment": 1901,
+          "via": 299
+        },
+        "variant_by_type": {
+          "segment": 2004,
+          "via": 326
+        },
+        "changed_original_uuids": [
+          "13272f7e-a244-4740-9266-053cf7dc4990",
+          "18845727-8852-493c-99fc-786af6a05a06",
+          "1b8f78a3-4291-426a-99ac-a5700ffa3132",
+          "a21ed52b-daff-45ba-9248-a2e63742ae14",
+          "a38913a3-74e5-452c-a094-3e0a9727ca4d"
+        ],
+        "mismatches": [
+          {
+            "uuid": "13272f7e-a244-4740-9266-053cf7dc4990",
+            "differences": [
+              {
+                "path": "/1/1",
+                "expected": 26.025,
+                "actual": 26.035
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "check": "Removed J101.6 terminal stub lay wholly inside the original same-net pad outer boundary",
+      "passed": true,
+      "details": {
+        "removed_uuid": "a38913a3-74e5-452c-a094-3e0a9727ca4d",
+        "pad_radius_mm": 0.65,
+        "endpoint_distance_plus_track_radius_mm": [
+          0.075,
+          0.44989387324948477
+        ]
+      }
+    },
+    {
+      "check": "U101: all 9 thermal bores retain diameter, location, layers and ground connection",
+      "passed": true,
+      "details": {
+        "original_count": 9,
+        "variant_count": 9
+      }
+    },
+    {
+      "check": "U201: all 15 thermal bores retain diameter, location, layers and ground connection",
+      "passed": true,
+      "details": {
+        "original_count": 15,
+        "variant_count": 15
+      }
+    },
+    {
+      "check": "Exactly 24 original thermal bores remain at 0.20 mm drill",
+      "passed": true,
+      "details": [
+        {
+          "reference": "U101",
+          "pad": "25",
+          "uuid": "54bc8f57-5ed8-4529-b1c5-414914b019c1",
+          "pcb_xy_mm": [
+            31.799999999999997,
+            104.38491
+          ],
+          "drill": [
+            0.2
+          ],
+          "net": "GND"
+        },
+        {
+          "reference": "U101",
+          "pad": "25",
+          "uuid": "e4ecb0fd-46de-43e9-9e0d-9b2b31e3a2e6",
+          "pcb_xy_mm": [
+            31.799999999999997,
+            105.48491
+          ],
+          "drill": [
+            0.2
+          ],
+          "net": "GND"
+        },
+        {
+          "reference": "U101",
+          "pad": "25",
+          "uuid": "391e0442-fb4a-427e-b000-55be960bc76b",
+          "pcb_xy_mm": [
+            31.799999999999997,
+            106.58491
+          ],
+          "drill": [
+            0.2
+          ],
+          "net": "GND"
+        },
+        {
+          "reference": "U101",
+          "pad": "25",
+          "uuid": "dae1696b-bcc5-4b35-b050-705de09a8636",
+          "pcb_xy_mm": [
+            32.9,
+            104.38491
+          ],
+          "drill": [
+            0.2
+          ],
+          "net": "GND"
+        },
+        {
+          "reference": "U101",
+          "pad": "25",
+          "uuid": "f685e1fc-4f48-4058-8428-b30b40526df7",
+          "pcb_xy_mm": [
+            32.9,
+            105.48491
+          ],
+          "drill": [
+            0.2
+          ],
+          "net": "GND"
+        },
+        {
+          "reference": "U101",
+          "pad": "25",
+          "uuid": "159cd6c8-d9ce-4edc-8fce-219cf1acc933",
+          "pcb_xy_mm": [
+            32.9,
+            106.58491
+          ],
+          "drill": [
+            0.2
+          ],
+          "net": "GND"
+        },
+        {
+          "reference": "U101",
+          "pad": "25",
+          "uuid": "8f24e3f9-48bd-4221-91d2-a86ae10c441a",
+          "pcb_xy_mm": [
+            34.0,
+            104.38491
+          ],
+          "drill": [
+            0.2
+          ],
+          "net": "GND"
+        },
+        {
+          "reference": "U101",
+          "pad": "25",
+          "uuid": "05a293a1-dae2-46b0-917b-37451d9caf84",
+          "pcb_xy_mm": [
+            34.0,
+            105.48491
+          ],
+          "drill": [
+            0.2
+          ],
+          "net": "GND"
+        },
+        {
+          "reference": "U101",
+          "pad": "25",
+          "uuid": "a230bb3e-b006-4938-b888-7e73f0a9fd13",
+          "pcb_xy_mm": [
+            34.0,
+            106.58491
+          ],
+          "drill": [
+            0.2
+          ],
+          "net": "GND"
+        },
+        {
+          "reference": "U201",
+          "pad": "15",
+          "uuid": "3cc80371-5665-4457-ac81-8ef0cf637643",
+          "pcb_xy_mm": [
+            32.4,
+            81.48491
+          ],
+          "drill": [
+            0.2
+          ],
+          "net": "GND"
+        },
+        {
+          "reference": "U201",
+          "pad": "15",
+          "uuid": "f46ea153-3a88-4aab-8a2b-bbca6da5f524",
+          "pcb_xy_mm": [
+            32.4,
+            81.98491
+          ],
+          "drill": [
+            0.2
+          ],
+          "net": "GND"
+        },
+        {
+          "reference": "U201",
+          "pad": "15",
+          "uuid": "c0795945-3276-4346-9cc5-32ddddb64e55",
+          "pcb_xy_mm": [
+            32.4,
+            82.48491
+          ],
+          "drill": [
+            0.2
+          ],
+          "net": "GND"
+        },
+        {
+          "reference": "U201",
+          "pad": "15",
+          "uuid": "2703c475-5178-432e-b929-132a787ca5e9",
+          "pcb_xy_mm": [
+            32.4,
+            82.98491
+          ],
+          "drill": [
+            0.2
+          ],
+          "net": "GND"
+        },
+        {
+          "reference": "U201",
+          "pad": "15",
+          "uuid": "d1e197e0-ab20-496b-82e4-0f8a2167d713",
+          "pcb_xy_mm": [
+            32.4,
+            83.48491
+          ],
+          "drill": [
+            0.2
+          ],
+          "net": "GND"
+        },
+        {
+          "reference": "U201",
+          "pad": "15",
+          "uuid": "ec2ce9aa-1a4b-4bee-9ef2-815793f788b4",
+          "pcb_xy_mm": [
+            32.9,
+            81.48491
+          ],
+          "drill": [
+            0.2
+          ],
+          "net": "GND"
+        },
+        {
+          "reference": "U201",
+          "pad": "15",
+          "uuid": "72046401-8913-493c-9912-1916d6fa26e1",
+          "pcb_xy_mm": [
+            32.9,
+            81.98491
+          ],
+          "drill": [
+            0.2
+          ],
+          "net": "GND"
+        },
+        {
+          "reference": "U201",
+          "pad": "15",
+          "uuid": "8862aac3-9cfa-4bcf-94fd-2c32c6ac06e8",
+          "pcb_xy_mm": [
+            32.9,
+            82.48491
+          ],
+          "drill": [
+            0.2
+          ],
+          "net": "GND"
+        },
+        {
+          "reference": "U201",
+          "pad": "15",
+          "uuid": "2f17bbb1-4b3d-464c-9dec-da248dcb9907",
+          "pcb_xy_mm": [
+            32.9,
+            82.98491
+          ],
+          "drill": [
+            0.2
+          ],
+          "net": "GND"
+        },
+        {
+          "reference": "U201",
+          "pad": "15",
+          "uuid": "7634bf56-e01a-4bad-a066-6ee16a7196a8",
+          "pcb_xy_mm": [
+            32.9,
+            83.48491
+          ],
+          "drill": [
+            0.2
+          ],
+          "net": "GND"
+        },
+        {
+          "reference": "U201",
+          "pad": "15",
+          "uuid": "fd3a8726-7654-45df-80bf-0e7c2d3571be",
+          "pcb_xy_mm": [
+            33.4,
+            81.48491
+          ],
+          "drill": [
+            0.2
+          ],
+          "net": "GND"
+        },
+        {
+          "reference": "U201",
+          "pad": "15",
+          "uuid": "2f93aed7-6311-4616-8de3-401952707d0e",
+          "pcb_xy_mm": [
+            33.4,
+            81.98491
+          ],
+          "drill": [
+            0.2
+          ],
+          "net": "GND"
+        },
+        {
+          "reference": "U201",
+          "pad": "15",
+          "uuid": "cbaa5418-0341-417f-a805-28340298bd11",
+          "pcb_xy_mm": [
+            33.4,
+            82.48491
+          ],
+          "drill": [
+            0.2
+          ],
+          "net": "GND"
+        },
+        {
+          "reference": "U201",
+          "pad": "15",
+          "uuid": "5d8a8ea3-91ed-4dc5-8e2f-8cea841318a7",
+          "pcb_xy_mm": [
+            33.4,
+            82.98491
+          ],
+          "drill": [
+            0.2
+          ],
+          "net": "GND"
+        },
+        {
+          "reference": "U201",
+          "pad": "15",
+          "uuid": "3b8bc2e4-0367-4287-8630-a4764ea18153",
+          "pcb_xy_mm": [
+            33.4,
+            83.48491
+          ],
+          "drill": [
+            0.2
+          ],
+          "net": "GND"
+        }
+      ]
+    },
+    {
+      "check": "Four-layer stackup, material/thickness details and layer table remain unchanged",
+      "passed": true,
+      "details": {
+        "copper_layer_names": [
+          "F.Cu",
+          "In1.Cu",
+          "In2.Cu",
+          "B.Cu"
+        ],
+        "stackup_differences": []
+      }
+    },
+    {
+      "check": "Board thickness remains unchanged",
+      "passed": true,
+      "details": {
+        "original": [
+          "general",
+          [
+            "thickness",
+            1.6
+          ],
+          [
+            "legacy_teardrops",
+            "no"
+          ]
+        ],
+        "variant": [
+          "general",
+          [
+            "thickness",
+            1.6
+          ],
+          [
+            "legacy_teardrops",
+            "no"
+          ]
+        ]
+      }
+    },
+    {
+      "check": "Global board design and netclass settings remain unchanged",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "All original custom rules are retained; sole added exception is J901-to-J901 pad hole clearance 0.20 mm",
+      "passed": true,
+      "details": {
+        "original_rules_byte_prefix_unchanged": true,
+        "added_rules": [
+          [
+            "rule",
+            "USB4105 locating holes within adapted footprint",
+            [
+              "condition",
+              "A.Type == 'Pad' && B.Type == 'Pad' && A.memberOfFootprint('J901') && B.memberOfFootprint('J901')"
+            ],
+            [
+              "constraint",
+              "hole_clearance",
+              [
+                "min",
+                "0.20mm"
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "check": "Nominal outline is 45.1 x 99 mm with a closed line loop",
+      "passed": true,
+      "details": {
+        "dimensions_mm": [
+          45.1,
+          99.0
+        ],
+        "edge_segments": 10,
+        "one_closed_loop": true
+      }
+    },
+    {
+      "check": "J901: connector/protection pin mapping is exact",
+      "passed": true,
+      "details": {
+        "pad_mapping": [
+          {
+            "pad": "A1",
+            "net": "GND"
+          },
+          {
+            "pad": "A4",
+            "net": "USB_5V"
+          },
+          {
+            "pad": "A5",
+            "net": "USB_CC1"
+          },
+          {
+            "pad": "A6",
+            "net": "USB_D_P"
+          },
+          {
+            "pad": "A7",
+            "net": "USB_D_M"
+          },
+          {
+            "pad": "A8",
+            "net": "unconnected-(J901-SBU1-PadA8)"
+          },
+          {
+            "pad": "A9",
+            "net": "USB_5V"
+          },
+          {
+            "pad": "A12",
+            "net": "GND"
+          },
+          {
+            "pad": "B1",
+            "net": "GND"
+          },
+          {
+            "pad": "B4",
+            "net": "USB_5V"
+          },
+          {
+            "pad": "B5",
+            "net": "USB_CC2"
+          },
+          {
+            "pad": "B6",
+            "net": "USB_D_P"
+          },
+          {
+            "pad": "B7",
+            "net": "USB_D_M"
+          },
+          {
+            "pad": "B8",
+            "net": "unconnected-(J901-SBU2-PadB8)"
+          },
+          {
+            "pad": "B9",
+            "net": "USB_5V"
+          },
+          {
+            "pad": "B12",
+            "net": "GND"
+          },
+          {
+            "pad": "SH",
+            "net": "GND"
+          },
+          {
+            "pad": "SH",
+            "net": "GND"
+          },
+          {
+            "pad": "SH",
+            "net": "GND"
+          },
+          {
+            "pad": "SH",
+            "net": "GND"
+          }
+        ],
+        "mismatches": [],
+        "missing": []
+      }
+    },
+    {
+      "check": "U901: connector/protection pin mapping is exact",
+      "passed": true,
+      "details": {
+        "pad_mapping": [
+          {
+            "pad": "1",
+            "net": "USB_CC1"
+          },
+          {
+            "pad": "2",
+            "net": "USB_CC2"
+          },
+          {
+            "pad": "3",
+            "net": "GND"
+          },
+          {
+            "pad": "3",
+            "net": "GND"
+          },
+          {
+            "pad": "4",
+            "net": "USB_D_P"
+          },
+          {
+            "pad": "5",
+            "net": "USB_D_M"
+          },
+          {
+            "pad": "6",
+            "net": "USB_D_M"
+          },
+          {
+            "pad": "7",
+            "net": "USB_D_P"
+          },
+          {
+            "pad": "8",
+            "net": "GND"
+          },
+          {
+            "pad": "9",
+            "net": "USB_CC2"
+          },
+          {
+            "pad": "10",
+            "net": "USB_CC1"
+          }
+        ],
+        "mismatches": [],
+        "missing": []
+      }
+    },
+    {
+      "check": "D901: connector/protection pin mapping is exact",
+      "passed": true,
+      "details": {
+        "pad_mapping": [
+          {
+            "pad": "1",
+            "net": "USB_5V"
+          },
+          {
+            "pad": "2",
+            "net": "GND"
+          }
+        ],
+        "mismatches": [],
+        "missing": []
+      }
+    },
+    {
+      "check": "U901's four NC-pad pairs have real direct PCB copper bridges, not merely matching net names",
+      "passed": true,
+      "details": [
+        {
+          "pins": [
+            "1",
+            "10"
+          ],
+          "net": "USB_CC1",
+          "explicit_direct_copper_segment_uuids": [
+            "800752e9-aaae-4948-8128-54186e4eec7f"
+          ]
+        },
+        {
+          "pins": [
+            "2",
+            "9"
+          ],
+          "net": "USB_CC2",
+          "explicit_direct_copper_segment_uuids": [
+            "5d343242-1797-4831-bc9c-b3ace3f3a04a"
+          ]
+        },
+        {
+          "pins": [
+            "4",
+            "7"
+          ],
+          "net": "USB_D_P",
+          "explicit_direct_copper_segment_uuids": [
+            "25d066ae-f8e1-4d9f-8762-9d4c2e00caea"
+          ]
+        },
+        {
+          "pins": [
+            "5",
+            "6"
+          ],
+          "net": "USB_D_M",
+          "explicit_direct_copper_segment_uuids": [
+            "b5597584-3049-4278-a346-2e4cd516be8c"
+          ]
+        }
+      ]
+    },
+    {
+      "check": "Source, variant and verifier inputs remained stable throughout this audit",
+      "passed": true,
+      "details": []
+    }
+  ],
+  "passed": 23,
+  "failed": 1,
+  "limitations": [
+    "Native filled-zone DRC and connectivity are separate mandatory checks.",
+    "No manufactured copper, solder quality, thermal/ESD/transient or functional performance is measured.",
+    "Fill/cap process acceptance and mechanical/assembly validation remain outstanding.",
+    "Explicit U901 bridge test intentionally requires a direct F.Cu segment; a differently routed valid bridge needs review of this test.",
+    "This script does not qualify new copper routing, other than its listed mapping/bridge and preservation checks."
+  ]
+}

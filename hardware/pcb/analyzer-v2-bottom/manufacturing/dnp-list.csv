@@ -1,0 +1,7 @@
+Reference,Value,Manufacturer,MPN,Quantity,Population_quantity,Category,Footprint,Side,PCB_X_mm,PCB_Y_mm,Rotation_deg,Assembly_note,Native_exclude_from_BOM,Native_exclude_from_CPL
+C503,10n / 50V X7R / 10% / DNP,TDK,C1608X7R1H103K080AA,1,0,DNP,C_0603_1608Metric,top,28.4,67.78491,0,Do not populate; assembler must omit corresponding paste from the final stencil.,False,False
+C706,10n / 50V X7R / 10% / DNP,KEMET / YAGEO,C0805C103K5RACTU,1,0,DNP,C_0805_2012Metric,top,23.95,86.48491,0,Do not populate; assembler must omit corresponding paste from the final stencil.,False,False
+R602,0R / DNP: 5 V option,YAGEO,RC0603JR-070RL,1,0,DNP,R_0603_1608Metric,top,21.15,85.23491,90,Do not populate; assembler must omit corresponding paste from the final stencil.,False,False
+R603,4.7k / DNP,YAGEO,RC0603FR-074K7L,1,0,DNP,R_0603_1608Metric,top,21.15,88.48491,90,Do not populate; assembler must omit corresponding paste from the final stencil.,False,False
+R604,4.7k / DNP,YAGEO,RC0603FR-074K7L,1,0,DNP,R_0603_1608Metric,top,21.15,91.73491,90,Do not populate; assembler must omit corresponding paste from the final stencil.,False,False
+R804,1k / DNP,YAGEO,RC0603FR-071KL,1,0,DNP,R_0603_1608Metric,top,21.15,98.23491,90,Do not populate; assembler must omit corresponding paste from the final stencil.,False,False

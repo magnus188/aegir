@@ -1,0 +1,46 @@
+USB4105-GF-A footprint and STEP provenance
+Checked 2026-10-15.
+
+Original KiCad footprint:
+/Applications/KiCad/KiCad.app/Contents/SharedSupport/footprints/Connector_USB.pretty/USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal.kicad_mod
+Original KiCad STEP:
+/Applications/KiCad/KiCad.app/Contents/SharedSupport/3dmodels/Connector_USB.3dshapes/USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal.step
+Installed KiCad version: 10.0.6.
+Attribution: KiCad library contributors.
+Upstream projects: https://gitlab.com/kicad/libraries/kicad-footprints
+https://gitlab.com/kicad/libraries/kicad-packages3D
+License: CC BY-SA 4.0 with KiCad library exception. See LICENSE-KiCad-Libraries.md.
+License file downloaded unchanged from:
+https://raw.githubusercontent.com/KiCad/kicad-footprints/master/LICENSE.md
+Equivalent 3D library license verified at:
+https://raw.githubusercontent.com/KiCad/kicad-packages3D/master/LICENSE.md
+
+Original local copy preserves all copper, mask, paste, drill, courtyard and
+outline geometry; changes only the model reference to ${KIPRJMOD}/3dmodels/.
+Hashes are in verification.json.
+
+Optional GroundLandOffset025 adaptation:
+Moves only A1, B12, A12, B1 by (0, -0.025) mm in local footprint coordinates.
+These four logical pads form two physical outer ground lands. Pad width, length,
+corner radius, mask and paste settings remain unchanged. All drills remain
+unchanged. The adapted footprint uses a distinct name and description.
+Both original and adapted copies are retained; adoption is root task's decision.
+This is not a manufacturer-issued or manufacturer-approved land pattern.
+
+Primary dimensional authority:
+GCT USB4105 drawing Rev B4, revision date 18 December 2023.
+https://gct.co/files/drawings/usb4105.pdf
+Product: https://gct.co/connector/usb4105
+The manufacturer's PDF is source documentation; the KiCad library license
+above does not cover GCT's documentation.
+
+Fabrication capability authority:
+https://jlcpcb.com/capabilities/pcb-capabilities/
+The current public table specifies NPTH-to-track 0.20 mm. No 4-layer 0.15 mm
+exception was found. Original local nominal corner clearance is 0.1944027 mm;
+adapted local nominal corner clearance is 0.2187038 mm.
+A narrowly scoped 0.20 mm rule for this connector reflects the published
+capability. A 0.15 mm rule would not be supported by this source.
+Native KiCad DRC on controlled test copies confirms original has four such
+violations and adapted has none. Other expected test-board errors are unrelated.
+Test boards deliberately place connector off-board to isolate footprint checks.

@@ -1,0 +1,127 @@
+TRIMIX – PCB 2.0 MED USB-C I BUNNEN
+Monterings- og passformnotater, 15. oktober 2026
+Ferdig prototypegrunnlag med kontrollerte produksjons- og 3D-filer.
+
+VALGT LØSNING
+USB-C-kontakten GCT USB4105-GF-A sitter på det samlede kretskortet og
+vender ut gjennom bunnen. Ingen separat USB-modul eller intern USB-kabel.
+Kabinettets hovedhus beholder 85 x 180 x 43 mm ytre mål. Kontakten er
+trukket inn i bunnflaten; den tidligere utbulingen på siden er borte.
+Batteriholderen med PCM, de to 18650-cellene og deres plassering beholdes.
+
+ENDRINGER I KORTET
+Hovedkretsens komponenter, eksisterende spor og viaer er bevart i kortets
+egne koordinater. Kobberflatene er fylt på nytt rundt de nye forbindelsene. USB-gruppen er flyttet og rotert, og forbindelsene inn til
+hovedkretsen er lagt på nytt. Alle 14 verifiserte skjemaer er byteidentiske.
+Et 7,63 mm langt D+-spor ligger på det indre jordlaget. Jordflaten er
+fortsatt sammenhengende; kobberet rundt de to varmeutviklende kretsene
+er bevart innen beregningstoleransen. Kortkonturen er lokalt tilpasset USB-plasseringen. Sammenligningsrapporten
+i PCB-mappen dokumenterer det faktiske omfanget av endringene.
+
+Fire kobberlag, 1,6 mm nominell tykkelse, de tidligere termiske hullene og
+kravet om fylte/overpletterte hull under de berørte komponentene beholdes.
+Dette er derfor ikke et nytt pristilbud eller en garanti om 400 kr totalpris.
+Fabrikken må vurdere de nye produksjonsfilene og bekrefte prosess og pris.
+
+ENDRINGER I KABINETTET
+P01 hovedhus: nytt kortfeste, lokal USB-understøtte, to fester for USB-
+støtten og en innvendig kanal som gjør at kortet kan løftes ut bakover.
+P02 baklokk: nedre høyre lokkfeste følger nå lokket og skrus fra siden.
+Gammel USB-nøkkel fjernes. Batteriets støtteflater beholdes.
+P03 kortramme: justert for kortets nye plassering og høyde, med åpninger
+for undersidekomponenter, loddepinner og luft rundt elektronikken.
+P12 avtakbar USB-støtte: to skruer og føtter over ledige kortområder.
+P04/P05/P07/P08/P11 videreføres fra den opprinnelige modellen.
+Gamle P06/P09/P10 og USB-datterkortet skal ikke monteres i denne varianten.
+
+Kortet er flyttet 18,9 mm mot bunnen og 3,5 mm mot baklokket i kassen.
+Dette gjelder den mekaniske plasseringen; hovedkretsen er ikke omplassert
+internt på kretskortet. Kortets nominelle under-/overside er Z24/25,6 mm.
+Det nedre høyre hjørnet har lokalt radius 4 mm i stedet for 8 mm.
+Dette gir omtrent 1,43 mm minste beregnede veggtykkelse ved den innvendige
+kanalen, uten å øke yttermålene. Resten av den opprinnelige profilen beholdes.
+Den tynnere huden helt foran USB-porten er omtrent 0,93 mm og er støttet
+av en 4 mm ramme. Den er ikke kvalifisert som eneste stopp ved uttrekk.
+Kortskruene har akser X/Y(76;9,1) og(54,8;95,1) mm.
+USB-støtteskruene har akser(30,01509;5,8) og(42,5;22,5) mm.
+
+STØTTE RUNDT USB-C
+To flater under kortet bærer den lokale USB-delen. Føtter over disse
+flatene begrenser løft; de har 0,26 mm klaring ved 1,60 mm korttykkelse
+og 0,10 mm ved 1,76 mm. Dette er en kontrollert klaring, ikke en klemme
+som skal strammes ned på loddepunkter eller komponenter.
+Kantstopp begrenser videre bevegelse etter omtrent 0,1 mm ved innsetting
+og 0,2 mm ved uttrekk. Skruefestene kan ta last før disse klaringene lukkes.
+
+Kraft fra kabelen går fortsatt gjennom kontaktens loddede skjermfester,
+kortet og kortfestene. Støttene begrenser bøying, men gjør ikke loddingene
+lastfrie. CAD-kontroll viser passform; styrken må prøves på fysisk prototype.
+
+FESTEMATERIELL FOR DE ENDREDE FESTENE
+2 x M2 x 7 mm til kortet – samme lengde som før.
+2 x M2 x 5 mm til USB-støtten – gjenbruk av de gamle USB-skruene.
+4 x TC-M2x3.0 varmeinnsatser til de nye kort- og USB-festene.
+USB-innsatsene har 3 mm nominelt skrueinngrep; skruehodene er forsenket.
+Generiske innsatser fra den gamle modellen er ikke automatisk ombyttbare.
+Det er ikke kontrollert på nytt om akkurat disse innsatsene finnes på lager.
+Prøv faktisk innsats i en liten utskrift før hele kabinettet skrives ut.
+De fire M3x8-lokkskruene videreføres. Tre nås fra baksiden; den fjerde
+nås fra høyre side ved Y17/Z37 mm, med innfelt hode. Dens opprinnelige
+5 mm M3-innsats følger lokket. Alle 5 mm får skrueinngrep, og den faste
+veggen har 2,4 mm beregnet dybde under skruehodet. Dette lokkfestet må
+følge lokket ved åpning, ellers hindres kortets rette løftebane.
+
+MONTERING
+1. Monter varmeinnsatsene, og kontroller at de sitter rett og ikke stikker opp.
+2. Legg kortrammen og det samlede kortet på plass fra den åpne baksiden.
+   Kontroller at undersidens komponenter og pinner går fritt, og at kortet
+   ligger flatt på setene. Fest de to M2x7-skruene uten å bøye kortet.
+3. Senk USB-støtten rett ned fra baksiden. Føttene skal ligge over de
+   ledige kortområdene. Fest med de to M2x5-skruene.
+4. Koble til nødvendige ledninger og kontroller kabelbøyer før lokket settes på.
+Ved demontering: tre bakre og én sidemontert M3-skrue ut, lokk av,
+USB-støtte opp, ledninger fra, kortskruer ut,
+deretter kort og ramme opp. Skruer skal ikke trekke en trang del på plass.
+
+UTSKRIFT OG FYSISK PRØVING
+Alle STL-filer er i millimeter og ligger i monteringskoordinater. Plasser
+og orienter hver del på byggeplaten i sliceren; velg støtte for overheng.
+Skriv først ut de fire endrede delene. Eksisterende, uendrede deler kan
+gjenbrukes dersom de er skrevet ut fra samme opprinnelige modell.
+
+Prøv med den faktiske USB-kabelen og det faktiske kortet. Kabelen skal gå
+helt inn uten at støtten presser på kontaktens innmat eller kortet bøyer seg.
+Kontroller inn-/uttrekk, sidebelastning, skruefester og innsatser. Kontroller
+også temperatur ved lading i den lukkede prototypen før vanlig bruk.
+USB-porten og skjøtene er ikke kvalifisert som vanntette.
+J104 skal ha kontaktpinner, men ingen jumper, før ladefunksjonen er
+kontrollert ved igangkjøring. Den uendrede Charging-siden har en gammel
+strømmerknad på ca. 0,57 A; USB_Input_Limiter-siden angir riktig område
+ca. 1,06–1,31 A for R103=300 ohm, før øvrige strømbegrensninger.
+
+Tidligere uavklarte detaljer om reelle skjermkontakter, ledninger og
+slangebøyer er ikke lukket av en PCB-/kabinettkontroll. Målekretsen,
+ladefunksjonen og batteribeskyttelsen er ikke endret elektrisk her.
+
+FILER OG KONTROLLSPOR
+Trimix_Enclosure_PCB2_Bottom.step er den samlede modellen med elektronikk.
+F3D-versjonen er importert fra den samme STEP-modellen og inneholder
+redigerbare legemer, men ikke den opprinnelige parametriske Fusion-tidslinjen.
+Original F3D er bevart. Endringene kan også bygges på nytt fra skriptene.
+
+verification/electronics-fit-independent.json: nominelle modeller, seks
+modell-erstatninger med høydegrenser og alle 52 reserver for loddepinner.
+verification/mechanical-interfaces-independent.json: støtteflater, korttykkelse,
+skruer/verktøy, batteriklaring og sammenhengende demonteringsbaner.
+verification/delivery-checks.json: bevaring av batteri-/kildedeler og ni STL-filer.
+verification/final-delivery.json: filversjonene som disse kontrollene gjelder.
+Build-report er en rapport fra byggetrinnet; sluttkontrollene ovenfor avgjør
+leveransestatusen. Ni STL-filer, batteribevaring og tre sammenhengende
+demonteringsbaner består kontrollene. PCB: 0 DRC-feil, 0 luftlinjer,
+0 skjemaavvik; 44/44 CAM- og 13/13 prosesskontroller består.
+views/: bilder rendret fra de faktiske STEP-legemene.
+
+PCB-prosjekt og egne produksjonsfiler ligger i hardware/pcb/analyzer-v2-bottom.
+Bruk komponent-/plasseringslistene og hullbehandlingsnotatene der sammen.
+De nye filene er et prototypegrunnlag. Leverandørens gjennomgang av USB-
+fotavtrykk, loddeprosess, hullfylling og sjablong kreves før produksjon.

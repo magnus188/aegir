@@ -1,0 +1,89 @@
+PCB 2.0 — enclosure handoff, 2026-10-15
+
+Status: dimensioned PCB placement proposal. No enclosure or carrier Fusion
+model was changed or validated for this board. Preserve the current 2 x
+18650 protected FMA holder, display and main-board core positions.
+
+Files
+  PCB: ../Trimix_Analyzer.kicad_pcb
+  STEP: Trimix_PCB_V2_Mechanical.step
+  Plan: case-fit-proposal.svg (illustration, not manufacturing CAD)
+
+Exact XY registration (millimetres)
+  KiCad native origin offset: (19.9, 21.48491).
+  u = native PCB x - 19.9; v = native PCB y - 21.48491.
+  Existing enclosure world X = 50.4 + u; world Y = 120 - v.
+  The STEP already has X = u and Y = -v. Do not flip Y again.
+  Therefore import STEP with X += 50.4 and Y += 120; no XY rotation.
+  Keep this datum fixed when extending the casing. Current CaseWidth-driven
+  expressions can otherwise recenter the display or move PCB/supports.
+
+PCB outline, normalized KiCad (u,v), clockwise
+  (0,0), (8.9,0), (8.9,17), (30,17), (30,81.51509),
+  (45.1,81.51509), (45.1,99), (5.8,99), (5.8,94.8), (0,94.8).
+  Bounding dimensions: 45.1 x 99 mm; finished nominal thickness 1.60 mm.
+  Original core: 30 x 99 mm. Added tab: 15.1 x 17.48491 mm.
+  Original mounting centres remain world (76,28) and (54.8,114).
+  Both are M2 mounting locations with existing nominal 2.30 mm NPTH holes.
+
+Z registration — distinguish finished board allocation from STEP substrate
+  Finished-board nominal back/top: world Z20.5 / Z22.1.
+  Current STEP board solid is dielectric only, local Z0..1.4942.
+  Centre this substrate within the unchanged 1.60 mm finished allocation:
+    STEP import translation = (50.4, 120, 20.5529) mm, no rotation.
+  This places the substrate at Z20.5529..22.0471, with its midpoint Z21.3.
+  Current STEP front component placement datum is local Z1.5792, hence
+  world Z22.1321 after that transform. Do not scale any purchased model.
+  Copper/solder/exporter offsets are not a replacement for the finished
+  thickness tolerance or component-height envelopes in the fit check.
+
+USB4105-GF-A
+  Footprint origin native (61.325,112), rotation +90 degrees, facing +X.
+  Socket mouth native x65; mouth centre world X95.5, Y29.48491.
+  Nominal mouth centre Z23.83 = nominal PCB top Z22.1 + GCT 1.73 mm.
+  The STEP model is offset by its front-component placement datum: using
+  the centred substrate transform above gives approximately Z23.8621 for
+  the same model mouth. This 0.0321 mm exporter offset must be kept distinct
+  from the nominal mechanical opening datum, not silently rescaled away.
+  Nominal shell body width 8.94 mm, depth 7.35 mm, height 3.31 mm.
+  Use the selected manufacturer's drawing and actual cable overmould for
+  opening clearance, access recess and final plug insertion check.
+
+Battery / baseline housing
+  Protected FMA 1S2P holder remains unchanged, occupied world envelope:
+    X5.4..47.4, Y27..107.4, Z16.5..36.85 mm.
+  Old housing outer dimensions: 85 x 180 x 43 mm.
+  The new mouth at X95.5 is outside the old X85 wall. A local outward
+  extension near the lower side port is preferred to moving the core or
+  changing the battery. The extension's exact outer contour is not set.
+
+Required casing work
+  1. Add a supported socket/tab load path so plug insertion/extraction does
+     not rely on PCB flex and solder alone. Provide shell-stake and solder
+     clearance, and keep both original screws and rear PCB removal usable.
+  2. Make the new side opening with clearance for the chosen cable body.
+     Do not reuse the old 4.6 mm board-edge-to-case-wall gap at this socket;
+     its face needs access close to the wall/opening.
+  3. Close the old bottom USB opening and remove its cartridge/bridge.
+  4. Rework the carrier locally for the tab while preserving its original
+     core supports, rear-component openings and protected holder position.
+
+Incomplete STEP appearances and required occupied-space allocations
+  U110 (TUSB320): no populated native STEP model; package height 0.40 mm.
+  L201 (XGL4030): no populated native STEP model; package height 3.10 mm.
+  L701 (XGL4020): no populated native STEP model; package height 2.10 mm.
+  These are fitted parts, not vacant PCB space. Preserve their existing
+  height-contract XY envelopes and 0.15 mm assembly allowance. Likewise,
+  connectors need their actual mated cable/socket and withdrawal envelopes;
+  bare posts in a STEP file do not establish a complete harness fit.
+  Refer to hardware/system-review/electrical/component-height-contract.csv
+  and the current ConnectorReview v3 mechanical checkpoint for the source
+  allocations and the outstanding physical-interface measurements.
+
+Verification still required
+  Actual-body/occupied-space collision tests in native case CAD; plug and
+  PCB installation/removal; carrier strength and printability; actual cable
+  mating, bending and strain relief. ConnectorReview v3's pre-existing
+  display/ribbon, small-cable, chamber-harness and SD-access conflicts remain.
+  The USB4105 is not a waterproof panel connector. No enclosure IP rating,
+  charging safety or system manufacturing release is established here.

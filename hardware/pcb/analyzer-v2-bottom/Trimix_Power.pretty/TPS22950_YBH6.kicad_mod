@@ -1,0 +1,95 @@
+(footprint "TPS22950_YBH6"
+	(version 20241229)
+	(generator "pcbnew")
+	(layer "F.Cu")
+	(descr "TI YBH0006-C02 drawing4226594/A03/2021.0.2mm NSMD copper0.4pitch;0.3mask aperture;0.21paste. Factory75um stencil/X-ray required.")
+	(attr smd)
+	(property "Reference" "REF**"
+		(at 0 -1.563 0)
+		(layer "F.SilkS")
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+		)
+	)
+	(property "Value" "TPS22950_YBH6"
+		(at 0 1.563 0)
+		(layer "F.Fab")
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(hide yes)
+		)
+	)
+	(fp_rect
+		(start -0.363 -0.563)
+		(end 0.363 0.563)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_rect
+		(start -0.663 -0.863)
+		(end 0.663 0.863)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+	)
+	(pad "A1" smd circle
+		(at -0.2 -0.4)
+		(size 0.2 0.2)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0.05)
+		(solder_paste_margin 0.005)
+	)
+	(pad "A2" smd circle
+		(at 0.2 -0.4)
+		(size 0.2 0.2)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0.05)
+		(solder_paste_margin 0.005)
+	)
+	(pad "B1" smd circle
+		(at -0.2 0)
+		(size 0.2 0.2)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0.05)
+		(solder_paste_margin 0.005)
+	)
+	(pad "B2" smd circle
+		(at 0.2 0)
+		(size 0.2 0.2)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0.05)
+		(solder_paste_margin 0.005)
+	)
+	(pad "C1" smd circle
+		(at -0.2 0.4)
+		(size 0.2 0.2)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0.05)
+		(solder_paste_margin 0.005)
+	)
+	(pad "C2" smd circle
+		(at 0.2 0.4)
+		(size 0.2 0.2)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0.05)
+		(solder_paste_margin 0.005)
+	)
+	(fp_line
+		(start -0.363 -0.4)
+		(end -0.2 -0.563)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+)
