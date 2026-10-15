@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\\"report\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/system-review/mechanical/verification/width-contract-apply-started.json\\\", \\\"keys\\\": [\\\"status\\\", \\\"manifest_sha256\\\", \\\"source_document\\\", \\\"source_timeline\\\", \\\"protected_documents\\\", \\\"warning\\\"], \\\"counts\\\": {\\\"protected_documents\\\": 3}}\\n{\\\"report\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/system-review/mechanical/verification/width-contract-baseline-applied.json\\\", \\\"keys\\\": [\\\"status\\\", \\\"manifest_sha256\\\", \\\"parameter_edits\\\", \\\"hardware_bindings\\\", \\\"new_joint\\\", \\\"grounded_descendants\\\", \\\"child_local_poses_preserved\\\", \\\"all_physical_baseline_comparison\\\", \\\"health\\\", \\\"other_documents_preserved\\\", \\\"saved\\\", \\\"purchased_geometry_scaled\\\", \\\"final_routed_PCB_integrated\\\"], \\\"counts\\\": {\\\"parameter_edits\\\": 35, \\\"hardware_bindings\\\": 4, \\\"grounded_descendants\\\": 0, \\\"other_documents_preserved\\\": 3}}\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

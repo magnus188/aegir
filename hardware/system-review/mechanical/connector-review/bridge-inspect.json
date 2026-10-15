@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\\"report\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/system-review/mechanical/connector-review/startup-documents.json\\\", \\\"sha256\\\": \\\"348ae4024c1efccab2046c989d3698e670971457e8f1fb26d107aef885ee5365\\\", \\\"status\\\": \\\"read_only_inventory\\\", \\\"checks\\\": null}\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

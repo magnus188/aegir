@@ -2,13 +2,14 @@ TRIMIX PCB 2.0 – USB-C I BUNNEN
 15. oktober 2026 – ferdig layout og prototypegrunnlag
 
 Åpne Trimix_Analyzer.kicad_pro i denne mappen. Denne varianten hører sammen
-med kabinettet i hardware/cad/pcb-v2-bottom. Tidligere varianter er beholdt.
+med kabinettet i hardware/cad/pcb-v2-bottom. Tidligere varianter finnes i Git-historikken.
 
 GCT USB4105-GF-A, ESD-kretsen og den lokale USB-rutingen er flyttet som en
 gruppe til bunnen. Fem forbindelser til hovedkretsen er rutet på nytt.
 Hovedkretsens komponentplassering, eksisterende spor/viaer og alle 14
 skjemaer fra PCB 2.0 er bevart. Ingen elektrisk funksjon er bevisst endret.
-Originalfilene fra den tidligere gjennomgangen er også uendret.
+Originalfilene fra den menneskelige gjennomgangen er bevart i Git-historikken.
+Den endrede layouten har ikke fått en ny menneskelig godkjenning.
 
 Kortet er 46,38491 x 99,8 mm, med fire kobberlag og 1,6 mm nominell tykkelse.
 VBUS-forbindelsen har 1 mm spor og to parallelle overgangsviaer. Et lokalt
@@ -39,7 +40,7 @@ unngå en uprøvd endring av kjøling og monteringsprosess.
 Fabrikken må godkjenne USB-fotavtrykket og loddeprosessen for de korte
 skjermfestene, hullbehandlingen, stensil og dobbeltsidig montering.
 De rå paste-filene er kontrollfiler; DNP-åpninger må fjernes fra en faktisk
-stensil. Les FABRICATION_AND_ASSEMBLY_REVIEW_NOTES.txt før opplasting.
+stensil. Les manufacturing/FABRICATION_AND_ASSEMBLY_REVIEW_NOTES.txt før opplasting.
 
 BEVARTE IGANGKJØRINGSKRAV
 J104: monter kontaktpinnene, men ingen jumper før ladefunksjonen er testet.

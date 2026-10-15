@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\\"report\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/system-review/mechanical/verification/gas-clearance-paths.json\\\", \\\"pass\\\": true, \\\"collisions\\\": 0, \\\"analytic_pass\\\": true, \\\"blockers\\\": []}\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

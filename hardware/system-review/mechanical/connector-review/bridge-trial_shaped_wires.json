@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\\"report\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/system-review/mechanical/connector-review/shaped-wire-trial.json\\\", \\\"sha256\\\": \\\"1a12e654746592014d9d01464693da83f5b096c6448484d1781690513b0a9823\\\", \\\"status\\\": \\\"bounded_shaped_corridor_study_not_a_complete_harness\\\", \\\"checks\\\": null}\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

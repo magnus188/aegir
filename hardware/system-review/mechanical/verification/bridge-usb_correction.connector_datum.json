@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\\"report\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/system-review/mechanical/verification/usb-connector-datum.json\\\", \\\"keys\\\": [\\\"document\\\", \\\"source\\\", \\\"independent_PCB_review\\\", \\\"old_nose_y_mm\\\", \\\"correct_nose_y_mm\\\", \\\"parent_translation_mm\\\", \\\"front_stake_centre_y_mm\\\", \\\"rear_stake_centre_y_mm\\\", \\\"PCB_XY_changed\\\", \\\"purchased_shapes_scaled_or_carved\\\", \\\"bounds_mm\\\", \\\"remaining_uncertainty\\\"], \\\"counts\\\": {\\\"parent_translation_mm\\\": 3, \\\"bounds_mm\\\": 2}}\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

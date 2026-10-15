@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\\"report\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/system-review/mechanical/verification/pcb-refresh-main.json\\\", \\\"keys\\\": [\\\"document\\\", \\\"source_file\\\", \\\"old_sha256\\\", \\\"source_sha256\\\", \\\"retired_import_children\\\", \\\"grounded_import_children\\\", \\\"wrapper_transform_unchanged\\\", \\\"previous_registration_translation_mm\\\", \\\"registration_translation_mm\\\", \\\"nominal_stack_mm\\\", \\\"dielectric_thickness_mm\\\", \\\"dielectric_bounds_mm\\\", \\\"placed_solids\\\", \\\"geometry_scaled\\\", \\\"status\\\", \\\"protected_documents_preserved\\\"], \\\"counts\\\": {\\\"retired_import_children\\\": 1, \\\"grounded_import_children\\\": 142, \\\"previous_registration_translation_mm\\\": 3, \\\"registration_translation_mm\\\": 3, \\\"nominal_stack_mm\\\": 2, \\\"dielectric_bounds_mm\\\": 2, \\\"placed_solids\\\": 878, \\\"protected_documents_preserved\\\": 2}}\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

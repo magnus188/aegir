@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\\"report\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/system-review/mechanical/verification/main-first-pass-checkpoint.json\\\", \\\"keys\\\": [\\\"status\\\", \\\"file\\\", \\\"sha256\\\", \\\"bytes\\\", \\\"archive_crc_pass\\\", \\\"archive_members\\\", \\\"source_manifest\\\", \\\"timeline\\\", \\\"original_pre_refresh_archive_preserved\\\", \\\"other_documents_preserved\\\", \\\"maximum_envelopes\\\"], \\\"counts\\\": {}}\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

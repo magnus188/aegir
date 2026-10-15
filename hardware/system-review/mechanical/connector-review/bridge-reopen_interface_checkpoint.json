@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\\"report\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/system-review/mechanical/connector-review/interface-checkpoint/native-reopen.json\\\", \\\"sha256\\\": \\\"ffd419b3329a33435abb5abf017021deaa29fbc5635eba23106d5aaf940f2c82\\\", \\\"status\\\": \\\"native_archive_reopened\\\", \\\"pass\\\": true}\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

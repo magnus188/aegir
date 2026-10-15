@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\\"report\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/system-review/mechanical/verification/backside-allocation-probe.json\\\", \\\"keys\\\": [\\\"status\\\", \\\"document\\\", \\\"cluster_KiCad_mm\\\", \\\"cluster_world_bounds_mm\\\", \\\"existing_opening_mm\\\", \\\"extension_cut_world_mm\\\", \\\"candidate_lumps\\\", \\\"removed_material_mm3\\\", \\\"baseline_cluster_carrier_hits\\\", \\\"candidate_cluster_test\\\", \\\"Q112_test\\\", \\\"Q112_allocation_world_mm\\\", \\\"Q112_lower_M2_driver_intersection_mm3\\\", \\\"selected_sections\\\", \\\"nominal_clearances_mm\\\", \\\"limits\\\"], \\\"counts\\\": {\\\"cluster_world_bounds_mm\\\": 6, \\\"existing_opening_mm\\\": 4, \\\"extension_cut_world_mm\\\": 6, \\\"Q112_allocation_world_mm\\\": 6, \\\"selected_sections\\\": 3, \\\"limits\\\": 4}}\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\\"report\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/system-review/mechanical/verification/backside-allocation-static.json\\\", \\\"keys\\\": [\\\"status\\\", \\\"document\\\", \\\"timeline\\\", \\\"physical_solids\\\", \\\"actual_interferences\\\", \\\"allocation_test\\\", \\\"selected_sections\\\", \\\"health\\\", \\\"final_routed_PCB_not_yet_imported\\\"], \\\"counts\\\": {\\\"selected_sections\\\": 3}}\\n{\\\"report\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/system-review/mechanical/verification/backside-allocation-view.json\\\", \\\"keys\\\": [\\\"file\\\", \\\"actual_Fusion_geometry\\\", \\\"source_display_state_restored\\\"], \\\"counts\\\": {}}\\n{\\\"report\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/system-review/mechanical/verification/backside-allocation-checkpoint.json\\\", \\\"keys\\\": [\\\"file\\\", \\\"sha256\\\", \\\"bytes\\\", \\\"timeline\\\", \\\"archive_crc_pass\\\", \\\"status\\\", \\\"other_documents_preserved\\\"], \\\"counts\\\": {}}\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

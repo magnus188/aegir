@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\\"report\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/system-review/mechanical/verification/main-first-pass-clearance.json\\\", \\\"keys\\\": [\\\"generated_at_utc\\\", \\\"document\\\", \\\"status\\\", \\\"source_manifest\\\", \\\"native_timeline\\\", \\\"physical_solid_count\\\", \\\"contract_rows\\\", \\\"populated_envelopes_tested\\\", \\\"omitted_DNP_references\\\", \\\"health\\\", \\\"actual_cross_assembly_interferences\\\", \\\"maximum_envelope_test\\\", \\\"envelopes\\\", \\\"source_state_preserved\\\", \\\"limits\\\", \\\"final_fabrication_or_physical_fit_release\\\"], \\\"counts\\\": {\\\"omitted_DNP_references\\\": 6, \\\"envelopes\\\": 143, \\\"limits\\\": 6}}\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

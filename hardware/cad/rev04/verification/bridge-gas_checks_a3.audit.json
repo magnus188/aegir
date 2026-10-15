@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\\"report\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/enclosure/rev04/verification/gas-clearance-paths.json\\\", \\\"pass\\\": false, \\\"collisions\\\": 6, \\\"analytic_pass\\\": true, \\\"blockers\\\": [{\\\"probe\\\": \\\"vertex 1\\\", \\\"obstacle\\\": \\\"Chamber / A3 top manifold with serial return:1 / Manifold outer CO pocket\\\", \\\"volume_mm3\\\": 18.18447788}, {\\\"probe\\\": \\\"vertex 2\\\", \\\"obstacle\\\": \\\"Chamber / A3 top manifold with serial return:1 / Manifold outer CO pocket\\\", \\\"volume_mm3\\\": 45.154934765}, {\\\"probe\\\": \\\"vertex 3\\\", \\\"obstacle\\\": \\\"Chamber / A3 top manifold with serial return:1 / Manifold outer CO pocket\\\", \\\"volume_mm3\\\": 7.500834709}, {\\\"probe\\\": \\\"segment 1\\\", \\\"obstacle\\\": \\\"Chamber / A3 top manifold with serial return:1 / Manifold outer CO pocket\\\", \\\"volume_mm3\\\": 21.072710587}, {\\\"probe\\\": \\\"segment 2\\\", \\\"obstacle\\\": \\\"Chamber / A3 top manifold with serial return:1 / Manifold outer CO pocket\\\", \\\"volume_mm3\\\": 102.122909409}, {\\\"probe\\\": \\\"segment 3\\\", \\\"obstacle\\\": \\\"Chamber / A3 top manifold with serial return:1 / Manifold outer CO pocket\\\", \\\"volume_mm3\\\": 6.167368977}]}\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

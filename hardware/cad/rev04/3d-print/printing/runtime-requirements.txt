@@ -1,5 +1,0 @@
-# Local optional coupon geometry tools. Core slicing requires only numpy.
-trimesh==5.1.0
-shapely==2.1.2
-mapbox-earcut==2.0.0
-manifold3d==3.5.2

@@ -42,12 +42,12 @@ Keep the upstream notices and licenses when redistributing third-party files:
   [SIL Open Font License 1.1](logo/OFL-Iceland.txt) remains applicable
   alongside the project's brand policy.
 - The two KiCad STEP models in
-  `hardware/pcb/usb-input/Trimix_USB.3dshapes/`: GPL-3.0-or-later with their
+  `hardware/pcb/analyzer-v2-bottom/Trimix_USB.3dshapes/`: GPL-3.0-or-later with their
   embedded KiCad exception, as stated in each STEP header.
 - Manufacturer drawings, specifications, reference images, and other
   third-party evidence in `hardware/pcb/`, `hardware/cad/`, and
   `hardware/system-review/`: their owners' terms. In particular,
-  `hardware/pcb/usb-input/reference/GCT_USB4720_RevB_drawing.pdf` is a
+  `hardware/pcb/analyzer-v2-bottom/reference/USB4105-current.pdf` is a
   manufacturer document, not Ægir hardware source.
 
 The project does not claim rights over third-party names, fonts, component

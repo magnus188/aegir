@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\\"report\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/system-review/mechanical/verification/usb-native-datums.json\\\", \\\"keys\\\": [\\\"document\\\", \\\"components\\\", \\\"parameters\\\"], \\\"counts\\\": {\\\"components\\\": 6, \\\"parameters\\\": 49}}\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

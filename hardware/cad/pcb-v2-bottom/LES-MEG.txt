@@ -12,7 +12,8 @@ Batteriholderen med PCM, de to 18650-cellene og deres plassering beholdes.
 ENDRINGER I KORTET
 Hovedkretsens komponenter, eksisterende spor og viaer er bevart i kortets
 egne koordinater. Kobberflatene er fylt på nytt rundt de nye forbindelsene. USB-gruppen er flyttet og rotert, og forbindelsene inn til
-hovedkretsen er lagt på nytt. Alle 14 verifiserte skjemaer er byteidentiske.
+hovedkretsen er lagt på nytt. Alle 14 skjemaer er byteidentiske med den forrige integrerte PCB 2.0-
+varianten. Dette er ikke en ny menneskelig godkjenning av den endrede layouten.
 Et 7,63 mm langt D+-spor ligger på det indre jordlaget. Jordflaten er
 fortsatt sammenhengende; kobberet rundt de to varmeutviklende kretsene
 er bevart innen beregningstoleransen. Kortkonturen er lokalt tilpasset USB-plasseringen. Sammenligningsrapporten
@@ -84,8 +85,10 @@ USB-støtte opp, ledninger fra, kortskruer ut,
 deretter kort og ramme opp. Skruer skal ikke trekke en trang del på plass.
 
 UTSKRIFT OG FYSISK PRØVING
-Alle STL-filer er i millimeter og ligger i monteringskoordinater. Plasser
-og orienter hver del på byggeplaten i sliceren; velg støtte for overheng.
+Trimix_PCB2_Bottom_H2D.3mf har alle ni deler plassert på én H2D-plate.
+Prosjektet er uslicet; les PRINT-PLATE.txt og kontroller lagvis forhåndsvisning
+i Bambu Studio før utskrift. De separate STL-filene er i millimeter og
+ligger i monteringskoordinater.
 Skriv først ut de fire endrede delene. Eksisterende, uendrede deler kan
 gjenbrukes dersom de er skrevet ut fra samme opprinnelige modell.
 
@@ -107,7 +110,9 @@ FILER OG KONTROLLSPOR
 Trimix_Enclosure_PCB2_Bottom.step er den samlede modellen med elektronikk.
 F3D-versjonen er importert fra den samme STEP-modellen og inneholder
 redigerbare legemer, men ikke den opprinnelige parametriske Fusion-tidslinjen.
-Original F3D er bevart. Endringene kan også bygges på nytt fra skriptene.
+Tidligere modeller og genereringsskript er bevart i Git-historikken
+(commit 1fada5c). Bare gjeldende design ligger i den aktive filmappen.
+Kontroller filpakken med python3 hardware/verify_current.py fra repo-roten.
 
 verification/electronics-fit-independent.json: nominelle modeller, seks
 modell-erstatninger med høydegrenser og alle 52 reserver for loddepinner.

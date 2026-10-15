@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\\"report\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/system-review/mechanical/verification/regeneration-CaseWidth.json\\\", \\\"keys\\\": [\\\"generated_at_utc\\\", \\\"document\\\", \\\"trial\\\", \\\"restoration\\\", \\\"status\\\", \\\"limits\\\"], \\\"counts\\\": {\\\"limits\\\": 4}}\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

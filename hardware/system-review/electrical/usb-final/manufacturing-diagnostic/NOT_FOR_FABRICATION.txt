@@ -1,1 +1,0 @@
-Engineering diagnostic exports only. Native DRC retains GCT copper-edge and PTH-annular conflicts. Obtain approved manufacturing/land/cutout and assembly process plus physical qualification before ordering. No quotation or order has been submitted.

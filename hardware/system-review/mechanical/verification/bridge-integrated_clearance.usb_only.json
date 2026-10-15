@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\\"report\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/system-review/mechanical/verification/final-usb-clearance.json\\\", \\\"keys\\\": [\\\"document\\\", \\\"source\\\", \\\"tests\\\", \\\"health\\\", \\\"status\\\", \\\"limits\\\", \\\"source_state_preserved\\\"], \\\"counts\\\": {\\\"tests\\\": 2, \\\"limits\\\": 3}}\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

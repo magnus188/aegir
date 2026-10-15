@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\\"report\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/enclosure/rev04/print-release/verification/selected-wall-fastener-checks.json\\\", \\\"status\\\": \\\"selected_checks_passed\\\", \\\"tests\\\": []}\\n{\\\"status\\\": \\\"selected_checks_passed\\\", \\\"sections\\\": 30, \\\"failures\\\": [], \\\"scope\\\": \\\"Selected sections across all11 printedparts; not a mathematical global minimum. Revised roof sample replaces original cylindrical roof now intentionally empty.\\\", \\\"physical_insert_fit\\\": \\\"Nominal generic inserts and pilot bores are reference only; exact series and retention coupon required.\\\"}\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

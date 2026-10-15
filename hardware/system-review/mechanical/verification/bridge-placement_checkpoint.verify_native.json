@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\\"report\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/system-review/mechanical/placement-checkpoint-v2/verification/native-roundtrip.json\\\", \\\"keys\\\": [\\\"file\\\", \\\"sha256\\\", \\\"placed_solid_count\\\", \\\"native_timeline\\\", \\\"imported_timeline\\\", \\\"parameter_count\\\", \\\"geometry_match\\\", \\\"parameter_match\\\", \\\"timeline_match\\\", \\\"poses_match\\\", \\\"pass\\\", \\\"temporary_closed_without_save\\\", \\\"source_and_other_documents_preserved\\\"], \\\"counts\\\": {}}\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

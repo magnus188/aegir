@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\\"report\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/system-review/mechanical/verification/backside-allocation-mesh.json\\\", \\\"keys\\\": [\\\"part_id\\\", \\\"file\\\", \\\"sha256\\\", \\\"native_bounds_mm\\\", \\\"native_volume_mm3\\\", \\\"units\\\", \\\"scale\\\", \\\"status\\\", \\\"print_job_sent\\\"], \\\"counts\\\": {\\\"native_bounds_mm\\\": 2}}\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

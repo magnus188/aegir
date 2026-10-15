@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\\"group\\\": \\\"rear_cover\\\", \\\"paths\\\": [\\\"02 Single rear cover:1\\\", \\\"M3 x 8 button screw \\\\u2014 GEN-M3-BHCS-L8-AF2:1\\\", \\\"M3 x 8 button screw \\\\u2014 GEN-M3-BHCS-L8-AF2:2\\\", \\\"M3 x 8 button screw \\\\u2014 GEN-M3-BHCS-L8-AF2:3\\\", \\\"M3 x 8 button screw \\\\u2014 GEN-M3-BHCS-L8-AF2:4\\\"], \\\"playhead\\\": 2}\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

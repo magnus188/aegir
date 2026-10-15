@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"error\": \"Traceback (most recent call last):\\n  File \\\"<string>\\\", line 40, in <module>\\n  File \\\"<string>\\\", line 38, in run\\n  File \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/system-review/mechanical/scripts/m3_checkpoint.py\\\", line 344, in capture_validated_state\\n    _markers(design,proof); before = prior._state(design); others = prior._documents(app,doc); modified = doc.isModified\\n    ~~~~~~~~^^^^^^^^^^^^^^\\n  File \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/system-review/mechanical/scripts/m3_checkpoint.py\\\", line 394, in _markers\\n    _require(item and json.loads(item.value) == expected, 'Retained M2 exact interface/exit classification changed')\\n    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\n  File \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/system-review/mechanical/scripts/review_checkpoint.py\\\", line 34, in _require\\n    raise RuntimeError(message)\\nRuntimeError: Retained M2 exact interface/exit classification changed\\n\",\n    \"success\": false\n}",
-      "type": "text"
-    }
-  ]
-}

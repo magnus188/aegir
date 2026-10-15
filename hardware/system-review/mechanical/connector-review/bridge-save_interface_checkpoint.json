@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\\"report\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/system-review/mechanical/connector-review/interface-checkpoint/saved-state.json\\\", \\\"sha256\\\": \\\"18828c3a26f06260746dfd7b113a3d9e8574b17bb79ca10c1fecf2edd4e8167a\\\", \\\"status\\\": null, \\\"pass\\\": null}\\n{\\\"report\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/system-review/mechanical/connector-review/interface-checkpoint/export.json\\\", \\\"sha256\\\": \\\"63109ec989f971675521183ffc8309e3c15166a7d3fe2e44da3a9b65207f8554\\\", \\\"status\\\": \\\"saved_photo_correction_with_open_interface_findings\\\", \\\"pass\\\": null}\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

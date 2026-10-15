@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"error\": \"Traceback (most recent call last):\\n  File \\\"<string>\\\", line 40, in <module>\\n  File \\\"<string>\\\", line 38, in run\\n  File \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/enclosure/rev04/print-release/scripts/drawing_guide_exploded.py\\\", line 163, in capture\\n    raise RuntimeError(\\\"The local archive geometry/poses differ from the active source; export the final assembled source archive first.\\\")\\nRuntimeError: The local archive geometry/poses differ from the active source; export the final assembled source archive first.\\n\",\n    \"success\": false\n}",
-      "type": "text"
-    }
-  ]
-}

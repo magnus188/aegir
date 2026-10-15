@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\\"battery_model_basis\\\": \\\"occupied holder owner-measured; cells and connector visual references\\\", \\\"holder_bounds_mm\\\": {\\\"min\\\": [5.4, 27, 16.5], \\\"max\\\": [47.4, 107.4, 36.85]}, \\\"cell_centres_xz_mm\\\": [[16.2, 26.75], [36.6, 26.75]], \\\"cell_y_extent_mm\\\": [32, 101], \\\"pocket_floor_mm\\\": 17.6, \\\"cell_to_pocket_floor_clearance_mm\\\": 0.05, \\\"component_occurrences_added\\\": 5, \\\"static_and_service_checks\\\": \\\"pending root model audit\\\"}\\n{\\\"stage\\\": \\\"battery\\\", \\\"occurrences\\\": 31, \\\"timeline\\\": 376, \\\"native\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/enclosure/rev04/Trimix_Enclosure_A3.f3d\\\"}\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

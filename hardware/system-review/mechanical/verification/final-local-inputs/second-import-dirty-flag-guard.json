@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"error\": \"Traceback (most recent call last):\\n  File \\\"<string>\\\", line 40, in <module>\\n  File \\\"<string>\\\", line 38, in run\\n  File \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/system-review/mechanical/scripts/final_local_integration.py\\\", line 126, in import_main\\n    app,doc,d=_before_refresh()\\n              ~~~~~~~~~~~~~~~^^\\n  File \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/system-review/mechanical/scripts/final_local_integration.py\\\", line 51, in _before_refresh\\n    _require(doc.dataFile.versionNumber==10 and doc.dataFile.isComplete and not doc.isModified and\\n    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\n             state._state(d)==export['state'],'Require unchanged verified exact-insertsv10 before PCB refresh')\\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\n  File \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/system-review/mechanical/scripts/final_local_integration.py\\\", line 17, in _require\\n    if not value:raise RuntimeError(message)\\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^\\nRuntimeError: Require unchanged verified exact-insertsv10 before PCB refresh\\n\",\n    \"success\": false\n}",
-      "type": "text"
-    }
-  ]
-}

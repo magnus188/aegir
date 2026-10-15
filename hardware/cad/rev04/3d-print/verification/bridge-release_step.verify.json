@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"error\": \"Traceback (most recent call last):\\n  File \\\"<string>\\\", line 40, in <module>\\n  File \\\"<string>\\\", line 38, in run\\n  File \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/enclosure/rev04/print-release/scripts/release_step.py\\\", line 267, in verify\\n    raise RuntimeError('STEP roundtrip geometry mismatch: '+json.dumps(report.get('comparison')))\\nRuntimeError: STEP roundtrip geometry mismatch: {\\\"placed_solid_count_matches\\\": true, \\\"maximum_bound_coordinate_error_mm\\\": 0.0, \\\"length_tolerance_mm\\\": 0.02, \\\"bounds_pass\\\": true, \\\"total_volume_absolute_error_mm3\\\": 0.4348211582400836, \\\"total_volume_tolerance_mm3\\\": 0.31105193806216197, \\\"total_volume_pass\\\": false, \\\"size_ratio_imported_to_expected\\\": [1.0, 1.0, 1.0], \\\"volume_ratio_imported_to_expected\\\": 1.0000013979053175, \\\"pass\\\": false}\\n\",\n    \"success\": false\n}",
-      "type": "text"
-    }
-  ]
-}

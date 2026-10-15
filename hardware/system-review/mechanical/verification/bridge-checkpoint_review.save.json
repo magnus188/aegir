@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\\"report\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/system-review/mechanical/verification/gct-insulator-material.json\\\", \\\"keys\\\": [\\\"document\\\", \\\"part\\\", \\\"old_material\\\", \\\"material\\\", \\\"manufacturer_specification\\\", \\\"native_surrogate_source\\\", \\\"geometry_changed\\\", \\\"mass_FEA_or_material_qualification\\\"], \\\"counts\\\": {}}\\n{\\\"report\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/system-review/mechanical/verification/native-checkpoint.json\\\", \\\"keys\\\": [\\\"document\\\", \\\"cloud_id\\\", \\\"version\\\", \\\"native\\\", \\\"bytes\\\", \\\"sha256\\\", \\\"archive_crc_pass\\\", \\\"archive_members\\\", \\\"timeline\\\", \\\"body_instance_count\\\", \\\"other_documents_preserved\\\", \\\"status\\\"], \\\"counts\\\": {\\\"other_documents_preserved\\\": 2}}\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

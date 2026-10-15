@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"error\": \"Traceback (most recent call last):\\n  File \\\"<string>\\\", line 40, in <module>\\n  File \\\"<string>\\\", line 38, in run\\n  File \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/system-review/mechanical/scripts/final_local_integration.py\\\", line 119, in import_main\\n    refresh.main()\\n    ~~~~~~~~~~~~^^\\n  File \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/system-review/mechanical/scripts/width_aware_refresh.py\\\", line 104, in main\\n    legacy._run('main')\\n    ~~~~~~~~~~~^^^^^^^^\\n  File \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/system-review/mechanical/scripts/refresh_boards.py\\\", line 61, in _run\\n    if not local.isGroundToParent:\\n               ^^^^^^^^^^^^^^^^^^^\\nRuntimeError: PCB gained a joint; update its datum instead: ['SystemReview main PCB parametric placement']\\n\",\n    \"success\": false\n}",
-      "type": "text"
-    }
-  ]
-}

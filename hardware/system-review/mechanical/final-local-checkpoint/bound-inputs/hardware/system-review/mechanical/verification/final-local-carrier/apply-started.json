@@ -1,7 +1,0 @@
-{
-  "proposal_sha256": "caec62bf876ff07fa78836e5100941b4db2f7a654bb37b3061f50c0a7f6c4c2c",
-  "source_board_sha256": "0962ad86f9834ce71b6439d0f95db603753801153490e78f387a88521e582788",
-  "source_step_sha256": "81eef0182d0d3bbaaf1a433cf43dce3e70f975c9ccd6d8d94bd196aa00c99014",
-  "timeline": 1205,
-  "guarded_scope": "Two cuts in P03 only; no parameter, datum, purchased part or exterior edits."
-}

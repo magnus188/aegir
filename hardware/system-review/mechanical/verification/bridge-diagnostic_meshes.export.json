@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\\"report\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/system-review/mechanical/verification/diagnostic-mesh-export.json\\\", \\\"keys\\\": [\\\"document\\\", \\\"parts\\\", \\\"status\\\", \\\"printing_authorized_or_sent\\\", \\\"limits\\\"], \\\"counts\\\": {\\\"parts\\\": 3}}\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

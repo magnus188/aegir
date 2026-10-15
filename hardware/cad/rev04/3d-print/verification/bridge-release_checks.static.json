@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\\"audit\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/enclosure/rev04/print-release/verification/model-audit.json\\\", \\\"status\\\": \\\"cad_checks_passed\\\", \\\"bodies\\\": 102, \\\"interferences\\\": 0, \\\"hardware\\\": {\\\"screw\\\": 14, \\\"insert\\\": 14}, \\\"health_pass\\\": true}\\n{\\\"pass\\\": true, \\\"source\\\": \\\"model-audit.json\\\"}\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

@@ -1,0 +1,21 @@
+Gjeldende printplate: Trimix_PCB2_Bottom_H2D.3mf
+
+Én plate med alle ni gjeldende plastdeler, én av hver. Prosjektet bruker
+Bambu Lab H2D med 0,4 mm dyse, venstre ekstruder, 0,16 mm lag og Bambu PLA Basic.
+Dette materialoppsettet er for en mekanisk passformprototype.
+
+Hus, lokk og smådeler er orientert på stabile flater. USB-holderen ligger med
+sin svakt skrånende frontflate mot platen. Støtte er aktivert for huset,
+lokket og USB-holderen. Manifolden har støtte aktivert med tre sperrevolumer
+som holder støtteplast ute av gasskanalene. De øvrige delene har støtte av.
+Det er satt 4 mm utvendig brim. Alle deler og denne brim-reserven ligger
+innenfor venstre ekstruders arbeidsområde uten innbyrdes overlapp.
+
+STL-filene er uendret. De ni innebygde modellene er sammenlignet med disse;
+alle er lukkede enkeltlegemer. Bambu Studio 02.08.02.61 har lastet prosjektet
+uten feil. Detaljert kontroll finnes i verification/print-bed.json.
+
+Prosjektet er USLICET og inneholder ingen G-kode. Åpne som prosjekt i Bambu
+Studio, kontroller printer/materiale og støtteplasseringen, og inspiser den
+lagvise forhåndsvisningen etter slicing før utskrift. Ingen utskrift er sendt.
+Dette bekrefter ikke fysisk styrke, varmebestandighet, tetthet eller funksjon.

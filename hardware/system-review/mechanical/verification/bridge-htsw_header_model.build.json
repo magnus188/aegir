@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\\"report\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/system-review/mechanical/verification/htsw-keyed-model.json\\\", \\\"keys\\\": [\\\"status\\\", \\\"file\\\", \\\"sha256\\\", \\\"bytes\\\", \\\"source_drawing_file\\\", \\\"source_drawing_sha256\\\", \\\"source_contract_sha256\\\", \\\"origin\\\", \\\"body_bounds_mm\\\", \\\"pin_square_mm\\\", \\\"pin_Z_mm\\\", \\\"omitted_contact\\\", \\\"contact_centres\\\", \\\"native\\\", \\\"imported\\\", \\\"maximum_bbox_error_mm\\\", \\\"volume_error_mm3\\\", \\\"source_geometry\\\", \\\"limits\\\", \\\"source_and_unrelated_documents_preserved\\\"], \\\"counts\\\": {\\\"body_bounds_mm\\\": 2, \\\"pin_Z_mm\\\": 2, \\\"contact_centres\\\": 25, \\\"limits\\\": 4}}\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

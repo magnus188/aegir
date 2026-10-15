@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\\"report\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/system-review/mechanical/verification/usb-board-elevation.json\\\", \\\"keys\\\": [\\\"document\\\", \\\"source\\\", \\\"old_nominal_stack_mm\\\", \\\"new_nominal_stack_mm\\\", \\\"connector_axis_z_mm\\\", \\\"new_STEP_translation_mm\\\", \\\"source_dielectric_bounds_mm\\\", \\\"source_nominal_stack_thickness_mm\\\", \\\"printed_parameters_changed\\\", \\\"USB_import_bounds_mm\\\", \\\"exterior_aperture_or_fastener_positions_changed\\\", \\\"geometry_scaled\\\", \\\"physical_fit_or_force_qualified\\\"], \\\"counts\\\": {\\\"old_nominal_stack_mm\\\": 2, \\\"new_nominal_stack_mm\\\": 2, \\\"new_STEP_translation_mm\\\": 3, \\\"source_dielectric_bounds_mm\\\": 2, \\\"printed_parameters_changed\\\": 5, \\\"USB_import_bounds_mm\\\": 2}}\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"error\": \"Traceback (most recent call last):\\n  File \\\"<string>\\\", line 40, in <module>\\n  File \\\"<string>\\\", line 38, in run\\n  File \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/system-review/mechanical/scripts/final_local_integration.py\\\", line 65, in inspect_main\\n    inspect.inspect(path,DIRECTORY/'frozen-step-datums.json')\\n    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\nTypeError: inspect() takes 0 positional arguments but 2 were given\\n\",\n    \"success\": false\n}",
-      "type": "text"
-    }
-  ]
-}

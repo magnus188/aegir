@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\\"report\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/system-review/mechanical/verification/usb-import-rigid-assembly.json\\\", \\\"keys\\\": [\\\"document\\\", \\\"grounded_children\\\", \\\"baseline_geometry_unchanged\\\", \\\"PCB_scaled\\\", \\\"reason\\\"], \\\"counts\\\": {\\\"grounded_children\\\": 3}}\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

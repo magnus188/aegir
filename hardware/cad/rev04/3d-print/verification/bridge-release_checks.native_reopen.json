@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\\"archive\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/enclosure/rev04/print-release/Trimix_Enclosure_A3_PrintReview.f3d\\\", \\\"sha256\\\": \\\"9dfbe20228546e97d86e404aace6cd194324953010048408a045d656d32c1a80\\\", \\\"body_count\\\": 102, \\\"timeline_count\\\": 1077, \\\"user_parameter_count\\\": 36, \\\"geometry_matches\\\": true, \\\"parameters_match\\\": true, \\\"timeline_matches\\\": true, \\\"pass\\\": true}\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\\"report\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/system-review/mechanical/verification/board-thickness-drivers.json\\\", \\\"keys\\\": [\\\"document\\\", \\\"source_manifest\\\", \\\"tests\\\", \\\"status\\\", \\\"source_state_preserved\\\", \\\"limits\\\"], \\\"counts\\\": {\\\"tests\\\": 4, \\\"limits\\\": 3}}\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

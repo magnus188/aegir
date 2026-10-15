@@ -1,5 +1,5 @@
 {
-  "timestamp_utc": "2026-10-15T19:24:55.406656+00:00",
+  "timestamp_utc": "2026-10-15T19:36:04.302376+00:00",
   "status": "Completed PCB layout and CAD prototype; independent digital checks passed",
   "production_release": false,
   "board_sha256": "59a0be0876394c670bd6c852033312527ccf9a4e02e94ac0437080b83f57085c",
@@ -18,7 +18,8 @@
     "derived_schematics": {
       "files_checked": 14,
       "byte_identical": true
-    }
+    },
+    "scope": "Historical comparisons performed before cleanup; predecessor sources and generation scripts are preserved at Git commit 1fada5c, not in the active tree."
   },
   "checks": {
     "native_DRC_violations": 0,
@@ -39,7 +40,8 @@
     "hardware/pcb/analyzer-v2-bottom/reference/verification/bottom-invariants.json": "bf53e1efda35fc7acdaa266351786bb1c7839c893b927df2537f622806aac0c1",
     "hardware/pcb/analyzer-v2-bottom/reference/verification/usb-path-review.json": "ea5ac483cb1a2a94d71f6cc8c4a8c1eb39559295c0f24c98c124abefaa1b850e",
     "hardware/pcb/analyzer-v2-bottom/manufacturing/independent-cam/audit.json": "b85d9ec23aabbf1e78e0f1a34d248d5bd0a722c1abcfb7f3cd5511e37508836e",
-    "hardware/pcb/analyzer-v2-bottom/manufacturing/cam-process-checks.json": "d35c1b21a1f414892ed22189d5e1454cf5eb2f339ee2f187f2ac252e618fbe87"
+    "hardware/pcb/analyzer-v2-bottom/manufacturing/cam-process-checks.json": "d35c1b21a1f414892ed22189d5e1454cf5eb2f339ee2f187f2ac252e618fbe87",
+    "hardware/cad/pcb-v2-bottom/verification/print-bed.json": "629bacd7b35315d31967b61e1661199f061fc8d1a7962e42addb66e85129afed"
   },
   "native_Fusion_export": {
     "method": "Local STEP opened in Fusion UI and exported as Autodesk Fusion Archive",
@@ -69,8 +71,8 @@
       "bytes": 7667431
     },
     "hardware/cad/pcb-v2-bottom/Trimix_PCB2_Bottom_PrintParts.zip": {
-      "sha256": "fdb2ec9f82ac238688e29a4b703394ab50b9fa3d72985bd733c379f6487699e2",
-      "bytes": 924064
+      "sha256": "8bccb51a93530dc6b775f8302342d705fd46f5d703cdc783d0353a46a76b2781",
+      "bytes": 1706924
     },
     "hardware/pcb/analyzer-v2-bottom/manufacturing/Trimix_PCB_2_0_BOTTOM_QUOTE_ONLY.zip": {
       "sha256": "4609aa368c7bf6db33b66d4c284c8287dccaa7590e3ae8208b48a5c2b615b043",
@@ -85,12 +87,12 @@
       "bytes": 17887
     },
     "hardware/cad/pcb-v2-bottom/LES-MEG.txt": {
-      "sha256": "af6e988ea509e95d7f2e218c66daf861cab58aaa8f8cefce584524145330bfe6",
-      "bytes": 7717
+      "sha256": "5fd1a298c2d2cb6162a1d565af0b2433a86648755dc29f8e5d6a1128d0b9d4ba",
+      "bytes": 8067
     },
     "hardware/pcb/analyzer-v2-bottom/LES-MEG.txt": {
-      "sha256": "b1b73c02e6a97f577dcc90327adf68e632f130a07a96e3eb871d5109f459278e",
-      "bytes": 3068
+      "sha256": "97f00b4c195e472a8ffcbc60c26772efc9af098986afe17f52483b81f7cf90fe",
+      "bytes": 3177
     },
     "hardware/pcb/analyzer-v2-bottom/review/Trimix_PCB_V2_Bottom_Mechanical.step": {
       "sha256": "7a45218372eabc6bcc528d1cd8339923ae3ebecf3b5b9947e5490ee32d9d9773",
@@ -163,6 +165,17 @@
     "hardware/cad/pcb-v2-bottom/views/usb-bottom-open.png": {
       "sha256": "838df2fb31cfe577718d21a4cb41c149fe1c39fa2918f78a6e7a7fda5743b621",
       "bytes": 77122
+    },
+    "hardware/cad/pcb-v2-bottom/Trimix_PCB2_Bottom_H2D.3mf": {
+      "sha256": "14d5f407815675c0982ebf0c28783b0c73b8fe6c18b63a21638169ca176d63c2",
+      "bytes": 791391
+    },
+    "hardware/cad/pcb-v2-bottom/PRINT-PLATE.txt": {
+      "sha256": "088dfa1e1815b3c226f11aa6ae46548b13a609051a8a77ec59fcab31425b54c4",
+      "bytes": 1261
     }
-  }
+  },
+  "current_file_manifest": "hardware/current-hardware-manifest.json",
+  "package_updated_utc": "2026-10-15T19:49:32.018687+00:00",
+  "print_project_status": "One H2D plate, nine current parts; Bambu load checked, unsliced and no G-code."
 }

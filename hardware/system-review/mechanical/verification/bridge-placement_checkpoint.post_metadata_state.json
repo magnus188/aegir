@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\\"report\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/system-review/mechanical/placement-checkpoint-v2/verification/post-metadata-state.json\\\", \\\"keys\\\": [\\\"document\\\", \\\"id\\\", \\\"modified\\\", \\\"timeline\\\", \\\"failed_operation\\\", \\\"failed_guard_exact\\\", \\\"failure_reason_limit\\\", \\\"current_board_geometry_vs_successful_import_receipts\\\", \\\"current_imported_material_metadata\\\", \\\"current_imported_components_with_material_basis\\\", \\\"off_target_baseline\\\", \\\"off_target_now\\\", \\\"off_target_identities_and_modified_flags_match\\\", \\\"health\\\", \\\"all_open_documents\\\", \\\"persistent_change_during_this_inspection\\\"], \\\"counts\\\": {\\\"current_board_geometry_vs_successful_import_receipts\\\": 2, \\\"current_imported_material_metadata\\\": 60, \\\"off_target_baseline\\\": 2, \\\"off_target_now\\\": 2, \\\"all_open_documents\\\": 3}}\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

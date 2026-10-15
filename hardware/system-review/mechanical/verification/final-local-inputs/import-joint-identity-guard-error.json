@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"error\": \"\\n\\nTraceback (most recent call last):\\n  File \\\"<string>\\\", line 40, in <module>\\n  File \\\"<string>\\\", line 38, in run\\n  File \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/system-review/mechanical/scripts/final_local_integration.py\\\", line 143, in import_main\\n    refresh.main()\\n    ~~~~~~~~~~~~^^\\n  File \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/system-review/mechanical/scripts/width_aware_refresh.py\\\", line 116, in main\\n    raise RuntimeError('Future import changed the reviewed main joint or pose; inspect native state')\\nRuntimeError: Future import changed the reviewed main joint or pose; inspect native state\\n\",\n    \"success\": false\n}",
-      "type": "text"
-    }
-  ]
-}

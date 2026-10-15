@@ -29,14 +29,18 @@ The runes ᛅᛁᚾ are a Viking Age-style representation of einn, Old Norse for
 
 *Concept render of the proposed enclosure and interface.*
 
-## PCB design
+## PCB and enclosure
 
-| Main analyzer PCB | USB input PCB |
-| :---: | :---: |
-| <a href="hardware/pcb/review-images/README.md"><img src="hardware/pcb/review-images/01-main-3d-top.png" alt="KiCad 3D view of the main analyzer PCB" width="190"></a> | <a href="hardware/pcb/review-images/README.md"><img src="hardware/pcb/review-images/08-usb-front-routing.png" alt="Front copper routing of the USB input PCB" width="220"></a> |
+The current prototype uses one PCB with a bottom-facing GCT USB4105-GF-A
+USB-C connector. The matching enclosure retains the protected battery holder
+and adds support around the connector.
 
-[View the PCB schematics and routing images](hardware/pcb/review-images/README.md).
-These are design-review snapshots; the PCBs are still on fabrication hold.
+<img src="hardware/cad/pcb-v2-bottom/views/usb-bottom-open.png" alt="Current enclosure with integrated PCB and bottom USB-C support" width="420">
+
+Open the [KiCad project](hardware/pcb/analyzer-v2-bottom/Trimix_Analyzer.kicad_pro)
+and [Fusion model](hardware/cad/pcb-v2-bottom/Trimix_Enclosure_PCB2_Bottom.f3d).
+The [hardware guide](hardware/PCB2-BOTTOM.txt) describes the current files and
+remaining prototype checks. Supplier and physical qualification are pending.
 
 ## Screenshots
 
@@ -87,8 +91,9 @@ Replace the example `PORT` with the port reported by `make devices`. See the
 ## Files
 
 - [Firmware and simulator](software/firmware/)
-- [PCB review images](hardware/pcb/review-images/README.md), [main PCB](hardware/pcb/analyzer/Trimix_Analyzer.kicad_pro) and [USB input PCB](hardware/pcb/usb-input/Trimix_USB_Input.kicad_pro)
-- [Enclosure CAD](hardware/cad/rev04/3d-print/Trimix_Enclosure_A3_PrintReview.f3d) and [3D-print files](hardware/cad/rev04/3d-print/printing/)
+- [Current PCB 2.0 prototype](hardware/pcb/analyzer-v2-bottom/Trimix_Analyzer.kicad_pro), with integrated USB-C facing the bottom
+- [Current enclosure CAD](hardware/cad/pcb-v2-bottom/Trimix_Enclosure_PCB2_Bottom.f3d), [STEP](hardware/cad/pcb-v2-bottom/Trimix_Enclosure_PCB2_Bottom.step) [H2D print bed](hardware/cad/pcb-v2-bottom/Trimix_PCB2_Bottom_H2D.3mf) and [STL package](hardware/cad/pcb-v2-bottom/Trimix_PCB2_Bottom_PrintParts.zip)
+- [Hardware package guide and qualification status](hardware/PCB2-BOTTOM.txt); superseded deliverables remain in Git history
 - [Logo](logo/README.md)
 
 ## Contributing and future ideas

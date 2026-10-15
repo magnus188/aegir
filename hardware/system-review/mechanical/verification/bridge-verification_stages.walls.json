@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\\"report\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/system-review/mechanical/verification/selected-wall-fastener-checks.json\\\", \\\"status\\\": \\\"selected_checks_passed\\\", \\\"tests\\\": []}\\n{\\\"report\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/system-review/mechanical/verification/updated-wall-gate.json\\\", \\\"keys\\\": [\\\"status\\\", \\\"sections\\\", \\\"failures\\\", \\\"scope\\\", \\\"physical_insert_fit\\\"], \\\"counts\\\": {\\\"failures\\\": 0}}\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\\"report\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/system-review/mechanical/verification/final-integrated-clearance.json\\\", \\\"keys\\\": [\\\"generated_at_utc\\\", \\\"document\\\", \\\"source_manifest\\\", \\\"status\\\", \\\"physical_solid_count\\\", \\\"health\\\", \\\"actual_cross_assembly\\\", \\\"tests\\\", \\\"main_contract_rows\\\", \\\"main_populated_envelopes\\\", \\\"main_backside_references\\\", \\\"source_state_preserved\\\", \\\"geometry_scaled\\\", \\\"limits\\\"], \\\"counts\\\": {\\\"tests\\\": 9, \\\"main_backside_references\\\": 12, \\\"limits\\\": 6}}\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

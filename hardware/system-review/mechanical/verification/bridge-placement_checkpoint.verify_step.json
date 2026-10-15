@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\\"report\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/system-review/mechanical/placement-checkpoint-v2/verification/step-roundtrip.json\\\", \\\"keys\\\": [\\\"status\\\", \\\"source_file\\\", \\\"source_sha256\\\", \\\"comparison\\\", \\\"native_summary\\\", \\\"imported_summary\\\", \\\"native_bodies\\\", \\\"imported_bodies\\\", \\\"per_body_diagnostic\\\", \\\"method\\\", \\\"unchanged_numerical_criteria\\\", \\\"default_alternative_exclusion\\\", \\\"limits\\\", \\\"cleanup\\\", \\\"generated_at_utc\\\"], \\\"counts\\\": {\\\"native_bodies\\\": 1074, \\\"imported_bodies\\\": 1074}}\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"error\": \"Traceback (most recent call last):\\n  File \\\"<string>\\\", line 40, in <module>\\n  File \\\"<string>\\\", line 38, in run\\n  File \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/enclosure/rev04/print-release/scripts/refine_parts.py\\\", line 190, in thread_phase_root_move\\n    sk=next(s for s in sensor.sketches if s.name=='AO2 rotation centreline')\\nStopIteration\\n\",\n    \"success\": false\n}",
-      "type": "text"
-    }
-  ]
-}

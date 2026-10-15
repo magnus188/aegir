@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\\"report\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/system-review/mechanical/verification/board-thickness-fasteners.json\\\", \\\"keys\\\": [\\\"generated_at_utc\\\", \\\"document\\\", \\\"status\\\", \\\"finished_board_thickness_cases_mm\\\", \\\"fixed_backseat_Z_mm\\\", \\\"measured_PcbZ_parameter_mm\\\", \\\"nominal_finished_board_thickness_mm\\\", \\\"nominal_pose_preflight_passed\\\", \\\"measured_nominal_screws\\\", \\\"measured_fixed_inserts\\\", \\\"cases\\\", \\\"per_screw_extrema\\\", \\\"minimum_axial_overlap_mm\\\", \\\"maximum_axial_overlap_mm\\\", \\\"excluded_actual_main_STEP_solids\\\", \\\"excluded_main_wrapper_prefix\\\", \\\"excluded_alternative_reference_solids\\\", \\\"retained_physical_obstacle_solids\\\", \\\"installed_main_sources\\\", \\\"source_sha256\\\", \\\"tip_required_selected_gap_mm\\\", \\\"coaxial_tolerance_mm\\\", \\\"intersection_volume_tolerance_mm3\\\", \\\"source_state_preserved\\\", \\\"persistent_geometry_unchanged\\\", \\\"timeline_count\\\", \\\"body_instance_count\\\", \\\"preserved_other_documents\\\", \\\"assumptions\\\", \\\"limits\\\", \\\"physical_clamping_qualified\\\", \\\"insert_retention_qualified\\\"], \\\"counts\\\": {\\\"finished_board_thickness_cases_mm\\\": 3, \\\"measured_nominal_screws\\\": 2, \\\"measured_fixed_inserts\\\": 2, \\\"cases\\\": 3, \\\"per_screw_extrema\\\": 2, \\\"installed_main_sources\\\": 1, \\\"preserved_other_documents\\\": 2, \\\"assumptions\\\": 4, \\\"limits\\\": 5}}\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

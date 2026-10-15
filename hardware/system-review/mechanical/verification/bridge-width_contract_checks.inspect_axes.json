@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\\"report\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/system-review/mechanical/verification/width-contract-baseline-hole-axes.json\\\", \\\"keys\\\": [\\\"document\\\", \\\"datums\\\", \\\"pass\\\", \\\"bore_axes\\\", \\\"hardware_axes\\\", \\\"fixed_hole_spacing_mm\\\", \\\"carrier_lumps\\\", \\\"housing_lumps\\\", \\\"persistent_geometry_modified\\\", \\\"other_documents_preserved\\\"], \\\"counts\\\": {\\\"bore_axes\\\": 6, \\\"hardware_axes\\\": 4, \\\"other_documents_preserved\\\": 3}}\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

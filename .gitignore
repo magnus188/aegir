@@ -30,3 +30,8 @@
 .DS_Store
 __pycache__/
 *.pyc
+
+# KiCad local state and automatic backup folders
+*.kicad_prl
+*-backups/
+~*.lck

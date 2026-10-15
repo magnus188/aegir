@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\n  \\\"named_views\\\": [\\n    \\\"PRINT Screen front\\\",\\n    \\\"PRINT Rear\\\",\\n    \\\"PRINT Viewer left\\\",\\n    \\\"PRINT Viewer right\\\",\\n    \\\"PRINT Top\\\",\\n    \\\"PRINT Front isometric\\\",\\n    \\\"PRINT Rear isometric\\\"\\n  ],\\n  \\\"source_save_required\\\": true,\\n  \\\"screen_plane\\\": \\\"XY\\\",\\n  \\\"front_camera_eye_direction\\\": \\\"-Z\\\",\\n  \\\"up\\\": \\\"+Y\\\"\\n}\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

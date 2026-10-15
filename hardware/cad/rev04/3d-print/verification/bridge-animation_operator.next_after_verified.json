@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\\"completed\\\": \\\"Cover spread\\\", \\\"next\\\": 1, \\\"total\\\": 15}\\n{\\\"label\\\": \\\"Display\\\", \\\"selector\\\": \\\"display\\\", \\\"delta_mm\\\": [0, 0, -45], \\\"time\\\": 6, \\\"status\\\": \\\"awaiting_native_UI_entry\\\", \\\"selected\\\": [\\\"Guition 4.3 inch display assembly:1\\\"]}\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

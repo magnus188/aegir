@@ -1,4 +1,0 @@
-(version 1)
-(rule "Two-layer PTH solder-land annular minimum"
- (condition "A.Type == 'Pad' && A.Pad_Type == 'Through-hole'")
- (constraint annular_width (min 0.18mm)))

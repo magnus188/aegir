@@ -1,15 +1,28 @@
-# Ægir — whole-system review
+# Ægir — current prototype design
 
-**Order status: HOLD.** Open `pcb/analyzer/Trimix_Analyzer.kicad_pro` for the
-current main design and `pcb/usb-input/Trimix_USB_Input.kicad_pro` for the
-thin USB daughterboard. The [system-review package](system-review/README.md)
-contains current electrical, software and mechanical evidence. Earlier designs
-are available through Git history, including the previous version of this
-document.
+The current prototype is [PCB 2.0 with integrated bottom USB-C](PCB2-BOTTOM.txt).
+The main circuit and GCT USB4105-GF-A port share one four-layer, nominally
+1.6 mm PCB. There is no separate USB daughterboard or internal USB harness.
 
-The approved A3 exterior remains 85 × 180 × 43 mm. The separate Fusion design
-is `Trimix_Enclosure_A3_SystemReview`; earlier PCBFit geometry is available
-through Git history. A clear placement or CAD check is not a fabrication release.
+Open the [current KiCad project](pcb/analyzer-v2-bottom/Trimix_Analyzer.kicad_pro)
+and [current Fusion model](cad/pcb-v2-bottom/Trimix_Enclosure_PCB2_Bottom.f3d).
+The [PCB delivery notes](pcb/analyzer-v2-bottom/LES-MEG.txt),
+[manufacturing requirements](pcb/analyzer-v2-bottom/manufacturing/FABRICATION_AND_ASSEMBLY_REVIEW_NOTES.txt)
+and [case assembly notes](cad/pcb-v2-bottom/LES-MEG.txt) describe the matching
+files. They are prototype and quotation material, not a fabrication release.
+
+The case retains the 85 × 180 × 43 mm overall dimensions and the existing
+battery arrangement. Its board supports, cover and bottom USB support are
+adapted to the integrated board. The main circuit's placement and existing
+tracks/vias were retained in board coordinates while the USB group and its
+connections were relocated; the 14 sheets from PCB 2.0 were not changed by
+that relocation. The earlier engineer review is evidence for its original
+scope, not a human review of this new layout or enclosure.
+
+The [system-review index](system-review/README.md) identifies retained interface
+contracts, qualification notes and dated evidence. Superseded editable designs
+and exports are in Git history at `1fada5c`; their USB-harness and enclosure
+instructions do not define the current assembly.
 
 ## Installed modules and supply domains
 
@@ -18,7 +31,7 @@ through Git history. A clear placement or CAD check is not a fabrication release
 | Host | Guition JC4880P443C_I_W, 4.3-inch portrait ESP32-P4 display |
 | Pack | Two owner-confirmed 3400 mAh 18650 cells, 1S2P, 6800 mAh nominal; exact cell ratings remain unverified |
 | Holder | Protected FMA FPML1S2P050C; retain its actual protected plug, identify mate and polarity before wiring |
-| USB | GCT USB4720-03-A, 0.60 mm daughterboard, six-wire connection to main board |
+| USB | GCT USB4105-GF-A (J901), integrated into the 1.6 mm main PCB, facing the case bottom |
 | Oxygen | One installed AO₂ or R17JJ-CCR; separate J401/J402 differential input paths |
 | Other sensors | MD62, actual BME280 humidity module, ZE07-CO |
 | User button | Owned illuminated momentary 1NO button; hardware long-press shutdown retained |
@@ -32,8 +45,9 @@ qualification before simultaneous external supplies are connected.
 J104 charge ARM remains **open** and current firmware inhibits cell charging.
 This stays in force until actual cell limits, holder ratings, pack NTC and
 charging behaviour are qualified. USB input-current permission is separate
-from permission to charge the cells. SW101 is an internal charger QON service
-switch, not the normal user power button. The NTC must thermally contact the
+from permission to charge the cells. TP1014 is the local charger QON service
+pad, referenced to TP1001 GND; it is not the normal user power button. The
+former SW101 is not fitted. The NTC must thermally contact the
 pack; the chamber humidity sensor cannot substitute for it.
 
 Read [USB charging integration](USB_CHARGING.md) for the CC/BC1.2 controllers,
@@ -68,9 +82,9 @@ does not provide humidity. ZE07-CO stays distinct from CO₂ and receives no
 invented calibration commands. Its humidity/use restrictions and the absence
 of a specified startup-current maximum remain qualification inputs.
 
-## Software and harness contract
+## Software and host-harness contract
 
-The authoritative logical mapping is
+The firmware's logical mapping is
 [`main/hardware_contract.h`](../software/firmware/main/hardware_contract.h), checked against
 the [schematic contract](system-review/electrical/interface-contract.md).
 JP1 physical pitch, orientation and mating height are still unconfirmed.
@@ -107,12 +121,18 @@ No device was flashed or updated during the review.
 
 ## Acceptance
 
-Use the [verification records](system-review/verification/README.md), fresh
-native ERC/DRC/netlist checks and final CAD imports together. Unsupported
-models, unresolved mates, component tolerances and supplier process acceptance
+Use the current [PCB checks](pcb/analyzer-v2-bottom/reference/verification/),
+[manufacturing records](pcb/analyzer-v2-bottom/manufacturing/),
+[CAD checks](cad/pcb-v2-bottom/verification/) and firmware validation together.
+The [older system verification records](system-review/verification/README.md)
+remain dated evidence and must not be read as fresh tests of this revision.
+Unsupported models, unresolved mates, component tolerances and supplier process acceptance
 remain visible release gates. Physical charging, thermal, fit, seal and reference-gas
 tests remain pending. The ±0.2-point O₂ and ±0.5-point He figures are unproven
-targets. Showcase, production print preparation and purchasing remain paused.
+targets. The current print files support prototype fit tests; successful
+digital checks or a printed fit do not establish electrical or gas-measurement
+qualification. Fabrication and assembly still require supplier review of the
+USB4105 land adaptation, short shell stakes, selected-hole process and stencil.
 
 Project-created software and hardware designs use the licenses in the
 [repository license map](../LICENSE.md). Manufacturer evidence and third-party

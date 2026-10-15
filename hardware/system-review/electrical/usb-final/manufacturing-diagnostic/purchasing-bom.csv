@@ -1,5 +1,0 @@
-Reference,Manufacturer,MPN_or_description,Quantity,Category,Assembly_note
-J901,GCT,USB4720-03-A,1,Purchased,SMT plus plated through-hole joints; all contacts/stakes require assembler finishing and inspection.
-U901,Texas Instruments,TPD4E05U06DQAR,1,Purchased,Factory USON reflow; confirm DQA0010B pad/stencil variant.
-D901,Texas Instruments,TPD1E10B06DYAR,1,Purchased,"Factory SOD523 reflow; bidirectional clamp, use pin table rather than generic 3D band."
-J902,,Custom six-wire harness,1,Supplied / unresolved,"Power24AWG,signals28AWG recommendation; wire insulation/OD, length, solder, bend and strain relief to be measured."

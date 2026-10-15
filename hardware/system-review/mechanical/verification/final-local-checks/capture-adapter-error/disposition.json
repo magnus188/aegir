@@ -1,7 +1,0 @@
-{
-  "failure": "Read-only global Occurrence.isGrounded unavailable on subcomponent occurrences",
-  "native_geometry_or_metadata_mutation_performed": false,
-  "correction": "Read global isGrounded only for root top-level occurrences; nested occurrence global grounding recorded null/not applicable, with actual isGroundToParent and local/world poses retained. No generic exception catch.",
-  "corrected_script_sha256": "8d1a5228f48322574ec56f359c6e3b5bd334f313eb1495f924a6cdf4699e5a52",
-  "raw_error_preserved": true
-}

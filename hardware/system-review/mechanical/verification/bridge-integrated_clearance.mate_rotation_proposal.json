@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\\"report\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/system-review/mechanical/verification/j301-rotation-clearance-proposal.json\\\", \\\"keys\\\": [\\\"document\\\", \\\"contract_sha256\\\", \\\"proposed_180_degree_footprint\\\", \\\"actual_CAD_or_PCB_rotation_applied\\\", \\\"tests\\\", \\\"source_section\\\", \\\"diagnostic_elevated_band_Z_mm\\\", \\\"additional_rearward_turn_allowance_mm\\\", \\\"status\\\", \\\"limits\\\", \\\"source_state_preserved\\\"], \\\"counts\\\": {\\\"tests\\\": 8, \\\"diagnostic_elevated_band_Z_mm\\\": 2, \\\"limits\\\": 3}}\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

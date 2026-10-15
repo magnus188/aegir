@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\\"report\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/system-review/mechanical/verification/main-mount-datum-correction.json\\\", \\\"keys\\\": [\\\"document\\\", \\\"parameters\\\", \\\"hardware_metadata\\\", \\\"baseline_physical_geometry_unchanged\\\", \\\"PCB_hole_centres_mm\\\", \\\"PCB_scaled\\\", \\\"reason\\\"], \\\"counts\\\": {\\\"parameters\\\": 6, \\\"hardware_metadata\\\": 2, \\\"PCB_hole_centres_mm\\\": 2}}\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

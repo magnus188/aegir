@@ -1,6 +1,0 @@
-{
-  "native_readonly_experiment_sha256": "b3c48885d8c37dd6e121feb26120245479771a035b9683c7158575f6fff19440",
-  "finding": "Repeated findEntityByToken of the identical token gives distinct Python wrappers; list equality False for both joint and origin, despite same unique canonical token/type. Full native state matches v10.",
-  "correction": "Resolve historical and new tokens separately; require exactly one current entity each, same current canonical token/type/timeline index, and retain expression/attachment/pose/health guards. No name-only fallback.",
-  "script_sha256": "6e67e76fede0d3881ba6c2b3ce18387334e6359bcd55fd733b2be9c2ed5cf3c3"
-}

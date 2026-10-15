@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\\"status\\\": \\\"staged_path_candidate_clear\\\", \\\"tests\\\": [[\\\"Upper retainer rear6mm then X-1.0mm then rear clear\\\", 0], [\\\"Upper retainer rear6mm then X-1.5mm then rear clear\\\", 0]], \\\"restoration_pass\\\": true, \\\"report\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/system-review/mechanical/verification/width-contract-tests/retainer-path-diagnosis/diagnosis.json\\\"}\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}
