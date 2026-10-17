@@ -102,6 +102,12 @@ collects community suggestions without promising a release date.
 Maintainers can use the [repository guide](.github/MAINTAINING.md). For
 exploitable vulnerabilities, use the [private reporting route](SECURITY.md).
 
+## Acknowledgements
+
+A big thank you to [@tobiasruber](https://github.com/tobiasruber) for reviewing and
+improving the PCB design. His help is a big reason this project is still alive
+and moving forward.
+
 ## License
 
 Software: [GPLv3](LICENSES/GPL-3.0-only.txt). PCB and CAD files:
