@@ -43,7 +43,7 @@ hardware/
 
 ## CI/CD
 - Pull requests and non-main pushes run host tests, ESP-IDF build, firmware size check, and artifact upload.
-- Merges to `main` keep the automatic release behavior after version selection, duplicate-tag checks, tests, ESP-IDF build, and size validation. The release version is injected into the build; CI tags the triggering commit and does not push a version-update commit to protected `main`.
+- Merges to `main` publish a firmware release only when ESP-IDF build inputs change, as defined in `.github/scripts/firmware_release_needed.py`. Hardware, documentation, tests, simulator, web-demo, and workflow-only changes skip release publication. Manual releases remain available on `main`. Releases still require version selection, duplicate-tag checks, tests, ESP-IDF builds, size checks, and digest validation; CI tags the triggering commit without pushing a version-update commit to protected `main`.
 - The app partition budget is defined by `software/firmware/partitions.csv`; firmware must fit in the configured factory/OTA app partition.
 
 ## Hardware Smoke Test

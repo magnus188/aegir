@@ -13,17 +13,44 @@ on:
         options: [patch, minor, major]
 
 permissions:
-  contents: write
-
-concurrency:
-  group: release-${{ github.ref }}
-  cancel-in-progress: false
+  contents: read
 
 jobs:
-  build-and-release:
-    name: Build ESP32-P4 Firmware and Create Release
+  changes:
+    name: Check firmware release inputs
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
+    timeout-minutes: 5
+    outputs:
+      release: ${{ steps.changes.outputs.release }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Decide whether firmware needs a release
+        id: changes
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          BEFORE: ${{ github.event.before }}
+          AFTER: ${{ github.sha }}
+        run: |
+          python3 .github/scripts/firmware_release_needed.py \
+            --event "$EVENT_NAME" --before "$BEFORE" --after "$AFTER" >> "$GITHUB_OUTPUT"
+
+  build-and-release:
+    name: Build ESP32-P4 Firmware and Create Release
+    needs: changes
+    if: github.ref == 'refs/heads/main' && needs.changes.outputs.release == 'true'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    # Only actual releases enter the queue. An unrelated push must not replace
+    # a pending firmware release with a run that skips publication.
+    concurrency:
+      group: release-${{ github.ref }}
+      cancel-in-progress: false
     defaults:
       run:
         working-directory: software/firmware
@@ -187,7 +214,7 @@ jobs:
             0x10000 build/esp32p4-v3/ota_data_initial.bin
 
       - name: Upload release build artifacts
-        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with:
           name: aegir-esp32p4-v${{ steps.version.outputs.new_version }}
           if-no-files-found: error
