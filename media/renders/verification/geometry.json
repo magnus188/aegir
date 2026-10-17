@@ -1,0 +1,4068 @@
+{
+  "source_hashes_before": {
+    "hardware/cad/pcb-v2-bottom/Trimix_Enclosure_PCB2_Bottom.step": "173750f89553b3fef11542b1d6b826d4e7e63e62748cea5a6bd0b0b35355d005",
+    "hardware/pcb/analyzer-v2-bottom/Trimix_Analyzer.kicad_pcb": "59a0be0876394c670bd6c852033312527ccf9a4e02e94ac0437080b83f57085c",
+    "hardware/pcb/analyzer-v2-bottom/Trimix_Analyzer.kicad_pro": "a19783ba0c7ddf75f1f4c9d4852db2b5f5c1939d6c844cb8ac0d7d6a9c6b418a",
+    "hardware/pcb/analyzer-v2-bottom/manufacturing/placement-populated.csv": "df2f95c4cb0431ef3aac85580b8327410f08ca2e2d340aaf53bf3bc8c33a5bc9"
+  },
+  "source_hashes_after": {
+    "hardware/cad/pcb-v2-bottom/Trimix_Enclosure_PCB2_Bottom.step": "173750f89553b3fef11542b1d6b826d4e7e63e62748cea5a6bd0b0b35355d005",
+    "hardware/pcb/analyzer-v2-bottom/Trimix_Analyzer.kicad_pcb": "59a0be0876394c670bd6c852033312527ccf9a4e02e94ac0437080b83f57085c",
+    "hardware/pcb/analyzer-v2-bottom/Trimix_Analyzer.kicad_pro": "a19783ba0c7ddf75f1f4c9d4852db2b5f5c1939d6c844cb8ac0d7d6a9c6b418a",
+    "hardware/pcb/analyzer-v2-bottom/manufacturing/placement-populated.csv": "df2f95c4cb0431ef3aac85580b8327410f08ca2e2d340aaf53bf3bc8c33a5bc9"
+  },
+  "hardware_unchanged": true,
+  "source_leaf_count": 201,
+  "render_solid_count": 57,
+  "render_group_counts": {
+    "shell": 8,
+    "logo": 6,
+    "cover": 1,
+    "fasteners": 28,
+    "frame": 2,
+    "display": 4,
+    "battery": 5,
+    "manifold": 3
+  },
+  "triangle_count": 331276,
+  "excluded": [
+    {
+      "name": "017_TMX-A3-C06:1",
+      "part_id": "TMX-A3-C06",
+      "reason": "Sensor or connector proxy replaced by appearance model",
+      "bounds": {
+        "min": [
+          32.4999998999981,
+          127.85,
+          7.1
+        ],
+        "max": [
+          70.75,
+          157.15,
+          36.4
+        ],
+        "size": [
+          38.2500001000019,
+          29.30000000000001,
+          29.299999999999997
+        ]
+      }
+    },
+    {
+      "name": "018_TMX-A3-C12:1",
+      "part_id": "TMX-A3-C12",
+      "reason": "Sensor or connector proxy replaced by appearance model",
+      "bounds": {
+        "min": [
+          70.75,
+          137.5,
+          16.75
+        ],
+        "max": [
+          77.25,
+          147.5,
+          26.75
+        ],
+        "size": [
+          6.5,
+          10.0,
+          10.0
+        ]
+      }
+    },
+    {
+      "name": "019_TMX-A3-C09:1",
+      "part_id": "TMX-A3-C09",
+      "reason": "Sensor or connector proxy replaced by appearance model",
+      "bounds": {
+        "min": [
+          5.5,
+          132.3,
+          5.4
+        ],
+        "max": [
+          27.25,
+          157.7,
+          27.8
+        ],
+        "size": [
+          21.75,
+          25.399999999999977,
+          22.4
+        ]
+      }
+    },
+    {
+      "name": "020_TMX-A3-C07:1",
+      "part_id": "TMX-A3-C07",
+      "reason": "Sensor or connector proxy replaced by appearance model",
+      "bounds": {
+        "min": [
+          19.0,
+          163.0,
+          8.0
+        ],
+        "max": [
+          60.0,
+          172.5,
+          27.0
+        ],
+        "size": [
+          41.0,
+          9.5,
+          19.0
+        ]
+      }
+    },
+    {
+      "name": "021_TMX-A3-C08:1",
+      "part_id": "TMX-A3-C08",
+      "reason": "Sensor or connector proxy replaced by appearance model",
+      "bounds": {
+        "min": [
+          53.0,
+          162.8,
+          6.0
+        ],
+        "max": [
+          70.0,
+          174.8,
+          11.0
+        ],
+        "size": [
+          17.0,
+          12.0,
+          5.0
+        ]
+      }
+    },
+    {
+      "name": "024_TMX-A3-S02:1",
+      "part_id": "TMX-A3-S02",
+      "reason": "Engineering seal or feedthrough allowance, not a manufactured visible component",
+      "bounds": {
+        "min": [
+          38.8,
+          132.4,
+          11.65
+        ],
+        "max": [
+          39.0,
+          152.6,
+          31.85
+        ],
+        "size": [
+          0.20000000000000284,
+          20.19999999999999,
+          20.200000000000003
+        ]
+      }
+    },
+    {
+      "name": "025_TMX-A3-S01:1",
+      "part_id": "TMX-A3-S01",
+      "reason": "Engineering seal or feedthrough allowance, not a manufactured visible component",
+      "bounds": {
+        "min": [
+          14.8,
+          128.7,
+          29.3
+        ],
+        "max": [
+          19.2,
+          132.0,
+          33.7
+        ],
+        "size": [
+          4.399999999999999,
+          3.3000000000000114,
+          4.400000000000002
+        ]
+      }
+    },
+    {
+      "name": "046_TMX-A3-C01-V03:1",
+      "part_id": "TMX-A3-C01-V03",
+      "reason": "Display plane or illustrative PCB replaced by photographed and firmware-derived details",
+      "bounds": {
+        "min": [
+          14.42,
+          16.799999999999997,
+          0.4
+        ],
+        "max": [
+          70.58,
+          110.4,
+          0.5
+        ],
+        "size": [
+          56.16,
+          93.60000000000001,
+          0.09999999999999998
+        ]
+      }
+    },
+    {
+      "name": "047_TMX-A3-C01-V04:1",
+      "part_id": "TMX-A3-C01-V04",
+      "reason": "Display plane or illustrative PCB replaced by photographed and firmware-derived details",
+      "bounds": {
+        "min": [
+          9.969999999999999,
+          9.599999999999994,
+          8.0
+        ],
+        "max": [
+          75.03,
+          117.6,
+          13.6
+        ],
+        "size": [
+          65.06,
+          108.0,
+          5.6
+        ]
+      }
+    },
+    {
+      "name": "058_PCB2-C403:1",
+      "part_id": "PCB2-C403",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          56.5,
+          68.400001,
+          25.632099999999998
+        ],
+        "max": [
+          58.1,
+          69.200001,
+          26.432100000000002
+        ],
+        "size": [
+          1.6000000000000014,
+          0.7999999999999972,
+          0.8000000000000043
+        ]
+      }
+    },
+    {
+      "name": "059_PCB2-C407:1",
+      "part_id": "PCB2-C407",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          60.775,
+          72.2,
+          25.632099999999998
+        ],
+        "max": [
+          62.375,
+          73.0,
+          26.432100000000002
+        ],
+        "size": [
+          1.6000000000000014,
+          0.7999999999999972,
+          0.8000000000000043
+        ]
+      }
+    },
+    {
+      "name": "060_PCB2-C507:1",
+      "part_id": "PCB2-C507",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          56.65,
+          62.2,
+          25.632099999999998
+        ],
+        "max": [
+          57.45,
+          63.8,
+          26.432100000000002
+        ],
+        "size": [
+          0.8000000000000043,
+          1.5999999999999943,
+          0.8000000000000043
+        ]
+      }
+    },
+    {
+      "name": "061_PCB2-C802:1",
+      "part_id": "PCB2-C802",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          64.4,
+          43.199999999999996,
+          25.632099999999998
+        ],
+        "max": [
+          66.0,
+          44.0,
+          26.432100000000002
+        ],
+        "size": [
+          1.5999999999999943,
+          0.8000000000000043,
+          0.8000000000000043
+        ]
+      }
+    },
+    {
+      "name": "062_PCB2-R101:1",
+      "part_id": "PCB2-R101",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          64.75,
+          11.9,
+          25.6321
+        ],
+        "max": [
+          65.75,
+          12.4,
+          25.9821
+        ],
+        "size": [
+          1.0,
+          0.5,
+          0.34999999999999787
+        ]
+      }
+    },
+    {
+      "name": "063_PCB2-R703:1",
+      "part_id": "PCB2-R703",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          71.0,
+          37.05,
+          25.632099999999998
+        ],
+        "max": [
+          71.8,
+          38.65,
+          26.0821
+        ],
+        "size": [
+          0.7999999999999972,
+          1.6000000000000014,
+          0.45000000000000284
+        ]
+      }
+    },
+    {
+      "name": "064_PCB2-C105:1",
+      "part_id": "PCB2-C105",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          57.349999,
+          13.75,
+          25.6321
+        ],
+        "max": [
+          59.849999,
+          16.95,
+          28.1321
+        ],
+        "size": [
+          2.5,
+          3.1999999999999993,
+          2.5
+        ]
+      }
+    },
+    {
+      "name": "065_PCB2-C103:1",
+      "part_id": "PCB2-C103",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          66.025,
+          19.25991,
+          25.6321
+        ],
+        "max": [
+          67.025,
+          19.75991,
+          26.1321
+        ],
+        "size": [
+          1.0,
+          0.5,
+          0.5
+        ]
+      }
+    },
+    {
+      "name": "066_PCB2-R410:1",
+      "part_id": "PCB2-R410",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          65.1,
+          64.3,
+          25.632099999999998
+        ],
+        "max": [
+          66.7,
+          65.1,
+          26.0821
+        ],
+        "size": [
+          1.6000000000000085,
+          0.7999999999999972,
+          0.45000000000000284
+        ]
+      }
+    },
+    {
+      "name": "067_PCB2-C402:1",
+      "part_id": "PCB2-C402",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          58.225,
+          70.60991,
+          25.632099999999998
+        ],
+        "max": [
+          59.025,
+          72.20991,
+          26.432100000000002
+        ],
+        "size": [
+          0.7999999999999972,
+          1.5999999999999943,
+          0.8000000000000043
+        ]
+      }
+    },
+    {
+      "name": "068_PCB2-R601:1",
+      "part_id": "PCB2-R601",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          51.25,
+          39.8,
+          25.632099999999998
+        ],
+        "max": [
+          52.05,
+          41.4,
+          26.0821
+        ],
+        "size": [
+          0.7999999999999972,
+          1.6000000000000014,
+          0.45000000000000284
+        ]
+      }
+    },
+    {
+      "name": "069_PCB2-Q110:1",
+      "part_id": "PCB2-Q110",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          67.15,
+          10.1,
+          25.6321
+        ],
+        "max": [
+          69.65,
+          13.1,
+          26.8321
+        ],
+        "size": [
+          2.5,
+          3.0,
+          1.1999999999999993
+        ]
+      }
+    },
+    {
+      "name": "070_PCB2-C509:1",
+      "part_id": "PCB2-C509",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          61.85,
+          62.3,
+          25.632099999999998
+        ],
+        "max": [
+          63.45,
+          63.1,
+          26.432100000000002
+        ],
+        "size": [
+          1.6000000000000014,
+          0.8000000000000043,
+          0.8000000000000043
+        ]
+      }
+    },
+    {
+      "name": "071_PCB2-R401:1",
+      "part_id": "PCB2-R401",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          51.299999,
+          70.540001,
+          25.632099999999998
+        ],
+        "max": [
+          52.099999,
+          72.140001,
+          26.0821
+        ],
+        "size": [
+          0.7999999999999972,
+          1.5999999999999943,
+          0.45000000000000284
+        ]
+      }
+    },
+    {
+      "name": "072_PCB2-C504:1",
+      "part_id": "PCB2-C504",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          58.1,
+          52.6,
+          25.632099999999998
+        ],
+        "max": [
+          59.7,
+          53.4,
+          26.432100000000002
+        ],
+        "size": [
+          1.6000000000000014,
+          0.7999999999999972,
+          0.8000000000000043
+        ]
+      }
+    },
+    {
+      "name": "073_PCB2-J501:1",
+      "part_id": "PCB2-J501",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          53.129999999999995,
+          59.78991,
+          22.632099999999998
+        ],
+        "max": [
+          55.67,
+          67.40991000000001,
+          34.17210000000001
+        ],
+        "size": [
+          2.5400000000000063,
+          7.620000000000012,
+          11.54000000000001
+        ]
+      }
+    },
+    {
+      "name": "074_PCB2-J701:1",
+      "part_id": "PCB2-J701",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          66.9,
+          69.225,
+          22.232099999999736
+        ],
+        "max": [
+          79.3,
+          74.975,
+          32.63210000000001
+        ],
+        "size": [
+          12.399999999999991,
+          5.75,
+          10.400000000000272
+        ]
+      }
+    },
+    {
+      "name": "075_PCB2-C701:1",
+      "part_id": "PCB2-C701",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          64.69999999999999,
+          49.0,
+          25.6321
+        ],
+        "max": [
+          66.30000000000001,
+          52.2,
+          27.2321
+        ],
+        "size": [
+          1.6000000000000227,
+          3.200000000000003,
+          1.5999999999999979
+        ]
+      }
+    },
+    {
+      "name": "076_PCB2-C803:1",
+      "part_id": "PCB2-C803",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          61.65,
+          31.125,
+          25.6321
+        ],
+        "max": [
+          63.65,
+          32.375,
+          26.8821
+        ],
+        "size": [
+          2.0,
+          1.25,
+          1.25
+        ]
+      }
+    },
+    {
+      "name": "077_PCB2-C303:1",
+      "part_id": "PCB2-C303",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          61.6,
+          51.05,
+          25.632099999999998
+        ],
+        "max": [
+          63.2,
+          51.85,
+          26.432100000000002
+        ],
+        "size": [
+          1.6000000000000014,
+          0.8000000000000043,
+          0.8000000000000043
+        ]
+      }
+    },
+    {
+      "name": "078_PCB2-C801:1",
+      "part_id": "PCB2-C801",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          55.35,
+          42.699999999999996,
+          25.632099999999998
+        ],
+        "max": [
+          56.95,
+          43.5,
+          26.432100000000002
+        ],
+        "size": [
+          1.6000000000000014,
+          0.8000000000000043,
+          0.8000000000000043
+        ]
+      }
+    },
+    {
+      "name": "079_PCB2-C301:1",
+      "part_id": "PCB2-C301",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          67.4,
+          33.475,
+          25.6321
+        ],
+        "max": [
+          69.4,
+          34.725,
+          26.8821
+        ],
+        "size": [
+          2.0,
+          1.25,
+          1.25
+        ]
+      }
+    },
+    {
+      "name": "080_PCB2-C409:1",
+      "part_id": "PCB2-C409",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          51.299999,
+          64.0,
+          25.632099999999998
+        ],
+        "max": [
+          52.099999000000004,
+          65.6,
+          26.432100000000002
+        ],
+        "size": [
+          0.8000000000000043,
+          1.5999999999999943,
+          0.8000000000000043
+        ]
+      }
+    },
+    {
+      "name": "081_PCB2-R117:1",
+      "part_id": "PCB2-R117",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          70.975,
+          17.98491,
+          25.632099999999998
+        ],
+        "max": [
+          71.775,
+          19.58491,
+          26.0821
+        ],
+        "size": [
+          0.8000000000000114,
+          1.6000000000000014,
+          0.45000000000000284
+        ]
+      }
+    },
+    {
+      "name": "082_PCB2-R102:1",
+      "part_id": "PCB2-R102",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          60.9,
+          12.05,
+          25.632099999999998
+        ],
+        "max": [
+          61.7,
+          13.65,
+          26.0821
+        ],
+        "size": [
+          0.8000000000000043,
+          1.5999999999999996,
+          0.45000000000000284
+        ]
+      }
+    },
+    {
+      "name": "083_PCB2-J601:1",
+      "part_id": "PCB2-J601",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          66.9,
+          77.225,
+          22.232099999999736
+        ],
+        "max": [
+          79.3,
+          82.975,
+          32.63210000000001
+        ],
+        "size": [
+          12.399999999999991,
+          5.75,
+          10.400000000000272
+        ]
+      }
+    },
+    {
+      "name": "084_PCB2-Q601:1",
+      "part_id": "PCB2-Q601",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          68.65,
+          64.6,
+          25.6321
+        ],
+        "max": [
+          71.15,
+          67.6,
+          26.8321
+        ],
+        "size": [
+          2.5,
+          3.0,
+          1.1999999999999993
+        ]
+      }
+    },
+    {
+      "name": "085_PCB2-R201:1",
+      "part_id": "PCB2-R201",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          58.4,
+          40.95,
+          25.632099999999998
+        ],
+        "max": [
+          60.0,
+          41.75,
+          26.0821
+        ],
+        "size": [
+          1.6000000000000014,
+          0.7999999999999972,
+          0.45000000000000284
+        ]
+      }
+    },
+    {
+      "name": "086_PCB2-C705:1",
+      "part_id": "PCB2-C705",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          53.45,
+          39.975,
+          25.6321
+        ],
+        "max": [
+          55.45,
+          41.225,
+          26.8821
+        ],
+        "size": [
+          2.0,
+          1.25,
+          1.25
+        ]
+      }
+    },
+    {
+      "name": "087_PCB2-C404:1",
+      "part_id": "PCB2-C404",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          62.2,
+          67.7,
+          25.632099999999998
+        ],
+        "max": [
+          63.8,
+          68.5,
+          26.432100000000002
+        ],
+        "size": [
+          1.5999999999999943,
+          0.7999999999999972,
+          0.8000000000000043
+        ]
+      }
+    },
+    {
+      "name": "088_PCB2-U501:1",
+      "part_id": "PCB2-U501",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          52.95,
+          54.0,
+          25.6321
+        ],
+        "max": [
+          55.85000000000001,
+          56.8,
+          27.1821
+        ],
+        "size": [
+          2.9000000000000057,
+          2.799999999999997,
+          1.5499999999999972
+        ]
+      }
+    },
+    {
+      "name": "089_PCB2-C502:1",
+      "part_id": "PCB2-C502",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          53.6,
+          58.0,
+          25.632099999999998
+        ],
+        "max": [
+          55.2,
+          58.800000000000004,
+          26.432100000000002
+        ],
+        "size": [
+          1.6000000000000014,
+          0.8000000000000043,
+          0.8000000000000043
+        ]
+      }
+    },
+    {
+      "name": "090_PCB2-Q602:1",
+      "part_id": "PCB2-Q602",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          69.65,
+          60.4,
+          25.6321
+        ],
+        "max": [
+          72.15,
+          63.4,
+          26.8321
+        ],
+        "size": [
+          2.5,
+          3.0,
+          1.1999999999999993
+        ]
+      }
+    },
+    {
+      "name": "091_PCB2-Q101:1",
+      "part_id": "PCB2-Q101",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          69.15,
+          20.85,
+          25.6321
+        ],
+        "max": [
+          71.65,
+          23.85,
+          26.8321
+        ],
+        "size": [
+          2.5,
+          3.0,
+          1.1999999999999993
+        ]
+      }
+    },
+    {
+      "name": "092_PCB2-R103:1",
+      "part_id": "PCB2-R103",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          64.1,
+          13.15,
+          25.632099999999998
+        ],
+        "max": [
+          65.7,
+          13.95,
+          26.0821
+        ],
+        "size": [
+          1.6000000000000085,
+          0.7999999999999989,
+          0.45000000000000284
+        ]
+      }
+    },
+    {
+      "name": "093_PCB2-R406:1",
+      "part_id": "PCB2-R406",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          60.925,
+          82.30991,
+          25.632099999999998
+        ],
+        "max": [
+          62.525,
+          83.10991,
+          26.0821
+        ],
+        "size": [
+          1.6000000000000014,
+          0.7999999999999972,
+          0.45000000000000284
+        ]
+      }
+    },
+    {
+      "name": "094_PCB2-R505:1",
+      "part_id": "PCB2-R505",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          72.0,
+          57.88491,
+          25.632099999999998
+        ],
+        "max": [
+          72.8,
+          59.48491,
+          26.0821
+        ],
+        "size": [
+          0.7999999999999972,
+          1.6000000000000014,
+          0.45000000000000284
+        ]
+      }
+    },
+    {
+      "name": "095_PCB2-R702:1",
+      "part_id": "PCB2-R702",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          68.65,
+          44.18491,
+          25.6321
+        ],
+        "max": [
+          69.15,
+          45.18491,
+          25.9821
+        ],
+        "size": [
+          0.5,
+          1.0,
+          0.34999999999999787
+        ]
+      }
+    },
+    {
+      "name": "096_PCB2-C505:1",
+      "part_id": "PCB2-C505",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          59.199999999999996,
+          48.8,
+          25.632099999999998
+        ],
+        "max": [
+          60.0,
+          50.4,
+          26.432100000000002
+        ],
+        "size": [
+          0.8000000000000043,
+          1.6000000000000014,
+          0.8000000000000043
+        ]
+      }
+    },
+    {
+      "name": "097_PCB2-R507:1",
+      "part_id": "PCB2-R507",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          53.35,
+          68.45,
+          25.632099999999998
+        ],
+        "max": [
+          54.95,
+          69.25,
+          26.0821
+        ],
+        "size": [
+          1.6000000000000014,
+          0.7999999999999972,
+          0.45000000000000284
+        ]
+      }
+    },
+    {
+      "name": "098_PCB2-R408:1",
+      "part_id": "PCB2-R408",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          63.75,
+          70.45,
+          25.632099999999998
+        ],
+        "max": [
+          65.35000000000001,
+          71.25,
+          26.0821
+        ],
+        "size": [
+          1.6000000000000085,
+          0.7999999999999972,
+          0.45000000000000284
+        ]
+      }
+    },
+    {
+      "name": "099_PCB2-R409:1",
+      "part_id": "PCB2-R409",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          61.85,
+          64.4,
+          25.632099999999998
+        ],
+        "max": [
+          63.45,
+          65.2,
+          26.0821
+        ],
+        "size": [
+          1.6000000000000014,
+          0.7999999999999972,
+          0.45000000000000284
+        ]
+      }
+    },
+    {
+      "name": "100_PCB2-C804:1",
+      "part_id": "PCB2-C804",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          66.6,
+          35.699999999999996,
+          25.632099999999998
+        ],
+        "max": [
+          68.2,
+          36.5,
+          26.432100000000002
+        ],
+        "size": [
+          1.6000000000000085,
+          0.8000000000000043,
+          0.8000000000000043
+        ]
+      }
+    },
+    {
+      "name": "101_PCB2-J801:1",
+      "part_id": "PCB2-J801",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          52.854999,
+          48.33,
+          22.6321
+        ],
+        "max": [
+          57.934999000000005,
+          50.87,
+          34.1721
+        ],
+        "size": [
+          5.080000000000005,
+          2.539999999999999,
+          11.54
+        ]
+      }
+    },
+    {
+      "name": "102_PCB2-R402:1",
+      "part_id": "PCB2-R402",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          51.299999,
+          77.0,
+          25.632099999999998
+        ],
+        "max": [
+          52.099999,
+          78.60000000000001,
+          26.0821
+        ],
+        "size": [
+          0.7999999999999972,
+          1.6000000000000085,
+          0.45000000000000284
+        ]
+      }
+    },
+    {
+      "name": "103_PCB2-R115:1",
+      "part_id": "PCB2-R115",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          72.6,
+          15.68491,
+          25.6321
+        ],
+        "max": [
+          73.1,
+          16.68491,
+          25.9821
+        ],
+        "size": [
+          0.5,
+          0.9999999999999982,
+          0.34999999999999787
+        ]
+      }
+    },
+    {
+      "name": "104_PCB2-C401:1",
+      "part_id": "PCB2-C401",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          58.225,
+          73.925,
+          25.632099999999998
+        ],
+        "max": [
+          59.025,
+          75.525,
+          26.432100000000002
+        ],
+        "size": [
+          0.7999999999999972,
+          1.6000000000000085,
+          0.8000000000000043
+        ]
+      }
+    },
+    {
+      "name": "105_PCB2-R107:1",
+      "part_id": "PCB2-R107",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          72.975,
+          25.7,
+          25.632099999999998
+        ],
+        "max": [
+          74.575,
+          26.5,
+          26.0821
+        ],
+        "size": [
+          1.6000000000000085,
+          0.8000000000000007,
+          0.45000000000000284
+        ]
+      }
+    },
+    {
+      "name": "106_PCB2-R118:1",
+      "part_id": "PCB2-R118",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          60.65,
+          8.9,
+          25.6321
+        ],
+        "max": [
+          61.65,
+          9.4,
+          25.9821
+        ],
+        "size": [
+          1.0,
+          0.5,
+          0.34999999999999787
+        ]
+      }
+    },
+    {
+      "name": "107_PCB2-R120:1",
+      "part_id": "PCB2-R120",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          51.525,
+          7.95,
+          25.632099999999998
+        ],
+        "max": [
+          53.125,
+          8.75,
+          26.0821
+        ],
+        "size": [
+          1.6000000000000014,
+          0.7999999999999998,
+          0.45000000000000284
+        ]
+      }
+    },
+    {
+      "name": "108_PCB2-J402:1",
+      "part_id": "PCB2-J402",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          51.35,
+          81.0,
+          21.7321
+        ],
+        "max": [
+          58.35,
+          88.0,
+          33.2321
+        ],
+        "size": [
+          7.0,
+          7.0,
+          11.500000000000004
+        ]
+      }
+    },
+    {
+      "name": "109_PCB2-R105:1",
+      "part_id": "PCB2-R105",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          55.75,
+          16.049999999999997,
+          25.632099999999998
+        ],
+        "max": [
+          56.55,
+          17.650000000000002,
+          26.0821
+        ],
+        "size": [
+          0.7999999999999972,
+          1.600000000000005,
+          0.45000000000000284
+        ]
+      }
+    },
+    {
+      "name": "110_PCB2-R704:1",
+      "part_id": "PCB2-R704",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          74.35,
+          67.3,
+          25.632099999999998
+        ],
+        "max": [
+          75.95,
+          68.1,
+          26.0821
+        ],
+        "size": [
+          1.6000000000000085,
+          0.7999999999999972,
+          0.45000000000000284
+        ]
+      }
+    },
+    {
+      "name": "111_PCB2-J103:1",
+      "part_id": "PCB2-J103",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          53.13,
+          19.565,
+          22.6321
+        ],
+        "max": [
+          55.67,
+          24.645000000000003,
+          34.1721
+        ],
+        "size": [
+          2.539999999999999,
+          5.080000000000002,
+          11.54
+        ]
+      }
+    },
+    {
+      "name": "112_PCB2-C203:1",
+      "part_id": "PCB2-C203",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          61.4,
+          43.0,
+          25.632099999999998
+        ],
+        "max": [
+          63.0,
+          43.800000000000004,
+          26.432100000000002
+        ],
+        "size": [
+          1.6000000000000014,
+          0.8000000000000043,
+          0.8000000000000043
+        ]
+      }
+    },
+    {
+      "name": "113_PCB2-C101:1",
+      "part_id": "PCB2-C101",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          57.9,
+          18.4,
+          25.632099999999998
+        ],
+        "max": [
+          59.5,
+          19.200000000000003,
+          26.432100000000002
+        ],
+        "size": [
+          1.6000000000000014,
+          0.8000000000000043,
+          0.8000000000000043
+        ]
+      }
+    },
+    {
+      "name": "114_PCB2-RN501:1",
+      "part_id": "PCB2-RN501",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          56.85,
+          59.4,
+          25.6321
+        ],
+        "max": [
+          58.35,
+          61.0,
+          26.0821
+        ],
+        "size": [
+          1.5,
+          1.6000000000000014,
+          0.4499999999999993
+        ]
+      }
+    },
+    {
+      "name": "115_PCB2-C508:1",
+      "part_id": "PCB2-C508",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          65.1,
+          62.3,
+          25.632099999999998
+        ],
+        "max": [
+          66.7,
+          63.1,
+          26.432100000000002
+        ],
+        "size": [
+          1.6000000000000085,
+          0.8000000000000043,
+          0.8000000000000043
+        ]
+      }
+    },
+    {
+      "name": "116_PCB2-R202:1",
+      "part_id": "PCB2-R202",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          58.4,
+          42.65,
+          25.632099999999998
+        ],
+        "max": [
+          60.0,
+          43.45,
+          26.0821
+        ],
+        "size": [
+          1.6000000000000014,
+          0.8000000000000043,
+          0.45000000000000284
+        ]
+      }
+    },
+    {
+      "name": "117_PCB2-C408:1",
+      "part_id": "PCB2-C408",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          63.75,
+          72.2,
+          25.632099999999998
+        ],
+        "max": [
+          65.35,
+          73.0,
+          26.432100000000002
+        ],
+        "size": [
+          1.5999999999999943,
+          0.7999999999999972,
+          0.8000000000000043
+        ]
+      }
+    },
+    {
+      "name": "118_PCB2-J104:1",
+      "part_id": "PCB2-J104",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          53.129999999999995,
+          27.565,
+          22.6321
+        ],
+        "max": [
+          55.67,
+          32.645,
+          34.1721
+        ],
+        "size": [
+          2.5400000000000063,
+          5.080000000000002,
+          11.54
+        ]
+      }
+    },
+    {
+      "name": "119_PCB2-C704:1",
+      "part_id": "PCB2-C704",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          52.025,
+          43.1,
+          25.6321
+        ],
+        "max": [
+          53.275,
+          45.1,
+          26.8821
+        ],
+        "size": [
+          1.25,
+          2.0,
+          1.25
+        ]
+      }
+    },
+    {
+      "name": "120_PCB2-U701:1",
+      "part_id": "PCB2-U701",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          69.225,
+          46.30991,
+          25.6321
+        ],
+        "max": [
+          70.825,
+          47.90991,
+          26.2621
+        ],
+        "size": [
+          1.6000000000000085,
+          1.6000000000000014,
+          0.629999999999999
+        ]
+      }
+    },
+    {
+      "name": "121_PCB2-C708:1",
+      "part_id": "PCB2-C708",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          53.45,
+          37.725,
+          25.6321
+        ],
+        "max": [
+          55.45,
+          38.975,
+          26.8821
+        ],
+        "size": [
+          2.0,
+          1.25,
+          1.25
+        ]
+      }
+    },
+    {
+      "name": "122_PCB2-R802:1",
+      "part_id": "PCB2-R802",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          51.25,
+          26.799999999999997,
+          25.632099999999998
+        ],
+        "max": [
+          52.05,
+          28.400000000000002,
+          26.0821
+        ],
+        "size": [
+          0.7999999999999972,
+          1.600000000000005,
+          0.45000000000000284
+        ]
+      }
+    },
+    {
+      "name": "123_PCB2-R407:1",
+      "part_id": "PCB2-R407",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          60.775,
+          70.45,
+          25.632099999999998
+        ],
+        "max": [
+          62.375,
+          71.25,
+          26.0821
+        ],
+        "size": [
+          1.6000000000000014,
+          0.7999999999999972,
+          0.45000000000000284
+        ]
+      }
+    },
+    {
+      "name": "124_PCB2-C206:1",
+      "part_id": "PCB2-C206",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          56.95,
+          30.95,
+          25.6321
+        ],
+        "max": [
+          60.15,
+          33.45,
+          28.1321
+        ],
+        "size": [
+          3.1999999999999957,
+          2.5000000000000036,
+          2.5
+        ]
+      }
+    },
+    {
+      "name": "125_PCB2-R110:1",
+      "part_id": "PCB2-R110",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          73.075,
+          27.2,
+          25.632099999999998
+        ],
+        "max": [
+          74.675,
+          28.0,
+          26.0821
+        ],
+        "size": [
+          1.5999999999999943,
+          0.8000000000000007,
+          0.45000000000000284
+        ]
+      }
+    },
+    {
+      "name": "126_PCB2-U114:1",
+      "part_id": "PCB2-U114",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          56.5,
+          9.149999999999997,
+          25.6321
+        ],
+        "max": [
+          59.3,
+          12.05,
+          27.1821
+        ],
+        "size": [
+          2.799999999999997,
+          2.900000000000004,
+          1.5499999999999972
+        ]
+      }
+    },
+    {
+      "name": "127_PCB2-R403:1",
+      "part_id": "PCB2-R403",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          51.299999,
+          73.78999999999999,
+          25.632099999999998
+        ],
+        "max": [
+          52.099999,
+          75.39,
+          26.0821
+        ],
+        "size": [
+          0.7999999999999972,
+          1.6000000000000085,
+          0.45000000000000284
+        ]
+      }
+    },
+    {
+      "name": "128_PCB2-R405:1",
+      "part_id": "PCB2-R405",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          58.225,
+          77.24009,
+          25.632099999999998
+        ],
+        "max": [
+          59.025,
+          78.84009,
+          26.0821
+        ],
+        "size": [
+          0.7999999999999972,
+          1.6000000000000085,
+          0.45000000000000284
+        ]
+      }
+    },
+    {
+      "name": "129_PCB2-R303:1",
+      "part_id": "PCB2-R303",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          69.5,
+          35.8,
+          25.632099999999998
+        ],
+        "max": [
+          70.3,
+          37.4,
+          26.0821
+        ],
+        "size": [
+          0.7999999999999972,
+          1.6000000000000014,
+          0.45000000000000284
+        ]
+      }
+    },
+    {
+      "name": "130_PCB2-R116:1",
+      "part_id": "PCB2-R116",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          57.35,
+          5.95,
+          25.632099999999998
+        ],
+        "max": [
+          58.95,
+          6.75,
+          26.0821
+        ],
+        "size": [
+          1.6000000000000014,
+          0.7999999999999998,
+          0.45000000000000284
+        ]
+      }
+    },
+    {
+      "name": "131_PCB2-C108:1",
+      "part_id": "PCB2-C108",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          66.775,
+          17.68491,
+          25.632099999999998
+        ],
+        "max": [
+          68.375,
+          18.484910000000003,
+          26.432100000000002
+        ],
+        "size": [
+          1.5999999999999943,
+          0.8000000000000043,
+          0.8000000000000043
+        ]
+      }
+    },
+    {
+      "name": "132_PCB2-U703:1",
+      "part_id": "PCB2-U703",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          61.85,
+          54.0,
+          25.6321
+        ],
+        "max": [
+          64.95,
+          56.0,
+          26.4821
+        ],
+        "size": [
+          3.1000000000000014,
+          2.0,
+          0.8499999999999979
+        ]
+      }
+    },
+    {
+      "name": "133_PCB2-R301:1",
+      "part_id": "PCB2-R301",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          61.55,
+          29.55,
+          25.632099999999998
+        ],
+        "max": [
+          63.15,
+          30.35,
+          26.0821
+        ],
+        "size": [
+          1.6000000000000014,
+          0.8000000000000007,
+          0.45000000000000284
+        ]
+      }
+    },
+    {
+      "name": "134_PCB2-U113:1",
+      "part_id": "PCB2-U113",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          74.0,
+          13.849999999999998,
+          25.6321
+        ],
+        "max": [
+          76.8,
+          16.75,
+          27.1821
+        ],
+        "size": [
+          2.799999999999997,
+          2.900000000000002,
+          1.5499999999999972
+        ]
+      }
+    },
+    {
+      "name": "135_PCB2-R506:1",
+      "part_id": "PCB2-R506",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          58.6,
+          62.3,
+          25.632099999999998
+        ],
+        "max": [
+          60.2,
+          63.1,
+          26.0821
+        ],
+        "size": [
+          1.6000000000000014,
+          0.8000000000000043,
+          0.45000000000000284
+        ]
+      }
+    },
+    {
+      "name": "136_PCB2-U801:1",
+      "part_id": "PCB2-U801",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          62.6,
+          44.65,
+          25.6321
+        ],
+        "max": [
+          65.4,
+          47.55,
+          26.5821
+        ],
+        "size": [
+          2.8000000000000043,
+          2.8999999999999986,
+          0.9499999999999993
+        ]
+      }
+    },
+    {
+      "name": "137_PCB2-C707:1",
+      "part_id": "PCB2-C707",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          71.475,
+          31.175,
+          25.6321
+        ],
+        "max": [
+          72.72500000000001,
+          33.175,
+          26.8821
+        ],
+        "size": [
+          1.2500000000000142,
+          1.9999999999999964,
+          1.25
+        ]
+      }
+    },
+    {
+      "name": "138_PCB2-C506:1",
+      "part_id": "PCB2-C506",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          66.649999,
+          66.275,
+          25.632099999999998
+        ],
+        "max": [
+          67.449999,
+          67.875,
+          26.432100000000002
+        ],
+        "size": [
+          0.8000000000000114,
+          1.5999999999999943,
+          0.8000000000000043
+        ]
+      }
+    },
+    {
+      "name": "139_PCB2-C106:1",
+      "part_id": "PCB2-C106",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          51.75,
+          9.55,
+          25.6321
+        ],
+        "max": [
+          54.95,
+          11.15,
+          27.2321
+        ],
+        "size": [
+          3.200000000000003,
+          1.5999999999999996,
+          1.5999999999999979
+        ]
+      }
+    },
+    {
+      "name": "140_PCB2-R701:1",
+      "part_id": "PCB2-R701",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          67.05,
+          44.1,
+          25.632099999999998
+        ],
+        "max": [
+          67.85,
+          45.7,
+          26.0821
+        ],
+        "size": [
+          0.7999999999999972,
+          1.6000000000000014,
+          0.45000000000000284
+        ]
+      }
+    },
+    {
+      "name": "141_PCB2-C501:1",
+      "part_id": "PCB2-C501",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          53.6,
+          52.0,
+          25.632099999999998
+        ],
+        "max": [
+          55.2,
+          52.800000000000004,
+          26.432100000000002
+        ],
+        "size": [
+          1.6000000000000014,
+          0.8000000000000043,
+          0.8000000000000043
+        ]
+      }
+    },
+    {
+      "name": "142_PCB2-C102:1",
+      "part_id": "PCB2-C102",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          57.25,
+          20.4,
+          25.6321
+        ],
+        "max": [
+          59.75,
+          23.6,
+          28.1321
+        ],
+        "size": [
+          2.5,
+          3.200000000000003,
+          2.5
+        ]
+      }
+    },
+    {
+      "name": "143_PCB2-C703:1",
+      "part_id": "PCB2-C703",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          69.02499999999999,
+          38.8,
+          25.6321
+        ],
+        "max": [
+          70.275,
+          40.8,
+          26.8821
+        ],
+        "size": [
+          1.2500000000000142,
+          2.0,
+          1.25
+        ]
+      }
+    },
+    {
+      "name": "144_PCB2-R203:1",
+      "part_id": "PCB2-R203",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          53.85,
+          33.7,
+          25.632099999999998
+        ],
+        "max": [
+          55.45,
+          34.5,
+          26.0821
+        ],
+        "size": [
+          1.6000000000000014,
+          0.7999999999999972,
+          0.45000000000000284
+        ]
+      }
+    },
+    {
+      "name": "145_PCB2-U702:1",
+      "part_id": "PCB2-U702",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          68.0,
+          54.25,
+          25.6321
+        ],
+        "max": [
+          70.8,
+          57.15,
+          27.1821
+        ],
+        "size": [
+          2.799999999999997,
+          2.8999999999999986,
+          1.5499999999999972
+        ]
+      }
+    },
+    {
+      "name": "146_PCB2-J802:1",
+      "part_id": "PCB2-J802",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          54.855,
+          44.529999999999994,
+          22.632099999999998
+        ],
+        "max": [
+          59.935,
+          47.07000000000001,
+          34.1721
+        ],
+        "size": [
+          5.080000000000005,
+          2.5400000000000134,
+          11.540000000000003
+        ]
+      }
+    },
+    {
+      "name": "147_PCB2-J301:1",
+      "part_id": "PCB2-J301",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          73.8804,
+          30.585,
+          23.0921
+        ],
+        "max": [
+          78.9096,
+          63.605,
+          34.0141
+        ],
+        "size": [
+          5.029200000000003,
+          33.019999999999996,
+          10.922
+        ]
+      }
+    },
+    {
+      "name": "148_PCB2-U301:1",
+      "part_id": "PCB2-U301",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          67.4,
+          30.31,
+          25.6321
+        ],
+        "max": [
+          69.4,
+          32.29,
+          26.5521
+        ],
+        "size": [
+          2.0,
+          1.9800000000000004,
+          0.9199999999999982
+        ]
+      }
+    },
+    {
+      "name": "149_PCB2-C204:1",
+      "part_id": "PCB2-C204",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          56.95,
+          37.65991,
+          25.6321
+        ],
+        "max": [
+          60.15,
+          40.15991,
+          28.1321
+        ],
+        "size": [
+          3.1999999999999957,
+          2.5,
+          2.5
+        ]
+      }
+    },
+    {
+      "name": "150_PCB2-C601:1",
+      "part_id": "PCB2-C601",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          68.9,
+          58.375,
+          25.6321
+        ],
+        "max": [
+          70.9,
+          59.625,
+          26.8821
+        ],
+        "size": [
+          2.0,
+          1.25,
+          1.25
+        ]
+      }
+    },
+    {
+      "name": "151_PCB2-R803:1",
+      "part_id": "PCB2-R803",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          51.25,
+          19.049999999999997,
+          25.632099999999998
+        ],
+        "max": [
+          52.05,
+          20.650000000000002,
+          26.0821
+        ],
+        "size": [
+          0.7999999999999972,
+          1.600000000000005,
+          0.45000000000000284
+        ]
+      }
+    },
+    {
+      "name": "152_PCB2-C110:1",
+      "part_id": "PCB2-C110",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          72.7,
+          22.9,
+          25.632099999999998
+        ],
+        "max": [
+          73.5,
+          24.5,
+          26.432100000000002
+        ],
+        "size": [
+          0.7999999999999972,
+          1.6000000000000014,
+          0.8000000000000043
+        ]
+      }
+    },
+    {
+      "name": "153_PCB2-C205:1",
+      "part_id": "PCB2-C205",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          56.95,
+          34.35,
+          25.6321
+        ],
+        "max": [
+          60.15,
+          36.85,
+          28.1321
+        ],
+        "size": [
+          3.1999999999999957,
+          2.5,
+          2.5
+        ]
+      }
+    },
+    {
+      "name": "154_PCB2-U201:1",
+      "part_id": "PCB2-U201",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          61.9,
+          38.11,
+          25.6321
+        ],
+        "max": [
+          64.9,
+          42.09,
+          26.4021
+        ],
+        "size": [
+          3.000000000000007,
+          3.980000000000004,
+          0.7699999999999996
+        ]
+      }
+    },
+    {
+      "name": "155_PCB2-Q111:1",
+      "part_id": "PCB2-Q111",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          69.15,
+          13.6,
+          25.6321
+        ],
+        "max": [
+          71.65,
+          16.6,
+          26.8321
+        ],
+        "size": [
+          2.5,
+          3.0000000000000018,
+          1.1999999999999993
+        ]
+      }
+    },
+    {
+      "name": "156_PCB2-U401:1",
+      "part_id": "PCB2-U401",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          60.5,
+          74.7,
+          25.6321
+        ],
+        "max": [
+          65.5,
+          81.1,
+          26.7321
+        ],
+        "size": [
+          5.0,
+          6.3999999999999915,
+          1.0999999999999979
+        ]
+      }
+    },
+    {
+      "name": "157_PCB2-R705:1",
+      "part_id": "PCB2-R705",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          77.6,
+          67.3,
+          25.632099999999998
+        ],
+        "max": [
+          79.2,
+          68.1,
+          26.0821
+        ],
+        "size": [
+          1.6000000000000085,
+          0.7999999999999972,
+          0.45000000000000284
+        ]
+      }
+    },
+    {
+      "name": "158_PCB2-J901:1",
+      "part_id": "PCB2-J901",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          38.0299999,
+          1.2999999,
+          24.6821
+        ],
+        "max": [
+          46.9700001,
+          9.08,
+          28.9421001
+        ],
+        "size": [
+          8.9400002,
+          7.7800001000000005,
+          4.260000100000003
+        ]
+      }
+    },
+    {
+      "name": "159_PCB2-C104:1",
+      "part_id": "PCB2-C104",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          68.4,
+          24.6,
+          25.6321
+        ],
+        "max": [
+          71.6,
+          27.1,
+          28.1321
+        ],
+        "size": [
+          3.1999999999999886,
+          2.5,
+          2.5
+        ]
+      }
+    },
+    {
+      "name": "160_PCB2-Q112:1",
+      "part_id": "PCB2-Q112",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          73.9,
+          2.85,
+          25.6321
+        ],
+        "max": [
+          76.4,
+          5.85,
+          26.8321
+        ],
+        "size": [
+          2.5,
+          2.9999999999999996,
+          1.1999999999999993
+        ]
+      }
+    },
+    {
+      "name": "161_PCB2-U112:1",
+      "part_id": "PCB2-U112",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          74.05,
+          19.599999999999998,
+          25.6321
+        ],
+        "max": [
+          77.15,
+          21.600000000000005,
+          26.4821
+        ],
+        "size": [
+          3.1000000000000085,
+          2.000000000000007,
+          0.8499999999999979
+        ]
+      }
+    },
+    {
+      "name": "162_PCB2-R302:1",
+      "part_id": "PCB2-R302",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          53.0,
+          17.2,
+          25.632099999999998
+        ],
+        "max": [
+          54.6,
+          18.0,
+          26.0821
+        ],
+        "size": [
+          1.6000000000000014,
+          0.8000000000000007,
+          0.45000000000000284
+        ]
+      }
+    },
+    {
+      "name": "163_PCB2-R114:1",
+      "part_id": "PCB2-R114",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          71.75,
+          7.55,
+          25.632099999999998
+        ],
+        "max": [
+          72.55,
+          9.15,
+          26.0821
+        ],
+        "size": [
+          0.7999999999999972,
+          1.6000000000000005,
+          0.45000000000000284
+        ]
+      }
+    },
+    {
+      "name": "164_PCB2-R111:1",
+      "part_id": "PCB2-R111",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          77.4,
+          22.75,
+          25.632099999999998
+        ],
+        "max": [
+          78.2,
+          24.35,
+          26.0821
+        ],
+        "size": [
+          0.7999999999999972,
+          1.6000000000000014,
+          0.45000000000000284
+        ]
+      }
+    },
+    {
+      "name": "165_PCB2-U502:1",
+      "part_id": "PCB2-U502",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          59.8,
+          56.6,
+          25.6321
+        ],
+        "max": [
+          66.2,
+          61.6,
+          26.7321
+        ],
+        "size": [
+          6.400000000000006,
+          5.0,
+          1.0999999999999979
+        ]
+      }
+    },
+    {
+      "name": "166_PCB2-C302:1",
+      "part_id": "PCB2-C302",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          61.1,
+          52.6,
+          25.632099999999998
+        ],
+        "max": [
+          62.7,
+          53.4,
+          26.432100000000002
+        ],
+        "size": [
+          1.6000000000000014,
+          0.7999999999999972,
+          0.8000000000000043
+        ]
+      }
+    },
+    {
+      "name": "167_PCB2-R501:1",
+      "part_id": "PCB2-R501",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          51.8,
+          46.5,
+          25.632099999999998
+        ],
+        "max": [
+          53.4,
+          47.3,
+          26.0821
+        ],
+        "size": [
+          1.6000000000000014,
+          0.7999999999999972,
+          0.45000000000000284
+        ]
+      }
+    },
+    {
+      "name": "168_PCB2-U101:1",
+      "part_id": "PCB2-U101",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          61.4,
+          15.1,
+          25.6321
+        ],
+        "max": [
+          65.4,
+          19.1,
+          26.3921
+        ],
+        "size": [
+          4.000000000000007,
+          4.000000000000002,
+          0.759999999999998
+        ]
+      }
+    },
+    {
+      "name": "169_PCB2-C201:1",
+      "part_id": "PCB2-C201",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          66.6,
+          37.75,
+          25.6321
+        ],
+        "max": [
+          68.2,
+          40.95,
+          27.2321
+        ],
+        "size": [
+          1.6000000000000085,
+          3.200000000000003,
+          1.5999999999999979
+        ]
+      }
+    },
+    {
+      "name": "170_PCB2-R104:1",
+      "part_id": "PCB2-R104",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          54.6,
+          7.7,
+          25.632099999999998
+        ],
+        "max": [
+          56.2,
+          8.5,
+          26.0821
+        ],
+        "size": [
+          1.6000000000000014,
+          0.7999999999999998,
+          0.45000000000000284
+        ]
+      }
+    },
+    {
+      "name": "171_PCB2-D901:1",
+      "part_id": "PCB2-D901",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          46.4,
+          10.299999999999999,
+          25.6321
+        ],
+        "max": [
+          48.0,
+          11.100000000000001,
+          26.2621
+        ],
+        "size": [
+          1.6000000000000014,
+          0.8000000000000025,
+          0.629999999999999
+        ]
+      }
+    },
+    {
+      "name": "172_PCB2-C202:1",
+      "part_id": "PCB2-C202",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          68.5,
+          28.05,
+          25.6321
+        ],
+        "max": [
+          71.7,
+          29.65,
+          27.2321
+        ],
+        "size": [
+          3.200000000000003,
+          1.5999999999999979,
+          1.5999999999999979
+        ]
+      }
+    },
+    {
+      "name": "173_PCB2-C405:1",
+      "part_id": "PCB2-C405",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          62.2,
+          66.1,
+          25.632099999999998
+        ],
+        "max": [
+          63.8,
+          66.9,
+          26.432100000000002
+        ],
+        "size": [
+          1.5999999999999943,
+          0.8000000000000114,
+          0.8000000000000043
+        ]
+      }
+    },
+    {
+      "name": "174_PCB2-R404:1",
+      "part_id": "PCB2-R404",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          51.3,
+          67.3,
+          25.632099999999998
+        ],
+        "max": [
+          52.1,
+          68.9,
+          26.0821
+        ],
+        "size": [
+          0.8000000000000043,
+          1.6000000000000085,
+          0.45000000000000284
+        ]
+      }
+    },
+    {
+      "name": "175_PCB2-R113:1",
+      "part_id": "PCB2-R113",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          75.6,
+          17.45,
+          25.632099999999998
+        ],
+        "max": [
+          77.2,
+          18.25,
+          26.0821
+        ],
+        "size": [
+          1.6000000000000085,
+          0.8000000000000007,
+          0.45000000000000284
+        ]
+      }
+    },
+    {
+      "name": "176_PCB2-C406:1",
+      "part_id": "PCB2-C406",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          60.199999999999996,
+          67.3,
+          25.632099999999998
+        ],
+        "max": [
+          61.0,
+          68.9,
+          26.432100000000002
+        ],
+        "size": [
+          0.8000000000000043,
+          1.6000000000000085,
+          0.8000000000000043
+        ]
+      }
+    },
+    {
+      "name": "177_PCB2-U302:1",
+      "part_id": "PCB2-U302",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          61.35,
+          48.6,
+          25.6321
+        ],
+        "max": [
+          63.45,
+          50.6,
+          26.7321
+        ],
+        "size": [
+          2.1000000000000014,
+          2.0,
+          1.0999999999999979
+        ]
+      }
+    },
+    {
+      "name": "178_PCB2-U901:1",
+      "part_id": "PCB2-U901",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          41.26,
+          11.8,
+          25.6321
+        ],
+        "max": [
+          43.74,
+          12.8,
+          26.1521
+        ],
+        "size": [
+          2.480000000000004,
+          1.0,
+          0.5199999999999996
+        ]
+      }
+    },
+    {
+      "name": "179_PCB2-R801:1",
+      "part_id": "PCB2-R801",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          54.35,
+          25.7,
+          25.632099999999998
+        ],
+        "max": [
+          55.95,
+          26.5,
+          26.0821
+        ],
+        "size": [
+          1.6000000000000014,
+          0.8000000000000007,
+          0.45000000000000284
+        ]
+      }
+    },
+    {
+      "name": "180_PCB2-J401:1",
+      "part_id": "PCB2-J401",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          54.029999999999994,
+          70.29,
+          22.632099999999998
+        ],
+        "max": [
+          56.57000000000001,
+          77.91,
+          34.1721
+        ],
+        "size": [
+          2.5400000000000134,
+          7.61999999999999,
+          11.540000000000003
+        ]
+      }
+    },
+    {
+      "name": "181_PCB2-C702:1",
+      "part_id": "PCB2-C702",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          70.275,
+          44.00991,
+          25.6321
+        ],
+        "max": [
+          72.275,
+          45.25991,
+          26.8821
+        ],
+        "size": [
+          2.0,
+          1.25,
+          1.25
+        ]
+      }
+    },
+    {
+      "name": "182_PCB2-R121:1",
+      "part_id": "PCB2-R121",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          58.75,
+          15.5,
+          23.517899999999997
+        ],
+        "max": [
+          59.55,
+          17.1,
+          23.9679
+        ],
+        "size": [
+          0.7999999999999972,
+          1.6000000000000014,
+          0.45000000000000284
+        ]
+      }
+    },
+    {
+      "name": "183_PCB2-C107:1",
+      "part_id": "PCB2-C107",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          63.275,
+          21.35,
+          22.7179
+        ],
+        "max": [
+          65.275,
+          22.6,
+          23.9679
+        ],
+        "size": [
+          2.000000000000007,
+          1.25,
+          1.25
+        ]
+      }
+    },
+    {
+      "name": "184_PCB2-R504:1",
+      "part_id": "PCB2-R504",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          53.1,
+          54.184909999999995,
+          23.517899999999997
+        ],
+        "max": [
+          53.9,
+          55.78491,
+          23.9679
+        ],
+        "size": [
+          0.7999999999999972,
+          1.6000000000000085,
+          0.45000000000000284
+        ]
+      }
+    },
+    {
+      "name": "185_PCB2-R119:1",
+      "part_id": "PCB2-R119",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          55.075,
+          12.43491,
+          23.6179
+        ],
+        "max": [
+          56.075,
+          12.93491,
+          23.9679
+        ],
+        "size": [
+          1.0,
+          0.5,
+          0.3500000000000014
+        ]
+      }
+    },
+    {
+      "name": "186_PCB2-R126:1",
+      "part_id": "PCB2-R126",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          68.75,
+          10.3,
+          23.517899999999997
+        ],
+        "max": [
+          69.55,
+          11.9,
+          23.9679
+        ],
+        "size": [
+          0.7999999999999972,
+          1.5999999999999996,
+          0.45000000000000284
+        ]
+      }
+    },
+    {
+      "name": "187_PCB2-C113:1",
+      "part_id": "PCB2-C113",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          78.625,
+          18.25991,
+          23.1679
+        ],
+        "max": [
+          79.425,
+          19.85991,
+          23.9679
+        ],
+        "size": [
+          0.7999999999999972,
+          1.5999999999999979,
+          0.8000000000000007
+        ]
+      }
+    },
+    {
+      "name": "188_PCB2-C115:1",
+      "part_id": "PCB2-C115",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          62.0,
+          7.55,
+          23.1679
+        ],
+        "max": [
+          62.800000000000004,
+          9.15,
+          23.9679
+        ],
+        "size": [
+          0.8000000000000043,
+          1.6000000000000005,
+          0.8000000000000007
+        ]
+      }
+    },
+    {
+      "name": "189_PCB2-R122:1",
+      "part_id": "PCB2-R122",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          60.05,
+          12.9,
+          23.517899999999997
+        ],
+        "max": [
+          61.65,
+          13.7,
+          23.9679
+        ],
+        "size": [
+          1.6000000000000014,
+          0.7999999999999989,
+          0.45000000000000284
+        ]
+      }
+    },
+    {
+      "name": "190_PCB2-R124:1",
+      "part_id": "PCB2-R124",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          66.0,
+          13.95,
+          23.517899999999997
+        ],
+        "max": [
+          66.8,
+          15.55,
+          23.9679
+        ],
+        "size": [
+          0.7999999999999972,
+          1.6000000000000014,
+          0.45000000000000284
+        ]
+      }
+    },
+    {
+      "name": "191_PCB2-C116:1",
+      "part_id": "PCB2-C116",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          66.65,
+          11.55,
+          23.4679
+        ],
+        "max": [
+          67.15,
+          12.55,
+          23.9679
+        ],
+        "size": [
+          0.5,
+          1.0,
+          0.5
+        ]
+      }
+    },
+    {
+      "name": "192_PCB2-R123:1",
+      "part_id": "PCB2-R123",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          63.324999999999996,
+          13.1,
+          23.517899999999997
+        ],
+        "max": [
+          64.925,
+          13.9,
+          23.9679
+        ],
+        "size": [
+          1.6000000000000014,
+          0.8000000000000007,
+          0.45000000000000284
+        ]
+      }
+    },
+    {
+      "name": "193_PCB2-R112:1",
+      "part_id": "PCB2-R112",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          78.8,
+          23.65991,
+          23.517899999999997
+        ],
+        "max": [
+          79.6,
+          25.25991,
+          23.9679
+        ],
+        "size": [
+          0.7999999999999972,
+          1.6000000000000014,
+          0.45000000000000284
+        ]
+      }
+    },
+    {
+      "name": "194_PCB2-C112:1",
+      "part_id": "PCB2-C112",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          78.675,
+          14.45991,
+          23.1679
+        ],
+        "max": [
+          79.475,
+          16.05991,
+          23.9679
+        ],
+        "size": [
+          0.7999999999999972,
+          1.5999999999999979,
+          0.8000000000000007
+        ]
+      }
+    },
+    {
+      "name": "195_PCB2-C114:1",
+      "part_id": "PCB2-C114",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          58.7,
+          10.3,
+          22.3679
+        ],
+        "max": [
+          61.9,
+          11.9,
+          23.9679
+        ],
+        "size": [
+          3.1999999999999957,
+          1.5999999999999996,
+          1.6000000000000014
+        ]
+      }
+    },
+    {
+      "name": "196_PCB2-R128:1",
+      "part_id": "PCB2-R128",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          58.5,
+          7.55,
+          23.517899999999997
+        ],
+        "max": [
+          59.3,
+          9.15,
+          23.9679
+        ],
+        "size": [
+          0.7999999999999972,
+          1.6000000000000005,
+          0.45000000000000284
+        ]
+      }
+    },
+    {
+      "name": "197_PCB2-R125:1",
+      "part_id": "PCB2-R125",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          67.925,
+          13.35,
+          23.517899999999997
+        ],
+        "max": [
+          68.725,
+          14.95,
+          23.9679
+        ],
+        "size": [
+          0.7999999999999972,
+          1.5999999999999996,
+          0.45000000000000284
+        ]
+      }
+    },
+    {
+      "name": "198_PCB2-R127:1",
+      "part_id": "PCB2-R127",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          60.25,
+          7.55,
+          23.517899999999997
+        ],
+        "max": [
+          61.05,
+          9.15,
+          23.9679
+        ],
+        "size": [
+          0.7999999999999972,
+          1.6000000000000005,
+          0.45000000000000284
+        ]
+      }
+    },
+    {
+      "name": "199_PCB2-C111:1",
+      "part_id": "PCB2-C111",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          78.8,
+          27.78491,
+          23.1679
+        ],
+        "max": [
+          79.6,
+          29.38491,
+          23.9679
+        ],
+        "size": [
+          0.7999999999999972,
+          1.6000000000000014,
+          0.8000000000000007
+        ]
+      }
+    },
+    {
+      "name": "200_PCB2-substrate:1",
+      "part_id": "PCB2-substrate",
+      "reason": "Mechanical PCB replaced by current KiCad GLB and six dimensional visual reconstructions",
+      "bounds": {
+        "min": [
+          34.01509,
+          1.3,
+          24.0529
+        ],
+        "max": [
+          80.4,
+          101.1,
+          25.5471
+        ],
+        "size": [
+          46.384910000000005,
+          99.8,
+          1.4941999999999993
+        ]
+      }
+    }
+  ],
+  "all_included_solids_valid": true,
+  "pcb_export_command": [
+    "/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli",
+    "pcb",
+    "export",
+    "glb",
+    "--force",
+    "--drill-origin",
+    "--subst-models",
+    "--no-dnp",
+    "--include-pads",
+    "--include-tracks",
+    "--include-zones",
+    "--include-silkscreen",
+    "--include-soldermask",
+    "--cut-vias-in-body",
+    "--output",
+    "/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/media/renders/assets/pcb.glb",
+    "/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/pcb/analyzer-v2-bottom/Trimix_Analyzer.kicad_pcb"
+  ],
+  "pcb_export_log": "Existing fresh export reused; same source hashes verified.",
+  "pcb": {
+    "component_references": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C201",
+      "C202",
+      "C203",
+      "C204",
+      "C205",
+      "C206",
+      "C301",
+      "C302",
+      "C303",
+      "C401",
+      "C402",
+      "C403",
+      "C404",
+      "C405",
+      "C406",
+      "C407",
+      "C408",
+      "C409",
+      "C501",
+      "C502",
+      "C504",
+      "C505",
+      "C506",
+      "C507",
+      "C508",
+      "C509",
+      "C601",
+      "C701",
+      "C702",
+      "C703",
+      "C704",
+      "C705",
+      "C707",
+      "C708",
+      "C801",
+      "C802",
+      "C803",
+      "C804",
+      "D901",
+      "J103",
+      "J104",
+      "J301",
+      "J401",
+      "J402",
+      "J501",
+      "J601",
+      "J701",
+      "J801",
+      "J802",
+      "J901",
+      "Q101",
+      "Q110",
+      "Q111",
+      "Q112",
+      "Q601",
+      "Q602",
+      "R101",
+      "R102",
+      "R103",
+      "R104",
+      "R105",
+      "R107",
+      "R110",
+      "R111",
+      "R112",
+      "R113",
+      "R114",
+      "R115",
+      "R116",
+      "R117",
+      "R118",
+      "R119",
+      "R120",
+      "R121",
+      "R122",
+      "R123",
+      "R124",
+      "R125",
+      "R126",
+      "R127",
+      "R128",
+      "R201",
+      "R202",
+      "R203",
+      "R301",
+      "R302",
+      "R303",
+      "R401",
+      "R402",
+      "R403",
+      "R404",
+      "R405",
+      "R406",
+      "R407",
+      "R408",
+      "R409",
+      "R410",
+      "R501",
+      "R504",
+      "R505",
+      "R506",
+      "R507",
+      "R601",
+      "R701",
+      "R702",
+      "R703",
+      "R704",
+      "R705",
+      "R801",
+      "R802",
+      "R803",
+      "RN501",
+      "U101",
+      "U112",
+      "U113",
+      "U114",
+      "U201",
+      "U301",
+      "U302",
+      "U401",
+      "U501",
+      "U502",
+      "U701",
+      "U702",
+      "U703",
+      "U801",
+      "U901"
+    ],
+    "mesh_count": 150,
+    "node_count": 293,
+    "material_count": 23,
+    "mesh_names": [
+      "C_0603_1608Metric",
+      "C_0603_1608Metric",
+      "C_0603_1608Metric",
+      "C_0603_1608Metric",
+      "R_0402_1005Metric",
+      "R_0603_1608Metric",
+      "C_1210_3225Metric",
+      "C_0402_1005Metric",
+      "R_0603_1608Metric",
+      "C_0603_1608Metric",
+      "R_0603_1608Metric",
+      "SOT-23",
+      "C_0603_1608Metric",
+      "R_0603_1608Metric",
+      "C_0603_1608Metric",
+      "PinHeader_1x03_P254mm_Vertical",
+      "JST_B4B_XH_A",
+      "C_1206_3216Metric",
+      "C_0805_2012Metric",
+      "C_0603_1608Metric",
+      "C_0603_1608Metric",
+      "C_0805_2012Metric",
+      "C_0603_1608Metric",
+      "R_0603_1608Metric",
+      "R_0603_1608Metric",
+      "JST_B4B_XH_A",
+      "SOT-23",
+      "R_0603_1608Metric",
+      "C_0805_2012Metric",
+      "C_0603_1608Metric",
+      "SOT-23-5",
+      "C_0603_1608Metric",
+      "SOT-23",
+      "SOT-23",
+      "R_0603_1608Metric",
+      "R_0603_1608Metric",
+      "R_0603_1608Metric",
+      "R_0402_1005Metric",
+      "C_0603_1608Metric",
+      "R_0603_1608Metric",
+      "R_0603_1608Metric",
+      "R_0603_1608Metric",
+      "C_0603_1608Metric",
+      "PinHeader_1x02_P254mm_Vertical",
+      "R_0603_1608Metric",
+      "R_0402_1005Metric",
+      "C_0603_1608Metric",
+      "R_0603_1608Metric",
+      "R_0402_1005Metric",
+      "R_0603_1608Metric",
+      "Amphenol RF 142138 - drawing reconstruction; mating details reference",
+      "R_0603_1608Metric",
+      "R_0603_1608Metric",
+      "PinHeader_1x02_P254mm_Vertical",
+      "C_0603_1608Metric",
+      "C_0603_1608Metric",
+      "(Unsaved)",
+      "C_0603_1608Metric",
+      "R_0603_1608Metric",
+      "C_0603_1608Metric",
+      "PinHeader_1x02_P254mm_Vertical",
+      "C_0805_2012Metric",
+      "SOT_563",
+      "C_0805_2012Metric",
+      "R_0603_1608Metric",
+      "R_0603_1608Metric",
+      "C_1210_3225Metric",
+      "R_0603_1608Metric",
+      "SOT-23-6",
+      "R_0603_1608Metric",
+      "R_0603_1608Metric",
+      "R_0603_1608Metric",
+      "R_0603_1608Metric",
+      "C_0603_1608Metric",
+      "VSSOP-8_2.3x2mm_P0.5mm",
+      "R_0603_1608Metric",
+      "SOT-23-6",
+      "R_0603_1608Metric",
+      "TSOT-23-8",
+      "C_0805_2012Metric",
+      "C_0603_1608Metric",
+      "C_1206_3216Metric",
+      "R_0603_1608Metric",
+      "C_0603_1608Metric",
+      "C_1210_3225Metric",
+      "C_0805_2012Metric",
+      "R_0603_1608Metric",
+      "SOT-23-5",
+      "PinHeader_1x02_P254mm_Vertical",
+      "Samtec HTSW-113-07-L-D-007 nominal drawing reconstruction",
+      "DFN_8_1EP_2x2mm_P05mm_EP07x13mm",
+      "C_1210_3225Metric",
+      "C_0805_2012Metric",
+      "R_0603_1608Metric",
+      "C_0603_1608Metric",
+      "C_1210_3225Metric",
+      "DFN-14-1EP_3x4mm_Pitch0.5mm",
+      "SOT-23",
+      "TSSOP-16_4.4x5mm_P0.65mm",
+      "R_0603_1608Metric",
+      "USB_C_Receptacle_16P_TopMnt_Horizontal_GCT_USB4105-xx-A",
+      "C_1210_3225Metric",
+      "SOT-23",
+      "VSSOP-8_2.3x2mm_P0.5mm",
+      "R_0603_1608Metric",
+      "R_0603_1608Metric",
+      "R_0603_1608Metric",
+      "TSSOP-16_4.4x5mm_P0.65mm",
+      "C_0603_1608Metric",
+      "R_0603_1608Metric",
+      "Texas_RTW_WQFN-24-1EP_4x4mm_P0.5mm_EP2.7x2.7mm",
+      "C_1206_3216Metric",
+      "R_0603_1608Metric",
+      "D_SOD_523",
+      "C_1206_3216Metric",
+      "C_0603_1608Metric",
+      "R_0603_1608Metric",
+      "R_0603_1608Metric",
+      "C_0603_1608Metric",
+      "SOT-363_SC-70-6",
+      "USON_10_25x10mm_Pitch05mm",
+      "R_0603_1608Metric",
+      "PinHeader_1x03_P254mm_Vertical",
+      "C_0805_2012Metric",
+      "R_0603_1608Metric",
+      "C_0805_2012Metric",
+      "R_0603_1608Metric",
+      "R_0402_1005Metric",
+      "R_0603_1608Metric",
+      "C_0603_1608Metric",
+      "C_0603_1608Metric",
+      "R_0603_1608Metric",
+      "R_0603_1608Metric",
+      "C_0402_1005Metric",
+      "R_0603_1608Metric",
+      "R_0603_1608Metric",
+      "C_0603_1608Metric",
+      "C_1206_3216Metric",
+      "R_0603_1608Metric",
+      "R_0603_1608Metric",
+      "R_0603_1608Metric",
+      "C_0603_1608Metric",
+      "Trimix_Analyzer_copper",
+      "Trimix_Analyzer_pad",
+      "Trimix_Analyzer_via",
+      "Trimix_Analyzer_silkscreen",
+      "Trimix_Analyzer_silkscreen",
+      "Trimix_Analyzer_soldermask",
+      "Trimix_Analyzer_soldermask",
+      "Trimix_Analyzer_PCB"
+    ]
+  },
+  "pcb_transform": {
+    "GLB_units": "meters",
+    "GLB_axes": "X=native board X; Y=height; Z=native board Y",
+    "GLB_raw_to_CAD_mm": [
+      [
+        1000,
+        0,
+        0,
+        30.5
+      ],
+      [
+        0,
+        0,
+        -1000,
+        122.58491
+      ],
+      [
+        0,
+        1000,
+        0,
+        24.0529
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "Blender_import_to_CAD_mm": [
+      [
+        1000,
+        0,
+        0,
+        30.5
+      ],
+      [
+        0,
+        1000,
+        0,
+        122.58491
+      ],
+      [
+        0,
+        0,
+        1000,
+        24.0529
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "Blender_instruction": "Blender glTF importer already converts Y-up to Z-up. Parent all imported roots to an Empty with scale (1000,1000,1000) and location (30.5,122.58491,24.0529), then parent that registration Empty to the scene CAD-mm root."
+  },
+  "blender_import_to_cad_mm": [
+    [
+      1000,
+      0,
+      0,
+      30.5
+    ],
+    [
+      0,
+      1000,
+      0,
+      122.58491
+    ],
+    [
+      0,
+      0,
+      1000,
+      24.0529
+    ],
+    [
+      0,
+      0,
+      0,
+      1
+    ]
+  ],
+  "registration_checks": [
+    {
+      "reference": "C403",
+      "GLB_in_CAD_bounds_mm": [
+        [
+          56.5,
+          68.400001,
+          25.6321
+        ],
+        [
+          58.1,
+          69.20000099999999,
+          26.432100000000002
+        ]
+      ],
+      "source_CAD_bounds_mm": [
+        [
+          56.5,
+          68.400001,
+          25.632099999999998
+        ],
+        [
+          58.1,
+          69.200001,
+          26.432100000000002
+        ]
+      ],
+      "max_delta_mm": 1.4210854715202004e-14,
+      "pass": true
+    },
+    {
+      "reference": "J301",
+      "GLB_in_CAD_bounds_mm": [
+        [
+          73.8804,
+          30.584999999999994,
+          23.092100000000002
+        ],
+        [
+          78.90960000000001,
+          63.60499999999999,
+          34.0141
+        ]
+      ],
+      "source_CAD_bounds_mm": [
+        [
+          73.8804,
+          30.585,
+          23.0921
+        ],
+        [
+          78.9096,
+          63.605,
+          34.0141
+        ]
+      ],
+      "max_delta_mm": 1.4210854715202004e-14,
+      "pass": true
+    },
+    {
+      "reference": "J901",
+      "GLB_in_CAD_bounds_mm": [
+        [
+          38.03,
+          1.2999999999999972,
+          24.682100000000002
+        ],
+        [
+          46.97,
+          9.080000000000013,
+          28.9421
+        ]
+      ],
+      "source_CAD_bounds_mm": [
+        [
+          38.0299999,
+          1.2999999,
+          24.6821
+        ],
+        [
+          46.9700001,
+          9.08,
+          28.9421001
+        ]
+      ],
+      "max_delta_mm": 1.0000000116860974e-07,
+      "pass": true
+    },
+    {
+      "reference": "substrate",
+      "GLB_in_CAD_bounds_mm": [
+        [
+          34.01509,
+          1.2999999999999972,
+          24.0529
+        ],
+        [
+          80.4,
+          101.1,
+          25.5471
+        ]
+      ],
+      "source_CAD_bounds_mm": [
+        [
+          34.01509,
+          1.3,
+          24.0529
+        ],
+        [
+          80.4,
+          101.1,
+          25.5471
+        ]
+      ],
+      "max_delta_mm": 2.886579864025407e-15,
+      "pass": true
+    }
+  ],
+  "population": {
+    "populated_count": 148,
+    "exported_component_count": 142,
+    "missing_populated_visuals": [
+      "L101",
+      "L201",
+      "L701",
+      "U110",
+      "U111",
+      "U115"
+    ],
+    "unexpected_exported": [],
+    "dnp_references": [
+      "C503",
+      "C706",
+      "R602",
+      "R603",
+      "R604",
+      "R804"
+    ],
+    "dnp_exported": [],
+    "missing_visuals_details": [
+      {
+        "reference": "L101",
+        "value": "1u / 74437349010",
+        "MPN": "74437349010",
+        "datasheet": "https://www.we-online.com/components/products/datasheet/74437349010.pdf",
+        "footprint": "Trimix_Power:L_Wurth_74437349010_7050",
+        "side": "F.Cu",
+        "native_xy_mm": [
+          33.4,
+          97.98491
+        ],
+        "rotation_deg": 90.0,
+        "cad_xy_mm": [
+          63.9,
+          24.599999999999994
+        ],
+        "dnp": false,
+        "models": [],
+        "visual_reconstruction_required": true
+      },
+      {
+        "reference": "U110",
+        "value": "TUSB320LAIRWBR",
+        "MPN": "TUSB320LAIRWBR",
+        "datasheet": "https://www.ti.com/lit/ds/symlink/tusb320lai.pdf",
+        "footprint": "Package_DFN_QFN:Texas_X2QFN-12_1.6x1.6mm_P0.4mm",
+        "side": "F.Cu",
+        "native_xy_mm": [
+          45.1,
+          98.88491
+        ],
+        "rotation_deg": 0,
+        "cad_xy_mm": [
+          75.6,
+          23.69999999999999
+        ],
+        "dnp": false,
+        "models": [
+          "${KICAD10_3DMODEL_DIR}/Package_DFN_QFN.3dshapes/Texas_X2QFN-12_1.6x1.6mm_P0.4mm.step"
+        ],
+        "visual_reconstruction_required": true
+      },
+      {
+        "reference": "L201",
+        "value": "1.5u / XGL4030-152MEC",
+        "MPN": "XGL4030-152MEC",
+        "datasheet": "https://www.coilcraft.com/pdfs/xgl4030.pdf",
+        "footprint": "Trimix_Power:L_Coilcraft_XGL4030",
+        "side": "F.Cu",
+        "native_xy_mm": [
+          32.9,
+          87.27
+        ],
+        "rotation_deg": 180.0,
+        "cad_xy_mm": [
+          63.4,
+          35.31491
+        ],
+        "dnp": false,
+        "models": [
+          "${KICAD10_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_Coilcraft_XxL4030.step"
+        ],
+        "visual_reconstruction_required": true
+      },
+      {
+        "reference": "L701",
+        "value": "1u / XGL4020-102MEC",
+        "MPN": "XGL4020-102MEC",
+        "datasheet": "https://www.coilcraft.com/pdfs/xgl4020.pdf",
+        "footprint": "Trimix_Power:L_Coilcraft_XGL4020",
+        "side": "F.Cu",
+        "native_xy_mm": [
+          39.4,
+          72.13491
+        ],
+        "rotation_deg": -90.0,
+        "cad_xy_mm": [
+          69.9,
+          50.44999999999999
+        ],
+        "dnp": false,
+        "models": [
+          "${KICAD10_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_Coilcraft_XxL4020.step"
+        ],
+        "visual_reconstruction_required": true
+      },
+      {
+        "reference": "U111",
+        "value": "PI3USB9201ZTAEX",
+        "MPN": "PI3USB9201ZTAEX",
+        "datasheet": "https://www.diodes.com/datasheet/download/PI3USB9201.pdf",
+        "footprint": "Trimix_Power:PI3USB9201_UQFN2020_12_TypeC",
+        "side": "F.Cu",
+        "native_xy_mm": [
+          46.35,
+          95.53491
+        ],
+        "rotation_deg": 0,
+        "cad_xy_mm": [
+          76.85,
+          27.049999999999997
+        ],
+        "dnp": false,
+        "models": [],
+        "visual_reconstruction_required": true
+      },
+      {
+        "reference": "U115",
+        "value": "TPS259470ARPWR",
+        "MPN": "TPS259470ARPWR",
+        "datasheet": "https://www.ti.com/lit/ds/symlink/tps25947.pdf",
+        "footprint": "Trimix_Power:TI_RPW0010A",
+        "side": "B.Cu",
+        "native_xy_mm": [
+          34.4,
+          111.48491
+        ],
+        "rotation_deg": 0,
+        "cad_xy_mm": [
+          64.9,
+          11.099999999999994
+        ],
+        "dnp": false,
+        "models": [],
+        "visual_reconstruction_required": true
+      }
+    ],
+    "visual_reconstruction": {
+      "script": "media/renders/scripts/pcb_details.py",
+      "sha256": "08cc4ef8d81b51f78d843f6187795671d4ff53afe7b84ee26743fd9884e9f5e6",
+      "component_references": [
+        "L101",
+        "L201",
+        "L701",
+        "U110",
+        "U111",
+        "U115"
+      ],
+      "source_contract": "hardware/system-review/electrical/component-height-contract.json",
+      "source_contract_sha256": "2dbf87fafac4ef4af2d5a84798795dcd0ae62094594c706bf992e0620abb0904",
+      "status": "Blender factory-startup generation tested successfully; six package bodies and detail objects",
+      "limitation": "Dimension-based appearance reconstructions, not vendor CAD. Top inductance typography illustrative. Body dimensions exclude assembly clearance allowances. Placement uses current KiCad coordinates, not historical contract poses."
+    },
+    "total_component_visuals_with_reconstructions": 148
+  },
+  "output_sha256": {
+    "geometry.json": "21a46207f0c1d6b1fbd43ace41c91f5d69c7d311fae4ce509e4f8b080051cdd3",
+    "pcb.glb": "853889b0f377d539db0898de95a0f51ebda3c39592a54d102b2b9b66c8d711eb"
+  }
+}

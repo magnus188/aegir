@@ -25,9 +25,9 @@ The runes ᛅᛁᚾ are a Viking Age-style representation of einn, Old Norse for
 
 ## Device design
 
-<img src="media/aegir-device-concept-render.png" alt="Concept render of the Ægir handheld trimix analyzer with a black 3D-printed case, white logo, plastic gas fittings and portrait touchscreen" width="420">
+<img src="media/renders/aegir-portrait.png" alt="CAD-based render of the current Ægir prototype: black printed enclosure, flush white Ægir symbol and runes, side gas fitting and illuminated power button, with the live-analysis simulator on its portrait touchscreen" width="520">
 
-*Concept render of the proposed enclosure and interface.*
+*CAD-based render of the current prototype with the simulator’s live-analysis screen.*
 
 ## PCB and enclosure
 
@@ -35,7 +35,9 @@ The current prototype uses one PCB with a bottom-facing GCT USB4105-GF-A
 USB-C connector. The matching enclosure retains the protected battery holder
 and adds support around the connector.
 
-<img src="hardware/cad/pcb-v2-bottom/views/usb-bottom-open.png" alt="Current enclosure with integrated PCB and bottom USB-C support" width="420">
+<img src="media/renders/aegir-exploded.png" alt="Exploded CAD-based render showing the enclosure, display assembly, two-cell battery holder, populated KiCad PCB with bottom USB-C, sensor manifold, reconstructed sensors, rear cover and fasteners" width="960">
+
+*Exploded prototype render using the actual KiCad board and reference-based sensor models. Sensor appearance and some purchased-module details are reconstructed; see the [render notes](media/renders/RENDER-NOTES.txt).*
 
 Open the [KiCad project](hardware/pcb/analyzer-v2-bottom/Trimix_Analyzer.kicad_pro)
 and [Fusion model](hardware/cad/pcb-v2-bottom/Trimix_Enclosure_PCB2_Bottom.f3d).

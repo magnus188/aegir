@@ -1,0 +1,56 @@
+{
+  "purpose": "Render-only registered photo texture and geometric display detail",
+  "sources": {
+    "hardware/system-review/integration-photo/IMG_0571.png": "867f6220b1a6c27a98dfface8bef685d9fbe23a2dc351ea9fc20ac13ca1dda81",
+    "hardware/system-review/integration-photo/registration.json": "2388f4c147c8191b0a32a7873efc5265c07cfcdbca2005ae39bb1a8ac589ed96",
+    "software/firmware/docs/screenshots/analysis-live.png": "8ea51abc3c40931444a54a9f151f0305eb1b844a6382dfc1222906300815e5fc",
+    "hardware/system-review/integration-photo/guition-manufacturer/JC4880P443C_I_W_Y.pdf": "718103eacead0a0d3337b49368872c8e8673c80fd79ca476521e2729cf74eecc"
+  },
+  "manufacturer_source_url": "https://pan.jczn1688.com/directlink/1/HMI%20display/JC4880P443C_I_W.zip",
+  "source_photo": "Owner photograph; original EXIF orientation applied before rectification",
+  "registration": "Existing four-hole 60 x 108 mm registration; no purchased-component rescaling",
+  "rear_texture_local_bounds_mm": [
+    5.2,
+    16.0,
+    64.4,
+    101.7
+  ],
+  "rear_texture_size_px": [
+    1421,
+    2057
+  ],
+  "assembly_offset_xy_mm": [
+    7.85,
+    5.2
+  ],
+  "screen_bounds_mm": [
+    14.42,
+    16.8,
+    70.58,
+    110.4
+  ],
+  "screen_surface_z_mm": 0.38,
+  "screen_aspect": "480:800 mapped to 56.16:93.6 mm without stretch or crop",
+  "cad_leaves_to_hide": [
+    "TMX-A3-C01-V03",
+    "TMX-A3-C01-V04"
+  ],
+  "cad_leaves_to_keep": [
+    "TMX-A3-C01-V01",
+    "TMX-A3-C01-V02"
+  ],
+  "geometry": "PCB perimeter, shield, microSD shell, USB shells, JST connectors, FPC connectors and header locations sampled from registered owner photograph",
+  "depth_assumptions_mm": {
+    "PCB": [
+      8.0,
+      9.2
+    ],
+    "header_tip": 13.8
+  },
+  "limitations": [
+    "Board/component Z is illustrative; original PCB plane is unmeasured.",
+    "Raised components in the source photograph retain residual parallax.",
+    "Photo texture includes photographic lighting and fine component detail.",
+    "No unverified inter-board harness is rendered."
+  ]
+}

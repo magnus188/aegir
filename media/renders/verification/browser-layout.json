@@ -1,0 +1,17 @@
+{
+  "method": "Browser screenshots of locally rendered README image sections, using GitHub-style responsive image constraints",
+  "desktop_content_width_px": 920,
+  "mobile_iframe_viewport_width_px": 390,
+  "portrait_fits": true,
+  "exploded_fits": true,
+  "captions_wrap": true,
+  "horizontal_overflow_observed": false,
+  "screenshot_evidence": [
+    "build/render-review/readme-desktop.png",
+    "build/render-review/readme-mobile.png"
+  ],
+  "images": {
+    "aegir-portrait.png": "97b5c144c4b16c4af62d20b265dc8aae605cdddadb2aa72627eb274bce3bef88",
+    "aegir-exploded.png": "736b2368c3ed86ba2aa4db329870acb90ab182ccd2cadc3eeb27831884a9d0ae"
+  }
+}
