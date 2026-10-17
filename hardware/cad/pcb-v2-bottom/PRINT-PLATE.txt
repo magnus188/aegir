@@ -1,21 +1,37 @@
 Gjeldende printplate: Trimix_PCB2_Bottom_H2D.3mf
 
-Én plate med alle ni gjeldende plastdeler, én av hver. Prosjektet bruker
-Bambu Lab H2D med 0,4 mm dyse, venstre ekstruder, 0,16 mm lag og Bambu PLA Basic.
-Dette materialoppsettet er for en mekanisk passformprototype.
+Én H2D-plate med ni fysiske plastdeler, én av hver. Prosjektet bruker
+0,4 mm dyse, 0,16 mm lag og to farger Bambu PLA Basic. P01-huset består
+av sju materialvolumer: hovedhuset i farge 1 og seks hvite logo-/runelegemer
+i farge 2. De skrives samlet som én fysisk del. Filament 1 er grått og
+filament 2 hvitt. Manuell dysetildeling bruker grått på venstre 0,4 mm
+dyse og hvitt på høyre 0,4 mm dyse; grått skrives først på første lag.
+Prime tower er aktivert for fargeskiftene. Dette er et rensetårn,
+ikke støttemateriale.
 
-Hus, lokk og smådeler er orientert på stabile flater. USB-holderen ligger med
-sin svakt skrånende frontflate mot platen. Støtte er aktivert for huset,
-lokket og USB-holderen. Manifolden har støtte aktivert med tre sperrevolumer
-som holder støtteplast ute av gasskanalene. De øvrige delene har støtte av.
-Det er satt 4 mm utvendig brim. Alle deler og denne brim-reserven ligger
-innenfor venstre ekstruders arbeidsområde uten innbyrdes overlapp.
+Ægir-symbolet og runene ligger i flukt med fronten over berøringsskjermen.
+Det er ingen fordypning eller forhøyning. Fargelegemene fyller 0,48 mm
+inn i fronten og gjenoppretter den opprinnelige flate overflaten og
+nominelt 2,4 mm samlet frontvegg ved logoen.
 
-STL-filene er uendret. De ni innebygde modellene er sammenlignet med disse;
-alle er lukkede enkeltlegemer. Bambu Studio 02.08.02.61 har lastet prosjektet
-uten feil. Detaljert kontroll finnes i verification/print-bed.json.
+Normal automatisk støtte med snug-profil er aktivert for hovedhuset
+(P01), gassmanifolden (P07) og USB-holderen (P12), og deaktivert for de
+seks øvrige delene. Støtte og støttegrensesnitt bruker grått filament 1.
+De tre opprinnelige sperrevolumene ved gasskanalene er aktive.
+Det flate logoområdet har ingen støttesperre eller støttestrenger.
+Delenes geometri, plassering og 4 mm utvendig brim er beholdt.
+Støttefri utforming av innvendige fester, gassmanifold og USB-holder
+utsettes til neste designrevisjon (v2).
 
-Prosjektet er USLICET og inneholder ingen G-kode. Åpne som prosjekt i Bambu
-Studio, kontroller printer/materiale og støtteplasseringen, og inspiser den
-lagvise forhåndsvisningen etter slicing før utskrift. Ingen utskrift er sendt.
-Dette bekrefter ikke fysisk styrke, varmebestandighet, tetthet eller funksjon.
+Bruk dette 3MF-prosjektet for tofarget utskrift. TMX-A3-P01.stl er
+den opprinnelige flate, enfargede reservemodellen. Den inneholder ikke
+logoens fargeinndeling. STEP og Fusion inneholder de separate fargelegemene.
+Detaljert kontroll finnes i verification/print-bed.json.
+
+Prosjektet er USLICET og inneholder ingen G-kode. Åpne som prosjekt i
+Bambu Studio, kontroller filamentfargene og inspiser lagvis forhåndsvisning
+etter slicing før utskrift. Ingen utskrift er sendt. Dette bekrefter
+ikke fysisk styrke, varmebestandighet, tetthet eller funksjon.
+
+Bambu Studio har lastet og slicet den oppdaterte tofargeplaten i en separat
+kontroll. Den leverte prosjektfilen er fortsatt uslicet.

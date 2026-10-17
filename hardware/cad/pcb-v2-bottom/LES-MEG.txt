@@ -27,6 +27,13 @@ Fabrikken må vurdere de nye produksjonsfilene og bekrefte prosess og pris.
 ENDRINGER I KABINETTET
 P01 hovedhus: nytt kortfeste, lokal USB-understøtte, to fester for USB-
 støtten og en innvendig kanal som gjør at kortet kan løftes ut bakover.
+Oppdatert 17. oktober 2026: Ægir-symbolet med de opprinnelige runene under
+ligger som et hvitt tofargemotiv i flukt med fronten over berøringsskjermen.
+Fronten har ingen fordypning eller forhøyning. Seks separate fargelegemer
+fyller de tidligere 0,48 mm dype utsparingene; samlet frontvegg er igjen
+nominelt 2,4 mm. Symbolet er 36 mm høyt; runene er 7 mm med 2 mm mellomrom.
+Bruk 3MF-prosjektet for tofarget utskrift. TMX-A3-P01.stl er den opprinnelige,
+flate enfargede reservemodellen; STL-formatet inneholder ingen fargeinndeling.
 P02 baklokk: nedre høyre lokkfeste følger nå lokket og skrus fra siden.
 Gammel USB-nøkkel fjernes. Batteriets støtteflater beholdes.
 P03 kortramme: justert for kortets nye plassering og høyde, med åpninger
@@ -108,8 +115,9 @@ ladefunksjonen og batteribeskyttelsen er ikke endret elektrisk her.
 
 FILER OG KONTROLLSPOR
 Trimix_Enclosure_PCB2_Bottom.step er den samlede modellen med elektronikk.
-F3D-versjonen er importert fra den samme STEP-modellen og inneholder
-redigerbare legemer, men ikke den opprinnelige parametriske Fusion-tidslinjen.
+F3D-versjonen er eksportert fra det eksisterende Fusion-dokumentet etter
+logotillegget. Importerte legemer og de separate fargelegemene er redigerbare;
+den opprinnelige parametriske modellhistorikken er ikke gjenopprettet.
 Tidligere modeller og genereringsskript er bevart i Git-historikken
 (commit 1fada5c). Bare gjeldende design ligger i den aktive filmappen.
 Kontroller filpakken med python3 hardware/verify_current.py fra repo-roten.
@@ -119,14 +127,21 @@ modell-erstatninger med høydegrenser og alle 52 reserver for loddepinner.
 verification/mechanical-interfaces-independent.json: støtteflater, korttykkelse,
 skruer/verktøy, batteriklaring og sammenhengende demonteringsbaner.
 verification/delivery-checks.json: bevaring av batteri-/kildedeler og ni STL-filer.
-verification/final-delivery.json: filversjonene som disse kontrollene gjelder.
-Build-report er en rapport fra byggetrinnet; sluttkontrollene ovenfor avgjør
-leveransestatusen. Ni STL-filer, batteribevaring og tre sammenhengende
-demonteringsbaner består kontrollene. PCB: 0 DRC-feil, 0 luftlinjer,
-0 skjemaavvik; 44/44 CAM- og 13/13 prosesskontroller består.
-views/: bilder rendret fra de faktiske STEP-legemene.
+verification/final-delivery.json: gjeldende filer og koblingen til tidligere
+kontroller. De opprinnelige passform-, batteri- og demonteringskontrollene
+gjelder modellen før logoen og er ikke kjørt på nytt. delivery-checks.json
+har en egen logo_revision med kontrollene av tofargemotivet og nye eksportfiler.
+Build-report er historisk dokumentasjon fra byggetrinnet. PCB-kontrollene
+er uendret: 0 DRC-feil, 0 luftlinjer og 0 skjemaavvik; 44/44 CAM- og
+13/13 prosesskontroller. views/: historiske STEP-bilder fra før logoen.
 
 PCB-prosjekt og egne produksjonsfiler ligger i hardware/pcb/analyzer-v2-bottom.
 Bruk komponent-/plasseringslistene og hullbehandlingsnotatene der sammen.
 De nye filene er et prototypegrunnlag. Leverandørens gjennomgang av USB-
 fotavtrykk, loddeprosess, hullfylling og sjablong kreves før produksjon.
+
+Støtte er aktivert for hovedhuset (P01), gassmanifolden (P07) og USB-holderen
+(P12), og deaktivert for de seks øvrige delene. De tre opprinnelige
+sperrevolumene ved gasskanalene er aktive. Geometri og plassering er beholdt.
+Støttefri utforming av innvendige fester, gassmanifold og USB-holder
+utsettes til neste designrevisjon (v2).

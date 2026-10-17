@@ -1304,5 +1304,221 @@
     "World support/edge/vertex signatures use 1e-6 mm rounding; sampled boundary acceptance is 0.001 mm and is not a continuous surface maximum proof.",
     "Adaptive integrated area/volume must agree within 1 ppm. Only P07 permits its explicitly measured tiny secondary topology split.",
     "Nine delivered STL meshes are independently watertight, one body and positive volume; this does not qualify the STEP manifold for production."
-  ]
+  ],
+  "historical_baseline_scope": "Original audit fields apply to the pre-logo assembly in input_sha256. They were not rerun. The current logo_revision separately verifies a flush two-color material partition; the prior recessed revision is superseded.",
+  "logo_revision": {
+    "timestamp_utc": "2026-10-17T19:07:52.229627+00:00",
+    "pass": true,
+    "description": "Flush Ægir symbol and original runes in a second color above the touchscreen; no indentation or raised surface",
+    "surface_style": "flush two-color",
+    "current_file_sha256": {
+      "hardware/cad/pcb-v2-bottom/Trimix_Enclosure_PCB2_Bottom.step": "173750f89553b3fef11542b1d6b826d4e7e63e62748cea5a6bd0b0b35355d005",
+      "hardware/cad/pcb-v2-bottom/Trimix_Enclosure_PCB2_Bottom.f3d": "2dbd805d20afcca4fab13e8883267318fac01551bdf7e2c61d52e176165050c0",
+      "hardware/cad/pcb-v2-bottom/parts/TMX-A3-P01.step": "ab11047b0d93890d45898b4c1ba55717d05de5769397a39e12df8ac7d835a4a5",
+      "hardware/cad/pcb-v2-bottom/parts/TMX-A3-P01.stl": "21890698717489bd315cbfe349e2c6e61ef5399bca3775139c74128f3556b4a9",
+      "hardware/cad/pcb-v2-bottom/Trimix_PCB2_Bottom_H2D.3mf": "d2ceb05f07092014c2bdfaf18795386627b89c98269ba54c9fb35118329f7ddd"
+    },
+    "baseline_assembly_sha256": "cd3415fa71f6ea861aad5431b4af8b44af02217d2e5b17a71d7bb2bab0160402",
+    "artwork_source_sha256": {
+      "logo/aegir-mark.svg": "61cae0303d2d77fcebfa243284d32473475f34d0c299f65d961212a20440ba02",
+      "logo/aegir-v1-wordmark.svg": "927c248223732473d5676fc29796926014d4e8c08ebe57cfb96839641a8822dc"
+    },
+    "symbol_topology": {
+      "outer_contours": 1,
+      "holes_in_outer_contour": 5,
+      "separate_filled_islands": 2
+    },
+    "rune_sequence": "ᛅᛁᚾ",
+    "native_verification": {
+      "bodies": [
+        {
+          "name": "Aegir symbol 1 - flush white",
+          "volume_mm3": 259.04563200000007,
+          "bounds_mm": [
+            [
+              27.72,
+              137.5,
+              0.0
+            ],
+            [
+              57.28,
+              173.5,
+              0.48
+            ]
+          ],
+          "is_solid": true,
+          "color": "#FFFFFF",
+          "filament": 2,
+          "source_export_basename": "logo-1.stl",
+          "source_export_sha256": "f3630eae13a0e9bfafd14ec8ee480b35c304fd525dc6c0dd27a8962673be5ff6"
+        },
+        {
+          "name": "Aegir symbol 2 - flush white",
+          "volume_mm3": 14.76710399999998,
+          "bounds_mm": [
+            [
+              48.040000000000006,
+              140.98,
+              0.0
+            ],
+            [
+              53.480000000000004,
+              151.34,
+              0.48
+            ]
+          ],
+          "is_solid": true,
+          "color": "#FFFFFF",
+          "filament": 2,
+          "source_export_basename": "logo-2.stl",
+          "source_export_sha256": "cc1a6fb7372ba9ca6cb57fbb3d4ce4340d3b059f3b6e0c44a649d6ec8644b21d"
+        },
+        {
+          "name": "Aegir symbol 3 - flush white",
+          "volume_mm3": 14.833920000000013,
+          "bounds_mm": [
+            [
+              31.520000000000003,
+              140.94,
+              0.0
+            ],
+            [
+              37.0,
+              151.34,
+              0.48
+            ]
+          ],
+          "is_solid": true,
+          "color": "#FFFFFF",
+          "filament": 2,
+          "source_export_basename": "logo-3.stl",
+          "source_export_sha256": "f473bce1618bca2fb0acf2df7b44c77fc6e87f50164cb1c4acdb19d5822dae9f"
+        },
+        {
+          "name": "Aegir runes 1 - flush white",
+          "volume_mm3": 4.545370666666693,
+          "bounds_mm": [
+            [
+              44.833333333333336,
+              128.5,
+              0.0
+            ],
+            [
+              49.733333333333334,
+              135.5,
+              0.48
+            ]
+          ],
+          "is_solid": true,
+          "color": "#FFFFFF",
+          "filament": 2,
+          "source_export_basename": "logo-4.stl",
+          "source_export_sha256": "4d48c03baadca977e0efbe1d6f6d2eeb92d60e857388eb5f807b49b2663c9083"
+        },
+        {
+          "name": "Aegir runes 2 - flush white",
+          "volume_mm3": 2.7440000000000153,
+          "bounds_mm": [
+            [
+              42.03333333333333,
+              128.5,
+              0.0
+            ],
+            [
+              42.85,
+              135.5,
+              0.48
+            ]
+          ],
+          "is_solid": true,
+          "color": "#FFFFFF",
+          "filament": 2,
+          "source_export_basename": "logo-5.stl",
+          "source_export_sha256": "6913ea0642e65849163fc79f3a0e45df2a049c444e9124113dddf815993f4a84"
+        },
+        {
+          "name": "Aegir runes 3 - flush white",
+          "volume_mm3": 4.545370666666694,
+          "bounds_mm": [
+            [
+              35.266666666666666,
+              128.5,
+              0.0
+            ],
+            [
+              40.166666666666664,
+              135.5,
+              0.48
+            ]
+          ],
+          "is_solid": true,
+          "color": "#FFFFFF",
+          "filament": 2,
+          "source_export_basename": "logo-6.stl",
+          "source_export_sha256": "ebc826487140ab63ab4793f7fef4c80dba44234649d3452dd000493af14d510a"
+        }
+      ],
+      "logo_body_count": 6,
+      "base_volume_mm3": 98572.81642406955,
+      "insert_volume_mm3": 300.48139733333346,
+      "flush_front_z_mm": 0,
+      "insert_depth_mm": 0.48,
+      "front_wall_total_mm": 2.4,
+      "unchanged_other_component_count": 200,
+      "pass": true,
+      "original_geometry_union_pass": true,
+      "union_volume_mm3": 98873.29782140287,
+      "original_volume_mm3": 98873.29782140287,
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0,
+      "union_bounds_mm": [
+        [
+          0.0,
+          -9.633808798481525e-06,
+          0.0
+        ],
+        [
+          85.0,
+          180.0,
+          40.60000000000001
+        ]
+      ],
+      "roundtrip_body_count": 291,
+      "roundtrip_max_relative_volume_error": 0.0004811215125728602,
+      "roundtrip_max_relative_area_error": 5.8429755710386344e-05,
+      "roundtrip_max_bound_error_mm": 0.00017241344863805352,
+      "comparison_accuracy": "VeryHighCalculationAccuracy",
+      "tolerances": {
+        "relative_volume": 0.001,
+        "relative_area": 0.0002,
+        "bounds_mm": 0.001
+      },
+      "current_file_sha256": {
+        "hardware/cad/pcb-v2-bottom/Trimix_Enclosure_PCB2_Bottom.f3d": "2dbd805d20afcca4fab13e8883267318fac01551bdf7e2c61d52e176165050c0",
+        "hardware/cad/pcb-v2-bottom/Trimix_Enclosure_PCB2_Bottom.step": "173750f89553b3fef11542b1d6b826d4e7e63e62748cea5a6bd0b0b35355d005",
+        "hardware/cad/pcb-v2-bottom/parts/TMX-A3-P01.step": "ab11047b0d93890d45898b4c1ba55717d05de5769397a39e12df8ac7d835a4a5"
+      }
+    },
+    "Fusion_cloud_save": {
+      "file_id": "urn:adsk.wipprod:dm.lineage:fsvCfrZHSCeCk8VTjjdzfA",
+      "name": "Trimix_Enclosure_PCB2_Bottom v3",
+      "version": 3,
+      "saved": true,
+      "existing_design_updated": true
+    },
+    "Bambu_project_evidence": "hardware/cad/pcb-v2-bottom/verification/print-bed.json",
+    "single_color_STL_fallback": {
+      "file": "hardware/cad/pcb-v2-bottom/parts/TMX-A3-P01.stl",
+      "sha256": "21890698717489bd315cbfe349e2c6e61ef5399bca3775139c74128f3556b4a9",
+      "description": "Original flat monolithic P01 shape. STL cannot encode the color partition; use the existing 3MF for the two-color logo."
+    },
+    "scope": "Color-body geometry, restored flat union and exported multipart print project. Original full fit/load-path/removal audits remain historical baseline evidence."
+  },
+  "superseded_logo_revision": {
+    "timestamp_utc": "2026-10-17T18:47:15.910666+00:00",
+    "surface_style": "recessed engraving",
+    "Fusion_version": 2,
+    "assembly_sha256": "75f84355c0b855f68c8d65b4a7ec33a8c89f2a669264f3ee20b50d36ef0af961",
+    "status": "Superseded by flush two-color construction; full previous evidence remains in Git/Fusion version history."
+  }
 }

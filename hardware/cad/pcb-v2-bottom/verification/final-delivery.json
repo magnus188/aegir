@@ -1,9 +1,9 @@
 {
   "timestamp_utc": "2026-10-15T19:36:04.302376+00:00",
-  "status": "Completed PCB layout and CAD prototype; independent digital checks passed",
+  "status": "Current CAD prototype with flush two-color Ægir symbol/runes; current color-body checks passed, historical baseline audits retained",
   "production_release": false,
   "board_sha256": "59a0be0876394c670bd6c852033312527ccf9a4e02e94ac0437080b83f57085c",
-  "assembly_sha256": "cd3415fa71f6ea861aad5431b4af8b44af02217d2e5b17a71d7bb2bab0160402",
+  "assembly_sha256": "173750f89553b3fef11542b1d6b826d4e7e63e62748cea5a6bd0b0b35355d005",
   "preserved_sources": {
     "design_sources": {
       "files_checked": 18,
@@ -36,24 +36,26 @@
   "reports": {
     "hardware/cad/pcb-v2-bottom/verification/electronics-fit-independent.json": "5972234ab5dda97eee956f5a3bf579d7deae71d4f14707ff63b8754a37c3fc87",
     "hardware/cad/pcb-v2-bottom/verification/mechanical-interfaces-independent.json": "34b2b00ccf5f3e93d22deb939a47ded6c4d9acca8af79d95b869defb02a93b5e",
-    "hardware/cad/pcb-v2-bottom/verification/delivery-checks.json": "7ca26772a8b1953c6d510b03e990d7708edfcdeb53d213c38bbc857f15a144b6",
+    "hardware/cad/pcb-v2-bottom/verification/delivery-checks.json": "9f3cd58a8efb931e6d24e2047b9a61260ee12a10eda16d9b16201a78d1cecc33",
     "hardware/pcb/analyzer-v2-bottom/reference/verification/bottom-invariants.json": "bf53e1efda35fc7acdaa266351786bb1c7839c893b927df2537f622806aac0c1",
     "hardware/pcb/analyzer-v2-bottom/reference/verification/usb-path-review.json": "ea5ac483cb1a2a94d71f6cc8c4a8c1eb39559295c0f24c98c124abefaa1b850e",
     "hardware/pcb/analyzer-v2-bottom/manufacturing/independent-cam/audit.json": "b85d9ec23aabbf1e78e0f1a34d248d5bd0a722c1abcfb7f3cd5511e37508836e",
     "hardware/pcb/analyzer-v2-bottom/manufacturing/cam-process-checks.json": "d35c1b21a1f414892ed22189d5e1454cf5eb2f339ee2f187f2ac252e618fbe87",
-    "hardware/cad/pcb-v2-bottom/verification/print-bed.json": "629bacd7b35315d31967b61e1661199f061fc8d1a7962e42addb66e85129afed"
+    "hardware/cad/pcb-v2-bottom/verification/print-bed.json": "72c6f8a79a0eb822f9bfc72fdd6721b63da20f8011a371380e933e9018339574"
   },
   "native_Fusion_export": {
-    "method": "Local STEP opened in Fusion UI and exported as Autodesk Fusion Archive",
-    "source_assembly_sha256": "cd3415fa71f6ea861aad5431b4af8b44af02217d2e5b17a71d7bb2bab0160402",
-    "sha256": "0a07345f4647d66639d1f0e1480142ff395b2ed6a55ef118306c9a299459f2cc",
+    "method": "Existing Fusion document updated with six separate flush white logo bodies filling the previous recess; exported to existing F3D and STEP filenames",
+    "cloud_file_id": "urn:adsk.wipprod:dm.lineage:fsvCfrZHSCeCk8VTjjdzfA",
+    "version": 3,
+    "source_assembly_sha256": "173750f89553b3fef11542b1d6b826d4e7e63e62748cea5a6bd0b0b35355d005",
+    "sha256": "2dbd805d20afcca4fab13e8883267318fac01551bdf7e2c61d52e176165050c0",
     "zip_integrity_pass": true,
-    "archive_members": 431,
+    "archive_members": 428,
     "editable_BREP": true,
     "original_parametric_timeline": false,
-    "scope": "Native export lineage and archive integrity checked; no independent F3D BREP roundtrip audit"
+    "scope": "Native color-body/union checks are recorded in logo_revision; no renewed complete mechanical qualification."
   },
-  "build_report_note": "Build-stage pending status is superseded by the exact-assembly independent reports above.",
+  "build_report_note": "Build report and original independent fit/removal reports remain historical baseline evidence; the current logo_revision covers the flush material partition and exports.",
   "limitations": [
     "Supplier footprint, short USB shell-stake soldering, selected fill/cap holes and matched stencil review pending.",
     "Physical USB insertion/extraction/side load, screw/insert retention and print tolerances require prototype testing.",
@@ -63,16 +65,16 @@
   ],
   "artifacts": {
     "hardware/cad/pcb-v2-bottom/Trimix_Enclosure_PCB2_Bottom.step": {
-      "sha256": "cd3415fa71f6ea861aad5431b4af8b44af02217d2e5b17a71d7bb2bab0160402",
-      "bytes": 32544281
+      "sha256": "173750f89553b3fef11542b1d6b826d4e7e63e62748cea5a6bd0b0b35355d005",
+      "bytes": 13330787
     },
     "hardware/cad/pcb-v2-bottom/Trimix_Enclosure_PCB2_Bottom.f3d": {
-      "sha256": "0a07345f4647d66639d1f0e1480142ff395b2ed6a55ef118306c9a299459f2cc",
-      "bytes": 7667431
+      "sha256": "2dbd805d20afcca4fab13e8883267318fac01551bdf7e2c61d52e176165050c0",
+      "bytes": 8279466
     },
     "hardware/cad/pcb-v2-bottom/Trimix_PCB2_Bottom_PrintParts.zip": {
-      "sha256": "8bccb51a93530dc6b775f8302342d705fd46f5d703cdc783d0353a46a76b2781",
-      "bytes": 1706924
+      "sha256": "bb25edf2bda50cdb7ee528a4e760e698b9038e8af909bddd46275199c0ff2a90",
+      "bytes": 1626893
     },
     "hardware/pcb/analyzer-v2-bottom/manufacturing/Trimix_PCB_2_0_BOTTOM_QUOTE_ONLY.zip": {
       "sha256": "4609aa368c7bf6db33b66d4c284c8287dccaa7590e3ae8208b48a5c2b615b043",
@@ -87,8 +89,8 @@
       "bytes": 17887
     },
     "hardware/cad/pcb-v2-bottom/LES-MEG.txt": {
-      "sha256": "5fd1a298c2d2cb6162a1d565af0b2433a86648755dc29f8e5d6a1128d0b9d4ba",
-      "bytes": 8067
+      "sha256": "b19771012be505d974ac37945bdea17ee30317b5515a7261885e80ca7957d9b8",
+      "bytes": 9129
     },
     "hardware/pcb/analyzer-v2-bottom/LES-MEG.txt": {
       "sha256": "97f00b4c195e472a8ffcbc60c26772efc9af098986afe17f52483b81f7cf90fe",
@@ -99,8 +101,8 @@
       "bytes": 5330101
     },
     "hardware/cad/pcb-v2-bottom/parts/TMX-A3-P01.step": {
-      "sha256": "87594925ca9c36f81a96327c27e5e8c8cc099ebd7fa74adc53a7203bc88f1e2a",
-      "bytes": 794025
+      "sha256": "ab11047b0d93890d45898b4c1ba55717d05de5769397a39e12df8ac7d835a4a5",
+      "bytes": 821244
     },
     "hardware/cad/pcb-v2-bottom/parts/TMX-A3-P01.stl": {
       "sha256": "21890698717489bd315cbfe349e2c6e61ef5399bca3775139c74128f3556b4a9",
@@ -167,15 +169,83 @@
       "bytes": 77122
     },
     "hardware/cad/pcb-v2-bottom/Trimix_PCB2_Bottom_H2D.3mf": {
-      "sha256": "14d5f407815675c0982ebf0c28783b0c73b8fe6c18b63a21638169ca176d63c2",
-      "bytes": 791391
+      "sha256": "d2ceb05f07092014c2bdfaf18795386627b89c98269ba54c9fb35118329f7ddd",
+      "bytes": 710675
     },
     "hardware/cad/pcb-v2-bottom/PRINT-PLATE.txt": {
-      "sha256": "088dfa1e1815b3c226f11aa6ae46548b13a609051a8a77ec59fcab31425b54c4",
-      "bytes": 1261
+      "sha256": "ee31309a8c0988e7ccd6d5681a0781c6c6a79de753ae0ba7c318f12d13c2396a",
+      "bytes": 2062
     }
   },
   "current_file_manifest": "hardware/current-hardware-manifest.json",
-  "package_updated_utc": "2026-10-15T19:49:32.018687+00:00",
-  "print_project_status": "One H2D plate, nine current parts; Bambu load checked, unsliced and no G-code."
+  "package_updated_utc": "2026-10-17T19:07:52.229627+00:00",
+  "print_project_status": "One H2D plate, nine physical parts, two colors on left/right nozzles; P01 has seven material meshes; supports enabled only for P01/P07/P12 with the original three manifold blockers active; delivered editable project unsliced with no G-code. Current Bambu loading and separate slicing checked.",
+  "historical_baseline_audit": {
+    "timestamp_utc": "2026-10-15T19:36:04.302376+00:00",
+    "status": "Completed PCB layout and CAD prototype; independent digital checks passed",
+    "assembly_sha256": "cd3415fa71f6ea861aad5431b4af8b44af02217d2e5b17a71d7bb2bab0160402",
+    "checks": {
+      "native_DRC_violations": 0,
+      "unconnected_items": 0,
+      "schematic_parity": 0,
+      "PCB_preservation": "28/28",
+      "USB_paths": "7/7",
+      "CAM": "44/44",
+      "CAM_process": "13/13",
+      "case_static_fit": true,
+      "continuous_removal_paths": 3,
+      "valid_print_meshes": 9
+    },
+    "reports": {
+      "hardware/cad/pcb-v2-bottom/verification/electronics-fit-independent.json": "5972234ab5dda97eee956f5a3bf579d7deae71d4f14707ff63b8754a37c3fc87",
+      "hardware/cad/pcb-v2-bottom/verification/mechanical-interfaces-independent.json": "34b2b00ccf5f3e93d22deb939a47ded6c4d9acca8af79d95b869defb02a93b5e",
+      "hardware/cad/pcb-v2-bottom/verification/delivery-checks.json": "7ca26772a8b1953c6d510b03e990d7708edfcdeb53d213c38bbc857f15a144b6",
+      "hardware/pcb/analyzer-v2-bottom/reference/verification/bottom-invariants.json": "bf53e1efda35fc7acdaa266351786bb1c7839c893b927df2537f622806aac0c1",
+      "hardware/pcb/analyzer-v2-bottom/reference/verification/usb-path-review.json": "ea5ac483cb1a2a94d71f6cc8c4a8c1eb39559295c0f24c98c124abefaa1b850e",
+      "hardware/pcb/analyzer-v2-bottom/manufacturing/independent-cam/audit.json": "b85d9ec23aabbf1e78e0f1a34d248d5bd0a722c1abcfb7f3cd5511e37508836e",
+      "hardware/pcb/analyzer-v2-bottom/manufacturing/cam-process-checks.json": "d35c1b21a1f414892ed22189d5e1454cf5eb2f339ee2f187f2ac252e618fbe87",
+      "hardware/cad/pcb-v2-bottom/verification/print-bed.json": "629bacd7b35315d31967b61e1661199f061fc8d1a7962e42addb66e85129afed"
+    },
+    "native_Fusion_export": {
+      "method": "Local STEP opened in Fusion UI and exported as Autodesk Fusion Archive",
+      "source_assembly_sha256": "cd3415fa71f6ea861aad5431b4af8b44af02217d2e5b17a71d7bb2bab0160402",
+      "sha256": "0a07345f4647d66639d1f0e1480142ff395b2ed6a55ef118306c9a299459f2cc",
+      "zip_integrity_pass": true,
+      "archive_members": 431,
+      "editable_BREP": true,
+      "original_parametric_timeline": false,
+      "scope": "Native export lineage and archive integrity checked; no independent F3D BREP roundtrip audit"
+    },
+    "scope": "Original electrical/mechanical audit results for the pre-logo assembly; no repeat of those complete audits is claimed."
+  },
+  "checks_scope": "The checks field records original baseline audits. Current flush two-color checks are recorded in delivery-checks.json#logo_revision and print-bed.json; recessed engraving evidence is superseded.",
+  "logo_revision": {
+    "timestamp_utc": "2026-10-17T19:07:52.229627+00:00",
+    "pass": true,
+    "surface_style": "flush two-color",
+    "report": "hardware/cad/pcb-v2-bottom/verification/delivery-checks.json",
+    "baseline_assembly_sha256": "cd3415fa71f6ea861aad5431b4af8b44af02217d2e5b17a71d7bb2bab0160402",
+    "current_assembly_sha256": "173750f89553b3fef11542b1d6b826d4e7e63e62748cea5a6bd0b0b35355d005",
+    "same_existing_delivery_filenames": true,
+    "supports_enabled_for_selected_parts_by_explicit_user_request": [
+      "TMX-A3-P01",
+      "TMX-A3-P07",
+      "TMX-V2-P12"
+    ],
+    "Fusion_cloud_save": {
+      "file_id": "urn:adsk.wipprod:dm.lineage:fsvCfrZHSCeCk8VTjjdzfA",
+      "name": "Trimix_Enclosure_PCB2_Bottom v3",
+      "version": 3,
+      "saved": true,
+      "existing_design_updated": true
+    }
+  },
+  "baseline_views": {
+    "scope": "Existing USB views intentionally retained as historical pre-logo views; not renders of the current engraved export.",
+    "source_assembly_sha256": "cd3415fa71f6ea861aad5431b4af8b44af02217d2e5b17a71d7bb2bab0160402",
+    "metadata": [
+      "hardware/cad/pcb-v2-bottom/views/usb-bottom-closed.json",
+      "hardware/cad/pcb-v2-bottom/views/usb-bottom-open.json"
+    ]
+  }
 }

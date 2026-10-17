@@ -32,6 +32,12 @@ def main():
     require(all(receipt[k] == 0 for k in ['violations','unconnected_items','schematic_parity']), 'DRC failed')
     for name in ['electronics-fit-independent','mechanical-interfaces-independent','delivery-checks']:
         require(json.loads((case / 'verification' / (name + '.json')).read_text())['pass'], 'CAD report failed: ' + name)
+    delivery = json.loads((case / 'verification/delivery-checks.json').read_text())
+    logo = delivery.get('logo_revision')
+    if logo is not None:
+        require(logo['pass'], 'Logo revision checks failed')
+        for name, expected in logo['current_file_sha256'].items():
+            require(sha(ROOT / name) == expected, 'Logo export mismatch: ' + name)
     for name in ['independent-cam/audit.json','cam-process-checks.json','usb-path-review.json']:
         require(json.loads((pcb / 'manufacturing' / name).read_text())['failed'] == 0, 'PCB report failed: ' + name)
     plate = json.loads((case / 'verification/print-bed.json').read_text())
