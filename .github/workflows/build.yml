@@ -26,6 +26,8 @@ jobs:
           persist-credentials: false
       - name: Validate workflow syntax and embedded shell scripts
         run: go run github.com/rhysd/actionlint/cmd/actionlint@v1.7.12 -color
+      - name: Test firmware release decisions
+        run: python3 -m unittest discover -s .github/tests -p 'test_*.py'
 
   build:
     name: Build ESP32-P4 Firmware
