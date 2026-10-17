@@ -50,12 +50,12 @@
   "fitted_component_visuals": 148,
   "dnp_component_visuals": 0,
   "script_hashes": {
-    "build_scene.py": "57e29991192e723bbc817e50363435683475c4a68851c41e4af2eb7d002802fc",
-    "check_scenes.py": "9fb31f7fd6b220ad3b5f260df1101c7b217d83d4ce60091c82fc55049b51e4ba",
+    "build_scene.py": "305f43f436f33ed9f1b3e4cb7156b83d3bce5fa9367ab28dbb1d96cab49259b9",
+    "check_scenes.py": "5e4640f594d09c2fbf04a2bd0786b43bf1dcebda7161642dd8f48edcc31eeda9",
     "display_assets.py": "c567e03c6327a1d542c005f2e8be60a75dabd5fcbf7726585746f7d80a31c916",
     "finish_delivery.py": "6cfc0dbfc8ff6cae5e335b1f4485e79efe4312a2c030a5cc5ad89aaab176a69f",
     "pcb_details.py": "08cc4ef8d81b51f78d843f6187795671d4ff53afe7b84ee26743fd9884e9f5e6",
-    "prepare_geometry.py": "329947b0a3ef35d5187db7ae4b04f73b6318cd15982a01f9ee176a0746a8d70d",
+    "prepare_geometry.py": "17e09fc9a66a418546558658ed43490a555bc6e930d2c97e1d24bef0aee19576",
     "sensor_assets.py": "10bb16f39c7636269f098ddb612a5db043dab20d2659a3fe2089aff35ca80cd2"
   },
   "reference_asset_hashes": {

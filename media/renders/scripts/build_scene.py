@@ -252,6 +252,15 @@ def explode(objects):
         ob['exploded_offset_mm']=list(delta)
 
 
+def write_view_reports(path, reports):
+    """Preserve metadata for views not rendered during this invocation."""
+    previous = json.loads(path.read_text()) if path.is_file() else {}
+    if not isinstance(previous, dict):
+        raise RuntimeError('Expected a view-keyed render settings object: '+str(path))
+    previous.update(reports)
+    path.write_text(json.dumps(previous, indent=2)+'\n')
+
+
 def main():
     ap=argparse.ArgumentParser(); ap.add_argument('--draft',action='store_true'); ap.add_argument('--view',choices=['portrait','exploded','both'],default='both'); ap.add_argument('--samples',type=int)
     args=ap.parse_args(sys.argv[sys.argv.index('--')+1:] if '--' in sys.argv else [])
@@ -319,7 +328,7 @@ def main():
         bpy.ops.render.render(write_still=True)
         reports[view]['resolution']=[scene.render.resolution_x,scene.render.resolution_y]
         reports[view]['samples']=scene.cycles.samples
-    (OUT/'verification'/('draft-settings.json' if args.draft else 'render-settings.json')).write_text(json.dumps(reports,indent=2)+'\n')
+    write_view_reports(OUT/'verification'/('draft-settings.json' if args.draft else 'render-settings.json'), reports)
 
 
 if __name__=='__main__': main()

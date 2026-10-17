@@ -250,6 +250,30 @@ def verify_glb_bounds(data, expected_parts):
     return checks
 
 
+def verify_cached_pcb_export(current_hashes, report_path=None, glb_path=None):
+    """Require recorded provenance before reusing an existing PCB export."""
+    report_path = report_path or OUT/'verification/geometry.json'
+    glb_path = glb_path or OUT/'assets/pcb.glb'
+    prefix = '--skip-pcb-export cannot reuse the cached PCB: '
+    if not report_path.is_file():
+        raise RuntimeError(prefix+'previous geometry verification report is missing; run without --skip-pcb-export')
+    try:
+        previous = json.loads(report_path.read_text())
+    except (OSError, json.JSONDecodeError) as error:
+        raise RuntimeError(prefix+'previous geometry verification report is unreadable') from error
+    if not isinstance(previous, dict) or previous.get('source_hashes_after') != current_hashes:
+        raise RuntimeError(prefix+'current input hashes do not match previous source_hashes_after; run a fresh export')
+    output_hashes = previous.get('output_sha256')
+    expected = output_hashes.get('pcb.glb') if isinstance(output_hashes, dict) else None
+    if not isinstance(expected, str) or not expected:
+        raise RuntimeError(prefix+'previous pcb.glb SHA256 is missing; run a fresh export')
+    if not glb_path.is_file():
+        raise RuntimeError(prefix+'pcb.glb is missing; run a fresh export')
+    if sha(glb_path) != expected:
+        raise RuntimeError(prefix+'pcb.glb SHA256 differs from the recorded export; run a fresh export')
+    return expected
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--skip-pcb-export', action='store_true')
@@ -259,6 +283,8 @@ def main():
     (OUT/'verification').mkdir(parents=True, exist_ok=True)
     inputs = [ASSEMBLY, PCB, PCB.with_suffix('.kicad_pro'), POPULATION, HEIGHT_CONTRACT]
     hashes = {str(p.relative_to(ROOT)): sha(p) for p in inputs}
+    if args.skip_pcb_export:
+        verify_cached_pcb_export(hashes)
     source = load_step(ASSEMBLY)
     parts, excluded = [], []
     pcb_bounds = {}
@@ -295,7 +321,7 @@ def main():
                '--no-dnp', '--include-pads', '--include-tracks', '--include-zones',
                '--include-silkscreen', '--include-soldermask', '--cut-vias-in-body',
                '--output', str(OUT/'assets/pcb.glb'), str(PCB)]
-    export_log = 'Existing fresh export reused; same source hashes verified.'
+    export_log = 'Existing export reused after current input hashes and GLB SHA256 matched the previous verification report.'
     if not args.skip_pcb_export:
         run = subprocess.run(command, capture_output=True, text=True, check=True)
         export_log = run.stdout + run.stderr
@@ -312,6 +338,8 @@ def main():
     after = {str(p.relative_to(ROOT)): sha(p) for p in inputs}
     if hashes != after:
         raise RuntimeError('Hardware source changed during preparation')
+    if args.skip_pcb_export:
+        verify_cached_pcb_export(after)
     transform = {'GLB_units': 'meters', 'GLB_axes': 'X=native board X; Y=height; Z=native board Y',
                  'GLB_raw_to_CAD_mm': [[1000,0,0,30.5],[0,0,-1000,122.58491],[0,1000,0,24.0529],[0,0,0,1]],
                  'Blender_import_to_CAD_mm': [[1000,0,0,30.5],[0,1000,0,122.58491],[0,0,1000,24.0529],[0,0,0,1]],

@@ -1,5 +1,7 @@
 {
   "portrait": {
+    "source_sha256": "68fc99ed7c23a85e53217a3b761ba4e4e2353e74235061fa415231b89ef1782e",
+    "source_file_unchanged": true,
     "geometry_objects": 647,
     "sensor_ids": [
       "AO2",
@@ -37,6 +39,8 @@
     ]
   },
   "exploded": {
+    "source_sha256": "c5a48ae66413f64bca03c0688bcb08866d70cead2d6ca246673151a3cfd123e2",
+    "source_file_unchanged": true,
     "geometry_objects": 647,
     "sensor_ids": [
       "AO2",
