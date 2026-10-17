@@ -1,0 +1,79 @@
+{
+  "images": {
+    "portrait": {
+      "master": "media/renders/masters/aegir-portrait.png",
+      "master_resolution": [
+        2400,
+        3000
+      ],
+      "master_sha256": "810a22de245856c668afc63ddd3c56746d07e6fea51fb74d67ec0ab9725b24d0",
+      "readme": "media/renders/aegir-portrait.png",
+      "readme_resolution": [
+        1200,
+        1500
+      ],
+      "readme_sha256": "97b5c144c4b16c4af62d20b265dc8aae605cdddadb2aa72627eb274bce3bef88",
+      "readme_bytes": 992738
+    },
+    "exploded": {
+      "master": "media/renders/masters/aegir-exploded.png",
+      "master_resolution": [
+        3200,
+        2400
+      ],
+      "master_sha256": "cef5dde176d0c9f779da35cc7b022e687424ac0b4c344efa877975119330eddb",
+      "readme": "media/renders/aegir-exploded.png",
+      "readme_resolution": [
+        1600,
+        1200
+      ],
+      "readme_sha256": "736b2368c3ed86ba2aa4db329870acb90ab182ccd2cadc3eeb27831884a9d0ae",
+      "readme_bytes": 1261074
+    }
+  },
+  "editable_scenes": {
+    "aegir-exploded.blend": {
+      "bytes": 20593941,
+      "sha256": "c5a48ae66413f64bca03c0688bcb08866d70cead2d6ca246673151a3cfd123e2"
+    },
+    "aegir-portrait.blend": {
+      "bytes": 20583581,
+      "sha256": "68fc99ed7c23a85e53217a3b761ba4e4e2353e74235061fa415231b89ef1782e"
+    }
+  },
+  "hardware_sources_checked": 808,
+  "hardware_sources_unchanged": true,
+  "readme_local_image_links_valid": true,
+  "historical_images_retained": true,
+  "native_pcb_component_models": 142,
+  "supplemental_package_models": 6,
+  "fitted_component_visuals": 148,
+  "dnp_component_visuals": 0,
+  "script_hashes": {
+    "build_scene.py": "305f43f436f33ed9f1b3e4cb7156b83d3bce5fa9367ab28dbb1d96cab49259b9",
+    "check_scenes.py": "5e4640f594d09c2fbf04a2bd0786b43bf1dcebda7161642dd8f48edcc31eeda9",
+    "display_assets.py": "c567e03c6327a1d542c005f2e8be60a75dabd5fcbf7726585746f7d80a31c916",
+    "finish_delivery.py": "6cfc0dbfc8ff6cae5e335b1f4485e79efe4312a2c030a5cc5ad89aaab176a69f",
+    "pcb_details.py": "08cc4ef8d81b51f78d843f6187795671d4ff53afe7b84ee26743fd9884e9f5e6",
+    "prepare_geometry.py": "17e09fc9a66a418546558658ed43490a555bc6e930d2c97e1d24bef0aee19576",
+    "sensor_assets.py": "10bb16f39c7636269f098ddb612a5db043dab20d2659a3fe2089aff35ca80cd2"
+  },
+  "reference_asset_hashes": {
+    "references/display/guition-rear-rectified.png": "d86c4486d19c9231bd6accf8f9a0b5ccf37527f5daf988cd9075c034c79acaa6",
+    "references/display/source-receipt.json": "a074ba163be7c9a517a2f17065de0e19107982c9ecd6e6907db6273bb482a3a9",
+    "references/sensors/ao2-drawing.png": "0d788c62cb3b9408fc3fe6b91265c9b955dcba0bf43e787b1da93c2b01df7a5c",
+    "references/sensors/ao2-label.png": "9bcd3b869bb760cca37f909e91c6af5405092509395a82ce13239ac76c343fd5",
+    "references/sensors/ao2.pdf": "e2684bf1e96b5c5c2c4979bd9ab94dfcb7a58256609821f5ee1e50c6a47ac202",
+    "references/sensors/bme280.pdf": "a2ccdb449fec94380742fe8eec851a11d9bd4142252d332b34682b4deecd7d89",
+    "references/sensors/geometry-qa.png": "be2d307050f9e8e647268c28356542d26547df2bb24667d60f24b212441ffdd7",
+    "references/sensors/md62-label.png": "613150e19ee0bd130924f16949b20d758553900acabbbdc5526fa5a48ca11004",
+    "references/sensors/md62.jpg": "0b679412e4a2c48af4d6434725d92ab15680fa825b96caf18e1e18f613171217",
+    "references/sensors/sources.json": "ff8e4a3b42e44d3279779c3ce545741f82ce9c88eef8651c7229d8d97467f201",
+    "references/sensors/ze07-co.jpg": "ea5a44abd9bcc54507fc78989a3d9ead92754fbe549eed1690d443f244f5bb09",
+    "references/sensors/ze07-label.png": "f3cbbed456a307a5ea667325c780641df5696bb0c1ee45f594169b825a399544"
+  },
+  "render_stage_omissions": [
+    "Provisional RCY connector/mate envelopes; no verified purchased mate"
+  ],
+  "visual_review": "Portrait and exploded draft inspected for camera framing, source shape, screen orientation, readable demo indication, PCB visibility and material separation. Final masters inspected separately."
+}

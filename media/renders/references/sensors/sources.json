@@ -1,0 +1,56 @@
+{
+  "scope": "Visual reference reconstruction for product renders; not manufacturing geometry. Reference images are not mapped wholesale onto models; label graphics are reconstructed.",
+  "AO2": {
+    "manufacturer": "Honeywell / City Technology",
+    "model": "AA428-210 AO2 CiTiceL",
+    "drawing_url": "https://prod-edam.honeywell.com/content/dam/honeywell-edam/sps/siot/en-us/products/sensors/gas-sensors/automotive-and-emissions/documents/hon-ia-hss-automotive-ao2-o2-gas-sensor-dts-en.pdf",
+    "local": "ao2.pdf",
+    "dimensions_mm": {
+      "body_diameter": 29.3,
+      "shoulder_to_rear": 31.75,
+      "nose_length": 6.5,
+      "thread": "M16x1"
+    },
+    "appearance": "Red ABS; rear hex boss and 3-pin Molex 22-29-2031; white label is illustrative."
+  },
+  "MD62": {
+    "manufacturer": "Winsen",
+    "page_url": "https://www.winsen-sensor.com/product/md62.html",
+    "photo_url": "https://www.winsen-sensor.com/d/pic/newpic/md62.jpg",
+    "manual_url": "https://www.winsen-sensor.com/d/files/thermal/md62.pdf",
+    "local": "md62.jpg",
+    "body_dimensions_mm": [
+      19,
+      9.5,
+      14
+    ],
+    "appearance": "Sintered bronze/brass capsule with white paper wrap, green epoxy feedthroughs and four gold-colored leads. Label omits sample serial number."
+  },
+  "ZE07-CO": {
+    "manufacturer": "Winsen",
+    "page_url": "https://www.winsen-sensor.com/product/ze07-co.html",
+    "photo_url": "https://shop.winsen-sensor.com/cdn/shop/products/ZE07-CO_a59220ed-3d4f-4d71-9cdb-1152a2444601_grande.jpg?v=1677312409",
+    "manual_url": "https://www.winsen-sensor.com/d/files/manual/ze07-co.pdf",
+    "local": "ze07-co.jpg",
+    "appearance": "Green PCB, blue ME2-CO cylindrical cell with white label, center gas port and gold header. Small PCB component layout is representative."
+  },
+  "GYBMEP": {
+    "identity": "GYBMEP BME280-5V four-pin module, VIN GND SCL SDA",
+    "inventory_source": "hardware/sensor-inventory.csv",
+    "chip_datasheet_url": "https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bme280-ds002.pdf",
+    "local": "bme280.pdf",
+    "appearance": "Four-pin purple breakout with true 2.5x2.5x0.93 mm metal BME280 package; board outline, mounting hole, layout and finish are representative because exact owned-module photo is unavailable. Approved visual approximation.",
+    "board_envelope_mm": [
+      17,
+      12,
+      5
+    ]
+  },
+  "placement_source": "git show 1fada5c:hardware/cad/rev04/scripts/chamber_a3.py and current hardware/cad/pcb-v2-bottom/verification/build-report.json",
+  "model_units": "millimeters in original enclosure coordinates",
+  "reconstructed_labels": [
+    "ao2-label.png",
+    "md62-label.png",
+    "ze07-label.png"
+  ]
+}

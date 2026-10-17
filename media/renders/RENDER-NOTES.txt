@@ -1,0 +1,117 @@
+AEGIR — CAD-BASED PRODUCT STILLS
+17 October 2026
+
+DELIVERY
+aegir-portrait.png: README image, 1200 x 1500.
+aegir-exploded.png: README image, 1600 x 1200.
+masters/: full-resolution 2400 x 3000 portrait and 3200 x 2400 explosion.
+aegir-portrait.blend and aegir-exploded.blend: independently editable scenes
+with packed image textures. Both retain object names, assembled transforms,
+part groups and source references. The exploded scene records presentation
+offsets in original CAD millimetres. No animation is included in this delivery.
+
+SOURCE GEOMETRY
+The current Trimix_Enclosure_PCB2_Bottom.step provides the enclosure, cover,
+supports, manifold, factory display casing/glass, battery holder, cells and
+fasteners. Its six separate flush white logo bodies are retained. Geometry is
+tessellated at 0.04 mm linear tolerance; no enclosure dimensions are redesigned.
+
+The populated main board is a fresh GLB export from the current
+hardware/pcb/analyzer-v2-bottom/Trimix_Analyzer.kicad_pcb, including pads,
+tracks, zones, silkscreen, solder mask, vias and component models. It contains
+142 populated native models. Six fitted parts without native models (L101,
+L201, L701, U110, U111, U115) have package-based appearance reconstructions,
+using the current PCB's position, rotation and board side. Six DNP parts are
+excluded. The source PCB and its libraries are not edited.
+
+GLB-to-CAD alignment is checked against substrate bounds and components
+J901, J301 and C403. The imported Blender coordinates are scaled by 1000
+and translated by [30.5, 122.58491, 24.0529] to assembly millimetres. A final
+assembly parent converts millimetres to metres and stands the product upright.
+
+REFERENCE RECONSTRUCTIONS
+Sensors use manufacturer drawings/photos and the existing assembly poses:
+* AO2: red ABS oxygen cell, threaded nose, rear hex boss and Molex header.
+* MD62: brass capsule, paper wrap, epoxy feedthroughs and four leads.
+* ZE07-CO: green PCB, blue cylindrical cell, gas opening and header.
+* GYBMEP: four-pin BME280-5V module, with representative purple PCB finish,
+  board layout and mounting hole. Its exact owned-module appearance remains
+  unverified. The existing provisional 17 x 12 mm envelope is retained.
+
+Sensor label artwork is reconstructed. Serial numbers and calibration values
+are not invented. Sensor/module component layouts are visual references,
+not additional manufacturing CAD. Full URLs and dimensions are recorded in
+references/sensors/sources.json.
+
+The Guition display uses the owner's registered rear-board photograph with
+raised connector/shield details. The board/component XY is photograph-based;
+unmeasured Z details remain illustrative and the photograph retains residual
+parallax and lighting. The front screen uses the actual 480 x 800 live-analysis
+simulator screenshot, including its SIMULATED banner, at its original aspect
+ratio. See references/display/source-receipt.json.
+
+Unverified harness routing, connector clearance blocks, seal allowances and
+the provisional RCY mating envelopes are omitted. The battery sleeves are
+unbranded blue; exact purchased sleeve colors were not established. Gas
+fittings and the protected battery-holder geometry retain the CAD references.
+The illuminated power-button ring is a visual detail based on the inventory.
+
+The exploded offsets are a presentation arrangement. They do not specify a
+validated assembly sequence or cable routing. All PCB components remain
+attached to their board. Prototype qualification status is unchanged.
+
+REPRODUCE
+Requirements: Blender 4.2+, KiCad CLI 10, Python with CadQuery 2.8, OCP,
+NumPy and Pillow. Run commands from the repository root.
+
+1. Rebuild STEP meshes and fresh KiCad board export:
+   build/pcb-v2-case-work/geometry-venv/bin/python media/renders/scripts/prepare_geometry.py
+   An equivalent Python environment with the listed packages can replace
+   the existing local environment. The script has no dependency on build
+   helper source files. --kicad selects another KiCad CLI executable.
+
+2. Rebuild the registered display texture:
+   build/pcb-v2-case-work/geometry-venv/bin/python media/renders/scripts/display_assets.py --prepare
+
+3. Render small previews:
+   /Applications/Blender.app/Contents/MacOS/Blender -b --factory-startup --python media/renders/scripts/build_scene.py -- --draft
+
+4. Render masters and save packed scenes:
+   /Applications/Blender.app/Contents/MacOS/Blender -b --factory-startup --python media/renders/scripts/build_scene.py --
+
+5. Check packed scenes without changing or resaving either source .blend:
+   /Applications/Blender.app/Contents/MacOS/Blender -b --factory-startup --python media/renders/scripts/check_scenes.py
+   This reads both scenes and writes verification/scene-checks.json only.
+
+6. Optimize README copies and verify source preservation:
+   build/pcb-v2-case-work/geometry-venv/bin/python media/renders/scripts/finish_delivery.py
+
+--view portrait or --view exploded selects one shot and preserves the other
+view's existing settings in its verification report. --skip-pcb-export reuses
+a PCB only when current input hashes and the GLB SHA256 match the previous
+geometry verification report. Missing or changed inputs require a fresh export.
+
+--samples overrides
+the default 160 Cycles samples. CPU rendering is selected because this Mac's
+Blender 4.2 Metal kernel compiler aborted during rendering. CPU Cycles uses
+the same geometry, shaders and lighting. On the current desktop, Blender
+startup requires running outside the restricted filesystem sandbox.
+
+Lighting is a charcoal studio with soft area lights; output uses AgX color
+management and denoising. Printed polymer has restrained procedural surface
+texture. Source references are used as reference material; these are rendered
+3D scenes, not generated-image reinterpretations of the product.
+
+VERIFICATION
+verification/geometry.json: source hashes, exclusion list, population and
+geometric alignment checks.
+verification/source-baseline.json: portable tracked-hardware hashes from the
+PR base, plus the original session preservation audit. Unrelated inventory
+edits and ignored caches remain in the original checkout.
+verification/render-settings.json: resolution, samples and final cameras.
+verification/delivery.json: source preservation, output hashes and sizes.
+previews/: draft camera/material checks, not README delivery files.
+
+Reference images and datasheets retain their original suppliers' rights.
+Project CAD, PCB, software and branding retain the repository's existing
+license and brand policy; these renders do not change those terms.

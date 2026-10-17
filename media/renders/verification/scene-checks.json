@@ -1,0 +1,80 @@
+{
+  "portrait": {
+    "source_sha256": "68fc99ed7c23a85e53217a3b761ba4e4e2353e74235061fa415231b89ef1782e",
+    "source_file_unchanged": true,
+    "geometry_objects": 647,
+    "sensor_ids": [
+      "AO2",
+      "GYBMEP_BME280",
+      "MD62",
+      "ZE07_CO"
+    ],
+    "supplemental_pcb_references": [
+      "L101",
+      "L201",
+      "L701",
+      "U110",
+      "U111",
+      "U115"
+    ],
+    "packed_file_images": 5,
+    "missing_textures": [],
+    "render_engine": "CYCLES",
+    "render_samples": 160,
+    "resolution": [
+      2400,
+      3000
+    ],
+    "assembly_collections": [
+      "Assembly / Battery",
+      "Assembly / Cover",
+      "Assembly / Display",
+      "Assembly / Fasteners",
+      "Assembly / Frame",
+      "Assembly / Logo",
+      "Assembly / Manifold",
+      "Assembly / Pcb",
+      "Assembly / Sensors",
+      "Assembly / Shell"
+    ]
+  },
+  "exploded": {
+    "source_sha256": "c5a48ae66413f64bca03c0688bcb08866d70cead2d6ca246673151a3cfd123e2",
+    "source_file_unchanged": true,
+    "geometry_objects": 647,
+    "sensor_ids": [
+      "AO2",
+      "GYBMEP_BME280",
+      "MD62",
+      "ZE07_CO"
+    ],
+    "supplemental_pcb_references": [
+      "L101",
+      "L201",
+      "L701",
+      "U110",
+      "U111",
+      "U115"
+    ],
+    "packed_file_images": 5,
+    "missing_textures": [],
+    "render_engine": "CYCLES",
+    "render_samples": 160,
+    "resolution": [
+      3200,
+      2400
+    ],
+    "assembly_collections": [
+      "Assembly / Battery",
+      "Assembly / Cover",
+      "Assembly / Display",
+      "Assembly / Fasteners",
+      "Assembly / Frame",
+      "Assembly / Logo",
+      "Assembly / Manifold",
+      "Assembly / Pcb",
+      "Assembly / Sensors",
+      "Assembly / Shell"
+    ]
+  }
+}
