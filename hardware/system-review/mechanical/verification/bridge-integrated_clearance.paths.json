@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\\"report\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/system-review/mechanical/verification/final-max-envelopes/service-paths-cover-disconnect-battery-carrier-chamber-retainers-display-usb.json\\\", \\\"status\\\": \\\"sampled_paths_clear_with_prerequisites\\\", \\\"tests\\\": [{\\\"name\\\": \\\"cover\\\", \\\"status\\\": \\\"clear_at_sampled_poses\\\", \\\"collisions\\\": 0}, {\\\"name\\\": \\\"disconnect\\\", \\\"status\\\": \\\"clear_at_sampled_poses\\\", \\\"collisions\\\": 0}, {\\\"name\\\": \\\"battery\\\", \\\"status\\\": \\\"clear_at_sampled_poses\\\", \\\"collisions\\\": 0}, {\\\"name\\\": \\\"carrier\\\", \\\"status\\\": \\\"clear_at_sampled_poses\\\", \\\"collisions\\\": 0}, {\\\"name\\\": \\\"chamber\\\", \\\"status\\\": \\\"clear_at_sampled_poses\\\", \\\"collisions\\\": 0}, {\\\"name\\\": \\\"retainers\\\", \\\"status\\\": \\\"clear_at_sampled_poses\\\", \\\"collisions\\\": 0}, {\\\"name\\\": \\\"display\\\", \\\"status\\\": \\\"clear_at_sampled_poses\\\", \\\"collisions\\\": 0}, {\\\"name\\\": \\\"usb\\\", \\\"status\\\": \\\"clear_at_sampled_poses\\\", \\\"collisions\\\": 0}]}\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

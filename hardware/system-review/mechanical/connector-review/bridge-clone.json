@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\\"report\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/system-review/mechanical/connector-review/clone.json\\\", \\\"sha256\\\": \\\"ec78f7ab68b56baf4a87e50eae6fa8af7dd8dfed899b635789e62004eddf437c\\\", \\\"status\\\": \\\"separate_review_created\\\", \\\"checks\\\": {\\\"timeline_1211\\\": true, \\\"solid_count_2546\\\": true, \\\"other_documents_preserved\\\": true}}\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

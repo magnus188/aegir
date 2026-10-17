@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\\"report\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/system-review/mechanical/connector-review/larger-wire-trial.json\\\", \\\"sha256\\\": \\\"9adeab0b05f21561e3f220d42894254fb00e37227c4c2183307faf2d0634d174\\\", \\\"status\\\": \\\"transient_sensor_and_wire_allocation_trial\\\", \\\"checks\\\": null}\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

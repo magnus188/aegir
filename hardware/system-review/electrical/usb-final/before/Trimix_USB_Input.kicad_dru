@@ -1,4 +1,0 @@
-(version 1)
-(rule "GCT manufacturer mid-mount land to edge"
-  (condition "A.memberOfFootprint('J901') || B.memberOfFootprint('J901')")
-  (constraint edge_clearance (min 0.10mm)))

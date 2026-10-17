@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\\"report\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/system-review/mechanical/placement-checkpoint-v2/verification/selected-wall-fastener-checks.json\\\", \\\"status\\\": \\\"selected_checks_passed\\\", \\\"tests\\\": []}\\n{\\\"report\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/system-review/mechanical/placement-checkpoint-v2/verification/updated-wall-gate.json\\\", \\\"keys\\\": [\\\"status\\\", \\\"sections\\\", \\\"failures\\\", \\\"scope\\\", \\\"physical_insert_fit\\\"], \\\"counts\\\": {\\\"failures\\\": 0}}\\n{\\\"report\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/system-review/mechanical/placement-checkpoint-v2/verification/changed-section-checks.json\\\", \\\"keys\\\": [\\\"status\\\", \\\"sections\\\", \\\"count\\\", \\\"scope\\\", \\\"USB_PCBtop_to_bridge_underside_mm\\\", \\\"solder_wire_bend_allowance_not_included\\\"], \\\"counts\\\": {\\\"sections\\\": 6}}\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

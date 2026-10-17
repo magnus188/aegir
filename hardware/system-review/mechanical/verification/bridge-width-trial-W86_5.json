@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\\"width_mm\\\": 86.5, \\\"core_width_contract_pass\\\": true, \\\"clearance_status\\\": \\\"requires_correction\\\", \\\"minimum_thickness_allocation_collisions\\\": 1, \\\"fastener_thickness_status\\\": \\\"not_repeated_at_intermediate_width\\\", \\\"path_status\\\": \\\"not_repeated_at_intermediate_width\\\", \\\"driver_status\\\": \\\"not_repeated_at_intermediate_width\\\", \\\"release\\\": false}\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

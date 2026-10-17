@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\\"report\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/system-review/mechanical/verification/diagnostic-views.json\\\", \\\"keys\\\": [\\\"document\\\", \\\"actual_Fusion_geometry\\\", \\\"files\\\", \\\"visibility_and_camera_restored\\\", \\\"geometry_or_pose_changed\\\", \\\"limits\\\"], \\\"counts\\\": {\\\"files\\\": 3}}\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

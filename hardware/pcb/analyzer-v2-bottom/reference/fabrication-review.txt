@@ -1,0 +1,153 @@
+PCB 2.0 fabrication review — 2026-10-15
+Independent review; no canonical design files edited; no fabrication release.
+
+Recommendation
+==============
+Use the existing 0.45 mm thermal-land candidate as the layout baseline. Keep
+four copper layers, 1.6 mm finished thickness, the present copper weights,
+ENIG, and the present 24 filled/copper-capped thermal holes. Integrate USB-C
+on a lateral extension if practical so the board remains below 100 mm on its
+long axis. Keep the core placement, copper returns and power loops intact.
+The final outline needs a new quote; the old 99 x 30 mm price is not a price
+for the integrated board.
+
+This is the lowest-change, defensible route. It removes the separate 0.6 mm
+USB PCB and its expensive fabrication, while retaining the established
+soldering assumptions under the two power ICs. Do not claim that US$450 is
+unavoidable for safety, or that all QFNs universally require filled vias.
+The saved prices already show a much cheaper supplier for the same process.
+
+Baseline evidence
+=================
+Canonical main PCB SHA-256, independently checked today:
+5382ab1d68a307343b9165bacb90025dee995f66c4689cadbe77df3740eb5f11
+Saved candidate SHA-256, independently checked today:
+86dfd83f7cfba0a41d9f39dcd9ad1b39f37c7d11259fc146ea5dd9e677370c5f
+
+Candidate:
+build/pcb-order-review-2026-10-12/cost-reduction/main-4layer-045-thermal/
+Evidence:
+build/pcb-order-review-2026-10-12/cost-reduction/main-candidate-verification.json
+build/pcb-order-review-2026-10-12/cost-reduction/current-hole-geometry.json
+
+The saved verification has 23 passing checks: all schematics, original
+placements, stackup, 299 routed vias, mask, paste and drill geometry retained;
+only 15 U201 thermal land diameters and three adjoining VSYS track segments
+change. Native KiCad 10.0.6 previously reported zero DRC, unconnected and
+schematic-parity findings. These checks must be rerun after USB integration.
+
+The U201 copper diameter changes from 0.40 to 0.45 mm; drill remains 0.20 mm.
+The radial annular ring therefore increases from 0.10 to 0.125 mm. The phrase
+"0.45 mm annulus" would be incorrect. Two VSYS vertices move by 0.05 mm in
+each axis; width remains 1.0 mm and total length changes by 0.002535 mm.
+This retains the thermal barrels, solder-contact geometry and main ground
+heat-spreading plane. It does not constitute a temperature measurement.
+
+Can fill/cap be removed?
+=======================
+Not as an unqualified manufacturing-option change for this revision.
+
+TI BQ25895 section 11.1 requires the exposed power pad to be soldered to
+ground and sufficient thermal vias directly underneath to other ground
+layers. TPS63020 section 10.3 likewise relies on thermal coupling through
+its soldered exposed pad. Neither datasheet makes epoxy fill universally
+mandatory. They do support retaining the current pad and heat paths.
+https://www.ti.com/lit/ds/symlink/bq25895.pdf
+https://www.ti.com/lit/ds/symlink/tps63020.pdf
+
+TI QFN/SON attachment guidance (SLUA271C, sections 3.4.1 and 3.6) describes
+several workable via treatments: plugging, tenting and some open-via OSP
+processes. Smaller holes reduce solder-volume loss, but backside tenting
+can increase trapped-air voiding. TI calls for process development and
+fabricator-specific advice. Thus an ordinary open/tented-via design could
+be viable, but equivalence of solder quality is not demonstrated by DRC.
+https://www.ti.com/lit/an/slua271b/slua271b.pdf
+
+In this actual board, 12 of 24 thermal bores overlap paste apertures in the
+saved exported geometry (eight U201, four U101). The chosen filled/capped
+process avoids solder draining through those holes. Resin is not the main
+heat conductor: the plated copper barrels and ground copper are. Removing
+fill chiefly changes solder-process behavior; it cannot be described as
+retaining identical cooling without checking the resulting solder joint.
+
+JLC distinguishes ink plugging from epoxy fill/cap. It does not offer ink
+plugging for exposed pad holes or holes within 0.35 mm of pad openings;
+it also distinguishes component-pad holes from routed vias. Our thermal
+holes are represented as plated pads, so an explicit coordinate list is
+needed. A generic "tented vias" dropdown does not override the large open
+thermal-pad mask aperture. Require supplier confirmation of the selected
+thermal holes and cap flatness for this exact build.
+https://jlcpcb.com/help/article/pcb-via-covering
+
+A later no-fill experiment would need coordinated thermal-pad mask/stencil
+design, an agreed assembler process, solder-volume/void inspection and
+worst-case load/charging temperature measurements. Moving all thermal vias
+outside the pads is a larger thermal/layout change and is not recommended
+under the present minimal-change instruction.
+
+Three previously selected signal holes are now outside the solder pads
+after PR #36. Their saved fill/cap flags are stale requirements, not evidence
+that the holes still lie in-pad. Removing only these flags does not remove
+the paid process while the 24 thermal holes remain. Leave them unchanged
+for this baseline, or explicitly classify them as optional after comparing
+final CAM. Never reuse the older pre-PR coordinate list without translating
+and verifying it against the current board.
+
+Cost and manufacturing settings
+===============================
+The saved 12 October calculator results are for FIVE bare main PCBs, no
+shipping, tax, components or assembly:
+  Original ENIG + four-wire Kelvin test:          USD 82.35
+  0.45 candidate ENIG + same Kelvin test:         USD 65.44
+  0.45 candidate ENIG + ordinary full e-test:     USD 48.70
+  0.45 candidate OSP + ordinary full e-test:      USD 31.74
+Source files: cost-reduction/price-comparison.json and uploaded quote captures.
+Original separate USB PCB: USD 70.57 for five, before shipping/tax.
+
+The repeatable PCB geometry saving is USD 16.91 from the larger thermal
+lands with all other choices held constant. Current JLC capability and
+quote pages confirm a 0.20 mm via hole with >=0.45 mm copper diameter
+avoids the small-via surcharge on multilayer boards. Specify actual 0.20 mm
+drills in order notes; do not let a default category enlarge them to 0.30 mm.
+The factory still must accept the thermal holes as vias for this pricing.
+https://jlcpcb.com/capabilities/pcb-capabilities/
+https://cart.jlcpcb.com/quote
+
+Retain 4 layers and the original layer order/dielectric/copper dimensions.
+Use ordinary through-vias; no blind/buried vias, backdrilling, edge plating,
+controlled-impedance service or custom stack unless a documented electrical
+requirement emerges. New USB extension vias should be at least 0.45/0.20 mm
+(copper/drill); prefer larger where placement allows. Preserve original
+design clearances, trace widths and existing local rules rather than relaxing
+them to make new routing pass. Use ordinary routed edges and standard green
+mask. Price the final actual dimensions, finish, full e-test and process.
+
+Four-wire Kelvin is an optional resistance-sensitive fabrication test here.
+Standard full opens/shorts testing is a cheaper defensible prototype option,
+but it is not identical test coverage. Keep Kelvin if the goal is unchanged
+factory inspection. Neither test replaces assembled functional tests.
+https://jlcpcb.com/blog/the-guide-to-flying-probe-testing
+
+ENIG is the conservative prototype finish for storage and rework. OSP is a
+possible cheaper finish if assembly is prompt and the assembler agrees to
+the thermal-cycle and storage limits. JLC lists a typical unopened shelf
+life up to three months and four total thermal cycles (two reflow, two wave).
+Do not make OSP the default for an indefinite hand-assembly/rework schedule.
+https://jlcpcb.com/news/jlcpcb-pcb-osp-finish
+
+Six layers do include fill/cap at JLC, but the saved same-finish calculator
+trial cost USD 52.44 versus USD 48.70 for four layers. There is no tested
+six-layer layout. Changing layers just to obtain "free vias" is not a proven
+saving and conflicts with the minimum-change target.
+https://jlcpcb.com/news/free-via-in-pad-6-20-layer-pcbs-pofv
+
+Remaining limits
+================
+- No final PCB 2.0 fabrication price has been obtained by this review.
+- The 400 NOK delivered budget is not established by the old calculator.
+- Native DRC/electrical equivalence and actual CAM must pass after integration.
+- Supplier acceptance of thermal-hole classification and fill/cap is pending.
+- Prototype thermal, charging, transient, ESD and measurement tests remain
+  outstanding. The new layout must preserve the project's charging hold.
+- PCB supports and USB insertion forces need mechanical validation after the
+  enclosure is adapted; a short lateral tab must not become a fragile neck.

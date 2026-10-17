@@ -1,0 +1,740 @@
+{
+  "source_board": "hardware/pcb/analyzer-v2/Trimix_Analyzer.kicad_pcb",
+  "source_sha256": "1df55664b1f57ec4dcc38bbd2358f5aee306f59696f52271aafb94f233b992bc",
+  "output_sha256": "59a0be0876394c670bd6c852033312527ccf9a4e02e94ac0437080b83f57085c",
+  "rigid_transform": {
+    "native_formula": [
+      "x_new=124-y_old",
+      "y_new=56.28491+x_old"
+    ],
+    "angle_delta_degrees": -90,
+    "footprints": [
+      "J901",
+      "U901",
+      "D901"
+    ]
+  },
+  "outline_native_mm": [
+    [
+      3.51509,
+      121.28491
+    ],
+    [
+      21,
+      121.28491
+    ],
+    [
+      21,
+      120.48491
+    ],
+    [
+      49.9,
+      120.48491
+    ],
+    [
+      49.9,
+      38.48491
+    ],
+    [
+      28.8,
+      38.48491
+    ],
+    [
+      28.8,
+      21.48491
+    ],
+    [
+      19.9,
+      21.48491
+    ],
+    [
+      19.9,
+      104.38491
+    ],
+    [
+      3.51509,
+      104.38491
+    ]
+  ],
+  "moved_local_copper_uuids": [
+    "00c35a1d-d017-4393-9347-f0cd0906f334",
+    "01927963-9b4b-4b8d-88b1-87fda7b47c9e",
+    "0547b024-dad9-48b1-a268-998029898092",
+    "069bd367-e4ea-407f-bba4-93f4a5dd5d08",
+    "06f7b393-10b1-4281-a61d-82a1e4cc74d6",
+    "0b349c79-74ad-4958-84c0-a8d442e87149",
+    "11675eaf-cb90-4d1b-9ee4-c679a16f3c56",
+    "11e1cc44-bd52-4717-bef7-b3712a1fc409",
+    "16c54dfb-45eb-40ab-87b3-556eb89c5bd1",
+    "1d777706-a21f-430b-90b8-b85185eb2e26",
+    "222b49fe-7e04-4edd-9ae0-25c96b35ac47",
+    "283ef02c-4d6d-4a03-955c-872b4c9d464d",
+    "2dcf05e2-4ec8-489e-a5de-f3cc0a081a4f",
+    "2e90e999-b7fd-414c-b821-9a3a69a10b9c",
+    "31b5425e-00b6-4cab-ba87-76616786f197",
+    "335136af-241e-4989-b0ce-c07f0b160091",
+    "374a9804-597e-4855-adb1-93b4341e27d9",
+    "3f472928-32f9-4b3d-804c-6340dfa38136",
+    "433b975a-7455-4e8e-a455-96b5ac1c066f",
+    "45bcb3b0-f644-42f9-94e8-64efddca0b3a",
+    "48642104-11a1-45d7-b2c5-9bd3c9b5f86f",
+    "49ebecb6-0077-4690-bc96-691f1f75ac02",
+    "4aa1414f-5332-46f1-a88b-9be1b632c2e9",
+    "4df19c8f-76e6-47fb-b0a3-b1db7ed592e8",
+    "4fdf877a-32dd-4150-95b9-6f4204945e3b",
+    "521a1e21-ad9d-49a5-9a29-2cb0b24c3c24",
+    "5318dda1-83ce-43dd-a746-4c46edbebd86",
+    "5437abff-cd02-4d4a-b0b0-0d010c0cc7a8",
+    "577867b5-92e6-4341-aed5-d2c353b5c958",
+    "5aebf96a-cf75-469b-82d1-eedc794722b2",
+    "5ddcc6f7-7e07-488e-b250-be69c428d8da",
+    "6735fb48-1306-4209-9430-0aeb5ca56d58",
+    "681f6dba-34f5-4cff-ae3f-22fc541d2ec5",
+    "73287e0c-419a-4f2e-932f-2347681860fb",
+    "73c93378-6f72-46a7-830d-cb4008732b2a",
+    "73fda46b-35e8-49c5-abf9-62c1fa591a88",
+    "776a2964-c546-4c42-a808-a54b9a93d1d6",
+    "78beb964-9973-4de4-bfc1-cc63f186f913",
+    "78ea8e11-37f6-47e0-90fa-d227e457c4c9",
+    "7c11a334-79d7-4328-bf55-229d6b8dfe37",
+    "81161d85-ca56-46f0-896c-53c35ffe5149",
+    "849c35a2-d9d3-48dc-9f25-1b4cf13d9417",
+    "84e120f4-5907-4e6e-afc9-f8dffb8c4293",
+    "857d4fa0-dba8-492f-9e36-a2c4b4c44a50",
+    "8df9aabc-c906-42ac-9205-d3bcb3a10204",
+    "8e5d186b-f503-48c1-a3b5-bd2957326e60",
+    "9299ba53-b77f-4bd9-820c-02830927c8c6",
+    "962cc6bf-6304-482b-80b1-59414b4fcc34",
+    "9ad26231-55c2-4a53-812d-e9b1c224fa87",
+    "9ccefa5b-ed49-400b-be45-da21a7e72fac",
+    "a4119a1d-2caa-403f-a63e-b9e7d1ea2e15",
+    "a851678c-4b19-4ceb-99fd-d8787e230181",
+    "a9be1cd0-bd12-482f-bb44-ee553e16654a",
+    "a9fd2963-e62b-4d0a-a188-9a3d26d834d4",
+    "aaa1f4c5-6945-47ee-ad86-f034680ee9c9",
+    "aba95de5-832f-4abb-b5b4-01b67fa5a2c4",
+    "b11478da-dda3-4878-affc-9e1d5c49fb0a",
+    "b3204fdb-dbfe-4d5e-99a7-cab6b9907378",
+    "b5d976fc-9687-4769-8d64-3ea7b5899b20",
+    "b80eecf2-fe6e-4db3-b823-2a51af512474",
+    "ba5b7d96-0a86-4938-8fa7-4d49eb2b21eb",
+    "bc8b010b-29d0-43b6-bb5e-1faf98f10c82",
+    "bdcadd48-2c18-4b97-b1c2-8a38149d5b07",
+    "bef1d944-2065-41bd-b825-4079f1add766",
+    "bf48553c-d609-4b8d-a712-bba57153023a",
+    "bfc1fd5b-4cf9-4a2e-a78d-d35160c4d642",
+    "c176f195-b3fb-4fca-a85c-84fa020c3702",
+    "c48f061e-b0cf-401e-a53b-25f18717a713",
+    "c5e2914b-a5e3-4c80-a190-2c7f8ef441ea",
+    "c91b6884-8c52-4c43-84b0-6fc589093795",
+    "ca55e1ad-cad3-4b49-b7d8-4b93dbfea3ad",
+    "cc22ae5d-33a2-42cc-9a5b-2f6e398a26bc",
+    "cdea682d-d84a-4759-bc85-79a705a7cf4a",
+    "d207740b-e1c5-4e21-96c3-74a20d6a87e2",
+    "d273db47-e3b6-4f99-be68-84d73fdbe44e",
+    "d77173b8-7376-40a8-9c21-08244bee03c0",
+    "d84aea75-fb98-4085-89cd-315e54cbad90",
+    "d97449a3-1cd8-4543-a3b1-1d5360508b9b",
+    "e0603a07-1271-41c4-8ced-d5750cd92e7a",
+    "e1d392ce-23b1-4749-971a-721ee7a28f44",
+    "e212f67d-1e0f-4f67-a93e-2b3bb63c8983",
+    "e39e1ade-1cee-4b8b-b327-c3525c07da6f",
+    "e3bf1469-6b62-49be-8016-0cdf240da69e",
+    "ed8164e7-1c80-4d81-913b-b234a78d3f04",
+    "ef54bf3f-421f-4dd3-8afd-2d0f8855d5a4",
+    "f53988f9-3d32-43e8-a7ce-c99b4cb775e9",
+    "f804325c-bc0d-4ad4-b68e-c5a6dbb7b6e2",
+    "f8e71f1f-654a-4ac0-b898-c03644dede70",
+    "f967a025-f6ef-4610-a675-677968e64b8b",
+    "f99ae327-62bf-45d4-8d3c-5e07cef09288",
+    "fbce535a-6c30-4957-b575-1b319a1efc9c",
+    "fd849884-3003-4a60-bfc2-7a2bc4875bcd"
+  ],
+  "retained_former_harness_bridge_uuids": [
+    "102d484f-fe35-4330-b005-c2d505f45658",
+    "11ada617-abb2-40b0-aa06-6dfbbe5caaba",
+    "14f2b057-f13f-44b7-92a5-bc916b62030d",
+    "47363557-5ea4-4748-84fa-7e37b39a28ea",
+    "6701b800-9295-46f5-a7f3-f18d9c6a0df0",
+    "b7aa0b79-4cdd-43df-a6a1-a24f6ce2f0c0",
+    "c3bc6ac5-4fa3-4fd4-bc4d-99225483322c",
+    "de2fb6ee-f344-412e-93c2-f24e4335241a",
+    "f7773eaf-c186-4e42-82b0-96442e194ac2"
+  ],
+  "removed_added_side_link_uuids": [
+    "06767bfe-295a-457d-9c01-c45c6f57ab1b",
+    "12acb6e8-d3dd-4904-b2e0-4f6666b59590",
+    "241c8a96-0d27-4bc0-b08c-4c1c2c424701",
+    "33e46e3b-279d-484a-89a8-d73de8b59da3",
+    "38f29aa2-8384-4a2b-9467-b161d23e3e16",
+    "3e7f5cca-3a49-4a28-9e7f-deed14f6cd1c",
+    "416205b6-93a1-4c97-9720-752d49a6f8cd",
+    "44ecc47c-0b65-4c0a-ad6e-c47a5c59b335",
+    "57ab187a-6261-4540-88a6-d947925e44ba",
+    "58d29806-62d6-4f43-99d5-b92dab41312c",
+    "59486aa9-18b3-4ca5-9dde-20beec0b1afd",
+    "5ba6328d-2dc0-4a5f-92ef-e173ddcf0cc5",
+    "5c32f53b-5ed0-40a1-a6d0-6c1e9afbdda7",
+    "73f3c9ee-3747-481c-a65c-4da8567f98d3",
+    "8c9a4294-05a0-48ba-b1cd-f64f05076848",
+    "a8b8d8de-3a54-4d0c-83e9-362ed9cb9e1c",
+    "ab16cbba-9d0c-46d4-b633-83e139db0753",
+    "b524482e-a9f9-4dcd-8f54-de2a2894077a",
+    "b6e31eef-1cea-4aeb-aac8-bf84f935b972",
+    "c01ba729-73bd-433b-ae85-c9ad0916eea0",
+    "cb4f2d79-f3fc-4b4b-9347-230e0d7715ae",
+    "d2ded058-5f79-4cfa-9504-106679960ec1",
+    "deee113b-f1a2-4e6e-8059-cca36f3eaa6a",
+    "e1b0d19b-af76-4189-9fc2-676edbf4da02",
+    "e25738f9-2283-47a7-9d16-f8283be1f467",
+    "eefbf5d7-da19-40f3-b5ad-b3877927125d"
+  ],
+  "new_copper_uuids": [
+    "38a4eab4-3e9d-4aa3-932d-7668c592c073",
+    "f6ae0479-e63d-47c8-a41f-5c4c6612f50a",
+    "20d42b9b-857c-4e2c-a029-480405a43602",
+    "03bc1a80-6e98-4a38-a828-f0fcaa00a359",
+    "dbd87ab0-d00d-4e6b-ad1f-c661871ca940",
+    "cd2adce8-5f34-452e-9d53-fd04057cb252",
+    "fed8e815-38c2-4348-ab34-a675743b8680",
+    "9e982204-7b67-440d-b365-42a5e24309bf",
+    "d7441604-1573-427d-a544-6e48a4c158b3",
+    "312af1da-cf2d-4830-a153-865b3ea98c0a",
+    "1213e1be-a991-4791-a6d2-6d970efb6102",
+    "320b001c-798f-415e-b823-aeb39fb9ebc4",
+    "606f7e0e-bd1b-4014-bfed-617a85e9ef4e",
+    "d2cfeb8f-16d2-4b38-ab18-da2b9bd207bd",
+    "c434ca9e-f205-46ed-8806-082a710ee208",
+    "797f3700-1c2b-418a-8bb6-5aa6956b52f7",
+    "affcd0cc-41c4-467b-b8b1-91973a29a489",
+    "cb88c961-63b8-4d68-abb3-840cac40815a",
+    "555ea7ad-0a9c-417b-8f6e-d97c573cd5d5",
+    "8c9b0567-dad5-4f78-8df7-a590db04e799",
+    "9d0996a7-7e90-4f4a-94f8-80ee2a062892",
+    "53625d0a-7b7e-4f59-8541-56dca3ceb76b",
+    "30c24f6c-b177-4718-8374-863d07194c5b",
+    "9c0aee37-84c6-4bc7-b80e-9e312c45fbeb",
+    "f38265f9-1c4e-4c84-a3d7-feb5a6fc87ca",
+    "c2b92036-5b3e-4b27-a5de-399d711114fa",
+    "e255be58-cf30-40c0-9ba0-7589ea408de8",
+    "9956e3f1-d1f5-4a3c-9cd0-026c219ffccb",
+    "334cb3af-d6fc-42dd-ae13-428cd7c9fa9d",
+    "2573470e-88ec-4133-bc46-ea276a701ce2",
+    "b6610109-a9a9-4dbb-abfb-a3166d52ca0c",
+    "6170beb8-e483-4989-a10e-56607b00d062",
+    "edc17610-5343-42f0-9f94-d4a16921ee11",
+    "ee25d74b-884a-43c5-a41b-678fcf687685",
+    "f89fabf0-be44-427e-99d5-bd5aadabdbae",
+    "45bf1268-2f32-4202-a063-8bd8c7888053",
+    "1aa33814-1d94-47de-9fc7-e73f592c81cb",
+    "ff6dfb0f-bf74-403f-9241-c8f91e04cd6e",
+    "e29fd137-f9be-400b-a835-3e36df0a99a3",
+    "245d86c0-78c6-4889-baad-13efe2e888fc",
+    "9861db47-17ee-4dba-9cf8-fda8e831de5e",
+    "bb1d03db-6e5c-4d94-aae7-79de6047f6c8",
+    "8c8771a0-e86a-449d-93a1-63edd073a216",
+    "cccaca04-d524-47e5-b1ca-b9bc56583f4c",
+    "66361cfa-4e2e-421d-b938-bd7608e316dd",
+    "4a74951d-3c48-481f-9cfb-8dba81ae231c",
+    "3204b75a-0eae-4668-be89-84ff59ce822e",
+    "b661ea80-dd00-4508-94ad-f023db33f563",
+    "b964a6b1-dfc8-4a2d-bb54-bee29a6e8b80",
+    "6a153fbf-92f7-4a25-a832-85369b38f2e7",
+    "b47af366-c3be-4e02-83ba-bd955587430b",
+    "6b9d7e70-ae0a-462e-9bb1-217d4b1f567d",
+    "b72d474f-8fd2-47a3-9368-b7d4a63faee2",
+    "cc2a5fb0-1b22-4c6c-b802-ce3c726d5936",
+    "c5df91e6-1ab5-4e87-88c6-cb6f90bb42b2",
+    "9e26b6ed-c2f5-4ade-93a1-b181c76b3b25",
+    "1ca2b4d7-8f83-4eec-8504-c32912e3b939",
+    "b0e37ad5-16bd-4ceb-a3e4-f184e3bd5463",
+    "2643f69a-c727-4499-bea5-f2e426ed692f",
+    "aa1f5d6a-d491-4317-b21c-324185d3bbba",
+    "64e0577b-7d89-4d1e-9178-d7df7d4e6c8a",
+    "df923010-961c-42b0-912e-cf44ff8b77ce",
+    "d2a858ae-6e16-4483-9f36-4225328d91d8",
+    "43afcf6c-ec0a-47ee-89ba-970e4cbebd8b",
+    "56faa09d-f9fc-4180-a91b-4a4d800cfd81",
+    "a4746f07-a45d-47a7-94e8-a092177bf98e",
+    "d7b1c02c-3c69-4b6a-8c8c-1d8ca5ad170e",
+    "43b55264-4512-45e1-bcc4-afc29bd3cde7",
+    "2302ee29-bda4-4d0c-9b8a-78ff7efdff5a",
+    "e75268e9-085b-4115-ae61-1e06e8b005ab",
+    "3e765a99-5a8b-4373-9f42-36140d6f6182",
+    "3482b432-afc3-4fea-a5a6-9677752e073c",
+    "c3bb0606-3915-42cb-b233-2258ad56dfbb",
+    "aeb9c76e-8fef-444a-a5cf-eee19ad0a957",
+    "e6a6b16c-6440-48c4-9da0-6f09c64e851e",
+    "bb81cd82-fe11-47f7-8470-e818a7dce994"
+  ],
+  "changed_zones": [
+    {
+      "uuid": "a3ee32fc-511b-4512-acf0-db8842f10939",
+      "name": "",
+      "reason": "Local USB ground pour follows moved USB wing",
+      "before_polygon": [
+        [
+          49.9,
+          103.0
+        ],
+        [
+          65.0,
+          103.0
+        ],
+        [
+          65.0,
+          120.48491
+        ],
+        [
+          49.9,
+          120.48491
+        ]
+      ],
+      "after_polygon": [
+        [
+          3.51509,
+          104.38491
+        ],
+        [
+          21,
+          104.38491
+        ],
+        [
+          21,
+          121.28491
+        ],
+        [
+          3.51509,
+          121.28491
+        ]
+      ],
+      "changed_properties": [
+        "polygon",
+        "filled_polygons"
+      ],
+      "all_other_properties": "preserved"
+    },
+    {
+      "uuid": "1a6f506a-b52d-4161-ba79-54fc7dc85e8e",
+      "name": "ROUTER_EDGE_RESERVE_6",
+      "reason": "Filled former notch: reserve follows new0.8mm wing-to-core step",
+      "before_polygon": [
+        [
+          25.7,
+          116.28491
+        ],
+        [
+          26.2,
+          116.28491
+        ],
+        [
+          26.2,
+          120.48491
+        ],
+        [
+          25.7,
+          120.48491
+        ]
+      ],
+      "after_polygon": [
+        [
+          20.5,
+          120.48491
+        ],
+        [
+          21,
+          120.48491
+        ],
+        [
+          21,
+          121.28491
+        ],
+        [
+          20.5,
+          121.28491
+        ]
+      ],
+      "changed_properties": [
+        "polygon",
+        "filled_polygons"
+      ],
+      "all_other_properties": "preserved"
+    },
+    {
+      "uuid": "5f563f3d-c3bf-4282-ad7f-ce7feec2097c",
+      "name": "ROUTER_EDGE_RESERVE_5",
+      "reason": "Filled former notch: bottom-edge reserve extends left toX21",
+      "before_polygon": [
+        [
+          25.7,
+          119.98491
+        ],
+        [
+          49.9,
+          119.98491
+        ],
+        [
+          49.9,
+          120.48491
+        ],
+        [
+          25.7,
+          120.48491
+        ]
+      ],
+      "after_polygon": [
+        [
+          21,
+          119.98491
+        ],
+        [
+          49.9,
+          119.98491
+        ],
+        [
+          49.9,
+          120.48491
+        ],
+        [
+          21,
+          120.48491
+        ]
+      ],
+      "changed_properties": [
+        "polygon",
+        "filled_polygons"
+      ],
+      "all_other_properties": "preserved"
+    },
+    {
+      "uuid": "752a4e3f-d3fd-4923-bf89-43e311b9cfa3",
+      "name": "ROUTER_EDGE_RESERVE_7",
+      "reason": "Filled former notch: reserve now follows new USB wing front edge",
+      "before_polygon": [
+        [
+          19.9,
+          115.78491
+        ],
+        [
+          25.7,
+          115.78491
+        ],
+        [
+          25.7,
+          116.28491
+        ],
+        [
+          19.9,
+          116.28491
+        ]
+      ],
+      "after_polygon": [
+        [
+          3.51509,
+          120.78491
+        ],
+        [
+          21,
+          120.78491
+        ],
+        [
+          21,
+          121.28491
+        ],
+        [
+          3.51509,
+          121.28491
+        ]
+      ],
+      "changed_properties": [
+        "polygon",
+        "filled_polygons"
+      ],
+      "all_other_properties": "preserved"
+    },
+    {
+      "uuid": "98a237f8-fda4-45e0-a4cd-1f55a012a4ca",
+      "name": "ROUTER_EDGE_RESERVE_1",
+      "reason": "Restore reserve along restored original right edge",
+      "before_polygon": [
+        [
+          49.4,
+          38.48491
+        ],
+        [
+          49.275,
+          38.48491
+        ],
+        [
+          49.275,
+          103.0
+        ],
+        [
+          49.4,
+          103.0
+        ]
+      ],
+      "after_polygon": [
+        [
+          49.4,
+          38.48491
+        ],
+        [
+          49.275,
+          38.48491
+        ],
+        [
+          49.275,
+          120.48491
+        ],
+        [
+          49.4,
+          120.48491
+        ]
+      ],
+      "changed_properties": [
+        "polygon",
+        "filled_polygons"
+      ],
+      "all_other_properties": "preserved"
+    },
+    {
+      "uuid": "b759ef5f-747e-431e-a3b1-071e532148d4",
+      "name": "ROUTER_EDGE_RESERVE_0",
+      "reason": "Former lower left edge becomes internal neck",
+      "before_polygon": [
+        [
+          19.9,
+          21.48491
+        ],
+        [
+          20.4,
+          21.48491
+        ],
+        [
+          20.4,
+          116.28491
+        ],
+        [
+          19.9,
+          116.28491
+        ]
+      ],
+      "after_polygon": [
+        [
+          19.9,
+          21.48491
+        ],
+        [
+          20.4,
+          21.48491
+        ],
+        [
+          20.4,
+          104.38491
+        ],
+        [
+          19.9,
+          104.38491
+        ]
+      ],
+      "changed_properties": [
+        "polygon",
+        "filled_polygons"
+      ],
+      "all_other_properties": "preserved"
+    },
+    {
+      "uuid": "b76844b1-3616-4d68-9eb1-0974e35bc20d",
+      "name": "",
+      "reason": "Local USB ground pour follows moved USB wing",
+      "before_polygon": [
+        [
+          49.9,
+          103.0
+        ],
+        [
+          65.0,
+          103.0
+        ],
+        [
+          65.0,
+          120.48491
+        ],
+        [
+          49.9,
+          120.48491
+        ]
+      ],
+      "after_polygon": [
+        [
+          3.51509,
+          104.38491
+        ],
+        [
+          21,
+          104.38491
+        ],
+        [
+          21,
+          121.28491
+        ],
+        [
+          3.51509,
+          121.28491
+        ]
+      ],
+      "changed_properties": [
+        "polygon",
+        "filled_polygons"
+      ],
+      "all_other_properties": "preserved"
+    },
+    {
+      "uuid": "531f7a80-57bf-49da-926b-ee1da1066b2c",
+      "name": "REVIEW_CONTINUOUS_GND",
+      "reason": "Continuous GND plane follows revised outline",
+      "before_polygon": [
+        [
+          19.9,
+          21.48491
+        ],
+        [
+          28.8,
+          21.48491
+        ],
+        [
+          28.8,
+          38.48491
+        ],
+        [
+          49.9,
+          38.48491
+        ],
+        [
+          49.9,
+          103.0
+        ],
+        [
+          65.0,
+          103.0
+        ],
+        [
+          65.0,
+          120.48491
+        ],
+        [
+          25.7,
+          120.48491
+        ],
+        [
+          25.7,
+          116.28491
+        ],
+        [
+          19.9,
+          116.28491
+        ]
+      ],
+      "after_polygon": [
+        [
+          3.51509,
+          121.28491
+        ],
+        [
+          21,
+          121.28491
+        ],
+        [
+          21,
+          120.48491
+        ],
+        [
+          49.9,
+          120.48491
+        ],
+        [
+          49.9,
+          38.48491
+        ],
+        [
+          28.8,
+          38.48491
+        ],
+        [
+          28.8,
+          21.48491
+        ],
+        [
+          19.9,
+          21.48491
+        ],
+        [
+          19.9,
+          104.38491
+        ],
+        [
+          3.51509,
+          104.38491
+        ]
+      ],
+      "changed_properties": [
+        "polygon",
+        "filled_polygons"
+      ],
+      "all_other_properties": "preserved"
+    }
+  ],
+  "world_transform": {
+    "x": "native_x+30.5",
+    "y": "122.58491-native_y",
+    "nominal_back_z": 24.0,
+    "nominal_top_z": 25.6,
+    "step_translation": [
+      30.5,
+      122.58491,
+      24.0529
+    ]
+  },
+  "schematics": {
+    "Carbon_Monoxide.kicad_sch": "e05b21e25d82c727ea046086cab4b3bb2a3f3797fb877754c356ca801ca57a96",
+    "Charging.kicad_sch": "afe2b65761ab48c2ab009336f6bd0782e343cbd33043100822e29cfa4a65c1da",
+    "Environment.kicad_sch": "a1cd76c7502b1720cbaa00b3eb258ff24178aadee432b8c3d760d3571a4524a7",
+    "Gauge_Interface.kicad_sch": "ba7cd46b5f575c20b85fe264e02f405a459ce6de5958aa35b8115688eedfed6e",
+    "Helium.kicad_sch": "9ea2437448c99602f45d038a4acacd7bc13256d081d157b55d011494bb1f64ce",
+    "Oxygen.kicad_sch": "97c645a89bb9f7335fbd80882cd5aa9cb9fe19d51262fb48f73e1e3eb0a0ba13",
+    "Power_Control.kicad_sch": "1d0e88653e2c66d3de08e57afb512cc088b87d9d772afcf86f58d5951b05244d",
+    "Supply_5V.kicad_sch": "bfd05c6d9788d346bc97a99eba06bca5458786f583a7b40c8c792b0b36da4451",
+    "Testpoints.kicad_sch": "2c5cfad1891b3d6fa4538d4227cca4a4008e820ebf930dc40d8b1512b73ccc78",
+    "Trimix_Analyzer.kicad_sch": "0f3da790cab859155b557f8dfa76146ecd49850168362410329309915e6043b4",
+    "USB_Input.kicad_sch": "1593b35a796a78a199dce22b0f7c309d555aed3a6287fb038c93ce9b28488281",
+    "USB_Input_Limiter.kicad_sch": "bf80854f95976d92f2cc61a1e625c3e508d5cb372a49509f0814c8b2ce63afce",
+    "USB_Overvoltage.kicad_sch": "38f034afd6a19b6d6cb93b8e161acc4c58c0dd175a7d618c9bbbd993170792b8",
+    "USB_Source_Control.kicad_sch": "9a23d2ec009f071881d3bcbfa09d47354d9d38c6669f57cb7db8d20b636fb915"
+  },
+  "final_fill_method": "Native kicad-cli pcb drc --refill-zones --save-board --schematic-parity --severity-all",
+  "new_In1_exception": {
+    "net": "USB_D_P",
+    "layer": "In1.Cu",
+    "width_mm": 0.15,
+    "points_native_mm": [
+      [
+        39.85,
+        111.9
+      ],
+      [
+        37.375,
+        114.375
+      ],
+      [
+        37.375,
+        118.475
+      ],
+      [
+        37.35,
+        118.48491
+      ]
+    ],
+    "purpose": "Bounded protected-side crossing outside both thermal windows; source power pours preserved; original core copper unchanged."
+  }
+}

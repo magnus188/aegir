@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\\"report\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/system-review/mechanical/connector-review/photo-checkpoint.json\\\", \\\"sha256\\\": \\\"7969d28c94f105c1baec8a263f4b5340c8453218b20d897c5d85a8b45d4a2c9f\\\", \\\"status\\\": \\\"photo_reference_checkpoint_saved_cables_pending\\\", \\\"checks\\\": null}\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

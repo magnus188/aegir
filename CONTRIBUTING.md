@@ -2,8 +2,8 @@
 
 Start with the [project overview](README.md). For details, use the
 [firmware guide](software/firmware/README.md), the
-[enclosure CAD](hardware/cad/rev04/3d-print/Trimix_Enclosure_A3_PrintReview.f3d),
-or the [main PCB project](hardware/pcb/analyzer/Trimix_Analyzer.kicad_pro).
+[enclosure CAD](hardware/cad/pcb-v2-bottom/Trimix_Enclosure_PCB2_Bottom.f3d),
+or the [main PCB project](hardware/pcb/analyzer-v2-bottom/Trimix_Analyzer.kicad_pro).
 
 Before contributing, read the [license map](LICENSE.md). Submit original work
 under the license for its area: GPL-3.0-only for code and CERN-OHL-S-2.0 for

@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\\"report\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/system-review/mechanical/placement-checkpoint-v2/verification/geometry-export.json\\\", \\\"keys\\\": [\\\"document\\\", \\\"cloud_id\\\", \\\"timeline\\\", \\\"files\\\", \\\"native_archive_zip_crc_pass\\\", \\\"native_archive_members\\\", \\\"step_configuration\\\", \\\"native_configuration\\\", \\\"source_visibility_restored\\\", \\\"other_documents_preserved\\\", \\\"status\\\", \\\"physical_or_manufacturing_release\\\"], \\\"counts\\\": {\\\"other_documents_preserved\\\": 2}}\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

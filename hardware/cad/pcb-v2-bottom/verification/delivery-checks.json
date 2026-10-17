@@ -1,0 +1,1524 @@
+{
+  "schema": 2,
+  "status": "pass_with_documented_STEP_roundtrip_variation",
+  "pass": true,
+  "input_sha256": {
+    "hardware/cad/rev04/original-fit-check/Trimix_Enclosure_A3_Original.step": "fab4ac189ffb369f3edf88eecf946b7e34c1c8f543a5e2456ca501b91afb08cc",
+    "hardware/cad/pcb-v2-bottom/Trimix_Enclosure_PCB2_Bottom.step": "cd3415fa71f6ea861aad5431b4af8b44af02217d2e5b17a71d7bb2bab0160402",
+    "hardware/cad/pcb-v2-bottom/scripts/build_case.py": "85eb548bcb8fb2a49413ebb7ad858129e8500bedb1a61e48f26d2656ce86fb3c"
+  },
+  "inputs_unchanged_during_check": true,
+  "preservation_checks": [
+    {
+      "part_id": "TMX-A3-C02",
+      "raw_boolean": {
+        "source_minus_candidate_valid": true,
+        "candidate_minus_source_valid": true,
+        "raw_summed_cut_volumes_mm3": 0,
+        "zero_valid_difference": true,
+        "interpretation": "Diagnostic only: coincident STEP cuts may be invalid or retain the entire solid. Nonzero volume alone is not evidence of a physical change."
+      },
+      "geometry_signature": {
+        "source_valid": true,
+        "candidate_valid": true,
+        "coordinate_rounding_mm": 1e-06,
+        "world_bounds_max_delta_mm": 7.105427357601002e-15,
+        "unique_analytic_and_bspline_surface_geometry_matches": true,
+        "trimmed_edge_geometry_multiset_matches": true,
+        "unique_vertex_coordinates_match": true,
+        "source_topology": {
+          "solids": 1,
+          "faces": 15,
+          "edges": 36,
+          "vertices": 24
+        },
+        "candidate_topology": {
+          "solids": 1,
+          "faces": 15,
+          "edges": 36,
+          "vertices": 24
+        },
+        "source_measures": {
+          "volume_mm3": 9872.411410500576,
+          "area_mm2": 16180.026006308282,
+          "requested_relative_integration_epsilon": 1e-10,
+          "reported_volume_error": 5.261478381369521e-16,
+          "reported_area_error": 2.8271597168564604e-16
+        },
+        "candidate_measures": {
+          "volume_mm3": 9872.411410500335,
+          "area_mm2": 16180.026006308257,
+          "requested_relative_integration_epsilon": 1e-10,
+          "reported_volume_error": 3.507652254246938e-16,
+          "reported_area_error": 1.4135798584286335e-16
+        },
+        "volume_difference_mm3": 2.4010660126805305e-10,
+        "area_difference_mm2": 2.546585164964199e-11,
+        "unmatched_source_surfaces": 0,
+        "unmatched_candidate_surfaces": 0,
+        "unmatched_source_edges": 0,
+        "unmatched_candidate_edges": 0,
+        "strict_signature_match": true,
+        "topology_identical": true
+      },
+      "sampled_boundary": {
+        "source_to_candidate": {
+          "vertex_sample_count": 24,
+          "edge_sample_count": 216,
+          "maximum_vertex_to_other_brep_mm": 1.4210854715202004e-14,
+          "maximum_edge_sample_to_other_brep_mm": 1.432144669219779e-14
+        },
+        "candidate_to_source": {
+          "vertex_sample_count": 24,
+          "edge_sample_count": 216,
+          "maximum_vertex_to_other_brep_mm": 1.4210854715202004e-14,
+          "maximum_edge_sample_to_other_brep_mm": 1.432144669219779e-14
+        },
+        "maximum_sampled_distance_mm": 1.432144669219779e-14,
+        "acceptance_mm": 0.001,
+        "within_acceptance": true,
+        "limitation": "Vertices and six arc-length samples per edge, both directions. This does not prove a continuous maximum surface deviation or exact BRep identity."
+      },
+      "relative_volume_difference": 2.4320967926100495e-14,
+      "relative_area_difference": 1.5739067192916342e-15,
+      "metric_relative_acceptance": 1e-06,
+      "metric_invariants_pass": true,
+      "strict_shape_identity_established": true,
+      "preserved_within_roundtrip_tolerance": true,
+      "topology_split": null,
+      "bounds": {
+        "min": [
+          5.4,
+          27.0,
+          16.5
+        ],
+        "max": [
+          47.4,
+          107.4,
+          36.85
+        ],
+        "size": [
+          42.0,
+          80.4,
+          20.35
+        ],
+        "center": [
+          26.4,
+          67.2,
+          26.675
+        ]
+      }
+    },
+    {
+      "part_id": "TMX-A3-C03-V01",
+      "raw_boolean": {
+        "source_minus_candidate_valid": true,
+        "candidate_minus_source_valid": true,
+        "raw_summed_cut_volumes_mm3": 35901.429694840364,
+        "zero_valid_difference": false,
+        "interpretation": "Diagnostic only: coincident STEP cuts may be invalid or retain the entire solid. Nonzero volume alone is not evidence of a physical change."
+      },
+      "geometry_signature": {
+        "source_valid": true,
+        "candidate_valid": true,
+        "coordinate_rounding_mm": 1e-06,
+        "world_bounds_max_delta_mm": 7.105427357601002e-15,
+        "unique_analytic_and_bspline_surface_geometry_matches": true,
+        "trimmed_edge_geometry_multiset_matches": true,
+        "unique_vertex_coordinates_match": true,
+        "source_topology": {
+          "solids": 1,
+          "faces": 3,
+          "edges": 3,
+          "vertices": 2
+        },
+        "candidate_topology": {
+          "solids": 1,
+          "faces": 3,
+          "edges": 3,
+          "vertices": 2
+        },
+        "source_measures": {
+          "volume_mm3": 17950.71484742019,
+          "area_mm2": 4465.522629665603,
+          "requested_relative_integration_epsilon": 1e-10,
+          "reported_volume_error": 5.968972331718813e-17,
+          "reported_area_error": 2.485415135697987e-16
+        },
+        "candidate_measures": {
+          "volume_mm3": 17950.714847420182,
+          "area_mm2": 4465.522629665734,
+          "requested_relative_integration_epsilon": 1e-10,
+          "reported_volume_error": 7.958629775625092e-17,
+          "reported_area_error": 1.2427075678489523e-16
+        },
+        "volume_difference_mm3": 7.275957614183426e-12,
+        "area_difference_mm2": 1.3096723705530167e-10,
+        "unmatched_source_surfaces": 0,
+        "unmatched_candidate_surfaces": 0,
+        "unmatched_source_edges": 0,
+        "unmatched_candidate_edges": 0,
+        "strict_signature_match": true,
+        "topology_identical": true
+      },
+      "sampled_boundary": {
+        "source_to_candidate": {
+          "vertex_sample_count": 2,
+          "edge_sample_count": 18,
+          "maximum_vertex_to_other_brep_mm": 0.0,
+          "maximum_edge_sample_to_other_brep_mm": 7.105427357601002e-15
+        },
+        "candidate_to_source": {
+          "vertex_sample_count": 2,
+          "edge_sample_count": 18,
+          "maximum_vertex_to_other_brep_mm": 0.0,
+          "maximum_edge_sample_to_other_brep_mm": 7.105427357601002e-15
+        },
+        "maximum_sampled_distance_mm": 7.105427357601002e-15,
+        "acceptance_mm": 0.001,
+        "within_acceptance": true,
+        "limitation": "Vertices and six arc-length samples per edge, both directions. This does not prove a continuous maximum surface deviation or exact BRep identity."
+      },
+      "relative_volume_difference": 4.0532968608930354e-16,
+      "relative_area_difference": 2.9328535071181367e-14,
+      "metric_relative_acceptance": 1e-06,
+      "metric_invariants_pass": true,
+      "strict_shape_identity_established": false,
+      "preserved_within_roundtrip_tolerance": true,
+      "topology_split": null,
+      "bounds": {
+        "min": [
+          7.1,
+          32.0,
+          17.65
+        ],
+        "max": [
+          25.299999999999997,
+          101.0,
+          35.85
+        ],
+        "size": [
+          18.199999999999996,
+          69.0,
+          18.200000000000003
+        ],
+        "center": [
+          16.2,
+          66.5,
+          26.75
+        ]
+      },
+      "battery_analytic_geometry": {
+        "surface_geometry": [
+          [
+            "CYLINDER",
+            [
+              [
+                [
+                  0.0,
+                  1.0,
+                  0.0
+                ],
+                [
+                  16.2,
+                  0.0,
+                  26.75
+                ]
+              ],
+              9.1
+            ]
+          ],
+          [
+            "PLANE",
+            [
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              32.0
+            ]
+          ],
+          [
+            "PLANE",
+            [
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              101.0
+            ]
+          ]
+        ],
+        "analytic_cylinder_and_two_end_planes_match": true,
+        "scope": "World cylinder axis, radius, two end planes, trimmed circular/linear boundaries, and vertices match at 1e-6 mm; battery geometry and placement preserved."
+      }
+    },
+    {
+      "part_id": "TMX-A3-C03-V02",
+      "raw_boolean": {
+        "source_minus_candidate_valid": true,
+        "candidate_minus_source_valid": true,
+        "raw_summed_cut_volumes_mm3": 35901.429694840364,
+        "zero_valid_difference": false,
+        "interpretation": "Diagnostic only: coincident STEP cuts may be invalid or retain the entire solid. Nonzero volume alone is not evidence of a physical change."
+      },
+      "geometry_signature": {
+        "source_valid": true,
+        "candidate_valid": true,
+        "coordinate_rounding_mm": 1e-06,
+        "world_bounds_max_delta_mm": 0.0,
+        "unique_analytic_and_bspline_surface_geometry_matches": true,
+        "trimmed_edge_geometry_multiset_matches": true,
+        "unique_vertex_coordinates_match": true,
+        "source_topology": {
+          "solids": 1,
+          "faces": 3,
+          "edges": 3,
+          "vertices": 2
+        },
+        "candidate_topology": {
+          "solids": 1,
+          "faces": 3,
+          "edges": 3,
+          "vertices": 2
+        },
+        "source_measures": {
+          "volume_mm3": 17950.71484742019,
+          "area_mm2": 4465.522629665603,
+          "requested_relative_integration_epsilon": 1e-10,
+          "reported_volume_error": 5.968972331718813e-17,
+          "reported_area_error": 2.485415135697987e-16
+        },
+        "candidate_measures": {
+          "volume_mm3": 17950.71484742019,
+          "area_mm2": 4465.522629665734,
+          "requested_relative_integration_epsilon": 1e-10,
+          "reported_volume_error": 5.968972331718813e-17,
+          "reported_area_error": 1.2427075678489523e-16
+        },
+        "volume_difference_mm3": 0.0,
+        "area_difference_mm2": 1.3096723705530167e-10,
+        "unmatched_source_surfaces": 0,
+        "unmatched_candidate_surfaces": 0,
+        "unmatched_source_edges": 0,
+        "unmatched_candidate_edges": 0,
+        "strict_signature_match": true,
+        "topology_identical": true
+      },
+      "sampled_boundary": {
+        "source_to_candidate": {
+          "vertex_sample_count": 2,
+          "edge_sample_count": 18,
+          "maximum_vertex_to_other_brep_mm": 0.0,
+          "maximum_edge_sample_to_other_brep_mm": 0.0
+        },
+        "candidate_to_source": {
+          "vertex_sample_count": 2,
+          "edge_sample_count": 18,
+          "maximum_vertex_to_other_brep_mm": 0.0,
+          "maximum_edge_sample_to_other_brep_mm": 0.0
+        },
+        "maximum_sampled_distance_mm": 0.0,
+        "acceptance_mm": 0.001,
+        "within_acceptance": true,
+        "limitation": "Vertices and six arc-length samples per edge, both directions. This does not prove a continuous maximum surface deviation or exact BRep identity."
+      },
+      "relative_volume_difference": 0.0,
+      "relative_area_difference": 2.9328535071181367e-14,
+      "metric_relative_acceptance": 1e-06,
+      "metric_invariants_pass": true,
+      "strict_shape_identity_established": false,
+      "preserved_within_roundtrip_tolerance": true,
+      "topology_split": null,
+      "bounds": {
+        "min": [
+          27.5,
+          32.0,
+          17.65
+        ],
+        "max": [
+          45.7,
+          101.0,
+          35.85
+        ],
+        "size": [
+          18.200000000000003,
+          69.0,
+          18.200000000000003
+        ],
+        "center": [
+          36.6,
+          66.5,
+          26.75
+        ]
+      },
+      "battery_analytic_geometry": {
+        "surface_geometry": [
+          [
+            "CYLINDER",
+            [
+              [
+                [
+                  0.0,
+                  1.0,
+                  0.0
+                ],
+                [
+                  36.6,
+                  0.0,
+                  26.75
+                ]
+              ],
+              9.1
+            ]
+          ],
+          [
+            "PLANE",
+            [
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              32.0
+            ]
+          ],
+          [
+            "PLANE",
+            [
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              101.0
+            ]
+          ]
+        ],
+        "analytic_cylinder_and_two_end_planes_match": true,
+        "scope": "World cylinder axis, radius, two end planes, trimmed circular/linear boundaries, and vertices match at 1e-6 mm; battery geometry and placement preserved."
+      }
+    },
+    {
+      "part_id": "TMX-A3-C10-V01",
+      "raw_boolean": {
+        "source_minus_candidate_valid": true,
+        "candidate_minus_source_valid": true,
+        "raw_summed_cut_volumes_mm3": 0,
+        "zero_valid_difference": true,
+        "interpretation": "Diagnostic only: coincident STEP cuts may be invalid or retain the entire solid. Nonzero volume alone is not evidence of a physical change."
+      },
+      "geometry_signature": {
+        "source_valid": true,
+        "candidate_valid": true,
+        "coordinate_rounding_mm": 1e-06,
+        "world_bounds_max_delta_mm": 0.0,
+        "unique_analytic_and_bspline_surface_geometry_matches": true,
+        "trimmed_edge_geometry_multiset_matches": true,
+        "unique_vertex_coordinates_match": true,
+        "source_topology": {
+          "solids": 1,
+          "faces": 10,
+          "edges": 24,
+          "vertices": 16
+        },
+        "candidate_topology": {
+          "solids": 1,
+          "faces": 10,
+          "edges": 24,
+          "vertices": 16
+        },
+        "source_measures": {
+          "volume_mm3": 472.80000000000007,
+          "area_mm2": 426.56,
+          "requested_relative_integration_epsilon": 1e-10,
+          "reported_volume_error": 3.1164155077197395e-16,
+          "reported_area_error": 1.85037170770859e-16
+        },
+        "candidate_measures": {
+          "volume_mm3": 472.8,
+          "area_mm2": 426.56000000000006,
+          "requested_relative_integration_epsilon": 1e-10,
+          "reported_volume_error": 3.1164155077197395e-16,
+          "reported_area_error": 1.85037170770859e-16
+        },
+        "volume_difference_mm3": 5.684341886080802e-14,
+        "area_difference_mm2": 5.684341886080802e-14,
+        "unmatched_source_surfaces": 0,
+        "unmatched_candidate_surfaces": 0,
+        "unmatched_source_edges": 0,
+        "unmatched_candidate_edges": 0,
+        "strict_signature_match": true,
+        "topology_identical": true
+      },
+      "sampled_boundary": {
+        "source_to_candidate": {
+          "vertex_sample_count": 16,
+          "edge_sample_count": 144,
+          "maximum_vertex_to_other_brep_mm": 3.552713678800501e-15,
+          "maximum_edge_sample_to_other_brep_mm": 3.552713678800501e-15
+        },
+        "candidate_to_source": {
+          "vertex_sample_count": 16,
+          "edge_sample_count": 144,
+          "maximum_vertex_to_other_brep_mm": 3.552713678800501e-15,
+          "maximum_edge_sample_to_other_brep_mm": 3.552713678800501e-15
+        },
+        "maximum_sampled_distance_mm": 3.552713678800501e-15,
+        "acceptance_mm": 0.001,
+        "within_acceptance": true,
+        "limitation": "Vertices and six arc-length samples per edge, both directions. This does not prove a continuous maximum surface deviation or exact BRep identity."
+      },
+      "relative_volume_difference": 1.2022719725213199e-16,
+      "relative_area_difference": 1.3326007797451241e-16,
+      "metric_relative_acceptance": 1e-06,
+      "metric_invariants_pass": true,
+      "strict_shape_identity_established": true,
+      "preserved_within_roundtrip_tolerance": true,
+      "topology_split": null,
+      "bounds": {
+        "min": [
+          23.0,
+          110.0,
+          28.0
+        ],
+        "max": [
+          35.0,
+          120.0,
+          32.0
+        ],
+        "size": [
+          12.0,
+          10.0,
+          4.0
+        ],
+        "center": [
+          29.0,
+          115.0,
+          30.0
+        ]
+      }
+    },
+    {
+      "part_id": "TMX-A3-C10-V02",
+      "raw_boolean": {
+        "source_minus_candidate_valid": true,
+        "candidate_minus_source_valid": true,
+        "raw_summed_cut_volumes_mm3": 0,
+        "zero_valid_difference": true,
+        "interpretation": "Diagnostic only: coincident STEP cuts may be invalid or retain the entire solid. Nonzero volume alone is not evidence of a physical change."
+      },
+      "geometry_signature": {
+        "source_valid": true,
+        "candidate_valid": true,
+        "coordinate_rounding_mm": 1e-06,
+        "world_bounds_max_delta_mm": 0.0,
+        "unique_analytic_and_bspline_surface_geometry_matches": true,
+        "trimmed_edge_geometry_multiset_matches": true,
+        "unique_vertex_coordinates_match": true,
+        "source_topology": {
+          "solids": 1,
+          "faces": 6,
+          "edges": 12,
+          "vertices": 8
+        },
+        "candidate_topology": {
+          "solids": 1,
+          "faces": 6,
+          "edges": 12,
+          "vertices": 8
+        },
+        "source_measures": {
+          "volume_mm3": 264.00000000000034,
+          "area_mm2": 336.8000000000001,
+          "requested_relative_integration_epsilon": 1e-10,
+          "reported_volume_error": 2.0185873175003077e-16,
+          "reported_area_error": 0.0
+        },
+        "candidate_measures": {
+          "volume_mm3": 264.00000000000034,
+          "area_mm2": 336.8000000000001,
+          "requested_relative_integration_epsilon": 1e-10,
+          "reported_volume_error": 2.0185873175003077e-16,
+          "reported_area_error": 0.0
+        },
+        "volume_difference_mm3": 0.0,
+        "area_difference_mm2": 0.0,
+        "unmatched_source_surfaces": 0,
+        "unmatched_candidate_surfaces": 0,
+        "unmatched_source_edges": 0,
+        "unmatched_candidate_edges": 0,
+        "strict_signature_match": true,
+        "topology_identical": true
+      },
+      "sampled_boundary": {
+        "source_to_candidate": {
+          "vertex_sample_count": 8,
+          "edge_sample_count": 72,
+          "maximum_vertex_to_other_brep_mm": 0.0,
+          "maximum_edge_sample_to_other_brep_mm": 0.0
+        },
+        "candidate_to_source": {
+          "vertex_sample_count": 8,
+          "edge_sample_count": 72,
+          "maximum_vertex_to_other_brep_mm": 0.0,
+          "maximum_edge_sample_to_other_brep_mm": 0.0
+        },
+        "maximum_sampled_distance_mm": 0.0,
+        "acceptance_mm": 0.001,
+        "within_acceptance": true,
+        "limitation": "Vertices and six arc-length samples per edge, both directions. This does not prove a continuous maximum surface deviation or exact BRep identity."
+      },
+      "relative_volume_difference": 0.0,
+      "relative_area_difference": 0.0,
+      "metric_relative_acceptance": 1e-06,
+      "metric_invariants_pass": true,
+      "strict_shape_identity_established": true,
+      "preserved_within_roundtrip_tolerance": true,
+      "topology_split": null,
+      "bounds": {
+        "min": [
+          23.0,
+          110.0,
+          32.0
+        ],
+        "max": [
+          35.0,
+          120.0,
+          34.2
+        ],
+        "size": [
+          12.0,
+          10.0,
+          2.200000000000003
+        ],
+        "center": [
+          29.0,
+          115.0,
+          33.1
+        ]
+      }
+    },
+    {
+      "part_id": "TMX-A3-P04",
+      "raw_boolean": {
+        "source_minus_candidate_valid": false,
+        "candidate_minus_source_valid": false,
+        "raw_summed_cut_volumes_mm3": 370.58097486250955,
+        "zero_valid_difference": false,
+        "interpretation": "Diagnostic only: coincident STEP cuts may be invalid or retain the entire solid. Nonzero volume alone is not evidence of a physical change."
+      },
+      "geometry_signature": {
+        "source_valid": true,
+        "candidate_valid": true,
+        "coordinate_rounding_mm": 1e-06,
+        "world_bounds_max_delta_mm": 8.881784197001252e-16,
+        "unique_analytic_and_bspline_surface_geometry_matches": true,
+        "trimmed_edge_geometry_multiset_matches": true,
+        "unique_vertex_coordinates_match": true,
+        "source_topology": {
+          "solids": 1,
+          "faces": 13,
+          "edges": 33,
+          "vertices": 22
+        },
+        "candidate_topology": {
+          "solids": 1,
+          "faces": 13,
+          "edges": 33,
+          "vertices": 22
+        },
+        "source_measures": {
+          "volume_mm3": 185.29048743125068,
+          "area_mm2": 286.54181363776803,
+          "requested_relative_integration_epsilon": 1e-10,
+          "reported_volume_error": 2.224237362937137e-16,
+          "reported_area_error": 5.63244545417762e-16
+        },
+        "candidate_measures": {
+          "volume_mm3": 185.2904874312502,
+          "area_mm2": 286.54181363776934,
+          "requested_relative_integration_epsilon": 1e-10,
+          "reported_volume_error": 2.571042793868785e-16,
+          "reported_area_error": 5.63244545417762e-16
+        },
+        "volume_difference_mm3": 4.831690603168681e-13,
+        "area_difference_mm2": 1.3073986337985843e-12,
+        "unmatched_source_surfaces": 0,
+        "unmatched_candidate_surfaces": 0,
+        "unmatched_source_edges": 0,
+        "unmatched_candidate_edges": 0,
+        "strict_signature_match": true,
+        "topology_identical": true
+      },
+      "sampled_boundary": {
+        "source_to_candidate": {
+          "vertex_sample_count": 22,
+          "edge_sample_count": 198,
+          "maximum_vertex_to_other_brep_mm": 8.881784197001252e-16,
+          "maximum_edge_sample_to_other_brep_mm": 1.7763568394002505e-15
+        },
+        "candidate_to_source": {
+          "vertex_sample_count": 22,
+          "edge_sample_count": 198,
+          "maximum_vertex_to_other_brep_mm": 8.881784197001252e-16,
+          "maximum_edge_sample_to_other_brep_mm": 1.7763568394002505e-15
+        },
+        "maximum_sampled_distance_mm": 1.7763568394002505e-15,
+        "acceptance_mm": 0.001,
+        "within_acceptance": true,
+        "limitation": "Vertices and six arc-length samples per edge, both directions. This does not prove a continuous maximum surface deviation or exact BRep identity."
+      },
+      "relative_volume_difference": 2.607630143431626e-15,
+      "relative_area_difference": 4.562680110105442e-15,
+      "metric_relative_acceptance": 1e-06,
+      "metric_invariants_pass": true,
+      "strict_shape_identity_established": false,
+      "preserved_within_roundtrip_tolerance": true,
+      "topology_split": null,
+      "bounds": {
+        "min": [
+          65.5,
+          5.7,
+          14.1
+        ],
+        "max": [
+          72.5,
+          16.0,
+          20.5
+        ],
+        "size": [
+          7.0,
+          10.3,
+          6.4
+        ],
+        "center": [
+          69.0,
+          10.85,
+          17.3
+        ]
+      }
+    },
+    {
+      "part_id": "TMX-A3-P05",
+      "raw_boolean": {
+        "source_minus_candidate_valid": false,
+        "candidate_minus_source_valid": false,
+        "raw_summed_cut_volumes_mm3": 304.9809748625093,
+        "zero_valid_difference": false,
+        "interpretation": "Diagnostic only: coincident STEP cuts may be invalid or retain the entire solid. Nonzero volume alone is not evidence of a physical change."
+      },
+      "geometry_signature": {
+        "source_valid": true,
+        "candidate_valid": true,
+        "coordinate_rounding_mm": 1e-06,
+        "world_bounds_max_delta_mm": 1.4210854715202004e-14,
+        "unique_analytic_and_bspline_surface_geometry_matches": true,
+        "trimmed_edge_geometry_multiset_matches": true,
+        "unique_vertex_coordinates_match": true,
+        "source_topology": {
+          "solids": 1,
+          "faces": 13,
+          "edges": 33,
+          "vertices": 22
+        },
+        "candidate_topology": {
+          "solids": 1,
+          "faces": 13,
+          "edges": 33,
+          "vertices": 22
+        },
+        "source_measures": {
+          "volume_mm3": 152.4904874312507,
+          "area_mm2": 251.34181363776779,
+          "requested_relative_integration_epsilon": 1e-10,
+          "reported_volume_error": 1.8436065793987873e-16,
+          "reported_area_error": 5.611920754097185e-16
+        },
+        "candidate_measures": {
+          "volume_mm3": 152.49048743125059,
+          "area_mm2": 251.34181363776943,
+          "requested_relative_integration_epsilon": 1e-10,
+          "reported_volume_error": 3.2066083745038204e-16,
+          "reported_area_error": 5.611920754097185e-16
+        },
+        "volume_difference_mm3": 1.1368683772161603e-13,
+        "area_difference_mm2": 1.6484591469634324e-12,
+        "unmatched_source_surfaces": 0,
+        "unmatched_candidate_surfaces": 0,
+        "unmatched_source_edges": 0,
+        "unmatched_candidate_edges": 0,
+        "strict_signature_match": true,
+        "topology_identical": true
+      },
+      "sampled_boundary": {
+        "source_to_candidate": {
+          "vertex_sample_count": 22,
+          "edge_sample_count": 198,
+          "maximum_vertex_to_other_brep_mm": 1.4210854715202004e-14,
+          "maximum_edge_sample_to_other_brep_mm": 1.4210854715202004e-14
+        },
+        "candidate_to_source": {
+          "vertex_sample_count": 22,
+          "edge_sample_count": 198,
+          "maximum_vertex_to_other_brep_mm": 1.4210854715202004e-14,
+          "maximum_edge_sample_to_other_brep_mm": 1.4210854715202004e-14
+        },
+        "maximum_sampled_distance_mm": 1.4210854715202004e-14,
+        "acceptance_mm": 0.001,
+        "within_acceptance": true,
+        "limitation": "Vertices and six arc-length samples per edge, both directions. This does not prove a continuous maximum surface deviation or exact BRep identity."
+      },
+      "relative_volume_difference": 7.455339650145126e-16,
+      "relative_area_difference": 6.558634725773012e-15,
+      "metric_relative_acceptance": 1e-06,
+      "metric_invariants_pass": true,
+      "strict_shape_identity_established": false,
+      "preserved_within_roundtrip_tolerance": true,
+      "topology_split": null,
+      "bounds": {
+        "min": [
+          7.0,
+          119.8,
+          14.1
+        ],
+        "max": [
+          14.0,
+          129.5,
+          20.5
+        ],
+        "size": [
+          7.0,
+          9.700000000000003,
+          6.4
+        ],
+        "center": [
+          10.5,
+          124.65,
+          17.3
+        ]
+      }
+    },
+    {
+      "part_id": "TMX-A3-P07",
+      "raw_boolean": {
+        "source_minus_candidate_valid": false,
+        "candidate_minus_source_valid": false,
+        "raw_summed_cut_volumes_mm3": 47741.74591257827,
+        "zero_valid_difference": false,
+        "interpretation": "Diagnostic only: coincident STEP cuts may be invalid or retain the entire solid. Nonzero volume alone is not evidence of a physical change."
+      },
+      "geometry_signature": {
+        "source_valid": true,
+        "candidate_valid": true,
+        "coordinate_rounding_mm": 1e-06,
+        "world_bounds_max_delta_mm": 0.0,
+        "unique_analytic_and_bspline_surface_geometry_matches": true,
+        "trimmed_edge_geometry_multiset_matches": true,
+        "unique_vertex_coordinates_match": true,
+        "source_topology": {
+          "solids": 1,
+          "faces": 186,
+          "edges": 481,
+          "vertices": 309
+        },
+        "candidate_topology": {
+          "solids": 2,
+          "faces": 187,
+          "edges": 481,
+          "vertices": 310
+        },
+        "source_measures": {
+          "volume_mm3": 23543.59806671803,
+          "area_mm2": 21409.26390352069,
+          "requested_relative_integration_epsilon": 1e-10,
+          "reported_volume_error": 8.272407991809492e-11,
+          "reported_area_error": 1.1962782176048425e-10
+        },
+        "candidate_measures": {
+          "volume_mm3": 23543.594017674848,
+          "area_mm2": 21409.254342058004,
+          "requested_relative_integration_epsilon": 1e-10,
+          "reported_volume_error": 8.272406932367752e-11,
+          "reported_area_error": 1.1962781763655113e-10
+        },
+        "volume_difference_mm3": 0.0040490431820217054,
+        "area_difference_mm2": 0.009561462684359867,
+        "unmatched_source_surfaces": 0,
+        "unmatched_candidate_surfaces": 0,
+        "unmatched_source_edges": 0,
+        "unmatched_candidate_edges": 0,
+        "strict_signature_match": true,
+        "topology_identical": false
+      },
+      "sampled_boundary": {
+        "source_to_candidate": {
+          "vertex_sample_count": 309,
+          "edge_sample_count": 2886,
+          "maximum_vertex_to_other_brep_mm": 9.033002814392676e-12,
+          "maximum_edge_sample_to_other_brep_mm": 3.4226362711586325e-05
+        },
+        "candidate_to_source": {
+          "vertex_sample_count": 310,
+          "edge_sample_count": 2886,
+          "maximum_vertex_to_other_brep_mm": 9.033002814392676e-12,
+          "maximum_edge_sample_to_other_brep_mm": 3.422635834983186e-05
+        },
+        "maximum_sampled_distance_mm": 3.4226362711586325e-05,
+        "acceptance_mm": 0.001,
+        "within_acceptance": true,
+        "limitation": "Vertices and six arc-length samples per edge, both directions. This does not prove a continuous maximum surface deviation or exact BRep identity."
+      },
+      "relative_volume_difference": 1.7198064503766567e-07,
+      "relative_area_difference": 4.4660399009736687e-07,
+      "metric_relative_acceptance": 1e-06,
+      "metric_invariants_pass": true,
+      "strict_shape_identity_established": false,
+      "preserved_within_roundtrip_tolerance": true,
+      "topology_split": {
+        "source_topology": {
+          "solids": 1,
+          "faces": 186,
+          "edges": 481,
+          "vertices": 309
+        },
+        "candidate_topology": {
+          "solids": 2,
+          "faces": 187,
+          "edges": 481,
+          "vertices": 310
+        },
+        "secondary_solids": [
+          {
+            "volume_mm3": 1.4706140648998962e-09,
+            "bounds": {
+              "min": [
+                72.51776695296631,
+                164.98585786437,
+                23.757766952964378
+              ],
+              "max": [
+                72.52771070173621,
+                165.0141421356223,
+                23.767766952966728
+              ],
+              "size": [
+                0.00994374876989923,
+                0.028284271252317694,
+                0.010000000002349907
+              ],
+              "center": [
+                72.52273882735126,
+                164.99999999999613,
+                23.762766952965553
+              ]
+            }
+          }
+        ],
+        "permitted_secondary_total_volume_mm3": 1e-08,
+        "limitation": "Explicit STEP roundtrip split; exact topology and exact shape identity are not established."
+      },
+      "bounds": {
+        "min": [
+          3.0,
+          130.0,
+          2.9999999
+        ],
+        "max": [
+          82.0000001,
+          177.0000001,
+          36.0000001
+        ],
+        "size": [
+          79.0000001,
+          47.000000099999994,
+          33.0000002
+        ],
+        "center": [
+          42.50000005,
+          153.50000004999998,
+          19.5
+        ]
+      }
+    },
+    {
+      "part_id": "TMX-A3-P08",
+      "raw_boolean": {
+        "source_minus_candidate_valid": false,
+        "candidate_minus_source_valid": false,
+        "raw_summed_cut_volumes_mm3": 8169.3787662265095,
+        "zero_valid_difference": false,
+        "interpretation": "Diagnostic only: coincident STEP cuts may be invalid or retain the entire solid. Nonzero volume alone is not evidence of a physical change."
+      },
+      "geometry_signature": {
+        "source_valid": true,
+        "candidate_valid": true,
+        "coordinate_rounding_mm": 1e-06,
+        "world_bounds_max_delta_mm": 0.0,
+        "unique_analytic_and_bspline_surface_geometry_matches": true,
+        "trimmed_edge_geometry_multiset_matches": true,
+        "unique_vertex_coordinates_match": true,
+        "source_topology": {
+          "solids": 1,
+          "faces": 24,
+          "edges": 60,
+          "vertices": 40
+        },
+        "candidate_topology": {
+          "solids": 1,
+          "faces": 24,
+          "edges": 60,
+          "vertices": 40
+        },
+        "source_measures": {
+          "volume_mm3": 4084.6893831132647,
+          "area_mm2": 4675.5814138164305,
+          "requested_relative_integration_epsilon": 1e-10,
+          "reported_volume_error": 5.25711517595957e-16,
+          "reported_area_error": 2.5701451971422363e-16
+        },
+        "candidate_measures": {
+          "volume_mm3": 4084.689383113273,
+          "area_mm2": 4675.581413816436,
+          "requested_relative_integration_epsilon": 1e-10,
+          "reported_volume_error": 7.009486901272423e-16,
+          "reported_area_error": 2.570145197141996e-16
+        },
+        "volume_difference_mm3": 8.185452315956354e-12,
+        "area_difference_mm2": 5.4569682106375694e-12,
+        "unmatched_source_surfaces": 0,
+        "unmatched_candidate_surfaces": 0,
+        "unmatched_source_edges": 0,
+        "unmatched_candidate_edges": 0,
+        "strict_signature_match": true,
+        "topology_identical": true
+      },
+      "sampled_boundary": {
+        "source_to_candidate": {
+          "vertex_sample_count": 40,
+          "edge_sample_count": 360,
+          "maximum_vertex_to_other_brep_mm": 0.0,
+          "maximum_edge_sample_to_other_brep_mm": 3.552713678800501e-15
+        },
+        "candidate_to_source": {
+          "vertex_sample_count": 40,
+          "edge_sample_count": 360,
+          "maximum_vertex_to_other_brep_mm": 0.0,
+          "maximum_edge_sample_to_other_brep_mm": 3.552713678800501e-15
+        },
+        "maximum_sampled_distance_mm": 3.552713678800501e-15,
+        "acceptance_mm": 0.001,
+        "within_acceptance": true,
+        "limitation": "Vertices and six arc-length samples per edge, both directions. This does not prove a continuous maximum surface deviation or exact BRep identity."
+      },
+      "relative_volume_difference": 2.003935072712328e-15,
+      "relative_area_difference": 1.1671207765759626e-15,
+      "metric_relative_acceptance": 1e-06,
+      "metric_invariants_pass": true,
+      "strict_shape_identity_established": false,
+      "preserved_within_roundtrip_tolerance": true,
+      "topology_split": null,
+      "bounds": {
+        "min": [
+          3.0,
+          130.0,
+          27.3
+        ],
+        "max": [
+          72.5,
+          177.0,
+          38.0
+        ],
+        "size": [
+          69.5,
+          47.0,
+          10.7
+        ],
+        "center": [
+          37.75,
+          153.5,
+          32.65
+        ]
+      }
+    },
+    {
+      "part_id": "TMX-A3-P11",
+      "raw_boolean": {
+        "source_minus_candidate_valid": true,
+        "candidate_minus_source_valid": true,
+        "raw_summed_cut_volumes_mm3": 1002.678746549886,
+        "zero_valid_difference": false,
+        "interpretation": "Diagnostic only: coincident STEP cuts may be invalid or retain the entire solid. Nonzero volume alone is not evidence of a physical change."
+      },
+      "geometry_signature": {
+        "source_valid": true,
+        "candidate_valid": true,
+        "coordinate_rounding_mm": 1e-06,
+        "world_bounds_max_delta_mm": 1.4210854715202004e-14,
+        "unique_analytic_and_bspline_surface_geometry_matches": true,
+        "trimmed_edge_geometry_multiset_matches": true,
+        "unique_vertex_coordinates_match": true,
+        "source_topology": {
+          "solids": 1,
+          "faces": 15,
+          "edges": 39,
+          "vertices": 26
+        },
+        "candidate_topology": {
+          "solids": 1,
+          "faces": 15,
+          "edges": 39,
+          "vertices": 26
+        },
+        "source_measures": {
+          "volume_mm3": 501.33926338641095,
+          "area_mm2": 809.9761247723394,
+          "requested_relative_integration_epsilon": 1e-10,
+          "reported_volume_error": 2.957833864725296e-11,
+          "reported_area_error": 2.2956989270340022e-11
+        },
+        "candidate_measures": {
+          "volume_mm3": 501.3392633865937,
+          "area_mm2": 809.9761247722956,
+          "requested_relative_integration_epsilon": 1e-10,
+          "reported_volume_error": 2.957833864725951e-11,
+          "reported_area_error": 2.295698927033602e-11
+        },
+        "volume_difference_mm3": 1.8275159163749777e-10,
+        "area_difference_mm2": 4.376943252282217e-11,
+        "unmatched_source_surfaces": 0,
+        "unmatched_candidate_surfaces": 0,
+        "unmatched_source_edges": 0,
+        "unmatched_candidate_edges": 0,
+        "strict_signature_match": true,
+        "topology_identical": true
+      },
+      "sampled_boundary": {
+        "source_to_candidate": {
+          "vertex_sample_count": 26,
+          "edge_sample_count": 234,
+          "maximum_vertex_to_other_brep_mm": 9.010704497408308e-12,
+          "maximum_edge_sample_to_other_brep_mm": 0.0006526343640650192
+        },
+        "candidate_to_source": {
+          "vertex_sample_count": 26,
+          "edge_sample_count": 234,
+          "maximum_vertex_to_other_brep_mm": 9.010704497408308e-12,
+          "maximum_edge_sample_to_other_brep_mm": 0.0006526343642642089
+        },
+        "maximum_sampled_distance_mm": 0.0006526343642642089,
+        "acceptance_mm": 0.001,
+        "within_acceptance": true,
+        "limitation": "Vertices and six arc-length samples per edge, both directions. This does not prove a continuous maximum surface deviation or exact BRep identity."
+      },
+      "relative_volume_difference": 3.6452678851255386e-13,
+      "relative_area_difference": 5.403792924775959e-14,
+      "metric_relative_acceptance": 1e-06,
+      "metric_invariants_pass": true,
+      "strict_shape_identity_established": false,
+      "preserved_within_roundtrip_tolerance": true,
+      "topology_split": null,
+      "bounds": {
+        "min": [
+          34.9999999,
+          132.3999999,
+          11.649999900000001
+        ],
+        "max": [
+          38.800000100000005,
+          152.6000001,
+          31.850000100000003
+        ],
+        "size": [
+          3.8000002000000066,
+          20.200000199999977,
+          20.2000002
+        ],
+        "center": [
+          36.900000000000006,
+          142.5,
+          21.75
+        ]
+      }
+    },
+    {
+      "part_id": "TMX-A3-P01",
+      "protected_battery_region": [
+        2.2,
+        48.1,
+        24,
+        110,
+        14.2,
+        36.1
+      ],
+      "raw_boolean": {
+        "source_minus_candidate_valid": true,
+        "candidate_minus_source_valid": true,
+        "raw_summed_cut_volumes_mm3": 256.8437524677269,
+        "zero_valid_difference": false,
+        "interpretation": "Diagnostic only: coincident STEP cuts may be invalid or retain the entire solid. Nonzero volume alone is not evidence of a physical change."
+      },
+      "source_region_valid": true,
+      "candidate_region_valid": true,
+      "declared_usb_support_addition": {
+        "removed_original_volume_mm3": 0,
+        "added_volume_mm3": 256.8437524677269,
+        "addition_outside_declared_zone_mm3": 0,
+        "allowed_zone_mm": [
+          25.3,
+          48.1,
+          24,
+          26.5,
+          16.7,
+          34.3
+        ],
+        "minimum_holder_y_mm": 27,
+        "nominal_y_clearance_to_additions_mm": 0.5,
+        "all_boolean_results_valid": true
+      },
+      "preserved_within_roundtrip_tolerance": true
+    },
+    {
+      "part_id": "TMX-A3-P02",
+      "protected_battery_region": [
+        5.3,
+        47.5,
+        38.9,
+        93.1,
+        37.2,
+        41
+      ],
+      "raw_boolean": {
+        "source_minus_candidate_valid": true,
+        "candidate_minus_source_valid": true,
+        "raw_summed_cut_volumes_mm3": 0,
+        "zero_valid_difference": true,
+        "interpretation": "Diagnostic only: coincident STEP cuts may be invalid or retain the entire solid. Nonzero volume alone is not evidence of a physical change."
+      },
+      "source_region_valid": true,
+      "candidate_region_valid": true,
+      "declared_usb_support_addition": null,
+      "preserved_within_roundtrip_tolerance": true
+    }
+  ],
+  "control_checks": {
+    "identical_cell_signature_accepted": true,
+    "cell_shifted_0_01mm_signature_rejected": true,
+    "shift_detected_bounds_mm": 0.009999999999999787
+  },
+  "meshes": [
+    {
+      "file": "parts/TMX-A3-P01.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_bodies": 1,
+      "positive_volume": true,
+      "volume_mm3": 98871.58772765081,
+      "sha256": "21890698717489bd315cbfe349e2c6e61ef5399bca3775139c74128f3556b4a9"
+    },
+    {
+      "file": "parts/TMX-A3-P02.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_bodies": 1,
+      "positive_volume": true,
+      "volume_mm3": 34989.578079667124,
+      "sha256": "3dc35c25ec7009eac04774ebda6760497085832d3bbc03f6c21639e5e7988d90"
+    },
+    {
+      "file": "parts/TMX-A3-P03.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_bodies": 1,
+      "positive_volume": true,
+      "volume_mm3": 4863.1555443149855,
+      "sha256": "0e541f4bb13506cffb05e161d843e8987a7bbca38f8834337c8b7003a6323e6b"
+    },
+    {
+      "file": "parts/TMX-A3-P04.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_bodies": 1,
+      "positive_volume": true,
+      "volume_mm3": 185.29393093490216,
+      "sha256": "4cc0226b48a73540e4b228e1c9682e0e5dcc705ebfe7a7f29673ca360bf1b58f"
+    },
+    {
+      "file": "parts/TMX-A3-P05.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_bodies": 1,
+      "positive_volume": true,
+      "volume_mm3": 152.49390133461566,
+      "sha256": "183e745e642a35c16599cf76eb7553d89b4f7bc5e69c3cb859c186b162261d58"
+    },
+    {
+      "file": "parts/TMX-A3-P07.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_bodies": 1,
+      "positive_volume": true,
+      "volume_mm3": 23543.45750956768,
+      "sha256": "3731e777ef455245de1e9d966b588c7734641370e1bdd45e8a5abe6f22ea2d2d"
+    },
+    {
+      "file": "parts/TMX-A3-P08.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_bodies": 1,
+      "positive_volume": true,
+      "volume_mm3": 4084.7020131229365,
+      "sha256": "77e1f2aa1896d2f48a051718b7c84ee842057a6bac1c7cf5143f6beb6113d37b"
+    },
+    {
+      "file": "parts/TMX-A3-P11.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_bodies": 1,
+      "positive_volume": true,
+      "volume_mm3": 501.08249470304145,
+      "sha256": "4983bda7bba11917a174b4228f71f70a04aaf7afd8682ea8d19ee9a28b98aa15"
+    },
+    {
+      "file": "parts/TMX-V2-P12.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_bodies": 1,
+      "positive_volume": true,
+      "volume_mm3": 2100.3687661777644,
+      "sha256": "1bcc2422235a2b638a03c715a1d1f0859e5fbf3a1212e2034afbf90cd318c6c3"
+    }
+  ],
+  "expected_mesh_set_matches": true,
+  "source_hashes_unchanged": true,
+  "source_copy_assurance": {
+    "builder": "scripts/build_case.py",
+    "builder_sha256": "85eb548bcb8fb2a49413ebb7ad858129e8500bedb1a61e48f26d2656ce86fb3c",
+    "reviewed_route": "if pid in parts:q['shape']=parts[pid]; retained.append(q)",
+    "review": "Retained IDs above are absent from the builder replacement dictionary and retirement set; source world BReps are passed directly to assembly export. This is static source review plus independent export checks, not byte identity of reserialized STEP."
+  },
+  "scope": "Source geometry preservation within explicit STEP roundtrip bounds and printable mesh topology. No exact BRep identity claim for P07; raw Boolean failures retained. No print-strength, pressure/gas-seal, waterproof or complete purchased-component qualification.",
+  "limits": [
+    "World support/edge/vertex signatures use 1e-6 mm rounding; sampled boundary acceptance is 0.001 mm and is not a continuous surface maximum proof.",
+    "Adaptive integrated area/volume must agree within 1 ppm. Only P07 permits its explicitly measured tiny secondary topology split.",
+    "Nine delivered STL meshes are independently watertight, one body and positive volume; this does not qualify the STEP manifold for production."
+  ],
+  "historical_baseline_scope": "Original audit fields apply to the pre-logo assembly in input_sha256. They were not rerun. The current logo_revision separately verifies a flush two-color material partition; the prior recessed revision is superseded.",
+  "logo_revision": {
+    "timestamp_utc": "2026-10-17T19:07:52.229627+00:00",
+    "pass": true,
+    "description": "Flush Ægir symbol and original runes in a second color above the touchscreen; no indentation or raised surface",
+    "surface_style": "flush two-color",
+    "current_file_sha256": {
+      "hardware/cad/pcb-v2-bottom/Trimix_Enclosure_PCB2_Bottom.step": "173750f89553b3fef11542b1d6b826d4e7e63e62748cea5a6bd0b0b35355d005",
+      "hardware/cad/pcb-v2-bottom/Trimix_Enclosure_PCB2_Bottom.f3d": "2dbd805d20afcca4fab13e8883267318fac01551bdf7e2c61d52e176165050c0",
+      "hardware/cad/pcb-v2-bottom/parts/TMX-A3-P01.step": "ab11047b0d93890d45898b4c1ba55717d05de5769397a39e12df8ac7d835a4a5",
+      "hardware/cad/pcb-v2-bottom/parts/TMX-A3-P01.stl": "21890698717489bd315cbfe349e2c6e61ef5399bca3775139c74128f3556b4a9",
+      "hardware/cad/pcb-v2-bottom/Trimix_PCB2_Bottom_H2D.3mf": "d2ceb05f07092014c2bdfaf18795386627b89c98269ba54c9fb35118329f7ddd"
+    },
+    "baseline_assembly_sha256": "cd3415fa71f6ea861aad5431b4af8b44af02217d2e5b17a71d7bb2bab0160402",
+    "artwork_source_sha256": {
+      "logo/aegir-mark.svg": "61cae0303d2d77fcebfa243284d32473475f34d0c299f65d961212a20440ba02",
+      "logo/aegir-v1-wordmark.svg": "927c248223732473d5676fc29796926014d4e8c08ebe57cfb96839641a8822dc"
+    },
+    "symbol_topology": {
+      "outer_contours": 1,
+      "holes_in_outer_contour": 5,
+      "separate_filled_islands": 2
+    },
+    "rune_sequence": "ᛅᛁᚾ",
+    "native_verification": {
+      "bodies": [
+        {
+          "name": "Aegir symbol 1 - flush white",
+          "volume_mm3": 259.04563200000007,
+          "bounds_mm": [
+            [
+              27.72,
+              137.5,
+              0.0
+            ],
+            [
+              57.28,
+              173.5,
+              0.48
+            ]
+          ],
+          "is_solid": true,
+          "color": "#FFFFFF",
+          "filament": 2,
+          "source_export_basename": "logo-1.stl",
+          "source_export_sha256": "f3630eae13a0e9bfafd14ec8ee480b35c304fd525dc6c0dd27a8962673be5ff6"
+        },
+        {
+          "name": "Aegir symbol 2 - flush white",
+          "volume_mm3": 14.76710399999998,
+          "bounds_mm": [
+            [
+              48.040000000000006,
+              140.98,
+              0.0
+            ],
+            [
+              53.480000000000004,
+              151.34,
+              0.48
+            ]
+          ],
+          "is_solid": true,
+          "color": "#FFFFFF",
+          "filament": 2,
+          "source_export_basename": "logo-2.stl",
+          "source_export_sha256": "cc1a6fb7372ba9ca6cb57fbb3d4ce4340d3b059f3b6e0c44a649d6ec8644b21d"
+        },
+        {
+          "name": "Aegir symbol 3 - flush white",
+          "volume_mm3": 14.833920000000013,
+          "bounds_mm": [
+            [
+              31.520000000000003,
+              140.94,
+              0.0
+            ],
+            [
+              37.0,
+              151.34,
+              0.48
+            ]
+          ],
+          "is_solid": true,
+          "color": "#FFFFFF",
+          "filament": 2,
+          "source_export_basename": "logo-3.stl",
+          "source_export_sha256": "f473bce1618bca2fb0acf2df7b44c77fc6e87f50164cb1c4acdb19d5822dae9f"
+        },
+        {
+          "name": "Aegir runes 1 - flush white",
+          "volume_mm3": 4.545370666666693,
+          "bounds_mm": [
+            [
+              44.833333333333336,
+              128.5,
+              0.0
+            ],
+            [
+              49.733333333333334,
+              135.5,
+              0.48
+            ]
+          ],
+          "is_solid": true,
+          "color": "#FFFFFF",
+          "filament": 2,
+          "source_export_basename": "logo-4.stl",
+          "source_export_sha256": "4d48c03baadca977e0efbe1d6f6d2eeb92d60e857388eb5f807b49b2663c9083"
+        },
+        {
+          "name": "Aegir runes 2 - flush white",
+          "volume_mm3": 2.7440000000000153,
+          "bounds_mm": [
+            [
+              42.03333333333333,
+              128.5,
+              0.0
+            ],
+            [
+              42.85,
+              135.5,
+              0.48
+            ]
+          ],
+          "is_solid": true,
+          "color": "#FFFFFF",
+          "filament": 2,
+          "source_export_basename": "logo-5.stl",
+          "source_export_sha256": "6913ea0642e65849163fc79f3a0e45df2a049c444e9124113dddf815993f4a84"
+        },
+        {
+          "name": "Aegir runes 3 - flush white",
+          "volume_mm3": 4.545370666666694,
+          "bounds_mm": [
+            [
+              35.266666666666666,
+              128.5,
+              0.0
+            ],
+            [
+              40.166666666666664,
+              135.5,
+              0.48
+            ]
+          ],
+          "is_solid": true,
+          "color": "#FFFFFF",
+          "filament": 2,
+          "source_export_basename": "logo-6.stl",
+          "source_export_sha256": "ebc826487140ab63ab4793f7fef4c80dba44234649d3452dd000493af14d510a"
+        }
+      ],
+      "logo_body_count": 6,
+      "base_volume_mm3": 98572.81642406955,
+      "insert_volume_mm3": 300.48139733333346,
+      "flush_front_z_mm": 0,
+      "insert_depth_mm": 0.48,
+      "front_wall_total_mm": 2.4,
+      "unchanged_other_component_count": 200,
+      "pass": true,
+      "original_geometry_union_pass": true,
+      "union_volume_mm3": 98873.29782140287,
+      "original_volume_mm3": 98873.29782140287,
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0,
+      "union_bounds_mm": [
+        [
+          0.0,
+          -9.633808798481525e-06,
+          0.0
+        ],
+        [
+          85.0,
+          180.0,
+          40.60000000000001
+        ]
+      ],
+      "roundtrip_body_count": 291,
+      "roundtrip_max_relative_volume_error": 0.0004811215125728602,
+      "roundtrip_max_relative_area_error": 5.8429755710386344e-05,
+      "roundtrip_max_bound_error_mm": 0.00017241344863805352,
+      "comparison_accuracy": "VeryHighCalculationAccuracy",
+      "tolerances": {
+        "relative_volume": 0.001,
+        "relative_area": 0.0002,
+        "bounds_mm": 0.001
+      },
+      "current_file_sha256": {
+        "hardware/cad/pcb-v2-bottom/Trimix_Enclosure_PCB2_Bottom.f3d": "2dbd805d20afcca4fab13e8883267318fac01551bdf7e2c61d52e176165050c0",
+        "hardware/cad/pcb-v2-bottom/Trimix_Enclosure_PCB2_Bottom.step": "173750f89553b3fef11542b1d6b826d4e7e63e62748cea5a6bd0b0b35355d005",
+        "hardware/cad/pcb-v2-bottom/parts/TMX-A3-P01.step": "ab11047b0d93890d45898b4c1ba55717d05de5769397a39e12df8ac7d835a4a5"
+      }
+    },
+    "Fusion_cloud_save": {
+      "file_id": "urn:adsk.wipprod:dm.lineage:fsvCfrZHSCeCk8VTjjdzfA",
+      "name": "Trimix_Enclosure_PCB2_Bottom v3",
+      "version": 3,
+      "saved": true,
+      "existing_design_updated": true
+    },
+    "Bambu_project_evidence": "hardware/cad/pcb-v2-bottom/verification/print-bed.json",
+    "single_color_STL_fallback": {
+      "file": "hardware/cad/pcb-v2-bottom/parts/TMX-A3-P01.stl",
+      "sha256": "21890698717489bd315cbfe349e2c6e61ef5399bca3775139c74128f3556b4a9",
+      "description": "Original flat monolithic P01 shape. STL cannot encode the color partition; use the existing 3MF for the two-color logo."
+    },
+    "scope": "Color-body geometry, restored flat union and exported multipart print project. Original full fit/load-path/removal audits remain historical baseline evidence."
+  },
+  "superseded_logo_revision": {
+    "timestamp_utc": "2026-10-17T18:47:15.910666+00:00",
+    "surface_style": "recessed engraving",
+    "Fusion_version": 2,
+    "assembly_sha256": "75f84355c0b855f68c8d65b4a7ec33a8c89f2a669264f3ee20b50d36ef0af961",
+    "status": "Superseded by flush two-color construction; full previous evidence remains in Git/Fusion version history."
+  }
+}

@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\\"document\\\": \\\"Trimix_Enclosure_A3 v3\\\", \\\"saved\\\": true, \\\"modified\\\": false, \\\"file_id\\\": \\\"urn:adsk.wipprod:dm.lineage:PJWf-3ikQfeSu62k_ozEMw\\\", \\\"version\\\": 3, \\\"folder\\\": \\\"Trimix analyzer\\\", \\\"folder_id\\\": \\\"urn:adsk.wipprod:fs.folder:co.JKY47Dq7TLqRq7kWq4yYEA\\\", \\\"units\\\": \\\"mm\\\", \\\"other_open_documents\\\": [{\\\"name\\\": \\\"Trimix_Enclosure_A2 v3\\\", \\\"modified\\\": true}]}\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

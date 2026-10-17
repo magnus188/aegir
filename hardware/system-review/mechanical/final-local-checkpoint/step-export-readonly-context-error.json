@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"error\": \"Traceback (most recent call last):\\n  File \\\"<string>\\\", line 40, in <module>\\n  File \\\"<string>\\\", line 38, in run\\n  File \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/system-review/mechanical/scripts/final_local_checkpoint.py\\\", line 605, in export_step\\n    if not occurrence.isLightBulbOn: occurrence.isLightBulbOn = True\\n                                     ^^^^^^^^^^^^^^^^^^^^^^^^\\n  File \\\"/Users/magnustrandokken/Library/Application Support/Autodesk/webdeploy/production/127ae56f1790f40cf393bcc73875a1a281e20234/Autodesk Fusion.app/Contents/Api/Python/packages/adsk/fusion.py\\\", line 52733, in _set_isLightBulbOn\\n    return _fusion.Occurrence__set_isLightBulbOn(self, value)\\n           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^\\nRuntimeError: 3 : Cannot modify the design from a read-only context\\n\",\n    \"success\": false\n}",
-      "type": "text"
-    }
-  ]
-}

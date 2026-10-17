@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\\"assemblies\\\": [{\\\"part_id\\\": \\\"TMX-A3-C01\\\", \\\"name\\\": \\\"Guition 4.3 inch display assembly\\\", \\\"children\\\": [\\\"TMX-A3-C01-V01\\\", \\\"TMX-A3-C01-V02\\\", \\\"TMX-A3-C01-V03\\\", \\\"TMX-A3-C01-V04\\\"]}, {\\\"part_id\\\": \\\"TMX-A3-C04\\\", \\\"name\\\": \\\"Momentary 1NO button assembly\\\", \\\"children\\\": [\\\"TMX-A3-C04-V01\\\", \\\"TMX-A3-C04-V02\\\", \\\"TMX-A3-C04-V03\\\"]}, {\\\"part_id\\\": \\\"TMX-A3-C05\\\", \\\"name\\\": \\\"GCT USB4720-03-A connector assembly\\\", \\\"children\\\": [\\\"TMX-A3-C05-V01\\\", \\\"TMX-A3-C05-V02\\\", \\\"TMX-A3-C05-V03\\\", \\\"TMX-A3-C05-V04\\\"]}], \\\"physical_geometry_unchanged\\\": true, \\\"occurrences\\\": 69}\\n{\\\"stage\\\": \\\"PrintReview real purchased assembly hierarchy\\\", \\\"occurrences\\\": 58, \\\"timeline\\\": 1077, \\\"native\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/enclosure/rev04/print-release/Trimix_Enclosure_A3_PrintReview.f3d\\\"}\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

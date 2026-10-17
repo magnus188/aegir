@@ -9,9 +9,10 @@ ESP32-P4/LVGL firmware for Ægir, the prototype trimix gas analyzer, on the nati
 The firmware workspace is this directory: application code lives in `main/`,
 with host tests in `tests/`, simulator support in `simulator/` and development
 tools in `scripts/`. The repository root has a small forwarding Makefile.
-Mechanical and electronics files are grouped under `../../hardware/`: Fusion CAD is in `../../hardware/cad/`,
-KiCad PCB projects are in `../../hardware/pcb/`, and Bambu Studio projects are in
-`../../hardware/cad/rev04/3d-print/printing/bambu-studio/`.
+Mechanical and electronics files are grouped under `../../hardware/`. The current
+Fusion/STEP/STL prototype is in `../../hardware/cad/pcb-v2-bottom/`; its integrated
+USB-C KiCad project is in `../../hardware/pcb/analyzer-v2-bottom/`. Earlier print
+projects remain in Git history. See [the hardware guide](../../hardware/PCB2-BOTTOM.txt).
 
 ## Quick Start with ESP-IDF
 
@@ -111,7 +112,7 @@ Open `http://localhost:8080`. The generated site must be served over HTTP rather
 
 ## Hardware Requirements
 
-Use the [current electrical design](../../hardware/ANALYZER_DESIGN.md), [part qualification ledger](../../hardware/system-review/electrical/part-qualification.csv) and [main-board delivery index](../../hardware/system-review/electrical/main-final/README.md). These are prototype review files, not purchasing approval. Earlier enclosure/PCB snapshots preserve historical component choices.
+Use the [current electrical design](../../hardware/ANALYZER_DESIGN.md), [part qualification ledger](../../hardware/system-review/electrical/part-qualification.csv) and [current PCB guide](../../hardware/pcb/analyzer-v2-bottom/LES-MEG.txt). These are prototype review files, not purchasing approval. Earlier enclosure/PCB snapshots and component choices remain in Git history.
 
 ### Controller and Display
 - **ESP32-P4NRW32** application processor with 32 MB in-package PSRAM. Original pre-v3 boards are configured for their detected 16 MB flash; the v3 profile retains the 32 MB layout used by newer hardware.

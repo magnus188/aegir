@@ -1,0 +1,33 @@
+{
+  "source_nominal_hole_to_rounded_ground_pad_mm": 0.19440271884718252,
+  "adapted_nominal_hole_to_rounded_ground_pad_mm": 0.21870382729231075,
+  "adaptation_mm": {
+    "A1": [
+      0,
+      -0.025
+    ],
+    "B12": [
+      0,
+      -0.025
+    ],
+    "A12": [
+      0,
+      -0.025
+    ],
+    "B1": [
+      0,
+      -0.025
+    ]
+  },
+  "holes_changed": false,
+  "land_sizes_changed": false,
+  "netlist_changed": false,
+  "primary_JLC_NPTH_to_copper_mm": 0.2,
+  "manufacturer_approved": false,
+  "reason_for_engineering_review": "Land centers intentionally shifted by 25um from manufacturer nominal; manufacturer stated layout dimension tolerance is +/-50um but does not expressly approve this custom nominal. No supplier approval requested.",
+  "native_KiCad10_DRC": {
+    "original_J901_hole_clearance_errors": 4,
+    "adapted_J901_hole_clearance_errors": 0,
+    "warning": "Test connector placed off-board only to measure local geometry; other violations/unconnected items are expected and not a complete layout validation."
+  }
+}

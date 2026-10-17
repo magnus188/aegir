@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\\"report\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/system-review/mechanical/verification/width-contract-full-inventory.json\\\", \\\"keys\\\": [\\\"document\\\", \\\"root_attributes\\\", \\\"parameters\\\", \\\"components\\\", \\\"occurrences\\\", \\\"joints\\\", \\\"other_documents_before_after\\\", \\\"read_only\\\"], \\\"counts\\\": {\\\"parameters\\\": 2367, \\\"components\\\": 8, \\\"occurrences\\\": 59, \\\"joints\\\": 29, \\\"other_documents_before_after\\\": 3}}\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

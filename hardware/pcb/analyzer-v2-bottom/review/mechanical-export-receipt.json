@@ -1,0 +1,19 @@
+{
+  "source_board_sha256": "59a0be0876394c670bd6c852033312527ccf9a4e02e94ac0437080b83f57085c",
+  "step_sha256": "7a45218372eabc6bcc528d1cd8339923ae3ebecf3b5b9947e5490ee32d9d9773",
+  "world_translation_mm": [
+    30.5,
+    122.58491,
+    24.0529
+  ],
+  "native_world_formula": [
+    "X=native_x+30.5",
+    "Y=122.58491-native_y"
+  ],
+  "nominal_board_back_top_z_mm": [
+    24.0,
+    25.6
+  ],
+  "export_command": "kicad-cli pcb export step --force --subst-models --drill-origin",
+  "known_model_limitations": "Same six missing fitted models and six DNP modeled source components as PCB2; case pipeline must retain its population filter and missing-model envelopes."
+}

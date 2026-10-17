@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\\"report\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/system-review/mechanical/verification/usb-shell-stakes.json\\\", \\\"keys\\\": [\\\"document\\\", \\\"retired_flat_wing_features\\\", \\\"stakes\\\", \\\"body_count\\\", \\\"unqualified_detail\\\", \\\"geometry_selected_to_fit_PCB\\\"], \\\"counts\\\": {\\\"retired_flat_wing_features\\\": 4, \\\"stakes\\\": 4}}\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

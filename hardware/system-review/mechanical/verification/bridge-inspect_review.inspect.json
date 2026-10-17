@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\\"report\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/system-review/mechanical/verification/detailed-state.json\\\", \\\"keys\\\": [\\\"document\\\", \\\"id\\\", \\\"version\\\", \\\"timeline\\\", \\\"components\\\", \\\"instances\\\", \\\"nonhealthy_timeline_entities\\\", \\\"timeline_group_rollups\\\", \\\"material_candidates\\\", \\\"preserved_other_documents\\\"], \\\"counts\\\": {\\\"components\\\": 102, \\\"instances\\\": 336, \\\"nonhealthy_timeline_entities\\\": 4, \\\"timeline_group_rollups\\\": 6, \\\"material_candidates\\\": 149, \\\"preserved_other_documents\\\": 2}}\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

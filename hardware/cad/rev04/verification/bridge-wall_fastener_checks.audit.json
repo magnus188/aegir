@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\\"report\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/enclosure/rev04/verification/selected-wall-fastener-checks.json\\\", \\\"status\\\": \\\"needs_review\\\", \\\"tests\\\": []}\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

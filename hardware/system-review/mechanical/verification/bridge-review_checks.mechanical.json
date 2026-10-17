@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\\"report\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/system-review/mechanical/verification/mechanical-audit.json\\\", \\\"keys\\\": [\\\"document\\\", \\\"generated_at_utc\\\", \\\"status\\\", \\\"physical_solid_count\\\", \\\"alternative_reference_solids\\\", \\\"candidate_pairs\\\", \\\"imported_PCB_internal_AABB_pairs_outside_enclosure_scope\\\", \\\"collisions\\\", \\\"health\\\", \\\"real_nonhealthy_timeline_entities\\\", \\\"timeline\\\", \\\"bodies\\\", \\\"preserved_other_documents\\\", \\\"limits\\\"], \\\"counts\\\": {\\\"collisions\\\": 0, \\\"real_nonhealthy_timeline_entities\\\": 0, \\\"bodies\\\": 834, \\\"preserved_other_documents\\\": 2, \\\"limits\\\": 4}}\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

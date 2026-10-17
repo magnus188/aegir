@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\\"report\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/system-review/mechanical/connector-review/carrier-sidebridge-trial.json\\\", \\\"sha256\\\": \\\"6282ca3c867fc787bccdccd955c37088551668e4331992c2f60f343c25bc0997\\\", \\\"status\\\": \\\"transient_proposal_not_adopted\\\", \\\"checks\\\": null}\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\\"report\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/system-review/mechanical/verification/usb-pcb-parametric-binding.json\\\", \\\"keys\\\": [\\\"document\\\", \\\"joint\\\", \\\"expressions\\\", \\\"geometry_scaled\\\", \\\"intent\\\"], \\\"counts\\\": {\\\"expressions\\\": 3}}\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

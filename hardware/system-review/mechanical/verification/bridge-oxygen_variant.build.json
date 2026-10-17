@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\\"report\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/system-review/mechanical/verification/oxygen-variant-created.json\\\", \\\"keys\\\": [\\\"document\\\", \\\"component\\\", \\\"part_number\\\", \\\"bodies\\\", \\\"default_visibility\\\", \\\"basis\\\", \\\"AO2_purchased_geometry_scaled\\\"], \\\"counts\\\": {\\\"bodies\\\": 3}}\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

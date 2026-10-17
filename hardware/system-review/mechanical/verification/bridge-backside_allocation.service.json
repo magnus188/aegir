@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\\"report\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/system-review/mechanical/verification/backside-allocation/service-paths-carrier-usb.json\\\", \\\"status\\\": \\\"sampled_paths_clear_with_prerequisites\\\", \\\"tests\\\": [{\\\"name\\\": \\\"carrier\\\", \\\"status\\\": \\\"clear_at_sampled_poses\\\", \\\"collisions\\\": 0}, {\\\"name\\\": \\\"usb\\\", \\\"status\\\": \\\"clear_at_sampled_poses\\\", \\\"collisions\\\": 0}]}\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

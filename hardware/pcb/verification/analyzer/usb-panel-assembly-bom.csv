@@ -1,5 +1,0 @@
-reference,value,footprint,assembly,status
-J901,GCT USB4720-03-A,Trimix_Connectors:USB_C_GCT_USB4720-03-A,Separate 0.60 mm USB daughterboard,FIT; mechanical and physical qualification pending
-J902,TO MAIN PCB J101,Connector_Wire:SolderWire-0.25sqmm_1x02_P4.2mm_D0.65mm_OD1.7mm,Separate 0.60 mm USB daughterboard,FIT; mechanical and physical qualification pending
-R901,5.1k / 1%,Resistor_SMD:R_0603_1608Metric,Separate 0.60 mm USB daughterboard,FIT; mechanical and physical qualification pending
-R902,5.1k / 1%,Resistor_SMD:R_0603_1608Metric,Separate 0.60 mm USB daughterboard,FIT; mechanical and physical qualification pending

@@ -35,9 +35,8 @@ software/firmware/
   scripts/                         # validation and release tools
   web/                             # browser demo
 hardware/
-  cad/rev04/                       # current Fusion enclosure and print package
-  pcb/analyzer/                    # current main KiCad project
-  pcb/usb-input/                   # USB daughterboard
+  cad/pcb-v2-bottom/               # current Fusion enclosure and print package
+  pcb/analyzer-v2-bottom/          # current integrated USB-C KiCad project
   system-review/                   # engineering acceptance and current evidence
 .github/workflows/                 # CI and release automation
 ```

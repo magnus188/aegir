@@ -1,0 +1,3232 @@
+{
+  "project": "hardware/cad/pcb-v2-bottom/Trimix_PCB2_Bottom_H2D.3mf",
+  "project_sha256": "d2ceb05f07092014c2bdfaf18795386627b89c98269ba54c9fb35118329f7ddd",
+  "status": "UNSLICED mechanical fit prototype; no print job sent",
+  "printer": "Bambu Lab H2D,0.4 mm nozzles, left extruder",
+  "plate_count": 1,
+  "printed_part_count": 9,
+  "layer_height_mm": 0.16,
+  "material_profile": "Bambu PLA Basic, two colors",
+  "brim_width_mm": 4,
+  "mesh_checks_pass": true,
+  "parts": [
+    {
+      "part_id": "TMX-A3-P01",
+      "physical_part_count": 1,
+      "normal_part_mesh_count": 7,
+      "logo_body_count": 6,
+      "base_material": 1,
+      "logo_material": 2,
+      "surface_style": "flush two-color",
+      "bed_bounds_mm": [
+        [
+          15.0,
+          19.99999518335926,
+          0.0
+        ],
+        [
+          100.00000762939453,
+          200.0,
+          40.599998474121094
+        ]
+      ],
+      "orientation_from_assembly": "front_down",
+      "multipart_verification": {
+        "assembly_object_id": "101",
+        "leaf_object_id": "1",
+        "previous_triangles": 13488,
+        "vertices": 2989,
+        "triangles": 6002,
+        "edges": 9003,
+        "edges_with_incidence_other_than_two": 0,
+        "inconsistently_oriented_edge_pairs": 0,
+        "degenerate_triangles": 0,
+        "connected_bodies": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "signed_volume_mm3": 98565.99534824995,
+        "assembly_bounds_mm": [
+          [
+            0.0,
+            -4.816640739591094e-06,
+            0.0
+          ],
+          [
+            85.00000762939453,
+            180.0,
+            40.599998474121094
+          ]
+        ],
+        "exact_ordered_triangle_match": true,
+        "maximum_coordinate_error_mm": 0.0,
+        "exterior_bounds_max_change_mm": 7.62939453125e-06,
+        "normal_part_count": 7,
+        "base_material": 1,
+        "logo_material": 2,
+        "logo_body_count": 6,
+        "base_mesh_sha256": "01be1fff3c224238a8ab378ca6bbecc56380076cff1d37b6b4e59f4e9aeedebe",
+        "logo_meshes": [
+          {
+            "name": "logo 1",
+            "source_stl_sha256": "f3630eae13a0e9bfafd14ec8ee480b35c304fd525dc6c0dd27a8962673be5ff6",
+            "leaf_id": "13",
+            "material": 2,
+            "colour": "#FFFFFF",
+            "vertices": 288,
+            "triangles": 592,
+            "edges": 888,
+            "edges_with_incidence_other_than_two": 0,
+            "inconsistently_oriented_edge_pairs": 0,
+            "degenerate_triangles": 0,
+            "connected_bodies": 1,
+            "watertight": true,
+            "winding_consistent": true,
+            "signed_volume_mm3": 259.0455640470406,
+            "assembly_bounds_mm": [
+              [
+                27.719999313354492,
+                137.5,
+                0.0
+              ],
+              [
+                57.279998779296875,
+                173.5,
+                0.47999998927116394
+              ]
+            ],
+            "exact_ordered_triangle_match": true,
+            "maximum_coordinate_error_mm": 0.0,
+            "component_transform": "1 0 0 0 1 0 0 0 1 -0 1.33226762955019e-15 -0",
+            "build_transform": "1 0 0 0 1 0 0 0 1 15 20 0",
+            "bed_bounds_mm": [
+              [
+                42.71999931335449,
+                157.5,
+                0.0
+              ],
+              [
+                72.27999877929688,
+                193.5,
+                0.47999998927116394
+              ]
+            ],
+            "mesh_fragment_sha256": "b8a2f62d6ad82cbd95ab337c415072c59cd6cd6c7f6cef65ec6640d616117374",
+            "source_export_basename": "logo-1.stl"
+          },
+          {
+            "name": "logo 2",
+            "source_stl_sha256": "cc1a6fb7372ba9ca6cb57fbb3d4ce4340d3b059f3b6e0c44a649d6ec8644b21d",
+            "leaf_id": "14",
+            "material": 2,
+            "colour": "#FFFFFF",
+            "vertices": 14,
+            "triangles": 24,
+            "edges": 36,
+            "edges_with_incidence_other_than_two": 0,
+            "inconsistently_oriented_edge_pairs": 0,
+            "degenerate_triangles": 0,
+            "connected_bodies": 1,
+            "watertight": true,
+            "winding_consistent": true,
+            "signed_volume_mm3": 14.76708711280923,
+            "assembly_bounds_mm": [
+              [
+                48.040000915527344,
+                140.97999572753906,
+                0.0
+              ],
+              [
+                53.47999954223633,
+                151.33999633789062,
+                0.47999998927116394
+              ]
+            ],
+            "exact_ordered_triangle_match": true,
+            "maximum_coordinate_error_mm": 0.0,
+            "component_transform": "1 0 0 0 1 0 0 0 1 -0 1.33226762955019e-15 -0",
+            "build_transform": "1 0 0 0 1 0 0 0 1 15 20 0",
+            "bed_bounds_mm": [
+              [
+                63.040000915527344,
+                160.97999572753906,
+                0.0
+              ],
+              [
+                68.47999954223633,
+                171.33999633789062,
+                0.47999998927116394
+              ]
+            ],
+            "mesh_fragment_sha256": "9b116c63acab09dd4592588ac00c5ee6411d1d200ea0654662d45080f0440cbd",
+            "source_export_basename": "logo-2.stl"
+          },
+          {
+            "name": "logo 3",
+            "source_stl_sha256": "f473bce1618bca2fb0acf2df7b44c77fc6e87f50164cb1c4acdb19d5822dae9f",
+            "leaf_id": "15",
+            "material": 2,
+            "colour": "#FFFFFF",
+            "vertices": 14,
+            "triangles": 24,
+            "edges": 36,
+            "edges_with_incidence_other_than_two": 0,
+            "inconsistently_oriented_edge_pairs": 0,
+            "degenerate_triangles": 0,
+            "connected_bodies": 1,
+            "watertight": true,
+            "winding_consistent": true,
+            "signed_volume_mm3": 14.833911479963966,
+            "assembly_bounds_mm": [
+              [
+                31.520000457763672,
+                140.94000244140625,
+                0.0
+              ],
+              [
+                37.0,
+                151.33999633789062,
+                0.47999998927116394
+              ]
+            ],
+            "exact_ordered_triangle_match": true,
+            "maximum_coordinate_error_mm": 0.0,
+            "component_transform": "1 0 0 0 1 0 0 0 1 -0 1.33226762955019e-15 -0",
+            "build_transform": "1 0 0 0 1 0 0 0 1 15 20 0",
+            "bed_bounds_mm": [
+              [
+                46.52000045776367,
+                160.94000244140625,
+                0.0
+              ],
+              [
+                52.0,
+                171.33999633789062,
+                0.47999998927116394
+              ]
+            ],
+            "mesh_fragment_sha256": "30dd9b8ceb724f7c81c97adccd23878f4b30ffd9b7bf3ecae3ce3f8286eb8b3b",
+            "source_export_basename": "logo-3.stl"
+          },
+          {
+            "name": "logo 4",
+            "source_stl_sha256": "4d48c03baadca977e0efbe1d6f6d2eeb92d60e857388eb5f807b49b2663c9083",
+            "leaf_id": "16",
+            "material": 2,
+            "colour": "#FFFFFF",
+            "vertices": 24,
+            "triangles": 44,
+            "edges": 66,
+            "edges_with_incidence_other_than_two": 0,
+            "inconsistently_oriented_edge_pairs": 0,
+            "degenerate_triangles": 0,
+            "connected_bodies": 1,
+            "watertight": true,
+            "winding_consistent": true,
+            "signed_volume_mm3": 4.54537020362044,
+            "assembly_bounds_mm": [
+              [
+                44.83333206176758,
+                128.5,
+                0.0
+              ],
+              [
+                49.733333587646484,
+                135.5,
+                0.47999998927116394
+              ]
+            ],
+            "exact_ordered_triangle_match": true,
+            "maximum_coordinate_error_mm": 0.0,
+            "component_transform": "1 0 0 0 1 0 0 0 1 -0 1.33226762955019e-15 -0",
+            "build_transform": "1 0 0 0 1 0 0 0 1 15 20 0",
+            "bed_bounds_mm": [
+              [
+                59.83333206176758,
+                148.5,
+                0.0
+              ],
+              [
+                64.73333358764648,
+                155.5,
+                0.47999998927116394
+              ]
+            ],
+            "mesh_fragment_sha256": "6085b6b0ea7d39d9736325a400615ec7a41567f6debd8d57337297797b37b034",
+            "source_export_basename": "logo-4.stl"
+          },
+          {
+            "name": "logo 5",
+            "source_stl_sha256": "6913ea0642e65849163fc79f3a0e45df2a049c444e9124113dddf815993f4a84",
+            "leaf_id": "17",
+            "material": 2,
+            "colour": "#FFFFFF",
+            "vertices": 8,
+            "triangles": 12,
+            "edges": 18,
+            "edges_with_incidence_other_than_two": 0,
+            "inconsistently_oriented_edge_pairs": 0,
+            "degenerate_triangles": 0,
+            "connected_bodies": 1,
+            "watertight": true,
+            "winding_consistent": true,
+            "signed_volume_mm3": 2.7439965206984525,
+            "assembly_bounds_mm": [
+              [
+                42.03333282470703,
+                128.5,
+                0.0
+              ],
+              [
+                42.849998474121094,
+                135.5,
+                0.47999998927116394
+              ]
+            ],
+            "exact_ordered_triangle_match": true,
+            "maximum_coordinate_error_mm": 0.0,
+            "component_transform": "1 0 0 0 1 0 0 0 1 -0 1.33226762955019e-15 -0",
+            "build_transform": "1 0 0 0 1 0 0 0 1 15 20 0",
+            "bed_bounds_mm": [
+              [
+                57.03333282470703,
+                148.5,
+                0.0
+              ],
+              [
+                57.849998474121094,
+                155.5,
+                0.47999998927116394
+              ]
+            ],
+            "mesh_fragment_sha256": "a0be9c9d99c328c4a4d1322345078262c55c09bf7c2d24b9478518e718d609a4",
+            "source_export_basename": "logo-5.stl"
+          },
+          {
+            "name": "logo 6",
+            "source_stl_sha256": "ebc826487140ab63ab4793f7fef4c80dba44234649d3452dd000493af14d510a",
+            "leaf_id": "18",
+            "material": 2,
+            "colour": "#FFFFFF",
+            "vertices": 24,
+            "triangles": 44,
+            "edges": 66,
+            "edges_with_incidence_other_than_two": 0,
+            "inconsistently_oriented_edge_pairs": 0,
+            "degenerate_triangles": 0,
+            "connected_bodies": 1,
+            "watertight": true,
+            "winding_consistent": true,
+            "signed_volume_mm3": 4.5453770395656665,
+            "assembly_bounds_mm": [
+              [
+                35.266666412353516,
+                128.5,
+                0.0
+              ],
+              [
+                40.16666793823242,
+                135.5,
+                0.47999998927116394
+              ]
+            ],
+            "exact_ordered_triangle_match": true,
+            "maximum_coordinate_error_mm": 0.0,
+            "component_transform": "1 0 0 0 1 0 0 0 1 -0 1.33226762955019e-15 -0",
+            "build_transform": "1 0 0 0 1 0 0 0 1 15 20 0",
+            "bed_bounds_mm": [
+              [
+                50.266666412353516,
+                148.5,
+                0.0
+              ],
+              [
+                55.16666793823242,
+                155.5,
+                0.47999998927116394
+              ]
+            ],
+            "mesh_fragment_sha256": "3d835503f0f06ee0986f0fb9cc794c6656bb182fd7d42e55909031ff89476d1c",
+            "source_export_basename": "logo-6.stl"
+          }
+        ],
+        "logo_total_volume_mm3": 300.48130640369834,
+        "flat_fallback_stl_equals_base_cut_mesh": false,
+        "front_surface_z_mm": 0.0,
+        "material_split_depth_mm": 0.48,
+        "base_cut_mesh_source_basename": "TMX-A3-P01.stl"
+      },
+      "single_color_STL_fallback": {
+        "file": "parts/TMX-A3-P01.stl",
+        "watertight": true,
+        "winding_consistent": true,
+        "connected_bodies": 1,
+        "positive_volume": true,
+        "volume_mm3": 98871.58772765081,
+        "sha256": "21890698717489bd315cbfe349e2c6e61ef5399bca3775139c74128f3556b4a9"
+      },
+      "STL_equals_embedded_color_mesh": false
+    },
+    {
+      "part_id": "TMX-A3-P02",
+      "source_stl_sha256": "3dc35c25ec7009eac04774ebda6760497085832d3bbc03f6c21639e5e7988d90",
+      "triangles": 15066,
+      "embedded_source_max_coordinate_error_mm": 4.999947122996673e-10,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_bodies": 1,
+      "volume_mm3": 34989.578079111874,
+      "bed_bounds_mm": [
+        [
+          120.0,
+          20.0,
+          0.0
+        ],
+        [
+          204.5,
+          199.5,
+          10.200000762899997
+        ]
+      ],
+      "orientation_from_assembly": "rear_down"
+    },
+    {
+      "part_id": "TMX-A3-P03",
+      "source_stl_sha256": "0e541f4bb13506cffb05e161d843e8987a7bbca38f8834337c8b7003a6323e6b",
+      "triangles": 1996,
+      "embedded_source_max_coordinate_error_mm": 1.2109069302823627e-10,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_bodies": 1,
+      "volume_mm3": 4863.155544303543,
+      "bed_bounds_mm": [
+        [
+          225.0000000000211,
+          19.99999999987901,
+          0.0
+        ],
+        [
+          255.1999969482211,
+          118.30000162124901,
+          4.0
+        ]
+      ],
+      "orientation_from_assembly": "flat_PCB_seat_down"
+    },
+    {
+      "part_id": "TMX-A3-P04",
+      "source_stl_sha256": "4cc0226b48a73540e4b228e1c9682e0e5dcc705ebfe7a7f29673ca360bf1b58f",
+      "triangles": 544,
+      "embedded_source_max_coordinate_error_mm": 4.980549306310422e-11,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_bodies": 1,
+      "volume_mm3": 185.29393093447882,
+      "bed_bounds_mm": [
+        [
+          280.0,
+          35.0,
+          0.0
+        ],
+        [
+          287.0,
+          45.30000019073,
+          6.399999618500001
+        ]
+      ],
+      "orientation_from_assembly": "rear_down"
+    },
+    {
+      "part_id": "TMX-A3-P05",
+      "source_stl_sha256": "183e745e642a35c16599cf76eb7553d89b4f7bc5e69c3cb859c186b162261d58",
+      "triangles": 544,
+      "embedded_source_max_coordinate_error_mm": 4.726530278276186e-10,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_bodies": 1,
+      "volume_mm3": 152.49390133304857,
+      "bed_bounds_mm": [
+        [
+          305.0,
+          35.0,
+          0.0
+        ],
+        [
+          312.0,
+          44.699996948000006,
+          6.399999618500001
+        ]
+      ],
+      "orientation_from_assembly": "rear_down"
+    },
+    {
+      "part_id": "TMX-A3-P07",
+      "source_stl_sha256": "3731e777ef455245de1e9d966b588c7734641370e1bdd45e8a5abe6f22ea2d2d",
+      "triangles": 18464,
+      "embedded_source_max_coordinate_error_mm": 4.999947122996673e-10,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_bodies": 1,
+      "volume_mm3": 23543.457509795928,
+      "bed_bounds_mm": [
+        [
+          225.0,
+          145.0,
+          0.0
+        ],
+        [
+          304.0,
+          192.0,
+          33.0
+        ]
+      ],
+      "orientation_from_assembly": "front_down"
+    },
+    {
+      "part_id": "TMX-A3-P08",
+      "source_stl_sha256": "77e1f2aa1896d2f48a051718b7c84ee842057a6bac1c7cf5143f6beb6113d37b",
+      "triangles": 2092,
+      "embedded_source_max_coordinate_error_mm": 4.999947122996673e-10,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_bodies": 1,
+      "volume_mm3": 4084.702013122344,
+      "bed_bounds_mm": [
+        [
+          225.0,
+          215.0,
+          0.0
+        ],
+        [
+          294.5,
+          262.0,
+          10.7000007629
+        ]
+      ],
+      "orientation_from_assembly": "rear_down"
+    },
+    {
+      "part_id": "TMX-A3-P11",
+      "source_stl_sha256": "4983bda7bba11917a174b4228f71f70a04aaf7afd8682ea8d19ee9a28b98aa15",
+      "triangles": 6826,
+      "embedded_source_max_coordinate_error_mm": 4.999947122996673e-10,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_bodies": 1,
+      "volume_mm3": 501.08249469675565,
+      "bed_bounds_mm": [
+        [
+          279.9999999999697,
+          69.99999999996899,
+          0.0
+        ],
+        [
+          300.2000007629697,
+          90.19372558596902,
+          3.7999992371000033
+        ]
+      ],
+      "orientation_from_assembly": "axis_X_up"
+    },
+    {
+      "part_id": "TMX-V2-P12",
+      "source_stl_sha256": "1bcc2422235a2b638a03c715a1d1f0859e5fbf3a1212e2034afbf90cd318c6c3",
+      "triangles": 2836,
+      "embedded_source_max_coordinate_error_mm": 5.000089231543825e-11,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_bodies": 1,
+      "volume_mm3": 2100.3687661797785,
+      "bed_bounds_mm": [
+        [
+          225.0000000000426,
+          280.00000000002103,
+          2.902407327191095e-13
+        ],
+        [
+          251.38425827024258,
+          298.41358520535573,
+          26.112927848986857
+        ]
+      ],
+      "orientation_from_assembly": "flush_front_face_down"
+    }
+  ],
+  "pairwise_brim_clearance_checks": [
+    {
+      "parts": [
+        "TMX-A3-P01",
+        "TMX-A3-P02"
+      ],
+      "separation_after_two_4mm_brims_mm": 11.999992370605469
+    },
+    {
+      "parts": [
+        "TMX-A3-P01",
+        "TMX-A3-P03"
+      ],
+      "separation_after_two_4mm_brims_mm": 116.99999237062656
+    },
+    {
+      "parts": [
+        "TMX-A3-P01",
+        "TMX-A3-P04"
+      ],
+      "separation_after_two_4mm_brims_mm": 171.99999237060547
+    },
+    {
+      "parts": [
+        "TMX-A3-P01",
+        "TMX-A3-P05"
+      ],
+      "separation_after_two_4mm_brims_mm": 196.99999237060547
+    },
+    {
+      "parts": [
+        "TMX-A3-P01",
+        "TMX-A3-P07"
+      ],
+      "separation_after_two_4mm_brims_mm": 116.99999237060547
+    },
+    {
+      "parts": [
+        "TMX-A3-P01",
+        "TMX-A3-P08"
+      ],
+      "separation_after_two_4mm_brims_mm": 116.99999237060547
+    },
+    {
+      "parts": [
+        "TMX-A3-P01",
+        "TMX-A3-P11"
+      ],
+      "separation_after_two_4mm_brims_mm": 171.99999237057517
+    },
+    {
+      "parts": [
+        "TMX-A3-P01",
+        "TMX-V2-P12"
+      ],
+      "separation_after_two_4mm_brims_mm": 116.99999237064807
+    },
+    {
+      "parts": [
+        "TMX-A3-P02",
+        "TMX-A3-P03"
+      ],
+      "separation_after_two_4mm_brims_mm": 12.500000000021089
+    },
+    {
+      "parts": [
+        "TMX-A3-P02",
+        "TMX-A3-P04"
+      ],
+      "separation_after_two_4mm_brims_mm": 67.5
+    },
+    {
+      "parts": [
+        "TMX-A3-P02",
+        "TMX-A3-P05"
+      ],
+      "separation_after_two_4mm_brims_mm": 92.5
+    },
+    {
+      "parts": [
+        "TMX-A3-P02",
+        "TMX-A3-P07"
+      ],
+      "separation_after_two_4mm_brims_mm": 12.5
+    },
+    {
+      "parts": [
+        "TMX-A3-P02",
+        "TMX-A3-P08"
+      ],
+      "separation_after_two_4mm_brims_mm": 12.5
+    },
+    {
+      "parts": [
+        "TMX-A3-P02",
+        "TMX-A3-P11"
+      ],
+      "separation_after_two_4mm_brims_mm": 67.4999999999697
+    },
+    {
+      "parts": [
+        "TMX-A3-P02",
+        "TMX-V2-P12"
+      ],
+      "separation_after_two_4mm_brims_mm": 72.50000000002103
+    },
+    {
+      "parts": [
+        "TMX-A3-P03",
+        "TMX-A3-P04"
+      ],
+      "separation_after_two_4mm_brims_mm": 16.8000030517789
+    },
+    {
+      "parts": [
+        "TMX-A3-P03",
+        "TMX-A3-P05"
+      ],
+      "separation_after_two_4mm_brims_mm": 41.8000030517789
+    },
+    {
+      "parts": [
+        "TMX-A3-P03",
+        "TMX-A3-P07"
+      ],
+      "separation_after_two_4mm_brims_mm": 18.69999837875099
+    },
+    {
+      "parts": [
+        "TMX-A3-P03",
+        "TMX-A3-P08"
+      ],
+      "separation_after_two_4mm_brims_mm": 88.69999837875099
+    },
+    {
+      "parts": [
+        "TMX-A3-P03",
+        "TMX-A3-P11"
+      ],
+      "separation_after_two_4mm_brims_mm": 16.800003051748604
+    },
+    {
+      "parts": [
+        "TMX-A3-P03",
+        "TMX-V2-P12"
+      ],
+      "separation_after_two_4mm_brims_mm": 153.69999837877202
+    },
+    {
+      "parts": [
+        "TMX-A3-P04",
+        "TMX-A3-P05"
+      ],
+      "separation_after_two_4mm_brims_mm": 10.0
+    },
+    {
+      "parts": [
+        "TMX-A3-P04",
+        "TMX-A3-P07"
+      ],
+      "separation_after_two_4mm_brims_mm": 91.69999980927
+    },
+    {
+      "parts": [
+        "TMX-A3-P04",
+        "TMX-A3-P08"
+      ],
+      "separation_after_two_4mm_brims_mm": 161.69999980927
+    },
+    {
+      "parts": [
+        "TMX-A3-P04",
+        "TMX-A3-P11"
+      ],
+      "separation_after_two_4mm_brims_mm": 16.69999980923899
+    },
+    {
+      "parts": [
+        "TMX-A3-P04",
+        "TMX-V2-P12"
+      ],
+      "separation_after_two_4mm_brims_mm": 226.69999980929103
+    },
+    {
+      "parts": [
+        "TMX-A3-P05",
+        "TMX-A3-P07"
+      ],
+      "separation_after_two_4mm_brims_mm": 92.300003052
+    },
+    {
+      "parts": [
+        "TMX-A3-P05",
+        "TMX-A3-P08"
+      ],
+      "separation_after_two_4mm_brims_mm": 162.300003052
+    },
+    {
+      "parts": [
+        "TMX-A3-P05",
+        "TMX-A3-P11"
+      ],
+      "separation_after_two_4mm_brims_mm": 17.300003051968986
+    },
+    {
+      "parts": [
+        "TMX-A3-P05",
+        "TMX-V2-P12"
+      ],
+      "separation_after_two_4mm_brims_mm": 227.30000305202103
+    },
+    {
+      "parts": [
+        "TMX-A3-P07",
+        "TMX-A3-P08"
+      ],
+      "separation_after_two_4mm_brims_mm": 15.0
+    },
+    {
+      "parts": [
+        "TMX-A3-P07",
+        "TMX-A3-P11"
+      ],
+      "separation_after_two_4mm_brims_mm": 46.80627441403098
+    },
+    {
+      "parts": [
+        "TMX-A3-P07",
+        "TMX-V2-P12"
+      ],
+      "separation_after_two_4mm_brims_mm": 80.00000000002103
+    },
+    {
+      "parts": [
+        "TMX-A3-P08",
+        "TMX-A3-P11"
+      ],
+      "separation_after_two_4mm_brims_mm": 116.80627441403098
+    },
+    {
+      "parts": [
+        "TMX-A3-P08",
+        "TMX-V2-P12"
+      ],
+      "separation_after_two_4mm_brims_mm": 10.000000000021032
+    },
+    {
+      "parts": [
+        "TMX-A3-P11",
+        "TMX-V2-P12"
+      ],
+      "separation_after_two_4mm_brims_mm": 181.806274414052
+    }
+  ],
+  "minimum_separation_after_two_brims_mm": 10.0,
+  "nonprinting_support_blockers": [
+    {
+      "parent": "TMX-A3-P07",
+      "name": "Gas inlet exclusion [safety halo 0.35mm]",
+      "bed_bounds": [
+        [
+          284.65000150000003,
+          174.54999924,
+          16.04999924
+        ],
+        [
+          305.34999849999997,
+          182.95000076,
+          22.95000076
+        ]
+      ],
+      "inactive": false
+    },
+    {
+      "parent": "TMX-A3-P07",
+      "name": "Gas exhaust exclusion [safety halo 0.35mm]",
+      "bed_bounds": [
+        [
+          224.45000014,
+          174.54999924,
+          16.04999924
+        ],
+        [
+          232.4499999,
+          180.45000076,
+          22.95000076
+        ]
+      ],
+      "inactive": false
+    },
+    {
+      "parent": "TMX-A3-P07",
+      "name": "Gas rear return exclusion [safety halo 0.35mm]",
+      "bed_bounds": [
+        [
+          226.54999983,
+          159.9499993,
+          27.54999924
+        ],
+        [
+          232.44999969,
+          180.4500003,
+          33.45000076
+        ]
+      ],
+      "inactive": false
+    }
+  ],
+  "support_blocker_origin": "Archived current-manifold profile at Git1fada5c, three volumes preserved in normalized manifold coordinates",
+  "bambu_loader_verification": {
+    "project_sha256": "d2ceb05f07092014c2bdfaf18795386627b89c98269ba54c9fb35118329f7ddd",
+    "version": "02.08.02.61",
+    "load_exit_code": 0,
+    "slice_exit_code": 0,
+    "global_and_all_nine_object_supports_disabled": false,
+    "support_features_in_generated_gcode": [
+      "Support",
+      "Support interface",
+      "Support transition"
+    ],
+    "slice_result": {
+      "error_string": "Success.",
+      "export_time": 0,
+      "layer_height": 0.1599999964237213,
+      "plate_index": 1,
+      "prepare_time": 99,
+      "return_code": 0,
+      "sliced_plates": [
+        {
+          "feature_type_times": {
+            "Bottom surface": 746.5089111328125,
+            "Bridge": 1152.9669189453125,
+            "Brim": 356.5393371582031,
+            "Custom": 299.8321533203125,
+            "Flush": 74.39999389648438,
+            "Gap infill": 6.909653663635254,
+            "Inner wall": 5871.30517578125,
+            "Internal solid infill": 2545.81103515625,
+            "Outer wall": 3571.58447265625,
+            "Overhang wall": 227.26686096191406,
+            "Prime tower": 70.23506927490234,
+            "Sparse infill": 1942.028076171875,
+            "Support": 1474.8272705078125,
+            "Support interface": 189.21768188476562,
+            "Support transition": 60.32890319824219,
+            "Top surface": 558.1253662109375,
+            "Travel": 4303.94873046875,
+            "Undefined": 4296.00830078125
+          },
+          "filament_change_times": 0,
+          "filaments": [
+            {
+              "filament_id": "GFA00",
+              "id": 1,
+              "main_used_g": 191.09019470214844,
+              "total_used_g": 191.28602600097656
+            },
+            {
+              "filament_id": "GFA00",
+              "id": 2,
+              "main_used_g": 0.40073683857917786,
+              "total_used_g": 0.599398136138916
+            }
+          ],
+          "generate_support_material_time": 169,
+          "id": 1,
+          "infill_time": 355,
+          "layer_filament_change": 0,
+          "main_predication": 22984.265625,
+          "make_perimeters_time": 567,
+          "obj_cached_cnt": 0,
+          "objects": [
+            {
+              "bbox": {
+                "depth": 180.0,
+                "height": 40.599998474121094,
+                "width": 85.00000762939453,
+                "x": 15.0,
+                "y": 19.999990463256836,
+                "z": 0.0
+              },
+              "id": 5,
+              "name": "TMX-A3-P01",
+              "triangle_count": 6742
+            },
+            {
+              "bbox": {
+                "depth": 179.5,
+                "height": 10.200000762939453,
+                "width": 84.5,
+                "x": 120.0,
+                "y": 20.0,
+                "z": 1.9073486328125e-06
+              },
+              "id": 9,
+              "name": "TMX-A3-P02",
+              "triangle_count": 15066
+            },
+            {
+              "bbox": {
+                "depth": 98.30000305175781,
+                "height": 4.0,
+                "width": 30.199996948242188,
+                "x": 225.0,
+                "y": 20.0,
+                "z": 0.0
+              },
+              "id": 13,
+              "name": "TMX-A3-P03",
+              "triangle_count": 1996
+            },
+            {
+              "bbox": {
+                "depth": 10.30000114440918,
+                "height": 6.399999618530273,
+                "width": 7.0,
+                "x": 280.0,
+                "y": 35.0,
+                "z": -9.5367431640625e-07
+              },
+              "id": 17,
+              "name": "TMX-A3-P04",
+              "triangle_count": 544
+            },
+            {
+              "bbox": {
+                "depth": 9.699996948242188,
+                "height": 6.399999618530273,
+                "width": 7.0,
+                "x": 305.0,
+                "y": 35.0,
+                "z": -9.5367431640625e-07
+              },
+              "id": 21,
+              "name": "TMX-A3-P05",
+              "triangle_count": 544
+            },
+            {
+              "bbox": {
+                "depth": 47.0,
+                "height": 33.0,
+                "width": 79.0,
+                "x": 225.0,
+                "y": 145.0,
+                "z": 0.0
+              },
+              "id": 25,
+              "name": "TMX-A3-P07",
+              "triangle_count": 18464
+            },
+            {
+              "bbox": {
+                "depth": 47.0,
+                "height": 10.700000762939453,
+                "width": 69.5,
+                "x": 225.0,
+                "y": 215.0,
+                "z": 1.9073486328125e-06
+              },
+              "id": 29,
+              "name": "TMX-A3-P08",
+              "triangle_count": 2092
+            },
+            {
+              "bbox": {
+                "depth": 20.1937255859375,
+                "height": 3.799999237060547,
+                "width": 20.200000762939453,
+                "x": 280.0,
+                "y": 70.0,
+                "z": -1.9073486328125e-06
+              },
+              "id": 33,
+              "name": "TMX-A3-P11",
+              "triangle_count": 6826
+            },
+            {
+              "bbox": {
+                "depth": 18.413585662841797,
+                "height": 26.11292839050293,
+                "width": 26.384260177612305,
+                "x": 225.0,
+                "y": 280.0,
+                "z": -5.394778668232902e-07
+              },
+              "id": 37,
+              "name": "TMX-V2-P12",
+              "triangle_count": 2836
+            }
+          ],
+          "sliced_time": 3464,
+          "sliced_time_with_cache": 2174,
+          "total_predication": 23446.79296875,
+          "triangle_count": 55110,
+          "warning_message": ""
+        }
+      ],
+      "sparse_infill_density": 20.0,
+      "upward_compatible_machine": [
+        "Bambu Lab H2D Pro 0.4 nozzle"
+      ],
+      "wall_loops": 4
+    },
+    "requested_support_configuration_verified": true,
+    "support_generation_verified": true,
+    "support_extrusion_segment_counts_by_material": {
+      "1": 39699
+    },
+    "support_and_interface_material": 1,
+    "no_support_paths_in_logo_region": true,
+    "both_materials_present_in_generated_gcode": true,
+    "material_mapping_in_generated_gcode": [
+      1,
+      2
+    ],
+    "material_colours": [
+      "#A0A0A0",
+      "#FFFFFF"
+    ],
+    "prime_tower_present": true,
+    "slice_warnings": [
+      "[2026-10-17 21:04:40.112594] [0x00000001f181e180] [warning] cli mode, Current BambuStudio Version 02.08.02.61",
+      "[2026-10-17 21:04:40.205626] [0x00000001f181e180] [warning] run:2873, can not find system preset file: /Applications/BambuStudio.app/Contents/Resources/profiles/BBL/machine_full/Bambu Lab H2D 0.4 nozzle.json ",
+      "[2026-10-17 21:04:40.205743] [0x00000001f181e180] [warning] run:2895, can not find system preset file: /Applications/BambuStudio.app/Contents/Resources/profiles/BBL/process_full/Trimix PCB2 Bottom fit0.16 H2D.json ",
+      "[2026-10-17 21:04:40.205848] [0x00000001f181e180] [warning] no filament colors found in projects",
+      "[2026-10-17 21:04:40.207069] [0x00000001f181e180] [warning] load_nozzle_infos_with_compatibility: building nozzle list from filament map and volume types",
+      "[2026-10-17 21:04:41.536378] [0x00000001f181e180] [error]   Invalid T command (T1001).",
+      "[2026-10-17 21:04:43.462122] [0x00000001f181e180] [error]   Invalid T command (T65535).",
+      "[2026-10-17 21:04:43.462348] [0x00000001f181e180] [error]   Invalid T command (T65279)."
+    ],
+    "floating_cantilever_warnings": [],
+    "noncritical_slice_warnings": [],
+    "slice_log_sha256": "e61413dd5e2d1c3283a2491467e0ca6aa155218e7e1dcacd533729fb10398509",
+    "ui_opened_existing_repo_project": false,
+    "delivered_project_unsliced": true,
+    "print_sent": false,
+    "scope": "Actual CLI load and full-plate slice; gray supports generated and flush logo clear. Physical print quality remains untested.",
+    "slice_log_basename": "slice.log",
+    "slice_log_warnings": [
+      "cli mode, Current BambuStudio Version 02.08.02.61",
+      "run:2873, can not find system preset file: /Applications/BambuStudio.app/Contents/Resources/profiles/BBL/machine_full/Bambu Lab H2D 0.4 nozzle.json",
+      "run:2895, can not find system preset file: /Applications/BambuStudio.app/Contents/Resources/profiles/BBL/process_full/Trimix PCB2 Bottom fit0.16 H2D.json",
+      "no filament colors found in projects",
+      "load_nozzle_infos_with_compatibility: building nozzle list from filament map and volume types"
+    ]
+  },
+  "limitations": [
+    "The editable delivered project is unsliced and has no G-code; any separate application/slicing check is recorded in bambu_loader_verification.",
+    "Supports enabled for P01 housing, P07 gas manifold and P12 USB holder; disabled for the other six parts. The three original gas-channel blockers remain active.",
+    "Support-free internal mounts, manifold and USB-holder redesign is deferred to the next design revision (v2). Current geometry and placement are retained.",
+    "P01 STL is a flat single-color fallback; use the 3MF to retain the two-color logo.",
+    "No physical print-strength, temperature, gas-seal or production qualification claimed."
+  ],
+  "preview_thumbnail_included": false,
+  "source_commit": "1fada5c4282d12770d11525a39a2129fe49cdbec",
+  "archive_crc_check_pass": true,
+  "archive_contains_gcode": false,
+  "historical_baseline": {
+    "project_sha256": "14d5f407815675c0982ebf0c28783b0c73b8fe6c18b63a21638169ca176d63c2",
+    "bambu_loader_verification": {
+      "version": "02.08.02.61",
+      "input_load_exit_code": 0,
+      "all_nine_meshes_report_manifold_and_one_body": true,
+      "final_project_load_exit_code": 0,
+      "final_project_reports_nine_manifold_single_body_meshes": true,
+      "final_loader_log_sha256": "b0f8c2e1d44382d748ac44fc8c536f1cb3e3aa4ff8b9f0f90782d0eb1ecdeb39"
+    },
+    "source_commit": "1fada5c4282d12770d11525a39a2129fe49cdbec",
+    "source_stls_unchanged_from_git_HEAD": true,
+    "scope": "Recorded pre-logo application loading and source comparison; not a current load test."
+  },
+  "source_stls_note": "P01 STL restored to the original flat single-color fallback; other eight STLs retained. The two-color logo is encoded in the 3MF's seven P01 material meshes, not in STL.",
+  "logo_revision": {
+    "timestamp_utc": "2026-10-17T19:07:52.229627+00:00",
+    "surface_style": "flush two-color",
+    "delivery_evidence": "hardware/cad/pcb-v2-bottom/verification/delivery-checks.json#logo_revision",
+    "supports_enabled_for_selected_parts_by_explicit_user_request": [
+      "TMX-A3-P01",
+      "TMX-A3-P07",
+      "TMX-V2-P12"
+    ],
+    "support_blocker_verification": [
+      {
+        "part_id": "TMX-A3-P07",
+        "leaf_id": "10",
+        "triangles": 12,
+        "bed_bounds_mm": [
+          [
+            284.65000150000003,
+            174.54999924,
+            16.04999924
+          ],
+          [
+            305.34999849999997,
+            182.95000076,
+            22.95000076
+          ]
+        ],
+        "component_transform": "1 0 0 0 1 0 0 0 1 0 0 0",
+        "build_transform": "1 0 0 0 1 0 0 0 1 225 145 0",
+        "inactive": false
+      },
+      {
+        "part_id": "TMX-A3-P07",
+        "leaf_id": "11",
+        "triangles": 12,
+        "bed_bounds_mm": [
+          [
+            224.45000014,
+            174.54999924,
+            16.04999924
+          ],
+          [
+            232.4499999,
+            180.45000076,
+            22.95000076
+          ]
+        ],
+        "component_transform": "1 0 0 0 1 0 0 0 1 0 0 0",
+        "build_transform": "1 0 0 0 1 0 0 0 1 225 145 0",
+        "inactive": false
+      },
+      {
+        "part_id": "TMX-A3-P07",
+        "leaf_id": "12",
+        "triangles": 12,
+        "bed_bounds_mm": [
+          [
+            226.54999983,
+            159.9499993,
+            27.54999924
+          ],
+          [
+            232.44999969,
+            180.4500003,
+            33.45000076
+          ]
+        ],
+        "component_transform": "1 0 0 0 1 0 0 0 1 0 0 0",
+        "build_transform": "1 0 0 0 1 0 0 0 1 225 145 0",
+        "inactive": false
+      }
+    ],
+    "channel_blocker_toolpath_check": {
+      "active_blocker_ids": [
+        "10",
+        "11",
+        "12"
+      ],
+      "support_segments_intersecting_each_blocker_interior": {
+        "10": 0,
+        "11": 0,
+        "12": 0
+      },
+      "interior_margin_mm": 0.05,
+      "scope": "Support extrusion centerline intersection with retained axis-aligned blocker bounds; arcs treated as endpoint chords."
+    },
+    "bambu_archive_verification": {
+      "pass": true,
+      "status": "PASS: flush bicolor logo with P01/P07/P12 gray supports; dual-nozzle gray-first full slice passed",
+      "output_project_sha256": "d2ceb05f07092014c2bdfaf18795386627b89c98269ba54c9fb35118329f7ddd",
+      "mesh_checks_pass": true,
+      "physical_part_count": 9,
+      "normal_mesh_count": 15,
+      "material_count": 2,
+      "body_list_sha256": "87019c32b28dae679b56da9908ddadc084066880e245a4b1b97e2d8266e511a7",
+      "bicolor_source_project_sha256": "64b7f18986917c75ad263f435be8553d8247f987319aaf60a14fdbc0a35ae35c",
+      "retained_original_mesh_fragment_sha256": {
+        "1": "01be1fff3c224238a8ab378ca6bbecc56380076cff1d37b6b4e59f4e9aeedebe",
+        "2": "5cf142b4e57c0c7852d73efee5201e871d3f8651ea65dbf84ec9d7507e87125e",
+        "3": "0cdd97da4b0d189b00a742d523544285a879305c64eba1eb8fe3ba7b14dda314",
+        "4": "7ec154148469e33d3d312373830644064274b22381330f9bd5d249f8d339e1c0",
+        "5": "c7d47e8e2bbc81a6c55ff2a2db448584d8d4a0f70eb0825672f1a75a87aa8e37",
+        "6": "a38ee2ddd163354ca762d20a13f76428a294510612040360477920c6304ab7f1",
+        "10": "274fc9537316facdc8bf62371185e9aebc6b06cd49e17f71c4862c0a1dc9a114",
+        "11": "225e9c52f2e9a3aed76164cc53b98ce87e9f81b549f485c1da590e8930c77c17",
+        "12": "59c77b9956c7155fb43ae952271310405be71193629c356382e29e2f22824b7b",
+        "7": "653c18f8f99b2415a38c59af1cd3bdae6e4d616176384934e500c0f924dec5ac",
+        "8": "b9ea25ed3511423bd5632524071c31c35f910dea1ac0be116c5ed4aff8408e72",
+        "9": "999e77a8ca288e6d356b6acf6f8b5afc656a43027eba7d3d69d5fa88983eefb4"
+      },
+      "changed_zip_entries_from_monocolor_stage": [
+        "3D/3dmodel.model",
+        "3D/Objects/current_parts.model",
+        "Metadata/model_settings.config",
+        "Metadata/project_settings.config",
+        "Metadata/filament_sequence.json"
+      ],
+      "retained_zip_entry_sha256_from_monocolor_stage": {
+        "[Content_Types].xml": "5e0114a2fc79a5fdaa8ba7d3c48e1510e2c415784d38555eda070b1a0757be95",
+        "_rels/.rels": "8ea26272a04bef93b47d3805b3da568a24cc2cc6479bb6bf3e95b99aa59c26e2",
+        "3D/_rels/3dmodel.model.rels": "eea4cf398efbaa1c994b0affd9a371dee63392911095815af2b94818b585c30d"
+      },
+      "changed_settings_for_bicolor": {
+        "activate_air_filtration": {
+          "before": [
+            "0"
+          ],
+          "after": [
+            "0",
+            "0"
+          ]
+        },
+        "additional_cooling_fan_speed": {
+          "before": [
+            "75"
+          ],
+          "after": [
+            "75",
+            "75"
+          ]
+        },
+        "additional_fan_full_speed_layer": {
+          "before": [
+            "0"
+          ],
+          "after": [
+            "0",
+            "0"
+          ]
+        },
+        "chamber_temperatures": {
+          "before": [
+            "0"
+          ],
+          "after": [
+            "0",
+            "0"
+          ]
+        },
+        "circle_compensation_speed": {
+          "before": [
+            "200"
+          ],
+          "after": [
+            "200",
+            "200"
+          ]
+        },
+        "close_additional_fan_first_x_layers": {
+          "before": [
+            "1"
+          ],
+          "after": [
+            "1",
+            "1"
+          ]
+        },
+        "close_fan_the_first_x_layers": {
+          "before": [
+            "1"
+          ],
+          "after": [
+            "1",
+            "1"
+          ]
+        },
+        "complete_print_exhaust_fan_speed": {
+          "before": [
+            "70"
+          ],
+          "after": [
+            "70",
+            "70"
+          ]
+        },
+        "cool_plate_temp": {
+          "before": [
+            "35"
+          ],
+          "after": [
+            "35",
+            "35"
+          ]
+        },
+        "cool_plate_temp_initial_layer": {
+          "before": [
+            "35"
+          ],
+          "after": [
+            "35",
+            "35"
+          ]
+        },
+        "cooling_perimeter_transition_distance": {
+          "before": [
+            "10"
+          ],
+          "after": [
+            "10",
+            "10"
+          ]
+        },
+        "cooling_slowdown_logic": {
+          "before": [
+            "uniform_cooling"
+          ],
+          "after": [
+            "uniform_cooling",
+            "uniform_cooling"
+          ]
+        },
+        "counter_coef_1": {
+          "before": [
+            "0"
+          ],
+          "after": [
+            "0",
+            "0"
+          ]
+        },
+        "counter_coef_2": {
+          "before": [
+            "0.0025"
+          ],
+          "after": [
+            "0.0025",
+            "0.0025"
+          ]
+        },
+        "counter_coef_3": {
+          "before": [
+            "0.014"
+          ],
+          "after": [
+            "0.014",
+            "0.014"
+          ]
+        },
+        "counter_limit_max": {
+          "before": [
+            "0.076"
+          ],
+          "after": [
+            "0.076",
+            "0.076"
+          ]
+        },
+        "counter_limit_min": {
+          "before": [
+            "0.014"
+          ],
+          "after": [
+            "0.014",
+            "0.014"
+          ]
+        },
+        "diameter_limit": {
+          "before": [
+            "50"
+          ],
+          "after": [
+            "50",
+            "50"
+          ]
+        },
+        "different_settings_to_system": {
+          "before": [
+            "enable_prime_tower",
+            "",
+            ""
+          ],
+          "after": [
+            "enable_prime_tower",
+            "",
+            "",
+            ""
+          ]
+        },
+        "during_print_exhaust_fan_speed": {
+          "before": [
+            "70"
+          ],
+          "after": [
+            "70",
+            "70"
+          ]
+        },
+        "enable_overhang_bridge_fan": {
+          "before": [
+            "1"
+          ],
+          "after": [
+            "1",
+            "1"
+          ]
+        },
+        "enable_pressure_advance": {
+          "before": [
+            "0"
+          ],
+          "after": [
+            "0",
+            "0"
+          ]
+        },
+        "enable_prime_tower": {
+          "before": "0",
+          "after": "1"
+        },
+        "eng_plate_temp": {
+          "before": [
+            "55"
+          ],
+          "after": [
+            "55",
+            "55"
+          ]
+        },
+        "eng_plate_temp_initial_layer": {
+          "before": [
+            "55"
+          ],
+          "after": [
+            "55",
+            "55"
+          ]
+        },
+        "fan_cooling_layer_time": {
+          "before": [
+            "100"
+          ],
+          "after": [
+            "100",
+            "100"
+          ]
+        },
+        "fan_max_speed": {
+          "before": [
+            "80"
+          ],
+          "after": [
+            "80",
+            "80"
+          ]
+        },
+        "fan_min_speed": {
+          "before": [
+            "60"
+          ],
+          "after": [
+            "60",
+            "60"
+          ]
+        },
+        "filament_adaptive_volumetric_speed": {
+          "before": [
+            "0",
+            "0",
+            "0"
+          ],
+          "after": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "filament_adhesiveness_category": {
+          "before": [
+            "100"
+          ],
+          "after": [
+            "100",
+            "100"
+          ]
+        },
+        "filament_bridge_speed": {
+          "before": [
+            "25",
+            "25",
+            "25"
+          ],
+          "after": [
+            "25",
+            "25",
+            "25",
+            "25",
+            "25",
+            "25"
+          ]
+        },
+        "filament_change_length": {
+          "before": [
+            "4"
+          ],
+          "after": [
+            "4",
+            "4"
+          ]
+        },
+        "filament_change_length_nc": {
+          "before": [
+            "10"
+          ],
+          "after": [
+            "10",
+            "10"
+          ]
+        },
+        "filament_colour": {
+          "before": [
+            "#A0A0A0"
+          ],
+          "after": [
+            "#A0A0A0",
+            "#FFFFFF"
+          ]
+        },
+        "filament_cooling_before_tower": {
+          "before": [
+            "10",
+            "10",
+            "10"
+          ],
+          "after": [
+            "10",
+            "10",
+            "10",
+            "10",
+            "10",
+            "10"
+          ]
+        },
+        "filament_cost": {
+          "before": [
+            "19.99"
+          ],
+          "after": [
+            "19.99",
+            "19.99"
+          ]
+        },
+        "filament_density": {
+          "before": [
+            "1.26"
+          ],
+          "after": [
+            "1.26",
+            "1.26"
+          ]
+        },
+        "filament_deretraction_speed": {
+          "before": [
+            "nil",
+            "nil",
+            "nil"
+          ],
+          "after": [
+            "nil",
+            "nil",
+            "nil",
+            "nil",
+            "nil",
+            "nil"
+          ]
+        },
+        "filament_dev_ams_drying_ams_limitations": {
+          "before": [
+            "1"
+          ],
+          "after": [
+            "1",
+            "1"
+          ]
+        },
+        "filament_dev_ams_drying_heat_distortion_temperature": {
+          "before": [
+            "45"
+          ],
+          "after": [
+            "45",
+            "45"
+          ]
+        },
+        "filament_dev_ams_drying_temperature": {
+          "before": [
+            "45"
+          ],
+          "after": [
+            "45",
+            "45"
+          ]
+        },
+        "filament_dev_ams_drying_time": {
+          "before": [
+            "12"
+          ],
+          "after": [
+            "12",
+            "12"
+          ]
+        },
+        "filament_dev_chamber_drying_bed_temperature": {
+          "before": [
+            "70"
+          ],
+          "after": [
+            "70",
+            "70"
+          ]
+        },
+        "filament_dev_chamber_drying_time": {
+          "before": [
+            "12"
+          ],
+          "after": [
+            "12",
+            "12"
+          ]
+        },
+        "filament_dev_drying_cooling_temperature": {
+          "before": [
+            "45"
+          ],
+          "after": [
+            "45",
+            "45"
+          ]
+        },
+        "filament_dev_drying_softening_temperature": {
+          "before": [
+            "50"
+          ],
+          "after": [
+            "50",
+            "50"
+          ]
+        },
+        "filament_diameter": {
+          "before": [
+            "1.75"
+          ],
+          "after": [
+            "1.75",
+            "1.75"
+          ]
+        },
+        "filament_enable_overhang_speed": {
+          "before": [
+            "1",
+            "1",
+            "1"
+          ],
+          "after": [
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1"
+          ]
+        },
+        "filament_end_gcode": {
+          "before": [
+            "; filament end gcode \n"
+          ],
+          "after": [
+            "; filament end gcode \n",
+            "; filament end gcode \n"
+          ]
+        },
+        "filament_extruder_compatibility": {
+          "before": [
+            "0"
+          ],
+          "after": [
+            "0",
+            "0"
+          ]
+        },
+        "filament_extruder_variant": {
+          "before": [
+            "Direct Drive Standard",
+            "Direct Drive High Flow",
+            "Direct Drive E3D High Flow"
+          ],
+          "after": [
+            "Direct Drive Standard",
+            "Direct Drive High Flow",
+            "Direct Drive E3D High Flow",
+            "Direct Drive Standard",
+            "Direct Drive High Flow",
+            "Direct Drive E3D High Flow"
+          ]
+        },
+        "filament_flow_ratio": {
+          "before": [
+            "0.98",
+            "0.98",
+            "0.98"
+          ],
+          "after": [
+            "0.98",
+            "0.98",
+            "0.98",
+            "0.98",
+            "0.98",
+            "0.98"
+          ]
+        },
+        "filament_flush_temp": {
+          "before": [
+            "0",
+            "0",
+            "0"
+          ],
+          "after": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "filament_flush_temp_fast": {
+          "before": [
+            "0",
+            "0",
+            "0"
+          ],
+          "after": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "filament_flush_volumetric_speed": {
+          "before": [
+            "0",
+            "0",
+            "0"
+          ],
+          "after": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "filament_ids": {
+          "before": [
+            "GFA00"
+          ],
+          "after": [
+            "GFA00",
+            "GFA00"
+          ]
+        },
+        "filament_is_mixed": {
+          "before": [
+            "0"
+          ],
+          "after": [
+            "0",
+            "0"
+          ]
+        },
+        "filament_is_support": {
+          "before": [
+            "0"
+          ],
+          "after": [
+            "0",
+            "0"
+          ]
+        },
+        "filament_long_retractions_when_cut": {
+          "before": [
+            "nil",
+            "nil",
+            "nil"
+          ],
+          "after": [
+            "nil",
+            "nil",
+            "nil",
+            "nil",
+            "nil",
+            "nil"
+          ]
+        },
+        "filament_map": {
+          "before": [
+            "1"
+          ],
+          "after": [
+            "1",
+            "2"
+          ]
+        },
+        "filament_map_2": {
+          "before": [
+            "1"
+          ],
+          "after": [
+            "1",
+            "2"
+          ]
+        },
+        "filament_map_mode": {
+          "before": "Auto For Flush",
+          "after": "Manual"
+        },
+        "filament_max_volumetric_speed": {
+          "before": [
+            "25",
+            "40",
+            "25"
+          ],
+          "after": [
+            "25",
+            "40",
+            "25",
+            "25",
+            "40",
+            "25"
+          ]
+        },
+        "filament_metal_stickiness": {
+          "before": [
+            "None"
+          ],
+          "after": [
+            "None",
+            "None"
+          ]
+        },
+        "filament_minimal_purge_on_wipe_tower": {
+          "before": [
+            "15"
+          ],
+          "after": [
+            "15",
+            "15"
+          ]
+        },
+        "filament_mixed_components": {
+          "before": [
+            ""
+          ],
+          "after": [
+            "",
+            ""
+          ]
+        },
+        "filament_mixed_gradient": {
+          "before": [
+            "0"
+          ],
+          "after": [
+            "0",
+            "0"
+          ]
+        },
+        "filament_mixed_gradient_curve": {
+          "before": [
+            ""
+          ],
+          "after": [
+            "",
+            ""
+          ]
+        },
+        "filament_mixed_gradient_per_part": {
+          "before": [
+            "0"
+          ],
+          "after": [
+            "0",
+            "0"
+          ]
+        },
+        "filament_mixed_gradient_range": {
+          "before": [
+            ""
+          ],
+          "after": [
+            "",
+            ""
+          ]
+        },
+        "filament_mixed_sublayer_ratios": {
+          "before": [
+            ""
+          ],
+          "after": [
+            "",
+            ""
+          ]
+        },
+        "filament_nozzle_map": {
+          "before": [
+            "1"
+          ],
+          "after": [
+            "1",
+            "2"
+          ]
+        },
+        "filament_overhang_1_4_speed": {
+          "before": [
+            "0",
+            "0",
+            "0"
+          ],
+          "after": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "filament_overhang_2_4_speed": {
+          "before": [
+            "50",
+            "50",
+            "50"
+          ],
+          "after": [
+            "50",
+            "50",
+            "50",
+            "50",
+            "50",
+            "50"
+          ]
+        },
+        "filament_overhang_3_4_speed": {
+          "before": [
+            "30",
+            "30",
+            "30"
+          ],
+          "after": [
+            "30",
+            "30",
+            "30",
+            "30",
+            "30",
+            "30"
+          ]
+        },
+        "filament_overhang_4_4_speed": {
+          "before": [
+            "10",
+            "10",
+            "10"
+          ],
+          "after": [
+            "10",
+            "10",
+            "10",
+            "10",
+            "10",
+            "10"
+          ]
+        },
+        "filament_overhang_totally_speed": {
+          "before": [
+            "10",
+            "10",
+            "10"
+          ],
+          "after": [
+            "10",
+            "10",
+            "10",
+            "10",
+            "10",
+            "10"
+          ]
+        },
+        "filament_pre_cooling_temperature": {
+          "before": [
+            "0",
+            "0",
+            "0"
+          ],
+          "after": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "filament_pre_cooling_temperature_nc": {
+          "before": [
+            "0",
+            "0",
+            "0"
+          ],
+          "after": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "filament_preheat_temperature_delta": {
+          "before": [
+            "10",
+            "10",
+            "10"
+          ],
+          "after": [
+            "10",
+            "10",
+            "10",
+            "10",
+            "10",
+            "10"
+          ]
+        },
+        "filament_prime_volume": {
+          "before": [
+            "30"
+          ],
+          "after": [
+            "30",
+            "30"
+          ]
+        },
+        "filament_prime_volume_nc": {
+          "before": [
+            "60"
+          ],
+          "after": [
+            "60",
+            "60"
+          ]
+        },
+        "filament_printable": {
+          "before": [
+            "3"
+          ],
+          "after": [
+            "3",
+            "3"
+          ]
+        },
+        "filament_ramming_travel_time": {
+          "before": [
+            "0",
+            "0",
+            "0"
+          ],
+          "after": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "filament_ramming_travel_time_nc": {
+          "before": [
+            "0",
+            "0",
+            "0"
+          ],
+          "after": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "filament_ramming_volumetric_speed": {
+          "before": [
+            "-1",
+            "-1",
+            "-1"
+          ],
+          "after": [
+            "-1",
+            "-1",
+            "-1",
+            "-1",
+            "-1",
+            "-1"
+          ]
+        },
+        "filament_ramming_volumetric_speed_nc": {
+          "before": [
+            "-1",
+            "-1",
+            "-1"
+          ],
+          "after": [
+            "-1",
+            "-1",
+            "-1",
+            "-1",
+            "-1",
+            "-1"
+          ]
+        },
+        "filament_retract_before_wipe": {
+          "before": [
+            "nil",
+            "nil",
+            "nil"
+          ],
+          "after": [
+            "nil",
+            "nil",
+            "nil",
+            "nil",
+            "nil",
+            "nil"
+          ]
+        },
+        "filament_retract_length_nc": {
+          "before": [
+            "14",
+            "14",
+            "14"
+          ],
+          "after": [
+            "14",
+            "14",
+            "14",
+            "14",
+            "14",
+            "14"
+          ]
+        },
+        "filament_retract_restart_extra": {
+          "before": [
+            "nil",
+            "nil",
+            "nil"
+          ],
+          "after": [
+            "nil",
+            "nil",
+            "nil",
+            "nil",
+            "nil",
+            "nil"
+          ]
+        },
+        "filament_retract_when_changing_layer": {
+          "before": [
+            "nil",
+            "nil",
+            "nil"
+          ],
+          "after": [
+            "nil",
+            "nil",
+            "nil",
+            "nil",
+            "nil",
+            "nil"
+          ]
+        },
+        "filament_retraction_distances_when_cut": {
+          "before": [
+            "nil",
+            "nil",
+            "nil"
+          ],
+          "after": [
+            "nil",
+            "nil",
+            "nil",
+            "nil",
+            "nil",
+            "nil"
+          ]
+        },
+        "filament_retraction_length": {
+          "before": [
+            "0.4",
+            "0.4",
+            "1"
+          ],
+          "after": [
+            "0.4",
+            "0.4",
+            "1",
+            "0.4",
+            "0.4",
+            "1"
+          ]
+        },
+        "filament_retraction_minimum_travel": {
+          "before": [
+            "nil",
+            "nil",
+            "nil"
+          ],
+          "after": [
+            "nil",
+            "nil",
+            "nil",
+            "nil",
+            "nil",
+            "nil"
+          ]
+        },
+        "filament_retraction_speed": {
+          "before": [
+            "nil",
+            "nil",
+            "nil"
+          ],
+          "after": [
+            "nil",
+            "nil",
+            "nil",
+            "nil",
+            "nil",
+            "nil"
+          ]
+        },
+        "filament_scarf_gap": {
+          "before": [
+            "0%"
+          ],
+          "after": [
+            "0%",
+            "0%"
+          ]
+        },
+        "filament_scarf_height": {
+          "before": [
+            "10%"
+          ],
+          "after": [
+            "10%",
+            "10%"
+          ]
+        },
+        "filament_scarf_length": {
+          "before": [
+            "10"
+          ],
+          "after": [
+            "10",
+            "10"
+          ]
+        },
+        "filament_scarf_seam_type": {
+          "before": [
+            "none"
+          ],
+          "after": [
+            "none",
+            "none"
+          ]
+        },
+        "filament_self_index": {
+          "before": [
+            "1",
+            "1",
+            "1"
+          ],
+          "after": [
+            "1",
+            "1",
+            "1",
+            "2",
+            "2",
+            "2"
+          ]
+        },
+        "filament_settings_id": {
+          "before": [
+            "Bambu PLA Basic @BBL H2D"
+          ],
+          "after": [
+            "Bambu PLA Basic @BBL H2D",
+            "Bambu PLA Basic @BBL H2D"
+          ]
+        },
+        "filament_shrink": {
+          "before": [
+            "100%"
+          ],
+          "after": [
+            "100%",
+            "100%"
+          ]
+        },
+        "filament_soluble": {
+          "before": [
+            "0"
+          ],
+          "after": [
+            "0",
+            "0"
+          ]
+        },
+        "filament_start_gcode": {
+          "before": [
+            "; filament start gcode\n"
+          ],
+          "after": [
+            "; filament start gcode\n",
+            "; filament start gcode\n"
+          ]
+        },
+        "filament_tower_interface_pre_extrusion_dist": {
+          "before": [
+            "10"
+          ],
+          "after": [
+            "10",
+            "10"
+          ]
+        },
+        "filament_tower_interface_pre_extrusion_length": {
+          "before": [
+            "0"
+          ],
+          "after": [
+            "0",
+            "0"
+          ]
+        },
+        "filament_tower_interface_print_temp": {
+          "before": [
+            "-1"
+          ],
+          "after": [
+            "-1",
+            "-1"
+          ]
+        },
+        "filament_tower_interface_purge_volume": {
+          "before": [
+            "20"
+          ],
+          "after": [
+            "20",
+            "20"
+          ]
+        },
+        "filament_tower_ironing_area": {
+          "before": [
+            "4"
+          ],
+          "after": [
+            "4",
+            "4"
+          ]
+        },
+        "filament_type": {
+          "before": [
+            "PLA"
+          ],
+          "after": [
+            "PLA",
+            "PLA"
+          ]
+        },
+        "filament_velocity_adaptation_factor": {
+          "before": [
+            "1"
+          ],
+          "after": [
+            "1",
+            "1"
+          ]
+        },
+        "filament_vendor": {
+          "before": [
+            "Bambu Lab"
+          ],
+          "after": [
+            "Bambu Lab",
+            "Bambu Lab"
+          ]
+        },
+        "filament_volume_map": {
+          "before": [
+            "0"
+          ],
+          "after": [
+            "0",
+            "0"
+          ]
+        },
+        "filament_wipe": {
+          "before": [
+            "1",
+            "1",
+            "1"
+          ],
+          "after": [
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1"
+          ]
+        },
+        "filament_wipe_distance": {
+          "before": [
+            "1",
+            "1",
+            "1"
+          ],
+          "after": [
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1"
+          ]
+        },
+        "filament_z_hop": {
+          "before": [
+            "nil",
+            "nil",
+            "nil"
+          ],
+          "after": [
+            "nil",
+            "nil",
+            "nil",
+            "nil",
+            "nil",
+            "nil"
+          ]
+        },
+        "filament_z_hop_types": {
+          "before": [
+            "Spiral Lift",
+            "Spiral Lift",
+            "Spiral Lift"
+          ],
+          "after": [
+            "Spiral Lift",
+            "Spiral Lift",
+            "Spiral Lift",
+            "Spiral Lift",
+            "Spiral Lift",
+            "Spiral Lift"
+          ]
+        },
+        "first_layer_print_sequence": {
+          "before": [
+            "0"
+          ],
+          "after": [
+            "1",
+            "2"
+          ]
+        },
+        "first_x_layer_fan_speed": {
+          "before": [
+            "0"
+          ],
+          "after": [
+            "0",
+            "0"
+          ]
+        },
+        "first_x_layer_part_fan_speed": {
+          "before": [
+            "0"
+          ],
+          "after": [
+            "0",
+            "0"
+          ]
+        },
+        "flush_multiplier": {
+          "before": [
+            "1"
+          ],
+          "after": [
+            "1",
+            "1"
+          ]
+        },
+        "flush_multiplier_fast": {
+          "before": [
+            "1.2"
+          ],
+          "after": [
+            "1.2",
+            "1.2"
+          ]
+        },
+        "flush_volumes_matrix": {
+          "before": [
+            "0",
+            "280",
+            "280",
+            "280",
+            "280",
+            "0",
+            "280",
+            "280",
+            "280",
+            "280",
+            "0",
+            "280",
+            "280",
+            "280",
+            "280",
+            "0"
+          ],
+          "after": [
+            "0",
+            "280",
+            "280",
+            "0",
+            "0",
+            "280",
+            "280",
+            "0"
+          ]
+        },
+        "flush_volumes_vector": {
+          "before": [
+            "140",
+            "140",
+            "140",
+            "140",
+            "140",
+            "140",
+            "140",
+            "140"
+          ],
+          "after": [
+            "140",
+            "140",
+            "140",
+            "140"
+          ]
+        },
+        "full_fan_speed_layer": {
+          "before": [
+            "0"
+          ],
+          "after": [
+            "0",
+            "0"
+          ]
+        },
+        "hole_coef_1": {
+          "before": [
+            "0"
+          ],
+          "after": [
+            "0",
+            "0"
+          ]
+        },
+        "hole_coef_2": {
+          "before": [
+            "-0.0028"
+          ],
+          "after": [
+            "-0.0028",
+            "-0.0028"
+          ]
+        },
+        "hole_coef_3": {
+          "before": [
+            "0.12"
+          ],
+          "after": [
+            "0.12",
+            "0.12"
+          ]
+        },
+        "hole_limit_max": {
+          "before": [
+            "0.12"
+          ],
+          "after": [
+            "0.12",
+            "0.12"
+          ]
+        },
+        "hole_limit_min": {
+          "before": [
+            "0.05"
+          ],
+          "after": [
+            "0.05",
+            "0.05"
+          ]
+        },
+        "hot_plate_temp": {
+          "before": [
+            "55"
+          ],
+          "after": [
+            "55",
+            "55"
+          ]
+        },
+        "hot_plate_temp_initial_layer": {
+          "before": [
+            "55"
+          ],
+          "after": [
+            "55",
+            "55"
+          ]
+        },
+        "impact_strength_z": {
+          "before": [
+            "13.8"
+          ],
+          "after": [
+            "13.8",
+            "13.8"
+          ]
+        },
+        "inherits_group": {
+          "before": [
+            "",
+            "",
+            ""
+          ],
+          "after": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        "ironing_fan_speed": {
+          "before": [
+            "-1"
+          ],
+          "after": [
+            "-1",
+            "-1"
+          ]
+        },
+        "long_retractions_when_ec": {
+          "before": [
+            "1",
+            "1",
+            "1"
+          ],
+          "after": [
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1"
+          ]
+        },
+        "no_slow_down_for_cooling_on_outwalls": {
+          "before": [
+            "0"
+          ],
+          "after": [
+            "0",
+            "0"
+          ]
+        },
+        "nozzle_temperature": {
+          "before": [
+            "220",
+            "220",
+            "220"
+          ],
+          "after": [
+            "220",
+            "220",
+            "220",
+            "220",
+            "220",
+            "220"
+          ]
+        },
+        "nozzle_temperature_initial_layer": {
+          "before": [
+            "220",
+            "220",
+            "220"
+          ],
+          "after": [
+            "220",
+            "220",
+            "220",
+            "220",
+            "220",
+            "220"
+          ]
+        },
+        "nozzle_temperature_range_high": {
+          "before": [
+            "240"
+          ],
+          "after": [
+            "240",
+            "240"
+          ]
+        },
+        "nozzle_temperature_range_low": {
+          "before": [
+            "190"
+          ],
+          "after": [
+            "190",
+            "190"
+          ]
+        },
+        "overhang_fan_speed": {
+          "before": [
+            "100"
+          ],
+          "after": [
+            "100",
+            "100"
+          ]
+        },
+        "overhang_fan_threshold": {
+          "before": [
+            "50%"
+          ],
+          "after": [
+            "50%",
+            "50%"
+          ]
+        },
+        "override_process_overhang_speed": {
+          "before": [
+            "0",
+            "0",
+            "0"
+          ],
+          "after": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "pre_start_fan_time": {
+          "before": [
+            "0"
+          ],
+          "after": [
+            "0",
+            "0"
+          ]
+        },
+        "pressure_advance": {
+          "before": [
+            "0.02"
+          ],
+          "after": [
+            "0.02",
+            "0.02"
+          ]
+        },
+        "reduce_fan_stop_start_freq": {
+          "before": [
+            "1"
+          ],
+          "after": [
+            "1",
+            "1"
+          ]
+        },
+        "required_nozzle_HRC": {
+          "before": [
+            "3"
+          ],
+          "after": [
+            "3",
+            "3"
+          ]
+        },
+        "retraction_distances_when_ec": {
+          "before": [
+            "10",
+            "10",
+            "10"
+          ],
+          "after": [
+            "10",
+            "10",
+            "10",
+            "10",
+            "10",
+            "10"
+          ]
+        },
+        "slow_down_for_layer_cooling": {
+          "before": [
+            "1"
+          ],
+          "after": [
+            "1",
+            "1"
+          ]
+        },
+        "slow_down_layer_time": {
+          "before": [
+            "4"
+          ],
+          "after": [
+            "4",
+            "4"
+          ]
+        },
+        "slow_down_min_speed": {
+          "before": [
+            "20",
+            "20",
+            "20"
+          ],
+          "after": [
+            "20",
+            "20",
+            "20",
+            "20",
+            "20",
+            "20"
+          ]
+        },
+        "supertack_plate_temp": {
+          "before": [
+            "40"
+          ],
+          "after": [
+            "40",
+            "40"
+          ]
+        },
+        "supertack_plate_temp_initial_layer": {
+          "before": [
+            "40"
+          ],
+          "after": [
+            "40",
+            "40"
+          ]
+        },
+        "temperature_vitrification": {
+          "before": [
+            "45"
+          ],
+          "after": [
+            "45",
+            "45"
+          ]
+        },
+        "textured_plate_temp": {
+          "before": [
+            "55"
+          ],
+          "after": [
+            "55",
+            "55"
+          ]
+        },
+        "textured_plate_temp_initial_layer": {
+          "before": [
+            "55"
+          ],
+          "after": [
+            "55",
+            "55"
+          ]
+        },
+        "volumetric_speed_coefficients": {
+          "before": [
+            "0 0 0 0 0 0",
+            "0 0 0 0 0 0",
+            "0 0 0 0 0 0"
+          ],
+          "after": [
+            "0 0 0 0 0 0",
+            "0 0 0 0 0 0",
+            "0 0 0 0 0 0",
+            "0 0 0 0 0 0",
+            "0 0 0 0 0 0",
+            "0 0 0 0 0 0"
+          ]
+        },
+        "wipe_tower_x": {
+          "before": [
+            "15"
+          ],
+          "after": [
+            "35"
+          ]
+        },
+        "first_layer_sequence_choice": {
+          "before": null,
+          "after": "Customize"
+        }
+      },
+      "material_configuration": {
+        "colours": [
+          "#A0A0A0",
+          "#FFFFFF"
+        ],
+        "profiles": [
+          "Bambu PLA Basic @BBL H2D",
+          "Bambu PLA Basic @BBL H2D"
+        ],
+        "types": [
+          "PLA",
+          "PLA"
+        ],
+        "logical_material_slots": [
+          1,
+          2
+        ],
+        "physical_extruder_map": [
+          1,
+          2
+        ],
+        "filament_variant_count_per_material": 3,
+        "duplicated_profile_keys": [
+          "activate_air_filtration",
+          "additional_cooling_fan_speed",
+          "additional_fan_full_speed_layer",
+          "chamber_temperatures",
+          "circle_compensation_speed",
+          "close_additional_fan_first_x_layers",
+          "close_fan_the_first_x_layers",
+          "complete_print_exhaust_fan_speed",
+          "cool_plate_temp",
+          "cool_plate_temp_initial_layer",
+          "cooling_perimeter_transition_distance",
+          "cooling_slowdown_logic",
+          "counter_coef_1",
+          "counter_coef_2",
+          "counter_coef_3",
+          "counter_limit_max",
+          "counter_limit_min",
+          "diameter_limit",
+          "during_print_exhaust_fan_speed",
+          "enable_overhang_bridge_fan",
+          "enable_pressure_advance",
+          "eng_plate_temp",
+          "eng_plate_temp_initial_layer",
+          "fan_cooling_layer_time",
+          "fan_max_speed",
+          "fan_min_speed",
+          "filament_adaptive_volumetric_speed",
+          "filament_adhesiveness_category",
+          "filament_bridge_speed",
+          "filament_change_length",
+          "filament_change_length_nc",
+          "filament_colour",
+          "filament_cooling_before_tower",
+          "filament_cost",
+          "filament_density",
+          "filament_deretraction_speed",
+          "filament_dev_ams_drying_ams_limitations",
+          "filament_dev_ams_drying_heat_distortion_temperature",
+          "filament_dev_ams_drying_temperature",
+          "filament_dev_ams_drying_time",
+          "filament_dev_chamber_drying_bed_temperature",
+          "filament_dev_chamber_drying_time",
+          "filament_dev_drying_cooling_temperature",
+          "filament_dev_drying_softening_temperature",
+          "filament_diameter",
+          "filament_enable_overhang_speed",
+          "filament_end_gcode",
+          "filament_extruder_compatibility",
+          "filament_extruder_variant",
+          "filament_flow_ratio",
+          "filament_flush_temp",
+          "filament_flush_temp_fast",
+          "filament_flush_volumetric_speed",
+          "filament_ids",
+          "filament_is_mixed",
+          "filament_is_support",
+          "filament_long_retractions_when_cut",
+          "filament_map",
+          "filament_map_2",
+          "filament_max_volumetric_speed",
+          "filament_metal_stickiness",
+          "filament_minimal_purge_on_wipe_tower",
+          "filament_mixed_components",
+          "filament_mixed_gradient",
+          "filament_mixed_gradient_curve",
+          "filament_mixed_gradient_per_part",
+          "filament_mixed_gradient_range",
+          "filament_mixed_sublayer_ratios",
+          "filament_nozzle_map",
+          "filament_overhang_1_4_speed",
+          "filament_overhang_2_4_speed",
+          "filament_overhang_3_4_speed",
+          "filament_overhang_4_4_speed",
+          "filament_overhang_totally_speed",
+          "filament_pre_cooling_temperature",
+          "filament_pre_cooling_temperature_nc",
+          "filament_preheat_temperature_delta",
+          "filament_prime_volume",
+          "filament_prime_volume_nc",
+          "filament_printable",
+          "filament_ramming_travel_time",
+          "filament_ramming_travel_time_nc",
+          "filament_ramming_volumetric_speed",
+          "filament_ramming_volumetric_speed_nc",
+          "filament_retract_before_wipe",
+          "filament_retract_length_nc",
+          "filament_retract_restart_extra",
+          "filament_retract_when_changing_layer",
+          "filament_retraction_distances_when_cut",
+          "filament_retraction_length",
+          "filament_retraction_minimum_travel",
+          "filament_retraction_speed",
+          "filament_scarf_gap",
+          "filament_scarf_height",
+          "filament_scarf_length",
+          "filament_scarf_seam_type",
+          "filament_self_index",
+          "filament_settings_id",
+          "filament_shrink",
+          "filament_soluble",
+          "filament_start_gcode",
+          "filament_tower_interface_pre_extrusion_dist",
+          "filament_tower_interface_pre_extrusion_length",
+          "filament_tower_interface_print_temp",
+          "filament_tower_interface_purge_volume",
+          "filament_tower_ironing_area",
+          "filament_type",
+          "filament_velocity_adaptation_factor",
+          "filament_vendor",
+          "filament_volume_map",
+          "filament_wipe",
+          "filament_wipe_distance",
+          "filament_z_hop",
+          "filament_z_hop_types",
+          "first_x_layer_fan_speed",
+          "first_x_layer_part_fan_speed",
+          "full_fan_speed_layer",
+          "hole_coef_1",
+          "hole_coef_2",
+          "hole_coef_3",
+          "hole_limit_max",
+          "hole_limit_min",
+          "hot_plate_temp",
+          "hot_plate_temp_initial_layer",
+          "impact_strength_z",
+          "ironing_fan_speed",
+          "long_retractions_when_ec",
+          "no_slow_down_for_cooling_on_outwalls",
+          "nozzle_temperature",
+          "nozzle_temperature_initial_layer",
+          "nozzle_temperature_range_high",
+          "nozzle_temperature_range_low",
+          "overhang_fan_speed",
+          "overhang_fan_threshold",
+          "override_process_overhang_speed",
+          "pre_start_fan_time",
+          "pressure_advance",
+          "reduce_fan_stop_start_freq",
+          "required_nozzle_HRC",
+          "retraction_distances_when_ec",
+          "slow_down_for_layer_cooling",
+          "slow_down_layer_time",
+          "slow_down_min_speed",
+          "supertack_plate_temp",
+          "supertack_plate_temp_initial_layer",
+          "temperature_vitrification",
+          "textured_plate_temp",
+          "textured_plate_temp_initial_layer",
+          "volumetric_speed_coefficients"
+        ],
+        "prime_tower_enabled": true,
+        "prime_tower_position_xy_mm": [
+          35,
+          220
+        ],
+        "prime_tower_is_support": false,
+        "actual_printer_or_AMS_inventory_verified": false,
+        "schema_sources": [
+          "/Applications/BambuStudio.app/Contents/Resources/profiles/BBL/filament",
+          "https://github.com/bambulab/BambuStudio/blob/master/src/libslic3r/PresetBundle.cpp",
+          "https://github.com/bambulab/BambuStudio/blob/master/src/libslic3r/Print.cpp"
+        ],
+        "mapping_mode": "Manual",
+        "first_layer_material_order": [
+          1,
+          2
+        ],
+        "ams_required": false,
+        "selection_reason": "H2D two0.4mm nozzles; gray first keeps full housing brim on the left nozzle, white logo on the right nozzle.",
+        "printer_configuration_observation": "Root observed H2D left and right0.4mm nozzle configuration and no installed AMS in BambuUI; no physical printer inventory queried."
+      },
+      "settings_except_necessary_bicolor_changes_unchanged": true,
+      "print_part_transforms_unchanged": true
+    }
+  },
+  "support_enabled": true,
+  "support_settings_update": {
+    "reason": "User allows supports for this version and defers support-free redesign to v2",
+    "global_enabled": true,
+    "all_nine_objects_enabled": false,
+    "enabled_part_ids": [
+      "TMX-A3-P01",
+      "TMX-A3-P07",
+      "TMX-V2-P12"
+    ],
+    "all_nine_objects_support_values": {
+      "TMX-A3-P01": "1",
+      "TMX-A3-P02": "0",
+      "TMX-A3-P03": "0",
+      "TMX-A3-P04": "0",
+      "TMX-A3-P05": "0",
+      "TMX-A3-P07": "1",
+      "TMX-A3-P08": "0",
+      "TMX-A3-P11": "0",
+      "TMX-V2-P12": "1"
+    },
+    "original_three_blockers_retained_active": true,
+    "original_three_blockers_retained_inactive": false,
+    "no_logo_blocker": true,
+    "support_type": "normal(auto)",
+    "support_style": "snug",
+    "support_filament": "1",
+    "support_interface_filament": "1",
+    "all_geometry_and_transforms_retained_byte_for_byte": true,
+    "other_settings_and_transforms_retained_byte_for_byte": true
+  },
+  "nonprinting_support_blockers_count": 3,
+  "normal_part_mesh_count": 15,
+  "material_count": 2,
+  "materials": [
+    {
+      "slot": 1,
+      "colour": "#A0A0A0",
+      "description": "Gray base",
+      "physical_extruder": "left",
+      "nozzle_mm": 0.4
+    },
+    {
+      "slot": 2,
+      "colour": "#FFFFFF",
+      "description": "White logo and runes",
+      "physical_extruder": "right",
+      "nozzle_mm": 0.4
+    }
+  ],
+  "prime_tower": {
+    "enabled": true,
+    "purpose": "Color changes; not support material",
+    "position_xy_mm": [
+      35,
+      220
+    ]
+  },
+  "source_stls_match_original_baseline": true
+}

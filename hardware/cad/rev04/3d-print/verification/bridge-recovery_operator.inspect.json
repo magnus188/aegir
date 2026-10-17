@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"[{\\\"name\\\": \\\"Untitled\\\", \\\"active\\\": false, \\\"modified\\\": false, \\\"data_file\\\": null, \\\"design\\\": true, \\\"timeline\\\": 0, \\\"occurrences\\\": 0, \\\"animation_active\\\": false}, {\\\"name\\\": \\\"GYR_V1_Concept_B\\\", \\\"active\\\": true, \\\"modified\\\": true, \\\"data_file\\\": null, \\\"design\\\": true, \\\"timeline\\\": 339, \\\"occurrences\\\": 5, \\\"animation_active\\\": false}, {\\\"name\\\": \\\"Trimix_Enclosure_A3_PCBFit v1\\\", \\\"active\\\": false, \\\"modified\\\": false, \\\"data_file\\\": {\\\"name\\\": \\\"Trimix_Enclosure_A3_PCBFit\\\", \\\"id\\\": \\\"urn:adsk.wipprod:dm.lineage:Kw16cNbgRrSp_hNDvwHd1w\\\", \\\"version\\\": 1, \\\"complete\\\": true}, \\\"design\\\": true, \\\"timeline\\\": 1078, \\\"occurrences\\\": 69, \\\"animation_active\\\": false}]\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

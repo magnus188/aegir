@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\n  \\\"source\\\": {\\n    \\\"document_name\\\": \\\"Trimix_Enclosure_A3_PrintReview v3\\\",\\n    \\\"is_modified\\\": false,\\n    \\\"data_file_id\\\": \\\"urn:adsk.wipprod:dm.lineage:l5zV9NCVS8ysJ6aeOO-4sw\\\",\\n    \\\"data_file_version_id\\\": \\\"urn:adsk.wipprod:fs.file:vf.l5zV9NCVS8ysJ6aeOO-4sw?version=3\\\",\\n    \\\"data_file_name\\\": \\\"Trimix_Enclosure_A3_PrintReview\\\",\\n    \\\"version\\\": 3,\\n    \\\"cloud_complete\\\": true\\n  },\\n  \\\"solid_count\\\": 102,\\n  \\\"occurrence_count\\\": 69,\\n  \\\"timeline\\\": 1078\\n}\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

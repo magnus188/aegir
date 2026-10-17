@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\\"report\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/system-review/mechanical/verification/main-first-pass-coax-tolerance.json\\\", \\\"keys\\\": [\\\"status\\\", \\\"source_manifest\\\", \\\"test\\\", \\\"bounds_and_basis\\\", \\\"limits\\\"], \\\"counts\\\": {\\\"bounds_and_basis\\\": 6}}\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\\"report\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/system-review/mechanical/connector-review/intended-mate-allowances.json\\\", \\\"sha256\\\": \\\"4461d89e7f135de530154e21bd424b44f6576fa5b809cbfed229be82b48b2623\\\", \\\"status\\\": \\\"all_intended_existing_small_header_mates_included_as_candidates\\\", \\\"checks\\\": null}\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

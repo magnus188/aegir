@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\\"report\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/system-review/mechanical/verification/backside-allocation-applied.json\\\", \\\"keys\\\": [\\\"status\\\", \\\"component\\\", \\\"native_bounds_mm\\\", \\\"removed_material_mm3\\\", \\\"lumps\\\", \\\"timeline\\\", \\\"selected_sections\\\", \\\"health_pass\\\", \\\"exterior_and_mount_positions_changed\\\", \\\"other_documents_preserved\\\"], \\\"counts\\\": {\\\"native_bounds_mm\\\": 2, \\\"selected_sections\\\": 3}}\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

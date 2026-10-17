@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\\"report\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/system-review/mechanical/verification/smb-142138-model.json\\\", \\\"keys\\\": [\\\"status\\\", \\\"geometry_kind\\\", \\\"origin\\\", \\\"files\\\", \\\"native_summary\\\", \\\"imported_summary\\\", \\\"roundtrip\\\", \\\"native_bodies\\\", \\\"parameters\\\", \\\"source\\\", \\\"limitations\\\", \\\"source_preservation\\\"], \\\"counts\\\": {\\\"native_bodies\\\": 3, \\\"limitations\\\": 6}}\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

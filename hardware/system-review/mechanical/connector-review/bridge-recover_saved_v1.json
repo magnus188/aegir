@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"error\": \"{\\\"report\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/system-review/mechanical/connector-review/recovery-opened-v1.json\\\", \\\"sha256\\\": \\\"e36fd75510c3f43146c78bb122aa31a09ceb9cc60ef33bf155bc68203a67de79\\\", \\\"status\\\": \\\"unexpected_recovery_state\\\", \\\"checks\\\": {\\\"timeline_1211\\\": true, \\\"solid_count_2546\\\": true, \\\"unmodified\\\": true, \\\"other_documents_preserved\\\": false}}\\nTraceback (most recent call last):\\n  File \\\"<string>\\\", line 36, in <module>\\n  File \\\"<string>\\\", line 34, in run\\n  File \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/system-review/mechanical/scripts/connector_photo_review.py\\\", line 99, in recover_saved_v1\\n    if not all(checks.values()):raise RuntimeError('Recovered state differs; do not build')\\n                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\nRuntimeError: Recovered state differs; do not build\\n\",\n    \"success\": false\n}",
-      "type": "text"
-    }
-  ]
-}

@@ -1,0 +1,35 @@
+Drill report for Trimix_Analyzer.kicad_pcb
+Created on 2026-10-15T20:52:52
+
+Copper Layer Stackup:
+    =============================================================
+    L1 :  F.Cu                      front
+    L2 :  In1.Cu                    in1
+    L3 :  In2.Cu                    in2
+    L4 :  B.Cu                      back
+
+
+Drill file 'Trimix_Analyzer-PTH.drl' contains
+    plated through holes:
+    =============================================================
+    T1  0.200mm  0.0079"  (17 holes))
+    T2  0.200mm  0.0079"  (24 holes))
+    T3  0.250mm  0.0098"  (110 holes))
+    T4  0.300mm  0.0118"  (204 holes))
+    T5  0.600mm  0.0236"  (4 holes)  (with 4 slots)
+    T6  0.950mm  0.0374"  (8 holes))
+    T7  1.000mm  0.0394"  (16 holes))
+    T8  1.020mm  0.0402"  (26 holes))
+    T9  1.200mm  0.0472"  (1 hole)
+    T10  1.700mm  0.0669"  (4 holes))
+
+    Total plated holes count 414
+
+
+Drill file 'Trimix_Analyzer-NPTH.drl' contains
+    unplated through holes:
+    =============================================================
+    T1  0.650mm  0.0256"  (2 holes))
+    T2  2.300mm  0.0906"  (2 holes))
+
+    Total unplated holes count 4

@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\\"report\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/system-review/mechanical/connector-review/chamber-cable-checks.json\\\", \\\"sha256\\\": \\\"a54eddae191bcac7725415098337dd2252bac33a5381b15fb201e5a5f673796a\\\", \\\"status\\\": \\\"routes_tested_no_fullfit_claim\\\", \\\"checks\\\": null}\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

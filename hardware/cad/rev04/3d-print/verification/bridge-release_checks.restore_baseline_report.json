@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\\"audit\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/enclosure/rev04/verification/model-audit.json\\\", \\\"status\\\": \\\"cad_checks_passed\\\", \\\"bodies\\\": 102, \\\"interferences\\\": 0, \\\"hardware\\\": {\\\"screw\\\": 14, \\\"insert\\\": 14}, \\\"health_pass\\\": true}\\nRestored baseline read-only audit from preserved A3 v3; original native remains unchanged\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

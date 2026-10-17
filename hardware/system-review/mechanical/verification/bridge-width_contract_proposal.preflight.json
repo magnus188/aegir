@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\\"report\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/system-review/mechanical/verification/width-contract-preflight.json\\\", \\\"keys\\\": [\\\"status\\\", \\\"document\\\", \\\"manifest_sha256\\\", \\\"exact_parameter_edits\\\", \\\"all_new_expressions_preserve_baseline_value\\\", \\\"hardware_instances\\\", \\\"main_descendants\\\", \\\"physical_bodies\\\", \\\"baseline_total_physical_volume_mm3\\\", \\\"health\\\", \\\"protected_documents_before_after\\\", \\\"cloud_saved\\\", \\\"persistent_geometry_modified\\\"], \\\"counts\\\": {\\\"main_descendants\\\": 285, \\\"physical_bodies\\\": 1074, \\\"protected_documents_before_after\\\": 3}}\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

@@ -1,0 +1,83 @@
+{
+  "timestamp_utc": "2026-10-15T18:52:52.675237+00:00",
+  "source_board_sha256": "59a0be0876394c670bd6c852033312527ccf9a4e02e94ac0437080b83f57085c",
+  "source_project_sha256": "a19783ba0c7ddf75f1f4c9d4852db2b5f5c1939d6c844cb8ac0d7d6a9c6b418a",
+  "source_custom_rules_sha256": "194c12b0abc86e46d020ff7fc56561faa65d92891e188cb8a6f62491738585a9",
+  "source_schematic_sha256": {
+    "Carbon_Monoxide.kicad_sch": "e05b21e25d82c727ea046086cab4b3bb2a3f3797fb877754c356ca801ca57a96",
+    "Charging.kicad_sch": "afe2b65761ab48c2ab009336f6bd0782e343cbd33043100822e29cfa4a65c1da",
+    "Environment.kicad_sch": "a1cd76c7502b1720cbaa00b3eb258ff24178aadee432b8c3d760d3571a4524a7",
+    "Gauge_Interface.kicad_sch": "ba7cd46b5f575c20b85fe264e02f405a459ce6de5958aa35b8115688eedfed6e",
+    "Helium.kicad_sch": "9ea2437448c99602f45d038a4acacd7bc13256d081d157b55d011494bb1f64ce",
+    "Oxygen.kicad_sch": "97c645a89bb9f7335fbd80882cd5aa9cb9fe19d51262fb48f73e1e3eb0a0ba13",
+    "Power_Control.kicad_sch": "1d0e88653e2c66d3de08e57afb512cc088b87d9d772afcf86f58d5951b05244d",
+    "Supply_5V.kicad_sch": "bfd05c6d9788d346bc97a99eba06bca5458786f583a7b40c8c792b0b36da4451",
+    "Testpoints.kicad_sch": "2c5cfad1891b3d6fa4538d4227cca4a4008e820ebf930dc40d8b1512b73ccc78",
+    "Trimix_Analyzer.kicad_sch": "0f3da790cab859155b557f8dfa76146ecd49850168362410329309915e6043b4",
+    "USB_Input.kicad_sch": "1593b35a796a78a199dce22b0f7c309d555aed3a6287fb038c93ce9b28488281",
+    "USB_Input_Limiter.kicad_sch": "bf80854f95976d92f2cc61a1e625c3e508d5cb372a49509f0814c8b2ce63afce",
+    "USB_Overvoltage.kicad_sch": "38f034afd6a19b6d6cb93b8e161acc4c58c0dd175a7d618c9bbbd993170792b8",
+    "USB_Source_Control.kicad_sch": "9a23d2ec009f071881d3bcbfa09d47354d9d38c6669f57cb7db8d20b636fb915"
+  },
+  "coordinate_origin_native_mm": [
+    0,
+    0
+  ],
+  "population_counts": {
+    "Populate": 148,
+    "DNP": 6,
+    "PCB feature / external termination": 17
+  },
+  "populated_unique_line_items": 74,
+  "selected_fill_cap_count": 27,
+  "source_board_unchanged_after_export": true,
+  "production_release": false,
+  "files": {
+    "FABRICATION_AND_ASSEMBLY_REVIEW_NOTES.txt": "34cbdbd201a2a879061c330486cc2420fad06db144688794089cb17cdb4858c1",
+    "QUOTE_ONLY_NOT_FOR_PRODUCTION.txt": "8eda9960f4d984a922ac8180ff1e40c61a604db1d3273b1caa5dbc43d21a47bc",
+    "assembly-reference-map.csv": "8fc51084ea3e853b4a8514394889dcb5cf979f20e22b2ea1229ee501f1537dda",
+    "bom-populated-by-reference.csv": "1b870836821b16595468905e4f5aa4a03ba4f94644fec575e22fcd57c4b56191",
+    "bom-populated-grouped.csv": "318cc392da42f3e2f97cc648b3628eeeb7ffdca3e23d1630da911cd8aabefe72",
+    "cam/Trimix_Analyzer-B_Cu.gbl": "5080ee028cab3a248af9571681c4788ef297be4454a9d813778dfa7b6d1d6d7a",
+    "cam/Trimix_Analyzer-B_Mask.gbs": "4f4beaba049293ec0fe16a326b01ad66c92f6b1c1ce998afd7afe1f238c49b54",
+    "cam/Trimix_Analyzer-B_Paste.gbp": "4fb2e933b34ddd7a0cef7da8304c3b05fbe6962f78ca52bc0d606e41fe575aaf",
+    "cam/Trimix_Analyzer-B_Silkscreen.gbo": "25b347b92b228d92bc25c72c2bcd384181dd02704c4ce69b4e962778e61f277f",
+    "cam/Trimix_Analyzer-Edge_Cuts.gm1": "a7aaff2b6842917bd2d68d154b07e2511452afbcaa7699f70c8db80ad7a6e927",
+    "cam/Trimix_Analyzer-F_Cu.gtl": "2324a4d05bb8655529f6576f2adab45298cd8e29c074ce0265c0a56cf13b19c8",
+    "cam/Trimix_Analyzer-F_Mask.gts": "d835352b37b22053dbfea9a47fd2e6a34fe5ba7c8d59b9d03b682777ae57892a",
+    "cam/Trimix_Analyzer-F_Paste.gtp": "1b0dedad8640148dfc9ef1cc759d2cb6814833781e5801ed5bd4474fb3e5b450",
+    "cam/Trimix_Analyzer-F_Silkscreen.gto": "1a656870bd6b1b4c0ad4864533e19ffae29c4b7c85c46beb5bf07c350374af03",
+    "cam/Trimix_Analyzer-In1_Cu.g1": "a1fc353f1a4e6ef4ba83c2f1fa6b414e0202d7b03692ef7e6a1fdbb76165486a",
+    "cam/Trimix_Analyzer-In2_Cu.g2": "9805aa61cb9b8930d7696d965bc9f8003053a8eab1d7e8146e5b93e9f0cd9dfa",
+    "cam/Trimix_Analyzer-NPTH-drl_map.svg": "e596bc06f3f7755f7b35d0f3e4938cde74807dee68b78e359b27097561d948ef",
+    "cam/Trimix_Analyzer-NPTH.drl": "2be532d3885d7fcf91d817bb3af3e0eee3e31ae3d874a698379bd881746c1d97",
+    "cam/Trimix_Analyzer-PTH-drl_map.svg": "3b1e52375f5c03abf03db8bae2ef5c531137ea598c2ed92a8d2e591672e9aee4",
+    "cam/Trimix_Analyzer-PTH.drl": "78b4737b8009e85d8fb485f4c8b862e3209b09d54d8d9207a48b08294b65b220",
+    "cam/Trimix_Analyzer-job.gbrjob": "44477305aaf3ddc6ee403962a4f6506ddeb359adbdb640e80c53cd1432c801d4",
+    "cam/drill-report.txt": "280eb1191feda987eddb26021f23d25b21f6a7717670bba7145ff196eec97456",
+    "cam/placement-all.csv": "a2a2df2098c22efb2402480a487e8ec8f6ea38648c8edcd6354f652aae4f2c64",
+    "cam-process-checks.json": "d35c1b21a1f414892ed22189d5e1454cf5eb2f339ee2f187f2ac252e618fbe87",
+    "dnp-list.csv": "d448b2c545305646e1297d526b17a5d9369ac809914c2dfd97fc3f87aa872e81",
+    "export-commands.json": "46b726521f730cb49b388880b55f99280406438eae0679e34d4f7456b41ae1d9",
+    "export.log": "f14d051b03ec500c7014b70805868ab4af1144be3463564934f87303cda80997",
+    "independent-cam/audit.json": "b85d9ec23aabbf1e78e0f1a34d248d5bd0a722c1abcfb7f3cd5511e37508836e",
+    "native-drc.json": "eeb0e642309dd25c228e2fff3f8302b946ab4c5c62dead659c5f94489a7bed4d",
+    "pcb-features.csv": "b94a95475af735c8624e96f173ed407d1bcc33e286a7cc62363bf9b4eeefc3a0",
+    "placement-populated.csv": "df2f95c4cb0431ef3aac85580b8327410f08ca2e2d340aaf53bf3bc8c33a5bc9",
+    "selected-fill-cap-holes.csv": "cb1e8dd0586a8ea31b1e65912599605478f8561464ddc5fd16a172ff785efe18",
+    "source-preservation-audit.json": "bf53e1efda35fc7acdaa266351786bb1c7839c893b927df2537f622806aac0c1",
+    "usb-path-review.json": "ea5ac483cb1a2a94d71f6cc8c4a8c1eb39559295c0f24c98c124abefaa1b850e"
+  },
+  "independent_CAM_audits": {
+    "export_geometry": {
+      "passed": 44,
+      "failed": 0,
+      "sha256": "b85d9ec23aabbf1e78e0f1a34d248d5bd0a722c1abcfb7f3cd5511e37508836e"
+    },
+    "selected_holes_and_population": {
+      "passed": 13,
+      "failed": 0,
+      "sha256": "d35c1b21a1f414892ed22189d5e1454cf5eb2f339ee2f187f2ac252e618fbe87"
+    }
+  }
+}

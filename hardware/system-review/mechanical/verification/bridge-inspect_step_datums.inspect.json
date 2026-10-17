@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\\"report\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/system-review/mechanical/verification/frozen-step-datums.json\\\", \\\"keys\\\": [\\\"sources\\\", \\\"source_preserved\\\", \\\"status\\\", \\\"method\\\"], \\\"counts\\\": {}}\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

@@ -1,5 +1,0 @@
-{
-  "rejected_attempt": "Generic S-expression serializer treated hash comments as symbols; lost all rules, so its many violations were not a valid single-rule control.",
-  "correction": "Remove exactly the source-text rule span; all other bytes preserved.",
-  "removed_rule_count": 1
-}

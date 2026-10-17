@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\\"report\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/system-review/mechanical/placement-checkpoint-v2/verification/gas-clearance-paths.json\\\", \\\"pass\\\": true, \\\"collisions\\\": 0, \\\"analytic_pass\\\": true, \\\"blockers\\\": []}\\n{\\\"report\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/system-review/mechanical/placement-checkpoint-v2/verification/oxygen-variant-checks.json\\\", \\\"keys\\\": [\\\"generated_at_utc\\\", \\\"document\\\", \\\"status\\\", \\\"tests\\\", \\\"measurement_assumptions\\\", \\\"manufacturing_or_seal_qualification\\\", \\\"AO2_geometry_scaled\\\"], \\\"counts\\\": {\\\"tests\\\": 2, \\\"measurement_assumptions\\\": 2}}\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

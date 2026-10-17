@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\\"report\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/system-review/mechanical/connector-review/mate-localization.json\\\", \\\"sha256\\\": \\\"1e0b91882e253c56f3f529d8c5bfd8bb4f07ac482827662f04b02c41ebae043e\\\", \\\"status\\\": \\\"transient_design_alternatives_only\\\", \\\"checks\\\": null}\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

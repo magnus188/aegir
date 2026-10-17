@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\\"name\\\": \\\"PrintReview service exploded\\\", \\\"native_found\\\": true, \\\"count\\\": 2, \\\"end\\\": 0.0}\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\\"report\\\": \\\"/Users/magnustrandokken/Documents/Projects/Trimix/trimix-analysator/hardware/system-review/mechanical/verification/changed-section-checks.json\\\", \\\"keys\\\": [\\\"status\\\", \\\"sections\\\", \\\"count\\\", \\\"scope\\\", \\\"USB_PCBtop_to_bridge_underside_mm\\\", \\\"solder_wire_bend_allowance_not_included\\\"], \\\"counts\\\": {\\\"sections\\\": 6}}\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

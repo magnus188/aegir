@@ -1,5 +1,0 @@
-{
-  "cause": "Persistent Fusion Python cached the prior zero-argument inspect_step_datums.inspect despite current on-disk optional path arguments. Exception occurred before importToNewDocument or source geometry edits.",
-  "correction": "Explicit importlib.reload(inspect_step_datums); existing exact identical datum input file reused; completed datum receipt cannot be overwritten.",
-  "script_sha256": "b05f7063fcfdcab46c990b8f6408c3d084f4c3ece5950055963dddc85df4203e"
-}

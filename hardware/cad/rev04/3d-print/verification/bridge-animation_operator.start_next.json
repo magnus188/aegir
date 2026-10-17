@@ -1,8 +1,0 @@
-{
-  "content": [
-    {
-      "text": "{\n    \"message\": \"{\\\"label\\\": \\\"Cover spread\\\", \\\"selector\\\": \\\"rear_cover\\\", \\\"delta_mm\\\": [95, 0, 25], \\\"time\\\": 4, \\\"status\\\": \\\"awaiting_native_UI_entry\\\", \\\"selected\\\": [\\\"02 Single rear cover:1\\\", \\\"M3 x 8 button screw \\\\u2014 GEN-M3-BHCS-L8-AF2:1\\\", \\\"M3 x 8 button screw \\\\u2014 GEN-M3-BHCS-L8-AF2:2\\\", \\\"M3 x 8 button screw \\\\u2014 GEN-M3-BHCS-L8-AF2:3\\\", \\\"M3 x 8 button screw \\\\u2014 GEN-M3-BHCS-L8-AF2:4\\\"]}\\n\",\n    \"success\": true\n}",
-      "type": "text"
-    }
-  ]
-}

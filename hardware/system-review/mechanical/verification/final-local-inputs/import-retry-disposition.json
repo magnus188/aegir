@@ -1,8 +1,0 @@
-{
-  "failed_state_receipt_sha256": "75b90178229a06bfaec74885332b44305b075ef65d05fb77d6f541388e65e211",
-  "exact_v10_physical_state_joint_grounding_parameter_timeline_match": true,
-  "all_other_documents_states_match": true,
-  "SystemReview_modified_flag_after_failed_transaction": true,
-  "disposition": "Permit only this full-state-equal source with dirty flag preserved; no save/revert or metadata rollback inferred. Explicit full ordered module reload before renewed import.",
-  "script_sha256": "8749c43c43e2397e831f9b6053a0b616179f9f71baeb019228cd4f7d440d1f0d"
-}
