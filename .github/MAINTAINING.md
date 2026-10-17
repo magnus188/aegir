@@ -58,8 +58,20 @@ Check names in the ruleset must be updated if CI jobs are renamed.
 
 ## Releases and automation
 
-Merging to `main` continues to run the automatic firmware release and web-demo
-workflows. Review what will be published before merging. PR builds only upload
+Merging to `main` publishes a firmware release only when the push changes an
+input to the ESP-IDF build: firmware sources, CMake files, dependency locks,
+SDK configuration, partition tables, or the Hosted patch and its application
+script. The release workflow first checks the full Git diff, then skips the
+build and publication job when those inputs are unchanged.
+
+PCB, enclosure/3D-print, README/documentation, tests, simulator, web-demo, and
+workflow-only changes do not create a firmware version, release, or OTA update.
+The input list lives in `scripts/firmware_release_needed.py` beside this guide;
+update it when the firmware build gains a new input. For a deliberate release
+after a toolchain or release-workflow change, run **Build and Release** manually
+on `main`. Manual runs bypass change detection.
+
+The web-demo workflow still runs on every push to `main`. PR builds only upload
 test artifacts; they do not publish releases.
 
 The release workflow chooses a version from the latest release tag and the
