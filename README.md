@@ -27,27 +27,14 @@ The runes ᛅᛁᚾ are a Viking Age-style representation of einn, Old Norse for
 
 <img src="media/renders/aegir-portrait.png" alt="CAD-based render of the current Ægir prototype: black printed enclosure, flush white Ægir symbol and runes, side gas fitting and illuminated power button, with the live-analysis simulator on its portrait touchscreen" width="520">
 
-*CAD-based render of the current prototype with the simulator’s live-analysis screen.*
+*CAD-based render of the current prototype.*
 
-## PCB and enclosure
-
-The current prototype uses one PCB with a bottom-facing GCT USB4105-GF-A
-USB-C connector. The matching enclosure retains the protected battery holder
-and adds support around the connector.
 
 <img src="media/renders/aegir-exploded.png" alt="Exploded CAD-based render showing the enclosure, display assembly, two-cell battery holder, populated KiCad PCB with bottom USB-C, sensor manifold, reconstructed sensors, rear cover and fasteners" width="960">
 
-*Exploded prototype render using the actual KiCad board and reference-based sensor models. Sensor appearance and some purchased-module details are reconstructed; see the [render notes](media/renders/RENDER-NOTES.txt).*
-
-Open the [KiCad project](hardware/pcb/analyzer-v2-bottom/Trimix_Analyzer.kicad_pro)
-and [Fusion model](hardware/cad/pcb-v2-bottom/Trimix_Enclosure_PCB2_Bottom.f3d).
-The [hardware guide](hardware/PCB2-BOTTOM.txt) describes the current files and
-remaining prototype checks. Supplier and physical qualification are pending.
-
 ## Screenshots
 
-These screens show the simulator with demo data. Swipe horizontally between
-live analysis and analysis details; simulator profiles are in the top status banner.
+These screens show the simulator with demo data.
 
 | Main menu | Live analysis | Analysis details |
 | :---: | :---: | :---: |
@@ -89,14 +76,6 @@ make push PORT=/dev/cu.usbserial-110
 
 Replace the example `PORT` with the port reported by `make devices`. See the
 [firmware guide](software/firmware/README.md) for other build options.
-
-## Files
-
-- [Firmware and simulator](software/firmware/)
-- [Current PCB 2.0 prototype](hardware/pcb/analyzer-v2-bottom/Trimix_Analyzer.kicad_pro), with integrated USB-C facing the bottom
-- [Current enclosure CAD](hardware/cad/pcb-v2-bottom/Trimix_Enclosure_PCB2_Bottom.f3d), [STEP](hardware/cad/pcb-v2-bottom/Trimix_Enclosure_PCB2_Bottom.step) [H2D print bed](hardware/cad/pcb-v2-bottom/Trimix_PCB2_Bottom_H2D.3mf) and [STL package](hardware/cad/pcb-v2-bottom/Trimix_PCB2_Bottom_PrintParts.zip)
-- [Hardware package guide and qualification status](hardware/PCB2-BOTTOM.txt); superseded deliverables remain in Git history
-- [Logo](logo/README.md)
 
 ## Contributing and future ideas
 
