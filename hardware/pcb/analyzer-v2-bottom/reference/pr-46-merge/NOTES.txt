@@ -1,0 +1,38 @@
+PR #46 merge resolution - 27 October 2026
+
+The current PCB project and exports are Tobias Ruber's final root-level upload
+from e9ae5f3 (25 October 2026). All 39 non-editor-state files were moved into
+hardware/pcb/analyzer-v2-bottom byte for byte. The complete native PCB,
+project, design rules, 14 schematics, symbols, Gerbers, drills, BOM and position
+file are kept together. Current main supplies the relative library/model
+folders. The superseded 11 October analyzer project and intermediate
+3V3_Plane copies remain in Git history. The author CAD additions are retained.
+
+AI assistance resolved the directory/content conflicts and recorded checks;
+it did not modify the author's PCB geometry, schematics or design rules.
+
+Fresh KiCad 10.0.6 checks:
+- DRC: 0 errors, 2 footprint-library mismatch warnings (U101 and U201),
+  0 unconnected items and 0 schematic parity issues.
+- ERC: 1 pin-type error (U302 ST / #FLG0103) and 2 oxygen-label warnings.
+  These findings are in the preserved author sources, not merge edits.
+- All 11 Gerbers and both drill files match fresh exports after ignoring
+  generated timestamp/checksum metadata and line endings.
+
+The existing manufacturing/ folder, reference/final-drc* reports,
+current-hardware-manifest.json and other earlier audits describe the previous
+layout. They have NOT been regenerated or certified for this layout.
+hardware/verify_current.py intentionally still rejects the changed frozen
+manifest; do not update its hashes to imply that old audits cover this board.
+Use the 25 October Gerber/drill files beside the current KiCad project when
+reviewing this revision, not the older manufacturing ZIP. The supplied BOM
+and position file are preserved, not independently requalified here.
+
+Reproduce from the repository root (replace kicad-cli with its installed path):
+  kicad-cli pcb drc --format json --schematic-parity --exit-code-violations -o /tmp/pr46-drc.json hardware/pcb/analyzer-v2-bottom/Trimix_Analyzer.kicad_pcb
+  kicad-cli sch erc --format json --exit-code-violations -o /tmp/pr46-erc.json hardware/pcb/analyzer-v2-bottom/Trimix_Analyzer.kicad_sch
+  kicad-cli pcb export gerbers --board-plot-params -o /tmp/pr46-gerbers/ hardware/pcb/analyzer-v2-bottom/Trimix_Analyzer.kicad_pcb
+  kicad-cli pcb export drill --excellon-separate-th --excellon-oval-format route -o /tmp/pr46-drill/ hardware/pcb/analyzer-v2-bottom/Trimix_Analyzer.kicad_pcb
+
+The DRC/ERC commands return exit code 5 because of the recorded findings.
+No design-rule severities or exclusions were changed for this merge.

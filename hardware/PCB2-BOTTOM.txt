@@ -1,3 +1,10 @@
+27 OCTOBER 2026 UPDATE - PR #46
+The current PCB is Tobias's 25 October layout. Its matching Gerber/drill,
+BOM and placement files are beside pcb/analyzer-v2-bottom/Trimix_Analyzer.kicad_pro.
+Read pcb/analyzer-v2-bottom/reference/pr-46-merge/NOTES.txt for fresh checks.
+The manufacturing ZIP, frozen manifest and recorded checks below belong to
+the previous layout and do not validate this revision.
+
 PCB 2.0 – CURRENT BOTTOM USB-C PROTOTYPE
 
 KiCad: pcb/analyzer-v2-bottom/Trimix_Analyzer.kicad_pro

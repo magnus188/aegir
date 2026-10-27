@@ -1,0 +1,18 @@
+{
+  "normalization": "CRLF/LF and generated creation date / MD5 metadata only",
+  "files": {
+    "Trimix_Analyzer-B_Cu.gbr": true,
+    "Trimix_Analyzer-B_Mask.gbr": true,
+    "Trimix_Analyzer-B_Paste.gbr": true,
+    "Trimix_Analyzer-B_Silkscreen.gbr": true,
+    "Trimix_Analyzer-Edge_Cuts.gbr": true,
+    "Trimix_Analyzer-F_Cu.gbr": true,
+    "Trimix_Analyzer-F_Mask.gbr": true,
+    "Trimix_Analyzer-F_Paste.gbr": true,
+    "Trimix_Analyzer-F_Silkscreen.gbr": true,
+    "Trimix_Analyzer-In1_Cu.gbr": true,
+    "Trimix_Analyzer-In2_Cu.gbr": true,
+    "Trimix_Analyzer-NPTH.drl": true,
+    "Trimix_Analyzer-PTH.drl": true
+  }
+}

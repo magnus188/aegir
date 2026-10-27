@@ -1,5 +1,10 @@
 # Ægir — current prototype design
 
+> PR #46 updates the PCB to Tobias’s 25 October layout. See the
+> [merge validation notes](pcb/analyzer-v2-bottom/reference/pr-46-merge/NOTES.txt).
+> Current Gerbers and drills are beside the KiCad project; the manufacturing
+> ZIP, frozen manifest and earlier reports below cover the previous layout.
+
 The current prototype is [PCB 2.0 with integrated bottom USB-C](PCB2-BOTTOM.txt).
 The main circuit and GCT USB4105-GF-A port share one four-layer, nominally
 1.6 mm PCB. There is no separate USB daughterboard or internal USB harness.
